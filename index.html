@@ -628,6 +628,113 @@
   .modal-btn:hover { background: var(--bg-card); }
   .modal-btn.primary:hover { background: #e0b25a; }
 
+  /* Context viewer modal */
+  .ctx-modal-bg {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+    backdrop-filter: blur(6px);
+    padding: 24px;
+    animation: ctxFadeIn 0.15s ease-out;
+  }
+  @keyframes ctxFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .ctx-modal {
+    background: var(--bg-elev);
+    border: 1px solid var(--border-strong);
+    max-width: 720px;
+    width: 100%;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .ctx-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--border);
+  }
+  .ctx-modal-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  .ctx-modal-close {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 6px 14px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .ctx-modal-close:hover {
+    border-color: var(--border-strong);
+    color: var(--text);
+  }
+  .ctx-modal-body {
+    padding: 28px;
+    overflow-y: auto;
+    line-height: 1.85;
+    font-size: 15px;
+    white-space: pre-wrap;
+    flex: 1;
+  }
+  .ctx-modal-footer {
+    padding: 14px 28px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--text-faint);
+    text-align: center;
+  }
+  .ctx-modal-footer kbd {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 2px 8px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-dim);
+    margin: 0 2px;
+  }
+
+  /* Timing in results */
+  .qa-q-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .qa-q-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .qa-time {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-faint);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+  }
+  .qa-time.timeout { color: var(--danger); border-color: var(--danger); }
+  .qa-time.unanswered { color: var(--text-faint); opacity: 0.5; }
+
   @media (max-width: 720px) {
     .container, .case-screen, .question-screen, .results-screen { padding: 32px 20px; }
     .landing-title { font-size: 38px; }
@@ -833,14 +940,22 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
   const [qIdx, setQIdx] = useState(0);
   const [timeUp, setTimeUp] = useState(false);
   const [showEndConfirm, setShowEndConfirm] = useState(false);
+  const [showContext, setShowContext] = useState(false);
+  // 每小題作答秒數：index -> seconds (number)；被計時器中斷的最後一題會帶 timeout 標記
+  const [qTimings, setQTimings] = useState({});
   const totalQ = caseData.questions.length;
   const onCaseEndRef = useRef(onCaseEnd);
   onCaseEndRef.current = onCaseEnd;
+
+  // 紀錄當前小題的開始時間（以 case 開始後經過的秒數計）
+  const qStartElapsedRef = useRef(0);
 
   useEffect(() => {
     setRemaining(SECONDS_PER_CASE);
     setQIdx(0);
     setTimeUp(false);
+    setQTimings({});
+    qStartElapsedRef.current = 0;
   }, [caseIdx]);
 
   useEffect(() => {
@@ -849,6 +964,10 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
       setRemaining(prev => {
         if (prev <= 1) {
           clearInterval(timer);
+          // 計時器到 → 把當前小題的剩餘時間結算為 timeout
+          const elapsed = SECONDS_PER_CASE - 0;
+          const spent = elapsed - qStartElapsedRef.current;
+          setQTimings(t => ({ ...t, [qIdx]: { seconds: spent, timeout: true } }));
           setTimeUp(true);
           return 0;
         }
@@ -856,10 +975,19 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, [caseIdx, timeUp]);
+  }, [caseIdx, timeUp, qIdx]);
+
+  // 紀錄某題完成時間（按下一題時呼叫）
+  const recordCurrentQTime = () => {
+    const elapsed = SECONDS_PER_CASE - remaining;
+    const spent = elapsed - qStartElapsedRef.current;
+    setQTimings(t => ({ ...t, [qIdx]: { seconds: spent, timeout: false } }));
+    qStartElapsedRef.current = elapsed;
+  };
 
   const handleNextQ = () => {
     if (qIdx + 1 < totalQ) {
+      recordCurrentQTime();
       setQIdx(qIdx + 1);
     } else {
       setShowEndConfirm(true);
@@ -867,8 +995,50 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
   };
 
   const handlePrevQ = () => {
-    if (qIdx > 0) setQIdx(qIdx - 1);
+    if (qIdx > 0) {
+      // 退回上一題：把這題已花費時間累計回 qStartElapsedRef，並清掉上一題已記錄的時間
+      const elapsed = SECONDS_PER_CASE - remaining;
+      // 從 timing 中移除上一題（讓使用者重新作答）
+      setQTimings(t => {
+        const newT = { ...t };
+        delete newT[qIdx - 1];
+        return newT;
+      });
+      // 把 qStart 倒推回上一題的起點（用已知的之前 timings 累加）
+      // 簡化做法：以目前已紀錄的 0..qIdx-2 題加總當作上一題的起點
+      let baseElapsed = 0;
+      for (let i = 0; i < qIdx - 1; i++) {
+        if (qTimings[i]) baseElapsed += qTimings[i].seconds;
+      }
+      qStartElapsedRef.current = baseElapsed;
+      setQIdx(qIdx - 1);
+    }
   };
+
+  const handleConfirmEnd = () => {
+    recordCurrentQTime();
+    setShowEndConfirm(false);
+    onCaseEnd(qTimings, qIdx);
+  };
+
+  const handleTimeUpEnd = () => {
+    onCaseEndRef.current(qTimings, qIdx);
+  };
+
+  // 鍵盤快捷鍵：H 或 Space 開關題幹
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.code === 'KeyH' || (e.code === 'Space' && !showEndConfirm && !timeUp)) {
+        e.preventDefault();
+        setShowContext(prev => !prev);
+      } else if (e.code === 'Escape') {
+        setShowContext(false);
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [showEndConfirm, timeUp]);
 
   const pct = (remaining / SECONDS_PER_CASE) * 100;
   const cls = remaining <= 60 ? 'danger' : remaining <= 120 ? 'warning' : '';
@@ -899,7 +1069,9 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
       </div>
 
       <div className="q-controls">
-        <span className="q-hint">請以口述方式作答</span>
+        <button className="ctrl-btn" onClick={() => setShowContext(true)}>
+          📋 查看題幹
+        </button>
         <div className="q-btns">
           {qIdx > 0 && (
             <button className="ctrl-btn" onClick={handlePrevQ}>← 上一題</button>
@@ -910,12 +1082,29 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
         </div>
       </div>
 
+      {showContext && (
+        <div className="ctx-modal-bg" onClick={() => setShowContext(false)}>
+          <div className="ctx-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="ctx-modal-header">
+              <div className="ctx-modal-title">CASE CONTEXT — 題幹</div>
+              <button className="ctx-modal-close" onClick={() => setShowContext(false)}>
+                關閉 ESC
+              </button>
+            </div>
+            <div className="ctx-modal-body">{caseData.context}</div>
+            <div className="ctx-modal-footer">
+              快捷鍵 <kbd>H</kbd> 或 <kbd>SPACE</kbd> 開關 · 計時器持續進行
+            </div>
+          </div>
+        </div>
+      )}
+
       {timeUp && (
         <div className="timeup-overlay">
           <div className="timeup-mark">TIME UP</div>
           <div className="timeup-title">時間到</div>
           <div className="timeup-sub">本大題作答時間結束</div>
-          <button className="start-btn" style={{maxWidth:280}} onClick={() => onCaseEndRef.current()}>
+          <button className="start-btn" style={{maxWidth:280}} onClick={handleTimeUpEnd}>
             {caseIdx + 1 < caseTotal ? '進入下一大題 →' : '查看完整詳解 →'}
           </button>
         </div>
@@ -928,7 +1117,7 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
             <div className="modal-text">你已回答完所有小題。確認結束後將進入下一階段，剩餘時間將不被使用。</div>
             <div className="modal-btns">
               <button className="modal-btn" onClick={() => setShowEndConfirm(false)}>繼續使用時間</button>
-              <button className="modal-btn primary" onClick={() => { setShowEndConfirm(false); onCaseEnd(); }}>
+              <button className="modal-btn primary" onClick={handleConfirmEnd}>
                 結束本大題
               </button>
             </div>
@@ -939,17 +1128,18 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
   );
 }
 
-function Results({ selectedCases, onRestart }) {
+function Results({ selectedCases, caseTimings, onRestart }) {
   return (
     <div className="results-screen">
       <div className="results-header">
         <div className="eyebrow">Examination Complete</div>
         <h1 className="results-title">完整詳解</h1>
-        <p className="results-sub">以下為本場所有題目的參考答案</p>
+        <p className="results-sub">以下為本場所有題目的參考答案，每題作答時間顯示於右側</p>
       </div>
 
       {selectedCases.map((c, ci) => {
         const domain = DOMAINS.find(d => d.id === c.domain);
+        const timings = caseTimings[ci] || { timings: {}, lastQIdx: -1 };
         return (
           <div key={c.id} className="case-block">
             <div className="case-block-header">
@@ -958,12 +1148,30 @@ function Results({ selectedCases, onRestart }) {
               {domain && <div className="case-domain-tag">{domain.tc}</div>}
             </div>
             <div className="case-context">{c.context}</div>
-            {c.questions.map((qa, qi) => (
-              <div key={qi} className="qa-block">
-                <div className="qa-q">{qa.q}</div>
-                <div className="qa-a" dangerouslySetInnerHTML={{__html: qa.a}}></div>
-              </div>
-            ))}
+            {c.questions.map((qa, qi) => {
+              const t = timings.timings[qi];
+              let timeBadge;
+              if (t) {
+                timeBadge = (
+                  <div className={`qa-time ${t.timeout ? 'timeout' : ''}`}>
+                    {t.timeout && '⏱ '}{fmtTime(t.seconds)}{t.timeout && ' · 時間到'}
+                  </div>
+                );
+              } else if (qi <= timings.lastQIdx) {
+                timeBadge = <div className="qa-time">—</div>;
+              } else {
+                timeBadge = <div className="qa-time unanswered">未作答</div>;
+              }
+              return (
+                <div key={qi} className="qa-block">
+                  <div className="qa-q-row">
+                    <div className="qa-q qa-q-text" style={{marginBottom: 0}}>{qa.q}</div>
+                    {timeBadge}
+                  </div>
+                  <div className="qa-a" dangerouslySetInnerHTML={{__html: qa.a}}></div>
+                </div>
+              );
+            })}
           </div>
         );
       })}
@@ -977,18 +1185,25 @@ function App() {
   const [phase, setPhase] = useState('landing');
   const [selectedCases, setSelectedCases] = useState([]);
   const [caseIdx, setCaseIdx] = useState(0);
+  // caseTimings[caseIndex] = { timings: {qIdx: {seconds, timeout}}, lastQIdx }
+  const [caseTimings, setCaseTimings] = useState({});
 
   const handleStart = (domainId, count) => {
     const pool = casesByDomain(domainId);
     const picked = shuffle(pool).slice(0, count);
     setSelectedCases(picked);
     setCaseIdx(0);
+    setCaseTimings({});
     setPhase('intro');
   };
 
   const handleReady = () => setPhase('running');
 
-  const handleCaseEnd = () => {
+  const handleCaseEnd = (timings, lastQIdx) => {
+    setCaseTimings(prev => ({
+      ...prev,
+      [caseIdx]: { timings: timings || {}, lastQIdx: lastQIdx ?? -1 }
+    }));
     if (caseIdx + 1 < selectedCases.length) {
       setCaseIdx(caseIdx + 1);
       setPhase('intro');
@@ -1001,6 +1216,7 @@ function App() {
     setPhase('landing');
     setSelectedCases([]);
     setCaseIdx(0);
+    setCaseTimings({});
   };
 
   return (
@@ -1012,7 +1228,7 @@ function App() {
       {phase === 'running' && (
         <CaseRunner caseData={selectedCases[caseIdx]} caseIdx={caseIdx} caseTotal={selectedCases.length} onCaseEnd={handleCaseEnd} />
       )}
-      {phase === 'results' && <Results selectedCases={selectedCases} onRestart={handleRestart} />}
+      {phase === 'results' && <Results selectedCases={selectedCases} caseTimings={caseTimings} onRestart={handleRestart} />}
     </>
   );
 }
