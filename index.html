@@ -175,12 +175,14 @@
     background: var(--bg-card);
     border: 1px solid var(--border);
     color: var(--text);
-    padding: 18px 0;
-    font-family: var(--serif);
-    font-size: 28px;
-    font-weight: 500;
+    padding: 18px 10px;
+    font-family: var(--tc);
     cursor: pointer;
     transition: all 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
   }
   .count-btn:hover:not(:disabled) {
     border-color: var(--border-strong);
@@ -192,6 +194,22 @@
     background: rgba(212, 165, 72, 0.06);
   }
   .count-btn:disabled { opacity: 0.25; cursor: not-allowed; }
+  .count-btn-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+  }
+  .count-btn.active .count-btn-label {
+    color: var(--accent);
+  }
+  .count-btn-num {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+  }
 
   .info-grid {
     display: grid;
@@ -318,10 +336,13 @@
     color: var(--accent);
     font-variant-numeric: tabular-nums;
     line-height: 1;
+    transition: font-size 0.3s ease, color 0.3s ease;
   }
   .timer.warning { color: var(--warn); }
   .timer.danger {
     color: var(--danger);
+    font-size: 64px;
+    font-weight: 700;
     animation: pulse 1s ease-in-out infinite;
   }
   @keyframes pulse {
@@ -792,7 +813,7 @@ NSx 評估後採保守治療，住院第 5 天會診復健科。
   },
 ];
 
-const SECONDS_PER_CASE = 480;
+const SECONDS_PER_CASE = 540;
 
 const fmtTime = (s) => {
   const m = Math.floor(s / 60);
@@ -830,7 +851,7 @@ function Landing({ onStart }) {
           <span className="tc">復健科專科口試模擬</span>
         </h1>
         <p className="landing-sub">
-          每大題八分鐘，模擬真實口試節奏。倒數結束自動結束本題。
+          每大題九分鐘，模擬真實口試節奏。倒數結束自動結束本題。
           作答以口述為主，全部考完後一次顯示完整詳解。
         </p>
       </div>
@@ -871,7 +892,8 @@ function Landing({ onStart }) {
                   onClick={() => setCount(n)}
                   disabled={n > maxCount}
                 >
-                  {n}
+                  <span className="count-btn-label">模擬題</span>
+                  <span className="count-btn-num">{n}</span>
                 </button>
               ))}
             </div>
@@ -880,7 +902,7 @@ function Landing({ onStart }) {
           <div className="info-grid">
             <div className="info-cell">
               <div className="info-cell-label">每大題時限</div>
-              <div className="info-cell-value">8 分鐘</div>
+              <div className="info-cell-value">9 分鐘</div>
             </div>
             <div className="info-cell">
               <div className="info-cell-label">小題進度</div>
@@ -929,7 +951,7 @@ function CaseIntro({ caseData, idx, total, onReady }) {
         準備好了，開始作答 →
       </button>
       <div className="ready-note">
-        進入後 8 分鐘倒數開始 · 自行掌控小題節奏
+        進入後 9 分鐘倒數開始 · 自行掌控小題節奏
       </div>
     </div>
   );
@@ -941,14 +963,19 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
   const [timeUp, setTimeUp] = useState(false);
   const [showEndConfirm, setShowEndConfirm] = useState(false);
   const [showContext, setShowContext] = useState(false);
-  // 每小題作答秒數：index -> seconds (number)；被計時器中斷的最後一題會帶 timeout 標記
+  // qTimings[i] = { seconds: 累計秒數, timeout: bool, visited: bool }
   const [qTimings, setQTimings] = useState({});
   const totalQ = caseData.questions.length;
   const onCaseEndRef = useRef(onCaseEnd);
   onCaseEndRef.current = onCaseEnd;
 
-  // 紀錄當前小題的開始時間（以 case 開始後經過的秒數計）
+  // 紀錄當前小題「這次進入」的開始時刻（以 case 開始後經過的秒數計）
   const qStartElapsedRef = useRef(0);
+  // 用 ref 持有最新 qIdx 和 qTimings，避免 timer 拿到 stale closure
+  const qIdxRef = useRef(qIdx);
+  const qTimingsRef = useRef(qTimings);
+  qIdxRef.current = qIdx;
+  qTimingsRef.current = qTimings;
 
   useEffect(() => {
     setRemaining(SECONDS_PER_CASE);
@@ -964,10 +991,16 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
       setRemaining(prev => {
         if (prev <= 1) {
           clearInterval(timer);
-          // 計時器到 → 把當前小題的剩餘時間結算為 timeout
-          const elapsed = SECONDS_PER_CASE - 0;
-          const spent = elapsed - qStartElapsedRef.current;
-          setQTimings(t => ({ ...t, [qIdx]: { seconds: spent, timeout: true } }));
+          // 計時器到 → 結算當前小題剩餘的這段時間，累計上去
+          const elapsed = SECONDS_PER_CASE;
+          const spentThisVisit = elapsed - qStartElapsedRef.current;
+          const currentQ = qIdxRef.current;
+          const prevTiming = qTimingsRef.current[currentQ];
+          const accumulated = (prevTiming?.seconds || 0) + spentThisVisit;
+          setQTimings(t => ({
+            ...t,
+            [currentQ]: { seconds: accumulated, timeout: true, visited: true }
+          }));
           setTimeUp(true);
           return 0;
         }
@@ -975,19 +1008,37 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, [caseIdx, timeUp, qIdx]);
+  }, [caseIdx, timeUp]);
 
-  // 紀錄某題完成時間（按下一題時呼叫）
-  const recordCurrentQTime = () => {
+  // 將「這次停留在當前小題的時間」累加進去，並把 qStart 移到現在
+  const accumulateCurrentQTime = () => {
     const elapsed = SECONDS_PER_CASE - remaining;
-    const spent = elapsed - qStartElapsedRef.current;
-    setQTimings(t => ({ ...t, [qIdx]: { seconds: spent, timeout: false } }));
+    const spentThisVisit = elapsed - qStartElapsedRef.current;
+    if (spentThisVisit > 0) {
+      setQTimings(t => {
+        const prev = t[qIdx];
+        return {
+          ...t,
+          [qIdx]: {
+            seconds: (prev?.seconds || 0) + spentThisVisit,
+            timeout: false,
+            visited: true,
+          }
+        };
+      });
+    } else {
+      // 即使停留 0 秒，也標記為 visited（代表使用者有經過這題）
+      setQTimings(t => ({
+        ...t,
+        [qIdx]: { seconds: t[qIdx]?.seconds || 0, timeout: false, visited: true }
+      }));
+    }
     qStartElapsedRef.current = elapsed;
   };
 
   const handleNextQ = () => {
     if (qIdx + 1 < totalQ) {
-      recordCurrentQTime();
+      accumulateCurrentQTime();
       setQIdx(qIdx + 1);
     } else {
       setShowEndConfirm(true);
@@ -996,36 +1047,25 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
 
   const handlePrevQ = () => {
     if (qIdx > 0) {
-      // 退回上一題：把這題已花費時間累計回 qStartElapsedRef，並清掉上一題已記錄的時間
-      const elapsed = SECONDS_PER_CASE - remaining;
-      // 從 timing 中移除上一題（讓使用者重新作答）
-      setQTimings(t => {
-        const newT = { ...t };
-        delete newT[qIdx - 1];
-        return newT;
-      });
-      // 把 qStart 倒推回上一題的起點（用已知的之前 timings 累加）
-      // 簡化做法：以目前已紀錄的 0..qIdx-2 題加總當作上一題的起點
-      let baseElapsed = 0;
-      for (let i = 0; i < qIdx - 1; i++) {
-        if (qTimings[i]) baseElapsed += qTimings[i].seconds;
-      }
-      qStartElapsedRef.current = baseElapsed;
+      accumulateCurrentQTime();
       setQIdx(qIdx - 1);
     }
   };
 
   const handleConfirmEnd = () => {
-    recordCurrentQTime();
+    accumulateCurrentQTime();
     setShowEndConfirm(false);
-    onCaseEnd(qTimings, qIdx);
+    // 用 setTimeout 確保 state 更新後再傳出去
+    setTimeout(() => {
+      onCaseEndRef.current(qTimingsRef.current, qIdxRef.current);
+    }, 0);
   };
 
   const handleTimeUpEnd = () => {
-    onCaseEndRef.current(qTimings, qIdx);
+    onCaseEndRef.current(qTimingsRef.current, qIdxRef.current);
   };
 
-  // 鍵盤快捷鍵：H 或 Space 開關題幹
+  // 鍵盤快捷鍵
   useEffect(() => {
     const onKey = (e) => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
@@ -1041,7 +1081,7 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
   }, [showEndConfirm, timeUp]);
 
   const pct = (remaining / SECONDS_PER_CASE) * 100;
-  const cls = remaining <= 60 ? 'danger' : remaining <= 120 ? 'warning' : '';
+  const cls = remaining <= 60 ? 'danger' : '';
   const domain = DOMAINS.find(d => d.id === caseData.domain);
 
   return (
@@ -1151,14 +1191,12 @@ function Results({ selectedCases, caseTimings, onRestart }) {
             {c.questions.map((qa, qi) => {
               const t = timings.timings[qi];
               let timeBadge;
-              if (t) {
+              if (t && t.visited) {
                 timeBadge = (
                   <div className={`qa-time ${t.timeout ? 'timeout' : ''}`}>
                     {t.timeout && '⏱ '}{fmtTime(t.seconds)}{t.timeout && ' · 時間到'}
                   </div>
                 );
-              } else if (qi <= timings.lastQIdx) {
-                timeBadge = <div className="qa-time">—</div>;
               } else {
                 timeBadge = <div className="qa-time unanswered">未作答</div>;
               }
