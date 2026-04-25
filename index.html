@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>復健科專科口試模擬</title>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0e0f;
+    --bg-elev: #16181a;
+    --bg-card: #1c1f22;
+    --border: #2a2e33;
+    --border-strong: #3a3f45;
+    --text: #e8e6e1;
+    --text-dim: #9ca0a6;
+    --text-faint: #5a5e64;
+    --accent: #d4a548;
+    --accent-dim: #8a6a2c;
+    --warn: #e07a5f;
+    --danger: #c8553d;
+    --serif: 'Cormorant Garamond', 'Noto Serif TC', serif;
+    --tc: 'Noto Serif TC', serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--tc);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+  }
+
+  body {
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(212, 165, 72, 0.04) 0%, transparent 40%),
+      radial-gradient(circle at 85% 90%, rgba(212, 165, 72, 0.03) 0%, transparent 40%);
+  }
+
+  #root { min-height: 100vh; }
+
+  .container {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 48px 32px;
+  }
+
+  .landing-header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+    margin-bottom: 48px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .landing-title {
+    font-family: var(--serif);
+    font-size: 56px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 12px;
+  }
+  .landing-title .tc {
+    font-family: var(--tc);
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  .landing-sub {
+    color: var(--text-dim);
+    font-size: 15px;
+    max-width: 560px;
+  }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .domain-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-bottom: 56px;
+  }
+  .domain-cell {
+    background: var(--bg);
+    padding: 28px 20px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-align: left;
+    border: none;
+    color: var(--text);
+    font-family: var(--tc);
+    position: relative;
+  }
+  .domain-cell:hover:not(:disabled) { background: var(--bg-elev); }
+  .domain-cell.active { background: rgba(212, 165, 72, 0.08); }
+  .domain-cell.active::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent);
+  }
+  .domain-cell:disabled { opacity: 0.35; cursor: not-allowed; }
+  .domain-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-faint);
+    letter-spacing: 0.2em;
+    margin-bottom: 10px;
+  }
+  .domain-name-en {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--text-dim);
+    font-style: italic;
+    margin-bottom: 4px;
+  }
+  .domain-name-tc {
+    font-family: var(--tc);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .domain-cell.active .domain-name-tc { color: var(--accent); }
+  .domain-count {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text-faint);
+    letter-spacing: 0.15em;
+    margin-top: 12px;
+  }
+
+  .config-group { margin-bottom: 40px; }
+  .config-label {
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+  }
+
+  .count-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+  }
+  .count-btn {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 18px 0;
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .count-btn:hover:not(:disabled) {
+    border-color: var(--border-strong);
+    background: var(--bg-elev);
+  }
+  .count-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(212, 165, 72, 0.06);
+  }
+  .count-btn:disabled { opacity: 0.25; cursor: not-allowed; }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+  .info-cell {
+    background: var(--bg);
+    padding: 18px 22px;
+  }
+  .info-cell-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .info-cell-value {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--text);
+  }
+
+  .start-btn {
+    width: 100%;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    padding: 22px;
+    font-family: var(--tc);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .start-btn:hover:not(:disabled) {
+    background: #e0b25a;
+    transform: translateY(-1px);
+  }
+  .start-btn:disabled {
+    background: var(--border);
+    color: var(--text-faint);
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .case-screen {
+    min-height: 100vh;
+    padding: 48px 32px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .case-header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .case-title {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .case-progress {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+  }
+  .case-body {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 36px 40px;
+    margin-bottom: 32px;
+    line-height: 1.85;
+    font-size: 15.5px;
+    white-space: pre-wrap;
+  }
+  .ready-note {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-faint);
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 24px 0;
+  }
+
+  .question-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .q-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  .q-marker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--text-faint);
+    text-transform: uppercase;
+  }
+  .q-marker .accent { color: var(--accent); }
+  .timer {
+    font-family: var(--mono);
+    font-size: 44px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .timer.warning { color: var(--warn); }
+  .timer.danger {
+    color: var(--danger);
+    animation: pulse 1s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .progress-bar {
+    height: 2px;
+    background: var(--border);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    transition: width 1s linear;
+  }
+  .progress-fill.warning { background: var(--warn); }
+  .progress-fill.danger { background: var(--danger); }
+
+  .subq-dots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 36px;
+    justify-content: center;
+  }
+  .subq-dot {
+    width: 28px;
+    height: 4px;
+    background: var(--border);
+    transition: background 0.2s ease;
+  }
+  .subq-dot.done { background: var(--accent-dim); }
+  .subq-dot.current { background: var(--accent); }
+
+  .q-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+    min-height: 320px;
+  }
+  .q-text {
+    font-family: var(--tc);
+    font-size: 26px;
+    line-height: 1.55;
+    font-weight: 400;
+    text-align: left;
+    max-width: 760px;
+    color: var(--text);
+  }
+
+  .q-controls {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .q-hint {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-faint);
+    letter-spacing: 0.15em;
+  }
+  .q-btns {
+    display: flex;
+    gap: 10px;
+  }
+  .ctrl-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 10px 20px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .ctrl-btn:hover {
+    border-color: var(--border-strong);
+    color: var(--text);
+  }
+  .ctrl-btn.primary {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .ctrl-btn.primary:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  .timeup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 14, 15, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    padding: 32px;
+  }
+  .timeup-mark {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    color: var(--danger);
+    margin-bottom: 16px;
+  }
+  .timeup-title {
+    font-family: var(--serif);
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  .timeup-sub {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .results-screen {
+    padding: 48px 32px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .results-header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+    margin-bottom: 48px;
+  }
+  .results-title {
+    font-family: var(--serif);
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .results-sub {
+    color: var(--text-dim);
+    font-size: 15px;
+  }
+
+  .case-block { margin-bottom: 64px; }
+  .case-block-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .case-block-num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+  }
+  .case-block-title {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 500;
+    flex: 1;
+  }
+  .case-domain-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--text-faint);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+  }
+  .case-context {
+    background: var(--bg-card);
+    border-left: 2px solid var(--accent-dim);
+    padding: 22px 28px;
+    margin-bottom: 28px;
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--text-dim);
+    white-space: pre-wrap;
+  }
+
+  .qa-block {
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px dashed var(--border);
+  }
+  .qa-block:last-child { border-bottom: none; }
+  .qa-q {
+    font-family: var(--tc);
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 16px;
+    line-height: 1.55;
+  }
+  .qa-q::before {
+    content: 'Q';
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    margin-right: 12px;
+    letter-spacing: 0.2em;
+    vertical-align: middle;
+  }
+  .qa-a {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--text);
+    padding-left: 24px;
+    border-left: 1px solid var(--border);
+  }
+  .qa-a strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .qa-a ul, .qa-a ol { margin: 8px 0 12px 20px; }
+  .qa-a li { margin-bottom: 6px; }
+  .qa-a p { margin-bottom: 12px; }
+  .qa-a p:last-child { margin-bottom: 0; }
+  .qa-a code {
+    background: var(--bg-card);
+    padding: 2px 6px;
+    font-family: var(--mono);
+    font-size: 13px;
+    border: 1px solid var(--border);
+  }
+
+  .restart-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 20px;
+    font-family: var(--tc);
+    font-size: 16px;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    margin-top: 32px;
+    transition: all 0.2s ease;
+  }
+  .restart-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  .modal-bg {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+  }
+  .modal {
+    background: var(--bg-elev);
+    border: 1px solid var(--border-strong);
+    padding: 40px;
+    max-width: 440px;
+    width: calc(100% - 64px);
+    text-align: center;
+  }
+  .modal-title {
+    font-family: var(--serif);
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+  .modal-text {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .modal-btns {
+    display: flex;
+    gap: 12px;
+  }
+  .modal-btn {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    font-family: var(--tc);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .modal-btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--bg);
+  }
+  .modal-btn:hover { background: var(--bg-card); }
+  .modal-btn.primary:hover { background: #e0b25a; }
+
+  @media (max-width: 720px) {
+    .container, .case-screen, .question-screen, .results-screen { padding: 32px 20px; }
+    .landing-title { font-size: 38px; }
+    .q-text { font-size: 20px; }
+    .timer { font-size: 32px; }
+    .count-grid { grid-template-columns: repeat(3, 1fr); }
+    .domain-grid { grid-template-columns: repeat(2, 1fr); }
+    .info-grid { grid-template-columns: 1fr; }
+    .case-body { padding: 24px; font-size: 14.5px; }
+    .q-controls { flex-direction: column; align-items: stretch; }
+    .q-btns { justify-content: space-between; }
+  }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+const DOMAINS = [
+  { id: 'cardio',     en: 'Cardiovascular',          tc: '心血管' },
+  { id: 'sci',        en: 'Spinal Cord Injury',      tc: '脊髓損傷' },
+  { id: 'pediatric',  en: 'Pediatric',               tc: '小兒' },
+  { id: 'modality',   en: 'Modalities',              tc: '儀器' },
+  { id: 'pulmonary',  en: 'Cardiopulmonary',         tc: '心肺' },
+  { id: 'prosthetic', en: 'Prosthetics & Orthotics', tc: '義肢裝具' },
+  { id: 'electro',    en: 'Electrodiagnosis',        tc: '電學檢查' },
+  { id: 'msk',        en: 'Musculoskeletal',         tc: '骨關節' },
+];
+
+// 題庫（含 domain 欄位）
+const CASES = [
+  {
+    id: 'cardio_demo_001',
+    domain: 'cardio',
+    title: '左側 Basal Ganglia 出血性中風',
+    context: `68 歲女性，過去病史有 hypertension、DM、AF（未規則服用 warfarin）。今晨 7:30 家人發現病人倒在廁所地上，無法言語、右側肢體無力。送至急診時 GCS E3V2M5，BP 198/112 mmHg，blood sugar 186 mg/dL。
+
+急診 brain CT 顯示：left basal ganglia 區域 high density lesion 約 4.2 × 3.1 cm，伴隨 intraventricular extension 及輕微 midline shift（約 4 mm）。
+
+NSx 評估後採保守治療，住院第 5 天會診復健科。
+
+目前狀況：意識清楚但嗜睡，可服從簡單指令但常需重複，言語表達困難、僅能說出單字。右上肢 MRC 1/5、右下肢 2/5；左側肌力正常。留置 NG tube 及 Foley。`,
+    questions: [
+      { q: '請判讀這個病人的 brain CT 表現，並說明你的診斷。', a: `<p>(待填入完整詳解)</p>` },
+      { q: '根據病灶位置，這位病人會出現哪些臨床症狀？請從 motor、sensory、language、cognitive、bladder 各方面說明。', a: `<p>(待填入完整詳解)</p>` },
+      { q: '病人現在的失語症類型最可能是什麼？你會如何在床邊評估？請現場示範。', a: `<p>(待填入完整詳解)</p>` },
+      { q: '請說明這位病人的 Brunnstrom stage 評估方式，並預測他上肢與下肢的恢復順序。', a: `<p>(待填入完整詳解)</p>` },
+      { q: '急性期（住院期間）的復健重點是什麼？你開立的復健處方會包含哪些項目？', a: `<p>(待填入完整詳解)</p>` },
+      { q: '這位病人有哪些常見的 stroke 併發症需要注意？請至少列出 5 項並說明預防或處置方式。', a: `<p>(待填入完整詳解)</p>` },
+      { q: '病人住院兩週後仍無法經口進食，家屬詢問可否申請長照 2.0、身心障礙手冊及居家照護資源。請說明申請條件與流程。', a: `<p>(待填入完整詳解)</p>` },
+      { q: '出院 3 個月後家屬詢問：「我朋友的爸爸也是中風，現在已經能自己走路，為什麼我媽媽還是這樣？」請說明你會如何回應，以及影響中風預後的危險因子有哪些。', a: `<p>(待填入完整詳解)</p>` },
+    ],
+  },
+];
+
+const SECONDS_PER_CASE = 480;
+
+const fmtTime = (s) => {
+  const m = Math.floor(s / 60);
+  const sec = s % 60;
+  return `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+};
+
+const shuffle = (arr) => {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+};
+
+const casesByDomain = (id) => CASES.filter(c => c.domain === id);
+
+function Landing({ onStart }) {
+  const [selectedDomain, setSelectedDomain] = useState(null);
+  const [count, setCount] = useState(1);
+  const availableCases = selectedDomain ? casesByDomain(selectedDomain) : [];
+  const maxCount = availableCases.length;
+
+  useEffect(() => {
+    if (count > maxCount && maxCount > 0) setCount(maxCount);
+  }, [selectedDomain, maxCount]);
+
+  return (
+    <div className="container">
+      <div className="landing-header">
+        <div className="eyebrow">Physical Medicine & Rehabilitation</div>
+        <h1 className="landing-title">
+          Oral Examination<br/>
+          <span className="tc">復健科專科口試模擬</span>
+        </h1>
+        <p className="landing-sub">
+          每大題八分鐘，模擬真實口試節奏。倒數結束自動結束本題。
+          作答以口述為主，全部考完後一次顯示完整詳解。
+        </p>
+      </div>
+
+      <div className="config-group">
+        <div className="section-label">DOMAIN — 選擇領域</div>
+        <div className="domain-grid">
+          {DOMAINS.map((d, i) => {
+            const n = casesByDomain(d.id).length;
+            const disabled = n === 0;
+            return (
+              <button
+                key={d.id}
+                className={`domain-cell ${selectedDomain === d.id ? 'active' : ''}`}
+                onClick={() => !disabled && setSelectedDomain(d.id)}
+                disabled={disabled}
+              >
+                <div className="domain-num">{String(i+1).padStart(2,'0')}</div>
+                <div className="domain-name-en">{d.en}</div>
+                <div className="domain-name-tc">{d.tc}</div>
+                <div className="domain-count">{n} CASE{n !== 1 ? 'S' : ''}</div>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {selectedDomain && maxCount > 0 && (
+        <>
+          <div className="config-group">
+            <div className="section-label">PRACTICE — 練習題數</div>
+            <div className="config-label">本場練習大題數量（實際國考為 1 大題）</div>
+            <div className="count-grid">
+              {[1,2,3,4,5].map(n => (
+                <button
+                  key={n}
+                  className={`count-btn ${count === n ? 'active' : ''}`}
+                  onClick={() => setCount(n)}
+                  disabled={n > maxCount}
+                >
+                  {n}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="info-grid">
+            <div className="info-cell">
+              <div className="info-cell-label">每大題時限</div>
+              <div className="info-cell-value">8 分鐘</div>
+            </div>
+            <div className="info-cell">
+              <div className="info-cell-label">小題進度</div>
+              <div className="info-cell-value">手動控制</div>
+            </div>
+            <div className="info-cell">
+              <div className="info-cell-label">作答方式</div>
+              <div className="info-cell-value">純口述</div>
+            </div>
+          </div>
+
+          <button className="start-btn" onClick={() => onStart(selectedDomain, count)}>
+            開始模擬考試 →
+          </button>
+        </>
+      )}
+
+      {selectedDomain && maxCount === 0 && (
+        <div style={{textAlign:'center', padding:'48px 0', color:'var(--text-faint)', fontFamily:'var(--mono)', fontSize:12, letterSpacing:'0.2em'}}>
+          此領域題庫尚未建置
+        </div>
+      )}
+
+      {!selectedDomain && (
+        <div style={{textAlign:'center', padding:'48px 0', color:'var(--text-faint)', fontFamily:'var(--mono)', fontSize:12, letterSpacing:'0.2em'}}>
+          請先選擇領域
+        </div>
+      )}
+    </div>
+  );
+}
+
+function CaseIntro({ caseData, idx, total, onReady }) {
+  const domain = DOMAINS.find(d => d.id === caseData.domain);
+  return (
+    <div className="case-screen">
+      <div className="case-header">
+        <div className="case-title">臨床情境</div>
+        <div className="case-progress">
+          {domain && <span style={{color:'var(--accent)'}}>{domain.tc}</span>}
+          {' · CASE '}{idx + 1} / {total}
+        </div>
+      </div>
+      <div className="case-body">{caseData.context}</div>
+      <button className="start-btn" onClick={onReady}>
+        準備好了，開始作答 →
+      </button>
+      <div className="ready-note">
+        進入後 8 分鐘倒數開始 · 自行掌控小題節奏
+      </div>
+    </div>
+  );
+}
+
+function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
+  const [remaining, setRemaining] = useState(SECONDS_PER_CASE);
+  const [qIdx, setQIdx] = useState(0);
+  const [timeUp, setTimeUp] = useState(false);
+  const [showEndConfirm, setShowEndConfirm] = useState(false);
+  const totalQ = caseData.questions.length;
+  const onCaseEndRef = useRef(onCaseEnd);
+  onCaseEndRef.current = onCaseEnd;
+
+  useEffect(() => {
+    setRemaining(SECONDS_PER_CASE);
+    setQIdx(0);
+    setTimeUp(false);
+  }, [caseIdx]);
+
+  useEffect(() => {
+    if (timeUp) return;
+    const timer = setInterval(() => {
+      setRemaining(prev => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          setTimeUp(true);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [caseIdx, timeUp]);
+
+  const handleNextQ = () => {
+    if (qIdx + 1 < totalQ) {
+      setQIdx(qIdx + 1);
+    } else {
+      setShowEndConfirm(true);
+    }
+  };
+
+  const handlePrevQ = () => {
+    if (qIdx > 0) setQIdx(qIdx - 1);
+  };
+
+  const pct = (remaining / SECONDS_PER_CASE) * 100;
+  const cls = remaining <= 60 ? 'danger' : remaining <= 120 ? 'warning' : '';
+  const domain = DOMAINS.find(d => d.id === caseData.domain);
+
+  return (
+    <div className="question-screen">
+      <div className="q-top">
+        <div className="q-marker">
+          {domain && <span className="accent">{domain.tc}</span>}
+          {' · CASE '}{caseIdx + 1}/{caseTotal}{' · QUESTION '}{qIdx + 1}/{totalQ}
+        </div>
+        <div className={`timer ${cls}`}>{fmtTime(remaining)}</div>
+      </div>
+
+      <div className="progress-bar">
+        <div className={`progress-fill ${cls}`} style={{width: `${pct}%`}}></div>
+      </div>
+
+      <div className="subq-dots">
+        {Array.from({length: totalQ}).map((_, i) => (
+          <div key={i} className={`subq-dot ${i < qIdx ? 'done' : i === qIdx ? 'current' : ''}`}></div>
+        ))}
+      </div>
+
+      <div className="q-body">
+        <div className="q-text">{caseData.questions[qIdx].q}</div>
+      </div>
+
+      <div className="q-controls">
+        <span className="q-hint">請以口述方式作答</span>
+        <div className="q-btns">
+          {qIdx > 0 && (
+            <button className="ctrl-btn" onClick={handlePrevQ}>← 上一題</button>
+          )}
+          <button className="ctrl-btn primary" onClick={handleNextQ}>
+            {qIdx + 1 < totalQ ? '下一題 →' : '完成此大題 ✓'}
+          </button>
+        </div>
+      </div>
+
+      {timeUp && (
+        <div className="timeup-overlay">
+          <div className="timeup-mark">TIME UP</div>
+          <div className="timeup-title">時間到</div>
+          <div className="timeup-sub">本大題作答時間結束</div>
+          <button className="start-btn" style={{maxWidth:280}} onClick={() => onCaseEndRef.current()}>
+            {caseIdx + 1 < caseTotal ? '進入下一大題 →' : '查看完整詳解 →'}
+          </button>
+        </div>
+      )}
+
+      {showEndConfirm && (
+        <div className="modal-bg">
+          <div className="modal">
+            <div className="modal-title">結束此大題？</div>
+            <div className="modal-text">你已回答完所有小題。確認結束後將進入下一階段，剩餘時間將不被使用。</div>
+            <div className="modal-btns">
+              <button className="modal-btn" onClick={() => setShowEndConfirm(false)}>繼續使用時間</button>
+              <button className="modal-btn primary" onClick={() => { setShowEndConfirm(false); onCaseEnd(); }}>
+                結束本大題
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Results({ selectedCases, onRestart }) {
+  return (
+    <div className="results-screen">
+      <div className="results-header">
+        <div className="eyebrow">Examination Complete</div>
+        <h1 className="results-title">完整詳解</h1>
+        <p className="results-sub">以下為本場所有題目的參考答案</p>
+      </div>
+
+      {selectedCases.map((c, ci) => {
+        const domain = DOMAINS.find(d => d.id === c.domain);
+        return (
+          <div key={c.id} className="case-block">
+            <div className="case-block-header">
+              <div className="case-block-num">CASE {String(ci+1).padStart(2,'0')}</div>
+              <div className="case-block-title">{c.title}</div>
+              {domain && <div className="case-domain-tag">{domain.tc}</div>}
+            </div>
+            <div className="case-context">{c.context}</div>
+            {c.questions.map((qa, qi) => (
+              <div key={qi} className="qa-block">
+                <div className="qa-q">{qa.q}</div>
+                <div className="qa-a" dangerouslySetInnerHTML={{__html: qa.a}}></div>
+              </div>
+            ))}
+          </div>
+        );
+      })}
+
+      <button className="restart-btn" onClick={onRestart}>← 回到首頁</button>
+    </div>
+  );
+}
+
+function App() {
+  const [phase, setPhase] = useState('landing');
+  const [selectedCases, setSelectedCases] = useState([]);
+  const [caseIdx, setCaseIdx] = useState(0);
+
+  const handleStart = (domainId, count) => {
+    const pool = casesByDomain(domainId);
+    const picked = shuffle(pool).slice(0, count);
+    setSelectedCases(picked);
+    setCaseIdx(0);
+    setPhase('intro');
+  };
+
+  const handleReady = () => setPhase('running');
+
+  const handleCaseEnd = () => {
+    if (caseIdx + 1 < selectedCases.length) {
+      setCaseIdx(caseIdx + 1);
+      setPhase('intro');
+    } else {
+      setPhase('results');
+    }
+  };
+
+  const handleRestart = () => {
+    setPhase('landing');
+    setSelectedCases([]);
+    setCaseIdx(0);
+  };
+
+  return (
+    <>
+      {phase === 'landing' && <Landing onStart={handleStart} />}
+      {phase === 'intro' && (
+        <CaseIntro caseData={selectedCases[caseIdx]} idx={caseIdx} total={selectedCases.length} onReady={handleReady} />
+      )}
+      {phase === 'running' && (
+        <CaseRunner caseData={selectedCases[caseIdx]} caseIdx={caseIdx} caseTotal={selectedCases.length} onCaseEnd={handleCaseEnd} />
+      )}
+      {phase === 'results' && <Results selectedCases={selectedCases} onRestart={handleRestart} />}
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
