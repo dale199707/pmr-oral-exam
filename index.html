@@ -534,49 +534,214 @@
   }
 
   .qa-block {
-    margin-bottom: 36px;
-    padding-bottom: 36px;
-    border-bottom: 1px dashed var(--border);
+    margin-bottom: 24px;
+    padding-bottom: 0;
+    border-bottom: none;
   }
   .qa-block:last-child { border-bottom: none; }
-  .qa-q {
+
+  /* Collapsible question block */
+  .qa-card {
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    transition: border-color 0.15s ease;
+  }
+  .qa-card.open {
+    border-color: var(--border-strong);
+  }
+  .qa-summary {
+    padding: 18px 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    user-select: none;
+    transition: background 0.15s ease;
+  }
+  .qa-summary:hover {
+    background: var(--bg-elev);
+  }
+  .qa-chevron {
+    color: var(--text-faint);
+    font-family: var(--mono);
+    font-size: 12px;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+  .qa-card.open .qa-chevron {
+    transform: rotate(90deg);
+    color: var(--accent);
+  }
+  .qa-q-summary {
     font-family: var(--tc);
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 500;
     color: var(--text);
-    margin-bottom: 16px;
-    line-height: 1.55;
+    line-height: 1.5;
+    flex: 1;
   }
-  .qa-q::before {
-    content: 'Q';
+  .qa-q-num {
     font-family: var(--mono);
     font-size: 11px;
     color: var(--accent);
-    margin-right: 12px;
     letter-spacing: 0.2em;
-    vertical-align: middle;
+    flex-shrink: 0;
   }
-  .qa-a {
-    font-size: 15px;
-    line-height: 1.85;
+  .qa-time {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-faint);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    flex-shrink: 0;
+  }
+  .qa-time.timeout { color: var(--danger); border-color: var(--danger); }
+  .qa-time.unanswered { color: var(--text-faint); opacity: 0.5; }
+
+  .qa-expanded {
+    border-top: 1px solid var(--border);
+    padding: 4px 0;
+  }
+
+  /* Section: keywords */
+  .det-section {
+    padding: 22px 26px;
+    border-bottom: 1px solid var(--border);
+  }
+  .det-section:last-child { border-bottom: none; }
+  .det-section-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .det-section-label::before {
+    content: '◆';
+    font-size: 8px;
+  }
+
+  .keyword-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .keyword-tag {
+    background: rgba(212, 165, 72, 0.08);
+    border: 1px solid var(--accent-dim);
+    color: var(--accent);
+    padding: 5px 11px;
+    font-family: var(--tc);
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+  .keyword-tag.en {
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+
+  .points-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .points-list li {
+    padding: 6px 0 6px 22px;
+    position: relative;
+    font-size: 14.5px;
+    line-height: 1.7;
     color: var(--text);
-    padding-left: 24px;
-    border-left: 1px solid var(--border);
   }
-  .qa-a strong {
+  .points-list li::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 14px;
+    width: 6px;
+    height: 1px;
+    background: var(--accent);
+  }
+  .points-list li strong {
     color: var(--accent);
     font-weight: 500;
   }
-  .qa-a ul, .qa-a ol { margin: 8px 0 12px 20px; }
-  .qa-a li { margin-bottom: 6px; }
-  .qa-a p { margin-bottom: 12px; }
-  .qa-a p:last-child { margin-bottom: 0; }
-  .qa-a code {
-    background: var(--bg-card);
+
+  .det-content {
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--text);
+  }
+  .det-content strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .det-content ul, .det-content ol {
+    margin: 8px 0 12px 20px;
+  }
+  .det-content li {
+    margin-bottom: 6px;
+  }
+  .det-content p { margin-bottom: 12px; }
+  .det-content p:last-child { margin-bottom: 0; }
+  .det-content code {
+    background: var(--bg);
     padding: 2px 6px;
     font-family: var(--mono);
     font-size: 13px;
     border: 1px solid var(--border);
+  }
+  .det-content table {
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 13.5px;
+    width: 100%;
+  }
+  .det-content th, .det-content td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+  }
+  .det-content th {
+    background: var(--bg);
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .det-content h4 {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--text);
+    margin: 16px 0 8px 0;
+    font-weight: 500;
+  }
+
+  /* Expand all controls */
+  .results-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+    justify-content: flex-end;
+  }
+  .expand-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 8px 16px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .expand-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
   }
 
   .restart-btn {
@@ -790,7 +955,7 @@ const DOMAINS = [
 // 題庫（含 domain 欄位）
 const CASES = [
   {
-    id: 'cardio_demo_001',
+    id: 'cardio_001',
     domain: 'cardio',
     title: '左側 Basal Ganglia 出血性中風',
     context: `68 歲女性，過去病史有 hypertension、DM、AF（未規則服用 warfarin）。今晨 7:30 家人發現病人倒在廁所地上，無法言語、右側肢體無力。送至急診時 GCS E3V2M5，BP 198/112 mmHg，blood sugar 186 mg/dL。
@@ -801,14 +966,660 @@ NSx 評估後採保守治療，住院第 5 天會診復健科。
 
 目前狀況：意識清楚但嗜睡，可服從簡單指令但常需重複，言語表達困難、僅能說出單字。右上肢 MRC 1/5、右下肢 2/5；左側肌力正常。留置 NG tube 及 Foley。`,
     questions: [
-      { q: '請判讀這個病人的 brain CT 表現，並說明你的診斷。', a: `<p>(待填入完整詳解)</p>` },
-      { q: '根據病灶位置，這位病人會出現哪些臨床症狀？請從 motor、sensory、language、cognitive、bladder 各方面說明。', a: `<p>(待填入完整詳解)</p>` },
-      { q: '病人現在的失語症類型最可能是什麼？你會如何在床邊評估？請現場示範。', a: `<p>(待填入完整詳解)</p>` },
-      { q: '請說明這位病人的 Brunnstrom stage 評估方式，並預測他上肢與下肢的恢復順序。', a: `<p>(待填入完整詳解)</p>` },
-      { q: '急性期（住院期間）的復健重點是什麼？你開立的復健處方會包含哪些項目？', a: `<p>(待填入完整詳解)</p>` },
-      { q: '這位病人有哪些常見的 stroke 併發症需要注意？請至少列出 5 項並說明預防或處置方式。', a: `<p>(待填入完整詳解)</p>` },
-      { q: '病人住院兩週後仍無法經口進食，家屬詢問可否申請長照 2.0、身心障礙手冊及居家照護資源。請說明申請條件與流程。', a: `<p>(待填入完整詳解)</p>` },
-      { q: '出院 3 個月後家屬詢問：「我朋友的爸爸也是中風，現在已經能自己走路，為什麼我媽媽還是這樣？」請說明你會如何回應，以及影響中風預後的危險因子有哪些。', a: `<p>(待填入完整詳解)</p>` },
+      {
+        q: '請判讀這個病人的 brain CT 表現，並說明你的診斷。',
+        keywords: [
+          'Left basal ganglia ICH',
+          'Hypertensive ICH',
+          'Charcot-Bouchard aneurysm',
+          'Intraventricular extension',
+          'Midline shift',
+          'ICH score',
+        ],
+        points: [
+          '<strong>位置</strong>：left basal ganglia（內囊／殼核區），約 4.2 × 3.1 cm',
+          '<strong>性質</strong>：high density lesion → acute hemorrhage（HU 50-80）',
+          '<strong>合併</strong>：intraventricular extension（IVH）、midline shift 約 4 mm',
+          '<strong>診斷</strong>：Hypertensive intracerebral hemorrhage, left basal ganglia, with IVH',
+          '<strong>病因推論</strong>：長期 HTN 未控制 → Charcot-Bouchard microaneurysm 破裂',
+          '<strong>好發部位</strong>：basal ganglia（最常見）、thalamus、pons、cerebellum',
+          '<strong>嚴重度評估</strong>：ICH score（GCS、年齡、出血量、IVH、infratentorial）',
+        ],
+        a: `<h4>影像分析步驟</h4>
+<p>看到 brain CT 要系統性判讀：<strong>位置 → 大小 → 性質 → 周邊變化 → 合併症</strong>。本題病灶位於 left basal ganglia 區域，密度為 high density（HU 50-80）符合急性出血表現，腦出血在發生後 7-10 天內 CT 都會呈現高密度。</p>
+
+<h4>病因鑑別</h4>
+<p>ICH 的病因依年齡與位置判斷：</p>
+<ul>
+<li><strong>Hypertensive ICH</strong>（最常見）：好發於 deep structures — basal ganglia (50%)、thalamus (15%)、pons (10%)、cerebellum (10%)、subcortical (10%)。機轉為長期高血壓造成 lenticulostriate artery 的 Charcot-Bouchard microaneurysm 破裂。</li>
+<li><strong>Cerebral amyloid angiopathy (CAA)</strong>：好發於老年人 lobar 區域，常多發。</li>
+<li><strong>AVM、aneurysm rupture</strong>：年輕人要考慮。</li>
+<li><strong>Anticoagulant-related</strong>：本病人有 AF + warfarin 使用史，需查 INR。</li>
+</ul>
+
+<h4>嚴重度與預後評估</h4>
+<p><strong>ICH Score</strong>（總分 0-6，分數越高 30 天死亡率越高）：</p>
+<ul>
+<li>GCS 3-4 = 2 分；GCS 5-12 = 1 分；GCS 13-15 = 0 分</li>
+<li>出血量 ≥ 30 mL = 1 分</li>
+<li>有 IVH = 1 分</li>
+<li>Infratentorial origin = 1 分</li>
+<li>年齡 ≥ 80 = 1 分</li>
+</ul>
+<p>本病人估計 ICH score 約 2-3 分，30 天死亡率約 26-72%。</p>
+
+<h4>出血量計算（ABC/2 公式）</h4>
+<p>A = 最大切面長徑、B = 垂直短徑、C = 出血切面厚度（切面數 × 厚度）。本病人約 4.2 × 3.1 × ? = 估計 30-40 mL。</p>`,
+      },
+      {
+        q: '根據病灶位置，這位病人會出現哪些臨床症狀？請從 motor、sensory、language、cognitive、bladder 各方面說明。',
+        keywords: [
+          'Right hemiplegia',
+          'UMN pattern',
+          'Cortical sensory loss',
+          'Broca / Global aphasia',
+          'Hemineglect (右側 ICH 才會)',
+          'Spastic neurogenic bladder',
+        ],
+        points: [
+          '<strong>Motor</strong>：右側 hemiplegia（內囊後肢 corticospinal tract 受損），UMN 表現',
+          '<strong>Sensory</strong>：右側 hemisensory loss（thalamocortical pathway 受影響）',
+          '<strong>Language</strong>：左側為 dominant hemisphere → expressive (Broca) aphasia 或 global aphasia',
+          '<strong>Cognitive</strong>：注意力、執行功能差；本 case 右側忽略不會出現（hemineglect 多見於右側病灶）',
+          '<strong>Bladder</strong>：急性期 areflexic／retention → 慢性期 spastic neurogenic bladder（detrusor overactivity）',
+          '<strong>Bowel</strong>：UMN-type，constipation 為主，需衛教排便訓練',
+          '<strong>Dysphagia</strong>：basal ganglia 病灶會影響 swallowing initiation，需評估',
+        ],
+        a: `<h4>解剖功能對照</h4>
+<p>Basal ganglia ICH 影響的不只是 basal ganglia 本身，還會壓迫鄰近的 internal capsule（含 corticospinal tract、corticobulbar tract、thalamocortical fibers）。</p>
+
+<table>
+<tr><th>系統</th><th>受影響結構</th><th>臨床表現</th></tr>
+<tr><td>Motor</td><td>Internal capsule posterior limb（CST）</td><td>右側完全性 hemiplegia，UMN pattern：spasticity、hyperreflexia、Babinski (+)</td></tr>
+<tr><td>Sensory</td><td>Thalamocortical projection</td><td>右側 hemisensory loss（all modalities）</td></tr>
+<tr><td>Language</td><td>左側 dominant hemisphere</td><td>Broca aphasia（前部）、Wernicke（後部）、global aphasia（廣泛）</td></tr>
+<tr><td>Visual</td><td>Optic radiation（鄰近受影響時）</td><td>右側 homonymous hemianopia</td></tr>
+<tr><td>Cognitive</td><td>Frontal-subcortical circuit</td><td>注意力、處理速度、執行功能下降</td></tr>
+<tr><td>Bladder</td><td>Pontine micturition center 失去 cortical inhibition</td><td>急性期 retention → 慢性 spastic bladder</td></tr>
+</table>
+
+<h4>本病人的特殊表現</h4>
+<p>從 history 來看：</p>
+<ul>
+<li>「言語表達困難、僅能說出單字」 → 符合 <strong>Broca aphasia</strong>（non-fluent，理解相對保留）</li>
+<li>「可服從簡單指令」 → 理解尚可，支持 Broca 而非 global</li>
+<li>「右上肢 MRC 1/5、右下肢 2/5」 → 上肢比下肢嚴重，符合 MCA 區域分佈</li>
+<li>「嗜睡」 → 可能與 IVH、midline shift 造成 ICP 上升有關</li>
+</ul>
+
+<h4>注意陷阱</h4>
+<p><strong>Hemineglect</strong> 在這個病人不會出現，因為這是 left ICH。Hemineglect 主要是 right (non-dominant) parietal lobe 病灶才會出現。考官如果反問你左側病灶會不會 neglect，要能說出此區別。</p>`,
+      },
+      {
+        q: '病人現在的失語症類型最可能是什麼？你會如何在床邊評估？請現場示範。',
+        keywords: [
+          'Broca aphasia',
+          'Non-fluent',
+          'Spontaneous speech',
+          'Comprehension',
+          'Repetition',
+          'Naming',
+          'Reading & writing',
+          'Aphasia battery',
+        ],
+        points: [
+          '<strong>診斷</strong>：Broca (expressive) aphasia — non-fluent、理解相對保留、repetition 差',
+          '<strong>評估五大面向</strong>：fluency、comprehension、repetition、naming、reading/writing',
+          '<strong>Fluency</strong>：請病人自我介紹或說明天氣 → 觀察句子流暢度與長度',
+          '<strong>Comprehension</strong>：「請閉眼睛」「指天花板」「先指門再指窗」（一步、兩步、三步指令）',
+          '<strong>Repetition</strong>：「今天天氣很好」、「沒有如果、和、但是」（No ifs, ands, or buts）',
+          '<strong>Naming</strong>：指物命名（手錶、筆、眼鏡），confrontation naming',
+          '<strong>Reading/Writing</strong>：請唸一句話、寫自己名字',
+          '<strong>標準化工具</strong>：CCAT（Concise Chinese Aphasia Test）、WAB',
+        ],
+        a: `<h4>失語症分類（依 Boston classification）</h4>
+<table>
+<tr><th>類型</th><th>Fluency</th><th>Comp</th><th>Repetition</th><th>病灶</th></tr>
+<tr><td>Broca</td><td>差</td><td>好</td><td>差</td><td>Left frontal (Brodmann 44, 45)</td></tr>
+<tr><td>Wernicke</td><td>好</td><td>差</td><td>差</td><td>Left temporal (Brodmann 22)</td></tr>
+<tr><td>Global</td><td>差</td><td>差</td><td>差</td><td>Large MCA territory</td></tr>
+<tr><td>Conduction</td><td>好</td><td>好</td><td>差</td><td>Arcuate fasciculus</td></tr>
+<tr><td>Transcortical motor</td><td>差</td><td>好</td><td>好</td><td>ACA-MCA watershed</td></tr>
+<tr><td>Transcortical sensory</td><td>好</td><td>差</td><td>好</td><td>MCA-PCA watershed</td></tr>
+<tr><td>Anomic</td><td>好</td><td>好</td><td>好</td><td>不定（命名困難）</td></tr>
+</table>
+
+<h4>本病人的判斷</h4>
+<p>「言語表達困難、僅能說出單字」+「可服從簡單指令」 → <strong>Broca aphasia</strong> 最可能。需注意病人也可能合併 dysarthria（構音困難），兩者要區分：</p>
+<ul>
+<li>Aphasia：語言處理障礙（找詞、文法）</li>
+<li>Dysarthria：發音肌肉控制障礙（咬字不清，但語言內容正常）</li>
+</ul>
+
+<h4>床邊評估流程（5 分鐘版）</h4>
+<ol>
+<li><strong>Spontaneous speech</strong>：「請告訴我您今天怎麼來醫院？」→ 評估 fluency、grammar、word-finding</li>
+<li><strong>Comprehension</strong>：
+  <ul>
+    <li>Yes/No 問題：「現在是早上嗎？」</li>
+    <li>Single command：「請閉眼睛」</li>
+    <li>Two-step command：「請先碰耳朵，再碰鼻子」</li>
+  </ul>
+</li>
+<li><strong>Repetition</strong>：由短到長 → 「球」→「電視」→「今天天氣很好」→「沒有如果、和、但是」</li>
+<li><strong>Naming</strong>：指物 → 手錶、筆、眼鏡、領帶結（distal items 較難）</li>
+<li><strong>Reading</strong>：給一張寫著「請張開嘴巴」的卡片</li>
+<li><strong>Writing</strong>：請寫自己名字、地址</li>
+</ol>
+
+<h4>共病提醒</h4>
+<p>Broca aphasia 病人常合併：</p>
+<ul>
+<li>右側 hemiplegia（病灶鄰近 motor cortex）</li>
+<li>Apraxia of speech（語言計劃障礙）</li>
+<li>Buccofacial apraxia（無法做出咳嗽、吹氣動作）</li>
+<li>Depression／frustration（病識感保留，知道自己說不出來）</li>
+</ul>`,
+      },
+      {
+        q: '請說明這位病人的 Brunnstrom stage 評估方式，並預測他上肢與下肢的恢復順序。',
+        keywords: [
+          'Brunnstrom 6 stages',
+          'Flaccidity',
+          'Synergy pattern',
+          'Spasticity',
+          'Out of synergy',
+          '下肢恢復早於上肢',
+          'Twitchell pattern',
+        ],
+        points: [
+          '<strong>Stage I</strong>：Flaccidity，no voluntary movement',
+          '<strong>Stage II</strong>：Spasticity 開始出現，可引出 minimal voluntary movement',
+          '<strong>Stage III</strong>：Spasticity 達 peak，可隨意做出 synergy pattern',
+          '<strong>Stage IV</strong>：開始 break out of synergy，spasticity 減少',
+          '<strong>Stage V</strong>：Synergy 不再 dominant，可做 selective movement',
+          '<strong>Stage VI</strong>：Spasticity 消失，coordination 接近正常',
+          '<strong>恢復順序</strong>：下肢恢復通常比上肢早、比上肢好（因為 ACA 較少受影響）',
+          '<strong>遠端恢復慢於近端</strong>：手指最慢恢復，常停留在 stage III-IV',
+          '<strong>本病人預估</strong>：右上肢 MRC 1/5 → 約 stage I-II；右下肢 2/5 → 約 stage II-III',
+        ],
+        a: `<h4>Brunnstrom 六階段詳解</h4>
+<p>由 Signe Brunnstrom 1970 年代提出，描述中風後 motor recovery 的自然病程。基於「synergy pattern（共同運動）」概念。</p>
+
+<table>
+<tr><th>Stage</th><th>Tone</th><th>Movement</th><th>Synergy</th></tr>
+<tr><td>I</td><td>Flaccid</td><td>No voluntary movement</td><td>None</td></tr>
+<tr><td>II</td><td>Spasticity 出現</td><td>Minimum voluntary motion，可能伴隨 associated reaction</td><td>Synergy 開始浮現</td></tr>
+<tr><td>III</td><td>Marked spasticity（peak）</td><td>可主動做出 synergy</td><td>Full synergy dominate</td></tr>
+<tr><td>IV</td><td>Spasticity 減少</td><td>開始有 isolated movement，部分 break synergy</td><td>Synergy weakening</td></tr>
+<tr><td>V</td><td>Spasticity 進一步減少</td><td>Selective movement 增多，complex movements</td><td>Synergy lose dominance</td></tr>
+<tr><td>VI</td><td>近乎正常</td><td>Coordinated movement，僅遠端略差</td><td>Resolved</td></tr>
+</table>
+
+<h4>Synergy Pattern（要會背）</h4>
+<p><strong>Upper extremity flexor synergy（最常見）：</strong></p>
+<ul>
+<li>Scapular retraction & elevation</li>
+<li>Shoulder abduction & external rotation</li>
+<li>Elbow flexion（最強）</li>
+<li>Forearm supination</li>
+<li>Wrist & finger flexion</li>
+</ul>
+
+<p><strong>Lower extremity extensor synergy（最常見，對行走有利）：</strong></p>
+<ul>
+<li>Hip extension, adduction, internal rotation</li>
+<li>Knee extension</li>
+<li>Ankle plantarflexion & inversion</li>
+<li>Toe flexion</li>
+</ul>
+
+<h4>恢復順序（Twitchell pattern）</h4>
+<p><strong>規律：</strong></p>
+<ol>
+<li><strong>下肢比上肢快</strong>：因為下肢的 cortical representation 較小且 ACA 也供應一部分，basal ganglia ICH 主要影響 MCA 範圍。</li>
+<li><strong>近端比遠端快</strong>：proximal muscles 有 bilateral cortical innervation。</li>
+<li><strong>大動作比精細動作快</strong>：手指功能（finger individuation）最後恢復。</li>
+<li><strong>恢復多在前 3 個月最快</strong>，6 個月後 plateau；少數可持續到 12 個月。</li>
+</ol>
+
+<h4>本病人預測</h4>
+<ul>
+<li>右上肢 MRC 1/5 → Brunnstrom 約 stage I-II → 預後較差，可能停留 III-IV</li>
+<li>右下肢 MRC 2/5 → Brunnstrom 約 stage II-III → 較有機會走路（搭配 AFO）</li>
+<li>不利因素：年齡大、出血量大（>30 mL）、IVH、起始 GCS 低、HTN+DM 多重共病</li>
+</ul>`,
+      },
+      {
+        q: '急性期（住院期間）的復健重點是什麼？你開立的復健處方會包含哪些項目？',
+        keywords: [
+          'Early mobilization',
+          'Bedside ROM',
+          'Positioning',
+          'Bed mobility / transfer',
+          'Speech therapy',
+          'Dysphagia training',
+          'AVERT trial',
+          'Subluxation prevention',
+        ],
+        points: [
+          '<strong>Early mobilization</strong>：穩定後 24-48 小時內開始（AVERT trial：避免太早高強度 mobilization，但越早越好）',
+          '<strong>Positioning</strong>：避免 shoulder subluxation、防壓瘡、防 contracture',
+          '<strong>Passive ROM</strong>：所有 paretic 關節，每日 1-2 次',
+          '<strong>Bed mobility</strong>：翻身、坐起、bridging',
+          '<strong>Transfer training</strong>：床椅、輪椅↔站立',
+          '<strong>Speech therapy</strong>：失語症、構音治療、認知訓練',
+          '<strong>Dysphagia evaluation</strong>：床邊吞嚥評估 → VFSS／FEES → 訓練',
+          '<strong>OT</strong>：ADL 訓練（穿衣、進食、衛生）',
+          '<strong>Bladder/Bowel training</strong>：定時排尿、避免長期 Foley',
+          '<strong>DVT prophylaxis</strong>：彈性襪、IPC、藥物（出血穩定後）',
+          '<strong>家屬衛教</strong>：positioning、轉位技巧',
+        ],
+        a: `<h4>AVERT 試驗的啟示</h4>
+<p>2015 AVERT trial 顯示「過早（<24 小時）且高強度」的 mobilization 反而結果較差。目前共識：</p>
+<ul>
+<li>穩定後 <strong>24-48 小時內</strong> 開始 bedside rehabilitation</li>
+<li>從低強度、短時間開始，逐步增加</li>
+<li>Hemorrhagic stroke 需先確認 hematoma 不再擴大（通常 24 小時內 follow CT）</li>
+</ul>
+
+<h4>急性期復健處方（PT/OT/ST 三軌）</h4>
+
+<p><strong>PT（物理治療）：</strong></p>
+<ul>
+<li>Passive/Active-assisted ROM exercise（所有大關節，每日 1-2 次）</li>
+<li>Positioning：每 2 小時翻身，affected side lying / supine 交替</li>
+<li>Bed mobility：rolling、bridging、supine to sit</li>
+<li>Sitting balance：static → dynamic</li>
+<li>Standing tolerance：tilt table → 站立架</li>
+<li>Transfer training：bed ↔ wheelchair</li>
+<li>Gait training（穩定後）：parallel bars → walker → cane</li>
+</ul>
+
+<p><strong>OT（職能治療）：</strong></p>
+<ul>
+<li>ADL training：feeding、grooming、dressing（從 affected side 先穿）</li>
+<li>Upper extremity exercise：weight bearing、reaching</li>
+<li>Cognitive training（有 cognitive deficit 時）</li>
+<li>Splint：resting hand splint 預防 contracture</li>
+<li>輔具評估：助行器、輪椅、馬桶增高器</li>
+</ul>
+
+<p><strong>ST（語言治療）：</strong></p>
+<ul>
+<li>失語症治療：melodic intonation therapy、constraint-induced aphasia therapy</li>
+<li>Dysarthria：呼吸控制、發音練習</li>
+<li>吞嚥訓練：oral motor exercise、Mendelsohn maneuver、effortful swallow、Shaker exercise</li>
+<li>食團控制、姿勢調整（chin tuck、head turn）</li>
+</ul>
+
+<h4>關鍵注意事項</h4>
+
+<p><strong>Shoulder subluxation 預防</strong>（這個病人已 MRC 1/5 高風險）：</p>
+<ul>
+<li>Sling、arm trough（坐輪椅時）</li>
+<li>避免拉病人手臂幫忙坐起</li>
+<li>家屬／護理衛教：never pull the affected arm</li>
+</ul>
+
+<p><strong>DVT 預防：</strong></p>
+<ul>
+<li>機械性：彈性襪、IPC（intermittent pneumatic compression）</li>
+<li>藥物性：LMWH（出血穩定後 24-48 小時開始）</li>
+</ul>
+
+<p><strong>Bladder management：</strong></p>
+<ul>
+<li>盡早移除 Foley（避免 UTI）</li>
+<li>Bladder training：每 3-4 小時定時排尿</li>
+<li>必要時 intermittent catheterization</li>
+</ul>
+
+<h4>復健強度建議（依 ASA guideline）</h4>
+<ul>
+<li>急性期住院：每天至少 3 小時 active therapy（PT+OT+ST 合計）</li>
+<li>分次給予（每次 30-45 分鐘 × 多次）比一次長時間好</li>
+<li>需根據病人 fatigue、cardiac tolerance 調整</li>
+</ul>`,
+      },
+      {
+        q: '這位病人有哪些常見的 stroke 併發症需要注意？請至少列出 5 項並說明預防或處置方式。',
+        keywords: [
+          'Aspiration pneumonia',
+          'DVT / PE',
+          'UTI',
+          'Pressure injury',
+          'Shoulder pain / subluxation',
+          'Spasticity / contracture',
+          'Post-stroke depression',
+          'Falls',
+          'CRPS',
+          'Seizure',
+        ],
+        points: [
+          '<strong>Aspiration pneumonia</strong>：吞嚥評估、抬高床頭、口腔護理',
+          '<strong>DVT/PE</strong>：彈性襪、IPC、LMWH（穩定後）',
+          '<strong>UTI</strong>：避免長期 Foley、bladder training',
+          '<strong>Pressure injury</strong>：每 2 小時翻身、減壓墊',
+          '<strong>Shoulder subluxation</strong>：sling、arm trough、教育家屬',
+          '<strong>Spasticity / contracture</strong>：positioning、stretching、Botox、oral antispastic',
+          '<strong>CRPS（shoulder-hand syndrome）</strong>：早期動、活動關節、避免創傷',
+          '<strong>Post-stroke depression</strong>：30-50% 發生率，SSRI、心理支持',
+          '<strong>Falls</strong>：環境改善、輔具、衛教',
+          '<strong>Seizure</strong>：5-10%，cortical lesion 風險高，發作後考慮 AED',
+        ],
+        a: `<h4>併發症依時序分類</h4>
+
+<h4>1. 呼吸系統</h4>
+<ul>
+<li><strong>Aspiration pneumonia</strong>（最常見，死亡率高）
+  <ul>
+    <li>Risk factors：dysphagia、reduced consciousness、weak cough</li>
+    <li>預防：吞嚥評估（VFSS、FEES）、適當 diet level、抬高床頭 ≥30°、口腔衛生</li>
+    <li>本病人已留 NG tube → 仍需嚴格衛教，NG 不能完全預防 aspiration</li>
+  </ul>
+</li>
+</ul>
+
+<h4>2. 心血管／血栓</h4>
+<ul>
+<li><strong>DVT</strong>（發生率 20-50% 若未預防）
+  <ul>
+    <li>機械性預防：graduated compression stocking、IPC</li>
+    <li>藥物性：LMWH（hemorrhagic stroke 穩定 24-48 小時後可開始）</li>
+  </ul>
+</li>
+<li><strong>PE</strong>：DVT 的延伸，可能致命</li>
+<li><strong>Recurrent stroke</strong>：3 個月內 4-10%</li>
+</ul>
+
+<h4>3. 泌尿／消化</h4>
+<ul>
+<li><strong>UTI</strong>：盡早移除 Foley、定時排尿</li>
+<li><strong>Constipation</strong>：補水、纖維、軟便劑、定時排便訓練</li>
+<li><strong>Stress ulcer / GI bleeding</strong>：PPI 預防</li>
+</ul>
+
+<h4>4. 皮膚</h4>
+<ul>
+<li><strong>Pressure injury</strong>（褥瘡）
+  <ul>
+    <li>高風險部位：sacrum、heel、greater trochanter、scapula</li>
+    <li>預防：每 2 小時翻身、減壓床墊、避免 shear force、營養充足</li>
+    <li>分期 I-IV + unstageable + deep tissue injury</li>
+  </ul>
+</li>
+</ul>
+
+<h4>5. 肌肉骨骼</h4>
+<ul>
+<li><strong>Shoulder subluxation</strong>（20-50% 發生於 hemiplegic shoulder）
+  <ul>
+    <li>觸診：肩峰下凹陷（finger breadth）</li>
+    <li>處置：sling、arm trough、kinesiotape、FES</li>
+  </ul>
+</li>
+<li><strong>Hemiplegic shoulder pain</strong>：常見原因 rotator cuff injury、subluxation、CRPS、adhesive capsulitis</li>
+<li><strong>Spasticity</strong>：MAS、Tardieu 評估；治療 stretching → oral medication（baclofen, tizanidine）→ Botox → ITB</li>
+<li><strong>Contracture</strong>：早期 positioning、splint、PROM</li>
+<li><strong>Heterotopic ossification</strong>：較少見於 stroke，多見於 SCI/TBI</li>
+</ul>
+
+<h4>6. 神經／精神</h4>
+<ul>
+<li><strong>Post-stroke seizure</strong>：5-10%，cortical lesion、hemorrhagic 風險高
+  <ul>
+    <li>Early seizure（<7 天）vs late seizure（>7 天）</li>
+    <li>不建議常規 prophylactic AED</li>
+    <li>反覆發作 → 考慮 levetiracetam、lamotrigine（避免 phenytoin 影響 cognition）</li>
+  </ul>
+</li>
+<li><strong>Post-stroke depression</strong>（30-50%）
+  <ul>
+    <li>影響復健配合度、預後</li>
+    <li>SSRI（fluoxetine、escitalopram）</li>
+    <li>FLAME trial：fluoxetine 可能對 motor recovery 有益</li>
+  </ul>
+</li>
+<li><strong>Cognitive impairment / dementia</strong></li>
+<li><strong>Pseudobulbar affect</strong>：不自主笑哭，dextromethorphan/quinidine</li>
+</ul>
+
+<h4>7. 跌倒</h4>
+<ul>
+<li>住院期間發生率高，常導致 hip fracture</li>
+<li>預防：bed alarm、夜間照明、扶手、適當 footwear</li>
+</ul>
+
+<h4>8. CRPS（shoulder-hand syndrome）</h4>
+<ul>
+<li>典型三期：acute（疼痛、腫、熱、汗）→ dystrophic（僵硬）→ atrophic（永久變形）</li>
+<li>診斷：Budapest criteria</li>
+<li>治療：早期動、避免創傷、NSAIDs、gabapentin、stellate ganglion block、bisphosphonate</li>
+</ul>`,
+      },
+      {
+        q: '病人住院兩週後仍無法經口進食，家屬詢問可否申請長照 2.0、身心障礙手冊及居家照護資源。請說明申請條件與流程。',
+        keywords: [
+          '長照 2.0',
+          'CMS 失能等級',
+          '四包錢',
+          '身心障礙鑑定',
+          'ICF 編碼',
+          '居家換管',
+          '巴氏量表',
+          '重大傷病',
+        ],
+        points: [
+          '<strong>長照 2.0 申請</strong>：撥打 1966 → 照管專員到府評估 → CMS 量表 → 失能等級 2-8 級可使用',
+          '<strong>長照四包錢</strong>：照顧及專業服務、交通接送、輔具及無障礙、喘息服務',
+          '<strong>申請資格</strong>：65 歲以上失能、55 歲以上原住民失能、50 歲以上失智、所有失能身心障礙者',
+          '<strong>身心障礙鑑定</strong>：醫療鑑定（醫師）+ 需求評估（社工）→ 戶政事務所核發證明',
+          '<strong>分類採 ICF</strong>：八大類功能（不再用舊版 16 類）',
+          '<strong>本病人吞嚥障礙</strong>：可申請 — 「吞嚥機能缺損需長期管食或造廔灌食維持生命者」',
+          '<strong>居家換管</strong>：長照 2.0 居家醫療整合服務',
+          '<strong>重大傷病卡</strong>：腦中風後如失能持續可申請慢性精神病或其他相關',
+        ],
+        a: `<h4>長照 2.0 完整流程</h4>
+
+<p><strong>Step 1：申請</strong></p>
+<ul>
+<li>撥打 1966（免付費，前 5 分鐘免費）</li>
+<li>或洽當地長照管理中心</li>
+<li>醫院出院準備服務（discharge planning）也可協助</li>
+</ul>
+
+<p><strong>Step 2：評估</strong></p>
+<ul>
+<li>照管專員（A 個管）到府訪視</li>
+<li>使用 <strong>CMS（Care Management System）量表</strong>評估失能程度</li>
+<li>分為 8 個失能等級，<strong>第 2-8 級</strong>可使用長照服務</li>
+</ul>
+
+<p><strong>Step 3：擬定照顧計畫（A 個管）</strong></p>
+
+<p><strong>Step 4：服務提供（B 單位）</strong></p>
+
+<h4>長照四包錢（補助上限依失能等級而定）</h4>
+<table>
+<tr><th>類型</th><th>內容</th><th>補助範圍</th></tr>
+<tr><td>照顧及專業服務</td><td>居服員、日照、家托、專業服務</td><td>每月 10,020-36,180 元</td></tr>
+<tr><td>交通接送</td><td>就醫、復健交通</td><td>每月 1,680-2,400 元</td></tr>
+<tr><td>輔具及居家無障礙環境改善</td><td>輪椅、氣墊床、扶手、斜坡道</td><td>每 3 年 40,000 元</td></tr>
+<tr><td>喘息服務</td><td>機構喘息、居家喘息</td><td>每年 32,340-48,510 元</td></tr>
+</table>
+
+<h4>身心障礙鑑定流程（ICF 制）</h4>
+
+<p><strong>新制（2012 年後）：</strong></p>
+<ol>
+<li>填寫申請書（戶政事務所或鄉鎮公所）→ 拿到「鑑定表」</li>
+<li>到指定醫院進行<strong>醫療鑑定</strong>（醫師根據 ICF 八大類評估）</li>
+<li><strong>需求評估</strong>（社工，評估福利需求）</li>
+<li>送回戶政事務所核發<strong>身心障礙證明</strong></li>
+</ol>
+
+<p><strong>ICF 八大類：</strong></p>
+<ol>
+<li>神經系統構造及精神、心智功能</li>
+<li>眼、耳及相關構造與感官功能及疼痛</li>
+<li>涉及聲音與言語構造及其功能</li>
+<li>循環、造血、免疫與呼吸系統構造及其功能</li>
+<li>消化、新陳代謝與內分泌系統相關構造及其功能</li>
+<li>泌尿與生殖系統相關構造及其功能</li>
+<li>神經、肌肉、骨骼之移動相關構造及其功能</li>
+<li>皮膚與相關構造及其功能</li>
+</ol>
+
+<h4>本病人可申請項目</h4>
+
+<p><strong>身心障礙：</strong></p>
+<ul>
+<li>第 1 類（神經系統） — 中風後遺症、失語症、認知功能</li>
+<li>第 7 類（神經肌肉骨骼） — hemiplegia 影響移動</li>
+<li>第 3 類（聲音與言語） — Broca aphasia</li>
+<li><strong>吞嚥機能缺損</strong>：第 5 類，「因吞嚥機能缺損而需長期以管食方式或造廔灌食維持生命者」可符合</li>
+</ul>
+
+<p><strong>長照 2.0：</strong>失能等級評估後使用</p>
+
+<p><strong>居家換管服務：</strong></p>
+<ul>
+<li>透過長照 2.0 的「居家醫療整合照護計畫」</li>
+<li>可申請居家護理師到府更換 NG tube、Foley</li>
+<li>頻率：NG 每月 1 次、Foley 每月 1 次</li>
+</ul>
+
+<p><strong>巴氏量表（Barthel index）：</strong></p>
+<ul>
+<li>10 個項目（進食、移位、個人衛生、如廁、洗澡、行走、上下樓、穿脫衣、大便控制、小便控制）</li>
+<li>滿分 100；65 歲以上 35 分以下，可申請外籍看護工</li>
+<li>本病人預期分數 0-20 分</li>
+</ul>`,
+      },
+      {
+        q: '出院 3 個月後家屬詢問：「我朋友的爸爸也是中風，現在已經能自己走路，為什麼我媽媽還是這樣？」請說明你會如何回應，以及影響中風預後的危險因子有哪些。',
+        keywords: [
+          '同理回應',
+          '個別差異',
+          'Stroke 預後因子',
+          'Initial severity',
+          'Stroke type',
+          '出血量',
+          'Lesion location',
+          '年齡',
+          '共病症',
+          'NIHSS',
+          'mRS',
+          'Barthel index',
+        ],
+        points: [
+          '<strong>溝通技巧</strong>：先同理（acknowledge）→ 再解釋（explain）→ 給予盼望（hope）',
+          '<strong>不要直接比較</strong>：每個病人狀況不同，比較對家屬無益',
+          '<strong>初始嚴重度</strong>：NIHSS 越高、GCS 越低、出血量越大 → 預後越差',
+          '<strong>Stroke type</strong>：Hemorrhagic 急性期死亡率高，但存活者長期恢復可能優於 ischemic',
+          '<strong>病灶位置</strong>：basal ganglia、brainstem 預後較差；cortical 較好（若小範圍）',
+          '<strong>年齡</strong>：年紀越大恢復越慢、神經可塑性下降',
+          '<strong>共病症</strong>：DM、CKD、心臟病影響復健耐受度',
+          '<strong>復健介入時機</strong>：越早開始越好',
+          '<strong>家屬支持</strong>：家屬參與度高、社會支持好 → 預後較好',
+          '<strong>Post-stroke depression</strong>：影響配合度，需積極處理',
+          '<strong>常用評估工具</strong>：NIHSS、mRS、Barthel index、FIM',
+        ],
+        a: `<h4>溝通框架（SPIKES 改編版）</h4>
+
+<p><strong>1. Setting</strong>：找個安靜的環境，坐下來談</p>
+
+<p><strong>2. Acknowledge（同理）：</strong></p>
+<p style="background:var(--bg);padding:12px;border-left:2px solid var(--accent);margin:8px 0;">「我能理解您看到別人的家人恢復比較好，心裡會很失落，也會懷疑是不是哪裡做得不夠。這種感受是很正常的。」</p>
+
+<p><strong>3. Explain（解釋）：</strong></p>
+<p style="background:var(--bg);padding:12px;border-left:2px solid var(--accent);margin:8px 0;">「但其實每個中風病人的狀況都不太一樣，影響恢復的因素很多。媽媽當初出血的位置、出血量、發病時的嚴重程度、年齡跟其他疾病，都會影響復健的速度。我們不能單純比較『誰走得起來』來判斷一個人有沒有努力。」</p>
+
+<p><strong>4. Specific factors（個案分析）：</strong></p>
+<p style="background:var(--bg);padding:12px;border-left:2px solid var(--accent);margin:8px 0;">「以媽媽的情況來說，她當初是 basal ganglia 的出血、伴隨 IVH，出血量也比較大；又有糖尿病和心房顫動，這些都會讓恢復比較慢。但這不代表沒有進步，我們會持續看到改善。」</p>
+
+<p><strong>5. Hope（盼望）：</strong></p>
+<p style="background:var(--bg);padding:12px;border-left:2px solid var(--accent);margin:8px 0;">「中風後 6 個月內是恢復最快的階段，但即使一年後仍可能有改善。我們會根據媽媽現在的狀況，調整復健目標 — 重點不是『跟別人一樣走路』，而是『讓媽媽生活更方便、減少照顧負擔』。我們一起努力。」</p>
+
+<h4>Stroke 預後危險因子（系統性整理）</h4>
+
+<p><strong>1. 病人本身因素：</strong></p>
+<ul>
+<li>年齡（>75 歲恢復較差）</li>
+<li>性別（女性死亡率略高）</li>
+<li>Pre-stroke functional status（mRS）</li>
+<li>共病：DM、HTN、CKD、CHF、AF</li>
+<li>營養狀態（low albumin → 預後差）</li>
+</ul>
+
+<p><strong>2. 中風本身因素：</strong></p>
+<ul>
+<li>Stroke type：
+  <ul>
+    <li>Ischemic：30 天死亡率較低，但 long-term recovery 可能較慢</li>
+    <li>Hemorrhagic：急性期死亡率高，但存活者恢復可能更好（hematoma 吸收後）</li>
+  </ul>
+</li>
+<li>Stroke severity：NIHSS 是最佳預測指標
+  <ul>
+    <li>NIHSS <5：輕度，多可獨立</li>
+    <li>NIHSS 5-15：中度</li>
+    <li>NIHSS >15：重度，預後差</li>
+  </ul>
+</li>
+<li>出血量（hemorrhagic）：&gt;30 mL 預後差，&gt;60 mL 死亡率極高</li>
+<li>病灶位置：
+  <ul>
+    <li>Basal ganglia、brainstem、cerebellum：差</li>
+    <li>Lobar small：好</li>
+  </ul>
+</li>
+<li>IVH（intraventricular hemorrhage）：預後不佳因子</li>
+<li>Midline shift：&gt;5 mm 警訊</li>
+<li>初始 GCS：低 GCS 預後差</li>
+</ul>
+
+<p><strong>3. 急性期管理：</strong></p>
+<ul>
+<li>Time to treatment（IV tPA &lt; 4.5 hr、thrombectomy &lt; 24 hr）</li>
+<li>Neuro ICU 照護品質</li>
+<li>併發症發生（pneumonia、UTI、DVT 等都會延長住院、影響預後）</li>
+</ul>
+
+<p><strong>4. 復健介入：</strong></p>
+<ul>
+<li>越早開始復健越好</li>
+<li>復健強度（每天 active therapy 時間）</li>
+<li>住院 vs 門診 vs 居家</li>
+<li>Post-stroke depression 是否處理</li>
+</ul>
+
+<p><strong>5. 社會心理因素：</strong></p>
+<ul>
+<li>家屬支持系統</li>
+<li>經濟條件（影響復健資源）</li>
+<li>居家環境（無障礙）</li>
+<li>病人本身動機</li>
+</ul>
+
+<h4>常用預後評估工具</h4>
+<table>
+<tr><th>工具</th><th>用途</th><th>分數範圍</th></tr>
+<tr><td>NIHSS</td><td>急性期 stroke severity</td><td>0-42（高分嚴重）</td></tr>
+<tr><td>mRS（modified Rankin Scale）</td><td>長期失能程度</td><td>0-6（0 無症狀，6 死亡）</td></tr>
+<tr><td>Barthel index</td><td>ADL 獨立程度</td><td>0-100（高分獨立）</td></tr>
+<tr><td>FIM</td><td>復健中 functional independence</td><td>18-126</td></tr>
+<tr><td>ICH score</td><td>30 天死亡率（出血性）</td><td>0-6</td></tr>
+</table>
+
+<h4>具體預後預測（給家屬的話可以這樣說）</h4>
+<ul>
+<li>「3-6 個月內 motor recovery 最快，6 個月後速度減緩但仍可進步」</li>
+<li>「下肢通常恢復比上肢好；走路的可能性比手部精細動作高」</li>
+<li>「我們會把目標設定在『提升生活品質』而不是『回到病前』」</li>
+</ul>`,
+      },
     ],
   },
 ];
@@ -1169,12 +1980,29 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
 }
 
 function Results({ selectedCases, caseTimings, onRestart }) {
+  const [allOpen, setAllOpen] = useState(false);
+  const [bulkKey, setBulkKey] = useState(0);
+
+  const handleExpandAll = () => {
+    setAllOpen(true);
+    setBulkKey(k => k + 1);
+  };
+  const handleCollapseAll = () => {
+    setAllOpen(false);
+    setBulkKey(k => k + 1);
+  };
+
   return (
     <div className="results-screen">
       <div className="results-header">
         <div className="eyebrow">Examination Complete</div>
         <h1 className="results-title">完整詳解</h1>
-        <p className="results-sub">以下為本場所有題目的參考答案，每題作答時間顯示於右側</p>
+        <p className="results-sub">點擊任一題目可展開詳解。每題作答時間顯示於右側。</p>
+      </div>
+
+      <div className="results-controls">
+        <button className="expand-btn" onClick={handleExpandAll}>全部展開</button>
+        <button className="expand-btn" onClick={handleCollapseAll}>全部收起</button>
       </div>
 
       {selectedCases.map((c, ci) => {
@@ -1188,33 +2016,78 @@ function Results({ selectedCases, caseTimings, onRestart }) {
               {domain && <div className="case-domain-tag">{domain.tc}</div>}
             </div>
             <div className="case-context">{c.context}</div>
-            {c.questions.map((qa, qi) => {
-              const t = timings.timings[qi];
-              let timeBadge;
-              if (t && t.visited) {
-                timeBadge = (
-                  <div className={`qa-time ${t.timeout ? 'timeout' : ''}`}>
-                    {t.timeout && '⏱ '}{fmtTime(t.seconds)}{t.timeout && ' · 時間到'}
-                  </div>
-                );
-              } else {
-                timeBadge = <div className="qa-time unanswered">未作答</div>;
-              }
-              return (
-                <div key={qi} className="qa-block">
-                  <div className="qa-q-row">
-                    <div className="qa-q qa-q-text" style={{marginBottom: 0}}>{qa.q}</div>
-                    {timeBadge}
-                  </div>
-                  <div className="qa-a" dangerouslySetInnerHTML={{__html: qa.a}}></div>
-                </div>
-              );
-            })}
+            {c.questions.map((qa, qi) => (
+              <QABlockWrapper
+                key={`${ci}-${qi}-${bulkKey}`}
+                qa={qa}
+                qi={qi}
+                timing={timings.timings[qi]}
+                defaultOpen={allOpen}
+              />
+            ))}
           </div>
         );
       })}
 
       <button className="restart-btn" onClick={onRestart}>← 回到首頁</button>
+    </div>
+  );
+}
+
+function QABlockWrapper({ qa, qi, timing, defaultOpen }) {
+  const [open, setOpen] = useState(defaultOpen);
+
+  let timeBadge;
+  if (timing && timing.visited) {
+    timeBadge = (
+      <div className={`qa-time ${timing.timeout ? 'timeout' : ''}`}>
+        {timing.timeout && '⏱ '}{fmtTime(timing.seconds)}{timing.timeout && ' · 時間到'}
+      </div>
+    );
+  } else {
+    timeBadge = <div className="qa-time unanswered">未作答</div>;
+  }
+
+  return (
+    <div className="qa-block">
+      <div className={`qa-card ${open ? 'open' : ''}`}>
+        <div className="qa-summary" onClick={() => setOpen(!open)}>
+          <span className="qa-chevron">▶</span>
+          <span className="qa-q-num">Q{String(qi+1).padStart(2,'0')}</span>
+          <span className="qa-q-summary">{qa.q}</span>
+          {timeBadge}
+        </div>
+        {open && (
+          <div className="qa-expanded">
+            {(qa.keywords && qa.keywords.length > 0) && (
+              <div className="det-section">
+                <div className="det-section-label">關鍵字 KEYWORDS</div>
+                <div className="keyword-list">
+                  {qa.keywords.map((k, i) => (
+                    <span key={i} className={`keyword-tag ${/^[A-Za-z0-9\s\-\/&,\.\(\)]+$/.test(k) ? 'en' : ''}`}>{k}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+            {(qa.points && qa.points.length > 0) && (
+              <div className="det-section">
+                <div className="det-section-label">應提到的要點 KEY POINTS</div>
+                <ul className="points-list">
+                  {qa.points.map((p, i) => (
+                    <li key={i} dangerouslySetInnerHTML={{__html: p}}></li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {qa.a && (
+              <div className="det-section">
+                <div className="det-section-label">完整詳解 DETAIL</div>
+                <div className="det-content" dangerouslySetInnerHTML={{__html: qa.a}}></div>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
