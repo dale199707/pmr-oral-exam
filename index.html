@@ -211,6 +211,130 @@
     line-height: 1;
   }
 
+  /* Case picker (replaces count selector) */
+  .case-pick-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .case-pick-btn {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: grid;
+    grid-template-columns: 110px 1fr auto auto;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+    font-family: var(--tc);
+  }
+  .case-pick-btn:hover {
+    border-color: var(--accent);
+    background: var(--bg-elev);
+    transform: translateX(2px);
+  }
+  .case-pick-btn:hover .case-pick-arrow {
+    color: var(--accent);
+    transform: translateX(4px);
+  }
+  .case-pick-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--accent);
+  }
+  .case-pick-title {
+    font-family: var(--tc);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .case-pick-meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--text-faint);
+    white-space: nowrap;
+  }
+  .case-pick-arrow {
+    font-family: var(--mono);
+    font-size: 18px;
+    color: var(--text-faint);
+    transition: all 0.15s ease;
+  }
+  @media (max-width: 700px) {
+    .case-pick-btn {
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      padding: 16px 18px;
+    }
+    .case-pick-num {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .case-pick-title {
+      grid-column: 1;
+      grid-row: 2;
+      font-size: 15px;
+    }
+    .case-pick-meta {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .case-pick-arrow {
+      grid-column: 2;
+      grid-row: 1 / span 3;
+      align-self: center;
+    }
+    .q-top {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      gap: 10px 16px;
+    }
+    .q-top .home-link {
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: start;
+    }
+    .q-top .timer {
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: end;
+      font-size: 32px;
+    }
+    .q-top .timer.danger { font-size: 44px; }
+    .q-marker {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+      text-align: center;
+    }
+    .case-header {
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto;
+      gap: 14px 16px;
+    }
+    .case-header .home-link {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .case-progress {
+      grid-column: 2;
+      grid-row: 1;
+      font-size: 11px;
+    }
+    .case-title {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+      font-size: 26px;
+      text-align: left;
+    }
+  }
+
   .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -271,20 +395,24 @@
     border-bottom: 1px solid var(--border);
     padding-bottom: 20px;
     margin-bottom: 36px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: baseline;
+    gap: 20px;
   }
   .case-title {
     font-family: var(--serif);
     font-size: 32px;
     font-weight: 500;
+    text-align: center;
   }
   .case-progress {
     font-family: var(--mono);
     font-size: 13px;
     color: var(--text-dim);
     letter-spacing: 0.1em;
+    text-align: right;
+    justify-self: end;
   }
   .case-body {
     background: var(--bg-card);
@@ -304,6 +432,28 @@
     margin: 24px 0;
   }
 
+  /* Home link button (used in case header, q-top, results) */
+  .home-link {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 8px 14px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+  .home-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateX(-2px);
+  }
+  .results-home {
+    margin-bottom: 18px;
+  }
+
   .question-screen {
     min-height: 100vh;
     display: flex;
@@ -313,9 +463,10 @@
     margin: 0 auto;
   }
   .q-top {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    gap: 20px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 16px;
     margin-bottom: 24px;
@@ -326,6 +477,7 @@
     letter-spacing: 0.25em;
     color: var(--text-faint);
     text-transform: uppercase;
+    text-align: center;
   }
   .q-marker .accent { color: var(--accent); }
   .timer {
@@ -3891,13 +4043,7 @@ const casesByDomain = (id) => CASES.filter(c => c.domain === id);
 
 function Landing({ onStart }) {
   const [selectedDomain, setSelectedDomain] = useState(null);
-  const [count, setCount] = useState(1);
   const availableCases = selectedDomain ? casesByDomain(selectedDomain) : [];
-  const maxCount = availableCases.length;
-
-  useEffect(() => {
-    if (count > maxCount && maxCount > 0) setCount(maxCount);
-  }, [selectedDomain, maxCount]);
 
   return (
     <div className="container">
@@ -3909,7 +4055,7 @@ function Landing({ onStart }) {
         </h1>
         <p className="landing-sub">
           每大題九分鐘，模擬真實口試節奏。倒數結束自動結束本題。
-          作答以口述為主，全部考完後一次顯示完整詳解。
+          作答以口述為主，作答完畢後顯示完整詳解。
         </p>
       </div>
 
@@ -3936,48 +4082,30 @@ function Landing({ onStart }) {
         </div>
       </div>
 
-      {selectedDomain && maxCount > 0 && (
+      {selectedDomain && availableCases.length > 0 && (
         <>
           <div className="config-group">
-            <div className="section-label">PRACTICE — 練習題數</div>
-            <div className="config-label">本場練習大題數量（實際國考為 1 大題）</div>
-            <div className="count-grid">
-              {[1,2,3,4,5].map(n => (
+            <div className="section-label">CASE — 選擇題目</div>
+            <div className="config-label">每場考試為 1 大題（與實際國考相同）</div>
+            <div className="case-pick-list">
+              {availableCases.map((c, i) => (
                 <button
-                  key={n}
-                  className={`count-btn ${count === n ? 'active' : ''}`}
-                  onClick={() => setCount(n)}
-                  disabled={n > maxCount}
+                  key={c.id}
+                  className="case-pick-btn"
+                  onClick={() => onStart(c)}
                 >
-                  <span className="count-btn-label">模擬題</span>
-                  <span className="count-btn-num">{n}</span>
+                  <div className="case-pick-num">CASE {String(i+1).padStart(2,'0')}</div>
+                  <div className="case-pick-title">{c.title}</div>
+                  <div className="case-pick-meta">{c.questions.length} 小題 · 9 分鐘</div>
+                  <div className="case-pick-arrow">→</div>
                 </button>
               ))}
             </div>
           </div>
-
-          <div className="info-grid">
-            <div className="info-cell">
-              <div className="info-cell-label">每大題時限</div>
-              <div className="info-cell-value">9 分鐘</div>
-            </div>
-            <div className="info-cell">
-              <div className="info-cell-label">小題進度</div>
-              <div className="info-cell-value">手動控制</div>
-            </div>
-            <div className="info-cell">
-              <div className="info-cell-label">作答方式</div>
-              <div className="info-cell-value">純口述</div>
-            </div>
-          </div>
-
-          <button className="start-btn" onClick={() => onStart(selectedDomain, count)}>
-            開始模擬考試 →
-          </button>
         </>
       )}
 
-      {selectedDomain && maxCount === 0 && (
+      {selectedDomain && availableCases.length === 0 && (
         <div style={{textAlign:'center', padding:'48px 0', color:'var(--text-faint)', fontFamily:'var(--mono)', fontSize:12, letterSpacing:'0.2em'}}>
           此領域題庫尚未建置
         </div>
@@ -3992,15 +4120,16 @@ function Landing({ onStart }) {
   );
 }
 
-function CaseIntro({ caseData, idx, total, onReady }) {
+function CaseIntro({ caseData, onReady, onHome }) {
   const domain = DOMAINS.find(d => d.id === caseData.domain);
   return (
     <div className="case-screen">
       <div className="case-header">
+        <button className="home-link" onClick={onHome}>← 回首頁</button>
         <div className="case-title">臨床情境</div>
         <div className="case-progress">
           {domain && <span style={{color:'var(--accent)'}}>{domain.tc}</span>}
-          {' · CASE '}{idx + 1} / {total}
+          {' · '}{caseData.title}
         </div>
       </div>
       <div className="case-body">{caseData.context}</div>
@@ -4014,12 +4143,13 @@ function CaseIntro({ caseData, idx, total, onReady }) {
   );
 }
 
-function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
+function CaseRunner({ caseData, onCaseEnd, onHome }) {
   const [remaining, setRemaining] = useState(SECONDS_PER_CASE);
   const [qIdx, setQIdx] = useState(0);
   const [timeUp, setTimeUp] = useState(false);
   const [showEndConfirm, setShowEndConfirm] = useState(false);
   const [showContext, setShowContext] = useState(false);
+  const [showHomeConfirm, setShowHomeConfirm] = useState(false);
   // qTimings[i] = { seconds: 累計秒數, timeout: bool, visited: bool }
   const [qTimings, setQTimings] = useState({});
   const totalQ = caseData.questions.length;
@@ -4040,7 +4170,7 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
     setTimeUp(false);
     setQTimings({});
     qStartElapsedRef.current = 0;
-  }, [caseIdx]);
+  }, [caseData.id]);
 
   useEffect(() => {
     if (timeUp) return;
@@ -4065,7 +4195,7 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, [caseIdx, timeUp]);
+  }, [caseData.id, timeUp]);
 
   // 將「這次停留在當前小題的時間」累加進去，並把 qStart 移到現在
   const accumulateCurrentQTime = () => {
@@ -4144,9 +4274,12 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
   return (
     <div className="question-screen">
       <div className="q-top">
+        <button className="home-link" onClick={() => setShowHomeConfirm(true)}>
+          ← 回首頁
+        </button>
         <div className="q-marker">
           {domain && <span className="accent">{domain.tc}</span>}
-          {' · CASE '}{caseIdx + 1}/{caseTotal}{' · QUESTION '}{qIdx + 1}/{totalQ}
+          {' · QUESTION '}{qIdx + 1}/{totalQ}
         </div>
         <div className={`timer ${cls}`}>{fmtTime(remaining)}</div>
       </div>
@@ -4202,7 +4335,7 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
           <div className="timeup-title">時間到</div>
           <div className="timeup-sub">本大題作答時間結束</div>
           <button className="start-btn" style={{maxWidth:280}} onClick={handleTimeUpEnd}>
-            {caseIdx + 1 < caseTotal ? '進入下一大題 →' : '查看完整詳解 →'}
+            查看完整詳解 →
           </button>
         </div>
       )}
@@ -4221,11 +4354,26 @@ function CaseRunner({ caseData, caseIdx, caseTotal, onCaseEnd }) {
           </div>
         </div>
       )}
+
+      {showHomeConfirm && (
+        <div className="modal-bg">
+          <div className="modal">
+            <div className="modal-title">回到首頁？</div>
+            <div className="modal-text">目前作答進度與計時將不會保留。確認離開？</div>
+            <div className="modal-btns">
+              <button className="modal-btn" onClick={() => setShowHomeConfirm(false)}>繼續作答</button>
+              <button className="modal-btn primary" onClick={onHome}>
+                離開回首頁
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
 
-function Results({ selectedCases, caseTimings, onRestart }) {
+function Results({ activeCase, caseTiming, onRestart }) {
   const [allOpen, setAllOpen] = useState(false);
   const [bulkKey, setBulkKey] = useState(0);
 
@@ -4238,9 +4386,21 @@ function Results({ selectedCases, caseTimings, onRestart }) {
     setBulkKey(k => k + 1);
   };
 
+  if (!activeCase) {
+    return (
+      <div className="results-screen">
+        <button className="restart-btn" onClick={onRestart}>← 回到首頁</button>
+      </div>
+    );
+  }
+
+  const domain = DOMAINS.find(d => d.id === activeCase.domain);
+  const timings = caseTiming || { timings: {}, lastQIdx: -1 };
+
   return (
     <div className="results-screen">
       <div className="results-header">
+        <button className="home-link results-home" onClick={onRestart}>← 回首頁</button>
         <div className="eyebrow">Examination Complete</div>
         <h1 className="results-title">完整詳解</h1>
         <p className="results-sub">點擊任一題目可展開詳解。每題作答時間顯示於右側。</p>
@@ -4251,29 +4411,23 @@ function Results({ selectedCases, caseTimings, onRestart }) {
         <button className="expand-btn" onClick={handleCollapseAll}>全部收起</button>
       </div>
 
-      {selectedCases.map((c, ci) => {
-        const domain = DOMAINS.find(d => d.id === c.domain);
-        const timings = caseTimings[ci] || { timings: {}, lastQIdx: -1 };
-        return (
-          <div key={c.id} className="case-block">
-            <div className="case-block-header">
-              <div className="case-block-num">CASE {String(ci+1).padStart(2,'0')}</div>
-              <div className="case-block-title">{c.title}</div>
-              {domain && <div className="case-domain-tag">{domain.tc}</div>}
-            </div>
-            <div className="case-context">{c.context}</div>
-            {c.questions.map((qa, qi) => (
-              <QABlockWrapper
-                key={`${ci}-${qi}-${bulkKey}`}
-                qa={qa}
-                qi={qi}
-                timing={timings.timings[qi]}
-                defaultOpen={allOpen}
-              />
-            ))}
-          </div>
-        );
-      })}
+      <div className="case-block">
+        <div className="case-block-header">
+          <div className="case-block-num">CASE</div>
+          <div className="case-block-title">{activeCase.title}</div>
+          {domain && <div className="case-domain-tag">{domain.tc}</div>}
+        </div>
+        <div className="case-context">{activeCase.context}</div>
+        {activeCase.questions.map((qa, qi) => (
+          <QABlockWrapper
+            key={`${qi}-${bulkKey}`}
+            qa={qa}
+            qi={qi}
+            timing={timings.timings[qi]}
+            defaultOpen={allOpen}
+          />
+        ))}
+      </div>
 
       <button className="restart-btn" onClick={onRestart}>← 回到首頁</button>
     </div>
@@ -4340,52 +4494,41 @@ function QABlockWrapper({ qa, qi, timing, defaultOpen }) {
 
 function App() {
   const [phase, setPhase] = useState('landing');
-  const [selectedCases, setSelectedCases] = useState([]);
-  const [caseIdx, setCaseIdx] = useState(0);
-  // caseTimings[caseIndex] = { timings: {qIdx: {seconds, timeout}}, lastQIdx }
-  const [caseTimings, setCaseTimings] = useState({});
+  const [activeCase, setActiveCase] = useState(null);
+  // caseTiming = { timings: {qIdx: {seconds, timeout}}, lastQIdx }
+  const [caseTiming, setCaseTiming] = useState({ timings: {}, lastQIdx: -1 });
 
-  const handleStart = (domainId, count) => {
-    const pool = casesByDomain(domainId);
-    const picked = shuffle(pool).slice(0, count);
-    setSelectedCases(picked);
-    setCaseIdx(0);
-    setCaseTimings({});
+  const handleStart = (caseObj) => {
+    setActiveCase(caseObj);
+    setCaseTiming({ timings: {}, lastQIdx: -1 });
     setPhase('intro');
   };
 
   const handleReady = () => setPhase('running');
 
   const handleCaseEnd = (timings, lastQIdx) => {
-    setCaseTimings(prev => ({
-      ...prev,
-      [caseIdx]: { timings: timings || {}, lastQIdx: lastQIdx ?? -1 }
-    }));
-    if (caseIdx + 1 < selectedCases.length) {
-      setCaseIdx(caseIdx + 1);
-      setPhase('intro');
-    } else {
-      setPhase('results');
-    }
+    setCaseTiming({ timings: timings || {}, lastQIdx: lastQIdx ?? -1 });
+    setPhase('results');
   };
 
   const handleRestart = () => {
     setPhase('landing');
-    setSelectedCases([]);
-    setCaseIdx(0);
-    setCaseTimings({});
+    setActiveCase(null);
+    setCaseTiming({ timings: {}, lastQIdx: -1 });
   };
 
   return (
     <>
       {phase === 'landing' && <Landing onStart={handleStart} />}
       {phase === 'intro' && (
-        <CaseIntro caseData={selectedCases[caseIdx]} idx={caseIdx} total={selectedCases.length} onReady={handleReady} />
+        <CaseIntro caseData={activeCase} onReady={handleReady} onHome={handleRestart} />
       )}
       {phase === 'running' && (
-        <CaseRunner caseData={selectedCases[caseIdx]} caseIdx={caseIdx} caseTotal={selectedCases.length} onCaseEnd={handleCaseEnd} />
+        <CaseRunner caseData={activeCase} onCaseEnd={handleCaseEnd} onHome={handleRestart} />
       )}
-      {phase === 'results' && <Results selectedCases={selectedCases} caseTimings={caseTimings} onRestart={handleRestart} />}
+      {phase === 'results' && (
+        <Results activeCase={activeCase} caseTiming={caseTiming} onRestart={handleRestart} />
+      )}
     </>
   );
 }
