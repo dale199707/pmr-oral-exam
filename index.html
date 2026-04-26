@@ -4020,6 +4020,2386 @@ NSx 評估後採保守治療，住院第 5 天會診復健科。
       },
     ],
   },
+  {
+    id: 'cardio_004',
+    domain: 'cardio',
+    title: '右側小腦梗塞（PICA territory infarct）',
+    context: `54 歲男性，HTN、smoker（30 pack-year），無糖尿病。三天前清晨起床時突然嚴重眩暈、嘔吐，無法站立，意識清楚但走路會往右倒。家屬以為是 BPPV 帶至診所，給予止暈藥後返家。
+
+兩天後病人步態仍極度不穩，講話開始口齒不清，再度送至急診。
+
+到院時 BP 165/95、HR 78、GCS 15。Neuro：意識清楚、無 hemiparesis、無 sensory loss、cranial nerve 大致 OK 但講話 scanning speech；坐位 truncal ataxia 明顯，無法獨坐，閉眼站立完全跌倒；Romberg 困難評估；右側 finger-to-nose 與 heel-to-shin 嚴重 dysmetria；右側 dysdiadochokinesia(+)。
+
+Brain MRI/MRA：right cerebellar hemisphere 大範圍梗塞（PICA territory），fourth ventricle 略受壓但無 obstructive hydrocephalus；right vertebral artery V4 segment irregular narrowing。
+
+NSx 評估認為目前不需 decompression，住院神經內科治療。住院第 5 天會診復健科。
+
+目前狀況：意識清楚但仍持續眩暈、輕微 nystagmus；坐位 truncal control poor（需扶才能維持坐姿）；scanning dysarthria；無法吞嚥（有 mild aspiration on water）；情緒低落、易怒（家屬反映個性大改）。`,
+    questions: [
+      {
+        q: '請說明小腦的解剖功能分區，並依本病人病灶位置（PICA territory）解釋他出現的所有症狀。',
+        keywords: [
+          'Cerebellum 三分區',
+          'Vestibulocerebellum (flocculonodular)',
+          'Spinocerebellum (vermis + paravermal)',
+          'Cerebrocerebellum (lateral hemisphere)',
+          'PICA territory',
+          'Lateral medullary',
+          'Truncal ataxia',
+          'Limb ataxia',
+          'Dysmetria',
+          'Dysdiadochokinesia',
+          'Scanning dysarthria',
+          'Ipsilateral signs',
+        ],
+        points: [
+          '<strong>三大功能區</strong>：vestibulocerebellum、spinocerebellum、cerebrocerebellum',
+          '<strong>Vestibulocerebellum (flocculonodular lobe)</strong>：平衡、眼球動作 → 受損致 truncal ataxia、nystagmus',
+          '<strong>Spinocerebellum (vermis + paravermal)</strong>：trunk + proximal limb 動作協調、步態',
+          '<strong>Cerebrocerebellum (lateral hemisphere)</strong>：細部肢體動作計劃、speech',
+          '<strong>PICA 供應</strong>：inferolateral cerebellum + lateral medulla（部分）',
+          '<strong>小腦症狀同側性</strong>（小腦病灶 → 同側肢體 ataxia），因為 double-cross',
+          '<strong>本病人右側病灶 → 右側肢體 dysmetria/dysdiadochokinesia</strong>',
+          '<strong>Truncal ataxia</strong>（由 vermis 受影響）→ 無法獨坐獨站',
+          '<strong>Scanning speech / cerebellar dysarthria</strong>：cerebrocerebellum + brainstem 影響',
+          '<strong>Vertigo + nystagmus</strong>：vestibulocerebellum + 與 vestibular nuclei 連結受影響',
+          '<strong>無 hemiparesis</strong>：因為非 corticospinal tract 區域',
+          '<strong>注意 PICA 也供應 lateral medulla</strong>：可能合併 Wallenberg',
+        ],
+        a: `<h4>小腦解剖與功能分區</h4>
+
+<p><strong>三大功能分區（依胚胎學與功能）：</strong></p>
+
+<table>
+<tr><th>分區</th><th>解剖位置</th><th>主要功能</th><th>受損症狀</th></tr>
+<tr><td><strong>Vestibulocerebellum</strong>（archicerebellum）</td><td>Flocculonodular lobe</td><td>平衡、眼球動作、頭部姿勢</td><td>Truncal ataxia、nystagmus、disequilibrium</td></tr>
+<tr><td><strong>Spinocerebellum</strong>（paleocerebellum）</td><td>Vermis + paravermal zone</td><td>Trunk + proximal limb 協調、步態、肌張力</td><td>Truncal ataxia、wide-based gait、postural instability</td></tr>
+<tr><td><strong>Cerebrocerebellum</strong>（neocerebellum）</td><td>Lateral hemisphere</td><td>遠端肢體精細動作計劃、speech、cognitive</td><td>Limb ataxia、dysmetria、scanning speech、CCAS（cognitive affective syndrome）</td></tr>
+</table>
+
+<h4>小腦血供（考點）</h4>
+
+<table>
+<tr><th>動脈</th><th>供應區域</th><th>典型症候群</th></tr>
+<tr><td><strong>SCA</strong>（Superior Cerebellar Artery）</td><td>Superior cerebellum、dentate nucleus、superior vermis</td><td>嚴重 limb ataxia、dysarthria、horizontal gaze palsy</td></tr>
+<tr><td><strong>AICA</strong>（Anterior Inferior Cerebellar Artery）</td><td>Anterior-inferior cerebellum + lateral pons + 內耳（labyrinthine artery）</td><td>Vertigo、hearing loss（同側！）、ipsilateral CN VII palsy、ataxia</td></tr>
+<tr><td><strong>PICA</strong>（Posterior Inferior Cerebellar Artery）</td><td>Inferolateral cerebellum + lateral medulla</td><td>本病人；可能合併 Wallenberg</td></tr>
+</table>
+
+<h4>小腦症狀的核心特徵</h4>
+
+<p><strong>Ipsilateral 同側性（重要！）</strong></p>
+<ul>
+<li>小腦受損 → 同側肢體 ataxia（不像大腦病灶）</li>
+<li>機制：double-cross — corticopontocerebellar 越過 midline 一次，cerebellothalamic 再越過一次</li>
+<li>本病人右側小腦 → 右側 finger-to-nose、heel-to-shin 異常</li>
+</ul>
+
+<p><strong>典型臨床三角（cerebellar triad）：</strong></p>
+<ol>
+<li><strong>失調（ataxia）</strong>：truncal vs limb</li>
+<li><strong>動作不準（dysmetria）</strong>：finger-to-nose、heel-to-shin、past-pointing</li>
+<li><strong>反覆動作不協調（dysdiadochokinesia）</strong>：手翻轉測試</li>
+</ol>
+
+<p><strong>其他典型症狀：</strong></p>
+<ul>
+<li><strong>Intention tremor</strong>：動作接近目標時出現的 tremor（與 PD 的 resting tremor 區分）</li>
+<li><strong>Scanning dysarthria</strong>：每個音節分開、stress 不正常（"I am a good boy" → "I-am-a-good-boy"）</li>
+<li><strong>Hypotonia</strong>：肌肉張力下降（pendular reflex）</li>
+<li><strong>Nystagmus</strong>：gaze-evoked、特別 lateral gaze 時更明顯</li>
+<li><strong>Wide-based gait</strong>：步態 like drunk</li>
+<li><strong>Romberg test</strong>：小腦 ataxia 病人睜眼閉眼皆不穩；vs sensory ataxia 閉眼才不穩</li>
+</ul>
+
+<h4>本病人症狀對應分析</h4>
+
+<table>
+<tr><th>症狀</th><th>對應區域</th></tr>
+<tr><td>Truncal ataxia（無法獨坐）</td><td>Vermis、spinocerebellum</td></tr>
+<tr><td>右側 finger-to-nose dysmetria</td><td>Right cerebrocerebellum、cerebellar hemisphere（同側）</td></tr>
+<tr><td>右側 dysdiadochokinesia</td><td>Right lateral hemisphere</td></tr>
+<tr><td>Scanning dysarthria</td><td>Cerebrocerebellum + brainstem 連結</td></tr>
+<tr><td>Vertigo、nystagmus</td><td>Vestibulocerebellum + vestibular nuclei</td></tr>
+<tr><td>嚴重 disequilibrium</td><td>Flocculonodular lobe</td></tr>
+<tr><td>個性改變、易怒</td><td>Cerebellar Cognitive Affective Syndrome（CCAS）— 後面題會詳述</td></tr>
+<tr><td>輕微 dysphagia</td><td>可能合併 lateral medullary（PICA 也供應），需評估</td></tr>
+<tr><td>無 hemiparesis</td><td>Corticospinal tract 不在小腦</td></tr>
+</table>
+
+<h4>必須警覺的合併症</h4>
+
+<p>PICA 病灶要注意是否合併 <strong>Lateral Medullary Syndrome（Wallenberg）</strong>：</p>
+<ul>
+<li>同側面部 sensory loss + 對側 body sensory loss（cross sensory pattern）</li>
+<li>同側 Horner syndrome（ptosis、miosis、anhidrosis）</li>
+<li>Dysphagia、hoarseness（CN IX、X）</li>
+<li>Vertigo、nystagmus</li>
+<li>Ipsilateral cerebellar ataxia</li>
+</ul>
+<p>本病人有 mild dysphagia + aspiration → 需仔細評估是否有 lateral medullary 合併。</p>
+
+<h4>「Cerebellar mutism」</h4>
+<ul>
+<li>急性後 cerebellar 切除（特別是 vermis、paravermal）後出現的暫時性不講話</li>
+<li>多見於 pediatric posterior fossa surgery</li>
+<li>本病人成人，較少出現</li>
+</ul>`,
+      },
+      {
+        q: '請現場示範床邊評估小腦功能的檢查，至少 5 種，並說明異常時的意義。',
+        keywords: [
+          'Finger-to-nose test',
+          'Heel-to-shin test',
+          'Rapid alternating movement (RAM)',
+          'Tandem gait',
+          'Romberg test',
+          'Past pointing',
+          'Rebound phenomenon',
+          'Nystagmus exam',
+          'Speech (scanning)',
+          'Truncal stability',
+          'Pendular reflex',
+        ],
+        points: [
+          '<strong>Finger-to-nose</strong>：dysmetria、intention tremor、past pointing',
+          '<strong>Heel-to-shin</strong>：下肢 dysmetria 評估',
+          '<strong>RAM (rapid alternating movement)</strong>：手翻轉、拍腿評估 dysdiadochokinesia',
+          '<strong>Tandem gait</strong>：腳跟接腳尖直線走，midline ataxia 敏感',
+          '<strong>Romberg test</strong>：閉眼站立；小腦病人閉眼睜眼皆不穩',
+          '<strong>Past pointing</strong>：閉眼指物，反覆有偏向同側',
+          '<strong>Rebound phenomenon (Stewart-Holmes)</strong>：用力屈肘抗阻力後突然放開，小腦病人會打到自己',
+          '<strong>Nystagmus</strong>：gaze-evoked，往病灶側更明顯',
+          '<strong>Pendular reflex</strong>：knee jerk 後鐘擺式擺盪 → hypotonia',
+          '<strong>Truncal stability</strong>：坐姿、站姿、雙腳併攏、單腳站',
+          '<strong>Scanning dysarthria</strong>：請病人說「British constitution」或注音複雜句',
+        ],
+        a: `<h4>床邊小腦評估完整流程</h4>
+
+<h4>1. Inspection（觀察）</h4>
+<ul>
+<li>姿勢：是否歪向一邊？</li>
+<li>頭位：可能 head tilt</li>
+<li>不自主動作：tremor、myoclonus</li>
+<li>站姿：base wide？swaying？</li>
+</ul>
+
+<h4>2. Speech（言語）</h4>
+<p>請病人說以下句子：</p>
+<ul>
+<li>「British constitution」（英文困難句）</li>
+<li>「中華民國國民」</li>
+<li>注音「ㄆㄚ ㄊㄚ ㄎㄚ」反覆</li>
+</ul>
+<p><strong>異常表現：</strong></p>
+<ul>
+<li>Scanning：每個音節分開</li>
+<li>Slurred：口齒不清</li>
+<li>Explosive：突然大聲</li>
+<li>Irregular rhythm</li>
+</ul>
+
+<h4>3. Eye Movement（眼動）</h4>
+<ul>
+<li><strong>Smooth pursuit</strong>：請病人追視手指 H 字形 → 看是否 saccadic（jerky）</li>
+<li><strong>Saccade</strong>：請病人在兩個目標間快速切換 → 看是否 dysmetric saccade（過頭或不到）</li>
+<li><strong>Nystagmus</strong>：
+  <ul>
+    <li>Spontaneous（primary gaze）</li>
+    <li>Gaze-evoked（往兩側看 30 秒）</li>
+    <li>小腦病人 gaze-evoked 較常見，往病灶側更明顯</li>
+    <li>Direction-changing nystagmus → 中樞性</li>
+  </ul>
+</li>
+<li><strong>VOR (Vestibulo-Ocular Reflex)</strong>：head impulse test</li>
+</ul>
+
+<h4>4. Limb Coordination（肢體協調）</h4>
+
+<p><strong>Finger-to-Nose Test：</strong></p>
+<ul>
+<li>請病人以食指碰自己鼻尖 → 再碰檢查者手指</li>
+<li>檢查者把手指移到不同位置</li>
+<li>觀察：dysmetria（過頭/不到）、intention tremor（接近時抖動）、past pointing</li>
+<li>異常 → 該側 cerebrocerebellum 病灶</li>
+</ul>
+
+<p><strong>Heel-to-Shin Test：</strong></p>
+<ul>
+<li>仰躺，請病人用一腳跟放在另一邊膝蓋上 → 滑下 shin</li>
+<li>觀察：是否能維持直線下滑、是否搖擺</li>
+<li>本病人右側預期異常</li>
+</ul>
+
+<p><strong>Rapid Alternating Movement (RAM)：</strong></p>
+<ul>
+<li>手翻轉：手掌-手背交替拍另一手</li>
+<li>拍腿：兩手交替拍腿</li>
+<li>觀察：節奏、流暢度</li>
+<li>異常 = dysdiadochokinesia</li>
+</ul>
+
+<p><strong>Past Pointing Test：</strong></p>
+<ul>
+<li>請病人閉眼，雙手指對檢查者手指</li>
+<li>反覆抬起放下</li>
+<li>小腦病灶側手指會慢慢偏向病灶側</li>
+</ul>
+
+<p><strong>Rebound Phenomenon (Stewart-Holmes sign)：</strong></p>
+<ul>
+<li>請病人用力屈肘抗檢查者阻力</li>
+<li>突然放開阻力</li>
+<li>正常人 antagonist 會迅速制動；小腦病人會打到自己臉</li>
+</ul>
+
+<h4>5. Tone（張力）</h4>
+<ul>
+<li>Passive movement：感受是否 hypotonic</li>
+<li><strong>Pendular reflex</strong>：膝跳反射後小腿像鐘擺擺盪 → hypotonia 表現</li>
+</ul>
+
+<h4>6. Truncal Stability（軀幹平衡）</h4>
+<ul>
+<li><strong>Sitting balance</strong>：靜態坐穩、動態（伸手抓物）</li>
+<li><strong>Standing</strong>：雙腳分開站、雙腳併攏站</li>
+<li><strong>Romberg Test</strong>：雙腳併攏、雙手前伸、睜眼 30 秒 → 閉眼 30 秒
+  <ul>
+    <li>小腦 ataxia：睜眼閉眼皆不穩</li>
+    <li>Sensory ataxia (proprioception)：閉眼才不穩 → Romberg(+)</li>
+    <li>Vestibular：往一側偏倒</li>
+  </ul>
+</li>
+</ul>
+
+<h4>7. Gait（步態）</h4>
+<ul>
+<li><strong>Casual gait</strong>：是否 wide-based、staggering（drunken gait）</li>
+<li><strong>Tandem gait</strong>：腳跟接腳尖一直線走 — 對 midline cerebellar 最敏感</li>
+<li><strong>Turn</strong>：轉身是否 unsteady</li>
+<li><strong>Heel walk / toe walk</strong>：合併 motor 評估</li>
+</ul>
+
+<h4>本病人預期表現</h4>
+<table>
+<tr><th>檢查</th><th>預期結果</th></tr>
+<tr><td>Speech</td><td>Scanning dysarthria</td></tr>
+<tr><td>Smooth pursuit</td><td>Saccadic</td></tr>
+<tr><td>Nystagmus</td><td>Right gaze-evoked、horizontal</td></tr>
+<tr><td>Right finger-to-nose</td><td>Dysmetria、intention tremor</td></tr>
+<tr><td>Right heel-to-shin</td><td>Dysmetria</td></tr>
+<tr><td>Right RAM</td><td>Dysdiadochokinesia</td></tr>
+<tr><td>Past pointing</td><td>右側偏</td></tr>
+<tr><td>Rebound</td><td>Right side(+)</td></tr>
+<tr><td>Pendular reflex</td><td>Right(+)</td></tr>
+<tr><td>Sitting balance</td><td>Poor truncal control</td></tr>
+<tr><td>Romberg</td><td>睜眼閉眼皆 unsteady</td></tr>
+<tr><td>Gait</td><td>無法走（嚴重 truncal ataxia）</td></tr>
+</table>
+
+<h4>區分中樞 vs 周邊性 vertigo（HINTS exam）</h4>
+<p>當病人來診以 vertigo 為主訴時，急診常用 HINTS 區分中樞 vs 周邊：</p>
+<ul>
+<li><strong>H</strong>ead impulse test：周邊（catch-up saccade +）；中樞（normal）</li>
+<li><strong>N</strong>ystagmus：周邊 unidirectional；中樞 direction-changing</li>
+<li><strong>T</strong>est of <strong>S</strong>kew：中樞 skew deviation(+)</li>
+</ul>
+<p>HINTS plus 比早期 MRI 對 acute cerebellar stroke 更敏感（HINTS exam 由神經科醫師執行 sensitivity 高達 96-100%）— 本病人三天前症狀如果有正確使用 HINTS，可能更早診斷。</p>`,
+      },
+      {
+        q: '小腦中風病人的復健重點與一般 MCA 中風有何不同？請設計 PT、OT 治療計畫。',
+        keywords: [
+          'Truncal control',
+          'Sitting balance',
+          'Standing balance',
+          'Frenkel exercise',
+          'Weight-bearing',
+          'Proximal stability',
+          'Vestibular rehabilitation',
+          'Gaze stabilization',
+          'Habituation exercise',
+          'Coordination training',
+          'Task-specific training',
+          'Proprioceptive training',
+          'Compensation: weighting, AFO, walker',
+          'No spasticity issue',
+        ],
+        points: [
+          '<strong>核心差異</strong>：小腦中風無 hemiparesis、無 spasticity，主要問題是 ataxia + balance + coordination',
+          '<strong>無需痙攣管理</strong>（與 MCA 中風差異最大）',
+          '<strong>Truncal control 是基礎</strong>：先恢復坐姿穩定 → 站姿 → 移動',
+          '<strong>分級進展</strong>：supine → sitting (static → dynamic) → standing → walking',
+          '<strong>Frenkel exercise</strong>：經典小腦復健，以 visual feedback 補償 proprioception',
+          '<strong>Weight-bearing exercises</strong>：增加 proprioceptive input',
+          '<strong>Vestibular rehabilitation</strong>：gaze stabilization、habituation、balance retraining',
+          '<strong>Coordination training</strong>：repetitive task-specific',
+          '<strong>Compensation strategies</strong>：weighted cuff（腕重物）、AFO、walker',
+          '<strong>Gait training</strong>：wide-based gait → narrowing → tandem',
+          '<strong>OT 重點</strong>：ADL 在 ataxia 下完成（穩定支點、輔具、wrist weight）',
+          '<strong>避免</strong>：高跌倒風險環境，必須有保護',
+        ],
+        a: `<h4>小腦中風復健的獨特性</h4>
+
+<table>
+<tr><th>特徵</th><th>小腦中風</th><th>MCA 中風</th></tr>
+<tr><td>主要 deficit</td><td>Ataxia、balance、coordination</td><td>Hemiparesis、aphasia、neglect</td></tr>
+<tr><td>Motor weakness</td><td>無或輕微</td><td>明顯</td></tr>
+<tr><td>Spasticity</td><td>無（hypotonia 為主）</td><td>常見</td></tr>
+<tr><td>痙攣管理</td><td>不需要</td><td>核心議題</td></tr>
+<tr><td>失語</td><td>無（dysarthria 為主）</td><td>常見</td></tr>
+<tr><td>姿勢控制</td><td>核心問題</td><td>較少</td></tr>
+<tr><td>跌倒風險</td><td>極高（不穩）</td><td>中等</td></tr>
+<tr><td>Sensory deficit</td><td>無（除非合併 brainstem）</td><td>常見</td></tr>
+<tr><td>主要復健工具</td><td>Frenkel、vestibular rehab、coordination</td><td>CIMT、mirror therapy、neurodevelopmental</td></tr>
+</table>
+
+<h4>分級進展原則</h4>
+
+<p>小腦復健最重要原則：<strong>先 trunk → 再 distal</strong>，<strong>先 static → 再 dynamic</strong>，<strong>先穩定支點 → 再開放鏈</strong>。</p>
+
+<ol>
+<li>Supine 穩定 → 翻身、bridging</li>
+<li>Sitting static balance → dynamic（伸手）</li>
+<li>Standing static → dynamic</li>
+<li>Walking with support → independent</li>
+</ol>
+
+<h4>PT（物理治療）計畫</h4>
+
+<p><strong>1. Truncal Control（最先處理）</strong></p>
+<ul>
+<li>仰躺到坐起：bed mobility, log roll</li>
+<li>坐姿穩定：先有靠背 → 無靠背 → 抗外力推</li>
+<li>坐姿伸手：在不同方向取物，挑戰 dynamic balance</li>
+<li>Reach to floor：increase 挑戰</li>
+<li>Therapy ball：sitting on Swiss ball 訓練 core</li>
+</ul>
+
+<p><strong>2. Standing & Weight Bearing</strong></p>
+<ul>
+<li>Tilt table：起初承受重量</li>
+<li>Standing frame</li>
+<li>Parallel bars 內 standing：weight shift、reaching</li>
+<li>Single leg stance：先扶著</li>
+<li>Surface perturbation training（rocker board、foam）</li>
+</ul>
+
+<p><strong>3. Frenkel Exercises（經典）</strong></p>
+<p>由 Heinrich Frenkel 1889 設計，以 visual control 補償 proprioception 缺損。原則：精準、緩慢、視覺引導、漸進。</p>
+
+<p><strong>仰躺：</strong></p>
+<ul>
+<li>單腳屈曲到指定位置（地上畫線）</li>
+<li>單腳側展到指定位置</li>
+<li>用腳跟碰另一腳膝蓋、shin、ankle 順序</li>
+<li>雙腳同時做相反方向動作</li>
+</ul>
+
+<p><strong>坐姿：</strong></p>
+<ul>
+<li>坐穩 → 蹺腳到指定位置（地上有標記）</li>
+<li>從椅子起立至站立 → 坐下</li>
+</ul>
+
+<p><strong>站姿：</strong></p>
+<ul>
+<li>側步（向地上標記）</li>
+<li>前後步</li>
+<li>左右轉身</li>
+</ul>
+
+<p><strong>步行：</strong></p>
+<ul>
+<li>地上畫平行線 → 走在線間（wide）</li>
+<li>逐漸 narrow 兩線距離</li>
+<li>Foot placement on marks</li>
+<li>Tandem walking（最後階段）</li>
+</ul>
+
+<p><strong>4. Vestibular Rehabilitation（合併 vertigo 時）</strong></p>
+
+<p><strong>Gaze stabilization：</strong></p>
+<ul>
+<li>VOR × 1：眼睛盯目標、頭左右搖（active VOR）</li>
+<li>VOR × 2：頭與目標反向（更難）</li>
+<li>Smooth pursuit：眼追動目標（不動頭）</li>
+</ul>
+
+<p><strong>Habituation：</strong></p>
+<ul>
+<li>反覆做誘發 vertigo 的動作 → 中樞適應</li>
+<li>Cawthorne-Cooksey exercises（傳統 vestibular protocol）</li>
+</ul>
+
+<p><strong>Substitution：</strong>用視覺、本體覺取代 vestibular</p>
+
+<p><strong>5. Coordination Training</strong></p>
+<ul>
+<li>Frenkel 為主</li>
+<li>Tracking task：手隨目標移動</li>
+<li>Pegboard、puzzle</li>
+<li>Wii、VR coordination games</li>
+</ul>
+
+<p><strong>6. Gait Training</strong></p>
+<ul>
+<li>Parallel bars → walker（4-wheel walker for cerebellar）→ cane → no aid</li>
+<li>BWSTT (body weight supported treadmill)：早期可用</li>
+<li>地面標記步幅</li>
+<li>Obstacle course（後期）</li>
+<li>Dual-task training（一邊走一邊講話）— 後期</li>
+</ul>
+
+<h4>OT（職能治療）計畫</h4>
+
+<p><strong>ADL Training in Ataxia：</strong></p>
+<ul>
+<li><strong>進食</strong>：weighted utensil、heavier cup、stable seat with elbow support、滑墊防托盤滑動</li>
+<li><strong>穿衣</strong>：坐姿穿、選用易穿物（彈性褲、套頭衫）</li>
+<li><strong>盥洗</strong>：浴室扶手、防滑墊、shower chair</li>
+<li><strong>書寫</strong>：weighted pen、寫字架</li>
+</ul>
+
+<p><strong>Compensation Strategies：</strong></p>
+<ul>
+<li><strong>Weighting</strong>：手腕重物（0.5-1 kg）增加 inertia 抑制 ataxia — 對 mild dysmetria 有效</li>
+<li><strong>Stable proximal support</strong>：手肘靠桌做精細動作</li>
+<li><strong>Visual control</strong>：放慢、看清楚再動作</li>
+<li><strong>Environmental modification</strong>：扶手、防滑墊、減少地毯邊緣</li>
+</ul>
+
+<h4>輔具評估</h4>
+
+<table>
+<tr><th>輔具</th><th>用途</th></tr>
+<tr><td>Wide-based walker</td><td>提供穩定基底；首選</td></tr>
+<tr><td>4-wheel walker with brakes</td><td>較靈活</td></tr>
+<tr><td>Forearm crutch</td><td>後期</td></tr>
+<tr><td>AFO</td><td>若合併 foot drop（少見）</td></tr>
+<tr><td>Lumbar support / abdominal binder</td><td>truncal stability 輔助</td></tr>
+<tr><td>Wheelchair</td><td>距離長時用、防 fatigue</td></tr>
+<tr><td>Wrist weights (0.5-1 kg)</td><td>抑制 dysmetria</td></tr>
+<tr><td>Adaptive utensils</td><td>進食</td></tr>
+</table>
+
+<h4>SLP（語言治療）— 處理 dysarthria</h4>
+<ul>
+<li>呼吸控制訓練</li>
+<li>Pacing board：以視覺輔助講話節奏</li>
+<li>降低語速</li>
+<li>誇大發音（過度動作）</li>
+<li>必要時 AAC（augmentative & alternative communication）</li>
+</ul>
+
+<h4>本病人具體計畫</h4>
+
+<p><strong>住院第 1-2 週：</strong></p>
+<ul>
+<li>Bed mobility、bridging</li>
+<li>Sitting balance（從靠背 → 無靠背 → dynamic）</li>
+<li>仰躺 Frenkel</li>
+<li>Vestibular：basic gaze stabilization（如 vertigo 容許）</li>
+<li>OT：bed-level ADL（用 weighted utensil 進食）</li>
+<li>SLP：吞嚥評估與訓練（合併 mild aspiration）+ dysarthria</li>
+</ul>
+
+<p><strong>住院第 3-4 週：</strong></p>
+<ul>
+<li>Standing balance（with parallel bars）</li>
+<li>Standing weight shift、reaching</li>
+<li>Sitting Frenkel</li>
+<li>Pre-gait training</li>
+<li>OT：sitting ADL（穿衣、盥洗）</li>
+</ul>
+
+<p><strong>第 5-8 週（住院或 day care）：</strong></p>
+<ul>
+<li>Gait training with walker</li>
+<li>Standing Frenkel</li>
+<li>Stairs（後期）</li>
+<li>Community ambulation 規劃</li>
+</ul>
+
+<p><strong>長期（門診/居家）：</strong></p>
+<ul>
+<li>持續 Frenkel</li>
+<li>Vestibular maintenance</li>
+<li>環境改造</li>
+<li>跌倒預防教育</li>
+</ul>
+
+<h4>跌倒預防（極重要）</h4>
+<ul>
+<li>家中無障礙：扶手、防滑、移除絆倒物</li>
+<li>夜間照明</li>
+<li>沖澡椅</li>
+<li>必要時 hip protector</li>
+<li>定期評估骨質（避免跌倒骨折）— 中年男性 + smoker，骨密度可能下降</li>
+</ul>`,
+      },
+      {
+        q: '家屬反映病人「個性大改、易怒、情緒低落」。這是純粹中風後 depression 嗎？請說明 cerebellar 病變的非運動症狀與處置。',
+        keywords: [
+          'CCAS (Cerebellar Cognitive Affective Syndrome)',
+          'Schmahmann syndrome',
+          'Executive function',
+          'Visuospatial',
+          'Linguistic',
+          'Affective dysregulation',
+          'Disinhibition',
+          'Posterior lobe vs anterior lobe',
+          'Cognitive cerebellum',
+          'CCAS-Scale (CCAS-S)',
+          'Post-stroke depression',
+          'SSRI',
+          'Cognitive behavior therapy',
+        ],
+        points: [
+          '<strong>不只是 depression</strong>：小腦病變有獨立的 cognitive-affective 症候群',
+          '<strong>CCAS（Cerebellar Cognitive Affective Syndrome）</strong>：Schmahmann 1998 描述',
+          '<strong>四大領域</strong>：executive function、visuospatial、linguistic、affective',
+          '<strong>機轉</strong>：小腦不只管動作，也參與認知與情緒（cerebro-cerebellar circuit）',
+          '<strong>好發部位</strong>：posterior lobe、vermis 病灶',
+          '<strong>Affective</strong>：disinhibition、impulsivity、易怒、情緒擺盪、淡漠',
+          '<strong>Executive</strong>：注意力、抽象思考、working memory、planning',
+          '<strong>Linguistic</strong>：agrammatism、anomia、scanning（dysarthria 之外的）',
+          '<strong>Visuospatial</strong>：構成困難、判斷障礙',
+          '<strong>篩檢工具</strong>：CCAS-Scale (CCAS-S)、MoCA',
+          '<strong>處置</strong>：認知復健 + SSRI（depression）+ 環境調整 + 家屬衛教',
+          '<strong>預後</strong>：多數 6 個月內顯著改善，少數遺留 mild deficit',
+        ],
+        a: `<h4>Cerebellar Cognitive Affective Syndrome (CCAS)</h4>
+
+<p><strong>歷史</strong>：1998 年 Jeremy Schmahmann 首次描述，又稱 <strong>Schmahmann syndrome</strong>。打破「小腦只管動作」的傳統觀念。</p>
+
+<p><strong>機轉：Cerebro-cerebellar circuit</strong></p>
+<ul>
+<li>Lateral cerebellum 與 cerebral cortex 之間有大量 reciprocal connection</li>
+<li>透過 dentate nucleus → red nucleus → thalamus → cortex</li>
+<li>Cerebellum 不只 regulate motor，也 regulate cognition、emotion、language</li>
+<li>「Universal cerebellar transform」假說：小腦對 cortical function 提供 fine-tuning</li>
+</ul>
+
+<p><strong>解剖對應：</strong></p>
+<ul>
+<li><strong>Anterior lobe</strong>：motor</li>
+<li><strong>Posterior lobe（lobules VI-VII, Crus I-II）</strong>：cognitive</li>
+<li><strong>Vermis</strong>：affective、emotional regulation</li>
+</ul>
+
+<h4>CCAS 四大臨床領域</h4>
+
+<table>
+<tr><th>領域</th><th>表現</th></tr>
+<tr><td><strong>Executive function</strong></td><td>注意力差、working memory 下降、抽象思考障礙、planning 困難、set-shifting 困難、perseveration</td></tr>
+<tr><td><strong>Visuospatial</strong></td><td>構成 apraxia、視空間判斷差、繪圖困難、navigation 困難</td></tr>
+<tr><td><strong>Linguistic</strong></td><td>Agrammatism、anomia、verbal fluency 下降、prosody 異常（emotional tone）；不只是 dysarthria</td></tr>
+<tr><td><strong>Affective dysregulation</strong></td><td>淡漠（apathy）、disinhibition、衝動、情緒不穩、易怒、不適切笑哭、人格改變、obsessive-compulsive、autism-like behavior</td></tr>
+</table>
+
+<h4>本病人對應</h4>
+<ul>
+<li>「個性大改」→ affective dysregulation、人格改變</li>
+<li>「易怒」→ disinhibition、emotional dysregulation</li>
+<li>「情緒低落」→ post-stroke depression vs CCAS apathy（需區分）</li>
+<li>家屬反映「個性大改」是 CCAS 重要 clue（不只是憂鬱症狀）</li>
+</ul>
+
+<h4>篩檢與評估</h4>
+
+<p><strong>CCAS-Scale (CCAS-S)</strong>（2018 Hoche 提出）：</p>
+<ul>
+<li>10 項，10-15 分鐘</li>
+<li>包含：semantic fluency、phonemic fluency、category switching、digit span forward/backward、cube drawing、verbal registration、similarities、go-no go、affect</li>
+<li>≥ 3 項異常 = possible CCAS；≥ 4 項 = probable；≥ 5 項 = definite</li>
+</ul>
+
+<p><strong>其他工具：</strong></p>
+<ul>
+<li>MoCA（雖非 cerebellar specific）</li>
+<li>Frontal Assessment Battery (FAB)</li>
+<li>Trail Making Test A/B</li>
+<li>Stroop test</li>
+<li>Hospital Anxiety and Depression Scale (HADS)</li>
+<li>Beck Depression Inventory (BDI)</li>
+<li>正式 neuropsychological evaluation（轉介）</li>
+</ul>
+
+<h4>區分 CCAS vs Post-Stroke Depression</h4>
+
+<table>
+<tr><th>項目</th><th>CCAS</th><th>Post-Stroke Depression</th></tr>
+<tr><td>情緒</td><td>Apathy、disinhibition、波動為主</td><td>持續低落為主</td></tr>
+<tr><td>認知</td><td>Multi-domain（executive、visuospatial、linguistic）</td><td>Memory、attention 為主、與情緒平行</td></tr>
+<tr><td>行為</td><td>Disinhibited、衝動</td><td>退縮、interest 減少</td></tr>
+<tr><td>自殺意念</td><td>較少</td><td>較常見</td></tr>
+<tr><td>對 SSRI 反應</td><td>部分有效（特別 affective 部分）</td><td>主要治療</td></tr>
+<tr><td>常合併</td><td>可同時存在 depression</td><td>—</td></tr>
+</table>
+
+<p><strong>本病人</strong>很可能 CCAS + post-stroke depression 並存。</p>
+
+<h4>治療策略</h4>
+
+<p><strong>1. 藥物</strong></p>
+<ul>
+<li><strong>SSRI</strong>（Sertraline 25-200 mg、Escitalopram 5-20 mg、Citalopram 10-40 mg）— 治療 depression
+  <ul>
+    <li>FLAME trial：Fluoxetine 對 stroke motor recovery 也有助益（雖然後續 FOCUS trial 結果 mixed）</li>
+    <li>對 emotional incontinence、pseudobulbar affect 也有效</li>
+  </ul>
+</li>
+<li><strong>SNRI</strong>（Duloxetine、Venlafaxine）— 替代</li>
+<li><strong>Donepezil / Memantine</strong>：對 cognitive 部分有限實證</li>
+<li><strong>Methylphenidate</strong>：對 apathy、attention 可能有效（小型研究）</li>
+<li><strong>Modafinil</strong>：fatigue、sleepiness</li>
+<li><strong>Antipsychotic</strong>：嚴重 disinhibition、aggression（短期低劑量 quetiapine、olanzapine）</li>
+<li><strong>避免</strong>：benzodiazepine（會加重 cognition）</li>
+</ul>
+
+<p><strong>2. 認知復健</strong></p>
+<ul>
+<li>Executive function training</li>
+<li>Memory aids、external cues</li>
+<li>Compensatory strategies</li>
+<li>Computerized cognitive training（限）</li>
+<li>Goal Management Training</li>
+</ul>
+
+<p><strong>3. 心理介入</strong></p>
+<ul>
+<li>CBT (Cognitive Behavioral Therapy)</li>
+<li>Mindfulness-based therapy</li>
+<li>Behavioral activation（針對 apathy）</li>
+<li>個別/家族治療</li>
+</ul>
+
+<p><strong>4. 環境管理</strong></p>
+<ul>
+<li>結構化作息</li>
+<li>減少刺激（嚴重 disinhibition 時）</li>
+<li>明確規範</li>
+<li>避免引發衝突的情境</li>
+</ul>
+
+<p><strong>5. 家屬衛教與支持</strong></p>
+<ul>
+<li>解釋 CCAS：「個性改變是腦部受傷的一部分，不是病人故意」</li>
+<li>溝通技巧：避免爭辯、轉移注意力</li>
+<li>不批評、不羞辱</li>
+<li>家屬支持團體</li>
+<li>必要時家屬本人接受心理諮商（caregiver burden）</li>
+</ul>
+
+<h4>預後</h4>
+
+<ul>
+<li>多數 CCAS 病人在 stroke 後 6 個月內顯著改善</li>
+<li>少數遺留 mild executive 或 affective deficit</li>
+<li>影響 return to work：mild 病人多可回原崗位，moderate-severe 需 vocational rehab</li>
+<li>本病人 54 歲、smoker，後續 stroke recurrence 風險高（要 risk factor management）</li>
+</ul>
+
+<h4>本病人具體建議</h4>
+
+<ol>
+<li><strong>確診</strong>：
+  <ul>
+    <li>CCAS-S 評估</li>
+    <li>MoCA、FAB</li>
+    <li>HADS、BDI 評估憂鬱程度</li>
+    <li>正式 neuropsychological evaluation 轉介（住院期穩定後）</li>
+  </ul>
+</li>
+<li><strong>藥物</strong>：
+  <ul>
+    <li>Sertraline 25 mg/day → titrate to 50-100 mg（先針對 depression）</li>
+    <li>觀察 4-6 週</li>
+    <li>若 apathy 為主 → consider methylphenidate 試用</li>
+    <li>若衝動嚴重 → 短期 low-dose quetiapine</li>
+  </ul>
+</li>
+<li><strong>復健</strong>：
+  <ul>
+    <li>OT：cognitive rehab</li>
+    <li>SLP：linguistic + dysarthria</li>
+    <li>心理師：CBT、家族諮商</li>
+  </ul>
+</li>
+<li><strong>家屬衛教</strong>：CCAS 概念、溝通技巧、長期 expectation</li>
+<li><strong>追蹤</strong>：每 1-2 個月 re-evaluate</li>
+</ol>`,
+      },
+      {
+        q: '住院期間病人發生急性嚴重頭痛、嘔吐、意識下降。請說明可能的併發症、緊急評估與處置。',
+        keywords: [
+          'Cerebellar swelling',
+          'Mass effect',
+          'Obstructive hydrocephalus',
+          'Brainstem compression',
+          'Tonsillar herniation',
+          'GCS drop',
+          'Cushing\'s reflex',
+          'Urgent CT',
+          'Decompressive suboccipital craniectomy',
+          'EVD (External Ventricular Drain)',
+          'Hyperosmolar therapy',
+          'Mannitol',
+          'Hypertonic saline',
+          'Time window 48-96h',
+        ],
+        points: [
+          '<strong>最危險併發症：cerebellar swelling 引發 brainstem compression / obstructive hydrocephalus</strong>',
+          '<strong>好發時間</strong>：受傷後 48-96 小時（peak edema），可至 5 天',
+          '<strong>機制</strong>：fourth ventricle 壓迫 → CSF 阻塞 → hydrocephalus + brainstem 直接壓迫',
+          '<strong>警示症狀</strong>：意識下降、新頭痛、嘔吐、papilledema、呼吸異常、Cushing\'s reflex',
+          '<strong>瞳孔變化</strong>：fixed dilated 或 anisocoria',
+          '<strong>立即評估</strong>：GCS、瞳孔、vital signs、急做 CT',
+          '<strong>處置 1：暫時 stabilize</strong> — head up 30°、normocapnia、避免 hypotonic fluid',
+          '<strong>處置 2：hyperosmolar therapy</strong> — mannitol 1 g/kg、hypertonic saline 3% 或 23.4%',
+          '<strong>處置 3：EVD</strong> — 急性 obstructive hydrocephalus 暫時解套',
+          '<strong>處置 4：手術</strong> — Suboccipital decompressive craniectomy（definitive treatment）',
+          '<strong>適應症</strong>：infarct 體積大、意識下降、影像顯示 mass effect',
+          '<strong>預後</strong>：及時手術 mortality 5-25%、未及時 mortality 高達 60-90%',
+        ],
+        a: `<h4>急性 cerebellar stroke 最危險併發症</h4>
+
+<p><strong>Cerebellar swelling 與 mass effect</strong></p>
+<ul>
+<li>小腦位於 posterior fossa，空間極小</li>
+<li>梗塞後 swelling 在 48-96 小時達 peak（可延至 5 天）</li>
+<li>無處可去 → 兩個壓迫方向：
+  <ul>
+    <li><strong>向上</strong>：透過 tentorial notch → upward transtentorial herniation → midbrain 壓迫</li>
+    <li><strong>向下</strong>：透過 foramen magnum → downward (tonsillar) herniation → medulla 壓迫</li>
+    <li><strong>向前</strong>：直接壓迫 brainstem</li>
+  </ul>
+</li>
+<li>同時 fourth ventricle 受壓 → CSF 通路阻塞 → <strong>obstructive hydrocephalus</strong></li>
+</ul>
+
+<p><strong>本病人風險評估</strong>：</p>
+<ul>
+<li>右側小腦大範圍梗塞（PICA territory）</li>
+<li>Fourth ventricle 略受壓（中等危險）</li>
+<li>NSx 評估暫不需手術</li>
+<li>住院期 48-96 小時內最危險，須密切監測</li>
+</ul>
+
+<h4>警示症狀（Red Flags）</h4>
+
+<p><strong>意識變化（最重要）：</strong></p>
+<ul>
+<li>嗜睡 → 昏睡 → 昏迷</li>
+<li>GCS 下降 ≥ 2 分（從 baseline）</li>
+<li>需更強刺激才能喚醒</li>
+</ul>
+
+<p><strong>顱內壓上升：</strong></p>
+<ul>
+<li>新出現或惡化的頭痛（典型 occipital）</li>
+<li>嘔吐（特別 projectile vomiting）</li>
+<li>Papilledema（眼底鏡）</li>
+<li>Bradycardia + hypertension + 不規則呼吸（<strong>Cushing\'s triad</strong>）</li>
+</ul>
+
+<p><strong>Brainstem compression 表現：</strong></p>
+<ul>
+<li>瞳孔變化（fixed dilated、anisocoria）</li>
+<li>Cranial nerve palsy 新增（CN III、IV、VI、VII）</li>
+<li>呼吸 pattern 異常（Cheyne-Stokes、apneustic、ataxic）</li>
+<li>Posturing：decerebrate、decorticate</li>
+<li>VOR 消失（doll\'s eye negative）</li>
+</ul>
+
+<h4>緊急評估流程</h4>
+
+<p><strong>Step 1：床邊立即（&lt; 5 分鐘）</strong></p>
+<ul>
+<li>GCS</li>
+<li>瞳孔大小、反射、anisocoria</li>
+<li>Vital signs（特別觀察 Cushing\'s）</li>
+<li>呼吸 pattern</li>
+<li>觀察 motor posturing</li>
+<li>VOR test</li>
+</ul>
+
+<p><strong>Step 2：快速 stabilize（同時進行）</strong></p>
+<ul>
+<li>ABC：airway 穩定、必要時 intubate（避免 hypoxia 加重 ICP）</li>
+<li>Head of bed 30°（venous return）</li>
+<li>Head midline（避免 jugular vein 受壓）</li>
+<li>避免 hypotension（MAP &gt; 80 維持 CPP）</li>
+<li>避免 hypotonic fluid（用 normal saline）</li>
+<li>控制 fever（每升溫 1°C，metabolism +13%）</li>
+<li>控制 seizure</li>
+</ul>
+
+<p><strong>Step 3：影像檢查（緊急）</strong></p>
+<ul>
+<li><strong>急做 brain CT</strong>（不打 contrast，看 mass effect、hydrocephalus、新出血）</li>
+<li>對比 baseline scan</li>
+<li>看：fourth ventricle 大小、basal cistern 是否消失、新出血、midline shift</li>
+</ul>
+
+<p><strong>Step 4：通知</strong></p>
+<ul>
+<li>NSx 緊急會診</li>
+<li>ICU 床位準備</li>
+<li>家屬告知</li>
+</ul>
+
+<h4>處置（依嚴重度）</h4>
+
+<p><strong>1. 暫時性 ICP 控制（bridge therapy）</strong></p>
+
+<p><strong>Hyperosmolar therapy：</strong></p>
+<ul>
+<li><strong>Mannitol 20%</strong>：1.0-1.5 g/kg IV bolus（約 250-500 mL）over 15-30 min；起效 15 min、持續 4-6 hr
+  <ul>
+    <li>監測 serum osmolarity（&lt; 320 mOsm）、Na、K、creatinine</li>
+    <li>注意 osmotic diuresis 引發 hypotension</li>
+  </ul>
+</li>
+<li><strong>Hypertonic saline 3%</strong>：250-500 mL over 30-60 min</li>
+<li><strong>Hypertonic saline 23.4%</strong>：30 mL through central line（rapid bolus）</li>
+<li>選擇：Mannitol 對 hypotension 病人慎用；hypertonic saline 對 hypovolemia 較佳</li>
+</ul>
+
+<p><strong>Hyperventilation：</strong></p>
+<ul>
+<li>暫時 PaCO2 30-35 mmHg → cerebral vasoconstriction → ICP ↓</li>
+<li>僅作為 bridging therapy（&lt; 24 hr），不長期</li>
+<li>避免 PaCO2 &lt; 30（過度反而加重 ischemia）</li>
+</ul>
+
+<p><strong>Sedation：</strong></p>
+<ul>
+<li>減少 metabolism、controlling agitation</li>
+<li>Propofol、midazolam</li>
+</ul>
+
+<p><strong>Steroid：對 stroke 不建議</strong>（vs tumor edema 才有效）</p>
+
+<p><strong>2. EVD（External Ventricular Drain）</strong></p>
+<ul>
+<li>適應：obstructive hydrocephalus 伴隨 ICP 上升</li>
+<li>位置：通常 right Kocher\'s point</li>
+<li>優點：立即解除 hydrocephalus、可監測 ICP、可引流 CSF</li>
+<li>缺點：可能引發 upward herniation（如未處理 mass effect）— 必須與 decompressive surgery 一起做</li>
+</ul>
+
+<p><strong>3. Suboccipital Decompressive Craniectomy（definitive）</strong></p>
+<ul>
+<li><strong>適應症：</strong>
+  <ul>
+    <li>Cerebellar infarct 體積大（&gt; 1/3 半球）</li>
+    <li>意識下降</li>
+    <li>影像 mass effect（fourth ventricle 變形、basal cistern 消失）</li>
+    <li>Hydrocephalus 進展</li>
+  </ul>
+</li>
+<li><strong>手術：</strong>
+  <ul>
+    <li>Suboccipital craniectomy + dural opening</li>
+    <li>必要時 partial cerebellar resection（梗塞 necrotic tissue）</li>
+    <li>通常合併 EVD</li>
+    <li>可能合併 C1 laminectomy（更廣減壓）</li>
+  </ul>
+</li>
+<li><strong>時機：黃金 48-72 小時</strong>，意識惡化前</li>
+<li><strong>預後：</strong>
+  <ul>
+    <li>及時手術：mortality 5-25%，60-80% 病人 mRS 0-3</li>
+    <li>延誤手術或 brainstem 已永久損傷：mortality 60-90%</li>
+  </ul>
+</li>
+</ul>
+
+<h4>本病人處置流程（假設意識下降）</h4>
+
+<ol>
+<li><strong>0 分鐘</strong>：床邊評估 GCS、瞳孔、vitals → activate stroke alert</li>
+<li><strong>5 分鐘</strong>：急做 STAT brain CT、通知 NSx、ICU、anesthesia</li>
+<li><strong>10 分鐘</strong>：head up 30°、midline、IV mannitol 1 g/kg over 20 min（如未禁忌）；intubate 若 GCS &lt; 8</li>
+<li><strong>30 分鐘</strong>：CT 完成；若見 mass effect + hydrocephalus → 通知 OR、NSx 評估手術</li>
+<li><strong>1 小時內</strong>：EVD insertion + suboccipital decompression（依 NSx 判斷）</li>
+<li><strong>術後</strong>：ICU、ICP monitor、持續 stabilization</li>
+</ol>
+
+<h4>家屬告知重點</h4>
+<ul>
+<li>解釋小腦中風的特殊危險性</li>
+<li>需要緊急手術（risk-benefit）</li>
+<li>手術風險（5-25% mortality、infection、CSF leak）</li>
+<li>不手術的後果（60-90% mortality）</li>
+<li>術後需要長期復健</li>
+<li>預後 uncertainty</li>
+</ul>
+
+<h4>對復健科的意義</h4>
+<ul>
+<li>住院初期務必每日 vital sign + neuro exam（特別 GCS、瞳孔）</li>
+<li>對家屬與護理同仁衛教 warning sign</li>
+<li>新症狀立即通報主治醫師</li>
+<li>復健治療強度可暫緩當有惡化跡象</li>
+<li>術後病人需重新評估復健潛能與計畫</li>
+</ul>`,
+      },
+      {
+        q: '病人有 right vertebral artery V4 segment irregular narrowing，最可能的病因為何？請說明 vertebral artery dissection 的鑑別、診斷與治療。',
+        keywords: [
+          'Vertebral artery dissection (VAD)',
+          'Young stroke cause',
+          'Trauma / neck manipulation',
+          'Connective tissue disease',
+          'Posterior circulation stroke',
+          'Headache + neck pain',
+          'CTA / MRA',
+          'Intramural hematoma',
+          'Pseudoaneurysm',
+          'Antiplatelet vs anticoagulant',
+          'CADISS trial',
+          'Endovascular',
+          'Recurrence risk',
+        ],
+        points: [
+          '<strong>VAD 是 50 歲以下 posterior circulation stroke 的常見病因</strong>',
+          '<strong>本病人 54 歲 + smoker + V4 narrowing</strong>：須考慮 VAD（雖年齡稍大，但仍應排除）',
+          '<strong>誘因</strong>：頸部創傷、扭轉、按摩、瑜伽、車禍、cough、connective tissue disease',
+          '<strong>典型臨床三角</strong>：頭痛/頸痛 + posterior circulation stroke + 病史可疑',
+          '<strong>影像金標準</strong>：CTA、MRA、catheter angiography',
+          '<strong>典型表現</strong>：string sign、tapered occlusion、intramural hematoma（T1 fat-sat hyperintense）、pseudoaneurysm',
+          '<strong>治療</strong>：antithrombotic therapy 預防 stroke',
+          '<strong>CADISS trial（2015）</strong>：antiplatelet vs anticoagulant 結果相當',
+          '<strong>選擇</strong>：依個案；多數用 antiplatelet（aspirin）3-6 個月',
+          '<strong>追蹤影像</strong>：3、6 個月評估 healing',
+          '<strong>嚴重 case</strong>：endovascular（stenting、coiling）',
+          '<strong>避免</strong>：頸部 manipulation、激烈轉頭',
+          '<strong>復發風險</strong>：1-2%/年',
+        ],
+        a: `<h4>Vertebral Artery Dissection (VAD)</h4>
+
+<p><strong>定義</strong>：椎動脈血管壁 intimal tear，血液進入 media 形成 intramural hematoma，導致 lumen 狹窄、阻塞、血栓或動脈瘤形成。</p>
+
+<p><strong>流行病學：</strong></p>
+<ul>
+<li>所有 stroke 的 2%；但 50 歲以下 stroke 的 10-25%</li>
+<li>每年發生率約 1-1.5/100,000</li>
+<li>男女相當；平均年齡 40-50 歲</li>
+<li>椎動脈 dissection 比 carotid dissection 略少（VAD : ICAD 約 1:3）</li>
+</ul>
+
+<p><strong>解剖：椎動脈分四段</strong></p>
+<ul>
+<li><strong>V1（pre-foraminal）</strong>：起於 subclavian artery 至 C6 transverse foramen</li>
+<li><strong>V2（foraminal）</strong>：穿過 C6-C2 transverse foramen</li>
+<li><strong>V3（extradural / suboccipital）</strong>：C2 transverse foramen 到 dura；好發 dissection 部位（活動度大）</li>
+<li><strong>V4（intradural）</strong>：穿過 dura 至 basilar artery；本病人病灶 — 需考慮 dissection、atherosclerosis、vasculitis</li>
+</ul>
+
+<h4>VAD 病因</h4>
+
+<p><strong>1. Trauma / Mechanical：</strong></p>
+<ul>
+<li>頸部按摩（chiropractic neck manipulation）— 經典 risk</li>
+<li>瑜伽、突然轉頭</li>
+<li>車禍 whiplash</li>
+<li>運動（拳擊、衝浪、滑雪）</li>
+<li>Cough、sneeze、嘔吐（強力）</li>
+<li>分娩用力</li>
+<li>「Beauty parlor stroke」— 美髮店仰頭洗髮</li>
+</ul>
+
+<p><strong>2. Connective tissue disease：</strong></p>
+<ul>
+<li>Fibromuscular dysplasia（FMD）— 最常見</li>
+<li>Ehlers-Danlos syndrome type IV</li>
+<li>Marfan syndrome</li>
+<li>Polycystic kidney disease</li>
+</ul>
+
+<p><strong>3. Spontaneous（無明顯誘因，但可能小創傷沒注意到）</strong></p>
+
+<p><strong>本病人</strong>：54 歲 + smoker + HTN，傳統 atherosclerosis 也可能；要詳細問病史（近期頸部活動、按摩、車禍、運動）。</p>
+
+<h4>臨床表現（典型三角）</h4>
+
+<p><strong>1. 頭痛 / 頸痛（80-95%）</strong></p>
+<ul>
+<li>VAD：occipital、posterior neck pain</li>
+<li>突然發作、可單側</li>
+<li>常先於 stroke 數小時至數週</li>
+<li>不像 typical migraine（病人常說「從未經歷的頭痛」）</li>
+</ul>
+
+<p><strong>2. Posterior Circulation Stroke 表現：</strong></p>
+<ul>
+<li><strong>Lateral medullary syndrome (Wallenberg)</strong> — 最經典</li>
+<li>Cerebellar infarct（本病人）</li>
+<li>Brainstem stroke</li>
+<li>Locked-in syndrome（basilar 阻塞）</li>
+</ul>
+
+<p><strong>3. 其他症狀：</strong></p>
+<ul>
+<li>Pulsatile tinnitus（少見於 VAD，多見於 carotid）</li>
+<li>Vertigo、N/V</li>
+<li>Diplopia、dysarthria、dysphagia</li>
+</ul>
+
+<h4>診斷</h4>
+
+<p><strong>1. CT Angiography（CTA）</strong></p>
+<ul>
+<li>第一線、急診可做</li>
+<li>看 luminal stenosis、occlusion、pseudoaneurysm、intramural hematoma</li>
+</ul>
+
+<p><strong>2. MR Angiography（MRA）+ T1 fat-sat MRI</strong></p>
+<ul>
+<li>金標準（特別是 intramural hematoma 看得最清楚）</li>
+<li><strong>T1 fat-sat：crescent-shaped hyperintensity</strong>（intramural hematoma）= dissection 病理證據</li>
+<li>MRA 看 luminal narrowing</li>
+<li>Subacute（5-30 天）時 hematoma signal 最強</li>
+</ul>
+
+<p><strong>3. Catheter angiography</strong></p>
+<ul>
+<li>侵入性，現在較少做</li>
+<li>典型表現：
+  <ul>
+    <li><strong>String sign</strong>：細長狹窄</li>
+    <li><strong>Pearl-and-string sign</strong>：狹窄 + dilation 交替</li>
+    <li><strong>Tapered occlusion</strong>：漸細閉塞</li>
+    <li><strong>Pseudoaneurysm</strong>：囊狀膨出</li>
+    <li><strong>Double lumen</strong>：少見但 specific</li>
+  </ul>
+</li>
+</ul>
+
+<p><strong>4. 影像追蹤</strong></p>
+<ul>
+<li>3 個月、6 個月、1 年 follow-up</li>
+<li>多數 dissection 6 個月內 healing</li>
+<li>Pseudoaneurysm 可能持續存在</li>
+</ul>
+
+<h4>本病人鑑別</h4>
+
+<p>V4 segment irregular narrowing 鑑別：</p>
+<ol>
+<li><strong>Vertebral artery dissection</strong> — 配合 stroke 急性發作可能</li>
+<li><strong>Atherosclerosis</strong> — 54 歲 + HTN + smoker，最可能</li>
+<li><strong>Vasculitis</strong>（GCA、PAN、Takayasu）</li>
+<li><strong>Fibromuscular dysplasia</strong></li>
+<li><strong>Embolic occlusion 後 recanalization 殘留</strong></li>
+<li><strong>Vasospasm</strong>（少見）</li>
+</ol>
+
+<p>需要進一步檢查：</p>
+<ul>
+<li>T1 fat-sat MRI（看 intramural hematoma）</li>
+<li>ESR、CRP、autoimmune panel（vasculitis）</li>
+<li>Lipid profile、HbA1c</li>
+<li>詳細病史（trauma、neck manipulation）</li>
+</ul>
+
+<h4>治療</h4>
+
+<p><strong>1. Antithrombotic Therapy（核心）</strong></p>
+
+<p><strong>CADISS trial（2015 Lancet Neurology）：</strong></p>
+<ul>
+<li>250 名 carotid + vertebral dissection 病人</li>
+<li>隨機 antiplatelet vs anticoagulant 3 個月</li>
+<li>Stroke recurrence rate 兩組相似（2% vs 1%）</li>
+<li>結論：兩種都可，多數選 antiplatelet（safer、cheaper）</li>
+</ul>
+
+<p><strong>選擇：</strong></p>
+<ul>
+<li><strong>Antiplatelet（多數第一線）</strong>：Aspirin 81-100 mg/day、Clopidogrel 75 mg/day
+  <ul>
+    <li>適用：mild dissection、無 high-risk feature</li>
+    <li>持續 3-6 個月</li>
+  </ul>
+</li>
+<li><strong>Anticoagulant（特定 case）</strong>：warfarin (INR 2-3)、DOAC
+  <ul>
+    <li>適用：embolic stroke 復發、free-floating thrombus、severe stenosis</li>
+    <li>持續 3-6 個月</li>
+  </ul>
+</li>
+<li>禁忌：intracranial dissection 合併 SAH 風險（V4 是 intradural，要小心）</li>
+</ul>
+
+<p><strong>2. IV tPA / Thrombectomy</strong></p>
+<ul>
+<li>急性期符合 time window 仍可考慮</li>
+<li>VAD 不是 absolute contraindication</li>
+<li>但 V4 intradural dissection 合併 SAH 風險上升 → 個案評估</li>
+</ul>
+
+<p><strong>3. Endovascular Therapy</strong></p>
+<ul>
+<li>適應：
+  <ul>
+    <li>Symptomatic 復發 despite medical therapy</li>
+    <li>Pseudoaneurysm 持續擴大</li>
+    <li>SAH 合併 dissection</li>
+  </ul>
+</li>
+<li>方式：stenting、coiling、parent vessel occlusion</li>
+</ul>
+
+<p><strong>4. 手術</strong></p>
+<ul>
+<li>少用，僅 endovascular 失敗或特殊解剖</li>
+</ul>
+
+<p><strong>5. Risk Factor Management</strong></p>
+<ul>
+<li>嚴格 BP 控制（收縮壓 130/80）</li>
+<li>戒菸（本病人 30 pack-year！）</li>
+<li>降血脂</li>
+<li>控制 DM</li>
+<li>避免 second-hand neck trauma</li>
+</ul>
+
+<h4>避免事項（衛教）</h4>
+
+<ul>
+<li><strong>絕對避免</strong>：頸部 manipulation（chiropractic）、瑜伽 inversion postures、激烈轉頭運動</li>
+<li><strong>注意</strong>：
+  <ul>
+    <li>洗頭時不仰頭（防 beauty parlor stroke 復發）</li>
+    <li>避免 contact sports</li>
+    <li>用力 bowel movement（stool softener）</li>
+    <li>劇烈 cough、sneeze 控制</li>
+  </ul>
+</li>
+<li><strong>可進行</strong>：低衝擊運動、輕度伸展（non-extreme ROM）</li>
+</ul>
+
+<h4>預後</h4>
+<ul>
+<li>多數 dissection 6 個月內 healing（50-80%）</li>
+<li>Pseudoaneurysm 可能持續存在但通常不擴大</li>
+<li>Stroke 復發率：1-2% 第一年，之後降低</li>
+<li>整體 mortality 低（&lt; 5%）</li>
+<li>長期 functional outcome 與其他 stroke 相當</li>
+</ul>
+
+<h4>本病人具體建議</h4>
+
+<ol>
+<li><strong>確診</strong>：T1 fat-sat MRI 看 intramural hematoma；同時排除 atherosclerosis、vasculitis</li>
+<li><strong>詳細病史</strong>：近期頸部活動、按摩、運動、車禍</li>
+<li><strong>治療</strong>：
+  <ul>
+    <li>若 dissection 確認：aspirin 100 mg + clopidogrel 75 mg × 21 天 → aspirin 100 mg/day × 6 個月</li>
+    <li>若主要是 atherosclerosis：DAPT 21 天 → SAPT；statin、BP 控制</li>
+    <li>強烈戒菸介入</li>
+  </ul>
+</li>
+<li><strong>影像追蹤</strong>：3 個月、6 個月 MRA</li>
+<li><strong>衛教</strong>：避免頸部極端動作（特別 chiropractic、激烈瑜伽）</li>
+<li><strong>復健配合</strong>：頸部 ROM exercise 採 mid-range，避免極限位置 × 至少 3 個月</li>
+</ol>`,
+      },
+      {
+        q: '出院規劃時，病人問：「醫師我什麼時候能開車？」「我能不能繼續做業務工作？」「能不能搭飛機去日本玩？」請逐項說明評估與建議。',
+        keywords: [
+          'Driving evaluation',
+          'On-road test',
+          'Visual field',
+          'Reaction time',
+          'Cognitive screen',
+          'Return to work',
+          'Vocational evaluation',
+          'Job analysis',
+          'Workplace accommodation',
+          'Air travel safety',
+          'DVT risk',
+          'Hypoxia',
+          'Pressure changes',
+          'Realistic time frame',
+        ],
+        points: [
+          '<strong>三個問題都涉及「評估 + 時機 + 風險」</strong>',
+          '<strong>開車評估</strong>：clinical screen → on-road test 才能定論；ataxia 病人通常 stroke 後至少 3-6 個月',
+          '<strong>開車五大要件</strong>：vision、cognition、motor、reaction time、judgment',
+          '<strong>台灣法規</strong>：駕照管理規則 — 中風後須評估，部分需要重新體檢',
+          '<strong>回工作</strong>：依工作性質 — 業務工作涉及駕車、社交、judgment，可能需 modify',
+          '<strong>業務工作</strong>：要評估 cognitive demand、physical demand、social skill、CCAS 影響',
+          '<strong>Stage approach</strong>：part-time → modified duty → full duty',
+          '<strong>Vocational rehabilitation</strong>：職能評估、return-to-work plan',
+          '<strong>飛機</strong>：一般 stroke 後 2 週至 3 個月可飛',
+          '<strong>飛行風險</strong>：DVT、cabin hypoxia、長時間久坐、blood pressure 變化',
+          '<strong>建議</strong>：稳定 + 醫師評估 + 完整保險 + 旅遊伴隨者',
+          '<strong>溝通原則</strong>：不過度限制、提供具體時程、強調可逆與可進步',
+        ],
+        a: `<h4>問題一：什麼時候能開車？</h4>
+
+<p><strong>核心原則：</strong>不能單靠時間判斷，須完整評估。</p>
+
+<p><strong>開車所需的五大能力：</strong></p>
+<table>
+<tr><th>能力</th><th>本病人狀況</th></tr>
+<tr><td>Vision</td><td>需評估 visual acuity、visual field、diplopia</td></tr>
+<tr><td>Cognition</td><td>注意力、判斷、決策；CCAS 可能影響</td></tr>
+<tr><td>Motor function</td><td>四肢力量、ROM、反應</td></tr>
+<tr><td>Coordination</td><td><strong>本病人有 ataxia</strong> — 主要顧慮</td></tr>
+<tr><td>Reaction time</td><td>需測試</td></tr>
+</table>
+
+<p><strong>評估流程：</strong></p>
+<ol>
+<li><strong>Clinical screening</strong>：
+  <ul>
+    <li>視力檢查（矯正後 0.7 以上、雙眼水平 150° 以上、辨色力）</li>
+    <li>MoCA（建議 ≥ 24）</li>
+    <li>反應時間測試</li>
+    <li>Trail Making Test A & B</li>
+    <li>Useful Field of View test</li>
+  </ul>
+</li>
+<li><strong>Driving simulator</strong>（如可取得）</li>
+<li><strong>On-road test</strong>（黃金標準）：
+  <ul>
+    <li>合格職能治療師或專業 driving evaluator 隨車</li>
+    <li>標準場地與道路</li>
+    <li>評估實際駕駛行為</li>
+  </ul>
+</li>
+</ol>
+
+<p><strong>具體時程建議：</strong></p>
+<ul>
+<li>Mild stroke、無 deficit：至少 1 個月、評估後</li>
+<li>Moderate stroke 或 cerebellar/posterior circulation：至少 3-6 個月、on-road test 通過</li>
+<li>本病人（cerebellar ataxia + CCAS 疑慮）：建議 stroke 後 6 個月 + 完整評估</li>
+</ul>
+
+<p><strong>台灣法規：</strong></p>
+<ul>
+<li>道路交通管理處罰條例：駕駛人「精神耗弱、視力 / 聽力 / 體能不能正常駕駛」者不得駕駛</li>
+<li>身心障礙者領駕照需體檢通過</li>
+<li>已持照者中風後法律未強制 disclosure，但建議：醫師告知不適合 → 病人停駕；萬一肇事民事 / 刑事責任可能加重</li>
+<li>監理所可申請複檢</li>
+</ul>
+
+<p><strong>給病人的回應：</strong></p>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您現在還有 ataxia，開車對您和路人都有風險，我建議至少 6 個月後、復健有顯著進步、再到專業職能治療師那裡做正式駕駛評估。我們現在能努力的目標是：恢復坐站平衡、訓練反應、做認知評估，等狀況穩定再規劃。」</p>
+
+<h4>問題二：能不能繼續做業務工作？</h4>
+
+<p><strong>業務工作的 demands：</strong></p>
+<ul>
+<li><strong>Cognitive</strong>：注意力、記憶（客戶、產品）、計算、決策、抗壓</li>
+<li><strong>Physical</strong>：開車、走路、搬樣品、長時間站立</li>
+<li><strong>Social</strong>：表達、傾聽、情緒管理、判斷對方反應</li>
+<li><strong>Schedule</strong>：彈性、加班、出差</li>
+</ul>
+
+<p><strong>本病人的 deficits 對業務工作的影響：</strong></p>
+<ul>
+<li><strong>Ataxia</strong>：影響開車、行動、搬東西</li>
+<li><strong>Dysarthria</strong>：影響溝通、客戶印象</li>
+<li><strong>CCAS（個性改變、易怒）</strong>：影響社交、客戶關係 — 最大隱憂</li>
+<li><strong>疲勞</strong>：常見於 post-stroke</li>
+</ul>
+
+<p><strong>Return-to-work 流程：</strong></p>
+
+<ol>
+<li><strong>職能評估（vocational evaluation）</strong>：
+  <ul>
+    <li>由 OT 評估 work capacity</li>
+    <li>配合 cognitive、physical 測試</li>
+    <li>對應原工作的 specific tasks</li>
+  </ul>
+</li>
+<li><strong>Job analysis</strong>：
+  <ul>
+    <li>原工作的 essential functions</li>
+    <li>哪些 tasks 病人現在做不到？</li>
+    <li>哪些可以 modify？</li>
+  </ul>
+</li>
+<li><strong>Workplace accommodation</strong>：
+  <ul>
+    <li>減少 driving（電話、視訊代替）</li>
+    <li>彈性工時</li>
+    <li>固定客戶（減少新客戶 cognitive load）</li>
+    <li>夥伴制（同事陪同 visit）</li>
+    <li>減少加班</li>
+  </ul>
+</li>
+<li><strong>Graded return-to-work</strong>：
+  <ul>
+    <li>Stage 1：part-time（每週 2-3 天 × 4 hr）— 1-2 個月</li>
+    <li>Stage 2：modified full-time（減少 demanding tasks）— 1-2 個月</li>
+    <li>Stage 3：full duty（如能勝任）</li>
+  </ul>
+</li>
+</ol>
+
+<p><strong>溝通技巧：</strong></p>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「業務工作對體力、情緒控制、開車都有要求，您現在的狀況我會擔心。但我們不一定要回到完全一樣的工作 — 我們可以分階段：先看您 3 個月後恢復到什麼程度，再評估能做哪些部分。也可以跟您主管討論調整工作內容，比如先做電話業務、減少出差。我們會幫您寫醫療意見書讓公司了解。」</p>
+
+<p><strong>若無法回原工作：</strong></p>
+<ul>
+<li>身障鑑定後可申請職務再設計</li>
+<li>勞動部「職務再設計補助」</li>
+<li>勞工保險失能給付</li>
+<li>勞工職業重建</li>
+<li>必要時轉職諮詢</li>
+</ul>
+
+<h4>問題三：能不能搭飛機去日本玩？</h4>
+
+<p><strong>飛行對 stroke 病人的風險：</strong></p>
+<ul>
+<li><strong>Cabin hypoxia</strong>：機艙海拔約 6000-8000 ft，PaO2 ↓（健康人沒問題，stroke 病人可能 borderline）</li>
+<li><strong>DVT</strong>：長時間久坐 + 脫水 + 低氣壓</li>
+<li><strong>Blood pressure 變化</strong>：起降氣壓變化</li>
+<li><strong>Air pressure 對 craniectomy 病人</strong>：本病人無 craniectomy，較不擔心</li>
+<li><strong>Vertigo</strong>：起降可能誘發或惡化</li>
+<li><strong>Stress、fatigue</strong>：旅行本身的壓力</li>
+</ul>
+
+<p><strong>一般原則：</strong></p>
+
+<table>
+<tr><th>狀況</th><th>建議飛行時機</th></tr>
+<tr><td>TIA</td><td>2 週後</td></tr>
+<tr><td>Mild ischemic stroke、穩定</td><td>2 週至 1 個月後</td></tr>
+<tr><td>Moderate stroke、復健中</td><td>3 個月後</td></tr>
+<tr><td>Severe stroke、craniectomy</td><td>6 個月後 + cranioplasty 完成</td></tr>
+<tr><td>本病人（cerebellar、3 個月後）</td><td>視復健進度、3-6 個月後可考慮</td></tr>
+</table>
+
+<p><strong>飛行前準備：</strong></p>
+<ol>
+<li><strong>醫師評估</strong>：穩定性、藥物、藥單英文版</li>
+<li><strong>Travel insurance</strong>：含 medical evacuation</li>
+<li><strong>選擇航班</strong>：直飛、避免 long-haul（&gt; 6 hr）、靠走道座位</li>
+<li><strong>DVT 預防</strong>：彈性襪、機上走動、補水（避免酒精）</li>
+<li><strong>陪同</strong>：建議家人 / 朋友隨行（緊急時協助）</li>
+<li><strong>無障礙協助</strong>：機場輪椅、優先登機</li>
+<li><strong>藥物攜帶</strong>：充足量、隨身行李</li>
+<li><strong>保險卡、緊急聯絡資訊</strong></li>
+<li><strong>目的地資訊</strong>：當地醫院、急救電話</li>
+<li><strong>避免</strong>：高海拔活動、極端溫度、激烈活動</li>
+</ol>
+
+<p><strong>本病人特別注意：</strong></p>
+<ul>
+<li>Smoker → 戒菸對長期 stroke recurrence 重要</li>
+<li>持續 ataxia → 跌倒風險（飛機搖晃、機場移動）</li>
+<li>VAD 疑慮 → 避免極端轉頭、頸部按摩、高 G-force activities</li>
+</ul>
+
+<p><strong>溝通：</strong></p>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「日本旅遊是好的目標，但建議至少等 3-6 個月後、您的平衡與走路較穩、藥物穩定再去。我會幫您寫一份英文病歷摘要、藥單；建議跟太太一起去、選擇直飛、靠走道座位、機上常起來走動避免血栓、避免溫泉太熱。如果到時候真的想去，我們前一個月做完整評估再決定。」</p>
+
+<h4>整體溝通原則</h4>
+
+<ul>
+<li><strong>不過度限制</strong>：給予 hope 與具體時程</li>
+<li><strong>具體可量化</strong>：「3-6 個月後評估」比「再看看」明確</li>
+<li><strong>強調可改善</strong>：復健的進步空間</li>
+<li><strong>提供選項</strong>：不是 yes/no，而是 modified options</li>
+<li><strong>跨領域團隊</strong>：OT 駕駛評估、社工職務協助、保險諮商</li>
+<li><strong>家屬參與</strong>：共同決策</li>
+<li><strong>尊重病人 autonomy</strong>：最終決定權在病人</li>
+<li><strong>記錄醫療建議</strong>：書面建議單，必要時職務調整書</li>
+</ul>
+
+<h4>給病人的整體訊息</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您問的這三個問題很正常 — 表示您想恢復原本的生活，這是好事。我的回答是：『現在還不行，但 3-6 個月後我們再評估每一項』。先把復健做扎實、戒菸、控制血壓、追蹤血管狀況。如果這些都到位，加上正式評估通過，您可以慢慢恢復這些活動。我們一起設定目標，每個月檢視進度。」</p>`,
+      },
+    ],
+  },
+  {
+    id: 'cardio_005',
+    domain: 'cardio',
+    title: '左側 Wallenberg 症候群（外側延髓症候群）',
+    context: `42 歲女性，平日健康，無慢性疾病，BMI 22。一週前接受按摩店「肩頸放鬆」療程後當晚出現嚴重左側頭痛 + 後頸痛，自行服 acetaminophen。
+
+兩天後晨起感覺左臉麻、右側肢體麻、嚴重眩暈、嘔吐，吞口水時嗆咳，講話沙啞。家人送至急診。
+
+到院 GCS 15、BP 142/86、HR 76。Neuro 檢查：意識清楚但 dysarthria 明顯；左側面部 pinprick 與 temperature 減退；右側軀幹與肢體 pinprick 與 temperature 減退（左右交叉感覺缺失）；左側 Horner sign（ptosis、miosis、左側 anhidrosis）；左側 palatal elevation 減弱、gag reflex 左側消失、hoarseness；左側肢體 ataxia、dysmetria；左側 nystagmus（horizontal-rotatory，往左 gaze 加重）；skew deviation 左眼略低於右眼；步態極不穩，往左傾倒（lateropulsion）；四肢肌力 5/5、無 hemiparesis。
+
+Brain MRI（DWI）：left dorsolateral medulla 高訊號 — diagnosis: lateral medullary infarction。MRA：left vertebral artery V3-V4 segment severe stenosis with intramural hematoma signal on T1 fat-sat → vertebral artery dissection 確診。
+
+吞嚥評估：嚴重 dysphagia，VFSS 顯示明顯 silent aspiration（PAS 8），目前 NPO + NG tube。
+
+住院第 7 天會診復健科。`,
+    questions: [
+      {
+        q: '請說明 Wallenberg 症候群（lateral medullary syndrome）的全部典型症狀，並對應外側延髓的解剖構造。',
+        keywords: [
+          'Lateral medullary syndrome',
+          'PICA territory',
+          'Vertebral artery > PICA',
+          'Crossed sensory pattern',
+          'Spinothalamic tract',
+          'Trigeminal spinal tract',
+          'Vestibular nuclei',
+          'Nucleus ambiguus',
+          'Sympathetic descending',
+          'Inferior cerebellar peduncle',
+          'Solitary tract',
+          'No motor weakness',
+        ],
+        points: [
+          '<strong>Wallenberg = lateral medullary syndrome</strong>，由 Adolf Wallenberg 1895 描述',
+          '<strong>梗塞區</strong>：dorsolateral medulla（不影響 medial medulla）',
+          '<strong>病因</strong>：vertebral artery occlusion 比 PICA 更常見',
+          '<strong>「Crossed」感覺缺失</strong>：同側面部 + 對側肢體軀幹 — 經典考點',
+          '<strong>機轉</strong>：trigeminal spinal tract（同側面部痛溫）+ spinothalamic tract（已 decussated 的對側肢體痛溫）兩個都在外側延髓',
+          '<strong>同側症狀</strong>：Horner、ataxia、面部感覺缺失、CN IX/X 麻痺、nystagmus、lateropulsion',
+          '<strong>對側症狀</strong>：軀幹肢體痛溫感覺缺失',
+          '<strong>無 motor weakness</strong>：corticospinal tract 在 medial — 區分 medial medullary syndrome 的關鍵',
+          '<strong>Touch sensation</strong>：通常保留（medial lemniscus 不在 lateral）',
+          '<strong>Skew deviation</strong>：vestibular nuclei 失衡',
+          '<strong>Lateropulsion</strong>：往病灶側拉，獨特 vestibular-cerebellar 表現',
+          '<strong>嚴重吞嚥障礙</strong>：CN IX, X (nucleus ambiguus) 受影響',
+        ],
+        a: `<h4>Wallenberg 症候群 — 神經科最經典「位置-症狀對應」教材</h4>
+
+<p>由德國神經科醫師 Adolf Wallenberg 在 1895 年首次完整描述，是 brainstem syndrome 中最 well-defined、最常考的之一。</p>
+
+<p><strong>解剖位置：dorsolateral medulla</strong></p>
+<ul>
+<li>Olive 後方</li>
+<li>Pyramid 與 medial lemniscus 不在這個區域 → 不影響 motor、touch</li>
+<li>是「拼圖式」症候群 — 多個 tract / nuclei 在這個小區聚集</li>
+</ul>
+
+<h4>受影響結構與對應症狀</h4>
+
+<table>
+<tr><th>結構</th><th>功能</th><th>受損症狀</th></tr>
+<tr><td><strong>Trigeminal spinal tract & nucleus</strong></td><td>同側面部痛溫覺</td><td>同側面部 pinprick / temperature 缺失</td></tr>
+<tr><td><strong>Spinothalamic tract</strong>（已交叉）</td><td>對側肢體軀幹痛溫覺</td><td>對側肢體軀幹 pinprick / temperature 缺失</td></tr>
+<tr><td><strong>Vestibular nuclei</strong></td><td>平衡、眼動</td><td>Vertigo、N/V、nystagmus、skew deviation、lateropulsion</td></tr>
+<tr><td><strong>Inferior cerebellar peduncle</strong></td><td>小腦輸入</td><td>同側肢體 ataxia、dysmetria</td></tr>
+<tr><td><strong>Nucleus ambiguus</strong>（CN IX, X 運動核）</td><td>palatal、pharyngeal、laryngeal motor</td><td>同側 palatal weakness、dysphagia、hoarseness、gag reflex 消失</td></tr>
+<tr><td><strong>Descending sympathetic fibers</strong></td><td>同側臉部 sympathetic</td><td>同側 Horner（ptosis、miosis、anhidrosis）</td></tr>
+<tr><td><strong>Solitary tract & nucleus</strong></td><td>味覺（舌前 2/3）</td><td>同側舌前 2/3 味覺異常</td></tr>
+<tr><td><strong>Reticular formation</strong></td><td>呼吸、心血管中樞</td><td>Hiccup、不規則呼吸、autonomic instability</td></tr>
+</table>
+
+<h4>Crossed Sensory Pattern（經典考點）</h4>
+
+<p>外側延髓最特殊的表現 — <strong>同側面部 + 對側肢體</strong> 的痛溫覺缺失：</p>
+<ul>
+<li>面部痛溫覺：trigeminal spinal tract & nucleus（在外側延髓 ipsilateral side）→ 病灶 → <strong>同側</strong>面部缺失</li>
+<li>肢體軀幹痛溫覺：脊髓上行 spinothalamic tract（已在脊髓 decussated）→ 在 medulla 已是 contralateral → 病灶 → <strong>對側</strong>肢體缺失</li>
+</ul>
+<p>本病人 <strong>左側</strong> medulla 病灶 → <strong>左側面部</strong>麻 + <strong>右側</strong>肢體麻（題幹完全符合）。</p>
+
+<h4>本病人症狀對應一覽</h4>
+
+<table>
+<tr><th>病人症狀</th><th>對應結構</th></tr>
+<tr><td>左側面部痛溫缺失</td><td>Left trigeminal spinal tract & nucleus</td></tr>
+<tr><td>右側肢體軀幹痛溫缺失</td><td>Left spinothalamic tract（contralateral 表現）</td></tr>
+<tr><td>左側 Horner</td><td>Left descending sympathetic fibers</td></tr>
+<tr><td>左側 palatal weakness、hoarseness</td><td>Left nucleus ambiguus（CN IX, X）</td></tr>
+<tr><td>嚴重 dysphagia + silent aspiration</td><td>CN IX, X + solitary nucleus</td></tr>
+<tr><td>左側肢體 ataxia</td><td>Left inferior cerebellar peduncle</td></tr>
+<tr><td>Vertigo、左側 nystagmus</td><td>Left vestibular nuclei</td></tr>
+<tr><td>Skew deviation</td><td>Vestibular nuclei imbalance</td></tr>
+<tr><td>Lateropulsion（往左倒）</td><td>Vestibular nuclei + inferior cerebellar peduncle</td></tr>
+<tr><td>無 hemiparesis</td><td>CST 不在 lateral medulla</td></tr>
+<tr><td>觸覺保留</td><td>Medial lemniscus 不在 lateral medulla</td></tr>
+</table>
+
+<h4>Medial vs Lateral Medullary Syndrome（區分）</h4>
+
+<table>
+<tr><th>項目</th><th>Medial（Dejerine）</th><th>Lateral（Wallenberg）</th></tr>
+<tr><td>Artery</td><td>Anterior spinal / vertebral</td><td>Vertebral / PICA</td></tr>
+<tr><td>Motor</td><td>對側 hemiparesis（CST）</td><td>無</td></tr>
+<tr><td>Touch / proprioception</td><td>對側缺失（medial lemniscus）</td><td>保留</td></tr>
+<tr><td>Pain / temp</td><td>保留</td><td>Crossed pattern</td></tr>
+<tr><td>Tongue</td><td>同側 CN XII，舌偏向 lesion 側</td><td>無</td></tr>
+<tr><td>吞嚥</td><td>少受影響</td><td>嚴重 dysphagia</td></tr>
+<tr><td>Horner</td><td>無</td><td>同側</td></tr>
+<tr><td>小腦症狀</td><td>無</td><td>同側 ataxia</td></tr>
+</table>
+
+<h4>病因</h4>
+
+<p><strong>實際：vertebral artery 阻塞 / dissection 比 PICA 更常見</strong>（80% 由 vertebral，20% PICA），雖傳統教科書多寫「PICA」。</p>
+
+<ul>
+<li><strong>Vertebral artery dissection</strong>（年輕病人最常見，本病人）</li>
+<li>Atherosclerosis（年長者）</li>
+<li>Cardioembolic、vasculitis、FMD</li>
+</ul>
+
+<p><strong>本病人重要 clue：</strong></p>
+<ul>
+<li>42 歲女性、無 risk factor → 年輕中風要找 unusual cause</li>
+<li>按摩後出現症狀 → 強烈懷疑 mechanical injury</li>
+<li>頭痛 + 頸痛 → dissection 經典前驅症狀</li>
+<li>影像：vertebral artery V3-V4 stenosis + intramural hematoma → 確診 VAD</li>
+</ul>`,
+      },
+      {
+        q: '本病人有 silent aspiration（PAS 8）。請說明 Wallenberg 病人吞嚥障礙的特殊機轉、評估與治療策略。為什麼這類病人比 cortical stroke 病人吞嚥更難復原？',
+        keywords: [
+          'Pharyngeal phase dominant',
+          'Cricopharyngeal dysfunction',
+          'UES (upper esophageal sphincter)',
+          'Reduced laryngeal elevation',
+          'Vocal cord paresis',
+          'Silent aspiration',
+          'PAS 8',
+          'VFSS / FEES',
+          'Mendelsohn maneuver',
+          'Shaker exercise',
+          'Effortful swallow',
+          'NMES',
+          'Cricopharyngeal Botox / myotomy',
+          'PEG tube consideration',
+          'Long recovery',
+        ],
+        points: [
+          '<strong>核心機轉</strong>：CN IX, X 麻痺 + cricopharyngeus 失調',
+          '<strong>主要 pharyngeal phase</strong>（vs cortical stroke 多 oral phase）',
+          '<strong>Cricopharyngeus（UES）失能</strong>：無法主動鬆弛 → 食團卡 pyriform sinus → aspiration',
+          '<strong>同側 vocal cord paresis</strong>：嗆咳保護機制失效',
+          '<strong>Sensory loss</strong>（IX, X afferent）→ silent aspiration 高風險',
+          '<strong>恢復慢於 cortical stroke</strong>：神經核破壞、CN 直接損傷、代償有限',
+          '<strong>典型病程</strong>：可數週至數月，30-50% 需短期 PEG',
+          '<strong>評估</strong>：床邊 swallow test 不夠（會 miss silent aspiration）→ 必須 VFSS / FEES',
+          '<strong>姿勢</strong>：chin tuck + head turn to weak side',
+          '<strong>主動訓練</strong>：Mendelsohn、Shaker、effortful swallow、supraglottic',
+          '<strong>感覺刺激</strong>：thermal-tactile、sour bolus、carbonation',
+          '<strong>NMES</strong>：suprahyoid + thyrohyoid 區',
+          '<strong>頑固 case</strong>：cricopharyngeal Botox、cricopharyngeal myotomy',
+          '<strong>PEG 考量</strong>：4-6 週仍無法 PO',
+        ],
+        a: `<h4>Wallenberg Dysphagia 為何特別嚴重？</h4>
+
+<p><strong>解剖原因</strong>：影響的不只是 cortical control，而是吞嚥的「核心執行器」— CN IX, X 與 nucleus ambiguus。</p>
+
+<table>
+<tr><th>受影響結構</th><th>吞嚥功能影響</th></tr>
+<tr><td>Nucleus ambiguus</td><td>Pharyngeal、laryngeal motor 全失</td></tr>
+<tr><td>CN X recurrent laryngeal branch</td><td>同側 vocal cord paresis</td></tr>
+<tr><td>CN IX afferent</td><td>Pharyngeal sensation 缺失</td></tr>
+<tr><td>Solitary nucleus</td><td>Swallow trigger 啟動異常</td></tr>
+<tr><td>Reticular formation</td><td>Swallow CPG 受影響</td></tr>
+</table>
+
+<h4>Pharyngeal Phase Dominant Dysphagia</h4>
+
+<p><strong>典型 VFSS 表現：</strong></p>
+<ul>
+<li>Oral phase：相對保留</li>
+<li><strong>Pharyngeal phase 嚴重異常：</strong>
+  <ul>
+    <li>Delayed / absent swallow trigger</li>
+    <li>Reduced laryngeal elevation（&lt; 2 cm）</li>
+    <li>Reduced epiglottic inversion</li>
+    <li><strong>Cricopharyngeus dysfunction</strong>（UES 無法鬆弛 / 開口不夠）</li>
+    <li>食團 pooling 在 pyriform sinus（同側更明顯）</li>
+    <li>Silent aspiration（無 cough reflex due to sensory loss）</li>
+  </ul>
+</li>
+<li>Esophageal phase：通常正常</li>
+</ul>
+
+<h4>Cricopharyngeus Dysfunction — Wallenberg 的標誌性問題</h4>
+
+<p>UES 由 cricopharyngeus muscle 組成，由 CN X 支配。Wallenberg 病人此處失調的特點：</p>
+<ul>
+<li>正常吞嚥：UES 在 swallow trigger 後主動鬆弛 + laryngeal elevation 機械牽拉打開</li>
+<li>Wallenberg：兩個機制都失靈
+  <ul>
+    <li>主動鬆弛失敗（CN X 損傷）</li>
+    <li>Laryngeal elevation 不足（suprahyoid muscle 弱）</li>
+  </ul>
+</li>
+<li>結果：食團卡 pyriform sinus → 嗆咳或 silent aspiration</li>
+</ul>
+
+<h4>為什麼比 Cortical Stroke 復原慢？</h4>
+
+<table>
+<tr><th>項目</th><th>Cortical stroke</th><th>Wallenberg</th></tr>
+<tr><td>受影響層級</td><td>Cortical（高位）</td><td>Brainstem nucleus（核心）</td></tr>
+<tr><td>神經元損傷</td><td>Upper motor neuron</td><td>Lower motor neuron + nucleus 直接損傷</td></tr>
+<tr><td>代償</td><td>Bilateral cortical input → 對側可代償</td><td>核心 motor program 破壞，代償有限</td></tr>
+<tr><td>恢復時間</td><td>數週</td><td>數週至數月，部分永久</td></tr>
+<tr><td>PEG 需求</td><td>較少</td><td>30-50% 需短期 PEG</td></tr>
+<tr><td>長期 functional</td><td>多數能恢復</td><td>部分病人持續飲食限制</td></tr>
+</table>
+
+<h4>評估</h4>
+
+<p><strong>床邊評估（不夠用，但仍要做）：</strong>意識、口腔、舌動作、voice quality（hoarse？wet？）、cough strength、saliva management、3 oz water swallow test（注意：對 silent aspiration 不敏感）、cervical auscultation。</p>
+
+<p><strong>VFSS（金標準）：</strong></p>
+<ul>
+<li>動態觀察四期</li>
+<li>不同 consistency 測試</li>
+<li>不同 posture、maneuver 評估代償效果</li>
+<li>PAS scoring</li>
+</ul>
+
+<p><strong>FEES：</strong>可床邊做、可重複；直接看 vocal cord 動作；評估 pre-、post-swallow residue；盲點：swallow 瞬間白屏。</p>
+
+<p><strong>本病人 PAS 8 → silent aspiration → 立即 NPO + NG。</strong></p>
+
+<h4>治療策略</h4>
+
+<p><strong>1. 姿勢調整（compensation）</strong></p>
+<ul>
+<li><strong>Chin tuck（下巴內收）</strong>：縮小 airway 開口、推 epiglottis 後傾、減少 aspiration</li>
+<li><strong>Head turn to weak side（左側）</strong>：壓住病灶側 pyriform sinus，使食團走 strong side</li>
+<li><strong>Head tilt to strong side</strong>：利用重力</li>
+<li>本病人：chin tuck + head turn to left（同時做）</li>
+</ul>
+
+<p><strong>2. 主動吞嚥訓練</strong></p>
+
+<p><strong>Mendelsohn maneuver：</strong></p>
+<ul>
+<li>目的：延長 laryngeal elevation 時間 + UES 開啟時間</li>
+<li>方法：吞嚥時喉部上提到最高點 → 主動「停留 2-3 秒」</li>
+<li>對 Wallenberg 特別有效</li>
+</ul>
+
+<p><strong>Shaker exercise（head lift）：</strong></p>
+<ul>
+<li>仰躺、肩貼地、抬頭看腳趾，維持 1 分鐘 × 3 次 + 30 次 repetitive</li>
+<li>每天 3 次 × 6 週為一療程</li>
+<li>增強 suprahyoid → 改善 UES opening</li>
+</ul>
+
+<p><strong>Effortful swallow：</strong>用力吞嚥，增加 tongue base 後縮、減少 vallecular residue。</p>
+
+<p><strong>Masako maneuver：</strong>舌尖咬在門齒之間吞口水（不在進食時做），增強 posterior pharyngeal wall 動作。</p>
+
+<p><strong>Supraglottic / Super-supraglottic swallow：</strong></p>
+<ul>
+<li>主動關閉 vocal cord 保護氣道</li>
+<li>適合 vocal cord paresis 病人（如本病人）</li>
+<li>方法：深吸氣 → 憋氣 → 吞嚥 → 立刻咳嗽</li>
+</ul>
+
+<p><strong>3. 感覺刺激（對 silent aspiration 重要）</strong></p>
+<ul>
+<li>Thermal-tactile stimulation：冰棉花棒刺激 anterior tonsillar pillar</li>
+<li>Sour bolus（檸檬味）增強 trigger</li>
+<li>Carbonation 刺激</li>
+</ul>
+
+<p><strong>4. NMES（VitalStim）</strong></p>
+<ul>
+<li>電極：suprahyoid（submental）+ thyrohyoid 區</li>
+<li>每次 30-60 分鐘 × 每日 1 次</li>
+<li>搭配主動吞嚥訓練（不單獨電）</li>
+</ul>
+
+<p><strong>5. Procedural（頑固 case）</strong></p>
+<ul>
+<li><strong>Cricopharyngeal Botox</strong>：confirmed cricopharyngeal dysfunction，4-6 個月後仍無改善；經皮或經 endoscopy 注射（10-30 U）；效果 3-6 個月；診斷性 + 治療性</li>
+<li><strong>Cricopharyngeal myotomy</strong>：嚴重持續性，成功率 70-85%</li>
+<li><strong>Vocal fold injection / medialization</strong>：嚴重 vocal cord paresis</li>
+</ul>
+
+<p><strong>6. 飲食管理</strong></p>
+
+<table>
+<tr><th>階段</th><th>飲食</th><th>條件</th></tr>
+<tr><td>急性</td><td>NPO + NG</td><td>Silent aspiration</td></tr>
+<tr><td>改善</td><td>IDDSI 4 puree + thickened liquid</td><td>VFSS PAS &lt; 6 + safe maneuver</td></tr>
+<tr><td>進展</td><td>IDDSI 5-6 + thin liquid（with chin tuck）</td><td>反覆 VFSS confirmation</td></tr>
+<tr><td>恢復</td><td>Regular diet</td><td>無 aspiration</td></tr>
+</table>
+
+<p><strong>7. PEG 考量</strong></p>
+<ul>
+<li>Indication：4-6 週仍無法達 60% nutrition by mouth</li>
+<li>優於長期 NG</li>
+<li>Wallenberg 30-50% 需短期 PEG</li>
+<li>多數可在 3-6 個月後 PEG 移除</li>
+</ul>
+
+<h4>本病人具體計畫</h4>
+
+<p><strong>第 1-2 週：</strong>NPO + NG continuous feeding；oral hygiene；SLP 每日 Shaker × 3 sets、Mendelsohn dry swallow、effortful swallow；NMES daily 30 min；thermal-tactile stimulation。</p>
+
+<p><strong>第 3-4 週：</strong>VFSS 重評估；若 PAS 改善 → 試 ice chip → trace puree with chin tuck + head turn；逐步進階 IDDSI level。</p>
+
+<p><strong>第 5-8 週：</strong>進階至 puree → minced & moist；thin liquid trial with maneuver；若無進展 → consider cricopharyngeal Botox trial。</p>
+
+<p><strong>2-3 個月：</strong>若仍 NG → 討論 PEG（家屬參與決策）；cricopharyngeal myotomy 評估。</p>
+
+<p><strong>家屬衛教：</strong></p>
+<ul>
+<li>解釋 brainstem 病灶恢復慢但有希望</li>
+<li>NG/PEG 是 bridge 不是終點</li>
+<li>每餐前 30 分後抬高床頭</li>
+<li>口腔護理重要性</li>
+<li>觀察 silent aspiration 警訊（fever、sputum、low-grade pneumonia）</li>
+<li>避免在他人勸食下勉強進食</li>
+</ul>`,
+      },
+      {
+        q: '病人有 lateropulsion（往左傾倒）。請說明 lateropulsion 與其他 balance disorder 的區分，以及這類病人的平衡復健策略。',
+        keywords: [
+          'Lateropulsion',
+          'Vestibular nuclei',
+          'Vestibulospinal tract',
+          'Subjective Visual Vertical (SVV)',
+          'Ocular tilt reaction',
+          'Pusher syndrome (區分)',
+          'Cerebellar ataxia (區分)',
+          'Visual feedback',
+          'Mirror feedback',
+          'Galvanic vestibular stimulation',
+          'Vestibular rehabilitation',
+          'Slow recovery',
+        ],
+        points: [
+          '<strong>Lateropulsion</strong>：身體無意識被「拉」向病灶側',
+          '<strong>機轉</strong>：vestibular nuclei + vestibulospinal tract 失衡 → 「垂直」內在感覺偏移',
+          '<strong>SVV</strong>：病人主觀垂直感偏向病灶側',
+          '<strong>Ocular tilt reaction triad</strong>：head tilt + skew deviation + ocular torsion（往病灶側）',
+          '<strong>區分 Pusher syndrome</strong>：cortical lesion（多 right thalamic）；本病人是 brainstem',
+          '<strong>區分 cerebellar ataxia</strong>：無方向性的不穩；lateropulsion 有明確方向',
+          '<strong>區分 sensory ataxia</strong>：閉眼明顯，proprioception 損失',
+          '<strong>復健核心</strong>：重建對「垂直」的內在感覺',
+          '<strong>Visual feedback</strong>：鏡子、垂直線參考',
+          '<strong>由 static → dynamic</strong>',
+          '<strong>恢復通常 4-12 週</strong>',
+          '<strong>避免</strong>：強行「拉回」病人',
+        ],
+        a: `<h4>Lateropulsion 詳解</h4>
+
+<p><strong>定義</strong>：病人在站、坐、走時無意識地被「拉」往病灶側，即使察覺自己歪了仍無法主動修正。</p>
+
+<p><strong>機轉：</strong></p>
+<ul>
+<li>正常情況：vestibular system 提供「重力垂直」內在參考</li>
+<li>單側 vestibular nuclei 失能（如 Wallenberg）→ 大腦的「主觀垂直」偏向病灶側</li>
+<li>Vestibulospinal tract 對 trunk extensor tone 的調控失衡</li>
+<li>結果：病人覺得自己是直的，實際上身體偏向病灶側</li>
+</ul>
+
+<h4>Ocular Tilt Reaction（OTR）</h4>
+
+<p>Wallenberg 病人常出現的眼部表現，反映 vestibular tone imbalance：</p>
+<ol>
+<li><strong>Head tilt</strong>：往病灶側</li>
+<li><strong>Skew deviation</strong>：病灶側眼下、健側眼上</li>
+<li><strong>Ocular torsion</strong>：往病灶側</li>
+</ol>
+<p>本病人有「skew deviation：左眼略低於右眼」→ 符合 left OTR pattern。</p>
+
+<h4>SVV 異常</h4>
+<ul>
+<li>暗房中，請病人調整一直線到他覺得「垂直」</li>
+<li>正常：與真實垂直 ± 2.5° 內</li>
+<li>Wallenberg：偏向病灶側 5-15°</li>
+<li>本病人預期 SVV 向左偏</li>
+</ul>
+
+<h4>區分 Lateropulsion vs 其他平衡障礙</h4>
+
+<table>
+<tr><th>項目</th><th>Lateropulsion (Wallenberg)</th><th>Pusher syndrome</th><th>Cerebellar ataxia</th><th>Sensory ataxia</th></tr>
+<tr><td>病灶</td><td>Brainstem (lateral medulla)</td><td>Cortical (right thalamus / posterior insula)</td><td>Cerebellum</td><td>Posterior column / 周邊神經</td></tr>
+<tr><td>方向</td><td>往病灶側拉</td><td>往對側 push（用健側手腳推）</td><td>無方向，搖晃</td><td>閉眼明顯</td></tr>
+<tr><td>病人察覺</td><td>知道歪但無法修正</td><td>不認為自己歪（severe anosognosia）</td><td>知道</td><td>知道</td></tr>
+<tr><td>是否合作矯正</td><td>願意但身體不配合</td><td>抗拒矯正</td><td>願意</td><td>願意</td></tr>
+<tr><td>SVV</td><td>偏向病灶側</td><td>偏向 healthy side（少見）</td><td>正常</td><td>正常</td></tr>
+<tr><td>合併症狀</td><td>Cranial nerve、ataxia、Horner</td><td>多有 hemiparesis、neglect</td><td>Limb ataxia</td><td>Vibration、proprioception 缺失</td></tr>
+<tr><td>Romberg</td><td>陽性</td><td>陽性</td><td>睜閉眼皆異常</td><td>閉眼陽性</td></tr>
+<tr><td>恢復</td><td>4-12 週</td><td>2-6 個月</td><td>數月</td><td>視神經恢復</td></tr>
+</table>
+
+<h4>Pusher Syndrome（特別考點）</h4>
+<p>由 Patricia Davies 描述，又稱 contraversive pushing。</p>
+<ul>
+<li>病灶：right posterolateral thalamus、posterior insula</li>
+<li>表現：病人用健側手腳「推」自己往病灶對側 → 結果跌倒</li>
+<li>對抗治療師的扶正會更用力 push</li>
+<li>SCP (Scale for Contraversive Pushing) 評估</li>
+<li>治療：visual vertical reference、stationary anchor、長期復健（不能與病人對抗）</li>
+</ul>
+
+<h4>Lateropulsion 復健策略</h4>
+
+<p><strong>核心原則：重建對「垂直」的感覺輸入</strong></p>
+
+<p><strong>1. Visual Feedback</strong></p>
+<ul>
+<li>鏡子放正前方：病人看到自己歪、可主動修正</li>
+<li>牆上貼垂直黑線當參考</li>
+<li>窗框、門框作為自然垂直參考</li>
+<li>避免在沒有視覺參考的環境</li>
+</ul>
+
+<p><strong>2. 由 Static → Dynamic 漸進</strong></p>
+
+<p><strong>Sitting：</strong></p>
+<ul>
+<li>先有靠背、雙手扶持 → 逐漸減少支持</li>
+<li>使用鏡子修正</li>
+<li>Reach exercise（往健側）</li>
+</ul>
+
+<p><strong>Standing：</strong></p>
+<ul>
+<li>Tilt table 重建直立感</li>
+<li>Standing frame</li>
+<li>Parallel bars + 鏡子</li>
+<li>Therapy ball 坐姿訓練 trunk control</li>
+<li>Standing on 健側腳 single leg（後期）</li>
+</ul>
+
+<p><strong>Walking：</strong></p>
+<ul>
+<li>Parallel bars 內慢走 + 鏡子</li>
+<li>Walker（健側握把放重，物理性對抗 lean）</li>
+<li>地面標記步幅</li>
+<li>Tandem gait（後期）</li>
+</ul>
+
+<p><strong>3. 多感官整合</strong></p>
+<ul>
+<li>Visual + proprioceptive：weight bearing、surface 變化（foam、unstable surface）</li>
+<li>關閉視覺漸進：先睜眼 → 半睜眼 → 閉眼短時</li>
+</ul>
+
+<p><strong>4. Vestibular Rehabilitation</strong></p>
+<ul>
+<li>Gaze stabilization：VOR × 1, × 2</li>
+<li>Habituation exercises</li>
+<li>Cawthorne-Cooksey exercises</li>
+<li>對 SVV 異常 → SVV biofeedback training</li>
+</ul>
+
+<p><strong>5. 環境調整</strong></p>
+<ul>
+<li>床、椅子靠牆放（提供物理參考）</li>
+<li>移除地毯</li>
+<li>避免複雜花紋</li>
+<li>強化 lighting</li>
+</ul>
+
+<p><strong>6. 新興治療（研究階段）</strong></p>
+<ul>
+<li><strong>Galvanic Vestibular Stimulation (GVS)</strong>：耳後電刺激調節 vestibular tone，小型研究 promising</li>
+<li><strong>Virtual Reality balance training</strong></li>
+<li><strong>Robotic-assisted balance trainer</strong></li>
+</ul>
+
+<p><strong>7. 注意事項</strong></p>
+<ul>
+<li><strong>避免強行「拉直」病人</strong>：會引發 disorientation</li>
+<li>循序漸進、給予 visual reference</li>
+<li>跌倒高風險：必須有 spotter 或 harness</li>
+<li>家屬衛教：尊重病人「自己覺得自己直」的感受，溫和提示</li>
+</ul>
+
+<h4>恢復時程</h4>
+
+<table>
+<tr><th>時間</th><th>典型進展</th></tr>
+<tr><td>1-2 週</td><td>急性期 vertigo、嘔吐、無法獨坐</td></tr>
+<tr><td>2-4 週</td><td>可獨坐（with effort）；站需大量支持</td></tr>
+<tr><td>4-8 週</td><td>站立可（with walker）；走路 with assistance</td></tr>
+<tr><td>2-3 個月</td><td>Walker 獨走；lateropulsion 明顯減輕</td></tr>
+<tr><td>3-6 個月</td><td>Cane / no aid；少數仍有 mild lateropulsion</td></tr>
+<tr><td>6-12 個月</td><td>多數可獨立，少數 residual</td></tr>
+</table>`,
+      },
+      {
+        q: '病人有頑固的 hiccup（每天發作數次，每次持續數小時）。請說明病因、評估與治療。',
+        keywords: [
+          'Intractable hiccup',
+          'Hiccup reflex arc',
+          'Medullary hiccup center',
+          'Wallenberg associated',
+          'Chlorpromazine (FDA approved)',
+          'Baclofen (CNS-origin first-line)',
+          'Gabapentin',
+          'Metoclopramide',
+          'Phrenic nerve block',
+          'Quality of life',
+        ],
+        points: [
+          '<strong>Hiccup reflex arc</strong>：afferent (vagus, phrenic, T6-12 sympathetic) → medullary hiccup center → efferent (phrenic to diaphragm)',
+          '<strong>分類</strong>：acute (&lt;48h)、persistent (48h-1月)、intractable (&gt;1月)',
+          '<strong>Wallenberg 與 hiccup</strong>：medullary hiccup center 在 reticular formation，被影響時 → intractable hiccup',
+          '<strong>Wallenberg 病人 25-30% 出現</strong>',
+          '<strong>第一線：baclofen</strong>（CNS-origin hiccup 首選），5-20 mg tid',
+          '<strong>chlorpromazine</strong>：唯一 FDA approved，25-50 mg q6-8h',
+          '<strong>替代</strong>：gabapentin、metoclopramide、haloperidol、valproic acid',
+          '<strong>頑固</strong>：phrenic nerve block / pacing',
+          '<strong>對 QoL 影響</strong>：失眠、進食困難、體重下降、情緒',
+        ],
+        a: `<h4>Hiccup 概論</h4>
+
+<p><strong>機轉：反射弧</strong></p>
+<ul>
+<li>Afferent：vagus、phrenic、T6-12 sympathetic afferent</li>
+<li>Center：medullary <strong>hiccup center</strong>（reticular formation，與 vestibular nuclei 接近）</li>
+<li>Efferent：phrenic nerve → diaphragm 突發收縮 + glottic closure</li>
+</ul>
+
+<p><strong>分類：</strong></p>
+<table>
+<tr><th>類型</th><th>持續時間</th><th>多數原因</th></tr>
+<tr><td>Acute</td><td>&lt; 48 hr</td><td>Benign</td></tr>
+<tr><td>Persistent</td><td>48 hr – 1 個月</td><td>需找原因</td></tr>
+<tr><td>Intractable</td><td>&gt; 1 個月</td><td>嚴重背景病因</td></tr>
+</table>
+
+<h4>Wallenberg 與 Hiccup</h4>
+
+<p>Wallenberg 病人 25-30% 出現 persistent / intractable hiccup。原因：</p>
+<ul>
+<li><strong>Medullary hiccup center</strong> 位於 reticular formation，緊鄰 vestibular nuclei、nucleus ambiguus、solitary nucleus</li>
+<li>外側延髓病灶直接 disinhibit 此中樞</li>
+<li>Hiccup 是 Wallenberg 的「signature symptom」之一</li>
+</ul>
+
+<h4>鑑別診斷（intractable hiccup）</h4>
+
+<ul>
+<li><strong>CNS</strong>：Wallenberg、brainstem stroke / tumor、MS、encephalitis、increased ICP、neuromyelitis optica（aquaporin-4，涉及 area postrema）</li>
+<li><strong>GI</strong>：GERD（最常見）、gastric distention、hiatal hernia、subphrenic abscess、pancreatitis</li>
+<li><strong>Diaphragmatic / Thoracic</strong>：subphrenic abscess、mediastinal mass、pneumonia</li>
+<li><strong>Metabolic</strong>：uremia、hyponatremia、hypocalcemia、DKA</li>
+<li><strong>Drugs</strong>：steroids（dexamethasone 經典）、BZD 撤藥、chemotherapy</li>
+<li><strong>Psychogenic</strong>：少見</li>
+</ul>
+
+<h4>對病人影響</h4>
+<ul>
+<li>失眠</li>
+<li>進食困難 → 體重下降（與 dysphagia 加成 — 本病人雙重打擊）</li>
+<li>溝通受影響</li>
+<li>疲勞、肌肉痛</li>
+<li>情緒：焦慮、憂鬱</li>
+<li>Aspiration 風險增加</li>
+<li>QoL 嚴重下降</li>
+</ul>
+
+<h4>治療</h4>
+
+<p><strong>1. 處理 underlying cause</strong></p>
+<ul>
+<li>GERD → high-dose PPI</li>
+<li>Gastric distention → NG decompression</li>
+<li>Metabolic → 矯正</li>
+<li>本病人：CNS-origin → 直接針對 hiccup 治療</li>
+</ul>
+
+<p><strong>2. 非藥物（acute）：</strong>屏氣、Valsalva、冰水、檸檬汁、pull tongue forward、按 supraorbital nerve、tap pharynx with cotton swab。</p>
+
+<p><strong>3. 藥物治療（intractable）</strong></p>
+
+<table>
+<tr><th>藥物</th><th>劑量</th><th>機轉</th><th>備註</th></tr>
+<tr><td><strong>Baclofen</strong></td><td>5 mg tid → 20 mg tid（max 80 mg/day）</td><td>GABA-B agonist</td><td><strong>CNS-origin 首選；常用於 Wallenberg</strong>；副作用：drowsy、weakness</td></tr>
+<tr><td><strong>Chlorpromazine</strong></td><td>25-50 mg PO/IM/IV q6-8h</td><td>D2 antagonist</td><td>唯一 FDA approved；副作用：sedation、hypotension、EPS</td></tr>
+<tr><td><strong>Gabapentin</strong></td><td>300-900 mg tid</td><td>α2δ subunit</td><td>耐受性好</td></tr>
+<tr><td><strong>Metoclopramide</strong></td><td>10 mg tid-qid</td><td>D2 antagonist + cholinergic</td><td>對 GI-origin 較佳；EPS、tardive dyskinesia 風險</td></tr>
+<tr><td><strong>Haloperidol</strong></td><td>2-5 mg PO/IM</td><td>D2 antagonist</td><td>替代 chlorpromazine</td></tr>
+<tr><td><strong>Valproic acid</strong></td><td>15 mg/kg/day</td><td>GABA</td><td>替代</td></tr>
+<tr><td><strong>Amitriptyline</strong></td><td>25-50 mg qhs</td><td>Tricyclic</td><td>慢性 case</td></tr>
+</table>
+
+<p><strong>對 Wallenberg / brainstem-origin hiccup 推薦順序：</strong></p>
+<ol>
+<li>Baclofen（首選）</li>
+<li>Chlorpromazine（FDA approved 但副作用較多）</li>
+<li>Gabapentin（耐受性好）</li>
+<li>Combination：baclofen + gabapentin</li>
+</ol>
+
+<p><strong>4. Procedural（refractory）</strong></p>
+<ul>
+<li><strong>Phrenic nerve block</strong>：local anesthetic 注射，診斷 + 暫時治療</li>
+<li><strong>Phrenic nerve crush / transection</strong>：last resort</li>
+<li><strong>Diaphragmatic pacing、VNS</strong>：研究階段</li>
+<li><strong>Acupuncture</strong>：部分病人有效</li>
+</ul>
+
+<h4>本病人處置</h4>
+
+<ol>
+<li>排除其他病因：GERD trial（PPI 高劑量 8 週）、electrolyte 檢查</li>
+<li>第一線：baclofen 5 mg tid → titrate to 10 mg tid（注意 sedation）</li>
+<li>若無效（2 週）：加 gabapentin 300 mg tid → 600 mg tid</li>
+<li>若仍無效：trial chlorpromazine 25 mg q8h（注意 BP）</li>
+<li>頑固：consider neurology 會診、phrenic nerve block</li>
+<li>Supportive：NG/PEG feeding、sleep hygiene、心理支持</li>
+<li>家屬衛教：這是 brainstem 病灶常見併發症、會逐漸改善</li>
+</ol>
+
+<p><strong>預後：</strong>多數 Wallenberg-related hiccup 在 1-3 個月內自行緩解；baclofen 通常 1-2 週見效；少數（&lt; 5%）持續 &gt; 6 個月需 chronic 管理。</p>`,
+      },
+      {
+        q: '請說明 vertebral artery dissection 後的二級預防、運動限制與長期追蹤計畫。如何向病人解釋「按摩可能造成的傷害」？',
+        keywords: [
+          'CADISS trial',
+          'Antiplatelet vs anticoagulant',
+          'Aspirin / clopidogrel',
+          'BP control',
+          'Imaging follow-up',
+          '3 months / 6 months MRA',
+          'Avoid neck manipulation',
+          'Avoid extreme rotation',
+          'Pseudoaneurysm monitoring',
+          'Recurrence 1-2%/year',
+          'Patient education',
+          'Future pregnancy considerations',
+        ],
+        points: [
+          '<strong>CADISS trial</strong>：antiplatelet 與 anticoagulant 預防 stroke 復發效果相當',
+          '<strong>多數選 antiplatelet</strong>：aspirin 或 clopidogrel × 3-6 個月',
+          '<strong>嚴格 BP 控制</strong>：&lt; 130/80',
+          '<strong>影像追蹤</strong>：3、6、12 個月 MRA；多數 6 個月 healing',
+          '<strong>絕對避免</strong>：頸部 manipulation（chiropractic）、極端轉頭、瑜伽 inversion',
+          '<strong>避免</strong>：contact sports、bungee jumping',
+          '<strong>可進行</strong>：低衝擊運動、輕度伸展、游泳、步行、太極',
+          '<strong>復發風險</strong>：1-2%/年，第一年最高',
+          '<strong>Pseudoaneurysm</strong>：可能持續存在但通常不擴大',
+          '<strong>女性病人</strong>：未來懷孕需評估、產時 Valsalva、避孕避免 estrogen',
+          '<strong>溝通</strong>：明確、具體、不嚇唬但要嚴肅對待',
+        ],
+        a: `<h4>VAD 二級預防策略</h4>
+
+<p><strong>1. Antithrombotic Therapy</strong></p>
+
+<p><strong>CADISS Trial（2015 Lancet Neurology）：</strong>250 名 carotid + vertebral dissection 病人，antiplatelet vs anticoagulant 比較，3 個月 stroke recurrence rate 兩組相當（2% vs 1%）。多數選 antiplatelet（safer、cheaper）。</p>
+
+<p><strong>選擇原則：</strong></p>
+
+<table>
+<tr><th>狀況</th><th>建議</th></tr>
+<tr><td>Mild dissection、無 high-risk feature</td><td>Aspirin 100 mg/day × 3-6 個月</td></tr>
+<tr><td>Moderate-severe stenosis、recurrent stroke</td><td>DAPT 21 天 → SAPT</td></tr>
+<tr><td>Free-floating thrombus、嚴重 occlusion</td><td>Anticoagulant × 3-6 個月</td></tr>
+<tr><td>合併 SAH（intradural dissection）</td><td>Hold antithrombotic、考慮 endovascular</td></tr>
+</table>
+
+<p><strong>本病人</strong>：V3-V4 stenosis with intramural hematoma + 已 stroke → SAPT clopidogrel 75 mg 或 aspirin 100 mg × 6 個月；3 個月 follow-up MRA 重新評估；若 healing → 可降 aspirin 100 mg/day 長期或停藥（個案討論）。</p>
+
+<p><strong>2. Risk Factor Management</strong></p>
+
+<table>
+<tr><th>項目</th><th>目標</th></tr>
+<tr><td>BP</td><td>&lt; 130/80（嚴格，避免 wall stress）</td></tr>
+<tr><td>LDL</td><td>&lt; 100；血管病變 &lt; 70</td></tr>
+<tr><td>HbA1c</td><td>&lt; 7.0</td></tr>
+<tr><td>BMI</td><td>18.5-24（本病人 22 OK）</td></tr>
+<tr><td>戒菸</td><td>絕對</td></tr>
+<tr><td>運動</td><td>每週 150 分鐘中等強度</td></tr>
+</table>
+
+<p>本病人特別：42 歲、無 risk factor → 主因 mechanical（按摩）；statin 是否需要視 LDL；應做 connective tissue disease workup（FMD、Ehlers-Danlos 篩查）。</p>
+
+<p><strong>3. Imaging Follow-up</strong></p>
+
+<table>
+<tr><th>時間</th><th>檢查</th></tr>
+<tr><td>3 個月</td><td>MRA + T1 fat-sat MRI（看 healing）</td></tr>
+<tr><td>6 個月</td><td>MRA（確認 healing）</td></tr>
+<tr><td>12 個月</td><td>MRA</td></tr>
+<tr><td>之後</td><td>每年（前 5 年），之後依狀況</td></tr>
+</table>
+
+<p>多數 dissection 6 個月內 healing（50-80%）；20% 仍有 pseudoaneurysm 但通常 stable。</p>
+
+<h4>運動與生活限制</h4>
+
+<p><strong>絕對避免（永久）：</strong></p>
+<ul>
+<li>頸部 manipulation / chiropractic ⚠️</li>
+<li>頸部按摩（強壓型）⚠️</li>
+<li>激烈頸部轉動（高爾夫、網球發球極限）</li>
+<li>瑜伽 inversion postures（headstand、shoulder stand、plough）</li>
+<li>Contact sports（橄欖球、拳擊、武術 sparring）</li>
+<li>Bungee jumping、過山車</li>
+<li>跳水（high diving）</li>
+<li>Heavy weight lifting with Valsalva</li>
+</ul>
+
+<p><strong>強烈建議避免（前 6 個月）：</strong></p>
+<ul>
+<li>美髮店仰頭洗髮（beauty parlor stroke）</li>
+<li>長時間頸部某姿勢（看牙、修水管）</li>
+<li>強度健身、CrossFit</li>
+<li>劇烈 cough / sneeze（盡量控制）</li>
+<li>Constipation 用力（軟便劑預防）</li>
+</ul>
+
+<p><strong>可進行：</strong>步行、游泳（避免蝶式）、固定式腳踏車、輕度 Pilates、輕度伸展（mid-range）、light weight training（無 Valsalva）、太極拳。</p>
+
+<h4>女性特殊考量</h4>
+
+<p><strong>未來懷孕：</strong></p>
+<ul>
+<li>VAD 病史不是禁忌，但需高風險產科照護</li>
+<li>產前：MRA 重新評估</li>
+<li>產時：避免長時間 Valsalva、必要時 epidural、嚴重 stenosis 個案考慮 elective C-section</li>
+</ul>
+
+<p><strong>避孕：</strong>避免 estrogen-containing；建議 progesterone-only 或 IUD。</p>
+
+<p><strong>HRT：</strong>避免，特別是口服 estrogen。</p>
+
+<h4>復發警訊衛教（必教）</h4>
+
+<p>立即就醫：</p>
+<ul>
+<li>突然嚴重頭痛或頸痛</li>
+<li>新的 vertigo、失衡</li>
+<li>新的視力問題、複視</li>
+<li>新的 dysarthria、dysphagia</li>
+<li>面部或肢體無力 / 麻</li>
+<li>意識變化</li>
+</ul>
+
+<h4>「按摩造成傷害」的溝通</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「我知道您可能很難接受 — 一個簡單的按摩怎麼會造成這麼嚴重的後果？我必須誠實告訴您：椎動脈在頸部 V3 段（C2 椎體附近）的活動度大、相對脆弱，當受到強烈的頸部扭轉或牽拉時，血管內膜可能撕裂，血液進入血管壁形成血腫，這就是 dissection。文獻上稱為『chiropractic neck manipulation associated stroke』，雖然絕對風險很低（每百萬次按摩約 1 次），但您不幸是少數的個案。</p>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+這不是您的錯，您也無法事先預知。但從現在開始，我必須建議您：</p>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>絕對不能再做頸部 manipulation 或強壓按摩</strong>。輕度肩、上背按摩可以，但要避開頸部，並明確告知技師您有 dissection 病史。如果美髮店要洗頭，請選擇前傾式（不要仰頭）。</p>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>瑜伽要避免倒立、極限的扭脖子姿勢</strong>。一般伸展與正向體位都可以。</p>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>頸部不舒服時</strong>，先想到熱敷、輕度伸展、必要時請物理治療師（不是按摩師）做 mobilization，他們會避開高風險動作。</p>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>復發風險每年約 1-2%</strong>，所以前 5 年我們會每年追蹤 MRA。健好之後您可以慢慢回到大部分日常活動，但這幾項禁忌是終身的。」</p>
+
+<h4>身心調適</h4>
+
+<p>VAD 病人常出現：對「再次中風」的焦慮、PTSD-like 症狀、對醫療不信任、失去身體掌控感。處置：同理、解釋、必要時轉介心理諮商、支持團體、家屬衛教、健身教練 / 物理治療師團隊溝通。</p>`,
+      },
+      {
+        q: '本病人 6 個月後門診追蹤，吞嚥已改善至 IDDSI 5 飲食、不再 hiccup，但持續抱怨「臉部疼痛 burning sensation、像針刺」，特別在洗臉、吹風時誘發。請說明可能診斷與治療。',
+        keywords: [
+          'Central post-stroke pain (CPSP)',
+          'Dejerine-Roussy syndrome',
+          'Lateral medullary CPSP',
+          'Spinothalamic involvement',
+          'Allodynia, hyperalgesia',
+          'Cold allodynia',
+          'IASP criteria',
+          'Amitriptyline',
+          'Gabapentin / Pregabalin',
+          'SNRI (duloxetine)',
+          'Lamotrigine',
+          'Lidocaine patch',
+          'TENS, CBT',
+        ],
+        points: [
+          '<strong>診斷：Central Post-Stroke Pain (CPSP)</strong>，又稱 Dejerine-Roussy（雖傳統指 thalamic）',
+          '<strong>Lateral medullary stroke 也會 CPSP</strong>（spinothalamic tract 受損）',
+          '<strong>Wallenberg 後 CPSP 高達 25-50%</strong>（最高比例）',
+          '<strong>好發時間</strong>：stroke 後 1-6 個月',
+          '<strong>特徵</strong>：burning、tingling、electric、cold pain',
+          '<strong>本病人「吹風誘發」→ cold allodynia</strong>，CPSP 經典',
+          '<strong>位置</strong>：與 sensory loss 區域吻合',
+          '<strong>機轉</strong>：spinothalamic tract / thalamic 受損後 central sensitization',
+          '<strong>診斷</strong>：IASP criteria',
+          '<strong>第一線：amitriptyline、gabapentin、pregabalin、duloxetine、lamotrigine</strong>',
+          '<strong>非藥物</strong>：TENS、CBT、保暖',
+          '<strong>預後</strong>：難完全根除，但可顯著減輕；長期管理',
+        ],
+        a: `<h4>Central Post-Stroke Pain (CPSP)</h4>
+
+<p><strong>歷史</strong>：1906 年 Dejerine-Roussy 描述「thalamic syndrome」；現代擴展為所有 stroke 後 central pain。</p>
+
+<p><strong>盛行率</strong>：</p>
+<ul>
+<li>整體 stroke 後 CPSP：8-14%</li>
+<li><strong>Wallenberg 後 CPSP：高達 25-50%（最高比例）</strong></li>
+<li>Thalamic stroke 後：17-25%</li>
+</ul>
+
+<h4>機轉</h4>
+
+<p><strong>主流理論：spinothalamic tract 損傷後 central sensitization</strong></p>
+<ul>
+<li>正常 spinothalamic system 對痛溫覺有 inhibitory control</li>
+<li>受損後失去 inhibition</li>
+<li>Thalamic neurons 出現 spontaneous bursting + hypersensitivity</li>
+<li>本病人 lateral medulla 病灶 → spinothalamic tract 受損 → 對側肢體 + 同側面部 (trigeminal spinal tract) 都可能 CPSP</li>
+</ul>
+
+<p><strong>「Pain in the area of sensory loss」— 經典悖論</strong>：CPSP 病人疼痛區與 sensory loss 區重疊。本病人左側面部痛溫覺缺失 → CPSP 也在左側面部。</p>
+
+<h4>臨床特徵</h4>
+
+<p><strong>疼痛性質：</strong>burning（最常見）、tingling、electric、aching、cold pain（特別 lateral medullary CPSP）。</p>
+
+<p><strong>分布：</strong>對應 sensory loss 區域。本病人左側面部（trigeminal distribution）。</p>
+
+<p><strong>誘發因素：</strong></p>
+<ul>
+<li><strong>Cold（cold allodynia）</strong>：本病人「吹風誘發」典型</li>
+<li>Touch（mechanical allodynia）</li>
+<li>Movement、emotional stress、疲勞</li>
+</ul>
+
+<p><strong>時間：</strong>多數 stroke 後 1-3 個月出現；本病人 6 個月後仍在 typical onset window；少數延至 1-2 年。</p>
+
+<p><strong>感覺檢查：</strong>pinprick / temperature 缺失於同區（spinothalamic）；touch 多保留；allodynia、hyperalgesia、dysesthesia。</p>
+
+<h4>診斷標準（IASP，2014）</h4>
+
+<ol>
+<li>中樞神經系統損傷史（stroke confirmed by imaging）</li>
+<li>疼痛分布與 lesion 對應</li>
+<li>排除其他疼痛原因</li>
+<li>臨床檢查與感覺異常 consistent with neuropathic pain</li>
+</ol>
+
+<h4>鑑別診斷</h4>
+
+<ul>
+<li><strong>Trigeminal neuralgia</strong>：electric shock-like、trigger zone、面部 V2/V3 分布；本病人位置與機轉不符</li>
+<li><strong>Post-herpetic neuralgia</strong>：dermatomal、shingles 病史</li>
+<li><strong>Atypical facial pain</strong>：bilateral、不對應神經分布</li>
+<li><strong>Musculoskeletal pain</strong>：與動作相關、機械性</li>
+<li><strong>Headache disorders</strong>：migraine、cluster</li>
+<li><strong>CRPS</strong>：autonomic 改變、edema、皮膚變化</li>
+</ul>
+
+<h4>本病人診斷</h4>
+
+<p><strong>強烈支持 CPSP：</strong></p>
+<ul>
+<li>Wallenberg 病史（spinothalamic 受損）</li>
+<li>位置：左側面部（與 sensory loss 完全吻合）</li>
+<li>性質：burning、像針刺</li>
+<li>誘發：洗臉（mechanical allodynia）+ 吹風（cold allodynia）— 經典</li>
+<li>時間：6 個月後出現（typical onset）</li>
+</ul>
+
+<h4>治療</h4>
+
+<p><strong>1. 第一線藥物</strong></p>
+
+<table>
+<tr><th>藥物</th><th>劑量</th><th>機轉</th><th>備註</th></tr>
+<tr><td><strong>Amitriptyline</strong></td><td>10-25 mg qhs → 75-150 mg</td><td>Tricyclic：NE/5-HT reuptake + sodium channel</td><td>實證最強；anticholinergic 副作用、QT prolongation；老人慎用</td></tr>
+<tr><td><strong>Nortriptyline</strong></td><td>10-25 mg qhs → 75-100 mg</td><td>Tricyclic（較少 anticholinergic）</td><td>替代 amitriptyline</td></tr>
+<tr><td><strong>Gabapentin</strong></td><td>100 mg tid → 1200 mg tid</td><td>α2δ subunit</td><td>耐受性好；renal-adjusted</td></tr>
+<tr><td><strong>Pregabalin</strong></td><td>50 mg bid → 150 mg bid</td><td>α2δ subunit</td><td>較 gabapentin 快起效</td></tr>
+<tr><td><strong>Duloxetine</strong></td><td>30 mg/day → 60-120 mg/day</td><td>SNRI</td><td>合併 depression 時佳</td></tr>
+<tr><td><strong>Lamotrigine</strong></td><td>25 mg/day → 200 mg/day（slow titrate 8 週）</td><td>Sodium channel</td><td>對 CPSP 有特殊實證；Stevens-Johnson 風險</td></tr>
+</table>
+
+<p><strong>選擇順序（CPSP）：</strong></p>
+<ol>
+<li>Amitriptyline（最強實證）— 若無禁忌</li>
+<li>Gabapentin / Pregabalin（耐受性好）</li>
+<li>Duloxetine（合併 depression）</li>
+<li>Lamotrigine（特別對 CPSP 有實證）</li>
+<li>Combination：amitriptyline + gabapentin</li>
+</ol>
+
+<p><strong>2. Topical</strong></p>
+<ul>
+<li><strong>Lidocaine 5% patch</strong>：每天 12 hr 貼，適合局部 allodynia；安全</li>
+<li><strong>Capsaicin 8% patch</strong>：對 peripheral 較有效，CPSP 限</li>
+<li><strong>Topical amitriptyline / ketamine</strong>：compounded</li>
+</ul>
+
+<p><strong>3. 介入治療（refractory）</strong></p>
+<ul>
+<li><strong>rTMS</strong>：刺激 motor cortex，對 CPSP 部分有效；非侵入性；FDA cleared for depression</li>
+<li><strong>Motor cortex stimulation (MCS)</strong>：surgical，refractory case；對 CPSP 有實證</li>
+<li><strong>Deep brain stimulation</strong>：最 refractory case</li>
+<li><strong>Trigeminal nerve block</strong>：面部 CPSP 可考慮</li>
+</ul>
+
+<p><strong>4. 非藥物治療</strong></p>
+<ul>
+<li>TENS</li>
+<li>CBT：管理 pain perception、coping</li>
+<li>Mindfulness-based stress reduction</li>
+<li>Pain neuroscience education</li>
+<li>Acupuncture（實證 mixed）</li>
+<li>Physical therapy：保持 ROM、活動</li>
+</ul>
+
+<p><strong>5. 環境與生活調整</strong></p>
+<ul>
+<li><strong>避免冷風</strong>：戴口罩、圍巾、保暖（最重要）</li>
+<li><strong>洗臉</strong>：用溫水、不用過冷過熱</li>
+<li><strong>溫和清潔</strong>：軟毛巾</li>
+<li><strong>室內溫度</strong>：穩定、避免冷氣直吹</li>
+<li><strong>壓力管理</strong>：emotional stress 加重</li>
+<li><strong>睡眠衛生</strong>：疲勞加重</li>
+</ul>
+
+<h4>本病人治療計畫</h4>
+
+<p><strong>第一個月：</strong></p>
+<ol>
+<li>確認診斷（IASP criteria 符合）</li>
+<li>起始 amitriptyline 10 mg qhs → 25 mg qhs（替代：nortriptyline 或 gabapentin 100-300 mg tid）</li>
+<li>Lidocaine 5% patch 局部試用</li>
+<li>環境調整：保暖、口罩、軟毛巾</li>
+<li>QoL 評估、焦慮憂鬱篩查</li>
+</ol>
+
+<p><strong>第 2-3 個月（若效果不足）：</strong>titrate amitriptyline 至 50-75 mg；或加 gabapentin 300 mg tid；combination therapy。</p>
+
+<p><strong>第 4-6 個月（refractory）：</strong>switch to lamotrigine（slow titrate）；trial duloxetine；考慮 rTMS；CBT 介入；疼痛科會診。</p>
+
+<p><strong>長期：</strong>多模式 maintenance；每 3-6 個月 reassess；能 taper 就 taper；支持團體。</p>
+
+<h4>給病人的衛教</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您現在的疼痛叫做『中樞性疼痛』，是 stroke 後常見併發症 — 大約有 1/4 到 1/2 的 Wallenberg 病人會有。這不是您『太敏感』或『心理作用』，是腦幹病灶後痛覺神經系統的真實異常。</p>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+我必須誠實告訴您：這種痛通常不能完全消失，但<strong>大多可以減輕到能忍受的程度</strong>。我會用藥物 + 非藥物方式幫您管理。藥物起效需要 4-8 週，請耐心。</p>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+日常請<strong>避免冷風直吹臉部</strong>（戴口罩、圍巾、出門前先暖身）、洗臉用溫水、避免過度摩擦。如果有壓力大、睡不好的情況疼痛會加重，所以我們也會關心您的睡眠和情緒。</p>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+我們不會放棄。CPSP 治療是長期戰，藥物會調整、新療法會嘗試。我和您一起努力。」</p>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
@@ -4095,7 +6475,7 @@ function Landing({ onStart }) {
                   onClick={() => onStart(c)}
                 >
                   <div className="case-pick-num">CASE {String(i+1).padStart(2,'0')}</div>
-                  <div className="case-pick-title">{c.title}</div>
+                  <div className="case-pick-title">模擬題 {i+1}</div>
                   <div className="case-pick-meta">{c.questions.length} 小題 · 9 分鐘</div>
                   <div className="case-pick-arrow">→</div>
                 </button>
@@ -4122,6 +6502,8 @@ function Landing({ onStart }) {
 
 function CaseIntro({ caseData, onReady, onHome }) {
   const domain = DOMAINS.find(d => d.id === caseData.domain);
+  const domainCases = casesByDomain(caseData.domain);
+  const caseNum = domainCases.findIndex(c => c.id === caseData.id) + 1;
   return (
     <div className="case-screen">
       <div className="case-header">
@@ -4129,7 +6511,7 @@ function CaseIntro({ caseData, onReady, onHome }) {
         <div className="case-title">臨床情境</div>
         <div className="case-progress">
           {domain && <span style={{color:'var(--accent)'}}>{domain.tc}</span>}
-          {' · '}{caseData.title}
+          {' · 模擬題 '}{caseNum}
         </div>
       </div>
       <div className="case-body">{caseData.context}</div>
