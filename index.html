@@ -684,6 +684,148 @@
     color: var(--text-dim);
     white-space: pre-wrap;
   }
+  .page-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 22px 0 16px 0;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  .page-divider::before,
+  .page-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--accent-dim);
+    opacity: 0.45;
+  }
+  .page-locked {
+    margin-top: 22px;
+    padding: 16px 22px;
+    border: 1px dashed var(--border-strong);
+    background: rgba(0,0,0,0.15);
+    color: var(--text-faint);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-align: center;
+  }
+  .page-locked .lock-icon {
+    color: var(--accent-dim);
+    margin-right: 8px;
+  }
+  .case-context-page2 {
+    background: var(--bg-card);
+    border-left: 2px solid var(--accent);
+    padding: 22px 28px;
+    margin-bottom: 28px;
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--text-dim);
+    white-space: pre-wrap;
+    box-shadow: 0 0 0 1px rgba(212, 165, 72, 0.08);
+  }
+
+  /* Page 2 reveal overlay (Q4→Q5 switch) */
+  .reveal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    backdrop-filter: blur(6px);
+  }
+  .reveal-card {
+    background: var(--bg-elev);
+    border: 1px solid var(--accent-dim);
+    border-left: 3px solid var(--accent);
+    max-width: 760px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 36px 40px;
+    box-shadow: 0 0 60px rgba(212, 165, 72, 0.15);
+  }
+  .reveal-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .reveal-title {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .reveal-subtitle {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .reveal-content {
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--text-dim);
+    white-space: pre-wrap;
+    margin-bottom: 28px;
+  }
+  .reveal-btn {
+    display: block;
+    width: 100%;
+    padding: 16px 24px;
+    background: var(--accent);
+    color: #1a1410;
+    border: none;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .reveal-btn:hover { background: #e0b558; }
+
+  /* Modal page tabs (Q5+) */
+  .ctx-modal-tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 16px;
+  }
+  .ctx-modal-tab {
+    flex: 1;
+    padding: 12px 18px;
+    background: transparent;
+    border: none;
+    color: var(--text-faint);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.15s ease;
+  }
+  .ctx-modal-tab:hover { color: var(--text-dim); }
+  .ctx-modal-tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
 
   .qa-block {
     margin-bottom: 24px;
@@ -18878,6 +19020,1933 @@ Brain MRI + MRA：basilar artery thrombosis、bilateral pontine + midbrain infar
       },
     ],
   },
+  {
+    id: 'pediatric_001',
+    domain: 'pediatric',
+    title: 'Spastic Diplegia CP（4Y 男童、GMFCS III）',
+    context: `4 歲男童（4Y2M），第一胎、足月生產（NSD，birth weight 3,150 g），父母為一般上班族，沒有家族遺傳疾病史；母親孕期穩定，無感染、藥物史。新生兒期 Apgar 1' 8 分、5' 9 分，無 NICU 住院。
+
+家屬主訴：「他從小就比同齡慢，1 歲半才會自己坐穩，2 歲多才會扶站，3 歲開始能扶東西走幾步、現在 4 歲在家可以自己慢慢走但容易跌倒，腳交叉、踮腳尖明顯。最近在幼稚園跟不上同學的活動，家長焦慮。」
+
+幼稚園老師補充：上下樓梯需要扶手 step-by-step、跑步姿勢怪異、無法跳躍、雙手抓握尚可但綁鞋帶 / 扣鈕扣慢；學業認知方面比同齡略差但可服從指令、會與同學互動。
+
+理學檢查初步觀察（門診初次評估）：
+- 雙下肢肌張力增加，剪刀步態（scissoring gait），雙腳 toe-walking
+- 雙下肢 deep tendon reflex hyperactive、雙側 ankle clonus +
+- 雙手 fine motor 較同齡慢但無明顯張力異常
+- 上肢 muscle power 約 4+/5、下肢 hip flexor 4/5、knee extensor 4/5、ankle dorsiflexor 3/5
+- 可獨立站立 30 秒、可放手走 5–6 步即需扶物
+
+家長帶來一張外院 brain MRI 報告（2 歲時做的）：「Bilateral periventricular white matter signal abnormality, suggestive of PVL.」
+
+家長問：「他到底是什麼問題？以後能正常上小學嗎？需要做什麼治療？要不要打那個肉毒桿菌？」`,
+    contextPage2: `【追加評估結果】
+
+PDMS-2（Peabody Developmental Motor Scales）：
+- 粗大動作 (Gross Motor) PR 3（年齡相當：約 2Y3M）
+- 精細動作 (Fine Motor) PR 18（年齡相當：約 3Y6M）
+
+Bayley-III 認知量表（後改測 WPPSI-IV 因 4 歲）：
+- WPPSI-IV Full Scale IQ 82（borderline–low average）
+- 語言理解 PR 25、知覺推理 PR 18
+
+語言評估（修訂式畢保德圖畫詞彙測驗 PPVT-R）：
+- 接受性語言 PR 30（約 3Y8M 水準）
+- 表達性語言：可說 5–7 字短句、構音稍慢但可理解
+
+GMFM-66 score：48.5（約對應 GMFCS III 上緣）
+GMFCS Level III、MACS Level II、CFCS Level I、EDACS Level I
+
+肌張力（MAS, Modified Ashworth Scale）：
+- 雙側 hip adductor 2、hamstring 2、gastrocnemius 3、soleus 2
+- 雙側 ankle ROM：dorsiflexion with knee extension −10°（passive，明顯緊繃）
+
+髖關節 X-ray（AP view，4 歲做）：
+- 右側 Migration Percentage (Reimers index) 32%
+- 左側 Migration Percentage 26%
+- Acetabular index 雙側皆略增
+
+其他：
+- Spine X-ray：尚無明顯 scoliosis
+- Seizure：無發作病史，EEG 未做
+- 視覺、聽力篩檢：正常
+- 家中 1 個 2 歲的弟弟，發展正常`,
+    page2UnlockAt: 5,
+    questions: [
+      {
+        q: '請說明對這位 4 歲走路不穩的男童，初次門診評估時，你會詢問哪些病史重點？身體檢查與神經學檢查（PE/NE）應特別觀察什麼？',
+        keywords: [
+          'Prenatal/perinatal history',
+          'Birth history (Apgar, GA, BBW)',
+          'NICU stay / IVH / HIE',
+          'Developmental milestones',
+          'Family history (CP, genetic)',
+          'Seizure history',
+          'Feeding / growth',
+          'Primitive reflexes (ATNR, Moro)',
+          'Postural reactions (parachute, righting)',
+          'Muscle tone (MAS, hypertonia distribution)',
+          'Selective motor control',
+          'DTR, clonus, Babinski',
+          'Joint ROM (popliteal angle, Thomas test)',
+          'Gait pattern (scissoring, toe-walking, crouch)',
+          'Spine / pelvis alignment',
+          'Hip examination (Galeazzi, abduction)',
+          'Functional observation (sit, stand, transfer)',
+          'GMFCS / MACS / CFCS / EDACS',
+        ],
+        points: [
+          '<strong>產前史</strong>：母親感染（TORCH）、藥物、酒精、毒品、妊娠糖尿病、子癇前症、胎盤異常',
+          '<strong>產時史</strong>：早產（< 37 週）、低出生體重（< 2500g）、Apgar、難產、胎位、缺氧窒息（HIE）',
+          '<strong>新生兒期</strong>：NICU 住院、IVH、PVL、kernicterus、感染、癲癇',
+          '<strong>發展里程碑</strong>：抬頭、翻身、坐、爬、站、走、語言、社交各軸的時間點',
+          '<strong>退步 vs 停滯</strong>：退步要懷疑 metabolic / progressive disease（非典型 CP）',
+          '<strong>家族史</strong>：CP、智能障礙、遺傳代謝病、基因疾病',
+          '<strong>癲癇史</strong>：CP 約 30–50% 合併癲癇',
+          '<strong>餵食與生長</strong>：吸吮困難、嗆咳、體重增加是否落後',
+          '<strong>原始反射</strong>：ATNR、Moro、palmar grasp 應於 4–6 個月消失，殘留代表 CNS 異常',
+          '<strong>姿勢反射</strong>：head righting、parachute、equilibrium，未出現代表動作發展遲緩',
+          '<strong>肌張力</strong>：MAS / Tardieu，分布（quadri / di / hemi）、spastic vs dyskinetic',
+          '<strong>選擇性動作控制</strong>：能否做出獨立關節動作（區分 spasticity vs 整體 mass pattern）',
+          '<strong>DTR、clonus、Babinski</strong>：UMN sign 確認',
+          '<strong>關節 ROM</strong>：popliteal angle、Thomas test、Silfverskiöld test（gastroc vs soleus 緊繃）',
+          '<strong>步態觀察</strong>：剪刀步、踮腳尖、crouch、Trendelenburg',
+          '<strong>髖關節檢查</strong>：Galeazzi sign、hip abduction < 45° 警示 subluxation',
+          '<strong>分級量表</strong>：GMFCS、MACS、CFCS、EDACS — 必背口試核心',
+          '<strong>功能觀察</strong>：sit-to-stand、transfer、上下樓梯、跑跳能力',
+        ],
+        a: `<h4>病史詢問架構（依時序）</h4>
+
+<table>
+<tr><th>時期</th><th>重點問題</th><th>臨床意義</th></tr>
+<tr><td><strong>產前 (Prenatal)</strong></td><td>TORCH 感染、妊娠高血壓 / 子癇前症、糖尿病、酒精/毒品/藥物、胎盤異常、多胞胎、母胎血型不合</td><td>約 70–80% 的 CP 病因可追溯至產前因素</td></tr>
+<tr><td><strong>產時 (Perinatal)</strong></td><td>胎齡 (GA)、出生體重 (BBW)、生產方式、Apgar 1'/5'、難產、胎位、產時缺氧、cord prolapse</td><td>早產 + 低出生體重是 PVL 最大 risk factor，本病人 PVL on MRI 與此呼應</td></tr>
+<tr><td><strong>新生兒 (Neonatal)</strong></td><td>NICU 住院、IVH（intraventricular hemorrhage）grade、PVL、HIE、kernicterus、敗血症、neonatal seizure、人工呼吸器使用、ECMO</td><td>HIE 與 BG/thalamus injury 相關（dyskinetic CP），PVL 與 spastic diplegia 相關</td></tr>
+<tr><td><strong>嬰幼兒</strong></td><td>各 milestone 達成時間、退步 vs 停滯、餵食吞嚥、視覺聽力、癲癇</td><td>退步要懷疑 progressive disorder（非 CP）</td></tr>
+<tr><td><strong>家族史</strong></td><td>近親 CP、智能障礙、自閉、遺傳代謝病、孩童早夭</td><td>家族史 + atypical 表現 → 排除 hereditary spastic paraplegia、leukodystrophy</td></tr>
+</table>
+
+<h4>本病人病史關鍵點</h4>
+
+<p>本病人為足月、Apgar 良好、無 NICU、無家族史，但 brain MRI 顯示 PVL —— 這是<strong>非典型 PVL 個案</strong>，需追問：</p>
+
+<ul>
+<li>母親孕期是否有不明顯感染（CMV、Toxoplasma）</li>
+<li>是否有不被察覺的 perinatal hypoxia（如急產、臍帶繞頸、胎兒窘迫）</li>
+<li>嬰兒期是否有 seizure 病史（家屬可能未察覺）</li>
+<li>退步病史（排除 metabolic / progressive disease）</li>
+<li>必要時轉介遺傳科做基因檢查（hereditary spastic paraplegia、CTNNB1、TUBB4A 等）</li>
+</ul>
+
+<h4>身體檢查 / 神經學檢查 重點</h4>
+
+<p><strong>1. 觀察（Observation） — 最重要的第一步</strong></p>
+<ul>
+<li>自發性姿勢：W-sitting（CP 常見）、scissoring、windswept</li>
+<li>對稱性：左右上下肢使用比較</li>
+<li>不自主動作：dystonia、chorea、athetosis（區分 dyskinetic 型）</li>
+<li>步態：toe-walking、scissoring、crouch、Trendelenburg、circumduction</li>
+<li>跑跳能力、上下樓梯方式</li>
+</ul>
+
+<p><strong>2. 原始反射（Primitive Reflexes）— 應於 6 個月內整合消失</strong></p>
+<table>
+<tr><th>反射</th><th>正常消失時間</th><th>殘留意義</th></tr>
+<tr><td>ATNR (Asymmetric Tonic Neck)</td><td>6 個月</td><td>影響翻身、伸手、視覺整合</td></tr>
+<tr><td>Moro reflex</td><td>4–6 個月</td><td>影響坐姿穩定</td></tr>
+<tr><td>Palmar grasp</td><td>4–6 個月</td><td>影響手指分化、抓放控制</td></tr>
+<tr><td>STNR (Symmetric Tonic Neck)</td><td>8–12 個月</td><td>影響爬行協調</td></tr>
+<tr><td>TLR (Tonic Labyrinthine)</td><td>6 個月</td><td>影響直立姿勢</td></tr>
+</table>
+
+<p><strong>3. 姿勢反射（Postural Reactions） — 應於 1 歲前出現</strong></p>
+<ul>
+<li><strong>Head righting</strong>：3–4 個月</li>
+<li><strong>Lateral propping</strong>：5–6 個月（坐姿穩定基礎）</li>
+<li><strong>Forward parachute</strong>：6–7 個月</li>
+<li><strong>Backward parachute</strong>：9–10 個月（站立必要）</li>
+<li><strong>Equilibrium reactions</strong>：1 歲後</li>
+<li>未出現 = 動作發展明顯遲緩、與 CP 風險高度相關</li>
+</ul>
+
+<p><strong>4. 肌張力評估</strong></p>
+<table>
+<tr><th>量表</th><th>內容</th><th>適用</th></tr>
+<tr><td>MAS (Modified Ashworth Scale)</td><td>0、1、1+、2、3、4，6 等級</td><td>spasticity，最常用</td></tr>
+<tr><td>Tardieu Scale</td><td>R1（快速被動）、R2（慢速被動）、dynamic component</td><td>區分 spasticity vs contracture，Botox 評估必備</td></tr>
+<tr><td>Hypertonia Assessment Tool</td><td>區分 spasticity / dystonia / rigidity</td><td>判斷張力種類</td></tr>
+</table>
+
+<p><strong>5. 神經學檢查</strong></p>
+<ul>
+<li>DTR：knee jerk、ankle jerk hyperactive</li>
+<li>Clonus：sustained ankle clonus → UMN lesion</li>
+<li>Babinski sign：positive in CP（嬰兒期可正常）</li>
+<li>選擇性動作控制 (SCALE)：能否獨立關節動作</li>
+</ul>
+
+<p><strong>6. 關節 ROM 與肌肉緊繃度</strong></p>
+<ul>
+<li><strong>Popliteal angle</strong>：仰臥屈髖 90°，伸膝測量 — 評估 hamstring 緊繃</li>
+<li><strong>Thomas test</strong>：髖屈肌緊繃</li>
+<li><strong>Silfverskiöld test</strong>：膝伸 vs 膝屈分別測 ankle dorsiflexion，區分 gastroc 緊（膝伸時更緊）vs soleus 緊（兩者都緊）</li>
+<li><strong>Hip abduction with hip extension</strong>：< 45° 為 hip subluxation 警訊</li>
+<li><strong>Galeazzi sign</strong>：仰臥屈髖屈膝，膝高不等 → hip dislocation</li>
+</ul>
+
+<p><strong>7. 功能性評估 / 分級</strong></p>
+<table>
+<tr><th>系統</th><th>內容</th><th>5 級分</th></tr>
+<tr><td>GMFCS</td><td>Gross Motor Function Classification</td><td>I = 自由走 / V = 完全依賴</td></tr>
+<tr><td>MACS</td><td>Manual Ability Classification</td><td>I = 自如操作 / V = 無法操作</td></tr>
+<tr><td>CFCS</td><td>Communication Function Classification</td><td>I = 有效雙向 / V = 偶爾</td></tr>
+<tr><td>EDACS</td><td>Eating and Drinking Ability</td><td>I = 安全有效 / V = 不安全</td></tr>
+</table>
+
+<h4>本病人預期 PE/NE 發現（口試實戰）</h4>
+
+<ul>
+<li><strong>步態：scissoring + toe-walking + crouch</strong>（典型 spastic diplegia）</li>
+<li><strong>下肢張力：MAS 2–3</strong>（gastroc/hamstring/adductor）</li>
+<li><strong>DTR + clonus + Babinski +</strong>（雙側）</li>
+<li><strong>Popliteal angle 增加</strong>（hamstring 緊）</li>
+<li><strong>Silfverskiöld：膝伸時更緊</strong>（gastroc 為主）</li>
+<li><strong>Hip abduction 受限</strong>（要警覺 subluxation）</li>
+<li><strong>原始反射可能殘留</strong>（ATNR、palmar grasp）</li>
+<li><strong>姿勢反射出現延遲</strong>（lateral propping、parachute 延遲）</li>
+<li><strong>上肢相對保留</strong>（spastic diplegia 特徵）</li>
+<li><strong>初步分級：GMFCS III、MACS II</strong></li>
+</ul>
+
+<h4>跟家長的溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「爸爸媽媽，從今天的初步評估，孩子的腦部 MRI 顯示一種叫做『腦室周邊白質軟化』的變化，這種變化常會影響雙腳走路的能力。但我還需要做一些更詳細的評估，才能完整了解孩子目前的能力到哪裡、需要什麼樣的復健。今天我先觀察了他的張力、反射、走路方式，安排他做幾個進一步的評估之後，我們會有完整的討論。請放心，這個診斷不會退步、不會惡化，但我們需要及早介入，幫助孩子發揮最大的潛力。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>病史按時序：產前 → 產時 → 新生兒 → 嬰幼兒 → 家族</li>
+<li>原始反射 + 姿勢反射是 CP 評估必背基礎</li>
+<li>MAS、Tardieu、Silfverskiöld 三大張力 / 肌肉評估必會</li>
+<li>GMFCS / MACS / CFCS / EDACS 四大功能分級必背</li>
+<li>退步 vs 停滯：退步要懷疑非 CP（progressive disease）</li>
+<li>家族史 + atypical 個案考慮基因檢查</li>
+<li>本病人關鍵：足月 + 無 NICU + PVL → 略 atypical，需深入問史</li>
+</ul>`,
+      },
+      {
+        q: '請說明 0–5 歲兒童的正常發展里程碑（GM / FM / Speech / 認知 / Social / ADL）。以本病人 4 歲 2 個月的觀察，他目前各領域大約相當於幾歲水準？',
+        keywords: [
+          'Gross motor milestones',
+          'Fine motor milestones',
+          'Speech / language milestones',
+          'Cognitive milestones',
+          'Social-emotional milestones',
+          'ADL milestones',
+          'Head control 3 mo',
+          'Sit unsupported 6 mo',
+          'Crawl 9 mo',
+          'Walk 12 mo',
+          'Run 18 mo',
+          'Stairs 24 mo',
+          'Hop one foot 4 yr',
+          'Skip 5 yr',
+          'Pincer grasp 9-10 mo',
+          'Tower 6 cubes 24 mo',
+          'Copy circle 3 yr',
+          'Copy cross 4 yr',
+          'Cooing 2 mo',
+          'Babbling 6 mo',
+          'First word 12 mo',
+          '2-word phrase 24 mo',
+          'Sentence 36 mo',
+          'Developmental age estimation',
+        ],
+        points: [
+          '<strong>0–5 歲六大發展軸</strong>必背：GM / FM / Speech / 認知 / Social / ADL',
+          '<strong>3 個月</strong>：抬頭穩、追視、cooing、社交微笑',
+          '<strong>6 個月</strong>：扶坐、抓物、babbling、認生',
+          '<strong>9 個月</strong>：自行坐、爬、pincer grasp、認名字',
+          '<strong>12 個月</strong>：扶站、扶走、第一個字、揮手 bye-bye',
+          '<strong>15 個月</strong>：自走、堆 2 塊、3–5 字、用湯匙',
+          '<strong>18 個月</strong>：跑、堆 4 塊、10–20 字、脫襪</p>',
+          '<strong>24 個月</strong>：上下樓梯（扶）、堆 6 塊、2 字句、玩伴遊戲',
+          '<strong>36 個月</strong>：單腳站 3 秒、畫圓、3-4 字句、完整自理穿衣',
+          '<strong>48 個月（4 歲）</strong>：單腳跳、畫十字、敘事完整、會玩想像遊戲',
+          '<strong>60 個月（5 歲）</strong>：跳繩、畫菱形、流暢對話、識讀準備',
+          '<strong>本病人 GM</strong>：對應約 2Y 水準（PR 3）— 嚴重落後',
+          '<strong>本病人 FM</strong>：對應約 3.5Y（PR 18）— 輕度落後',
+          '<strong>本病人語言</strong>：3.5Y 水準（PR 30）— 輕度落後',
+          '<strong>本病人認知</strong>：約 borderline（IQ 82）',
+          '<strong>本病人社交</strong>：相對較佳（與同齡互動）',
+          '<strong>本病人 ADL</strong>：可自理但動作慢',
+          '<strong>動作落後 + 認知/語言輕度落後</strong> = 典型 spastic diplegia 表現',
+        ],
+        a: `<h4>0–5 歲六大領域里程碑（必背）</h4>
+
+<table>
+<tr><th>年齡</th><th>GM 粗大動作</th><th>FM 精細動作</th><th>Speech 語言</th><th>認知</th><th>Social 社交情緒</th><th>ADL</th></tr>
+<tr><td><strong>1 個月</strong></td><td>俯臥稍抬頭</td><td>緊握反射</td><td>哭聲</td><td>固視</td><td>注視臉</td><td>—</td></tr>
+<tr><td><strong>2 個月</strong></td><td>俯臥抬頭 45°</td><td>手張開時間漸增</td><td>cooing</td><td>追視 90°</td><td>社交性微笑</td><td>—</td></tr>
+<tr><td><strong>3 個月</strong></td><td>抬頭 90°、prone on elbows</td><td>抓自己的手、自願抓</td><td>笑出聲、母音</td><td>追視 180°</td><td>主動微笑、認母</td><td>—</td></tr>
+<tr><td><strong>4 個月</strong></td><td>翻身（仰→俯）</td><td>雙手中線抓物</td><td>laughing aloud</td><td>看到奶瓶會興奮</td><td>有興趣與人互動</td><td>—</td></tr>
+<tr><td><strong>6 個月</strong></td><td>扶坐穩、翻身雙向</td><td>單手抓握、轉手</td><td>babbling（ba-ba）</td><td>找掉落物</td><td>認生（stranger anxiety 開始）</td><td>—</td></tr>
+<tr><td><strong>9 個月</strong></td><td>獨坐穩、爬、扶站</td><td>pincer grasp 開始、雙手互敲</td><td>mama / dada 非特指</td><td>物體永存性、模仿動作</td><td>分離焦慮、揮手 bye-bye</td><td>用手抓食物吃</td></tr>
+<tr><td><strong>12 個月</strong></td><td>扶走、放手站</td><td>成熟 pincer、放東西到容器</td><td>第一個字（specific）、1–2 字</td><td>聽懂簡單指令、指認</td><td>主動 bye-bye、配合穿衣</td><td>用手抓食、可喝杯</td></tr>
+<tr><td><strong>15 個月</strong></td><td>自走 5 步、蹲下撿物</td><td>堆 2 塊、塗鴉</td><td>3–5 字</td><td>指出身體部位</td><td>扮家家酒開始</td><td>用湯匙、脫襪</td></tr>
+<tr><td><strong>18 個月</strong></td><td>跑、扶上樓梯</td><td>堆 3–4 塊、書翻 2–3 頁</td><td>10–20 字、jargon</td><td>指出 1–2 身體部位</td><td>對人有依附、生氣會丟</td><td>湯匙進食、脫鞋</td></tr>
+<tr><td><strong>24 個月（2 歲）</strong></td><td>上下樓梯（扶 / step-by-step）、跳離地</td><td>堆 6–7 塊、垂直線</td><td>2 字句（兩字組合）、50+ 字</td><td>知 6 身體部位、配對顏色</td><td>平行遊戲、tantrum</td><td>脫衣、穿鞋（不分左右）</td></tr>
+<tr><td><strong>36 個月（3 歲）</strong></td><td>單腳站 3 秒、踩三輪車、上下樓梯交替</td><td>堆 9–10 塊、畫圓、串大珠</td><td>3 字句、會問問題、講出 3 字片語</td><td>知性別、數 1–3、3 種顏色</td><td>合作遊戲、有同理心、會分享</td><td>白天可控制大小便、自己穿衣（簡單）</td></tr>
+<tr><td><strong>48 個月（4 歲）</strong></td><td>單腳站 5 秒、單腳跳 2–3 下、跳遠</td><td>畫十字、畫人 3 部位、剪刀剪線</td><td>4–5 字句、完整對話、會講故事</td><td>數 4 個、知白天/晚上、4 顏色</td><td>會與人合作遊戲、想像遊戲</td><td>自行刷牙、脫穿衣完整、上廁所</td></tr>
+<tr><td><strong>60 個月（5 歲）</strong></td><td>跳繩、單腳跳 10 下、走平衡木</td><td>畫人 6 部位、畫方形、會寫部分字</td><td>流暢對話、複述故事、清晰構音</td><td>數 10、知星期、左右</td><td>有朋友、知規則、自我控制較佳</td><td>完整自理、可獨立洗澡</td></tr>
+</table>
+
+<h4>4 歲應該會的（紅旗 vs 綠旗）— 口試重點</h4>
+
+<p><strong>4 歲應達成（綠旗）：</strong></p>
+<ul>
+<li>GM：單腳站 5 秒、單腳跳 2–3 下、雙腳跳離地、上下樓梯交替（不需扶）、跑步穩定</li>
+<li>FM：畫十字（cross）、畫人 3 部位以上、剪刀剪線、自行扣大鈕扣</li>
+<li>語言：4–5 字句、會敘述發生的事、構音清晰（80%+ 可被陌生人聽懂）</li>
+<li>認知：數到 4、4 種顏色配對、知白天/晚上</li>
+<li>ADL：自行穿脫衣、上廁所完成（白天）、刷牙</li>
+</ul>
+
+<p><strong>4 歲紅旗（warning signs）：</strong></p>
+<ul>
+<li>仍需扶手上下樓梯、無法單腳站、無法跳離地（GM 落後）</li>
+<li>仍 toe-walking 持續</li>
+<li>無法畫圓 / 拿筆姿勢明顯不對</li>
+<li>無法說 3-4 字句、構音 < 50% 可懂</li>
+<li>白天仍需穿尿布（114 屆考題！）</li>
+<li>無法服從 2 步驟指令</li>
+<li>無想像遊戲、平行遊戲為主</li>
+</ul>
+
+<h4>本病人發展年齡推估</h4>
+
+<table>
+<tr><th>領域</th><th>客觀數據</th><th>對應年齡水準</th><th>落後程度</th><th>解讀</th></tr>
+<tr><td><strong>粗大動作 (GM)</strong></td><td>PDMS-2 PR 3、GMFM-66 = 48.5</td><td>約 2Y3M</td><td>嚴重落後（DQ ≈ 53）</td><td>典型 GMFCS III spastic diplegia</td></tr>
+<tr><td><strong>精細動作 (FM)</strong></td><td>PR 18</td><td>約 3Y6M</td><td>輕度落後（DQ ≈ 84）</td><td>上肢相對保留（diplegia 特徵）</td></tr>
+<tr><td><strong>語言</strong></td><td>PPVT-R PR 30、5–7 字短句</td><td>約 3Y8M</td><td>輕度落後（DQ ≈ 88）</td><td>邊緣 / 仍在 normal 下緣</td></tr>
+<tr><td><strong>認知</strong></td><td>WPPSI-IV FSIQ 82</td><td>borderline–low average</td><td>邊緣（DQ ≈ 82）</td><td>邊緣智能但非 ID</td></tr>
+<tr><td><strong>社交情緒</strong></td><td>可與同學互動</td><td>≈ 4Y</td><td>無明顯落後</td><td>—</td></tr>
+<tr><td><strong>ADL</strong></td><td>可自行穿脫但慢</td><td>≈ 3Y6M</td><td>輕度落後（受動作影響）</td><td>—</td></tr>
+</table>
+
+<h4>DQ（發展商數）計算與解讀</h4>
+
+<p><strong>DQ = (發展年齡 ÷ 實際年齡) × 100</strong></p>
+
+<p>本病人實際年齡 4Y2M（50 個月）：</p>
+<ul>
+<li>GM DQ = 27 / 50 × 100 ≈ <strong>54</strong>（嚴重遲緩）</li>
+<li>FM DQ = 42 / 50 × 100 ≈ <strong>84</strong>（輕度遲緩）</li>
+<li>語言 DQ ≈ <strong>88</strong>（邊緣）</li>
+<li>認知 IQ 82（borderline）</li>
+</ul>
+
+<p><strong>DQ 解讀：</strong></p>
+<table>
+<tr><th>DQ</th><th>分類</th></tr>
+<tr><td>≥ 85</td><td>正常</td></tr>
+<tr><td>70–84</td><td>邊緣 / 輕度遲緩</td></tr>
+<tr><td>55–69</td><td>輕度（mild）</td></tr>
+<tr><td>40–54</td><td>中度（moderate）</td></tr>
+<tr><td>25–39</td><td>重度（severe）</td></tr>
+<tr><td>&lt; 25</td><td>極重度（profound）</td></tr>
+</table>
+
+<h4>PR（百分等級）解讀</h4>
+
+<p>PR 是常模參照（norm-referenced）：</p>
+<ul>
+<li>PR 50 = 中位數（與同齡人比較居中）</li>
+<li>PR &lt; 5 = 顯著落後 −2 SD 以下，達遲緩標準</li>
+<li>PR 5–15 = 邊緣</li>
+<li>PR &gt; 25 = 正常範圍</li>
+</ul>
+
+<p>本病人 GM PR 3 = 顯著落後（同齡 100 人中只比 3 人好），符合「發展遲緩」鑑定標準。</p>
+
+<h4>跟家長的溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「孩子目前 4 歲 2 個月，在動作能力上大約相當於 2 歲多的孩子，在精細動作和語言上接近 3 歲半，認知能力屬於邊緣，但社交互動跟同齡差不多。這代表他<strong>不是各方面都全面落後</strong>，主要是腳的動作功能受影響最多，這跟我們在 MRI 上看到的腦部影響的位置（控制下肢的部分）是一致的。我們會針對他最弱的部分加強，讓進步空間最大。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>0–5 歲六大軸 milestone 必背（GM / FM / Speech / 認知 / Social / ADL）</li>
+<li>幾個關鍵時間點：3 個月抬頭、6 個月坐、9 個月爬、12 個月走、24 個月 2 字句、36 個月 3 字句、48 個月畫十字、60 個月畫菱形</li>
+<li>DQ 計算：(發展年齡 / 實際年齡) × 100；&lt; 70 = 遲緩</li>
+<li>PR &lt; 5 = 顯著落後</li>
+<li>本病人 GM 嚴重落後 + 其他輕度，是 spastic diplegia 典型 profile</li>
+<li>不是「全面遲緩 (global DD)」 — 全面遲緩需 ≥ 2 領域達 2 SD 以下</li>
+<li>退步 vs 停滯：退步 → progressive disease；本病人為停滯型</li>
+</ul>`,
+      },
+      {
+        q: '請說明腦性麻痺（Cerebral Palsy, CP）的分類方式，包含 SCPE 神經學分類、部位分類，以及功能分級系統（GMFCS / MACS / CFCS / EDACS）。本病人最可能的完整診斷為何？',
+        keywords: [
+          'SCPE classification',
+          'Spastic CP (most common 80%)',
+          'Dyskinetic CP (dystonic / choreoathetoid)',
+          'Ataxic CP',
+          'Mixed type',
+          'Topographical: monoplegia/hemiplegia/diplegia/triplegia/quadriplegia',
+          'Bilateral vs unilateral',
+          'GMFCS I-V',
+          'MACS I-V',
+          'CFCS I-V',
+          'EDACS I-V',
+          'Periventricular leukomalacia (PVL)',
+          'Premature spastic diplegia',
+          'Term + BG/thalamus = dyskinetic',
+          'Cerebellar lesion = ataxic',
+          'CP definition (Rosenbaum 2007)',
+          'Non-progressive',
+          'Activity limitation',
+        ],
+        points: [
+          '<strong>CP 定義（Rosenbaum 2007）</strong>：發育中胎兒/嬰兒腦部之非進行性病變所造成的動作及姿勢發展障礙，並造成活動限制',
+          '<strong>「永久性、非進行性、活動限制」</strong>三大要素必背',
+          '<strong>常合併</strong>：感覺、知覺、認知、溝通、行為、癲癇、骨骼肌肉次發問題',
+          '<strong>SCPE 神經學分類</strong>：Spastic / Dyskinetic / Ataxic / Mixed',
+          '<strong>Spastic CP 80%</strong>：bilateral vs unilateral；歐洲分類已不用 hemi/di/quadri，改 unilateral / bilateral',
+          '<strong>傳統部位分類</strong>：mono / hemi / di / tri / quadri / double hemi',
+          '<strong>Dyskinetic 分兩亞型</strong>：dystonic（張力波動）vs choreoathetoid（不自主動作）',
+          '<strong>Ataxic CP</strong>：少見，cerebellar 病變',
+          '<strong>影像-臨床對應</strong>：早產 PVL → spastic diplegia；HIE → spastic quadri 或 dyskinetic；BG/thalamus → dyskinetic',
+          '<strong>GMFCS I–V</strong>：跨年齡層 (< 2、2–4、4–6、6–12、12–18) 各有 descriptors',
+          '<strong>MACS</strong>：手部操作物品能力',
+          '<strong>CFCS</strong>：溝通效能（接收 + 表達）',
+          '<strong>EDACS</strong>：吞嚥安全性',
+          '<strong>本病人診斷</strong>：Spastic Diplegia CP, GMFCS III, MACS II, CFCS I, EDACS I',
+          '<strong>病因推測</strong>：PVL（雖足月但有 atypical PVL，或可能 perinatal hypoxia 未察）',
+          '<strong>嚴重度</strong>：中度（GMFCS III 是中度）',
+          '<strong>合併症</strong>：邊緣智能（不到 ID 標準）',
+        ],
+        a: `<h4>CP 定義（必背）— Rosenbaum 2007</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+"Cerebral palsy describes a group of <strong>permanent</strong> disorders of the development of <strong>movement and posture</strong>, causing <strong>activity limitation</strong>, that are attributed to <strong>non-progressive disturbances</strong> that occurred in the developing fetal or infant brain."
+</p>
+
+<p><strong>核心要素：</strong></p>
+<ul>
+<li><strong>永久性 (permanent)</strong>：終身的</li>
+<li><strong>非進行性 (non-progressive)</strong>：腦部病變不再惡化（但臨床表現可能因生長改變）</li>
+<li><strong>動作 / 姿勢障礙 (movement and posture)</strong>：核心症狀</li>
+<li><strong>活動限制 (activity limitation)</strong>：必須有 functional impact</li>
+<li><strong>胎兒/嬰兒腦部 (developing brain)</strong>：通常 < 2 歲腦部受損</li>
+<li><strong>常合併</strong>：感覺異常、認知、溝通、知覺、行為、癲癇、肌肉骨骼次發問題</li>
+</ul>
+
+<h4>1. SCPE 神經學分類（Surveillance of CP in Europe）</h4>
+
+<table>
+<tr><th>類型</th><th>比例</th><th>特徵</th><th>常見影像 / 病因</th></tr>
+<tr><td><strong>Spastic 痙攣型</strong></td><td>~ 80%</td><td>UMN sign（肌張力高、DTR↑、Babinski +、clonus）；速度依賴的張力增加</td><td>PVL（早產）、stroke、cortical malformation</td></tr>
+<tr><td><strong>Dyskinetic 動作障礙型</strong></td><td>~ 10–15%</td><td>不自主動作；分兩亞型</td><td>BG / thalamus injury（HIE、kernicterus）</td></tr>
+<tr><td>　• Dystonic 肌張力不全</td><td>—</td><td>張力波動、扭曲動作、姿勢異常</td><td>—</td></tr>
+<tr><td>　• Choreoathetoid 舞蹈/手徐動</td><td>—</td><td>不規則、不自主動作</td><td>—</td></tr>
+<tr><td><strong>Ataxic 共濟失調型</strong></td><td>~ 5%</td><td>小腦症狀：協調差、震顫、寬步</td><td>Cerebellar malformation / lesion</td></tr>
+<tr><td><strong>Mixed 混合型</strong></td><td>—</td><td>多種類型同時存在（最常見 spastic + dystonic）</td><td>大範圍腦傷</td></tr>
+</table>
+
+<h4>2. 部位分類（Topographical Classification）</h4>
+
+<p><strong>傳統 7 分類：</strong></p>
+<ul>
+<li><strong>Monoplegia</strong>：單肢（罕見）</li>
+<li><strong>Hemiplegia</strong>：單側肢體（上下肢同側）</li>
+<li><strong>Diplegia</strong>：雙下肢為主、上肢輕微</li>
+<li><strong>Triplegia</strong>：三肢</li>
+<li><strong>Quadriplegia / Tetraplegia</strong>：四肢，加軀幹、頭頸</li>
+<li><strong>Double hemiplegia</strong>：四肢但上肢比下肢嚴重</li>
+<li><strong>Pentaplegia</strong>：四肢 + 軀幹頭頸（最重）</li>
+</ul>
+
+<p><strong>SCPE 簡化分類（歐洲用，目前推薦）：</strong></p>
+<ul>
+<li><strong>Bilateral</strong>：雙側都受影響（取代 di / quadri / tri）</li>
+<li><strong>Unilateral</strong>：單側（取代 hemi）</li>
+</ul>
+
+<h4>3. 功能分級系統（必背！口試重點）</h4>
+
+<p><strong>GMFCS — Gross Motor Function Classification System（4–6 歲版本）</strong></p>
+<table>
+<tr><th>Level</th><th>4–6 歲特徵</th></tr>
+<tr><td><strong>I</strong></td><td>室內外可走，能跑跳，無需輔具，但速度/平衡/協調受限</td></tr>
+<tr><td><strong>II</strong></td><td>多數情境可走，但長距離 / 不平整地面有困難，跑跳能力受限</td></tr>
+<tr><td><strong>III</strong></td><td>需手持式輔具（拐杖、助行器）才能室內走；室外或社區用輪椅；可自行操控輪椅</td></tr>
+<tr><td><strong>IV</strong></td><td>有限的自我移動能力；多數情境需轉位協助；需 power wheelchair</td></tr>
+<tr><td><strong>V</strong></td><td>無法獨立坐、無法自行操作輪椅；完全依賴照顧者</td></tr>
+</table>
+
+<p><strong>MACS — Manual Ability Classification System</strong></p>
+<table>
+<tr><th>Level</th><th>特徵</th></tr>
+<tr><td><strong>I</strong></td><td>輕鬆且成功操作物品</td></tr>
+<tr><td><strong>II</strong></td><td>多數物品可操作，但品質和速度降低</td></tr>
+<tr><td><strong>III</strong></td><td>操作物品有困難，需事前準備或協助</td></tr>
+<tr><td><strong>IV</strong></td><td>只能在 adapted situation 操作有限的少數物品</td></tr>
+<tr><td><strong>V</strong></td><td>無法操作物品，需完全協助</td></tr>
+</table>
+
+<p><strong>CFCS — Communication Function Classification System</strong></p>
+<table>
+<tr><th>Level</th><th>特徵</th></tr>
+<tr><td><strong>I</strong></td><td>有效雙向溝通（傳送 + 接收都效率好）</td></tr>
+<tr><td><strong>II</strong></td><td>有效但慢（節奏較慢）</td></tr>
+<tr><td><strong>III</strong></td><td>對熟識者有效，對陌生者困難</td></tr>
+<tr><td><strong>IV</strong></td><td>對熟識者也不一致，不穩定</td></tr>
+<tr><td><strong>V</strong></td><td>對熟識者很少能有效溝通</td></tr>
+</table>
+
+<p><strong>EDACS — Eating and Drinking Ability Classification System</strong></p>
+<table>
+<tr><th>Level</th><th>特徵</th></tr>
+<tr><td><strong>I</strong></td><td>安全有效進食</td></tr>
+<tr><td><strong>II</strong></td><td>安全但效率受限</td></tr>
+<tr><td><strong>III</strong></td><td>安全性受限、效率受限</td></tr>
+<tr><td><strong>IV</strong></td><td>安全性顯著受限</td></tr>
+<tr><td><strong>V</strong></td><td>無法安全進食 → 需 NG / G-tube</td></tr>
+</table>
+
+<h4>4. 影像 / 病因 與臨床型對應</h4>
+
+<table>
+<tr><th>病因</th><th>常見影像</th><th>臨床型</th></tr>
+<tr><td>早產 + IVH/PVL</td><td>periventricular white matter injury</td><td><strong>Spastic diplegia（典型）</strong></td></tr>
+<tr><td>足月 + HIE 重度</td><td>BG/thalamus + cortex injury</td><td>Spastic quadri 或 dyskinetic（混合）</td></tr>
+<tr><td>Term + BG/thalamus</td><td>BG/thalamus signal abn</td><td>Dyskinetic CP</td></tr>
+<tr><td>Kernicterus</td><td>BG (esp. globus pallidus)</td><td>Dyskinetic（typical choreoathetoid）</td></tr>
+<tr><td>Stroke (perinatal)</td><td>單側 MCA 區</td><td>Spastic hemiplegia</td></tr>
+<tr><td>Cerebellar lesion / malformation</td><td>cerebellar atrophy</td><td>Ataxic CP</td></tr>
+<tr><td>Cortical malformation</td><td>schizencephaly、polymicrogyria</td><td>多型</td></tr>
+</table>
+
+<h4>5. 本病人完整診斷</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>診斷：Spastic Diplegia Cerebral Palsy</strong><br>
+<strong>SCPE 分類</strong>：Bilateral spastic CP<br>
+<strong>部位</strong>：Diplegia（雙下肢為主）<br>
+<strong>GMFCS：Level III</strong>（4–6 歲，需手持式輔具走路）<br>
+<strong>MACS：Level II</strong>（FM PR 18，可操作但慢）<br>
+<strong>CFCS：Level I</strong>（有效雙向溝通）<br>
+<strong>EDACS：Level I</strong>（無進食安全問題）<br>
+<strong>病因推測</strong>：Periventricular leukomalacia (PVL)<br>
+<strong>合併</strong>：Borderline intellectual functioning（IQ 82，不到 ID 標準）；hip migration percentage 右 32%（hip at risk）<br>
+<strong>ICD-10 code</strong>：G80.1 Spastic diplegic cerebral palsy
+</p>
+
+<h4>6. 本病人 atypical 之處（深思）</h4>
+
+<p>典型 PVL → spastic diplegia 通常見於<strong>早產兒</strong>，尤其 28–32 週。本病人是<strong>足月、Apgar 良好</strong>，這是不常見的組合。可能的解釋：</p>
+
+<ul>
+<li><strong>晚孕期未察覺的胎內感染或缺氧</strong>（CMV、placental insufficiency）</li>
+<li><strong>產時輕度 hypoxia 未在 Apgar 反映</strong>（如急產、cord compression）</li>
+<li><strong>Atypical PVL pattern</strong>（其他白質損傷不一定要早產）</li>
+<li><strong>遺傳性疾病模仿 CP</strong>：hereditary spastic paraplegia (HSP)、CTNNB1、TUBB4A 等基因疾病可表現如 spastic diplegia → 必要時轉介遺傳科</li>
+</ul>
+
+<h4>跟家長的溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「孩子的診斷是『腦性麻痺，雙下肢痙攣型』，簡單講就是腦部小時候有過受傷，讓他控制雙腳的能力比較弱。我們用一個叫 GMFCS 的系統把他歸到第 3 級，意思是他『可以自己走，但需要拐杖或助行器幫忙』。這個診斷<strong>不會惡化</strong>，但會跟著他長大；我們要做的是趁現在還在發展期間，把他的能力推到最大。雖然 MRI 看起來像是早產孩子常見的影響，但孩子是足月生的，所以我會建議再做一些基因檢查，確認沒有其他遺傳因素。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>CP 定義 Rosenbaum 2007：永久性 + 非進行性 + 活動限制 + 胎兒/嬰兒腦部</li>
+<li>SCPE 神經學分類：spastic / dyskinetic / ataxic / mixed</li>
+<li>部位：mono / hemi / di / tri / quadri / double hemi（傳統）；bilateral vs unilateral（SCPE 簡化）</li>
+<li>四大分級系統 GMFCS / MACS / CFCS / EDACS 必背 5 級內容</li>
+<li>影像 - 臨床對應：PVL = spastic diplegia；BG = dyskinetic；cerebellum = ataxic</li>
+<li>足月 + PVL = atypical → 考慮基因檢查（HSP）</li>
+<li>ICD-10：G80.0 quadri / G80.1 diplegic / G80.2 hemi / G80.3 dyskinetic / G80.4 ataxic / G80.8 other / G80.9 unspecified</li>
+<li>合併症評估：認知（IQ）、癲癇（30–50%）、視聽（CVI、SNHL）、行為、ADHD</li>
+</ul>`,
+      },
+      {
+        q: '請用 ICF（International Classification of Functioning, Disability and Health）架構，列出本病人需要安排的後續評估項目，並說明各領域可使用的具體量表。',
+        keywords: [
+          'ICF framework',
+          'Body function & structure',
+          'Activity',
+          'Participation',
+          'Environmental factors',
+          'Personal factors',
+          'PDMS-2',
+          'GMFM-66 / GMFM-88',
+          'BOT-2',
+          'WeeFIM',
+          'PEDI / PEDI-CAT',
+          'WPPSI-IV / WISC-V',
+          'Bayley-III',
+          'PPVT-R',
+          'CASL / CELF-P',
+          'SP-2 (Sensory Profile)',
+          'COPM',
+          'PEM-CY',
+          'CAPE/PAC',
+          'FMS (Functional Mobility Scale)',
+          'Hip surveillance X-ray',
+          'EEG (if seizure)',
+          'Genetic test (atypical CP)',
+          'Vision / hearing screening',
+          'Spine X-ray',
+        ],
+        points: [
+          '<strong>ICF 五大要素</strong>：身體功能與結構 / 活動 / 參與 / 環境 / 個人因素',
+          '<strong>身體功能與結構（Body Function & Structure）</strong>：動作系統、肌張力、認知、感覺、神經學',
+          '<strong>活動（Activity）</strong>：移動、自我照顧、溝通、學習',
+          '<strong>參與（Participation）</strong>：學校、家庭、社區、休閒',
+          '<strong>環境因素</strong>：輔具、家庭支持、學校資源、無障礙環境',
+          '<strong>個人因素</strong>：年齡、性別、性格、興趣、coping',
+          '<strong>動作功能量表</strong>：PDMS-2、GMFM-66/88、BOT-2、FMS',
+          '<strong>ADL 量表</strong>：WeeFIM、PEDI / PEDI-CAT',
+          '<strong>認知量表</strong>：Bayley-III (≤ 42 月)、WPPSI-IV (2.5–7Y)、WISC-V (6–16Y)',
+          '<strong>語言量表</strong>：PPVT-R、CASL、CELF-P、CSBS-DP',
+          '<strong>感覺處理</strong>：Sensory Profile-2',
+          '<strong>個案目標導向</strong>：COPM (Canadian Occupational Performance Measure)、GAS (Goal Attainment Scaling)',
+          '<strong>參與評估</strong>：PEM-CY、CAPE/PAC',
+          '<strong>髖關節監測</strong>：每年髖 X-ray (hip surveillance)，本病人 MP 32% 屬 hip at risk',
+          '<strong>本病人額外建議</strong>：基因檢查（atypical PVL）、再做 brain MRI、視聽篩檢、必要時 EEG',
+          '<strong>spine X-ray</strong>：每 1–2 年追蹤 scoliosis',
+          '<strong>3D Gait analysis</strong>：手術前評估 SDR / orthopedic surgery 必備',
+          '<strong>Botox 評估</strong>：MAS、Tardieu、Selective control（SCALE）',
+        ],
+        a: `<h4>ICF 架構簡介</h4>
+
+<p>ICF 是 WHO 2001 年發展的功能與失能分類架構，從「疾病」轉向「健康」觀點，是兒童復健<strong>口試必背框架</strong>（108、109 屆都明示考過）。</p>
+
+<table>
+<tr><th>ICF 要素</th><th>定義</th><th>本病人對應</th></tr>
+<tr><td><strong>Health Condition（健康狀態）</strong></td><td>診斷</td><td>Spastic Diplegia CP, GMFCS III</td></tr>
+<tr><td><strong>Body Function（身體功能）</strong></td><td>生理 / 心理功能</td><td>動作控制、肌張力、認知、感覺</td></tr>
+<tr><td><strong>Body Structure（身體結構）</strong></td><td>解剖結構</td><td>brain (PVL)、肌肉骨骼</td></tr>
+<tr><td><strong>Activity（活動）</strong></td><td>個人執行任務</td><td>走路、穿衣、握筆</td></tr>
+<tr><td><strong>Participation（參與）</strong></td><td>社會情境中的參與</td><td>幼稚園、家庭、社區</td></tr>
+<tr><td><strong>Environmental Factors</strong></td><td>外在環境（輔具、家人、政策）</td><td>家中無障礙、家長支持、健保長照</td></tr>
+<tr><td><strong>Personal Factors</strong></td><td>個人特質（年齡、性格）</td><td>4Y 男童、性格活潑</td></tr>
+</table>
+
+<h4>1. Body Function & Structure（身體功能與結構）</h4>
+
+<table>
+<tr><th>領域</th><th>評估 / 量表</th><th>目的</th></tr>
+<tr><td><strong>動作神經系統</strong></td><td>MAS、Tardieu Scale、SCALE (Selective Control Assessment of the Lower Extremity)</td><td>spasticity、selective motor control</td></tr>
+<tr><td><strong>肌力</strong></td><td>MMT（≥ 4 歲可做）、Hand-held dynamometer</td><td>客觀肌力</td></tr>
+<tr><td><strong>關節 ROM</strong></td><td>Goniometry、popliteal angle、Thomas test、Silfverskiöld</td><td>contracture / 緊繃度</td></tr>
+<tr><td><strong>影像</strong></td><td>Brain MRI（再次確認）、Hip X-ray（必須）、Spine X-ray、3D gait analysis</td><td>結構評估、hip surveillance、術前計畫</td></tr>
+<tr><td><strong>癲癇</strong></td><td>EEG（若有 seizure 病史 / 異常表現）</td><td>合併癲癇 30–50%</td></tr>
+<tr><td><strong>視覺</strong></td><td>眼科會診（CVI、refraction、strabismus）</td><td>CP 視覺問題 60–70%</td></tr>
+<tr><td><strong>聽覺</strong></td><td>純音聽力檢查、ABR</td><td>SNHL 約 20%</td></tr>
+<tr><td><strong>口腔 / 吞嚥</strong></td><td>EDACS、VFSS（若必要）</td><td>本病人 EDACS I，但仍要評估</td></tr>
+<tr><td><strong>認知</strong></td><td>WPPSI-IV (2.5–7Y)、Bayley-III (≤ 42 月)、WISC-V (6–16Y)</td><td>智能評估</td></tr>
+<tr><td><strong>語言</strong></td><td>PPVT-R（接受性詞彙）、CASL、CELF-P、表達性語言量表</td><td>語言發展</td></tr>
+<tr><td><strong>感覺整合</strong></td><td>Sensory Profile-2、SIPT</td><td>感覺處理</td></tr>
+<tr><td><strong>行為情緒</strong></td><td>CBCL、Conners (ADHD)</td><td>共病評估</td></tr>
+<tr><td><strong>基因 / 代謝</strong></td><td>Karyotype、CMA（chromosomal microarray）、基因 panel（CTNNB1、TUBB4A、HSP panel）</td><td>atypical CP 排除遺傳</td></tr>
+</table>
+
+<h4>2. Activity（活動）</h4>
+
+<table>
+<tr><th>類別</th><th>量表</th><th>說明</th></tr>
+<tr><td><strong>粗大動作</strong></td><td>PDMS-2 (0–5Y)、GMFM-66/88、BOT-2 (4–21Y)</td><td>GMFM-66 是 CP gold standard，可預測 GMFCS 進步軌跡</td></tr>
+<tr><td><strong>精細動作</strong></td><td>PDMS-2 FM、BOT-2、Melbourne Assessment 2 (MA2，CP 上肢專用)、AHA (Assisting Hand Assessment, hemiplegia 用)</td><td>—</td></tr>
+<tr><td><strong>步行 / 移動</strong></td><td>FMS (Functional Mobility Scale)、6MWT (6 分鐘步行)、TUG</td><td>FMS 分 5/50/500 m 三距離、6 個 level</td></tr>
+<tr><td><strong>ADL</strong></td><td>WeeFIM (6mo–7Y)、PEDI / PEDI-CAT (6mo–7Y)、Vineland Adaptive Behavior Scale</td><td>PEDI 三領域：self-care、mobility、social function</td></tr>
+<tr><td><strong>學習 / 認知活動</strong></td><td>學校學習觀察、注意力評估（CPT）</td><td>—</td></tr>
+<tr><td><strong>溝通</strong></td><td>CSBS-DP、社交溝通評估</td><td>—</td></tr>
+</table>
+
+<h4>3. Participation（參與）</h4>
+
+<table>
+<tr><th>量表</th><th>說明</th></tr>
+<tr><td><strong>PEM-CY</strong> (Participation and Environment Measure for Children and Youth)</td><td>家庭、學校、社區參與評估</td></tr>
+<tr><td><strong>CAPE/PAC</strong> (Children's Assessment of Participation and Enjoyment)</td><td>兒童休閒參與</td></tr>
+<tr><td><strong>COPM</strong> (Canadian Occupational Performance Measure)</td><td>個案/家屬導向目標訂定</td></tr>
+<tr><td><strong>GAS</strong> (Goal Attainment Scaling)</td><td>個別化目標達成評估</td></tr>
+<tr><td><strong>School Function Assessment</strong></td><td>學校功能</td></tr>
+</table>
+
+<h4>4. Environmental Factors（環境因素）</h4>
+
+<ul>
+<li><strong>家庭環境</strong>：無障礙評估、家庭照顧者壓力（Caregiver Strain Index）、社經狀況</li>
+<li><strong>輔具現況</strong>：是否已有 AFO、助行器、輪椅、餐椅</li>
+<li><strong>學校資源</strong>：是否申請特教資源、IEP、巡迴輔導、提供 PT/OT</li>
+<li><strong>政策資源</strong>：身心障礙手冊、健保資源、長照 2.0、早療</li>
+<li><strong>社區無障礙</strong>：交通、設施</li>
+</ul>
+
+<h4>5. Personal Factors（個人因素）</h4>
+
+<ul>
+<li>年齡：4Y2M — 仍在大腦可塑期高峰</li>
+<li>性別：男</li>
+<li>動機 / 性格：是否配合治療</li>
+<li>家屬期待 / 接受度</li>
+<li>文化、宗教背景</li>
+</ul>
+
+<h4>本病人優先建議的評估清單</h4>
+
+<table>
+<tr><th>優先級</th><th>項目</th><th>目的</th></tr>
+<tr><td><strong>立即（this visit）</strong></td><td>GMFM-66、MAS / Tardieu、Popliteal angle、Silfverskiöld</td><td>baseline + 治療計畫</td></tr>
+<tr><td><strong>立即（this visit）</strong></td><td>Hip X-ray AP（已有，MP 右 32%）</td><td>hip surveillance</td></tr>
+<tr><td><strong>立即（this visit）</strong></td><td>髖關節 ROM / Galeazzi / 內外旋</td><td>subluxation 監測</td></tr>
+<tr><td><strong>近期（1 個月內）</strong></td><td>WPPSI-IV、PPVT-R、PDMS-2（已部分有）、PEDI / WeeFIM</td><td>完整 baseline</td></tr>
+<tr><td><strong>近期</strong></td><td>眼科、聽力檢查</td><td>合併症排除</td></tr>
+<tr><td><strong>近期</strong></td><td>家庭/學校環境訪視</td><td>環境介入</td></tr>
+<tr><td><strong>必要時</strong></td><td>基因檢查（CMA、HSP panel）</td><td>atypical CP 排除遺傳</td></tr>
+<tr><td><strong>術前</strong></td><td>3D Gait analysis</td><td>SDR 或 SEMLS 評估</td></tr>
+<tr><td><strong>術前</strong></td><td>Botox 評估：肌肉選擇 + 超音波導引計畫</td><td>下次回診打 Botox 用</td></tr>
+<tr><td><strong>定期追蹤</strong></td><td>Hip X-ray 每年；spine X-ray 每 1–2 年；GMFM-66 每 6 個月</td><td>長期監測</td></tr>
+</table>
+
+<h4>常用量表整合表（CP 兒童口試最常考）</h4>
+
+<table>
+<tr><th>領域</th><th>量表名稱</th><th>適用年齡</th><th>用途</th></tr>
+<tr><td>動作（綜合）</td><td>PDMS-2</td><td>0–5Y</td><td>GM + FM 標準化</td></tr>
+<tr><td>粗大動作（CP 專用）</td><td>GMFM-66 / 88</td><td>5mo–16Y</td><td>CP gold standard</td></tr>
+<tr><td>動作技能（學齡）</td><td>BOT-2</td><td>4–21Y</td><td>整體動作</td></tr>
+<tr><td>上肢（hemi 專用）</td><td>AHA, MA2</td><td>各</td><td>單側上肢</td></tr>
+<tr><td>移動分級</td><td>FMS</td><td>各</td><td>5/50/500m 步行</td></tr>
+<tr><td>ADL</td><td>PEDI / WeeFIM</td><td>幼兒</td><td>自理</td></tr>
+<tr><td>認知</td><td>Bayley-III / WPPSI-IV / WISC-V</td><td>分齡</td><td>智能</td></tr>
+<tr><td>語言（接受）</td><td>PPVT-R</td><td>各</td><td>—</td></tr>
+<tr><td>感覺</td><td>Sensory Profile-2</td><td>各</td><td>—</td></tr>
+<tr><td>溝通分級</td><td>CFCS</td><td>各</td><td>5 級</td></tr>
+<tr><td>進食分級</td><td>EDACS</td><td>各</td><td>5 級</td></tr>
+<tr><td>個案目標</td><td>COPM、GAS</td><td>各</td><td>個別化</td></tr>
+</table>
+
+<h4>跟家長的溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「孩子的評估會分幾個層次：第一層看『身體本身』的狀況，包括動作、認知、視聽，以及很重要的<strong>髖關節 X-ray</strong>，因為痙攣型的孩子有髖關節脫臼的風險，必須每年追蹤。第二層看他『實際能做什麼』，例如走路、穿衣、握筆。第三層看他在『真實生活中的參與』，例如幼稚園、家庭活動。再加上環境支持和孩子個人特質，這樣才有完整的全人評估。我們安排這些評估約需 1–2 個月完成，之後我們會召開個案討論會，把治療計畫整理出來。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>ICF 五要素必背：Body F/S、Activity、Participation、Environment、Personal</li>
+<li>每一層都要對應具體量表（不能空談架構）</li>
+<li>動作量表 CP 三大主將：PDMS-2 / GMFM-66 / BOT-2</li>
+<li>認知量表分齡：Bayley-III / WPPSI / WISC</li>
+<li>ADL 量表：PEDI 與 WeeFIM</li>
+<li>CP 必檢：髖 X-ray（hip surveillance）、認知、視聽、語言</li>
+<li>Atypical 個案要排除：基因（CMA、HSP panel）、代謝</li>
+<li>術前評估必備：3D gait analysis</li>
+<li>個案目標導向：COPM、GAS（家屬參與訂目標）</li>
+</ul>`,
+      },
+      {
+        q: '針對本病人，請完整規劃早療介入計畫（涵蓋 PT / OT / ST / 心理 / 張力管理 / 輔具六大面向）。並比較傳統 PT 流派（NDT / Bobath）、任務導向訓練、新式機器人輔助訓練的特色與實證等級。',
+        keywords: [
+          'Early intervention',
+          'Physical therapy (PT)',
+          'Occupational therapy (OT)',
+          'Speech therapy (ST)',
+          'Psychology / behavior',
+          'Tone management',
+          'Assistive devices',
+          'NDT / Bobath',
+          'Task-oriented training',
+          'Goal-directed training (GDT)',
+          'Motor learning principles',
+          'Strength training',
+          'Robot-assisted gait training (Lokomat Pro Junior)',
+          'Treadmill training',
+          'Constraint-induced movement therapy (CIMT)',
+          'HABIT (Hand-Arm Bimanual Intensive Training)',
+          'Hippotherapy',
+          'Aquatic therapy',
+          'Functional electrical stimulation (FES)',
+          'AFO (ankle-foot orthosis)',
+          'Posterior walker',
+          'Standing frame',
+          'AAOS evidence levels',
+        ],
+        points: [
+          '<strong>早療六大面向</strong>：PT / OT / ST / 心理 / 張力管理 / 輔具',
+          '<strong>PT 目標</strong>：提升 GMFM、改善步態、預防 contracture / hip subluxation、增進肌力',
+          '<strong>NDT / Bobath</strong>：抑制異常張力 + 誘發正常動作，evidence level 較弱',
+          '<strong>任務導向訓練 (Task-oriented / GDT)</strong>：以功能性目標為中心，evidence 較強（Level I）',
+          '<strong>動作學習原則</strong>：specificity、repetition、intensity、feedback、variability',
+          '<strong>肌力訓練</strong>：CP 兒童不會增加 spasticity（過去誤解），可改善 GMFM',
+          '<strong>機器人輔助步行 (Lokomat Pro Junior)</strong>：4 歲以上可用，high-intensity repetitive，搭配 traditional PT 較佳',
+          '<strong>跑步機訓練 (Treadmill / partial body weight support)</strong>：改善步態經濟性',
+          '<strong>CIMT</strong>：適用 hemi（diplegia 不太適用），限制健側 + 強化患側',
+          '<strong>HABIT / 雙手密集訓練</strong>：適用雙手協調差的個案',
+          '<strong>馬術治療 (Hippotherapy)</strong>：改善軀幹控制、平衡，本病人適用',
+          '<strong>水療 (Aquatic therapy)</strong>：減重 + 阻力訓練，CP 適用',
+          '<strong>OT 重點</strong>：FM、ADL、感覺整合、書寫前準備、輔具使用訓練',
+          '<strong>ST 重點</strong>：構音治療（本病人僅輕度）、口腔肌肉訓練、AAC（若需要）',
+          '<strong>心理</strong>：行為治療、家屬支持團體、孩子情緒適應',
+          '<strong>張力管理</strong>：物理 (stretching、casting) + 藥物 (PO baclofen) + 注射 (Botox) + 手術 (SDR / ITB)（下題詳述）',
+          '<strong>輔具</strong>：AFO（hinged 或 solid）、posterior walker（GMFCS III 主流）、standing frame、輪椅（社區用）',
+          '<strong>頻率建議</strong>：PT 每週 2–3 次、OT 每週 1–2 次、ST 視需要',
+          '<strong>家庭計畫</strong>：home program 是 evidence 最強的部分（家屬 carry-over）',
+        ],
+        a: `<h4>早療六大面向總覽</h4>
+
+<table>
+<tr><th>面向</th><th>本病人重點</th><th>頻率建議</th></tr>
+<tr><td><strong>1. PT 物理治療</strong></td><td>GMFM 改善、步態訓練、肌力、ROM、預防 contracture / hip subluxation</td><td>2–3 次/週</td></tr>
+<tr><td><strong>2. OT 職能治療</strong></td><td>FM、ADL、書寫前準備、感覺整合、輔具使用訓練</td><td>1–2 次/週</td></tr>
+<tr><td><strong>3. ST 語言治療</strong></td><td>本病人語言落後輕度，加強構音、敘述能力、入學前準備</td><td>1 次/週</td></tr>
+<tr><td><strong>4. 心理 / 行為</strong></td><td>家屬支持、孩子情緒、入學適應、共病行為問題</td><td>視需要</td></tr>
+<tr><td><strong>5. 張力管理</strong></td><td>口服藥、Botox、SDR / ITB（下題詳述）</td><td>—</td></tr>
+<tr><td><strong>6. 輔具與環境</strong></td><td>AFO、posterior walker、standing frame、家中無障礙</td><td>—</td></tr>
+</table>
+
+<h4>1. PT 介入：流派比較與選擇</h4>
+
+<table>
+<tr><th>流派</th><th>核心理念</th><th>方法</th><th>實證等級</th><th>當代評價</th></tr>
+<tr><td><strong>NDT (Neurodevelopmental Treatment) / Bobath</strong></td><td>抑制異常姿勢張力、誘發正常動作</td><td>handling、key point of control、facilitate normal movement</td><td>Level III–IV（弱）</td><td>不再被視為 evidence-based 主流，但 handling 技巧仍可整合</td></tr>
+<tr><td><strong>Task-Oriented / GDT (Goal-Directed Training)</strong></td><td>以功能性目標為核心</td><td>specific 任務反覆練習、家屬參與訂目標、ICF 架構</td><td><strong>Level I（強）</strong></td><td>當代主流，CP 兒童 GMFM 改善 evidence 最強</td></tr>
+<tr><td><strong>Motor Learning-Based</strong></td><td>運動學習原則</td><td>specificity、repetition、intensity、feedback、variability</td><td>Level I–II</td><td>整合進現代治療</td></tr>
+<tr><td><strong>Strength Training</strong></td><td>進階阻力訓練</td><td>漸進阻力、PRE、循環訓練</td><td>Level I</td><td>過去誤以為會增加 spasticity，實際不會，可改善 GMFM</td></tr>
+<tr><td><strong>Treadmill / PBWSTT</strong></td><td>誘發脊髓 CPG、步態經濟性</td><td>跑步機 + 部分體重支持</td><td>Level I–II</td><td>mid-level CP 有效</td></tr>
+<tr><td><strong>Robot-Assisted Gait Training</strong></td><td>high-intensity 重複步態</td><td>Lokomat Pro Junior（4Y+）、外骨骼</td><td>Level II</td><td>單獨效果不優於 PT，但可作為 PT 的補強</td></tr>
+<tr><td><strong>Hippotherapy</strong></td><td>馬背節律刺激軀幹</td><td>馬術治療</td><td>Level II</td><td>軀幹控制 / 平衡有效</td></tr>
+<tr><td><strong>Aquatic Therapy</strong></td><td>減重 + 阻力</td><td>水中運動</td><td>Level II</td><td>safe + enjoyable</td></tr>
+<tr><td><strong>FES（功能性電刺激）</strong></td><td>動作中刺激神經</td><td>FES bike、foot drop FES</td><td>Level II</td><td>輔助 PT 使用</td></tr>
+</table>
+
+<p><strong>實證最強的 CP 治療（2020 年 Novak 系統性回顧 "green light" 介入）：</strong></p>
+<ul>
+<li>Bimanual training（HABIT）— 上肢功能</li>
+<li>CIMT — 單側上肢</li>
+<li>Goal-directed training（GDT）— 功能性目標</li>
+<li>Home programs — 家庭執行</li>
+<li>Treadmill training — 步行能力</li>
+<li>Functional chewing intervention — 進食</li>
+</ul>
+
+<h4>2. 動作學習五原則（治療設計核心）</h4>
+
+<ol>
+<li><strong>Specificity（特定性）</strong>：練習目標動作本身，例如要走樓梯就練樓梯，不能只練肌力</li>
+<li><strong>Repetition（重複性）</strong>：足夠次數才會內化（每次 200–500 reps for motor learning）</li>
+<li><strong>Intensity（強度）</strong>：合適挑戰、符合動作能力上限</li>
+<li><strong>Feedback（回饋）</strong>：knowledge of results vs knowledge of performance</li>
+<li><strong>Variability（變化性）</strong>：不同情境練習，促進泛化（generalization）</li>
+</ol>
+
+<h4>3. 本病人 PT 計畫建議</h4>
+
+<table>
+<tr><th>目標</th><th>方法</th><th>時程</th></tr>
+<tr><td>步行能力提升（從室內可走 → 加長距離）</td><td>跑步機訓練（PBWS）+ 任務導向步行訓練</td><td>3 個月</td></tr>
+<tr><td>下肢肌力（特別 ankle dorsiflexor 3/5）</td><td>漸進阻力訓練、坐到站、爬樓梯</td><td>長期</td></tr>
+<tr><td>軀幹核心穩定</td><td>瑜伽球、hippotherapy、平衡訓練</td><td>—</td></tr>
+<tr><td>ROM / stretching</td><td>每日家庭計畫、casting（若 ankle DF 嚴重緊繃）</td><td>長期</td></tr>
+<tr><td>跑步、跳躍能力</td><td>plyometric 訓練（適齡）</td><td>後期</td></tr>
+<tr><td>機器人輔助步行（Lokomat Pro Junior）</td><td>每週 2–3 次、每次 30 分、為期 6–8 週</td><td>視院所有無</td></tr>
+</table>
+
+<h4>4. OT 介入</h4>
+
+<ul>
+<li><strong>精細動作訓練</strong>：握筆、剪刀、串珠、扣鈕扣（本病人 FM PR 18，輕度落後）</li>
+<li><strong>ADL 訓練</strong>：穿脫衣、刷牙、上廁所、進食</li>
+<li><strong>書寫前準備</strong>：4 歲應建立 pre-writing 能力，為入學準備</li>
+<li><strong>感覺整合</strong>：CP 兒童常合併感覺處理問題</li>
+<li><strong>輔具使用訓練</strong>：助行器、AFO 穿脫</li>
+<li><strong>HABIT 雙手密集訓練</strong>：本病人雖非 hemi，但雙手協調可加強</li>
+<li><strong>學校環境調整</strong>：書桌椅、握筆器、書包、廁所扶手</li>
+</ul>
+
+<h4>5. ST 介入（本病人語言輕度落後）</h4>
+
+<ul>
+<li>構音治療（dysarthria 雖輕但仍要評估）</li>
+<li>口腔肌肉運動（lip closure、tongue mobility）</li>
+<li>敘述性語言（narrative skills）— 入學前必備</li>
+<li>音韻覺識（phonological awareness）— 識讀準備</li>
+<li>本病人 EDACS I，無進食安全問題，但仍可訓練咀嚼效能</li>
+</ul>
+
+<h4>6. 心理 / 行為介入</h4>
+
+<ul>
+<li><strong>孩子層面</strong>：自我認同、學校適應、與同儕互動</li>
+<li><strong>家屬層面</strong>：家屬支持團體、心理諮商、衛教</li>
+<li><strong>手足層面</strong>：對 2 歲弟弟的影響評估與支持</li>
+<li><strong>入學前準備</strong>：心理輔導因應特教安置</li>
+</ul>
+
+<h4>7. 輔具規劃（GMFCS III 標準）</h4>
+
+<table>
+<tr><th>輔具</th><th>本病人需求</th><th>用途</th></tr>
+<tr><td><strong>Hinged AFO（鉸鏈式）</strong></td><td>主推 — ankle DF 仍 −10°、有 plantar flexor spasticity</td><td>預防 toe-walking、提供 dorsiflexion stop、允許 push-off</td></tr>
+<tr><td><strong>Solid AFO</strong></td><td>若 plantar flexor 張力極高、需穩定踝</td><td>—</td></tr>
+<tr><td><strong>GRAFO (Ground Reaction AFO)</strong></td><td>若有 crouch gait（膝過屈）</td><td>提供 knee extension moment</td></tr>
+<tr><td><strong>Posterior walker（後退式助行器）</strong></td><td>主推 — GMFCS III 標準</td><td>促進直立姿勢、自然 reciprocal stepping</td></tr>
+<tr><td><strong>前進式助行器（anterior walker）</strong></td><td>本病人不建議</td><td>容易 forward lean，惡化 crouch</td></tr>
+<tr><td><strong>輪椅（社區用）</strong></td><td>長距離 / 戶外用</td><td>節省體力、避免 fatigue</td></tr>
+<tr><td><strong>Standing frame（站立架）</strong></td><td>學校或家用</td><td>每日 30–60 分，預防髖脫臼、改善 BMD</td></tr>
+<tr><td><strong>Adaptive seating</strong></td><td>學校書桌椅</td><td>姿勢支持、學習效率</td></tr>
+</table>
+
+<h4>8. 治療頻率與強度建議</h4>
+
+<table>
+<tr><th>項目</th><th>頻率</th><th>每次時間</th></tr>
+<tr><td>PT</td><td>2–3 次/週</td><td>40–60 分</td></tr>
+<tr><td>OT</td><td>1–2 次/週</td><td>40–60 分</td></tr>
+<tr><td>ST</td><td>1 次/週</td><td>30–40 分</td></tr>
+<tr><td>家庭計畫（home program）</td><td>每日</td><td>20–30 分（家屬執行）</td></tr>
+<tr><td>幼稚園 / 早療班</td><td>每日</td><td>融入活動</td></tr>
+</table>
+
+<p><strong>實證強調：</strong>家庭計畫（home program）是 CP 兒童 evidence 最強的部分，因為治療總時數遠多於門診時間。家屬訓練是早療的核心。</p>
+
+<h4>跟家長的溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「孩子的復健不是只有來醫院做治療那一小時，最重要的是<strong>每天在家、在幼稚園的執行</strong>。我們會教您怎麼帶他做伸展、怎麼陪他練習走路、怎麼讓他多用雙手。我們門診一週 PT 兩次、OT 一次、ST 視情況；但更重要的是您在家的 20 分鐘家庭計畫。我們也會跟幼稚園老師合作，讓他在學校環境中也能持續練習。最新的研究告訴我們，<strong>有目標的訓練</strong>（例如『學會自己上樓梯』）比單純拉筋更有效，所以我們會跟您一起訂治療目標。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>早療六軸：PT / OT / ST / 心理 / 張力 / 輔具</li>
+<li>PT 流派演進：NDT (弱證據) → 任務導向 / GDT (強證據) → 動作學習原則</li>
+<li>Novak 2020 "green light" 介入：HABIT、CIMT、GDT、home program、treadmill</li>
+<li>動作學習五原則：specificity、repetition、intensity、feedback、variability</li>
+<li>肌力訓練不會增加 spasticity（破除迷思）</li>
+<li>機器人輔助是 PT 的補充，非取代</li>
+<li>GMFCS III 標準輔具：hinged AFO + posterior walker + standing frame</li>
+<li>家庭計畫 evidence 最強</li>
+<li>本病人需 PT 2–3 次 / OT 1–2 次 / ST 1 次每週</li>
+<li>CIMT 適用 hemi，本病人雙側影響不適用；HABIT 可考慮</li>
+</ul>`,
+      },
+      {
+        q: '請詳細說明腦性麻痺兒童的張力管理階梯（包含物理、口服藥、肉毒桿菌注射、SDR、ITB pump）。家屬問「要不要打 Botox？」針對本病人，你會選擇哪些肌肉、用多少劑量？',
+        keywords: [
+          'Tone management ladder',
+          'Stretching / casting',
+          'Oral baclofen',
+          'Diazepam',
+          'Tizanidine',
+          'Dantrolene',
+          'Botulinum toxin A (BoNT-A)',
+          'Onabotulinumtoxin (Botox)',
+          'Abobotulinumtoxin (Dysport)',
+          'Incobotulinumtoxin (Xeomin)',
+          'Mechanism of action (SNAP-25)',
+          'Selective Dorsal Rhizotomy (SDR)',
+          'Intrathecal Baclofen (ITB)',
+          'Phenol nerve block',
+          'Ultrasound-guided injection',
+          'Dose calculation (U/kg)',
+          'Maximum total dose',
+          'Target muscle selection',
+          'Gastrocnemius / soleus',
+          'Hamstring (medial)',
+          'Hip adductor',
+          'NHI coverage Taiwan',
+          'Adjuvant therapy post-injection',
+        ],
+        points: [
+          '<strong>張力管理階梯</strong>：物理 → 口服藥 → focal injection (BoNT, phenol) → SDR / ITB',
+          '<strong>物理治療</strong>：stretching、casting、orthotics、positioning — 第一線',
+          '<strong>口服藥</strong>：baclofen（兒童最常用）、diazepam（短期/夜間）、tizanidine、dantrolene；副作用較大、效果有限',
+          '<strong>BoNT-A 適應症</strong>：focal/multifocal spasticity、interfering with function or care',
+          '<strong>BoNT-A 機制</strong>：阻斷神經肌肉接合處 SNAP-25，減少 ACh 釋放</strong>',
+          '<strong>3 種 BoNT-A</strong>：Onabotulinumtoxin (Botox)、Abobotulinumtoxin (Dysport)、Incobotulinumtoxin (Xeomin)；劑量單位不互換',
+          '<strong>效果</strong>：注射後 3–7 天起效、2–4 週達高峰、持續 3–4 個月',
+          '<strong>劑量計算</strong>：Botox：1–6 U/kg/muscle；total max 16–20 U/kg 或 400 U（兒童更保守）',
+          '<strong>本病人首選肌群</strong>：bilateral gastrocnemius + soleus（toe-walking）+ hamstring (medial)（crouch / popliteal angle）',
+          '<strong>Hip adductor</strong>：本病人 MAS 2、abduction 受限，可考慮以保護髖關節',
+          '<strong>導引方式</strong>：超音波導引（首選，兒科建議）、EMG、electrical stimulation',
+          '<strong>注射後配套</strong>：強化 PT、casting、AFO 調整 — 不可單獨注射不復健',
+          '<strong>禁忌</strong>：感染、Eaton-Lambert、myasthenia、aminoglycoside 使用、孕哺',
+          '<strong>SDR (Selective Dorsal Rhizotomy)</strong>：4–10 歲、純 spastic、GMFCS II–III、無 dystonia、無 weakness — 永久性減 spasticity',
+          '<strong>ITB pump</strong>：適用 GMFCS IV–V、widespread spasticity、非 focal',
+          '<strong>Phenol nerve block</strong>：適用大肌群、效果較久（6–12 月），但有 dysesthesia',
+          '<strong>台灣健保</strong>：BoNT-A 注射用於 CP 有給付（需符合適應症），下肢 ≤ 400U',
+          '<strong>本病人為 SDR 候選人</strong>：4Y、GMFCS III、純 spastic、無 dystonia — 可評估',
+        ],
+        a: `<h4>張力管理階梯（Treatment Ladder）— 必背</h4>
+
+<table>
+<tr><th>階梯</th><th>方法</th><th>適用情境</th><th>持續時間</th></tr>
+<tr><td><strong>1. Physical / Positioning</strong></td><td>Stretching、casting、orthotics、positioning</td><td>所有 CP 兒童 — 第一線</td><td>持續</td></tr>
+<tr><td><strong>2. Oral medications</strong></td><td>Baclofen、diazepam、tizanidine、dantrolene</td><td>Generalized spasticity，但效果有限</td><td>每日服用</td></tr>
+<tr><td><strong>3. Focal injection</strong></td><td>BoNT-A（首選）、phenol/alcohol nerve block</td><td>Focal / multifocal spasticity</td><td>BoNT 3–4 月；phenol 6–12 月</td></tr>
+<tr><td><strong>4. Surgical</strong></td><td>SDR（純 spastic）、ITB pump（widespread）、orthopedic surgery</td><td>嚴重 / 長期問題</td><td>永久性 / 需更換</td></tr>
+</table>
+
+<h4>1. 口服藥物（Oral Medications）</h4>
+
+<table>
+<tr><th>藥物</th><th>機轉</th><th>劑量</th><th>副作用</th></tr>
+<tr><td><strong>Baclofen</strong></td><td>GABA-B agonist（spinal）</td><td>0.75 mg/kg/d 起、漸增至 2 mg/kg/d；max 60 mg/d（兒童）</td><td>嗜睡、軟弱、噁心；突然停藥會 withdrawal seizure</td></tr>
+<tr><td><strong>Diazepam</strong></td><td>GABA-A 增強</td><td>0.1–0.3 mg/kg/d 分次</td><td>嗜睡、依賴；夜間使用為主</td></tr>
+<tr><td><strong>Tizanidine</strong></td><td>α2-adrenergic agonist</td><td>0.05 mg/kg 起；max 0.3 mg/kg/d</td><td>嗜睡、低血壓、肝功能</td></tr>
+<tr><td><strong>Dantrolene</strong></td><td>直接作用於肌肉（ryanodine receptor）</td><td>0.5–3 mg/kg/d</td><td>肝毒性（必須定期 LFT）、肌無力</td></tr>
+</table>
+
+<p><strong>口服藥的限制：</strong>整體效果不如 focal injection，副作用（特別嗜睡、軟弱）常限制兒童使用，<strong>不是 CP 兒童的首選 spasticity 治療</strong>。</p>
+
+<h4>2. 肉毒桿菌注射（Botulinum Toxin A, BoNT-A）— 重點</h4>
+
+<p><strong>機轉：</strong>BoNT-A 進入神經末梢後，cleavage <strong>SNAP-25</strong>（synaptic protein），阻斷 acetylcholine 釋放 → chemical denervation → muscle relaxation。<strong>非永久性</strong>（神經會 sprouting，3–4 個月後恢復）。</p>
+
+<p><strong>三大產品（劑量不互換！）：</strong></p>
+<table>
+<tr><th>產品</th><th>劑量比</th><th>特點</th></tr>
+<tr><td><strong>Onabotulinumtoxin A (Botox)</strong></td><td>1 U</td><td>使用最多、研究最多</td></tr>
+<tr><td><strong>Abobotulinumtoxin A (Dysport)</strong></td><td>2.5–3 U</td><td>歐洲多用，diffusion 較廣</td></tr>
+<tr><td><strong>Incobotulinumtoxin A (Xeomin)</strong></td><td>1 U</td><td>無 complexing protein，理論上抗體形成低</td></tr>
+</table>
+
+<p><strong>適應症（CP 兒童）：</strong></p>
+<ul>
+<li>Focal / multifocal spasticity 干擾功能或照顧</li>
+<li>Equinus（toe-walking）— 最常見</li>
+<li>Hamstring tightness 影響步態</li>
+<li>Hip adductor spasticity 影響坐姿、衛生、髖脫臼風險</li>
+<li>上肢屈肌（hemi 為主）</li>
+<li>Drooling（注射 salivary glands）</li>
+</ul>
+
+<p><strong>禁忌：</strong></p>
+<ul>
+<li>感染（注射部位）</li>
+<li>Neuromuscular junction disease（MG、Eaton-Lambert）</li>
+<li>Aminoglycoside 使用中（潛在 NMJ 干擾）</li>
+<li>對 BoNT-A 過敏</li>
+<li>Fixed contracture（已 fixed 注射無效）</li>
+</ul>
+
+<h4>3. Botox 劑量計算（兒童 — 必背）</h4>
+
+<table>
+<tr><th>項目</th><th>劑量</th></tr>
+<tr><td><strong>每肌肉</strong></td><td>1–6 U/kg/muscle（依肌肉大小）</td></tr>
+<tr><td><strong>每注射 site</strong></td><td>≤ 50 U（避免 diffusion）</td></tr>
+<tr><td><strong>單次治療總劑量</strong></td><td>≤ 16 U/kg 或 ≤ 400 U（取較低者）</td></tr>
+<tr><td><strong>兒童 weight 30 kg 例</strong></td><td>30 × 16 = 480 U → 用 400 U cap</td></tr>
+<tr><td><strong>注射間隔</strong></td><td>≥ 3 個月（避免抗體）</td></tr>
+</table>
+
+<p><strong>各肌肉建議劑量（Botox U/kg）：</strong></p>
+<table>
+<tr><th>肌肉</th><th>U/kg</th><th>注射點數</th></tr>
+<tr><td>Gastrocnemius (medial + lateral)</td><td>3–6</td><td>2–4 點</td></tr>
+<tr><td>Soleus</td><td>2–4</td><td>1–2 點</td></tr>
+<tr><td>Tibialis posterior</td><td>1–2</td><td>1 點（深，需超音波）</td></tr>
+<tr><td>Hamstring (medial — semitendinosus / semimembranosus)</td><td>2–6</td><td>2–4 點</td></tr>
+<tr><td>Hamstring (lateral — biceps femoris)</td><td>1–3</td><td>1–2 點</td></tr>
+<tr><td>Hip adductor (longus, magnus)</td><td>3–6</td><td>2–4 點</td></tr>
+<tr><td>Iliopsoas</td><td>1–2</td><td>1 點（需超音波）</td></tr>
+<tr><td>Biceps brachii</td><td>1–3</td><td>1–2 點</td></tr>
+<tr><td>FCR / FCU</td><td>1–2</td><td>1 點</td></tr>
+</table>
+
+<h4>4. 本病人 Botox 計畫（4Y2M、體重估 16–18 kg）</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>體重 18 kg：</strong>單次治療總劑量上限 = 18 × 16 = <strong>288 U</strong>（< 400 U cap）<br><br>
+<strong>建議目標肌群（based on 病人 MAS 評估）：</strong><br>
+本病人 MAS：gastrocnemius 3、soleus 2、hamstring 2、hip adductor 2；ankle DF with knee extension −10°（dynamic）；hip MP 右 32%（at risk）。<br><br>
+<strong>建議注射方案：</strong>
+<table>
+<tr><th>肌肉</th><th>劑量（每側）</th><th>雙側總量</th><th>理由</th></tr>
+<tr><td>Gastrocnemius (medial + lateral)</td><td>50 U（4 點 × 12.5 U）</td><td>100 U</td><td>主要 toe-walking 來源；MAS 3</td></tr>
+<tr><td>Soleus</td><td>30 U（2 點 × 15 U）</td><td>60 U</td><td>Silfverskiöld 顯示也緊；MAS 2</td></tr>
+<tr><td>Medial hamstring</td><td>40 U（2 點 × 20 U）</td><td>80 U</td><td>影響步態 + popliteal angle</td></tr>
+<tr><td>Hip adductor longus + magnus（高風險側右側優先）</td><td>30 U（2 點 × 15 U）</td><td>30 U（單側 only or 60U bilateral）</td><td>Hip MP 32%，預防脫臼</td></tr>
+<tr><th>總劑量</th><th colspan="2">約 270–290 U（< 288 U cap）</th><th></th></tr>
+</table>
+</p>
+
+<p><strong>注射技術：</strong></p>
+<ul>
+<li><strong>超音波導引（首選）</strong>：兒科 BoNT 標準、避免 vascular / nerve injury、確認肌肉位置</li>
+<li><strong>EMG 導引</strong>：可確認肌肉電活性</li>
+<li><strong>Electrical stimulation</strong>：確認肌肉動作反應</li>
+<li><strong>稀釋濃度</strong>：Botox 100 U / 1 mL 或 2 mL（依肌肉大小調整）</li>
+<li><strong>麻醉考量</strong>：兒童可考慮 conscious sedation、EMLA、N2O；大量肌群可全麻</li>
+</ul>
+
+<h4>5. Botox 注射後配套（必須！）</h4>
+
+<ul>
+<li><strong>強化 PT</strong>：注射後 1–2 週開始密集 PT，把握 spasticity 減低的「治療窗口」</li>
+<li><strong>Serial casting</strong>：注射後 2 週內 casting 1–4 週，可進一步增加 ROM</li>
+<li><strong>AFO 調整</strong>：可能需重新製作（ROM 增加後）</li>
+<li><strong>家庭計畫</strong>：每日 stretching、強化練習</li>
+<li><strong>追蹤</strong>：6 週、3 個月評估療效；GMFM、Tardieu、ROM</li>
+</ul>
+
+<h4>6. SDR (Selective Dorsal Rhizotomy)</h4>
+
+<p><strong>原理：</strong>切斷部分 L1–S2 dorsal rootlets，減少 reflex arc 過度興奮 → 永久性減 spasticity。</p>
+
+<table>
+<tr><th>適應症</th><th>禁忌</th></tr>
+<tr><td>4–10 歲</td><td>Dyskinetic / mixed type</td></tr>
+<tr><td>純 spastic diplegia</td><td>嚴重 weakness（術後依賴 spasticity 站立）</td></tr>
+<tr><td>GMFCS II–III（最佳 III）</td><td>Severe contracture / fixed deformity</td></tr>
+<tr><td>充分認知與配合度</td><td>嚴重 hip dislocation</td></tr>
+<tr><td>有家庭支持術後密集 PT（6–12 月）</td><td>Scoliosis &gt; 40°</td></tr>
+</table>
+
+<p><strong>本病人是 SDR 良好候選人</strong>：4Y、GMFCS III、純 spastic、無 dyskinesia、肌力尚可（4/5）— 可評估轉介神經外科。</p>
+
+<h4>7. ITB Pump (Intrathecal Baclofen)</h4>
+
+<table>
+<tr><th>適應症</th><th>禁忌 / 限制</th></tr>
+<tr><td>GMFCS IV–V（widespread severe spasticity）</td><td>Pump 體積要 ≥ 15 kg 才適合放</td></tr>
+<tr><td>口服 baclofen 反應差或副作用</td><td>感染風險</td></tr>
+<tr><td>Mixed dystonia + spasticity 也可考慮</td><td>需每 3–6 個月 refill</td></tr>
+<tr><td>—</td><td>Pump failure 可致命 baclofen withdrawal</td></tr>
+</table>
+
+<p><strong>本病人不適用</strong>：GMFCS III、focal-multifocal spasticity，BoNT 即可。</p>
+
+<h4>8. Phenol / Alcohol Nerve Block</h4>
+
+<ul>
+<li><strong>機轉</strong>：化學性 demyelination of mixed nerve</li>
+<li><strong>持續</strong>：6–12 月（比 BoNT 久）</li>
+<li><strong>適用</strong>：obturator nerve block（hip adductor）、musculocutaneous（biceps）</li>
+<li><strong>缺點</strong>：dysesthesia（mixed nerve）、需精準定位</li>
+<li><strong>定位</strong>：神經刺激儀 + 超音波</li>
+</ul>
+
+<h4>9. 台灣健保給付重點</h4>
+
+<ul>
+<li><strong>BoNT-A 用於 CP</strong>：健保有給付，符合適應症（spasticity 影響功能）</li>
+<li><strong>下肢限制</strong>：每次 ≤ 400 U（兒童另依體重 cap）</li>
+<li><strong>申請流程</strong>：需事前申請、附 MAS / GMFM 等評估資料</li>
+<li><strong>注射間隔</strong>：≥ 3 個月</li>
+<li><strong>SDR</strong>：健保部分給付，需轉介神經外科</li>
+<li><strong>ITB pump</strong>：醫材健保有條件給付</li>
+</ul>
+
+<h4>跟家長的溝通（Botox 衛教）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「家屬常聽到肉毒桿菌會害怕，但其實在 CP 治療上已有 25 年以上的安全使用經驗，世界各國都把它當作首選的 focal spasticity 治療。它的原理是<strong>暫時性</strong>讓張力過高的肌肉放鬆，效果約 3–4 個月，<strong>不會永久性</strong>地讓肌肉沒力，所以不用擔心打了之後孩子站不起來。<br><br>
+注射後最重要的是『把握這 3 個月好好做復健』，因為這時候肌肉鬆了，我們才能拉長肌肉、讓他練到平常做不到的動作。我們會用超音波導引，盡量減少疼痛跟誤打。<br><br>
+針對您的孩子，我會先打他最緊的小腿（不讓他踮腳尖）和大腿後側（讓膝蓋打得直），右側髖關節因為已經有點半脫位，我也會處理那邊的內收肌。注射後我們會密集做 PT 6–8 週，並且重新調整 AFO。<br><br>
+另外我也想跟您談一個更長遠的選項，叫做 SDR 手術，您的孩子是非常好的候選人，可以考慮在 5–7 歲做這個手術，能<strong>永久</strong>減低張力。我們之後再詳細討論。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>張力管理階梯：物理 → 口服藥 → focal injection → SDR / ITB</li>
+<li>BoNT-A 機轉 SNAP-25 必背、3 種產品劑量不互換</li>
+<li>劑量計算：1–6 U/kg/muscle、總量 ≤ 16 U/kg 或 ≤ 400 U</li>
+<li>本病人 spastic diplegia 主打肌群：gastroc + soleus + medial hamstring + hip adductor</li>
+<li>超音波導引是兒科首選</li>
+<li>注射 + 強化 PT + casting + AFO 調整是配套（不可單獨）</li>
+<li>SDR 適應症：4–10Y、純 spastic、GMFCS II–III、無 dystonia — 本病人是好候選人</li>
+<li>ITB 適用 GMFCS IV–V、widespread；本病人不適用</li>
+<li>禁忌：MG、Eaton-Lambert、aminoglycoside、感染</li>
+<li>追蹤：3 個月 GMFM / Tardieu / ROM 評估療效</li>
+</ul>`,
+      },
+      {
+        q: '本病人髖關節 X-ray 顯示右側 Migration Percentage 32%。請說明 CP 兒童髖關節脫臼的篩檢與處理（hip surveillance program），以及其他常見併發症（脊椎側彎、攣縮、癲癇、進食、睡眠等）的處理。',
+        keywords: [
+          'Hip surveillance program',
+          'Migration percentage (Reimers index)',
+          'MP < 30% normal',
+          'MP 30-40% at risk',
+          'MP > 40% subluxation',
+          'MP > 90% dislocation',
+          'GMFCS-based screening frequency',
+          'AACPDM hip surveillance guideline',
+          'Australian / Swedish CPUP program',
+          'Acetabular index',
+          'Hip abduction < 30°',
+          'Soft tissue surgery (adductor release, iliopsoas)',
+          'Reconstructive (femoral / pelvic osteotomy)',
+          'Salvage (Castle, McHale)',
+          'Scoliosis',
+          'Cobb angle',
+          'Bracing > 25°',
+          'Surgery > 50°',
+          'Contracture',
+          'Botox + casting',
+          'Tendon lengthening (SEMLS)',
+          'Epilepsy 30-50% in CP',
+          'Osteoporosis (DEXA Z-score)',
+          'GERD / dysphagia',
+          'Drooling (BoNT to salivary glands)',
+          'Sleep disorder',
+          'Pain (HLD-CP)',
+          'CVI cortical visual impairment',
+        ],
+        points: [
+          '<strong>Hip surveillance 是 CP 兒童最重要的 longitudinal monitoring</strong>',
+          '<strong>Migration Percentage (Reimers index)</strong>：股骨頭離開髖臼外緣的比例',
+          '<strong>MP 分級</strong>：&lt; 30% 正常、30–40% at risk、&gt; 40% subluxation、&gt; 90% dislocation',
+          '<strong>本病人右側 MP 32%</strong>：屬「at risk」，需密切追蹤',
+          '<strong>篩檢頻率依 GMFCS</strong>：I 一次即可、II 每 1–2 年、III–V 每 6–12 個月',
+          '<strong>AACPDM / 澳洲 / 瑞典 CPUP</strong>：標準 hip surveillance program',
+          '<strong>髖脫臼後果</strong>：疼痛、坐姿差、衛生差、骨盆不對稱 → scoliosis</strong>',
+          '<strong>處理層級</strong>：tone management → soft tissue surgery → reconstructive → salvage',
+          '<strong>Soft tissue surgery</strong>：MP 30–60% 可考慮 adductor + iliopsoas 釋放',
+          '<strong>Reconstructive surgery</strong>：MP &gt; 60% → femoral varus derotation osteotomy + pelvic osteotomy (Dega/Salter)',
+          '<strong>Salvage surgery</strong>：painful chronic dislocation → Castle resection 等',
+          '<strong>Scoliosis</strong>：CP 兒童 25–60%、Cobb &gt; 25° brace、&gt; 50° surgery（Cotrel-Dubousset、PSF）',
+          '<strong>Contracture</strong>：Botox + casting + 手術 (SEMLS — single event multilevel surgery)',
+          '<strong>Epilepsy</strong>：CP 約 30–50% 合併（spastic quadri 最高），需 EEG + AED',
+          '<strong>Osteoporosis</strong>：DEXA Z-score、Vit D + Ca、bisphosphonate（嚴重者）',
+          '<strong>GERD / 吞嚥</strong>：VFSS 評估、體位調整、增稠、必要時 G-tube',
+          '<strong>Drooling</strong>：anticholinergic (glycopyrrolate)、salivary gland Botox、surgery',
+          '<strong>Sleep disorder</strong>：sleep apnea、sleep position、藥物（melatonin）',
+          '<strong>Pain (HLD-CP)</strong>：CP-specific pain scale，慢性疼痛常見',
+          '<strong>視覺 (CVI)</strong>：眼科會診，CP 兒童 60–70% 有視覺問題',
+        ],
+        a: `<h4>1. Hip Surveillance（髖關節監測）— CP 兒童終身必做</h4>
+
+<p><strong>為什麼重要？</strong>未經追蹤的 spastic CP 兒童，<strong>髖脫臼率與 GMFCS 直接相關</strong>：</p>
+
+<table>
+<tr><th>GMFCS</th><th>髖脫臼風險</th></tr>
+<tr><td>I</td><td>0%</td></tr>
+<tr><td>II</td><td>15%</td></tr>
+<tr><td>III</td><td>41%</td></tr>
+<tr><td>IV</td><td>69%</td></tr>
+<tr><td>V</td><td>90%</td></tr>
+</table>
+
+<p>本病人 GMFCS III，整體髖脫臼風險約 40%；目前右側 MP 32% 已進入 at-risk 範圍。</p>
+
+<h4>2. Migration Percentage (Reimers Index) 計算與分級</h4>
+
+<p><strong>計算方式：</strong>骨盆 AP X-ray 上，股骨頭超出 Perkin's line 部分的比例。</p>
+
+<table>
+<tr><th>MP（%）</th><th>分級</th><th>處置</th></tr>
+<tr><td><strong>&lt; 30%</strong></td><td>正常</td><td>依 GMFCS 定期追蹤</td></tr>
+<tr><td><strong>30–40%</strong></td><td>At risk（本病人右側）</td><td>每 6 個月 X-ray、加強 tone management、考慮 standing program、Botox to adductor</td></tr>
+<tr><td><strong>40–60%</strong></td><td>Subluxation</td><td>骨科會診、考慮 soft tissue surgery（adductor + iliopsoas tenotomy）</td></tr>
+<tr><td><strong>60–90%</strong></td><td>Severe subluxation</td><td>Reconstructive surgery（femoral + pelvic osteotomy）</td></tr>
+<tr><td><strong>&gt; 90% / 100%</strong></td><td>Dislocation</td><td>Reconstructive 或 salvage（若 chronic / painful）</td></tr>
+</table>
+
+<h4>3. Hip Surveillance 篩檢頻率（澳洲 / 瑞典 CPUP / AACPDM 整合）</h4>
+
+<table>
+<tr><th>GMFCS</th><th>X-ray 頻率</th><th>結束年齡</th></tr>
+<tr><td><strong>I</strong></td><td>2 歲一次（baseline），若正常則停止</td><td>—</td></tr>
+<tr><td><strong>II</strong></td><td>每 1–2 年</td><td>≥ 8 歲且穩定</td></tr>
+<tr><td><strong>III</strong></td><td>每 6–12 個月</td><td>骨骼成熟（約 16–18 歲）</td></tr>
+<tr><td><strong>IV–V</strong></td><td>每 6 個月</td><td>骨骼成熟</td></tr>
+</table>
+
+<p><strong>本病人 GMFCS III，右側 MP 32%</strong> → 應每 6 個月追蹤 X-ray。</p>
+
+<h4>4. Hip 評估其他重點</h4>
+
+<ul>
+<li><strong>Hip abduction with hip extension</strong>：&lt; 30° 警示</li>
+<li><strong>Galeazzi sign</strong>：膝高不等 → unilateral dislocation</li>
+<li><strong>Acetabular index (AI)</strong>：髖臼斜度 — 增加暗示髖臼發育不良</li>
+<li><strong>Sharp angle、CE angle</strong>：髖臼覆蓋程度</li>
+<li><strong>Pelvic obliquity</strong>：windswept hips → MP 不對稱</li>
+</ul>
+
+<h4>5. 髖關節處理階梯</h4>
+
+<table>
+<tr><th>階段</th><th>方法</th><th>適應 MP</th></tr>
+<tr><td><strong>1. Conservative</strong></td><td>Tone management（Botox to adductor + iliopsoas）、stretching、abduction wedge、standing program</td><td>30–40%</td></tr>
+<tr><td><strong>2. Soft tissue surgery</strong></td><td>Adductor tenotomy + iliopsoas lengthening；abductor strengthening</td><td>30–60%（特別有 abduction 受限）</td></tr>
+<tr><td><strong>3. Reconstructive</strong></td><td>Femoral varus derotation osteotomy (VDRO) + pelvic osteotomy（Dega、Salter、Pemberton、San Diego）</td><td>&gt; 40–60%（特別有 acetabular 變形）</td></tr>
+<tr><td><strong>4. Salvage</strong></td><td>Castle resection、McHale procedure、proximal femoral resection</td><td>嚴重 chronic painful dislocation（GMFCS V，無法走路）</td></tr>
+</table>
+
+<h4>6. 本病人髖關節處理建議</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+本病人右側 MP 32%、左側 26%，屬於 right hip at-risk 階段。建議：<br><br>
+<strong>立即（這次治療計畫）：</strong>
+<ul>
+<li>Botox 注射 right hip adductor（已在 Q6 規劃）</li>
+<li>Standing program — 每日 30–60 分</li>
+<li>夜間 abduction wedge 或 night splint 考慮</li>
+<li>家庭 stretching：hip abduction stretch 每日多次</li>
+</ul>
+
+<strong>追蹤：</strong>
+<ul>
+<li>6 個月後 hip X-ray 重評估</li>
+<li>每次門診觸診 hip abduction、Galeazzi</li>
+<li>若 MP 持續 &gt; 40%，骨科會診</li>
+</ul>
+
+<strong>分水嶺指標：</strong>
+<ul>
+<li>MP 進展 &gt; 7%/年 — 警訊</li>
+<li>MP &gt; 40% 持續 — 考慮 soft tissue surgery</li>
+<li>MP &gt; 60% — 考慮 reconstructive</li>
+</ul>
+</p>
+
+<h4>7. 其他併發症（CP 兒童整體照護）</h4>
+
+<p><strong>(1) 脊椎側彎 (Scoliosis)</strong></p>
+<table>
+<tr><th>Cobb angle</th><th>處置</th></tr>
+<tr><td>&lt; 25°</td><td>觀察、每 6–12 個月 X-ray</td></tr>
+<tr><td>25–50°</td><td>Bracing（TLSO）— 但 CP 較難 compliance</td></tr>
+<tr><td>&gt; 50°</td><td>Surgical (PSF — posterior spinal fusion)</td></tr>
+</table>
+
+<p>CP scoliosis 特性：<strong>長 C-curve</strong>、進展快（特別 GMFCS IV–V），與 idiopathic scoliosis 不同。本病人目前無明顯 scoliosis，每 1–2 年 X-ray 追蹤。</p>
+
+<p><strong>(2) 攣縮 (Contracture)</strong></p>
+<ul>
+<li>動態 spasticity → 久而久之 → 結構性 contracture</li>
+<li><strong>處置階梯</strong>：stretching → casting → Botox + casting → tendon lengthening (SEMLS)</li>
+<li><strong>SEMLS (Single Event Multilevel Surgery)</strong>：一次手術同時處理多關節 / 多肌肉，3D gait analysis 為基礎，常於 7–10 歲；可包含 gastroc lengthening、hamstring lengthening、femoral derotation osteotomy 等</li>
+</ul>
+
+<p><strong>(3) 癲癇 (Epilepsy)</strong></p>
+<ul>
+<li>CP 約 30–50%（spastic quadri 最高，hemiplegia 次之）</li>
+<li>各種類型：generalized、focal、infantile spasms</li>
+<li><strong>EEG</strong> 評估、AED 治療</li>
+<li>Levetiracetam、valproate、lamotrigine 等是兒科常用</li>
+<li>本病人無 seizure 病史，但仍需追問家屬有無不確定發作</li>
+</ul>
+
+<p><strong>(4) 骨質疏鬆 (Osteoporosis)</strong></p>
+<ul>
+<li>CP 兒童常因不負重 / 抗癲癇藥物 / 營養不良 → 低骨密度</li>
+<li><strong>DEXA scan</strong>（lateral distal femur 為兒童 CP 常用 site，因脊椎易誤判）</li>
+<li>Z-score &lt; −2 + fracture history → osteoporosis</li>
+<li><strong>處置</strong>：Vit D 補充、Calcium、negotiating sun exposure、weight-bearing activity（standing program）、嚴重者 bisphosphonate</li>
+</ul>
+
+<p><strong>(5) 進食與營養</strong></p>
+<ul>
+<li><strong>EDACS</strong> 分級評估</li>
+<li><strong>VFSS（吞嚥造影）</strong>：若有 silent aspiration 懷疑</li>
+<li>體位調整、增稠（thickened liquids）</li>
+<li>體重監測、生長曲線</li>
+<li>嚴重者 G-tube</li>
+</ul>
+
+<p><strong>(6) Drooling（流涎）</strong></p>
+<ul>
+<li><strong>第一線</strong>：行為治療（提醒吞口水）、口腔肌肉訓練</li>
+<li><strong>藥物</strong>：glycopyrrolate（首選，副作用少）、scopolamine patch、benztropine</li>
+<li><strong>BoNT injection 至 salivary glands</strong>（parotid + submandibular，超音波導引）</li>
+<li><strong>Surgery</strong>：salivary duct rerouting、gland excision（最後手段）</li>
+</ul>
+
+<p><strong>(7) GERD / Constipation</strong></p>
+<ul>
+<li>CP 兒童 GERD 高達 60%</li>
+<li>PPI、體位調整</li>
+<li>Chronic constipation：纖維、軟便劑、必要時 enema</li>
+</ul>
+
+<p><strong>(8) 睡眠障礙</strong></p>
+<ul>
+<li>Sleep apnea（airway tone 低）</li>
+<li>Positioning issues</li>
+<li>Melatonin 短期使用</li>
+</ul>
+
+<p><strong>(9) 疼痛</strong></p>
+<ul>
+<li>CP 兒童 chronic pain 高達 70%（特別 GMFCS IV–V）</li>
+<li><strong>HLD-CP</strong>（Health and Lifestyle Diary for CP）— CP 專用 pain scale</li>
+<li>來源：髖脫臼、痙攣、體位、便秘</li>
+<li>處置：non-pharmacological + pharmacological + 處理 underlying cause</li>
+</ul>
+
+<p><strong>(10) 視聽覺 / 認知 / 行為</strong></p>
+<ul>
+<li><strong>CVI (Cortical Visual Impairment)</strong>：60–70% CP 兒童有視覺問題，眼科會診</li>
+<li><strong>SNHL</strong>：約 20%</li>
+<li><strong>智能障礙</strong>：約 50%（依嚴重度）</li>
+<li><strong>ADHD / 行為問題</strong>：約 25%</li>
+</ul>
+
+<h4>跟家長的溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「孩子的髖關節 X-ray 顯示右邊有 32% 移位，我們稱為『有風險』階段。如果不處理，可能會慢慢變成半脫位甚至完全脫位，會疼痛、影響坐姿、影響洗澡照顧。所以從現在開始我們要做幾件事：第一是把右大腿內側的張力降下來（Botox），第二是<strong>每天讓他站立 30–60 分鐘</strong>——可以使用站立架，讓髖關節在正確位置受力，這對骨頭的塑形非常重要。第三是每 6 個月追蹤 X-ray。<br><br>
+另外因為他是 CP 兒童，我們長期還要注意脊椎側彎、攣縮、骨密度、視力等等。我會幫他安排眼科會診，孩子若需要可考慮配眼鏡。我們會像守門員一樣陪他長大，每一個關卡都要把關。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Hip surveillance 是 CP 兒童 longitudinal care 的核心</li>
+<li>MP 分級必背：&lt; 30% / 30–40% / 40–60% / 60–90% / &gt; 90%</li>
+<li>篩檢頻率依 GMFCS：III 是 6–12 個月一次</li>
+<li>處置階梯：tone → soft tissue → reconstructive → salvage</li>
+<li>本病人 right MP 32%（at risk）→ Botox + standing program + 6 個月後追蹤</li>
+<li>Scoliosis：&gt; 25° brace、&gt; 50° surgery；CP 是長 C-curve</li>
+<li>SEMLS：一次手術多關節，3D gait 為基礎</li>
+<li>Epilepsy 30–50%、osteoporosis、GERD、drooling、CVI 等都要 routine screening</li>
+<li>HLD-CP 是 CP 專用 pain scale</li>
+<li>CP 不只是動作障礙 — 是 multi-system disorder</li>
+</ul>`,
+      },
+      {
+        q: '本病人接受治療一段時間後，家長問「孩子有沒有進步？」請說明如何客觀評估治療成效。家長另問「他長大會不會走路？以後可以做什麼工作？」請說明 CP 兒童行走能力與長期預後的預測因子。',
+        keywords: [
+          'GMFM-66 MCID',
+          'GMFM-88 dimensions',
+          'PEDI follow-up',
+          'COPM / GAS',
+          'MAS / Tardieu serial',
+          'ROM serial',
+          'GMFCS stability',
+          'GMFM motor curves (Rosenbaum)',
+          'GMFCS level 90% plateau by 5y',
+          'Sitting at 2y predicts walking',
+          'Independent sitting by 2 y',
+          'Persistent primitive reflexes',
+          'Number of retained primitive reflexes',
+          'Toe walking type',
+          'CP type (spastic vs dyskinetic)',
+          'Topographical (di vs quadri)',
+          'Cognitive function',
+          'Visual / hearing impairment',
+          'Seizure',
+          'Hip stability',
+          'Adult outcome',
+          'Vocational outcome',
+          'Independent living',
+          'Sexuality / reproduction',
+          'Aging with CP',
+        ],
+        points: [
+          '<strong>客觀進步評估</strong>：量表 baseline vs follow-up（不能憑印象）',
+          '<strong>GMFM-66 MCID（最小臨床意義差）</strong>：1.5–1.7 分（GMFCS III）',
+          '<strong>追蹤頻率</strong>：每 6 個月 GMFM-66、PEDI；每次 MAS、ROM、Tardieu',
+          '<strong>個案目標 GAS</strong>：T-score 50 = 達成預期、&gt; 50 = 超預期',
+          '<strong>家屬報告量表 COPM</strong>：performance + satisfaction，每次差 &gt; 2 分為臨床有意義',
+          '<strong>動作預後三大法寶</strong>：GMFM motor curves、GMFCS、early signs',
+          '<strong>GMFCS 5 歲後穩定</strong>：Rosenbaum 動力曲線研究，level 5 歲後 90% 穩定',
+          '<strong>能否走路關鍵因子</strong>',
+          '<strong>1. 2 歲時能否獨立坐 (sitting by 2y)</strong>：能 → 80%+ 將會走；不能 → &lt; 25%',
+          '<strong>2. 原始反射殘留數</strong>：≥ 3 個於 12 個月時 → 預後不佳',
+          '<strong>3. CP type</strong>：spastic diplegia &gt; spastic quadri；hemiplegia 幾乎都會走',
+          '<strong>4. 認知與視覺</strong>：認知 IQ &lt; 50、嚴重 CVI → 影響行走學習',
+          '<strong>5. 嚴重 spasticity / contracture</strong>：影響預後',
+          '<strong>本病人預後評估</strong>：4Y 已能扶物站走、無 dyskinesia、IQ 82、視覺正常 → 預後良好',
+          '<strong>長期成人結果</strong>：GMFCS I–III 大多獨立生活、可工作；IV–V 需協助',
+          '<strong>就業預測</strong>：認知 + GMFCS + 動機 + 環境支持',
+          '<strong>CP 老化議題</strong>：30 歲後可能 functional decline（疲勞、疼痛、joint problems）',
+          '<strong>性與生育</strong>：CP 不影響生育能力，需提早衛教',
+        ],
+        a: `<h4>1. 治療進步的客觀評估</h4>
+
+<p><strong>原則：</strong>不能憑「家長覺得好像進步」或「治療師認為有改善」— 必須用<strong>標準化量表 baseline + follow-up 對照</strong>。</p>
+
+<table>
+<tr><th>類別</th><th>量表 / 指標</th><th>追蹤頻率</th><th>MCID（最小臨床意義差）</th></tr>
+<tr><td><strong>粗大動作</strong></td><td>GMFM-66</td><td>每 6 個月</td><td>1.5–1.7（GMFCS III）；2.0+（GMFCS I–II）</td></tr>
+<tr><td><strong>粗大動作（細項）</strong></td><td>GMFM-88（5 dimensions: A 躺臥滾翻、B 坐、C 爬跪、D 站、E 走跑跳）</td><td>每 6 個月</td><td>—</td></tr>
+<tr><td><strong>精細動作</strong></td><td>PDMS-2 FM、BOT-2、MA2</td><td>每 6 個月</td><td>—</td></tr>
+<tr><td><strong>ADL</strong></td><td>PEDI / PEDI-CAT、WeeFIM</td><td>每 6–12 個月</td><td>—</td></tr>
+<tr><td><strong>個案目標</strong></td><td>COPM、GAS</td><td>每次調整目標時</td><td>COPM：performance / satisfaction 各差 ≥ 2 分</td></tr>
+<tr><td><strong>肌張力</strong></td><td>MAS、Tardieu</td><td>每次 / Botox 前後</td><td>MAS 改善 ≥ 1 級</td></tr>
+<tr><td><strong>關節 ROM</strong></td><td>Goniometry、popliteal angle、Silfverskiöld</td><td>每次</td><td>視關節，常 5–10°</td></tr>
+<tr><td><strong>步態</strong></td><td>FMS、6MWT、3D gait analysis（術前）</td><td>每 6 個月或大介入後</td><td>—</td></tr>
+<tr><td><strong>髖關節</strong></td><td>Hip X-ray (MP)</td><td>每 6–12 個月</td><td>MP 進展 ≤ 7%/年 = 穩定</td></tr>
+<tr><td><strong>分級系統</strong></td><td>GMFCS / MACS / CFCS / EDACS</td><td>每年</td><td>level 改變才算明顯變化</td></tr>
+<tr><td><strong>家屬導向</strong></td><td>COPM、家屬訪談、QoL 量表 (CP QOL-Child)</td><td>每年</td><td>—</td></tr>
+</table>
+
+<h4>2. GMFM-66 vs GMFM-88 — CP 治療效果評估的 Gold Standard</h4>
+
+<table>
+<tr><th>項目</th><th>GMFM-88</th><th>GMFM-66</th></tr>
+<tr><td>題目</td><td>88 題</td><td>66 題（subset）</td></tr>
+<tr><td>計分</td><td>5 dimensions 加權平均</td><td>Rasch interval 計分（線性）</td></tr>
+<tr><td>跨文化</td><td>原版</td><td>更佳</td></tr>
+<tr><td>變化敏感度</td><td>較弱</td><td>強（Rasch）</td></tr>
+<tr><td>用途</td><td>臨床描述</td><td>治療效果評估、研究</td></tr>
+<tr><td>耗時</td><td>45–60 分</td><td>30–45 分</td></tr>
+</table>
+
+<h4>3. GAS（Goal Attainment Scaling）— 個別化目標評估</h4>
+
+<p>每個目標設 5 個 level：</p>
+<ul>
+<li>+2：遠超預期</li>
+<li>+1：略超預期</li>
+<li>0：達預期目標（baseline 通常設 −1）</li>
+<li>−1：略不及預期</li>
+<li>−2：完全沒達成（或 baseline）</li>
+</ul>
+
+<p>多目標可計算 <strong>T-score</strong>，T = 50 表達標、&gt; 50 表超標。</p>
+
+<p><strong>本病人可設目標例：</strong></p>
+<ul>
+<li>3 個月後可獨立走 10 公尺（baseline：扶物 5 步）</li>
+<li>3 個月後可自行穿襪（baseline：需協助）</li>
+<li>3 個月後 popliteal angle 改善 10°（baseline：右 60°、左 55°）</li>
+</ul>
+
+<h4>4. CP 兒童「能否走路」的預測因子（口試重點）</h4>
+
+<p><strong>(1) Sitting by 2 years — 最重要的單一預測因子</strong></p>
+<table>
+<tr><th>2 歲時的能力</th><th>未來行走可能性</th></tr>
+<tr><td>2 歲前能獨坐</td><td>≈ 100% 將會走（多半 GMFCS I–III）</td></tr>
+<tr><td>2 歲時能獨坐 1–2 分鐘</td><td>≈ 80% 會走</td></tr>
+<tr><td>2–3 歲間能坐</td><td>≈ 60% 會走</td></tr>
+<tr><td>3–4 歲間能坐</td><td>≈ 25% 會走</td></tr>
+<tr><td>&gt; 4 歲仍不能坐</td><td>&lt; 10%</td></tr>
+</table>
+
+<p><strong>(2) Persistent Primitive Reflexes（12–24 個月）— Bleck 經典研究</strong></p>
+<table>
+<tr><th>12 個月仍殘留的反射數</th><th>未來預後</th></tr>
+<tr><td>0–1 個</td><td>佳（多會走）</td></tr>
+<tr><td>2 個</td><td>不確定</td></tr>
+<tr><td>≥ 3 個</td><td>差（多不能獨走）</td></tr>
+</table>
+<p>5 個關鍵反射：ATNR、STNR、Moro、TLR、neck righting</p>
+
+<p><strong>(3) CP type（神經學分類）</strong></p>
+<table>
+<tr><th>類型</th><th>能走的比例</th></tr>
+<tr><td>Spastic hemiplegia</td><td>~ 100%</td></tr>
+<tr><td>Spastic diplegia</td><td>80–90%（若 GMFCS I–III）</td></tr>
+<tr><td>Spastic quadriplegia</td><td>20–25%</td></tr>
+<tr><td>Dyskinetic</td><td>~ 50%</td></tr>
+<tr><td>Ataxic</td><td>~ 75%</td></tr>
+</table>
+
+<p><strong>(4) 其他預測因子</strong></p>
+<ul>
+<li><strong>認知 IQ</strong>：IQ &lt; 50 → 行走學習困難</li>
+<li><strong>視覺 (CVI)</strong>：嚴重 CVI 影響步行</li>
+<li><strong>癲癇</strong>：難治性 seizure → 較差</li>
+<li><strong>髖關節穩定</strong>：嚴重 hip dislocation 限制步行</li>
+<li><strong>嚴重 contracture / scoliosis</strong>：限制步行</li>
+<li><strong>影像範圍</strong>：white matter injury 範圍大、basal ganglia / cortex 受損</li>
+</ul>
+
+<h4>5. GMFM motor curves（Rosenbaum 動力曲線）</h4>
+
+<p>2002 年 Rosenbaum 等發表的<strong>長期追蹤研究</strong>：</p>
+<ul>
+<li>不同 GMFCS level 的動作能力<strong>逐年發展曲線</strong>不同</li>
+<li>所有 GMFCS level 在 <strong>5 歲時</strong>達到約 90% 的最大能力，之後成長很慢</li>
+<li>GMFCS level <strong>5 歲後通常穩定不變</strong>，是預測終生功能的可靠指標</li>
+<li>每個 level 有 percentile 曲線可參考</li>
+</ul>
+
+<h4>6. 本病人預後評估（4Y2M）</h4>
+
+<table>
+<tr><th>因子</th><th>本病人</th><th>解讀</th></tr>
+<tr><td>2 歲時坐姿</td><td>1Y6M 能坐</td><td>✅ 強烈預示能走</td></tr>
+<tr><td>4 歲行走能力</td><td>扶物可走、放手 5–6 步</td><td>✅ 已具備獨走潛力</td></tr>
+<tr><td>CP type</td><td>Spastic diplegia</td><td>✅ 80–90% 終將獨走</td></tr>
+<tr><td>GMFCS</td><td>III</td><td>✅ 中度，long-term 多需助行器但可獨立移動</td></tr>
+<tr><td>認知 IQ</td><td>82</td><td>✅ 邊緣但非 ID</td></tr>
+<tr><td>癲癇</td><td>無</td><td>✅</td></tr>
+<tr><td>視覺、聽力</td><td>正常</td><td>✅</td></tr>
+<tr><td>髖關節</td><td>右 MP 32%（at risk）</td><td>⚠️ 需密切追蹤</td></tr>
+<tr><td>家庭支持</td><td>父母配合、社經中等</td><td>✅</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>整體預後判斷：相對佳</strong><br>
+本病人於 5 歲前如能持續密集介入、完成 Botox 治療、考慮 SDR 手術，並好好控制髖關節，將來大多可達 <strong>GMFCS II–III 終身穩定</strong>，能<strong>獨立走路（可能需 AFO + 偶用拐杖）</strong>，學業上可進入<strong>普通小學的資源班</strong>，成年後可從事大部分坐姿工作（如行政、文書、IT）。
+</p>
+
+<h4>7. 長期成人結果（adult outcome）</h4>
+
+<table>
+<tr><th>GMFCS</th><th>成年後典型功能</th></tr>
+<tr><td><strong>I</strong></td><td>無輔具獨立走路、可跑跳；獨立生活、就業；多無障礙障礙</td></tr>
+<tr><td><strong>II</strong></td><td>多數環境可獨走；長距離 / 不平整需協助；獨立生活可能</td></tr>
+<tr><td><strong>III</strong></td><td>需手持輔具、戶外輪椅；多獨立生活但可能需部分協助</td></tr>
+<tr><td><strong>IV</strong></td><td>多用 power wheelchair；大部分 ADL 需協助</td></tr>
+<tr><td><strong>V</strong></td><td>完全依賴；多需 24 小時照顧</td></tr>
+</table>
+
+<p><strong>就業預測：</strong></p>
+<ul>
+<li>關鍵預測：認知（IQ）、GMFCS、溝通能力（CFCS）、動機、環境支持</li>
+<li>GMFCS I–III + 認知正常：就業率可達 60–80%</li>
+<li>GMFCS IV–V 或認知障礙：保護性就業 / 庇護工場</li>
+<li>本病人預估：可從事坐姿工作（電腦相關、文書、客服）</li>
+</ul>
+
+<h4>8. CP 老化議題（aging with CP）— 近年新興議題</h4>
+
+<ul>
+<li><strong>30 歲後 functional decline</strong>：原本能走可能變需輔具</li>
+<li>原因：早期關節磨損、疲勞、疼痛、肌力下降</li>
+<li>慢性疼痛：50–70% adults with CP</li>
+<li>骨密度下降、osteoarthritis 提早</li>
+<li>心血管風險：sedentary lifestyle</li>
+<li><strong>需 transition care</strong>：兒童到成人健康照護的銜接</li>
+</ul>
+
+<h4>9. 性、生育與獨立生活</h4>
+
+<ul>
+<li>CP <strong>不影響生育能力</strong>（除非合併其他基因問題）</li>
+<li>性教育從 sexuality education 角度整合</li>
+<li>女性 CP 病人 menstruation、避孕、懷孕生產需特別考量</li>
+<li>家屬需提早面對「孩子長大成人」的議題</li>
+</ul>
+
+<h4>跟家長的溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「家長關心『有沒有進步』，我們有客觀的方法評估，每 6 個月會用 GMFM-66 量表測一次他的動作能力，這是 CP 兒童的標準工具。如果分數有進步 1.5–1.7 分以上，就是有臨床意義的進步。<br><br>
+關於『以後會不會走路』，從幾個重要指標來看，您的孩子預後很<strong>正向</strong>：他 1 歲半就能坐穩、4 歲能扶物走、診斷是 spastic diplegia（這是 CP 預後最好的類型之一），認知、視覺、聽力都正常。<br><br>
+我預估，如果<strong>持續介入到 5–7 歲</strong>，他將來大概可以<strong>獨立走路</strong>，可能需要踝關節輔具，長距離可用拐杖，但日常生活基本獨立。學業上可進普通小學的資源班，將來可以從事坐姿的工作，例如電腦、文書、設計類。<br><br>
+他現在 4 歲，是大腦發育最關鍵的時期，<strong>未來這 1–3 年是治療黃金期</strong>。我們把握這段時間做好治療，未來他的功能會有最大發揮。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>進步必須客觀量化：GMFM-66 是 CP 治療 gold standard，MCID 1.5–1.7（GMFCS III）</li>
+<li>個案目標導向：GAS、COPM</li>
+<li>能否走路四大預測因子：sitting by 2y、primitive reflexes、CP type、認知</li>
+<li>Sitting by 2y 是最強單一預測因子（達成 → 80%+ 會走）</li>
+<li>≥ 3 個 primitive reflexes 持續 12 個月 → 預後差</li>
+<li>Spastic diplegia 80–90% 會走（本病人這型）</li>
+<li>GMFCS 5 歲後 90% 穩定（Rosenbaum 動力曲線）</li>
+<li>本病人預後判斷：佳（4Y 已能扶走、IQ 82、無 dyskinesia、無 seizure）</li>
+<li>長期成人結果：GMFCS III 多獨立生活、可從事坐姿工作</li>
+<li>CP 老化新興議題：30 歲後 functional decline、需 transition care</li>
+</ul>`,
+      },
+      {
+        q: '本病人準備上小學。請說明台灣對 CP 兒童 / 發展遲緩兒童可申請的社福資源（身心障礙手冊、重大傷病卡、早療補助、長照），以及入學鑑定安置（資源班、特教班、特教學校）、緩讀的實際流程與建議。',
+        keywords: [
+          '身心障礙證明 (ICF rating)',
+          'ICF 8 大功能向度',
+          '舊制 16 類障別',
+          '新制 ICF 鑑定',
+          '需求評估 (社政、衛政、教政、勞政)',
+          '重大傷病卡',
+          'CP 不在重大傷病列表',
+          '早療補助 (3 歲以下交通費 / 療育費)',
+          '0-6 歲早療通報',
+          '長照 2.0',
+          'CP 不適用長照（< 65 歲且非身障特定條件）',
+          '巴氏量表',
+          '幼兒園特殊教育',
+          '入學鑑定（縣市鑑輔會）',
+          '集中式特教班',
+          '分散式資源班',
+          '巡迴輔導班',
+          '特教學校',
+          '個別化教育計畫 (IEP)',
+          '緩讀（延緩 1 年入學）',
+          '緩讀條件',
+          '提早入學',
+          '無障礙環境',
+          '融合教育',
+          '勞動部職重',
+          '輔具補助',
+        ],
+        points: [
+          '<strong>身心障礙證明</strong>：2012 年起改 ICF 制（取代舊 16 類），由衛福部主管',
+          '<strong>ICF 鑑定</strong>：8 大身體功能與結構向度評分（b1–b8、s1–s8）',
+          '<strong>等級</strong>：輕度 / 中度 / 重度 / 極重度',
+          '<strong>需求評估</strong>：社政、衛政、教政、勞政四面向同步進行',
+          '<strong>申請流程</strong>：戶政申請 → 醫療院所鑑定 → 區公所核發',
+          '<strong>本病人預計</strong>：CP + 邊緣智能 → 中度身障可能（依綜合評估）',
+          '<strong>重大傷病卡</strong>：CP 不在現行 30 大類重大傷病列表，但 SMA、Down、Fragile X 部分疾病可申請',
+          '<strong>早療補助</strong>：3 歲以下優先（黃金期），交通費、療育費補助',
+          '<strong>0-6 歲早療通報</strong>：通報至各縣市早療中心、有專屬個管員</strong>',
+          '<strong>長照 2.0</strong>：50 歲以上 + 失智、65 歲以上長者、55 歲以上原住民、未滿 65 歲身障；CP 兒童不直接適用，但可申請輔具補助',
+          '<strong>幼兒園特教</strong>：3-6 歲身障兒可申請學前特教資源（融合 / 分散）',
+          '<strong>小學入學鑑定</strong>：縣市鑑輔會評估，依結果安置',
+          '<strong>集中式特教班</strong>：認知障礙較嚴重、需密集特教',
+          '<strong>分散式資源班</strong>：在普通班 + 部分時間資源班加強（本病人最可能適用）',
+          '<strong>巡迴輔導班</strong>：人數少、巡迴老師到校</strong>',
+          '<strong>特教學校</strong>：重度身障、無法在一般學校就讀',
+          '<strong>IEP</strong>：個別化教育計畫，每學期擬定</strong>',
+          '<strong>緩讀</strong>：延緩 1 年入學，需鑑輔會核可，多用於發展明顯落後個案',
+          '<strong>本病人建議</strong>：分散式資源班 + IEP；視成熟度可考慮緩讀 1 年',
+          '<strong>輔具補助</strong>：身障補助、學校資源、健保部分給付（如 AFO）',
+          '<strong>勞動部職重</strong>：成年後職業重建（職評、輔具、就業推介）',
+          '<strong>融合教育原則</strong>：盡量在最少限制環境下教育（LRE）',
+        ],
+        a: `<h4>1. 身心障礙證明（舊稱身障手冊）</h4>
+
+<p><strong>制度沿革：</strong>2012 年 7 月起，台灣身心障礙鑑定改為 <strong>ICF 制度</strong>，取代過去 16 類障別分類。由衛福部主管。</p>
+
+<p><strong>ICF 鑑定 8 大向度：</strong></p>
+<table>
+<tr><th>編號</th><th>身體功能 (b)</th><th>身體結構 (s)</th></tr>
+<tr><td>1</td><td>神經系統</td><td>神經系統構造</td></tr>
+<tr><td>2</td><td>感官（視覺等）</td><td>眼、耳及相關構造</td></tr>
+<tr><td>3</td><td>聲音與言語</td><td>涉及聲音和言語構造</td></tr>
+<tr><td>4</td><td>循環、造血、免疫、呼吸</td><td>循環、免疫、呼吸構造</td></tr>
+<tr><td>5</td><td>消化、代謝、內分泌</td><td>消化、代謝、內分泌構造</td></tr>
+<tr><td>6</td><td>泌尿生殖</td><td>泌尿生殖系統構造</td></tr>
+<tr><td>7</td><td>神經肌肉骨骼及動作</td><td>神經肌肉骨骼及動作構造</td></tr>
+<tr><td>8</td><td>皮膚相關</td><td>皮膚與其相關構造</td></tr>
+</table>
+
+<p><strong>等級分類：</strong>輕度（1）、中度（2）、重度（3）、極重度（4）— 由身體功能評分 + 結構整合評定。</p>
+
+<p><strong>申請流程（4 步驟）：</strong></p>
+<ol>
+<li><strong>戶政事務所</strong>申請（攜身分證、健保卡、相片）</li>
+<li><strong>指定醫療院所鑑定</strong>（醫師 + 鑑定團隊評估，包含 PT/OT/ST/ 心理）</li>
+<li><strong>需求評估</strong>（社政、衛政、教政、勞政四面向，由社政人員到府或約談）</li>
+<li><strong>區公所核發</strong>身心障礙證明（卡片式）</li>
+</ol>
+
+<p><strong>身障福利（依等級）：</strong></p>
+<ul>
+<li>身障補助金（中、低收入加碼）</li>
+<li>健保自付額減免</li>
+<li>所得稅扣除額（每人增加扣除額）</li>
+<li>輔具補助（最重要，含 AFO、輪椅、助行器、站立架）</li>
+<li>交通工具優待（公車、火車）</li>
+<li>停車證</li>
+<li>育兒津貼加碼（身障兒）</li>
+<li>就學減免</li>
+<li>居家服務、日間照顧（部分等級）</li>
+<li>勞動部職業重建（成人）</li>
+</ul>
+
+<p><strong>本病人預計鑑定結果：</strong></p>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+評估：神經肌肉骨骼及動作 (b7) → spastic diplegia 中度；可能合併輕度智能 (b1)。<br><br>
+<strong>預估等級：中度身障（2 級）</strong> → 可申領中度身障證明，享所有相關補助。<br>
+複評：每 5 年複評（兒童成長變化大）。
+</p>
+
+<h4>2. 重大傷病卡</h4>
+
+<p>由健保署核發，<strong>免部分負擔</strong>。<strong>CP 不在重大傷病列表</strong>。</p>
+
+<p><strong>兒童相關疾病可申請者：</strong></p>
+<ul>
+<li>罕見疾病（SMA、Duchenne MD、Pompe disease 等）</li>
+<li>先天代謝異常（PKU、MSUD 等）</li>
+<li>先天性凝血因子異常（haemophilia）</li>
+<li>慢性精神病（含智能障礙合併行為問題嚴重者）</li>
+<li>癌症</li>
+<li>洗腎</li>
+</ul>
+
+<p>本病人 CP <strong>不適用重大傷病卡</strong>，但有身障證明可享醫療優惠。</p>
+
+<h4>3. 早期療育（早療）</h4>
+
+<p><strong>3 歲以下為「黃金期」，補助較優；3-6 歲為「次黃金期」。</strong></p>
+
+<p><strong>0-6 歲發展遲緩兒童早療通報：</strong></p>
+<ul>
+<li>各縣市社會局 / 衛生局 / 醫療院所通報</li>
+<li>由各縣市<strong>早療綜合服務中心</strong>個管員追蹤</li>
+<li>連結醫療、社政、教育資源</li>
+</ul>
+
+<p><strong>補助項目：</strong></p>
+<ul>
+<li><strong>療育費補助</strong>：每月最高 3,000 元（一般戶），低收入戶最高 5,000 元（依縣市）</li>
+<li><strong>交通費補助</strong>：偏遠地區或低收入戶交通補助</li>
+<li><strong>到宅療育服務</strong>：3 歲以下重度個案</li>
+<li>本病人 4Y2M：仍可申請 6 歲以下早療補助（年齡上限）</li>
+</ul>
+
+<h4>4. 長照 2.0</h4>
+
+<p><strong>對象：</strong></p>
+<ul>
+<li>65 歲以上長者</li>
+<li>55 歲以上原住民</li>
+<li>50 歲以上失智症者</li>
+<li><strong>未滿 65 歲身心障礙者（特定情形）</strong></li>
+</ul>
+
+<p><strong>本病人 4Y CP，不直接適用長照</strong>，但可申請：</p>
+<ul>
+<li>身障補助（不同制度）</li>
+<li><strong>輔具補助</strong>（特別 AFO、輪椅、助行器）— 身障與長照都有，二擇一</li>
+<li>無障礙環境改善（家庭）</li>
+<li>復康巴士（戶外交通）</li>
+</ul>
+
+<p><strong>未來成年後（如 GMFCS 嚴重退化）</strong>可考慮申請長照（依失能程度）。</p>
+
+<h4>5. 學前教育（幼兒園）</h4>
+
+<p><strong>3-6 歲身障 / 發展遲緩兒：</strong></p>
+<ul>
+<li><strong>普通幼兒園 + 巡迴輔導</strong>：本病人現況</li>
+<li><strong>特殊幼兒園 / 特教班</strong>：嚴重個案</li>
+<li><strong>融合教育</strong>：與一般兒童共學</li>
+<li>免學費（教育部補助）</li>
+</ul>
+
+<h4>6. 小學入學鑑定（縣市鑑輔會）</h4>
+
+<p><strong>鑑輔會：</strong>各縣市<strong>「特殊教育學生鑑定及就學輔導會」</strong>，由教育局主辦。</p>
+
+<p><strong>鑑定流程：</strong></p>
+<ol>
+<li><strong>家長申請</strong>（建議入學前一年起）</li>
+<li><strong>提供資料</strong>：身障證明、醫療診斷、發展評估報告（PT/OT/ST/心理）、幼兒園觀察紀錄</li>
+<li><strong>鑑輔會綜合研判</strong>：醫師、特教老師、心理師、社工、家長共同會議</li>
+<li><strong>安置決定</strong></li>
+<li><strong>每學期 IEP 個別化教育計畫</strong>制定與檢討</li>
+</ol>
+
+<h4>7. 入學安置選項（從融合到隔離）</h4>
+
+<table>
+<tr><th>安置方式</th><th>適用</th><th>本病人適用度</th></tr>
+<tr><td><strong>普通班 + 普通教育</strong></td><td>輕度個案、認知正常</td><td>不適用（功能仍需特教）</td></tr>
+<tr><td><strong>普通班 + 巡迴輔導</strong></td><td>中、輕度個案、特殊老師到校</td><td>可考慮</td></tr>
+<tr><td><strong>分散式資源班</strong></td><td>中度個案，主在普通班 + 部分時段資源班加強</td><td><strong>★ 最適合（本病人主推）</strong></td></tr>
+<tr><td><strong>集中式特教班</strong></td><td>多數時間在特教班，認知中重度障礙</td><td>不適用</td></tr>
+<tr><td><strong>特殊教育學校</strong></td><td>重度多重障礙、需專業環境</td><td>不適用</td></tr>
+<tr><td><strong>在家教育</strong></td><td>無法到校的極重度個案</td><td>不適用</td></tr>
+</table>
+
+<p><strong>融合教育（Inclusion）原則：</strong></p>
+<ul>
+<li><strong>LRE (Least Restrictive Environment)</strong>：最少限制環境</li>
+<li>盡量讓身障兒與一般兒童共學</li>
+<li>普通班 + 資源班是台灣主流</li>
+<li>本病人認知接近正常、社交良好 → 強烈建議融合</li>
+</ul>
+
+<h4>8. IEP（個別化教育計畫）</h4>
+
+<p><strong>內容：</strong></p>
+<ul>
+<li>學生現況描述</li>
+<li>學年 / 學期目標</li>
+<li>學習評量方式調整</li>
+<li>相關專業服務（PT、OT、ST 在學校提供）</li>
+<li>無障礙環境需求</li>
+<li>輔具需求</li>
+<li>家長同意 + 簽名</li>
+</ul>
+
+<p><strong>頻率：</strong>每學期擬定一次、每學期末檢討。</p>
+
+<h4>9. 緩讀（延緩 1 年入學）</h4>
+
+<p><strong>定義：</strong>原應就讀小一的兒童，因發展未成熟，延緩 1 年入學。</p>
+
+<p><strong>申請條件：</strong></p>
+<ul>
+<li>身心發展明顯落後同齡</li>
+<li>家長申請 + 鑑輔會核可</li>
+<li>需 6 歲生日當年提出</li>
+<li>緩讀期間仍可在幼兒園或在家教育</li>
+</ul>
+
+<p><strong>本病人考量：</strong></p>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+本病人 4Y2M，距離小學入學還有約 2 年（6 歲入學）。是否緩讀，需評估 6 歲時：<br>
+<ul>
+<li>動作功能：能否自理上廁所、穿脫衣（影響獨立校園生活）</li>
+<li>認知：能否跟上學科進度</li>
+<li>注意力與行為適應</li>
+<li>家庭資源</li>
+</ul>
+<strong>初步建議</strong>：4Y 時尚難判斷，但目前 IQ 82、社交良好，<strong>較可能正常入學讀分散式資源班</strong>，僅在 6 歲時若仍明顯落後（特別動作能力）才考慮緩讀。
+</p>
+
+<h4>10. 提早入學（gifted track）</h4>
+
+<p>不適用本病人，僅供參考：早慧、智能優異兒童可申請提早 1 年入學。</p>
+
+<h4>11. 輔具補助管道整合</h4>
+
+<table>
+<tr><th>管道</th><th>內容</th><th>本病人適用</th></tr>
+<tr><td><strong>身障補助</strong></td><td>AFO、輪椅、助行器、站立架</td><td>★ 主要管道</td></tr>
+<tr><td><strong>長照 2.0 輔具</strong></td><td>同上，但身障 / 長照二擇一</td><td>不直接適用（兒童）</td></tr>
+<tr><td><strong>健保</strong></td><td>部分給付（醫療輔具如電動輪椅）</td><td>—</td></tr>
+<tr><td><strong>特教資源</strong></td><td>學校提供溝通輔具、學習輔具</td><td>★ 入學後可申請</td></tr>
+<tr><td><strong>社區資源</strong></td><td>輔具中心借用</td><td>—</td></tr>
+</table>
+
+<h4>12. 成年後資源（先衛教家長）</h4>
+
+<ul>
+<li><strong>勞動部職業重建</strong>：職業評估、職業訓練、就業推介、支持性就業</li>
+<li><strong>身障就業</strong>：庇護工場、社區整合方案</li>
+<li><strong>無障礙就業</strong>：政府機關 / 大企業有定額僱用</li>
+<li><strong>監護宣告</strong>：若成年後認知無法自主決定，需法律監護</li>
+</ul>
+
+<h4>本病人完整社福資源建議清單</h4>
+
+<table>
+<tr><th>項目</th><th>建議</th><th>時程</th></tr>
+<tr><td>身心障礙證明申請</td><td>立即（戶政 → 醫療鑑定 → 區公所）</td><td>1–2 個月</td></tr>
+<tr><td>早療補助</td><td>立即（透過早療中心個管員）</td><td>—</td></tr>
+<tr><td>輔具補助（AFO、posterior walker、standing frame）</td><td>身障證明核發後申請</td><td>—</td></tr>
+<tr><td>幼兒園巡迴輔導 / 學前特教</td><td>已入幼兒園，加強特教資源</td><td>立即</td></tr>
+<tr><td>小學鑑輔會申請</td><td>5Y6M（入學前 6 個月）</td><td>2 年後</td></tr>
+<tr><td>緩讀評估</td><td>6Y 時若仍明顯落後</td><td>2 年後</td></tr>
+<tr><td>分散式資源班 + IEP</td><td>入學時主推</td><td>2 年後</td></tr>
+<tr><td>長期：青少年期 transition care、成年後職重</td><td>—</td><td>長期</td></tr>
+</table>
+
+<h4>跟家長的溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「政府對 CP 兒童有不少資源。第一步是申請<strong>身心障礙證明</strong>，從現在開始準備，大概 1–2 個月可以拿到。拿到之後可以申請輔具補助、健保優惠、相關津貼，將來入學也是必要文件。<br><br>
+您的孩子<strong>不在重大傷病卡的範圍</strong>，那是給某些特定罕病用的，但有身障證明就足夠涵蓋多數需求。<br><br>
+早療補助每個月可以申請最高 3,000 元（特殊家庭可能更多），交通費也有補助，記得跟早療中心個管員聯絡。<br><br>
+關於小學，現在 4 歲，等他 5 歲半時我們會幫他做更完整的入學前評估，由<strong>縣市鑑輔會</strong>決定安置。我預估他可以走『<strong>分散式資源班</strong>』，意思是他大部分時間和一般同學一起上課，但每週有幾節課由特教老師個別加強，這對他最好，<strong>既能融入又有專業協助</strong>。<br><br>
+是否需要『緩讀』，我們等到他 6 歲時再決定，看他那時的成熟度，現在不用焦慮。<br><br>
+最後，我想跟您說：CP 雖然是終身的診斷，但不代表終身受限。台灣有完整的早療體系、教育系統、就業支持，他將來可以上一般小學、中學，甚至大學，從事適合的工作，建立自己的生活。<strong>我們會陪你們走完整段路</strong>。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>身障證明：2012 改 ICF 制（取代 16 類）；4 個等級；流程：戶政 → 醫療 → 區公所</li>
+<li>需求評估：社政、衛政、教政、勞政四面向</li>
+<li>CP 不在重大傷病卡列表，但 SMA、罕病可申請</li>
+<li>早療：3 歲以下黃金期、最高每月 3,000–5,000 元補助</li>
+<li>長照 2.0：CP 兒童（&lt; 65Y 且非特定情形）不直接適用</li>
+<li>入學鑑定：縣市鑑輔會主辦</li>
+<li>安置選項：普通班 → 巡迴輔導 → 分散式資源班 → 集中式特教班 → 特教學校 → 在家教育</li>
+<li>融合教育原則 LRE（最少限制環境）</li>
+<li>IEP 每學期擬定 + 檢討</li>
+<li>緩讀：發展明顯落後 + 鑑輔會核可</li>
+<li>本病人預估：分散式資源班 + IEP（融合為主）</li>
+<li>輔具補助：身障補助為主（兒童不適用長照）</li>
+<li>成年後：勞動部職業重建</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
@@ -18993,6 +21062,12 @@ function CaseIntro({ caseData, onReady, onHome }) {
         </div>
       </div>
       <div className="case-body">{caseData.context}</div>
+      {caseData.contextPage2 && (
+        <div className="page-locked">
+          <span className="lock-icon">⚿</span>
+          第二頁將在第 {caseData.page2UnlockAt || 5} 題解鎖
+        </div>
+      )}
       <button className="start-btn" onClick={onReady}>
         準備好了，開始作答 →
       </button>
@@ -19010,6 +21085,8 @@ function CaseRunner({ caseData, onCaseEnd, onHome }) {
   const [showEndConfirm, setShowEndConfirm] = useState(false);
   const [showContext, setShowContext] = useState(false);
   const [showHomeConfirm, setShowHomeConfirm] = useState(false);
+  const [showPage2Reveal, setShowPage2Reveal] = useState(false);
+  const [modalPageTab, setModalPageTab] = useState(2); // 2 = page2 (default after unlock), 1 = page1
   // qTimings[i] = { seconds: 累計秒數, timeout: bool, visited: bool }
   const [qTimings, setQTimings] = useState({});
   const totalQ = caseData.questions.length;
@@ -19085,11 +21162,27 @@ function CaseRunner({ caseData, onCaseEnd, onHome }) {
 
   const handleNextQ = () => {
     if (qIdx + 1 < totalQ) {
+      // 第二頁解鎖時機：即將從 Q(unlock-1) 跳到 Q(unlock)
+      const unlockAt = caseData.page2UnlockAt || 5;
+      if (caseData.contextPage2 && qIdx + 1 === unlockAt - 1 + 1 && qIdx + 1 < unlockAt) {
+        // 條件不會觸發，留作備用
+      }
+      // 正確判斷：當前是 Q(unlock-1)（即 qIdx === unlock - 2，因 0-indexed），按下一題會到 Q(unlock)
+      if (caseData.contextPage2 && qIdx === unlockAt - 2 && !showPage2Reveal) {
+        setShowPage2Reveal(true);
+        return; // 不立刻推進，等使用者按 reveal 卡片的按鈕
+      }
       accumulateCurrentQTime();
       setQIdx(qIdx + 1);
     } else {
       setShowEndConfirm(true);
     }
+  };
+
+  const handleRevealConfirm = () => {
+    setShowPage2Reveal(false);
+    accumulateCurrentQTime();
+    setQIdx(qIdx + 1);
   };
 
   const handlePrevQ = () => {
@@ -19181,10 +21274,69 @@ function CaseRunner({ caseData, onCaseEnd, onHome }) {
                 關閉 ESC
               </button>
             </div>
-            <div className="ctx-modal-body">{caseData.context}</div>
+            <div className="ctx-modal-body">
+              {(() => {
+                const unlockAt = caseData.page2UnlockAt || 5;
+                const page2Unlocked = caseData.contextPage2 && qIdx + 1 >= unlockAt;
+                const beforeUnlock = caseData.contextPage2 && qIdx + 1 < unlockAt;
+
+                if (page2Unlocked) {
+                  // Q5+ 顯示 tab 切換
+                  return (
+                    <>
+                      <div className="ctx-modal-tabs">
+                        <button
+                          className={`ctx-modal-tab ${modalPageTab === 2 ? 'active' : ''}`}
+                          onClick={() => setModalPageTab(2)}
+                        >
+                          ⚿ 第二頁 · 追加資訊
+                        </button>
+                        <button
+                          className={`ctx-modal-tab ${modalPageTab === 1 ? 'active' : ''}`}
+                          onClick={() => setModalPageTab(1)}
+                        >
+                          📋 第一頁 · 主訴病史
+                        </button>
+                      </div>
+                      <div style={{whiteSpace:'pre-wrap'}}>
+                        {modalPageTab === 2 ? caseData.contextPage2 : caseData.context}
+                      </div>
+                    </>
+                  );
+                } else if (beforeUnlock) {
+                  // Q1-Q4：顯示 page1 + 鎖定提示
+                  return (
+                    <>
+                      {caseData.context}
+                      <div className="page-locked">
+                        <span className="lock-icon">⚿</span>
+                        第二頁將在第 {unlockAt} 題解鎖
+                      </div>
+                    </>
+                  );
+                } else {
+                  // 沒有 page2 的 case（cardio 等）
+                  return caseData.context;
+                }
+              })()}
+            </div>
             <div className="ctx-modal-footer">
               快捷鍵 <kbd>H</kbd> 或 <kbd>SPACE</kbd> 開關 · 計時器持續進行
             </div>
+          </div>
+        </div>
+      )}
+
+      {showPage2Reveal && caseData.contextPage2 && (
+        <div className="reveal-overlay">
+          <div className="reveal-card">
+            <div className="reveal-eyebrow">⟶ 第二頁解鎖</div>
+            <div className="reveal-title">追加資訊</div>
+            <div className="reveal-subtitle">考官翻面 · 進入第 {caseData.page2UnlockAt || 5} 題前請仔細閱讀</div>
+            <div className="reveal-content">{caseData.contextPage2}</div>
+            <button className="reveal-btn" onClick={handleRevealConfirm}>
+              進入第 {caseData.page2UnlockAt || 5} 題 →
+            </button>
           </div>
         </div>
       )}
@@ -19278,6 +21430,12 @@ function Results({ activeCase, caseTiming, onRestart }) {
           {domain && <div className="case-domain-tag">{domain.tc}</div>}
         </div>
         <div className="case-context">{activeCase.context}</div>
+        {activeCase.contextPage2 && (
+          <>
+            <div className="page-divider">第二頁 · 追加資訊</div>
+            <div className="case-context-page2">{activeCase.contextPage2}</div>
+          </>
+        )}
         {activeCase.questions.map((qa, qi) => (
           <QABlockWrapper
             key={`${qi}-${bulkKey}`}
