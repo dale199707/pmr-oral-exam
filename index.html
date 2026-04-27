@@ -31108,6 +31108,1935 @@ Brain MRI + MRA：basilar artery thrombosis、bilateral pontine + midbrain infar
       },
     ],
   },
+  {
+    id: 'sci_008',
+    domain: 'sci',
+    title: 'NMOSD（視神經脊髓炎譜系疾病）— 32F 急性 LETM、AIS C',
+    context: `32 歲女性護理師（外科病房 8 年）、未婚但交往中、健康無慢病。3 天前突然雙下肢麻木上升至胸口、無力快速進展、排尿困難。
+
+【ER 來時】
+- BP 130/80、T 37.4、HR 88、afebrile spike
+- 上肢正常；顱神經正常
+- 下肢 motor 對稱（iliopsoas 3/5、quad 2/5、TA 1/5、EHL 0/5、GS 1/5）
+- <strong>T4 sensory level</strong>（pinprick + temperature 失、light touch 部分保留 — dissociated）
+- DTR knee + ankle hyperreflexic 3+、<strong>Babinski 雙側 +、ankle clonus +</strong>（UMN signs）
+- BCR / anal tone / VAC 部分 preserved
+- PVR by echo 420 ml
+- <strong>AIS C、NLI T4</strong>
+- 視力：自訴「兩週前 right eye 視野有點模糊、3 天自行緩解、未就醫」
+
+【Lab】
+- CBC normal、ESR 28、CRP 12、glucose 95、Cr 0.8、Na 138、Ca 9.6
+- LFT normal、albumin 4.0
+- ANA、HIV、VDRL、TSH pending
+
+【MRI 全脊椎 + 腦（emergency）】
+- <strong>T2-T6 longitudinal cord T2 hyperintensity（≥ 3 vertebral segments — LETM）</strong>
+- Cord swelling、partial gadolinium enhancement、central cord involvement
+- <strong>右視神經 subtle enhancement</strong>（提示 prior optic neuritis subclinical）
+- 腦實質：no demyelinating plaques、no T2 hyperintense lesions
+
+【CSF（lumbar puncture done）】
+- Opening pressure normal
+- WBC 80（lymphocyte 主、neutrophils minor）
+- Protein 75（mild ↑）
+- Glucose normal
+- <strong>Oligoclonal bands negative</strong>
+- IgG index normal
+
+【家庭 / 社會】
+- 未婚、男友（35 歲工程師）交往 2 年、計畫年內結婚
+- 父母 60 多歲健康、獨生女、住台中
+- 病人住台北、護理師工作 8 年（外科病房 day shift）
+- 健保規律、有公司團保
+- 計畫 2-3 年內生子`,
+    questions: [
+      {
+        q: '急性脊髓無力 + T4 sensory level — 你怎麼系統性鑑別？',
+        keywords: [
+          'Acute myelopathy DDx framework',
+          'Compressive vs non-compressive',
+          'Vascular: spinal cord infarct',
+          'Inflammatory / demyelinating: MS, NMOSD, MOG-AD, ADEM',
+          'Infectious: HSV, VZV, TB, syphilis, HIV',
+          'Autoimmune: SLE, Sjögren, sarcoidosis, Behçet',
+          'Metabolic: B12, copper deficiency',
+          'Neoplastic: epidural mets, intramedullary tumor, paraneoplastic',
+          'Time course (acute < 2 wks vs subacute vs chronic)',
+          'Compressive 排除是 first priority',
+          'CSF analysis',
+          'MRI 全脊椎 + 腦 with contrast',
+          'Antibody workup (AQP4, MOG, NMDA)',
+          'EMG/NCV',
+          'Tissue biopsy if needed',
+        ],
+        points: [
+          '<strong>第一個 priority：排除 compressive cause（surgical emergency）</strong> — 本案 MRI 已排除（無 epidural mass / 無 disc herniation / 無 abscess / 無 tumor）',
+          '<strong>排除 compressive 後 → non-compressive 鑑別 framework（必背）</strong>',
+          '<strong>1. Vascular</strong>：spinal cord infarct（anterior spinal artery syndrome）— 突發、minutes-hours、anterior 2/3 cord、preserved dorsal column；risk factors：atherosclerosis、aortic surgery、hypotension；本案<strong>不太像</strong>（onset 3 天 progressive 不是突發、無 risk factors、bilateral symmetric 但有 dorsal column dissociated 變化）',
+          '<strong>2. Inflammatory / Demyelinating（本案最 likely）</strong>',
+          '<strong>(a) NMOSD</strong>：LETM ≥ 3 segments、optic neuritis（本案有 prior subclinical episode）、AQP4-IgG 陽性',
+          '<strong>(b) MS</strong>：multiple lesions（brain + cord）、shorter cord lesions（&lt; 2 segments）、oligoclonal bands +、McDonald criteria',
+          '<strong>(c) MOG-AD</strong>：similar NMOSD presentation、MOG-IgG +、younger 病人多',
+          '<strong>(d) ADEM</strong>：post-infectious / post-vaccine、multifocal、children + young adults、monophasic',
+          '<strong>(e) Idiopathic transverse myelitis</strong>：diagnosis of exclusion',
+          '<strong>3. Infectious</strong>：viral myelitis（HSV、VZV、CMV、enterovirus）、bacterial（TB、syphilis、Lyme）、fungal、parasitic（schistosoma）',
+          '<strong>4. Autoimmune（systemic disease）</strong>：SLE、Sjögren、sarcoidosis、Behçet、antiphospholipid',
+          '<strong>5. Metabolic / Toxic</strong>：B12 deficiency（subacute combined degeneration）、copper deficiency、nitrous oxide abuse、heroin myelopathy',
+          '<strong>6. Neoplastic</strong>：intramedullary tumor（astrocytoma、ependymoma）、paraneoplastic（CRMP-5、anti-Hu）— 多 subacute',
+          '<strong>7. Radiation myelopathy（如 RT history）— 本案無</strong>',
+          '<strong>8. Genetic / Hereditary</strong>：less likely acute presentation',
+          '<strong>本案 features 偏向 NMOSD</strong>：female 32 歲、acute attack、LETM ≥ 3 segments（T2-T6）、cord swelling + enhancement、AIS C、prior optic neuritis subclinical episode、CSF lymphocytic pleocytosis + oligoclonal bands negative（important！MS 多 +）',
+          '<strong>Workup 系統性</strong>',
+          '<strong>1. Imaging（已 done）</strong>：MRI 全脊椎 + 腦 with + without contrast — 排除 compressive + characterize lesion + 評估 brain involvement',
+          '<strong>2. CSF（已 done）</strong>：cells + protein + glucose + oligoclonal bands + IgG index + cytology + culture（如 infectious 懷疑）',
+          '<strong>3. Antibody workup（核心）</strong>',
+          '<strong>AQP4-IgG（aquaporin-4）</strong>：NMOSD diagnostic; sensitivity 70-80%, specificity &gt; 99%',
+          '<strong>MOG-IgG</strong>：MOG-associated disease; AQP4 negative + clinical NMOSD-like',
+          'NMDA-R antibody（autoimmune encephalitis spectrum）',
+          'Anti-Hu / Yo / Ri / CRMP-5（paraneoplastic）',
+          '<strong>4. Systemic autoimmune workup</strong>：ANA、anti-dsDNA、anti-Ro/La、ACE（sarcoidosis）、antiphospholipid antibodies',
+          '<strong>5. Infectious workup</strong>：HIV、VDRL/RPR、TB（quantiferon）、Lyme（如 endemic）、HSV/VZV PCR（CSF）',
+          '<strong>6. Metabolic</strong>：B12、folate、copper、TSH、homocysteine、methylmalonic acid',
+          '<strong>7. EMG/NCV</strong>：rule out peripheral neuropathy contribution；timing important（&gt; 2 weeks for findings）',
+          '<strong>8. Visual evaluation</strong>：本案 prior visual blurring → ophthalmology + visual evoked potentials（VEP）+ optical coherence tomography（OCT）— retinal nerve fiber layer thinning suggests prior subclinical optic neuritis',
+        ],
+        a: `<h4>口試答題框架（急性 myelopathy 必有系統 framework）</h4>
+<p>急性脊髓 deficit — 第一原則：<strong>compressive 排除優先</strong>（surgical emergency）；之後 systematic non-compressive 鑑別。標準展開：</p>
+<ol>
+<li><strong>Compressive 排除</strong></li>
+<li><strong>Non-compressive 8 大 category</strong></li>
+<li><strong>本案 features 指向哪個 category</strong></li>
+<li><strong>Workup（imaging + CSF + antibody + 其他）</strong></li>
+<li><strong>Time course + 性別 + 年齡 considerations</strong></li>
+</ol>
+
+<h4>1. Compressive vs Non-Compressive — 第一切分</h4>
+<table>
+<tr><th>Type</th><th>Causes</th><th>本案</th></tr>
+<tr><td><strong>Compressive（surgical emergency）</strong></td><td>Disc herniation、epidural abscess、epidural hematoma、tumor（mets / primary）、vertebral fracture（trauma / pathological）、cervical spondylotic myelopathy acute decompensation</td><td>★ MRI 已排除（無 mass / disc / abscess / fracture）</td></tr>
+<tr><td>Non-compressive</td><td>Vascular、inflammatory、infectious、autoimmune、metabolic、neoplastic（intramedullary）、radiation</td><td>★ 本案 → 進一步 work up</td></tr>
+</table>
+
+<h4>2. Non-Compressive 8 大 Category（必背）</h4>
+<table>
+<tr><th>Category</th><th>Examples</th><th>本案 likelihood</th></tr>
+<tr><td><strong>1. Vascular</strong></td><td>Spinal cord infarct（ASA syndrome）— 突發 minutes-hours、anterior 2/3 cord、preserved dorsal column；risk：atherosclerosis、aortic surgery、hypotension</td><td>★ Low（onset 3 天 progressive 非 sudden、無 risk factors）</td></tr>
+<tr><td><strong>2. Inflammatory / Demyelinating</strong></td><td>NMOSD、MS、MOG-AD、ADEM、idiopathic transverse myelitis</td><td>★★★★★ 最高（女性 + acute + LETM + prior optic episode）</td></tr>
+<tr><td><strong>3. Infectious</strong></td><td>HSV、VZV、CMV、TB、syphilis、HIV、Lyme</td><td>★★ 須排除（HIV、VDRL pending；CSF 不像 viral）</td></tr>
+<tr><td><strong>4. Autoimmune（systemic）</strong></td><td>SLE、Sjögren、sarcoidosis、Behçet、antiphospholipid</td><td>★★ 須 work up（ANA pending）</td></tr>
+<tr><td><strong>5. Metabolic / Toxic</strong></td><td>B12、copper、nitrous oxide、heroin</td><td>★ Low（年輕健康、無 abuse history）但 B12 仍應查</td></tr>
+<tr><td><strong>6. Neoplastic</strong></td><td>Intramedullary tumor、paraneoplastic</td><td>★ Low（acute onset 不典型；但 MRI cord swelling 須看 enhancement pattern）</td></tr>
+<tr><td><strong>7. Radiation</strong></td><td>RT history</td><td>無</td></tr>
+<tr><td><strong>8. Genetic / Hereditary</strong></td><td>HSP（hereditary spastic paraplegia）— 多 chronic</td><td>無</td></tr>
+</table>
+
+<h4>3. 本案 Features 高度指向 NMOSD</h4>
+<ul>
+<li>Female 32 歲（NMOSD 9:1 female、median 30s-40s）</li>
+<li>Acute onset 3 天 progressive（typical inflammatory）</li>
+<li><strong>LETM ≥ 3 segments（T2-T6）</strong>（NMOSD hallmark；MS 多 &lt; 2 segments）</li>
+<li>Cord swelling + central cord involvement + enhancement</li>
+<li>AIS C with UMN signs</li>
+<li><strong>Prior optic neuritis subclinical episode</strong>（NMOSD 經典 — optic + spinal cord 雙重 involvement）</li>
+<li><strong>CSF：lymphocytic pleocytosis + protein ↑ + oligoclonal bands NEGATIVE + IgG index normal</strong>（重要 — MS 多 OB +、IgG index ↑）</li>
+<li>Brain：no demyelinating plaques（本案 → 支持 NMOSD vs MS）</li>
+<li>Right optic nerve subtle enhancement（subclinical optic neuritis evidence）</li>
+</ul>
+
+<h4>4. Workup 系統性（已啟動）</h4>
+<table>
+<tr><th>Test</th><th>Status</th><th>關鍵</th></tr>
+<tr><td>MRI 全脊椎 + 腦 + contrast</td><td>★ Done</td><td>LETM + optic + brain — typical NMOSD pattern</td></tr>
+<tr><td>CSF</td><td>★ Done</td><td>Lymphocytic + OB negative — 支持 NMOSD vs MS</td></tr>
+<tr><td><strong>AQP4-IgG（serum）</strong></td><td>必排</td><td>★ Diagnostic（70-80% sensitive、&gt; 99% specific）</td></tr>
+<tr><td><strong>MOG-IgG（serum）</strong></td><td>必排</td><td>If AQP4 negative</td></tr>
+<tr><td>ANA + anti-dsDNA + anti-Ro/La + ACE + antiphospholipid</td><td>排</td><td>Systemic autoimmune coexistence</td></tr>
+<tr><td>HIV、VDRL、quantiferon、Lyme</td><td>排</td><td>Infectious mimics</td></tr>
+<tr><td>B12、folate、copper、TSH</td><td>排</td><td>Metabolic mimics</td></tr>
+<tr><td>VEP + OCT（optic nerve）</td><td>★ 安排</td><td>Prior optic neuritis evidence</td></tr>
+<tr><td>EMG/NCV</td><td>2 週後</td><td>排除 peripheral neuropathy contribution</td></tr>
+<tr><td>Paraneoplastic panel（anti-Hu/Yo/Ri/CRMP-5）</td><td>視 atypical features</td><td>—</td></tr>
+</table>
+
+<h4>5. Time Course Considerations</h4>
+<table>
+<tr><th>Time course</th><th>Common etiologies</th></tr>
+<tr><td>Hyperacute（minutes-hours）</td><td>Vascular（infarct、hemorrhage）</td></tr>
+<tr><td><strong>Acute（hours-2 weeks）</strong></td><td>★ Inflammatory、demyelinating（NMOSD、MS、MOG）、infectious、ADEM</td></tr>
+<tr><td>Subacute（2-6 weeks）</td><td>Neoplastic、infectious（TB、fungal）、metabolic（B12）</td></tr>
+<tr><td>Chronic（&gt; 6 weeks）</td><td>Hereditary、metabolic、low-grade neoplastic</td></tr>
+</table>
+<p>本案 acute 3 天 progressive → inflammatory / demyelinating high probability</p>
+
+<h4>跟病人 + 男友溝通（非 detailed diagnosis、focus actionable plan）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您現在<strong>急性脊髓發炎</strong>。MRI 顯示 T2 至 T6 段有大範圍 lesion、cord 腫脹發炎。<br><br>
+<strong>第一個好消息</strong>：MRI 已排除腫瘤、椎間盤突出、膿瘍 — 不需要立即手術。<br><br>
+<strong>第二步</strong>：找出原因。<br>
+最 likely 是<strong>免疫系統攻擊脊髓 + 視神經（NMOSD）</strong> — 您兩週前的視野模糊可能是 first attack。<br>
+但還有其他可能：MS、感染、autoimmune disease。<br>
+我們今天 + 明天會做：<strong>AQP4 抗體（NMOSD 確認）、MOG 抗體、ANA、HIV、B12、視力檢查</strong>。<br><br>
+<strong>第三步</strong>：先治療發炎（即使 cause 還在 confirm）—<strong>明天開始 IV methylprednisolone 1 g × 5 天</strong>（高劑量 steroid）。早期治療結果差很多。<br><br>
+<strong>下一題我會詳細解釋 NMOSD vs MS — 兩者治療不同</strong>。」</p>
+
+<h4>口試考官可能追問</h4>
+<ul>
+<li>「Compressive 你怎麼這麼快排除？」 → MRI 全脊椎 + contrast 是 first-line；本案無 mass、disc、fracture、abscess、hematoma；epidural fat preserved、cord 內 lesion not extrinsic；診斷 clearly non-compressive</li>
+<li>「Spinal cord infarct 怎麼跟 inflammatory 區分？」 → Time course（infarct sudden minutes-hours vs inflammatory 1-7 days progressive）；MRI（infarct anterior 2/3 cord 不超過 1-2 segments + DWI restricted；inflammatory longitudinal extensive + cord swelling + enhancement）；CSF（infarct multiple normal vs inflammatory pleocytosis + protein ↑）</li>
+<li>「LETM definition？為什麼重要？」 → Longitudinally extensive transverse myelitis；cord T2 hyperintense lesion ≥ 3 vertebral segments；NMOSD 經典；MS 多 &lt; 2；幫助 differentiate；但 LETM 也可見於 sarcoidosis、SLE、infection</li>
+<li>「她 prior visual blurring 不算 optic neuritis 吧？」 → 可能是 subclinical / mild ON；right optic nerve enhancement on MRI 是 supporting evidence；OCT 看 retinal nerve fiber layer thinning + VEP 看 latency delay 確認；NMOSD 病人多 retrospective 找到 prior subclinical episode</li>
+<li>「ADEM 怎麼鑑別？」 → ADEM 多 post-infectious / post-vaccine（1-3 週前）+ multifocal CNS（brain + cord）+ encephalopathy + monophasic + 兒童 + young adult；本案 brain normal + 無 encephalopathy + 無 prior infection → 不像 ADEM</li>
+<li>「她 CSF OB negative 重要嗎？」 → 是 — MS 病人 OB + 80-90%；NMOSD 病人 OB + 30%（多 negative）；OB negative + LETM = NMOSD favor</li>
+<li>「Sarcoidosis 也可 LETM 嗎？」 → 是；neurosarcoidosis spinal cord involvement 5-10%；可 LETM；ACE level、chest CT（lung hilar adenopathy）、conjunctival biopsy、Ga scan；本案 ACE pending</li>
+<li>「Paraneoplastic myelitis 多嗎？」 → Rare；anti-CRMP-5、amphiphysin、anti-Hu；多 subacute progression；associated lung（small cell）、breast、thymoma；本案 acute onset + 年輕 + 無 cancer history → low；但 atypical antibodies 仍需 panel</li>
+<li>「她 ANA + 但 SLE workup all negative 怎麼解？」 → ANA 5-10% healthy population +；low titer + isolated + no clinical features = not SLE；continue NMOSD work up；如 high titer + 多項 autoimmune positive → reconsider</li>
+<li>「為什麼 EMG/NCV 不立即做？」 → Peripheral nerve denervation findings 須 wait 2-3 週後 fibrillations + acute denervation 才看得到；本案急性 myelopathy + UMN signs clear → MRI + CSF 主導；EMG/NCV 後期 confirm + rule out peripheral contribution</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>急性 myelopathy 第一 priority：排除 compressive（surgical emergency）— MRI 全脊椎 + contrast first-line</li>
+<li>排除 compressive 後：non-compressive 8 大 category — vascular、inflammatory、infectious、autoimmune、metabolic、neoplastic、radiation、genetic</li>
+<li>本案 features 高度指向 NMOSD：female + acute + LETM ≥ 3 segments + prior optic episode + CSF lymphocytic + OB negative + brain no plaques</li>
+<li>LETM ≥ 3 vertebral segments = NMOSD hallmark；MS 多 &lt; 2 segments</li>
+<li>Workup：MRI 全脊椎 + 腦、CSF、AQP4-IgG（first-line）、MOG-IgG、autoimmune（ANA、ACE）、infectious（HIV、VDRL、TB）、metabolic（B12、copper）、VEP + OCT、EMG/NCV 2-3 週後</li>
+<li>Time course：hyperacute → vascular；acute → inflammatory；subacute → neoplastic / metabolic；chronic → hereditary / metabolic</li>
+<li>Treatment 不等 antibody confirmation — IV methylprednisolone 立即啟動（次題詳）</li>
+</ul>`,
+      },
+      {
+        q: 'MRI 顯示 LETM + 兩週前視野模糊 — 你最想到什麼？怎麼確認？',
+        keywords: [
+          'NMOSD (neuromyelitis optica spectrum disorder)',
+          'AQP4-IgG (water channel autoantibody)',
+          '2015 international NMOSD criteria',
+          'Core clinical characteristics (6 items)',
+          'AQP4-positive vs AQP4-negative NMOSD',
+          'Optic neuritis (acute or subclinical)',
+          'LETM ≥ 3 segments',
+          'Area postrema syndrome',
+          'Acute brainstem syndrome',
+          'Symptomatic narcolepsy / acute diencephalic syndrome',
+          'Symptomatic cerebral syndrome',
+          'Cell-based assay (CBA)',
+          'Indirect immunofluorescence',
+          'OCT (retinal nerve fiber layer thinning)',
+          'VEP (latency delay)',
+        ],
+        points: [
+          '<strong>本案 most likely diagnosis：NMOSD（neuromyelitis optica spectrum disorder）</strong>',
+          '<strong>NMOSD 概念演進</strong>',
+          '舊定義「Devic disease」：optic neuritis + transverse myelitis 雙重 attack',
+          '2015 international consensus NMOSD criteria：擴大 spectrum、加入 AQP4-IgG status',
+          'AQP4-IgG（aquaporin-4 IgG、water channel antibody）— pathognomonic',
+          '<strong>2015 Wingerchuk Criteria — AQP4-Positive NMOSD</strong>',
+          '<strong>1. AQP4-IgG 陽性</strong>',
+          '<strong>2. 至少 1 項 core clinical characteristic</strong>',
+          '<strong>3. 排除 alternative diagnosis</strong>',
+          '<strong>2015 Criteria — AQP4-Negative NMOSD</strong>',
+          '<strong>需要 ≥ 2 core clinical characteristics</strong>',
+          '<strong>其中至少 1 項 = optic neuritis、acute myelitis with LETM、area postrema syndrome</strong>',
+          '<strong>所有 attacks 需要 disseminated in space</strong>',
+          '<strong>MRI requirements 滿足 specific criteria</strong>',
+          '<strong>排除 alternative</strong>',
+          '<strong>6 項 Core Clinical Characteristics（必背）</strong>',
+          '(1) <strong>Optic neuritis</strong>',
+          '(2) <strong>Acute myelitis（多 LETM ≥ 3 segments）</strong>',
+          '(3) <strong>Area postrema syndrome</strong>（intractable hiccups、nausea、vomiting — medullary lesion）',
+          '(4) <strong>Acute brainstem syndrome</strong>（diplopia、INO、cranial nerve palsy）',
+          '(5) <strong>Symptomatic narcolepsy / acute diencephalic syndrome</strong>（hypothalamic lesion）',
+          '(6) <strong>Symptomatic cerebral syndrome with NMOSD-typical brain lesions</strong>',
+          '<strong>本案符合 attacks</strong>',
+          '(a) Acute myelitis with LETM（T2-T6）— ✓',
+          '(b) Optic neuritis（right eye 兩週前 visual blurring + MRI right optic nerve enhancement）— ✓',
+          '<strong>2 attacks dissemination in space ✓ + LETM 是 specific characteristic ✓</strong>',
+          '<strong>AQP4-IgG 確認 — 即使 negative 也 satisfy criteria（multiple core attacks）</strong>',
+          '<strong>AQP4-IgG Testing</strong>',
+          '<strong>Cell-based assay（CBA）— gold standard</strong>',
+          'Sensitivity 70-80%、specificity &gt; 99%',
+          'Indirect immunofluorescence — older method、less sensitive',
+          'ELISA — false positives、less reliable',
+          'Test serum（CSF less reliable）',
+          'False negatives possible（10-30%）→ if clinically suspect、repeat 後續或 send to specialist lab',
+          '<strong>MOG-IgG（如 AQP4 negative）</strong>',
+          'AQP4-negative NMOSD 中 ~ 40% 是 MOG-IgG +',
+          'MOG-AD 是 separate disease entity（2018 criteria）',
+          'Younger patients、children prevalent',
+          'ON 多 bilateral + recurrent；myelitis 短一些',
+          '<strong>Visual evaluation</strong>',
+          '<strong>Ophthalmology referral</strong>：fundoscopy、visual acuity、color vision、visual fields',
+          '<strong>Optical coherence tomography（OCT）</strong>：retinal nerve fiber layer thinning（prior optic neuritis evidence）',
+          '<strong>Visual evoked potentials（VEP）</strong>：latency delay supports demyelination',
+          '<strong>本案：right eye 視野模糊 + MRI right optic nerve enhancement → 強力 supporting evidence</strong>',
+          '<strong>NMOSD vs MS 關鍵區分（必背、本案 critical）</strong>',
+          '(1) AQP4-IgG +（NMOSD）vs +/-（MS multifocal CNS）',
+          '(2) LETM ≥ 3 segments（NMOSD）vs &lt; 2 segments（MS）',
+          '(3) Severe attack（AIS C-D）（NMOSD）vs milder（MS）',
+          '(4) Optic neuritis severe + bilateral / sequential（NMOSD）vs unilateral mild（MS）',
+          '(5) Area postrema involvement（NMOSD）vs not（MS）',
+          '(6) CSF：NMOSD 多 OB negative、neutrophils common、protein ↑↑；MS OB +、lymphocytes、protein normal',
+          '(7) Brain MRI：NMOSD typical lesions（hypothalamus、area postrema、3rd/4th ventricles）；MS periventricular、juxtacortical、infratentorial、spinal',
+          '(8) Treatment：immunosuppression（NMOSD — rituximab、eculizumab、satralizumab、inebilizumab）vs MS-specific（interferon、glatiramer、ocrelizumab、cladribine）— <strong>MS 部分藥物可<u>惡化</u> NMOSD（interferon、natalizumab、fingolimod）— 重要！</strong>',
+          '<strong>Workup confirmation summary</strong>',
+          'AQP4-IgG（first-line confirmatory）',
+          'MOG-IgG（如 AQP4 negative）',
+          'OCT + VEP（subclinical optic neuritis evidence）',
+          'Brain MRI（NMOSD-typical lesions if any）',
+          'CSF（已 done — supportive pattern）',
+          '排除 alternative（autoimmune、infection、metabolic）',
+        ],
+        a: `<h4>口試答題框架（NMOSD 確認 — 必懂 2015 criteria）</h4>
+<p>LETM + 視神經事件 = NMOSD until proven otherwise。標準展開：</p>
+<ol>
+<li><strong>NMOSD 概念演進（Devic → spectrum）</strong></li>
+<li><strong>2015 Wingerchuk criteria</strong>（AQP4-positive vs negative）</li>
+<li><strong>6 項 core clinical characteristics</strong></li>
+<li><strong>本案符合 criteria 多少</strong></li>
+<li><strong>AQP4-IgG testing</strong>（CBA gold standard）</li>
+<li><strong>MOG-IgG（如 AQP4 negative）</strong></li>
+<li><strong>Visual workup（OCT、VEP）</strong></li>
+<li><strong>NMOSD vs MS 關鍵區分</strong></li>
+</ol>
+
+<h4>1. NMOSD 概念演進</h4>
+<table>
+<tr><th>Era</th><th>Definition</th></tr>
+<tr><td>Pre-2004</td><td>Devic disease — ON + transverse myelitis 雙重 attack</td></tr>
+<tr><td>2004</td><td>AQP4-IgG 發現 — disease distinct from MS</td></tr>
+<tr><td>2006</td><td>Wingerchuk criteria — narrow definition</td></tr>
+<tr><td><strong>2015</strong></td><td><strong>NMOSD spectrum disorder + AQP4-IgG status</strong>（current standard）</td></tr>
+<tr><td>2018</td><td>MOG-AD 分為 separate entity</td></tr>
+</table>
+
+<h4>2. 2015 Wingerchuk Criteria</h4>
+
+<p><strong>AQP4-Positive NMOSD（簡單）</strong></p>
+<ol>
+<li>AQP4-IgG 陽性</li>
+<li>至少 1 項 core clinical characteristic</li>
+<li>排除 alternative diagnosis</li>
+</ol>
+
+<p><strong>AQP4-Negative NMOSD（嚴格）</strong></p>
+<ol>
+<li>≥ 2 core clinical characteristics</li>
+<li>其中 ≥ 1 項 = ON、acute myelitis with LETM、或 area postrema syndrome</li>
+<li>所有 attacks dissemination in space</li>
+<li>MRI 符合 specific criteria（NMOSD-typical lesions）</li>
+<li>排除 alternative diagnosis</li>
+</ol>
+
+<h4>3. 6 項 Core Clinical Characteristics（必背）</h4>
+<table>
+<tr><th>Characteristic</th><th>本案</th></tr>
+<tr><td><strong>1. Optic neuritis（acute or 過去 subclinical）</strong></td><td>★ 兩週前 right visual blurring + MRI optic enhancement</td></tr>
+<tr><td><strong>2. Acute myelitis（多 LETM ≥ 3 segments）</strong></td><td>★ 本案 T2-T6 LETM</td></tr>
+<tr><td><strong>3. Area postrema syndrome</strong>（intractable hiccups / nausea / vomiting — medullary lesion）</td><td>無</td></tr>
+<tr><td><strong>4. Acute brainstem syndrome</strong>（diplopia、INO、cranial nerve palsy）</td><td>無</td></tr>
+<tr><td><strong>5. Symptomatic narcolepsy / acute diencephalic syndrome</strong>（hypothalamic）</td><td>無</td></tr>
+<tr><td><strong>6. Symptomatic cerebral syndrome with NMOSD-typical brain lesions</strong></td><td>無</td></tr>
+</table>
+
+<p><strong>本案：2 attacks ✓ + LETM ✓ + dissemination in space（spine + optic）✓ → 即使 AQP4 negative 也 likely 滿足 criteria</strong></p>
+
+<h4>4. AQP4-IgG Testing</h4>
+<table>
+<tr><th>Method</th><th>說明</th></tr>
+<tr><td><strong>Cell-based assay（CBA）— gold standard</strong></td><td>★ Sensitivity 70-80%、specificity &gt; 99%；HEK293 cells expressing AQP4 + patient serum</td></tr>
+<tr><td>Indirect immunofluorescence</td><td>Older method；less sensitive；多被 CBA 取代</td></tr>
+<tr><td>ELISA</td><td>False positives；less reliable；不 first choice</td></tr>
+<tr><td>Test serum vs CSF</td><td>Serum higher sensitivity；CSF 補充 only</td></tr>
+<tr><td>False negatives</td><td>10-30%（多 immunosuppression、samples timing、low titer）；如 clinical suspect → repeat / specialist lab</td></tr>
+<tr><td>本案</td><td>★ Send serum CBA AQP4-IgG（核心 test）</td></tr>
+</table>
+
+<h4>5. MOG-IgG（如 AQP4 Negative）</h4>
+<table>
+<tr><th>項目</th><th>NMOSD（AQP4+）</th><th>MOG-AD</th></tr>
+<tr><td>Demographics</td><td>Female 9:1、median 30s-40s</td><td>Younger（children + young adults）、less female predominance</td></tr>
+<tr><td>Optic neuritis</td><td>Severe、bilateral / sequential</td><td>Bilateral common、recurrent、可能 better recovery</td></tr>
+<tr><td>Myelitis</td><td>LETM common</td><td>Shorter cord lesions（&lt; 2 segments common）</td></tr>
+<tr><td>Brain</td><td>Hypothalamus、area postrema、3rd ventricle</td><td>Multifocal、ADEM-like in children</td></tr>
+<tr><td>Course</td><td>Multiphasic（85%）、relapsing</td><td>Monophasic（45%）or relapsing（55%）</td></tr>
+<tr><td>Treatment</td><td>Long-term immunosuppression</td><td>Similar but possibly less aggressive</td></tr>
+<tr><td>Pediatric</td><td>Less common</td><td>Common</td></tr>
+</table>
+
+<h4>6. Visual Workup</h4>
+<table>
+<tr><th>Test</th><th>本案 expected findings</th></tr>
+<tr><td>Fundoscopy</td><td>Optic disc pallor（chronic）or 部分 swelling（acute）</td></tr>
+<tr><td>Visual acuity</td><td>Subjective 緩解；可能 mild 殘餘</td></tr>
+<tr><td>Color vision（red desaturation）</td><td>Sensitive marker</td></tr>
+<tr><td>Visual fields</td><td>Central scotoma、altitudinal defect</td></tr>
+<tr><td><strong>Optical coherence tomography（OCT）</strong></td><td>★ Retinal nerve fiber layer thinning（&lt; 80 μm）= prior optic neuritis evidence</td></tr>
+<tr><td><strong>Visual evoked potentials（VEP）</strong></td><td>★ Latency delay（&gt; 115 ms P100）supports demyelination</td></tr>
+</table>
+
+<h4>7. NMOSD vs MS — 關鍵區分（必背）</h4>
+<table>
+<tr><th>面向</th><th>NMOSD（本案）</th><th>MS</th></tr>
+<tr><td>AQP4-IgG</td><td>+（70-80%）</td><td>-</td></tr>
+<tr><td>MOG-IgG</td><td>40% AQP4-negative</td><td>-</td></tr>
+<tr><td>Spinal lesion</td><td>★ LETM ≥ 3 segments</td><td>&lt; 2 segments；多 partial cord</td></tr>
+<tr><td>Optic neuritis severity</td><td>★ Severe + bilateral / sequential</td><td>Unilateral mild more common</td></tr>
+<tr><td>Attack severity</td><td>★ AIS C-D 多</td><td>Milder</td></tr>
+<tr><td>Brain MRI</td><td>Hypothalamus、area postrema、3rd/4th ventricle、corpus callosum splenium</td><td>Periventricular、juxtacortical、infratentorial、spinal multiple</td></tr>
+<tr><td>CSF</td><td>★ OB negative、neutrophils common、protein ↑↑</td><td>OB +（80-90%）、lymphocytes、protein normal</td></tr>
+<tr><td>Course</td><td>★ Multiphasic relapsing（85%）；poorer recovery between attacks</td><td>Relapsing-remitting initially；good recovery</td></tr>
+<tr><td>Treatment</td><td>★ Long-term immunosuppression（rituximab、eculizumab、satralizumab、inebilizumab）</td><td>MS-specific（interferon、glatiramer、ocrelizumab、cladribine）</td></tr>
+<tr><td><strong>關鍵警告</strong></td><td>★ <strong>MS-specific 藥（interferon、natalizumab、fingolimod）可<u>惡化</u> NMOSD</strong></td><td>—</td></tr>
+</table>
+
+<h4>跟病人 + 男友溝通（簡短）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您的情況最 likely 是<strong>NMOSD（視神經脊髓炎譜系疾病）</strong>。這個病的特點：<br><br>
+1. <strong>免疫系統錯誤攻擊脊髓 + 視神經</strong>（有時 brain）<br>
+2. 抗體叫 <strong>AQP4-IgG</strong>（攻擊脊髓上一個 water channel）<br>
+3. <strong>女性 9:1、median 30-40 歲</strong>（您是 typical）<br>
+4. <strong>跟 MS 不同</strong> — 雖然臨床看起來像、但治療<u>完全不同</u>，部分 MS 藥對 NMOSD 反而有害<br>
+5. <strong>確認</strong>：抽血做<strong>AQP4-IgG（cell-based assay）</strong> — 70-80% 病人陽性；如陰性會再驗 MOG 抗體<br><br>
+您兩週前的視覺模糊很可能是 <strong>first attack</strong>（subclinical optic neuritis）— 這次脊髓 attack 是<strong>second attack</strong>。<br><br>
+我們今天 + 明天會做：<br>
+• <strong>AQP4 + MOG 抗體</strong>（核心）<br>
+• <strong>眼科會診 + OCT + VEP</strong>（看視神經是否有 prior damage）<br>
+• 排除其他 mimics（autoimmune、感染、B12）<br><br>
+<strong>但 — 治療不等抗體結果</strong>。明天開始 IV methylprednisolone 5 天（次題詳）。」</p>
+
+<h4>口試考官可能追問</h4>
+<ul>
+<li>「AQP4-IgG 為什麼是 NMOSD 確診核心？」 → AQP4 是 astrocyte foot processes water channel；antibody binds → complement activation + cell death + secondary demyelination；optic nerve + spinal cord（特別 central canal area）AQP4 高表達 → preferentially affected；specificity &gt; 99% — 看到陽性基本確診</li>
+<li>「她 AQP4 negative + MOG negative 怎麼辦？」 → Seronegative NMOSD（10-20%）；診斷 by clinical + imaging criteria（2015 negative pathway）；治療類似；勿 default 視為 MS；longitudinal follow-up + repeat antibody（technical false negative possible）</li>
+<li>「Area postrema syndrome 為什麼 specific NMOSD？」 → Area postrema（4th ventricle floor）有 high AQP4 expression；NMOSD lesion 此處 → intractable hiccups + nausea + vomiting；MS 不典型；clinical clue 高度 specific</li>
+<li>「她做 OCT 看到什麼？」 → 預期 right eye RNFL（retinal nerve fiber layer）thinning（&lt; 80 μm）= prior optic neuritis evidence；left eye normal baseline 比較；inner retinal layer thickness（GCL-IPL）也會 thin</li>
+<li>「VEP 怎麼解讀？」 → P100 wave latency；normal 100-115 ms；delay &gt; 115 ms = demyelination；本案 right eye 預期 latency delay；amplitude 也可下降（severe demyelination + axonal loss）</li>
+<li>「Brain MRI 完全 normal 還能診斷 NMOSD？」 → 是 — NMOSD 早期 brain 多 normal；後期可能 develop NMOSD-typical lesions；本案 acute first / second attack stage brain normal 是 typical</li>
+<li>「她若有 SLE + ANA + 也能是 NMOSD？」 → 可 coexist；SLE-related myelopathy 跟 NMOSD overlap；如 AQP4 + → NMOSD diagnosis；如 AQP4 - → SLE myelopathy possible；治療兩者 immunosuppression 多 overlap；ANA 個別 evaluate</li>
+<li>「她家屬問「會傳給小孩嗎」？」 → NMOSD 不是 hereditary disease；offspring risk 略高 general population 但 absolute risk &lt; 1%；無 single gene cause；HLA 部分 association；告知她小孩風險 minimally elevated 但 not significant；不建議 genetic counseling</li>
+<li>「為什麼治療不等抗體？」 → AQP4-IgG result 多 1-2 週才 back；急性 attack 早期治療 outcome 差很多（each day of delay → permanent disability ↑）；clinical + MRI 已 strong NMOSD pattern → 立即 IV methylprednisolone；如後 result 是 MS → 調整 plan，但 acute steroid 兩者都 indicated</li>
+<li>「Pediatric NMOSD 跟 adult 不同？」 → Children less AQP4-IgG +、more MOG-IgG；more brain involvement；ADEM-like presentation；treatment principles similar；本案 32 歲 typical adult NMOSD</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>NMOSD 是 aquaporin-4 IgG-mediated CNS autoimmune disease；distinct from MS</li>
+<li>Demographics：female 9:1、median 30s-40s；本案 32F typical</li>
+<li>2015 Wingerchuk criteria：AQP4+（1 core characteristic 即可）vs AQP4-（≥ 2 core + LETM/ON/area postrema 至少 1 + dissemination + MRI 符合 + 排除 alternative）</li>
+<li>6 core clinical characteristics：ON、acute myelitis（LETM）、area postrema syndrome、acute brainstem、acute diencephalic、symptomatic cerebral syndrome</li>
+<li>本案 features：female + ON（subclinical 兩週前）+ LETM（T2-T6）= 2 core characteristics + dissemination in space</li>
+<li>AQP4-IgG CBA gold standard（sensitivity 70-80%、specificity &gt; 99%）；MOG-IgG if AQP4 negative</li>
+<li>OCT（RNFL thinning）+ VEP（latency delay）supporting evidence for prior subclinical ON</li>
+<li>NMOSD vs MS 關鍵：LETM、attack severity、AQP4、CSF OB pattern、brain lesions、treatment</li>
+<li><strong>MS-specific drugs（interferon、natalizumab、fingolimod）可惡化 NMOSD — 重要！</strong></li>
+<li>治療不等抗體 — clinical + MRI strong → 立即 IV methylprednisolone</li>
+</ul>`,
+      },
+      {
+        q: 'NMOSD、MS、idiopathic transverse myelitis 怎麼區分？',
+        keywords: [
+          'NMOSD 2015 Wingerchuk criteria',
+          'McDonald criteria for MS (2017)',
+          'TACMS criteria for idiopathic TM',
+          'AQP4-IgG vs MOG-IgG vs OCB',
+          'LETM ≥ 3 vs MS < 2 segments',
+          'Brain MRI patterns',
+          'CSF differences',
+          'Attack severity',
+          'Treatment differences (critical)',
+          'MS-specific drugs worsen NMOSD',
+          'Recovery + relapse pattern',
+          'Long-term disability',
+        ],
+        points: [
+          '<strong>三個疾病雖臨床 overlap、但<u>機制 + 治療 + 預後不同</u></strong>',
+          '<strong>NMOSD（本案）</strong>：AQP4-IgG-mediated astrocytopathy；secondary demyelination；severe attacks + poorer recovery；relapsing 多',
+          '<strong>MS</strong>：T-cell mediated demyelination；oligodendrocyte primary；milder attacks + better recovery between；relapsing-remitting 多',
+          '<strong>Idiopathic TM</strong>：diagnosis of exclusion；單獨 myelitis 無 dissemination；可 monophasic',
+          '<strong>診斷 criteria 各自不同</strong>',
+          'NMOSD：2015 Wingerchuk（前題詳）',
+          'MS：2017 McDonald — dissemination in space + time + 排除 alternative；clinical attack + MRI evidence',
+          'Idiopathic TM：TACMS 2002 criteria — bilateral signs/symptoms + sensory level + progression 4 hr-21 days + 排除 compressive + inflammation evidence + 排除 NMOSD/MS',
+          '<strong>關鍵區別點（必背、本案 critical）</strong>',
+          '(1) <strong>Spinal lesion length</strong>：NMOSD ★ LETM ≥ 3 segments；MS &lt; 2 segments multi-focal；idiopathic TM 變異',
+          '(2) <strong>AQP4-IgG</strong>：NMOSD 70-80% +；MS -；idiopathic TM -',
+          '(3) <strong>CSF OB</strong>：NMOSD 多 negative；MS 80-90% +；idiopathic TM 變異',
+          '(4) <strong>Brain MRI</strong>：NMOSD typical lesions（hypothalamus、area postrema）；MS periventricular + juxtacortical + infratentorial（Dawson finger）；idiopathic TM normal',
+          '(5) <strong>Optic neuritis</strong>：NMOSD severe + bilateral / sequential；MS unilateral mild；idiopathic TM 無',
+          '(6) <strong>Attack severity</strong>：NMOSD AIS C-D 多；MS milder；idiopathic TM 變異',
+          '(7) <strong>Recovery</strong>：NMOSD poor between attacks（cumulative disability）；MS better recovery early；idiopathic TM 多 partial recovery',
+          '<strong>治療 critical 不同</strong>',
+          'NMOSD：<strong>長期 immunosuppression</strong>（rituximab、eculizumab、satralizumab、inebilizumab、azathioprine、mycophenolate）',
+          'MS：<strong>disease-modifying therapy</strong>（interferon-β、glatiramer、ocrelizumab、natalizumab、fingolimod、cladribine、teriflunomide）',
+          'Idiopathic TM：<strong>急性 steroid + monitor</strong>；如 recurrent → reclassify NMOSD/MS',
+          '<strong>關鍵警告（必背）</strong>',
+          '<strong>MS-specific drugs（interferon、natalizumab、fingolimod）可<u>惡化</u> NMOSD</strong> → misdiagnosis 嚴重 consequence',
+          'AQP4-IgG testing 在開 DMT 前必做',
+          '<strong>本案：NMOSD diagnosis 強烈（LETM + ON + CSF OB negative + 預期 AQP4 +）</strong>',
+        ],
+        a: `<h4>口試答題框架（鑑別 high-yield、必清晰）</h4>
+<p>三個疾病<strong>機制 + 治療 + 預後不同</strong> — misdiagnosis 嚴重後果（藥物錯）。</p>
+
+<h4>1. 機制不同</h4>
+<table>
+<tr><th>Disease</th><th>機制</th><th>Pathology</th></tr>
+<tr><td><strong>NMOSD</strong></td><td>AQP4-IgG-mediated astrocytopathy</td><td>Astrocyte foot process complement-mediated death → secondary demyelination + axonal loss</td></tr>
+<tr><td><strong>MS</strong></td><td>T-cell mediated autoimmune demyelination</td><td>Oligodendrocyte / myelin primary attack；BBB breakdown；plaques formation</td></tr>
+<tr><td><strong>Idiopathic TM</strong></td><td>Heterogeneous（possibly post-infectious）</td><td>Localized inflammation；機制 unclear；無 systemic immune signature</td></tr>
+</table>
+
+<h4>2. 診斷 Criteria</h4>
+<table>
+<tr><th>Disease</th><th>Criteria</th><th>核心要件</th></tr>
+<tr><td><strong>NMOSD</strong></td><td>2015 Wingerchuk</td><td>AQP4+ → 1 core characteristic；AQP4- → ≥ 2 + LETM/ON/area postrema 至少 1 + dissemination space + MRI 符合 + 排除 alt</td></tr>
+<tr><td><strong>MS</strong></td><td>2017 McDonald</td><td>Dissemination in space + time + 排除 alternative；clinical attack + MRI evidence</td></tr>
+<tr><td><strong>Idiopathic TM</strong></td><td>TACMS 2002</td><td>Bilateral signs/symptoms + sensory level + progression 4 hr-21 days + 排除 compressive + inflammation evidence + 排除 NMOSD/MS</td></tr>
+</table>
+
+<h4>3. 關鍵區別點（必背 — 本案 critical）</h4>
+<table>
+<tr><th>Feature</th><th>NMOSD（本案）</th><th>MS</th><th>Idiopathic TM</th></tr>
+<tr><td><strong>Spinal lesion</strong></td><td>★ LETM ≥ 3 segments</td><td>&lt; 2 segments、multifocal partial cord</td><td>變異（可短可長）</td></tr>
+<tr><td><strong>AQP4-IgG</strong></td><td>+ 70-80%</td><td>-</td><td>-</td></tr>
+<tr><td><strong>MOG-IgG</strong></td><td>40% AQP4-negative cases</td><td>-</td><td>-</td></tr>
+<tr><td><strong>CSF OB</strong></td><td>★ Negative 多</td><td>★ + 80-90%</td><td>變異</td></tr>
+<tr><td><strong>CSF cells</strong></td><td>Lymphocytic ± neutrophils；high count（&gt; 50）</td><td>Lymphocytic；low count</td><td>變異</td></tr>
+<tr><td><strong>CSF protein</strong></td><td>★ ↑↑（&gt; 100 可能）</td><td>Normal / mild ↑</td><td>變異</td></tr>
+<tr><td><strong>Brain MRI</strong></td><td>Hypothalamus、area postrema、3rd/4th ventricle、corpus callosum splenium、long-extensive；可無</td><td>Periventricular、juxtacortical、infratentorial、Dawson finger；multiple</td><td>Normal</td></tr>
+<tr><td><strong>Optic neuritis</strong></td><td>★ Severe + bilateral / sequential；poor recovery</td><td>Unilateral mild；good recovery</td><td>無</td></tr>
+<tr><td><strong>Area postrema syndrome</strong></td><td>★ Specific to NMOSD</td><td>不典型</td><td>無</td></tr>
+<tr><td><strong>Attack severity</strong></td><td>★ AIS C-D 多</td><td>Milder（AIS D-E）</td><td>變異</td></tr>
+<tr><td><strong>Recovery between attacks</strong></td><td>★ Poor（cumulative disability）</td><td>★ Good（early disease）；late progressive</td><td>多 partial recovery</td></tr>
+<tr><td><strong>Course</strong></td><td>Multiphasic relapsing 85%</td><td>Relapsing-remitting → secondary progressive</td><td>Monophasic 多</td></tr>
+<tr><td><strong>Demographics</strong></td><td>★ Female 9:1、median 30s-40s</td><td>Female 3:1、median 20s-30s</td><td>Male = female；any age</td></tr>
+</table>
+
+<h4>4. 治療 Critical 不同（必背）</h4>
+<table>
+<tr><th>Disease</th><th>急性 attack</th><th>Long-term maintenance</th></tr>
+<tr><td><strong>NMOSD</strong></td><td>★ IV methylprednisolone 1 g × 5 days；如不 respond → plasma exchange（PLEX）5-7 sessions；IVIG less evidence</td><td>★ Long-term immunosuppression（rituximab、eculizumab、satralizumab、inebilizumab、azathioprine、mycophenolate）</td></tr>
+<tr><td><strong>MS</strong></td><td>IV methylprednisolone × 3-5 days；PLEX refractory</td><td>★ Disease-modifying therapy DMT（interferon-β、glatiramer、ocrelizumab、natalizumab、fingolimod、cladribine、teriflunomide、dimethyl fumarate）</td></tr>
+<tr><td><strong>Idiopathic TM</strong></td><td>IV methylprednisolone × 3-5 days；PLEX if severe</td><td>★ Monitor only；如 recurrent → reclassify NMOSD/MS + treat accordingly</td></tr>
+</table>
+
+<h4>5. 關鍵警告 — MS Drugs Worsen NMOSD（必背）</h4>
+<table>
+<tr><th>Drug</th><th>MS</th><th>NMOSD</th></tr>
+<tr><td>Interferon-β（Avonex、Rebif、Betaseron）</td><td>First-line MS</td><td>★ <strong>Worsens — avoid</strong></td></tr>
+<tr><td>Natalizumab（Tysabri）</td><td>MS effective</td><td>★ <strong>Worsens — avoid</strong></td></tr>
+<tr><td>Fingolimod（Gilenya）</td><td>MS effective</td><td>★ <strong>Worsens — avoid</strong></td></tr>
+<tr><td>Glatiramer acetate（Copaxone）</td><td>MS</td><td>Likely safe but no benefit</td></tr>
+<tr><td>Ocrelizumab（B-cell depletion）</td><td>MS</td><td>Considered（off-label NMOSD）</td></tr>
+<tr><td>Rituximab（B-cell depletion）</td><td>Off-label MS</td><td>★ NMOSD first-line</td></tr>
+</table>
+
+<p><strong>結論</strong>：診斷 NMOSD vs MS 必須<u>在開 DMT 前</u>確認 — AQP4-IgG testing 是 mandatory pre-treatment。</p>
+
+<h4>6. 本案 Diagnosis 證據 Summary</h4>
+<table>
+<tr><th>Feature</th><th>本案</th><th>NMOSD favor?</th></tr>
+<tr><td>Demographics</td><td>32F</td><td>★ Yes（typical）</td></tr>
+<tr><td>Spinal lesion</td><td>T2-T6 LETM</td><td>★ Yes</td></tr>
+<tr><td>Optic neuritis</td><td>Subclinical 兩週前 + MRI enhancement</td><td>★ Yes</td></tr>
+<tr><td>CSF OB</td><td>Negative</td><td>★ Yes（MS 多 +）</td></tr>
+<tr><td>CSF cells</td><td>WBC 80（lymphocyte）</td><td>★ Yes（high count）</td></tr>
+<tr><td>CSF protein</td><td>75 mild ↑</td><td>★ Yes</td></tr>
+<tr><td>Brain MRI</td><td>Normal（除 optic enhancement）</td><td>★ Yes（MS 多 multiple）</td></tr>
+<tr><td>Attack severity</td><td>AIS C</td><td>★ Yes（severe）</td></tr>
+<tr><td>AQP4-IgG</td><td>Pending（預期 +）</td><td>確認後</td></tr>
+</table>
+
+<h4>跟病人簡短溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您的<strong>多項 features 強烈符合 NMOSD（vs MS vs idiopathic TM）</strong>：<br>
+• <strong>脊髓 lesion ≥ 3 segments</strong>（NMOSD 經典；MS 多短）<br>
+• <strong>視神經受影響</strong>（兩週前事件 + MRI 證據）<br>
+• <strong>CSF oligoclonal bands negative</strong>（MS 多 +、您 -）<br>
+• <strong>Brain 沒有 MS plaques</strong><br>
+• <strong>Attack severity 重</strong>（NMOSD typical）<br>
+• <strong>32 歲女性</strong>（NMOSD demographics fit）<br><br>
+<strong>為什麼這個區分重要？</strong><br>
+<u>NMOSD 跟 MS 治療不同 — 部分 MS 藥（interferon）會<strong>反而惡化</strong> NMOSD</u>。所以開長期治療<strong>前</strong>必須確認。<br><br>
+AQP4 抗體 1-2 週 result 出來 — 多會 confirm。即使 negative、多項 clinical + imaging features 仍指向 NMOSD。」</p>
+
+<h4>口試考官可能追問</h4>
+<ul>
+<li>「她以前是不是 MS 但被誤診 NMOSD？」 → 反過來 — 早期 NMOSD 病人多被誤診 MS（before AQP4 discovery）；給 interferon 後惡化才發現；本案 features clear NMOSD pattern + AQP4 testing 不會 misdiagnose</li>
+<li>「Idiopathic TM 怎麼確定不是 disguised NMOSD？」 → 5-15% idiopathic TM 後續 develop NMOSD（second attack）；故所有 acute TM 病人 baseline AQP4 + MOG testing；longitudinal follow-up 1-3 年；recurrence 即 reclassify</li>
+<li>「LETM 不是 NMOSD specific？」 → 對 — LETM 也可見於 sarcoidosis、SLE、HIV myelopathy、infection；但 NMOSD 是 LETM 最 common 原因（&gt; 50%）；need work up rule out other LETM causes</li>
+<li>「MOG-AD 跟 MS 怎麼鑑別？」 → MOG-AD：年輕（兒童）+ 男女比相近 + ON bilateral + recurrent + cord lesions 較短 + ADEM-like brain in children + monophasic possible（45%）；MS：median 20s-30s + female + cord short multifocal + Dawson finger + relapsing-remitting；MOG-IgG 是 differentiator</li>
+<li>「Brain MRI 多 normal 仍可診斷 NMOSD？」 → Yes — 早期 NMOSD brain 多 normal；後期 develop NMOSD-typical lesions；本案 first / second attack 階段 brain normal 是 typical</li>
+<li>「她未來 brain MRI 會 evolve？」 → Possibly — 部分 NMOSD 病人累積 brain lesions（hypothalamus、area postrema、corpus callosum）；長期 follow-up MRI yearly</li>
+<li>「CSF protein 75 算高？」 → Mild ↑（normal &lt; 45）；NMOSD 多 mild-moderate ↑；如 &gt; 200 → infectious、neoplastic 警覺；MS 多 normal protein</li>
+<li>「她 AQP4 + 但沒 LETM 也可以 NMOSD？」 → Yes — 2015 criteria：AQP4 + 加上 1 core characteristic（ON、myelitis、area postrema、brainstem、diencephalic、cerebral 任 1）；不一定 LETM；某些 cervical 短 lesion 仍 qualify if AQP4 +</li>
+<li>「Idiopathic TM 治療多久？」 → IV methylprednisolone 3-5 days + 後 oral steroid taper 4-8 weeks；如 severe / refractory → PLEX；長期 monitor；無 prophylactic immunosuppression unless recurrent</li>
+<li>「NMOSD 發生率多少？」 → Asia 較高 prevalence；Taiwan ~ 1-3 / 100,000；relapsing-remitting MS Taiwan ~ 5-10 / 100,000；Western 國家 NMOSD lower</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>NMOSD vs MS vs idiopathic TM 機制 + 治療 + 預後不同</li>
+<li>NMOSD = AQP4-IgG astrocytopathy；MS = T-cell demyelination；idiopathic TM = exclusion</li>
+<li>診斷 criteria：NMOSD 2015 Wingerchuk、MS 2017 McDonald、TM TACMS 2002</li>
+<li>關鍵區別：spinal lesion length（LETM ≥ 3 vs MS &lt; 2）、AQP4-IgG、CSF OB、brain MRI、ON severity、attack severity、recovery、demographics</li>
+<li>NMOSD：female 9:1、severe attacks、poor recovery、relapsing 多、長期 immunosuppression</li>
+<li>MS：female 3:1、milder attacks、better recovery、relapsing-remitting → progressive、DMT</li>
+<li>Idiopathic TM：monophasic 多、acute steroid + monitor</li>
+<li>★ <strong>MS-specific drugs（interferon、natalizumab、fingolimod）可惡化 NMOSD — pre-DMT AQP4 testing mandatory</strong></li>
+<li>本案 features 高度指向 NMOSD：LETM + ON + CSF OB- + brain normal + AIS C + 32F</li>
+<li>AQP4 result pending；clinical + imaging 已足夠 likely diagnosis</li>
+</ul>`,
+      },
+      {
+        q: '急性 attack 怎麼治療？',
+        keywords: [
+          'IV methylprednisolone 1 g × 5 days',
+          'Plasma exchange (PLEX) 5-7 sessions',
+          'IVIG (less evidence)',
+          'Time-sensitive (early treatment)',
+          'Steroid taper after pulse',
+          'PLEX indications: severe / steroid-refractory / vision threatening',
+          'PLEX mechanism: remove pathogenic antibodies',
+          'Combined steroid + PLEX',
+          'Adjunct: bowel/bladder care, pressure sore, DVT prophylaxis',
+          'Monitoring during pulse',
+          'Hyperglycemia, GI bleeding, infection risk',
+          'PPI cover',
+          'Insulin if hyperglycemia',
+        ],
+        points: [
+          '<strong>NMOSD 急性 attack 是 oncology emergency-equivalent — 早期治療 outcome 大幅不同</strong>',
+          '<strong>Time-sensitive：每 day delay → permanent disability ↑</strong>；不等 antibody result',
+          '<strong>First-line：IV Methylprednisolone Pulse</strong>',
+          '劑量：<strong>1 g IV qd × 5 天</strong>（標準）',
+          '機制：immunosuppression + anti-inflammatory + reduce edema',
+          'Onset：24-72 hr',
+          '60-70% patients show improvement after pulse',
+          '副作用 monitor：hyperglycemia、GI bleeding（PPI cover）、infection、insomnia、psychosis、hypertension、electrolyte（K + Mg）',
+          'Post-pulse oral taper：prednisolone 60 mg qd → taper 1-2 mg/week × 8-12 weeks → 銜接 maintenance therapy',
+          '<strong>Second-line：Plasma Exchange（PLEX）</strong>',
+          '<strong>Indications</strong>：(1) severe attack（AIS A-C）not improving 3-5 天 IV steroid、(2) steroid-refractory、(3) vision-threatening ON、(4) some center 用 PLEX upfront combined steroid（severe attack）',
+          'Schedule：5-7 sessions over 10-14 days；每次 2-4 hr',
+          '機制：remove pathogenic AQP4-IgG antibodies + complement components + 其他 inflammatory mediators',
+          '60-80% partial improvement in NMOSD attacks',
+          '副作用：hypotension、citrate toxicity、infection（central line）、bleeding（fibrinogen ↓）、catheter complications',
+          '<strong>本案 candidate</strong>：AIS C severe attack；IV steroid 3-5 天 reassess；如不 respond → PLEX',
+          '<strong>Third-line：IVIG</strong>',
+          'Less evidence in NMOSD（vs PLEX）',
+          'Some centers use as adjunct or alternative if PLEX unavailable',
+          'Schedule：0.4 g/kg × 5 days',
+          '<strong>Combined Steroid + PLEX（aggressive approach）</strong>',
+          '近年 trend — severe attack 直接 IV steroid + PLEX 同時開始',
+          'Evidence：earlier PLEX → better outcome',
+          '本案 candidate（severe AIS C + LETM extensive + 視力 prior）',
+          '<strong>Adjunct Care（acute SCI principles）</strong>',
+          'Bladder：Foley → CIC schedule（acute）',
+          'Bowel：suppository + DRE schedule',
+          'Skin：q2h turn + Roho cushion + alternating mattress',
+          'DVT prophylaxis：LMWH（enoxaparin 40 mg sc qd）',
+          'Pain：gabapentinoid + APAP + opioid acute',
+          'AD prophylaxis（NLI T4 → high risk）',
+          'Spasticity：observation early；treat if 影響 ROM / hygiene',
+          '<strong>Monitoring during steroid pulse</strong>',
+          'Glucose q6h（hyperglycemia common）',
+          'BP（hypertension）',
+          'K + Mg（hypokalemia）',
+          'GI symptoms（add PPI cover）',
+          'Sleep + mood（psychosis、insomnia）',
+          'Infection signs（mask underlying）',
+          '<strong>Outcome Expectations</strong>',
+          'AIS A-B severe attacks：30-40% recover to ambulatory',
+          'AIS C-D（本案）：50-70% recover meaningful function',
+          'Recovery 多 within 3-6 個月（plateau）',
+          'Residual disability 多 partial',
+          '<strong>本案具體 plan</strong>',
+          'Day 1（today）：IV methylprednisolone 1 g + PPI + insulin sliding scale + glucose monitor + Foley + LMWH + bowel/skin protocols + AD prophylaxis education',
+          'Day 3：reassess motor + sensation；如不 improve → PLEX evaluation',
+          'Day 5：完成 IV pulse；如 stable improvement → oral taper；如不 improve → PLEX 5-7 sessions',
+          'Week 2：transition oral steroid taper + initiate maintenance therapy（次題）',
+        ],
+        a: `<h4>口試答題框架（NMOSD 急性 attack 治療 — time-sensitive）</h4>
+<p>NMOSD attack 黃金窗口：<strong>早期 IV methylprednisolone + 必要時 PLEX</strong>。標準展開：</p>
+<ol>
+<li><strong>First-line: IV methylprednisolone</strong></li>
+<li><strong>Second-line: PLEX（indications + mechanism）</strong></li>
+<li><strong>Third-line: IVIG（less evidence）</strong></li>
+<li><strong>Combined approach</strong></li>
+<li><strong>Adjunct acute SCI care</strong></li>
+<li><strong>Monitoring + side effects</strong></li>
+</ol>
+
+<h4>1. IV Methylprednisolone Pulse（First-Line）</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>劑量</td><td>★ 1 g IV qd × 5 天（standard）</td></tr>
+<tr><td>機制</td><td>Immunosuppression + anti-inflammatory + reduce vasogenic edema</td></tr>
+<tr><td>Onset</td><td>24-72 hr</td></tr>
+<tr><td>Response rate</td><td>60-70% improvement after pulse</td></tr>
+<tr><td>Post-pulse oral taper</td><td>Prednisolone 60 mg qd → taper 1-2 mg/week × 8-12 weeks → 銜接 maintenance</td></tr>
+<tr><td>副作用</td><td>Hyperglycemia、GI bleed（PPI cover）、infection、insomnia、psychosis、hypertension、hypokalemia</td></tr>
+<tr><td>本案</td><td>★ Day 1 立即啟動</td></tr>
+</table>
+
+<h4>2. Plasma Exchange / PLEX（Second-Line / Severe）</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>Indications</td><td>(1) Severe attack（AIS A-C）not improving 3-5 天 IV steroid；(2) steroid-refractory；(3) vision-threatening ON；(4) severe upfront（部分 center）</td></tr>
+<tr><td>Schedule</td><td>5-7 sessions over 10-14 days；2-4 hr each</td></tr>
+<tr><td>機制</td><td>Remove pathogenic AQP4-IgG + complement + inflammatory mediators</td></tr>
+<tr><td>Response rate</td><td>60-80% partial improvement in NMOSD</td></tr>
+<tr><td>副作用</td><td>Hypotension、citrate toxicity、infection（central line）、bleeding（fibrinogen ↓）</td></tr>
+<tr><td>本案</td><td>★ Day 3-5 reassess；如不 respond → PLEX；某些 center 直接 combined upfront</td></tr>
+</table>
+
+<h4>3. IVIG（Third-Line）</h4>
+<ul>
+<li>Less evidence in NMOSD vs PLEX</li>
+<li>Some centers use as adjunct or alternative</li>
+<li>Schedule: 0.4 g/kg × 5 days</li>
+<li>本案不 first-line</li>
+</ul>
+
+<h4>4. Combined Steroid + PLEX（Aggressive Approach）</h4>
+<ul>
+<li>近年 trend — severe attack 直接 IV steroid + PLEX 同時 / 連續</li>
+<li>Evidence：earlier PLEX → better outcome（Kleiter 2018 et al）</li>
+<li>本案 candidate：AIS C severe + LETM extensive + 視力 prior episode</li>
+</ul>
+
+<h4>5. Adjunct Acute SCI Care</h4>
+<table>
+<tr><th>項目</th><th>細節</th></tr>
+<tr><td>Bladder</td><td>Foley → 1-2 週後 transition CIC</td></tr>
+<tr><td>Bowel</td><td>Suppository + DRE schedule</td></tr>
+<tr><td>Skin</td><td>q2h turn + Roho cushion + alternating mattress</td></tr>
+<tr><td>DVT prophylaxis</td><td>LMWH 40 mg sc qd</td></tr>
+<tr><td>Pain</td><td>Gabapentinoid + APAP + opioid acute</td></tr>
+<tr><td>AD prophylaxis</td><td>★ NLI T4 → high risk；education + monitoring</td></tr>
+<tr><td>Spasticity</td><td>Observation early；治療 if 影響 hygiene / ROM</td></tr>
+</table>
+
+<h4>6. Monitoring During Steroid Pulse</h4>
+<table>
+<tr><th>項目</th><th>頻率</th></tr>
+<tr><td>Glucose</td><td>q6h（hyperglycemia common）；insulin sliding scale prn</td></tr>
+<tr><td>BP</td><td>Every 4-6 hr</td></tr>
+<tr><td>K + Mg</td><td>Daily</td></tr>
+<tr><td>GI symptoms</td><td>Daily；PPI cover</td></tr>
+<tr><td>Sleep + mood</td><td>Daily；avoid psychosis</td></tr>
+<tr><td>Infection signs</td><td>Daily；mask underlying infection</td></tr>
+</table>
+
+<h4>7. Outcome Expectations</h4>
+<table>
+<tr><th>Initial AIS</th><th>Recovery to ambulatory</th></tr>
+<tr><td>AIS A-B</td><td>30-40%</td></tr>
+<tr><td><strong>AIS C-D（本案 C）</strong></td><td>★ 50-70% meaningful recovery</td></tr>
+</table>
+<p>Recovery 多 within 3-6 個月 plateau；residual disability 多 partial</p>
+
+<h4>8. 本案具體 Plan</h4>
+<ol>
+<li><strong>Day 1（today）</strong>：IV methylprednisolone 1 g + PPI + insulin sliding scale + glucose monitor + Foley + LMWH + bowel/skin protocols + AD prophylaxis education</li>
+<li><strong>Day 3</strong>：reassess motor + sensation；如不 improve → PLEX evaluation</li>
+<li><strong>Day 5</strong>：完成 IV pulse；如 stable improvement → oral taper；如不 improve → PLEX 5-7 sessions（可 + 同時開始）</li>
+<li><strong>Week 2</strong>：transition oral steroid taper + initiate maintenance therapy（次題）</li>
+<li><strong>AQP4-IgG result</strong>：1-2 週 back；不影響當下 acute treatment；影響 long-term maintenance choice</li>
+</ol>
+
+<h4>跟病人 + 男友溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「<strong>今天就開始大劑量 steroid（IV methylprednisolone 1 g × 5 天）</strong>。<br>
+• 60-70% 病人有明顯改善<br>
+• 早期治療結果差很多 — 不等 AQP4 結果<br><br>
+<strong>副作用我們會 monitor</strong>：<br>
+• 血糖會升 → 用 insulin 控制<br>
+• GI 出血 → 加 PPI<br>
+• 失眠、情緒波動 — 暫時性<br>
+• 感染風險 → 嚴格 hand hygiene<br><br>
+<strong>Day 3 我們 reassess</strong>。如果<strong>沒明顯改善 → 加 PLEX（血漿置換）</strong>5-7 次、把抗體洗掉。多 60-80% 病人 partial improvement。<br><br>
+<strong>5 天 IV pulse 後</strong>：轉口服 steroid 慢慢減 8-12 週、同時銜接<u>長期維持治療</u>（次題詳）。<br><br>
+<strong>Outcome expectations（誠實告知）</strong>：<br>
+• 您現在 AIS C → <strong>50-70% 機率 meaningful recovery</strong>（部分 ambulatory）<br>
+• 多在<strong>3-6 個月</strong>達到 plateau<br>
+• 部分 residual disability 可能 — 但配合復健 + 維持治療 → 多 manage<br><br>
+<strong>同時做的事</strong>：<br>
+• 導尿管（您膀胱已積 420 ml）<br>
+• 抗血栓針（LMWH）<br>
+• 翻身 + Roho cushion 預防壓瘡<br>
+• AD 風險高（T4 lesion）→ 衛教您 + 男友警示症狀」</p>
+
+<h4>口試考官可能追問</h4>
+<ul>
+<li>「Methylprednisolone 1 g 為什麼這個劑量？」 → Empiric standard；trials 多 1 g × 3-7 days；high-dose pulse maximizes anti-inflammatory + minimizes long-term steroid exposure；本案 5 days standard</li>
+<li>「Oral pulse vs IV — equivalent 嗎？」 → Equivalent dose（1250 mg oral prednisone ≈ 1 g IV methyl）；某些 trials show similar efficacy；但 NMOSD severe attack 多 IV preference（reliable absorption + faster onset）；本案 IV</li>
+<li>「PLEX 跟 immunoadsorption（IA）哪個好？」 → 兩者都 remove antibodies；IA more selective（remove IgG specifically）+ less albumin loss；evidence similar；某些 center 偏 IA；台灣多 PLEX</li>
+<li>「她妊娠期間發病怎麼辦？」 → IV methylprednisolone trimester 1-3 OK（pregnancy category C）；PLEX safe；avoid steroid 3rd trimester high dose（fetal effects）；rituximab 妊娠 contraindication；本案未孕但需 family planning discussion（次題）</li>
+<li>「Steroid pulse 期間病人 hyperglycemia 嚴重？」 → Common；DM 病人或 borderline 警覺；insulin sliding scale；某些 case temporary basal-bolus regimen；不停 pulse；後續 endocrinology follow-up</li>
+<li>「PLEX 通路？」 → Central line（dual lumen）— internal jugular / subclavian / femoral；duration 2-4 hr per session；anticoagulation citrate or heparin；nurse + dialysis team support</li>
+<li>「Catastrophic NMOSD attack（AIS A、bilateral ON）怎麼處理？」 → Aggressive：IV steroid + PLEX same day combined；如仍不 respond → IVIG add；某些 center 用 emergency rituximab 1 g IV；本案 not catastrophic but severe</li>
+<li>「她 AIS C 一定恢復到 ambulatory？」 → No guarantee — 但 likelihood 50-70%；recovery 視 attack severity、early treatment、attack duration before treatment、 underlying disease；本案 onset 3 天 + early IV steroid + PLEX backup → 較好 chance</li>
+<li>「Steroid taper 為什麼 8-12 週？」 → 防 rebound attack；slow taper allow maintenance therapy onset overlap；avoid adrenal suppression；快 taper（&lt; 4 週）relapse rate 高</li>
+<li>「她 IV pulse 期間 fever 怎麼處理？」 → 最重要排除 infection（mask by steroid）— blood culture + UA culture + chest X-ray；steroid 不 immediately stop；empiric abx if confirmed；neutropenia post-pulse infection 警覺</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>NMOSD 急性 attack time-sensitive — early treatment outcome 大幅不同</li>
+<li><strong>First-line：IV methylprednisolone 1 g × 5 days</strong>（不等 antibody result）</li>
+<li>Response 60-70%；onset 24-72 hr</li>
+<li>Post-pulse oral taper 8-12 週銜接 maintenance</li>
+<li><strong>Second-line：PLEX 5-7 sessions</strong>（severe / refractory / vision-threatening）</li>
+<li>PLEX response 60-80% partial improvement</li>
+<li>Combined upfront approach trend（severe attack 直接 IV + PLEX）</li>
+<li>IVIG less evidence；少 first-line</li>
+<li>Adjunct acute SCI care：bladder、bowel、skin、DVT prophylaxis、pain、AD prophylaxis</li>
+<li>Monitoring：glucose、BP、K/Mg、GI、mood、infection</li>
+<li>Outcome：AIS C 50-70% meaningful recovery；3-6 個月 plateau</li>
+<li>本案 plan：Day 1 IV pulse + adjunct → Day 3 reassess → Day 5 complete + 視 response add PLEX → Week 2 oral taper + maintenance initiation</li>
+</ul>`,
+      },
+      {
+        q: '長期免疫維持治療怎麼選？',
+        keywords: [
+          'Lifelong immunosuppression critical',
+          'Relapse risk high without treatment',
+          'Traditional: azathioprine, mycophenolate, methotrexate',
+          'Rituximab (anti-CD20)',
+          'New mAbs: eculizumab, satralizumab, inebilizumab',
+          'Eculizumab (anti-C5)',
+          'Satralizumab (anti-IL-6R)',
+          'Inebilizumab (anti-CD19)',
+          'Treatment goals: prevent relapse + minimize toxicity',
+          'Monitoring: lymphocyte count, immunoglobulin, B-cell',
+          'Vaccination considerations',
+          'Switching therapy if relapse',
+          'Pregnancy considerations',
+          'Insurance + cost',
+        ],
+        points: [
+          '<strong>NMOSD 是 lifelong disease — 沒有治療 80-90% 5 年內 relapse</strong>',
+          '<strong>每次 relapse 累積 disability — prevention 是核心</strong>',
+          '<strong>Treatment goals</strong>：(1) prevent relapse、(2) minimize cumulative disability、(3) minimize treatment toxicity、(4) preserve quality of life',
+          '<strong>Traditional Immunosuppressants</strong>',
+          '<strong>1. Azathioprine</strong>：2-3 mg/kg/day；50% relapse reduction；onset 3-6 個月；副作用 BM suppression、hepatotoxicity、infection；TPMT testing baseline',
+          '<strong>2. Mycophenolate mofetil（MMF）</strong>：1-3 g/day；50-70% relapse reduction；副作用 GI、BM suppression、infection；teratogenic（避孕 + pregnancy avoidance）',
+          '<strong>3. Methotrexate</strong>：15-25 mg weekly；少用 NMOSD（evidence weaker）',
+          '<strong>4. Rituximab（anti-CD20、off-label NMOSD）</strong>：1 g IV × 2（2 週間隔）→ 6-monthly；70-80% relapse reduction；deplete B-cells；台灣健保條件給付（NMOSD-specific approval）；副作用 infusion reaction、infection、PML（rare）',
+          '<strong>新一代 Monoclonal Antibodies（FDA-approved NMOSD specific）</strong>',
+          '<strong>5. Eculizumab（Soliris、anti-C5）</strong>：first FDA approval for NMOSD（2019）；900 mg IV q2-week × 4 → 1200 mg q2-week；&gt; 90% relapse reduction；副作用 meningococcal infection（必 vaccinate before）+ infusion reaction；極貴（&gt; USD 500,000/year）',
+          '<strong>6. Satralizumab（Enspryng、anti-IL-6R）</strong>：120 mg sc q4-week；70-80% relapse reduction；副作用 infection、injection site reaction；prefers AQP4 + patients',
+          '<strong>7. Inebilizumab（Uplizna、anti-CD19）</strong>：300 mg IV q6-month；70-80% relapse reduction；副作用 infection、infusion reaction',
+          '<strong>選擇原則</strong>',
+          '<strong>第一線（多 case）</strong>：rituximab（evidence + cost-effective + 台灣健保 path）',
+          '<strong>新 mAbs（如 rituximab fail / contraindication / 經濟 allow）</strong>：eculizumab、satralizumab、inebilizumab',
+          '<strong>傳統（如 mAbs unavailable）</strong>：azathioprine 或 MMF',
+          '<strong>本案 plan：rituximab first-line</strong>（evidence + 健保 + 預期 AQP4 +）',
+          '<strong>Monitoring（lifelong）</strong>',
+          'CBC q3-monthly（lymphocyte count、 BM suppression）',
+          'CD19/CD20 B-cell count post-rituximab（depletion confirmation）',
+          'IgG、IgM levels（hypogammaglobulinemia risk）',
+          'LFT、Cr q3-monthly',
+          'Infection surveillance',
+          'AQP4-IgG titer trend（some evidence trend with disease activity）',
+          'MRI brain + 全脊椎 yearly + symptom-driven',
+          '<strong>Vaccinations（critical）</strong>',
+          'Pre-rituximab：給 inactivated vaccines（influenza、pneumococcal、Tdap、HPV、hepatitis B）',
+          'Live vaccines avoid during immunosuppression（MMR、varicella、yellow fever）',
+          'Eculizumab pre-treatment：meningococcal（quadrivalent + B）+ pneumococcal',
+          'COVID-19 vaccine + boosters',
+          '<strong>Switching Therapy</strong>',
+          'Rituximab fail（relapse despite adequate treatment）→ eculizumab / satralizumab',
+          'Side effects intolerable → switch class',
+          'Pregnancy planning → switch to safer agents（azathioprine acceptable；rituximab + new mAbs avoid 6 個月 before pregnancy）',
+          '<strong>Pregnancy + Family Planning</strong>',
+          'NMOSD relapse risk peaks postpartum',
+          'Pre-pregnancy：counseling + 計畫；rituximab 完整 wash-out 6 個月',
+          '本案 32F + 計畫年內結婚 → 重要 discussion（次題詳）',
+          '<strong>本案具體 long-term plan</strong>',
+          'Week 2-4：transition oral steroid taper + initiate <strong>rituximab</strong>（pre-rituximab vaccines + screening for hep B、TB）',
+          'Rituximab schedule：1 g IV × 2（2 週間隔）induction → 6 個月後 maintenance 1 g IV q6-month indefinitely',
+          'Steroid taper 完成後 monotherapy rituximab',
+          'CD19 monitoring + relapse surveillance',
+        ],
+        a: `<h4>口試答題框架（Maintenance therapy 是 NMOSD lifelong management 核心）</h4>
+<p>Without treatment relapse rate &gt; 80%；early effective immunosuppression critical。標準展開：</p>
+<ol>
+<li><strong>Treatment goals</strong></li>
+<li><strong>Traditional immunosuppressants（4 種）</strong></li>
+<li><strong>新一代 mAbs（3 種 FDA-approved NMOSD specific）</strong></li>
+<li><strong>選擇原則</strong></li>
+<li><strong>Monitoring + vaccinations</strong></li>
+<li><strong>Switching + pregnancy considerations</strong></li>
+</ol>
+
+<h4>1. Why Lifelong Immunosuppression?</h4>
+<table>
+<tr><th>Statistics</th><th>Without treatment</th></tr>
+<tr><td>1-year relapse rate</td><td>60-70%</td></tr>
+<tr><td>5-year relapse rate</td><td>80-90%</td></tr>
+<tr><td>Cumulative disability</td><td>每次 attack 累積 → blindness、paraplegia、death（severe brainstem attacks）</td></tr>
+</table>
+
+<h4>2. Traditional Immunosuppressants</h4>
+<table>
+<tr><th>Drug</th><th>Dose</th><th>Relapse reduction</th><th>副作用</th></tr>
+<tr><td><strong>Azathioprine</strong></td><td>2-3 mg/kg/day PO</td><td>50%</td><td>BM suppression、hepatotoxicity、infection；TPMT testing baseline</td></tr>
+<tr><td><strong>Mycophenolate mofetil</strong></td><td>1-3 g/day PO（divided）</td><td>50-70%</td><td>GI、BM suppression、infection；★ teratogenic</td></tr>
+<tr><td><strong>Methotrexate</strong></td><td>15-25 mg weekly</td><td>Weaker evidence</td><td>BM、hepatotoxicity、pneumonitis；少用 NMOSD</td></tr>
+</table>
+
+<h4>3. Rituximab（Off-Label、台灣健保條件給付）</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>機制</td><td>Anti-CD20 monoclonal Ab → deplete B-cells</td></tr>
+<tr><td>Schedule</td><td>★ Induction：1 g IV × 2（2 週間隔）；Maintenance：1 g IV q6-month</td></tr>
+<tr><td>Relapse reduction</td><td>70-80%</td></tr>
+<tr><td>副作用</td><td>Infusion reaction、infection（hep B reactivation）、PML（rare）、hypogammaglobulinemia long-term</td></tr>
+<tr><td>Monitoring</td><td>CD19/CD20 count；IgG/IgM；LFT；hep B serology baseline</td></tr>
+<tr><td>本案</td><td>★ First-line（evidence + cost + 健保 path）</td></tr>
+</table>
+
+<h4>4. 新一代 mAbs（FDA-Approved NMOSD-Specific）</h4>
+<table>
+<tr><th>Drug</th><th>Target</th><th>Schedule</th><th>Relapse reduction</th><th>關鍵 side effect</th></tr>
+<tr><td><strong>Eculizumab（Soliris）</strong></td><td>★ Anti-C5（complement）</td><td>900 mg IV q2-wk × 4 → 1200 mg q2-wk</td><td>★ &gt; 90%（best）</td><td>★ Meningococcal infection（必 vaccinate）</td></tr>
+<tr><td><strong>Satralizumab（Enspryng）</strong></td><td>Anti-IL-6R</td><td>120 mg sc q4-wk（loading 0/2/4 wk → q4 wk）</td><td>70-80%</td><td>Infection、injection site</td></tr>
+<tr><td><strong>Inebilizumab（Uplizna）</strong></td><td>Anti-CD19</td><td>300 mg IV q6-mo</td><td>70-80%</td><td>Infection、infusion reaction</td></tr>
+</table>
+
+<p><strong>新 mAbs 共同 features</strong>：FDA-approved NMOSD specific；極貴（USD 200,000-500,000/year）；台灣 health insurance 限制 access；個別 case-based approval</p>
+
+<h4>5. 選擇原則</h4>
+<table>
+<tr><th>Tier</th><th>Choice</th><th>Reasoning</th></tr>
+<tr><td>★ First-line（多 case）</td><td>Rituximab</td><td>Evidence solid + cost-effective + 台灣健保 NMOSD-specific approval；70-80% relapse reduction</td></tr>
+<tr><td>新 mAbs（如 rituximab fail / contraindication / economic allow）</td><td>Eculizumab（max efficacy）/ satralizumab（sc convenient）/ inebilizumab</td><td>Better relapse reduction；但 cost issue</td></tr>
+<tr><td>傳統（如 mAbs unavailable）</td><td>Azathioprine 或 MMF</td><td>Cheaper、proven；但 efficacy 較低</td></tr>
+<tr><td>Pregnancy planning</td><td>Azathioprine acceptable；avoid MMF teratogenic；rituximab wash-out 6 個月</td><td>—</td></tr>
+</table>
+
+<h4>6. Monitoring（Lifelong）</h4>
+<table>
+<tr><th>Test</th><th>Frequency</th></tr>
+<tr><td>CBC（lymphocyte、neutrophil、Hb、platelet）</td><td>q3-monthly</td></tr>
+<tr><td>CD19/CD20 B-cell count（rituximab）</td><td>Pre-dose + 3 + 6 months</td></tr>
+<tr><td>IgG、IgM levels</td><td>q6-monthly（hypogammaglobulinemia surveillance）</td></tr>
+<tr><td>LFT、Cr</td><td>q3-monthly</td></tr>
+<tr><td>HepB / HepC / HIV / TB</td><td>Baseline + symptom-driven</td></tr>
+<tr><td>AQP4-IgG titer</td><td>Annually + relapse</td></tr>
+<tr><td>MRI brain + 全脊椎</td><td>Yearly + symptom-driven</td></tr>
+<tr><td>Vision + OCT + VEP</td><td>Yearly</td></tr>
+<tr><td>Neurological exam</td><td>q3-6 monthly</td></tr>
+</table>
+
+<h4>7. Vaccinations（Critical）</h4>
+<table>
+<tr><th>Phase</th><th>Vaccines</th></tr>
+<tr><td><strong>Pre-immunosuppression（baseline）</strong></td><td>Inactivated：influenza yearly、pneumococcal（PCV13 + PPSV23）、Tdap booster、HPV（如 indicated）、hepatitis B；live：MMR、varicella（如 needed）— must be done 4-6 weeks before immunosuppression starts</td></tr>
+<tr><td><strong>During immunosuppression</strong></td><td>★ Avoid live vaccines；inactivated OK但 reduced efficacy</td></tr>
+<tr><td><strong>Eculizumab specific</strong></td><td>★ Meningococcal（quadrivalent ACWY + B）pre-treatment + 14 day delay</td></tr>
+<tr><td><strong>COVID-19</strong></td><td>Vaccine + boosters；mRNA preferred</td></tr>
+<tr><td><strong>Annual</strong></td><td>Influenza yearly</td></tr>
+</table>
+
+<h4>8. Switching Therapy</h4>
+<table>
+<tr><th>Scenario</th><th>Action</th></tr>
+<tr><td>Rituximab fail（relapse despite B-cell depletion）</td><td>→ Eculizumab / satralizumab</td></tr>
+<tr><td>Side effects intolerable</td><td>Switch class</td></tr>
+<tr><td>Pregnancy planning</td><td>Wash-out + switch to azathioprine（可 pregnancy）</td></tr>
+<tr><td>Hypogammaglobulinemia severe</td><td>IVIG replacement + reassess immunosuppression intensity</td></tr>
+<tr><td>Recurrent infections</td><td>Reduce intensity + supportive care</td></tr>
+</table>
+
+<h4>9. 本案具體 Long-term Plan</h4>
+<ol>
+<li><strong>Week 2-4（acute treatment 完成）</strong>：</li>
+<li>Pre-rituximab screening：HepB（HBsAg、anti-HBc、anti-HBs）+ HepC + HIV + TB（quantiferon）+ baseline IgG/IgM + CD19 baseline</li>
+<li>Vaccinations：influenza、pneumococcal、Tdap、HPV catch-up、HepB if non-immune</li>
+<li>4-6 週 vaccination 後 → start rituximab</li>
+<li><strong>Rituximab Induction</strong>：1 g IV × 2（2 週間隔）+ pre-medication（acetaminophen、antihistamine、IV methylprednisolone 100 mg）</li>
+<li><strong>Maintenance</strong>：1 g IV q6 monthly indefinitely + monitoring CD19 + IgG</li>
+<li>Steroid taper 8-12 週銜接 rituximab onset</li>
+<li><strong>監控 schedule</strong>：CBC + LFT + Cr q3 monthly；CD19 + IgG q6 monthly；AQP4-IgG titer + MRI brain/spine + vision yearly</li>
+<li><strong>Pregnancy planning</strong>：年內如 plan → discuss switching to azathioprine + 6 個月 rituximab wash-out（次題詳）</li>
+</ol>
+
+<h4>跟病人 + 男友溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「<strong>NMOSD 是 lifelong disease — 急性 attack 治好不夠、必須長期免疫治療預防 relapse</strong>。<br><br>
+<strong>沒治療的情況</strong>：<br>
+• 1 年 relapse 60-70%<br>
+• 5 年 relapse 80-90%<br>
+• 每次 relapse 累積殘障（視力 + 行走 + 排尿）<br><br>
+<strong>建議：rituximab（首選）</strong><br>
+• <strong>機制</strong>：靜脈抗體藥、抑制免疫攻擊（B 細胞 deplete）<br>
+• <strong>劑量</strong>：誘導 1 g × 2 次（2 週間隔）→ 之後每 6 個月一次 1 g<br>
+• <strong>效果</strong>：relapse 減 70-80%<br>
+• <strong>健保</strong>：NMOSD 條件給付（您 qualify）<br>
+• <strong>副作用</strong>：注射反應（pre-medication 預防）、感染風險升<br>
+• <strong>監控</strong>：每 3 個月抽血、每 6 個月 IgG + B 細胞 count<br><br>
+<strong>新一代藥（more potent 但極貴）</strong>：<br>
+• Eculizumab（&gt; 90% relapse reduction、但 USD 50 萬/年 + 健保 limited access）<br>
+• Satralizumab、Inebilizumab — 類似<br>
+• 如 rituximab 失敗才考慮<br><br>
+<strong>疫苗（重要）</strong>：<br>
+• Rituximab 開始<u>前 4-6 週</u> → 補打：流感、肺炎鏈球菌、Tdap、HPV、B 肝（如未免疫）<br>
+• 治療期間<strong>不能</strong>打活疫苗（MMR、水痘、黃熱病）<br>
+• 每年流感<br>
+• COVID 疫苗<br><br>
+<strong>長期監控</strong>：<br>
+• 每 3 個月抽血<br>
+• 每 6 個月 IgG + B cell<br>
+• 每年 MRI 全脊椎 + 腦 + 視力<br>
+• 任何<strong>新症狀（視力模糊、新無力、新麻、嘔吐）</strong>立刻聯絡<br><br>
+<strong>未來懷孕計畫</strong>（您 32 歲 + 計畫結婚） — 我們需要 detailed discussion（次題）。重點：rituximab 計畫懷孕前要 wash-out 6 個月、可以換 azathioprine bridge。」</p>
+
+<h4>口試考官可能追問</h4>
+<ul>
+<li>「Rituximab 為什麼<u>不</u>是 FDA NMOSD-approved？」 → Off-label use；evidence solid（multiple RCTs）+ cost-effective；FDA approval 過程未啟動（pharma 不申請）；guidelines（NMOSD International Federation）endorse；real-world standard first-line</li>
+<li>「Eculizumab 為什麼必先打 meningococcal vaccine？」 → C5 inhibition → 病人 highly susceptible to encapsulated organisms（特別 meningococcus）；致命 meningitis risk；vaccine 14 days before initiation + lifelong booster + emergency abx supply；本案如將 eculizumab → 必 vaccinate</li>
+<li>「Hypogammaglobulinemia 怎麼處理？」 → IgG &lt; 400 + recurrent infection → IVIG replacement 0.4 g/kg q4 wk；如 isolated low IgG without infection → monitor；rituximab long-term cumulative risk</li>
+<li>「她未來打 vaccine response 不好怎麼辦？」 → Immunosuppressed 病人 vaccine response 部分 attenuated；measure post-vaccine titers；如 inadequate → booster；某些 vaccines（COVID）booster intervals 需 adjust（可能需更高 dose 或 frequency）</li>
+<li>「Azathioprine 跟 rituximab 哪個 first-line？」 → 看 setting：guidelines now lean rituximab first-line（efficacy + safety profile）；某些 country / 健保 limit access → azathioprine first-line；本案台灣健保 rituximab 條件給付 NMOSD → first-line</li>
+<li>「她想懷孕但 NMOSD active？」 → Disease control 6 個月 stable 後 + rituximab wash-out（last dose &gt; 6 個月）+ 切換 azathioprine（pregnancy compatible）→ 計畫 conception；高 risk pregnancy + multidisciplinary（OB + neurology）；relapse risk peak postpartum → planning</li>
+<li>「她若 rituximab 後 still relapse？」 → 確認 B-cell depletion adequate（CD19 &lt; 1%）；如 depletion 不夠 → 加量 / 提早 dose；如 depletion 夠 still relapse → 換 eculizumab / satralizumab；某些 case combination therapy</li>
+<li>「Live vaccine timing 多久後可給？」 → 12 個月 post-rituximab discontinuation + B-cell recovery；2-4 weeks post-azathioprine discontinuation；evaluate individually + immunology consultation</li>
+<li>「Rituximab biosimilar OK 嗎？」 → 是；多 biosimilar 已 approved（Truxima、Ruxience）；safety + efficacy similar；cost lower → access better；本案 biosimilar OK if available</li>
+<li>「她男友不知道怎麼支持？」 → Education first：disease nature + lifelong + relapse warning + treatment commitment + 婚後生育規劃；joint counseling；NMOSD patient + caregiver support groups（病友會 + online resources）；確保男友 informed decision-maker before marriage</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>NMOSD lifelong — without treatment 5-year relapse 80-90%；treatment essential</li>
+<li>每次 relapse 累積 disability → prevention 是核心 goal</li>
+<li>Traditional：azathioprine、MMF、methotrexate</li>
+<li>Rituximab（off-label）：first-line 多 case；induction 1 g × 2 + maintenance 1 g q6m；70-80% relapse reduction</li>
+<li>新一代 mAbs：eculizumab（&gt; 90% reduction）、satralizumab、inebilizumab — FDA-approved NMOSD specific 但極貴</li>
+<li>Eculizumab：必先 meningococcal vaccine</li>
+<li>選擇：rituximab first-line 多 case；新 mAbs reserve refractory / contraindication</li>
+<li>Monitoring：CBC、CD19/B-cell、IgG、LFT、Cr q3-6 monthly + AQP4 titer + MRI yearly</li>
+<li>Vaccinations：pre-immunosuppression inactivated all up-to-date；avoid live during；eculizumab meningococcal essential</li>
+<li>Switching：fail / intolerance / pregnancy planning</li>
+<li>Pregnancy：rituximab wash-out 6 個月；azathioprine acceptable；postpartum relapse peak</li>
+<li>本案 plan：rituximab first-line + 健保 NMOSD-specific approval + monitoring + pregnancy planning discussion</li>
+</ul>`,
+      },
+      {
+        q: '復健跟 traumatic T4 SCI 比哪些不同？',
+        keywords: [
+          'Recovery dynamic (NMOSD evolving over months)',
+          'Risk of relapse during rehab',
+          'Steroid effects on rehab',
+          'Immunosuppression infection risk',
+          'Visual deficits coexist',
+          'Fatigue (immune-mediated + steroid)',
+          'Pain (NMP cord-mediated + ON)',
+          'Spasticity onset',
+          'Bladder/bowel UMN',
+          'AD risk same',
+          'Pregnancy planning impact',
+          'Family + work integration',
+          'Goals dynamic (vs static after trauma)',
+          'Vaccination during rehab',
+          'Coordination with neurology immunology team',
+        ],
+        points: [
+          '<strong>NMOSD 急性 attack 後的復健 vs traumatic T4 SCI 共享 80% core care + 20% modifications</strong>',
+          '<strong>共享（traumatic T4 SCI principles）</strong>',
+          'NLI T4 → AD 高風險（lesion above T6）— 同',
+          'Bladder UMN（DO + DSD）— 同',
+          'Bowel UMN reflex — 同',
+          'Pressure sore prevention — 同',
+          'Spasticity 可能 develop — 同',
+          'NP（below-level + at-level）— 同',
+          'ADL 適應 + 輔具 — 同',
+          'Wheelchair + standing program — 同',
+          '<strong>NMOSD-specific 不同</strong>',
+          '<strong>1. Recovery 動態</strong>',
+          'Traumatic：受傷 fixed event；recovery plateau ~ 6-12 個月後 stable',
+          'NMOSD：<strong>recovery 持續 evolve 3-6 個月</strong>+ 視 immunosuppression effectiveness；可能 second wave improvement weeks-months 後',
+          '本案 AIS C → 50-70% meaningful recovery 可能',
+          'Rehab plan flexible，不要 rigid schedule',
+          '<strong>2. Relapse Risk 持續</strong>',
+          'Traumatic：fixed event 不會自己 progress',
+          'NMOSD：<strong>每年 relapse risk（即使 maintenance therapy）20-30%</strong>',
+          'Rehab 期間出現新 deficit / 新 ON / 視力變化 → 立即 neurology consult；可能需 acute attack treatment',
+          '本案<strong>復健 + 治療同時警覺 relapse signs</strong>',
+          '<strong>3. Steroid Effects on Rehab</strong>',
+          'Acute pulse + oral taper 共 3 個月+ 接觸 steroid',
+          'Side effects：proximal myopathy（quad weakness 加重 functional impact）、osteoporosis（fragility fracture risk）、weight gain、hyperglycemia、insomnia、mood change',
+          'Rehab adjustment：avoid 過度 resistance training acute；emphasize aerobic + flexibility；calcium + vit D supplement、bone density baseline + DEXA',
+          '<strong>4. Immunosuppression Infection Risk</strong>',
+          'Rituximab + steroid → infection vulnerability（pneumonia、UTI、herpes reactivation、PML rare）',
+          'Rehab gym infection control：hand hygiene、avoid sick contacts、surgical mask in public',
+          'Pressure sore + UTI 後 immunosuppression 加重 — 比 traumatic SCI 更謹慎',
+          '<strong>5. Visual Deficits Coexist</strong>',
+          'ON 殘餘可能（本案 prior subclinical + 預期 acute attack 視力可能受影響）',
+          '影響 ADL + transfers + driving + reading',
+          'Visual rehab + low vision aids（如 needed）',
+          'OCT + VEP serial monitor',
+          '<strong>6. Fatigue（多重原因）</strong>',
+          'Immune-mediated fatigue（NMOSD itself）',
+          'Steroid effects',
+          'Deconditioning',
+          'Sleep disturbance（steroid + nocturia）',
+          'Pain + emotional',
+          'Energy budget concept（同 cancer 病人 sci_007）— prioritize、frequent breaks、shorter sessions',
+          '<strong>7. NP（mixed mechanism）</strong>',
+          'Cord-mediated NP（below-level burning + at-level allodynia）— 同 traumatic',
+          'Optic neuralgia possible（trigeminal neuralgia-like、treat as NP）',
+          'Treatment：gabapentinoid + TCA + duloxetine',
+          '<strong>8. AD Risk（同 traumatic T4）</strong>',
+          'NLI T4 above T6 → high AD risk',
+          'Bladder + bowel + pressure sore + ingrown nail + new pathology trigger',
+          'AD card + family education essential',
+          '<strong>9. Pregnancy Planning Impact</strong>',
+          '32F + 計畫年內結婚生子 — 重要 considerations（次題詳）',
+          'Disease control 6 個月 stable 後考慮 pregnancy',
+          'Switch immunosuppression（rituximab → azathioprine）before conception',
+          'Pregnancy + postpartum relapse risk',
+          '<strong>10. Family + Work Integration</strong>',
+          '32 歲護理師 8 年外科病房 — 職業需要思考',
+          'Future RTW vs disability vs different role',
+          '婚姻 + 生育 timing',
+          '父母獨生女 caregiver concerns',
+          '<strong>11. Goals Dynamic（vs Static after Trauma）</strong>',
+          'Traumatic SCI goals：lifelong stable functional adaptation',
+          'NMOSD goals：dynamic — recovery + relapse + treatment effects integrated；adjust based on trajectory',
+          '<strong>本案 Rehab Plan</strong>',
+          'Acute（IV pulse + PLEX 期間）：bed exercises + breathing + ROM + skin/bowel/bladder protocols',
+          'Sub-acute（Week 2-4、oral taper + rituximab initiation）：mobilization、transfer、wheelchair, AD prophylaxis',
+          'Discharge phase（Week 4-8）：home modification、輔具、CIC + bowel program independence、family education',
+          'Outpatient（Month 2-6）：PT/OT 3x/週 progressive；recovery ongoing；任何新 symptoms → urgent neurology',
+          'Maintenance（&gt; 6 個月）：functional preservation + maintenance therapy + work transition + pregnancy planning',
+        ],
+        a: `<h4>口試答題框架（NMOSD rehab vs traumatic SCI 對照、High-yield）</h4>
+<p>NMOSD 復健共享 80% SCI core care + 20% disease-specific modifications。標準展開：</p>
+<ol>
+<li><strong>共享（SCI core）</strong></li>
+<li><strong>NMOSD-specific 11 項 modifications</strong></li>
+<li><strong>本案 plan</strong></li>
+</ol>
+
+<h4>1. 共享 — Traumatic T4 SCI Principles</h4>
+<table>
+<tr><th>項目</th><th>同點</th></tr>
+<tr><td>NLI T4 above T6 → AD 高風險</td><td>同</td></tr>
+<tr><td>Bladder UMN（DO + DSD）</td><td>同</td></tr>
+<tr><td>Bowel UMN reflex</td><td>同</td></tr>
+<tr><td>Pressure sore prevention</td><td>同</td></tr>
+<tr><td>Spasticity 可能 develop</td><td>同</td></tr>
+<tr><td>NP（below-level + at-level）</td><td>同</td></tr>
+<tr><td>ADL 適應 + 輔具</td><td>同</td></tr>
+<tr><td>Wheelchair + standing program</td><td>同</td></tr>
+</table>
+
+<h4>2. NMOSD-Specific Modifications（11 項、必背）</h4>
+<table>
+<tr><th>Modification</th><th>機制</th><th>本案 implication</th></tr>
+<tr><td><strong>1. Recovery 動態</strong></td><td>持續 evolve 3-6 個月 + 視 immunosuppression effectiveness；可能 second wave improvement</td><td>Rehab plan flexible；不 rigid schedule；reassess monthly</td></tr>
+<tr><td><strong>2. Relapse risk 持續</strong></td><td>每年 20-30% even with maintenance therapy</td><td>★ 任何<u>新</u> deficit 立刻 neurology consult；可能 acute attack treatment</td></tr>
+<tr><td><strong>3. Steroid effects</strong></td><td>Proximal myopathy、osteoporosis、weight gain、hyperglycemia、insomnia、mood</td><td>Avoid 過度 resistance acute；aerobic + flexibility；calcium + vit D；DEXA baseline</td></tr>
+<tr><td><strong>4. Immunosuppression infection risk</strong></td><td>Rituximab + steroid → vulnerability</td><td>Hand hygiene、mask、avoid sick contacts；UTI / pressure sore 預防比 traumatic 更嚴格</td></tr>
+<tr><td><strong>5. Visual deficits coexist</strong></td><td>ON 殘餘 + 新 attack 風險</td><td>影響 ADL + transfers + driving + reading；visual rehab + low vision aids；OCT + VEP serial</td></tr>
+<tr><td><strong>6. Fatigue 多重原因</strong></td><td>Immune-mediated + steroid + deconditioning + sleep + pain</td><td>Energy budget concept；shorter sessions；frequent breaks</td></tr>
+<tr><td><strong>7. NP mixed mechanism</strong></td><td>Cord NP + optic neuralgia possible</td><td>Gabapentinoid + TCA + duloxetine</td></tr>
+<tr><td><strong>8. AD risk</strong></td><td>Same as traumatic（T4 above T6）</td><td>AD card + family education</td></tr>
+<tr><td><strong>9. Pregnancy planning impact</strong></td><td>Disease control + immunosuppression switch + postpartum relapse</td><td>★ 本案 32F + 計畫生子</td></tr>
+<tr><td><strong>10. Family + work integration</strong></td><td>32 歲護理師 + 婚姻 + caregiver</td><td>RTW evaluation + role flexibility + family planning</td></tr>
+<tr><td><strong>11. Goals dynamic</strong></td><td>Recovery + relapse + treatment effects integrated</td><td>Adjust based on trajectory；不 lock 一個 plan</td></tr>
+</table>
+
+<h4>3. 步驟對比 — Traumatic vs NMOSD T4 SCI Rehab</h4>
+<table>
+<tr><th>Phase</th><th>Traumatic T4</th><th>NMOSD T4</th></tr>
+<tr><td>Acute（Day 1-7）</td><td>Spine surgery + decompression（如 indicated）；bed exercises；skin/bowel/bladder</td><td>★ IV methylprednisolone + PLEX；同 SCI care 但 immunosuppression considerations</td></tr>
+<tr><td>Sub-acute（Week 2-4）</td><td>Mobilization + transfer + wheelchair + AD prophylaxis</td><td>同 + steroid taper + rituximab initiation + vaccination</td></tr>
+<tr><td>Discharge（Week 4-8）</td><td>Home modification + 輔具 + family education</td><td>同 + 視力 evaluation + immunosuppression infection precautions</td></tr>
+<tr><td>Outpatient（Month 2-6）</td><td>Functional plateau ~ 6-12 月；progressive PT/OT</td><td>★ Recovery 持續 evolve；relapse warning signs；rituximab maintenance</td></tr>
+<tr><td>Long-term</td><td>Lifelong functional adaptation</td><td>★ Lifelong immunosuppression + relapse surveillance + dynamic goals + family planning</td></tr>
+</table>
+
+<h4>4. 本案 Rehab Plan</h4>
+<ol>
+<li><strong>Acute（IV pulse + PLEX 期間，Day 1-10）</strong></li>
+<ul>
+<li>Bed exercises + deep breathing + incentive spirometry</li>
+<li>ROM passive（治療師 careful technique）+ ankle pumps + isometric quad/glute</li>
+<li>Skin q2h turn + Roho cushion ready</li>
+<li>Bladder Foley → 1-2 週 transition CIC</li>
+<li>Bowel program 建立（suppository + DRE q2 days）</li>
+<li>DVT prophylaxis（LMWH）</li>
+<li>Pain control（gabapentinoid + APAP + opioid acute）</li>
+<li>AD prophylaxis education</li>
+<li>Psychological support（cancer-like shock 但 prognosis 較好）</li>
+</ul>
+
+<li><strong>Sub-acute（Week 2-4、oral steroid taper + rituximab）</strong></li>
+<ul>
+<li>Mobilization：bed → sitting balance → wheelchair</li>
+<li>Transfer training</li>
+<li>UE strengthening</li>
+<li>Standing program（with parallel bars）— 視 motor recovery</li>
+<li>Vaccinations 啟動 4-6 週前 rituximab</li>
+<li>CIC + bowel program 自理 training（病人）</li>
+<li>視力 evaluation + visual rehab if needed</li>
+<li>Family education 持續</li>
+</ul>
+
+<li><strong>Discharge phase（Week 4-8）</strong></li>
+<ul>
+<li>Home modification + 輔具 finalize</li>
+<li>無障礙 set up</li>
+<li>Outpatient PT/OT schedule（3x/週）</li>
+<li>Rituximab induction 完成 + maintenance schedule</li>
+<li>Family + 男友 caregiver education</li>
+<li>Relapse warning signs（新視力、新無力、新麻、新 AD episode）</li>
+<li>緊急聯絡 protocol</li>
+</ul>
+
+<li><strong>Outpatient（Month 2-6）</strong></li>
+<ul>
+<li>PT/OT progressive 3x/週</li>
+<li>Recovery 持續 monitor — AIS reassess monthly</li>
+<li>Visual function monitor</li>
+<li>Immunosuppression effects monitor</li>
+<li>Pain + spasticity optimization</li>
+<li>Pregnancy planning discussion（次題）</li>
+<li>RTW exploration</li>
+</ul>
+
+<li><strong>Maintenance（&gt; 6 個月）</strong></li>
+<ul>
+<li>Functional preservation</li>
+<li>Lifelong rituximab + immunosuppression monitoring</li>
+<li>Yearly imaging + vision + neuro exam</li>
+<li>Work transition plan</li>
+<li>Family planning execution（pregnancy）</li>
+<li>Long-term ADL stable + life integration</li>
+</ul>
+</ol>
+
+<h4>跟病人 + 男友溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您的<strong>復健跟一般車禍 SCI 病人 80% 相同 + 20% 不同</strong>。<br><br>
+<strong>相同的部分</strong>：<br>
+• T4 lesion → AD 高風險 — 您 + 男友必須學<strong>5 步驟急救（坐起、鬆衣服、找原因、移除原因、藥）</strong><br>
+• CIC 每 4-6 hr 自己導尿<br>
+• Bowel program 規律<br>
+• 皮膚每天檢查 + Roho cushion + q2h turn<br>
+• 上肢 + 軀幹 strength + transfer training + wheelchair<br><br>
+<strong>不一樣的 11 個地方</strong>：<br><br>
+1. <strong>Recovery 持續 evolve 3-6 個月</strong>（不像 trauma 6-12 月就 plateau）— 計畫<u>flexible</u>、每月 reassess<br>
+2. <strong>Relapse risk 持續</strong>（每年 20-30% even with rituximab）— <strong>復健中如出現任何<u>新</u>無力、新麻、新視力問題、新嘔吐</strong>立刻 ER<br>
+3. <strong>Steroid 副作用</strong>影響復健：肌肉 weak、骨質疏鬆、體重增、血糖升、失眠 — 我們 monitor + adjust<br>
+4. <strong>Immunosuppression 感染 risk</strong>：洗手嚴格、戴口罩、避免擁擠；UTI / 壓瘡比一般 SCI 病人更謹慎<br>
+5. <strong>視力</strong>可能殘留問題（您兩週前 ON）— 影響 ADL + transfer；眼科 follow + low vision aids if needed<br>
+6. <strong>疲勞</strong>嚴重（多重原因）— energy budget、shorter PT sessions、frequent breaks<br>
+7. <strong>NP（神經痛）</strong>：cord 痛 + 視神經痛可能 — gabapentinoid + TCA<br>
+8. <strong>AD 同 traumatic T4</strong>：高風險、5 步驟必會<br>
+9. <strong>懷孕計畫</strong>：disease 控制 6 個月 stable 後 + rituximab wash-out 6 個月 + 換 azathioprine bridge — 詳細談（次題）<br>
+10. <strong>工作 + 婚姻</strong>：32 歲護理師 + 家庭規劃 — 我們一起 plan<br>
+11. <strong>目標 dynamic</strong>：recovery + treatment + relapse 整合 — 不 lock 一個 plan、定期 adjust<br><br>
+<strong>給男友</strong>：<br>
+您是<strong>partner + caregiver + decision-maker</strong>。我會請您一起學：<br>
+• AD 5 步驟急救<br>
+• Skin check + transfer<br>
+• Relapse warning signs<br>
+• 婚姻前理解 NMOSD lifelong nature<br><br>
+我們<strong>每月 OPD 一起 review</strong>。」</p>
+
+<h4>口試考官可能追問</h4>
+<ul>
+<li>「她若 rehab 期間 fever + new weakness — 復健還是 relapse？」 → 高度警覺 relapse；立刻 neurology + MRI；febrile illness 也可 trigger relapse；如 confirmed relapse → IV methylprednisolone immediately；rehab pause acute attack period</li>
+<li>「Steroid myopathy 怎麼鑑別 NMOSD weakness？」 → Steroid myopathy proximal symmetric（hip flexor、shoulder）+ no sensory symptoms + muscle enzymes normal；NMOSD weakness 跟 lesion 對應 + sensory level + UMN signs；本案如新 weakness pattern 不對應 cord lesion → consider steroid myopathy；reduce steroid + supportive</li>
+<li>「她視力影響復健？」 → 視覺缺失 → balance + transfer challenge；OT visual compensation strategies；low vision aids；environmental modification（high contrast、good lighting）；如 severe → 考慮 mobility orientation training</li>
+<li>「Vaccinations 復健期間給？」 → Pre-rituximab 4-6 週給最佳；post-rituximab antibody response 差；本案 inpatient 階段安排（influenza、pneumococcal、Tdap、HPV）</li>
+<li>「她復健 motivation 不足怎麼辦？」 → 考慮多因素：depression（PHQ-9）、fatigue、grief、prognostic uncertainty；心理諮商 + 病友會 + 家屬 support；不要 push aggressive；focus on meaningful goals + small wins</li>
+<li>「Rituximab 開始後感染 prevention？」 → 教育：(1) hand hygiene、(2) avoid crowds in flu season、(3) mask in healthcare facilities、(4) prompt ER if fever、(5) avoid sick contacts、(6) good oral / skin hygiene；不必 isolate（normal life encouraged）</li>
+<li>「她 ON 殘餘怎麼治？」 → Acute ON 已用 IV steroid；residual 多 partial recovery；optic atrophy 不可逆；復健 visual compensation；如 severe → ophthalmology low vision specialist；OCT serial monitor；新 attack signs 警覺</li>
+<li>「Bone density 為什麼擔心？」 → Steroid（即使短期高劑量）+ chronic low dose + immobility（acute SCI）→ bone loss；fragility fracture risk；本案計畫長期 rituximab + 短期 steroid → DEXA baseline + q12 monthly + calcium 1000-1200 mg + vit D 800-1000 IU + bisphosphonate 視 DEXA</li>
+<li>「Pregnancy 期間怎麼辦？」 → 詳細次題；簡單：disease 控制 stable 6 個月 → switch azathioprine（pregnancy compatible）→ 計畫 conception；rituximab 完整 wash-out；postpartum relapse risk；breastfeeding considerations；高 risk pregnancy + multidisciplinary</li>
+<li>「她 RTW 護理師有問題嗎？」 → 視 recovery；如 ambulation 部分 + UE function + cognition + visual function 全 OK → 部分 RTW possible（chair-based work、education、management role）；外科病房 day shift 體力需求高 → 多 modify role；社區護理 / case manager / 教育 / nursing administration alternatives；prognosis uncertainty makes long-term commitment 困難</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>NMOSD T4 SCI rehab 共享 80% SCI core + 20% disease-specific</li>
+<li>共享：AD T4、bladder/bowel UMN、pressure sore、spasticity、NP、ADL、wheelchair、standing</li>
+<li>NMOSD-specific 11 項：recovery 動態、relapse risk、steroid effects、immunosuppression infection、visual coexist、fatigue、NP mixed、AD same、pregnancy planning、family/work、goals dynamic</li>
+<li>Recovery 持續 evolve 3-6 個月（vs traumatic 6-12 月 plateau）— flexible plan</li>
+<li>★ Relapse risk 20-30% yearly even with maintenance — 新症狀立刻 neurology</li>
+<li>Steroid effects rehab：myopathy、bone loss、weight gain；avoid 過度 resistance acute；DEXA + Ca/vit D supplement</li>
+<li>Infection precautions strict（rituximab + steroid）</li>
+<li>Visual function impacts ADL + transfer + driving — visual rehab integration</li>
+<li>Energy budget（fatigue 多重原因）</li>
+<li>Pregnancy + 32F 計畫 — 重要 considerations（次題）</li>
+<li>本案 plan：acute → sub-acute → discharge → outpatient → maintenance；dynamic + relapse warning + family integration</li>
+</ul>`,
+      },
+      {
+        q: '32 歲護理師 + 計畫結婚生子 — fertility、pregnancy、RTW 怎麼 navigate？',
+        keywords: [
+          'NMOSD pregnancy considerations',
+          'Disease control before conception',
+          'Immunosuppression switching',
+          'Rituximab wash-out 6 months',
+          'Azathioprine pregnancy compatible',
+          'Postpartum relapse peak',
+          'Breastfeeding considerations',
+          'High-risk obstetrics + multidisciplinary',
+          'SCI fertility (female preserved)',
+          'SCI pregnancy management',
+          'Labor management (AD risk)',
+          'Cesarean vs vaginal',
+          'Anesthesia considerations',
+          'Nurse RTW evaluation',
+          'Disability accommodation',
+          'Career role transition',
+        ],
+        points: [
+          '<strong>本案 32F + 計畫年內結婚 + 2-3 年內生子 — 多重 considerations</strong>',
+          '<strong>Fertility（NMOSD specific）</strong>',
+          'NMOSD 不直接影響 fertility',
+          'Steroid + rituximab + 其他 immunosuppression 多<strong>不影響</strong> female fertility',
+          'Cyclophosphamide（rare 用 NMOSD）會 ovarian toxicity',
+          'Stress + chronic disease 可間接 affect',
+          '<strong>SCI Female Fertility Preserved</strong>',
+          'Spinal injury 不影響 ovaries / 子宮 / hormones',
+          'Menstruation 多 transient irregularity 後 normalize',
+          'Conception 自然 possible（即使 SCI）',
+          'Fertility evaluation 不必 routine for SCI',
+          '<strong>Pregnancy Planning Timeline</strong>',
+          '<strong>1. Disease Control（6-12 個月 stable）</strong>',
+          'No relapse × 6-12 個月 minimum before conception',
+          'Stable on chosen immunosuppression',
+          'Optimized other comorbidities（bladder、skin、weight、bone health）',
+          '<strong>2. Switch Immunosuppression</strong>',
+          '<strong>Rituximab</strong>：wash-out 6-12 個月 before conception（B-cell return）；late pregnancy fetal B-cell depletion concern',
+          '<strong>Eculizumab、satralizumab、inebilizumab</strong>：limited pregnancy data；avoid generally',
+          '<strong>Azathioprine</strong>：★ pregnancy compatible（FDA category D historical 但 real-world data show safe）— 多 NMOSD pregnancy bridge therapy',
+          '<strong>Mycophenolate mofetil</strong>：★ teratogenic — strict avoidance + 2 forms contraception',
+          '<strong>Steroid</strong>：低 dose（&lt; 20 mg/day prednisone）OK；避免 high-dose 1st trimester（cleft palate 風險）',
+          '<strong>3. Pre-Conception Counseling（multidisciplinary）</strong>',
+          'Neurology + OB + nephrology（pregnancy renal） + nutrition + 心理',
+          'Folate 5 mg/day 3 個月 pre-conception（vs 一般 0.4 mg）',
+          'Vaccinations updated（rubella、varicella、Tdap、influenza）',
+          '討論 disease impact + relapse risk + treatment + delivery + breastfeeding',
+          '<strong>Pregnancy Management</strong>',
+          '<strong>Trimester 1</strong>：disease 多 stable（pregnancy immunoregulation effect）；avoid teratogens；folate 增量；steroid taper if possible',
+          '<strong>Trimester 2-3</strong>：pregnancy multidisciplinary；MRI safe but contrast avoid；regular OB visit',
+          '<strong>Postpartum</strong>：★ relapse peak 3-6 個月內（pregnancy-related immune suppression 解除）；resume immunosuppression 立即 postpartum；weekly neurology check first 6 個月',
+          '<strong>Delivery Considerations</strong>',
+          '<strong>Mode</strong>：vaginal preferred unless OB indication；NMOSD itself 不 indicate cesarean',
+          '<strong>Anesthesia</strong>：epidural / spinal 可、但 cord lesion + spine MRI 先看；general OK；anesthesiology consult',
+          '<strong>AD risk</strong>：本案 NLI T4 → labor + delivery 高 AD risk；epidural anesthesia 可 prevent',
+          '<strong>Bladder management during labor</strong>：Foley intermittent；UTI prevention',
+          '<strong>Pressure sore prevention during prolonged labor</strong>',
+          '<strong>SCI 病人 vaginal delivery success rate 高</strong>（不需 default cesarean）',
+          '<strong>Breastfeeding</strong>',
+          '<strong>Steroid（low dose）</strong>：safe',
+          '<strong>Azathioprine</strong>：★ <u>compatible</u>（low transfer to breast milk）',
+          '<strong>Rituximab</strong>：minimal transfer；多 considered safe；individual decision',
+          '<strong>MMF</strong>：★ avoid breastfeeding',
+          '<strong>Postpartum Relapse Risk Peak</strong>',
+          'Highest 3-6 個月 postpartum',
+          'Pregnancy immunoregulation 解除 → 免疫 reactivation',
+          'Resume immunosuppression 立即 postpartum（rituximab 可 within weeks）',
+          'Weekly check + low threshold for treatment',
+          '<strong>本案 Family Planning Plan</strong>',
+          'Year 1：control disease + rituximab + recovery + 婚禮',
+          'Year 2-3：disease stable 6-12 個月 → switch azathioprine + folate prep + multidisciplinary counseling → conception attempts',
+          'Pregnancy + delivery：高 risk OB + neurology + anesthesia 整合',
+          'Postpartum：weekly neurology + resume rituximab 立即 + breastfeeding considerations',
+          '<strong>RTW（Return to Work）— 護理師</strong>',
+          '<strong>外科病房 day shift</strong>體力需求：long hours standing、heavy patient transfer、emergency response、infection control（複雜 environment）',
+          '<strong>本案 limitations</strong>：',
+          '(a) AIS C → 部分 ambulation 但體力 limited',
+          '(b) Visual residual',
+          '(c) Bladder schedule（CIC q4-6h）vs nursing shifts',
+          '(d) Fatigue',
+          '(e) Immunosuppression → infection exposure 警慎',
+          '<strong>RTW Options</strong>',
+          '<strong>1. Same role（外科病房）</strong>：unlikely full return；體力 + infection exposure + shifts',
+          '<strong>2. Modified clinical role</strong>：(a) outpatient clinic（chair-based）、(b) case manager、(c) wound clinic、(d) education / 衛教 nurse、(e) discharge planner、(f) nursing supervisor / management',
+          '<strong>3. Non-clinical</strong>：nursing administration、quality improvement、teaching（nursing school）、policy、insurance review',
+          '<strong>4. Disability path</strong>：身障鑑定 1-2 級 → 勞保失能（普通失能、非職災）→ 失能年金 + 一次給付',
+          '<strong>5. Hybrid</strong>：part-time + 漸進 RTW + flexible role',
+          '<strong>本案 Realistic RTW Timeline</strong>',
+          '6 個月 acute phase：focus rehab + disease control',
+          '6-12 個月：disease stable + functional plateau → vocational evaluation + 公司 communication',
+          '12-18 個月：part-time alternative role attempt（外科病房 unlikely）；nursing administration / education 可考慮',
+          '長期：disease control + role flexibility + 漸進 RTW or 部分 disability',
+          '<strong>制度</strong>',
+          '健保重大傷病：NMOSD qualified',
+          '身障鑑定 6 個月後：1-2 級 likely',
+          '勞保失能（普通失能 — 非職災）：一次給付 ~ 60-100 萬 + 失能年金 ~ 8,000-12,000/月',
+          '長照 2.0：CMS 評估、居家服務 + 喘息',
+          '商業保險：公司團保 + 個人 medical insurance（住院日額 etc）',
+        ],
+        a: `<h4>口試答題框架（年輕女性 + 婚姻生育 + 職業 — 多重 navigation）</h4>
+<p>32F NMOSD + 婚育計畫 + 護理師 — 是 oncology PMR 之外另一種「life-stage specific」complexity。標準展開：</p>
+<ol>
+<li><strong>Fertility（保留）</strong></li>
+<li><strong>Pregnancy timing 與 immunosuppression switch</strong></li>
+<li><strong>Pre-conception counseling + multidisciplinary</strong></li>
+<li><strong>Pregnancy management</strong></li>
+<li><strong>Delivery considerations（vaginal、anesthesia、AD）</strong></li>
+<li><strong>Breastfeeding</strong></li>
+<li><strong>Postpartum relapse peak</strong></li>
+<li><strong>RTW 護理師 evaluation</strong></li>
+<li><strong>制度</strong></li>
+</ol>
+
+<h4>1. Fertility</h4>
+<table>
+<tr><th>項目</th><th>本案</th></tr>
+<tr><td>NMOSD 對 fertility</td><td>不直接影響</td></tr>
+<tr><td>Rituximab、azathioprine、steroid</td><td>多不影響 female fertility</td></tr>
+<tr><td>Cyclophosphamide（rare 用 NMOSD）</td><td>★ Ovarian toxicity</td></tr>
+<tr><td>SCI 對 fertility</td><td>★ Female preserved（hormones、子宮、ovaries 不受影響）</td></tr>
+<tr><td>本案</td><td>★ Fertility OK；不需 IVF / fertility preservation routine</td></tr>
+</table>
+
+<h4>2. Immunosuppression Switch — Pregnancy Compatibility</h4>
+<table>
+<tr><th>Drug</th><th>Pregnancy</th><th>Breastfeeding</th></tr>
+<tr><td><strong>Rituximab</strong></td><td>★ Wash-out 6-12 個月 before conception；late pregnancy fetal B-cell depletion concern</td><td>Minimal transfer；多 considered safe</td></tr>
+<tr><td><strong>Eculizumab、satralizumab、inebilizumab</strong></td><td>Limited data；avoid generally</td><td>Limited data</td></tr>
+<tr><td><strong>Azathioprine</strong></td><td>★ <strong>Compatible</strong>（real-world data safe）；多 NMOSD pregnancy bridge</td><td>★ Compatible</td></tr>
+<tr><td><strong>Mycophenolate mofetil</strong></td><td>★★★ <strong>Teratogenic — strict avoidance</strong>；2 forms contraception during use + 6 wks post discontinuation</td><td>★ Avoid</td></tr>
+<tr><td><strong>Steroid（low dose &lt; 20 mg/day）</strong></td><td>OK；避免 high-dose 1st trimester（cleft palate）</td><td>Compatible</td></tr>
+<tr><td><strong>本案</strong></td><td>★ Switch rituximab → azathioprine 6 個月 before conception</td><td>★ Azathioprine continue</td></tr>
+</table>
+
+<h4>3. Pregnancy Planning Timeline</h4>
+<table>
+<tr><th>Phase</th><th>Action</th></tr>
+<tr><td><strong>Stage 1：Disease Control</strong></td><td>No relapse × 6-12 個月 + stable on immunosuppression + comorbidities optimized</td></tr>
+<tr><td><strong>Stage 2：Pre-Conception</strong></td><td>Switch rituximab → azathioprine（wash-out 6 個月）；folate 5 mg/day（vs 一般 0.4 mg）；vaccinations updated；multidisciplinary counseling</td></tr>
+<tr><td><strong>Stage 3：Conception + Pregnancy</strong></td><td>Multi-disciplinary：neurology + OB + 麻醉 + nephrology + nutrition + 心理；regular monitoring；avoid teratogens；MRI safe（contrast avoid）</td></tr>
+<tr><td><strong>Stage 4：Delivery</strong></td><td>Vaginal preferred；epidural for AD prevention；anesthesia consult；bladder management；pressure sore prevention</td></tr>
+<tr><td><strong>Stage 5：Postpartum</strong></td><td>★ Relapse peak 3-6 個月；resume rituximab immediately（如 not breastfeeding）or azathioprine + rituximab post-breastfeeding；weekly neurology first 6 個月</td></tr>
+</table>
+
+<h4>4. Delivery Considerations（SCI 病人 specific）</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>Mode</td><td>★ Vaginal preferred；NMOSD itself 不 indicate cesarean；OB-specific reasons only</td></tr>
+<tr><td>Labor onset detection</td><td>★ T4 lesion → 病人 不感覺 contractions；need monitor uterine tone + fetal HR；regular cervix check 36 wk +</td></tr>
+<tr><td>Anesthesia</td><td>★ Epidural / spinal possible（先看 cord lesion MRI）；general anesthesia OK；anesthesiology consult pre-delivery</td></tr>
+<tr><td>AD risk</td><td>★ NLI T4 → labor + delivery 高 AD risk；<strong>epidural anesthesia 是 effective AD prevention</strong></td></tr>
+<tr><td>Bladder management labor</td><td>Foley intermittent；UTI prevention</td></tr>
+<tr><td>Pressure sore prevention</td><td>q2h reposition during prolonged labor</td></tr>
+<tr><td>Stage 2 push</td><td>SCI 病人 may have 部分 ability；assisted delivery（vacuum、forceps）可考慮</td></tr>
+<tr><td>Cesarean indication</td><td>OB-specific（fetal distress、breech、placenta、prolonged labor、cephalopelvic disproportion）— 不 default for SCI</td></tr>
+</table>
+
+<h4>5. Postpartum Relapse Peak（必背）</h4>
+<ul>
+<li>★ Highest risk 3-6 個月 postpartum（pregnancy immunoregulation 解除）</li>
+<li>Mechanism：placental Th2 shift end → Th1 inflammatory rebound</li>
+<li>★ Resume immunosuppression <strong>immediately</strong> postpartum</li>
+<li>Rituximab can be given within weeks postpartum（multidisciplinary）</li>
+<li>Weekly neurology check first 6 個月</li>
+<li>低 threshold 對 new symptoms — early acute attack treatment</li>
+</ul>
+
+<h4>6. RTW — 護理師 Evaluation</h4>
+<table>
+<tr><th>Job demand</th><th>本案 limitation</th></tr>
+<tr><td>長時間站立</td><td>★ AIS C → 部分 ambulation；長時間 standing 困難</td></tr>
+<tr><td>Heavy patient transfer</td><td>★ Reduced strength + back consideration（lifting）</td></tr>
+<tr><td>Emergency response（rapid mobilization）</td><td>★ 有限</td></tr>
+<tr><td>Shift work（夜班 + 12 hr）</td><td>★ Fatigue + bladder schedule + sleep impact</td></tr>
+<tr><td>Bladder schedule CIC q4-6h</td><td>★ 不相容 12 hr nursing shifts</td></tr>
+<tr><td>Visual function</td><td>★ Residual ON impact medication errors / detail tasks</td></tr>
+<tr><td>Infection exposure</td><td>★ Immunosuppression → exposure to sick patients risky</td></tr>
+</table>
+
+<h4>7. RTW Options（按 feasibility 排序）</h4>
+<table>
+<tr><th>Option</th><th>Feasibility</th><th>本案</th></tr>
+<tr><td>Same role（外科病房 day shift）</td><td>Low</td><td>★ Unlikely full return</td></tr>
+<tr><td><strong>Modified clinical role（chair-based）</strong></td><td>Moderate</td><td>★★★ 可：outpatient clinic、case manager、wound clinic、education nurse、discharge planner、衛教 nurse、telephone triage</td></tr>
+<tr><td><strong>Non-clinical role</strong></td><td>High</td><td>★★★★ 可：nursing administration、QI、teaching nursing school、insurance review、research coordinator、policy</td></tr>
+<tr><td>Part-time / flexible</td><td>High</td><td>★★ Possible early return</td></tr>
+<tr><td>Disability path</td><td>Last resort</td><td>身障 1-2 級 + 勞保失能 + 失能年金</td></tr>
+</table>
+
+<h4>8. 制度（NMOSD specific）</h4>
+<table>
+<tr><th>制度</th><th>本案</th></tr>
+<tr><td>健保重大傷病</td><td>★ NMOSD qualified；申請</td></tr>
+<tr><td>身障鑑定（6 個月後）</td><td>★ 1-2 級 likely（AIS C + 視力）</td></tr>
+<tr><td>勞保失能（普通失能、非職災）</td><td>★ 一次給付 ~ 60-100 萬 + 失能年金 ~ 8,000-12,000/月</td></tr>
+<tr><td>長照 2.0</td><td>CMS 評估 + 居家服務 + 喘息</td></tr>
+<tr><td>商業保險（公司團保 + 個人）</td><td>★ 住院日額 + 可能重大疾病給付（policy specific）；個人 medical insurance + insurance application 困難 from now（pre-existing condition）</td></tr>
+<tr><td>男友（將來先生）</td><td>★ 婚前 informed decision（lifelong disease + 治療 + 復發 + 生育 limitations）；caregiver education</td></tr>
+</table>
+
+<h4>9. 本案 Plan Summary</h4>
+<ol>
+<li><strong>Year 1（acute + recovery）</strong>：control disease + rituximab + functional rehab + 婚禮</li>
+<li><strong>Year 1.5-2（disease control 6-12 個月 stable）</strong>：</li>
+<ul>
+<li>Switch rituximab → azathioprine 6 個月 before conception</li>
+<li>Folate 5 mg/day prep</li>
+<li>Vaccinations updated</li>
+<li>Multi-disciplinary counseling（neurology + OB + 麻醉 + 心理）</li>
+</ul>
+<li><strong>Year 2-3（pregnancy attempt + pregnancy + delivery）</strong>：</li>
+<ul>
+<li>Conception attempts</li>
+<li>Pregnancy multidisciplinary：neurology + 高 risk OB + anesthesia + nephrology</li>
+<li>Vaginal delivery（OB specific reasons only cesarean）+ epidural for AD prevention</li>
+<li>SCI-specific labor management</li>
+</ul>
+<li><strong>Postpartum（critical phase）</strong>：</li>
+<ul>
+<li>Resume rituximab within weeks（如 not breastfeeding）or azathioprine + rituximab after breastfeeding</li>
+<li>Weekly neurology first 6 個月</li>
+<li>Postpartum relapse peak surveillance</li>
+</ul>
+<li><strong>RTW</strong>：</li>
+<ul>
+<li>6-12 個月 acute focus；12-18 個月 vocational evaluation</li>
+<li>Modified clinical role（outpatient、case manager、衛教）or non-clinical（administration、teaching）</li>
+<li>Part-time + flexible</li>
+<li>身障 + 勞保失能 backup</li>
+</ul>
+</ol>
+
+<h4>跟病人 + 男友溝通</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您 32 歲 + 計畫結婚生子 + 護理師 — 我們<strong>分階段 plan</strong>。<br><br>
+<strong>好消息</strong>：<br>
+• <strong>NMOSD 不影響 fertility</strong><br>
+• <strong>SCI 也不影響</strong> — 子宮、卵巢、荷爾蒙都 OK<br>
+• <strong>多數 NMOSD 病人可正常懷孕生產</strong><br><br>
+<strong>但需要 plan</strong>：<br><br>
+<strong>Step 1（Year 1）：先 stabilize disease</strong><br>
+• Rituximab + 復健 + 婚禮 — focus<br>
+• 不急著懷孕<br><br>
+<strong>Step 2（Year 1.5-2）：Pre-conception 6-12 個月準備</strong><br>
+• <strong>確保 disease 穩定</strong>（no relapse 6-12 個月）<br>
+• <strong>切換 immunosuppression</strong>：rituximab 停 6 個月、改 azathioprine（懷孕 OK 的）<br>
+• <strong>葉酸 5 mg 高 dose × 3 個月</strong>（一般 0.4 mg 不夠）<br>
+• <strong>疫苗 update</strong>（rubella、varicella、Tdap、流感）<br>
+• <strong>多科 counseling</strong>：神經科 + 高 risk 婦產科 + 麻醉科 + 心理<br><br>
+<strong>Step 3（Year 2-3）：Pregnancy + Delivery</strong><br>
+• 自然懷孕 conception<br>
+• <strong>整個 pregnancy 多科團隊</strong>：神經科 monthly check + 婦產科<br>
+• <strong>Vaginal delivery 多 OK</strong>（不需 default 剖腹）<br>
+• <strong>Epidural 麻醉</strong>：predict + prevent AD（您 T4 lesion 高 AD 風險 during labor）<br>
+• 麻醉科 pre-delivery consult（看 cord lesion MRI 決定 epidural placement）<br><br>
+<strong>Step 4：Postpartum（最關鍵）</strong><br>
+• <strong>產後 3-6 個月是 NMOSD relapse 最高風險期</strong>（懷孕的免疫保護解除）<br>
+• <strong>立刻 resume rituximab</strong>（如不母乳）or 母乳期 azathioprine + 母乳停後 rituximab<br>
+• <strong>每週神經科 check 前 6 個月</strong><br>
+• 任何<strong>新無力 / 新麻 / 新視力問題</strong>立刻聯絡<br><br>
+<strong>母乳哺餵</strong>：<br>
+• Steroid（低 dose）OK<br>
+• <strong>Azathioprine OK</strong>（少量 transfer、研究 safe）<br>
+• Rituximab 多 considered safe（minimal transfer）<br>
+• <strong>MMF 絕對不行</strong><br><br>
+<strong>RTW（護理師）— 我必須誠實</strong>：<br>
+• 外科病房 day shift 12 hr → <strong>不太可能 full return</strong>（體力 + bladder + 感染暴露 + 視力）<br>
+• <strong>建議 modified role</strong>：<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1. <strong>Outpatient 護理</strong>（chair-based）<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2. <strong>Case manager</strong> / discharge planner<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3. <strong>Wound clinic</strong> nurse<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4. <strong>衛教 / education nurse</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;5. <strong>Telephone triage</strong> / 護理諮詢<br>
+&nbsp;&nbsp;&nbsp;&nbsp;6. <strong>Administration / management</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;7. <strong>Nursing teaching</strong>（學校）<br>
+• 6-12 個月 acute → 12-18 個月 vocational evaluation → modified role return<br>
+• 部分 disability path：身障 1-2 級 + 勞保失能 + 失能年金<br><br>
+<strong>給男友（即將先生）</strong>：<br>
+您要在<strong>結婚前 fully informed</strong>：<br>
+1. NMOSD 是 lifelong disease<br>
+2. <strong>每年 20-30% relapse risk</strong>（即使治療）<br>
+3. 累積 disability 可能<br>
+4. <strong>懷孕需要仔細規劃</strong>（disease control + 切藥 + 產後 surveillance）<br>
+5. <strong>產後 您是主要 caregiver of 嬰兒 + 持續支持太太</strong><br>
+6. <strong>長期經濟 + caregiver burden</strong> — 不只「照顧生病的太太」是「終身 partnership」<br>
+7. <strong>NMOSD 不會傳給小孩</strong>（不是 hereditary）<br><br>
+<strong>制度</strong>（社工會跟您們詳細談）：<br>
+• 健保重大傷病今天就申請<br>
+• 6 個月後身障鑑定（多 1-2 級）<br>
+• 勞保失能（普通失能）— 60-100 萬 + 8,000-12,000/月<br>
+• 長照 2.0（喘息 + 居家服務）<br>
+• 公司團保 + 個人 medical insurance<br><br>
+<strong>32 歲不是 game over — 是<u>需要重新 design 的 chapter</u></strong>。<br>
+我會陪你們走完整段。」</p>
+
+<h4>口試考官可能追問</h4>
+<ul>
+<li>「她若男友 hesitate 結婚怎麼辦？」 → 尊重；structured discussion + counseling；NMOSD impact + disease + treatment + 復發 + 生育 + 經濟 — 全 transparent；給雙方 time + space；婚姻 outcome 不該基於「責任感」單獨；可考慮 trial cohabitation + 共同照顧 phase 後再決定</li>
+<li>「Pregnancy 期間 relapse 怎麼辦？」 → IV methylprednisolone safe 各 trimester；PLEX safe；avoid rituximab 1st trimester（B-cell concern）；某些 case rituximab pre-delivery；individual + multidisciplinary；postpartum aggressive maintenance</li>
+<li>「她想 IVF 增加生育機會？」 → NMOSD itself 不需 IVF；如 male factor 或 unable conceive 才考慮；NMOSD + IVF 多 case-by-case；hormonal stimulation 可能 trigger relapse - 警慎</li>
+<li>「Cesarean section indication for SCI 病人？」 → 不 default；OB-specific reasons：fetal distress、breech、placenta、cephalopelvic disproportion、prolonged labor；本案 NLI T4 + AD risk vs vaginal benefits → 多 vaginal preferred + epidural；如 emergency cesarean → general / spinal anesthesia 都 OK</li>
+<li>「Breastfeeding rituximab 真 safe？」 → Limited data；measured breast milk concentration low（&lt; 0.1% maternal serum）；most expert panels recommend not contraindicate；individual decision + monitoring infant；某些 case 母親選擇 formula feeding for peace of mind</li>
+<li>「她生產後 cared for baby 體力不夠？」 → Real concern；caregiver support essential：先生 + 父母 + 月嫂 / 育嬰護理 + 政府補助；feeding（母乳泵 + bottle 替代）；diaper change（accessibility）；transfer to crib（caregiver lift）；長照 2.0 育兒 component；漸進 capacity build</li>
+<li>「她公司會 fire 嗎？」 → 勞基法保護身心障礙員工；公司 不能 disability-based 解僱；可 reasonable accommodation；HR + 工會 discussion；某些公司 disability inclusion programs；如真要 leave → 勞保失能 + 一次給付 financial support</li>
+<li>「她未來小孩照顧能 handle？」 → 漸進 + caregiver support；嬰兒早期 demanding（feeding、diapering、night waking）→ 先生 active role + 父母 support + 月嫂；toddler 期 + 教育 期 — 多 manage（chair-based parent）；同樣 SCI 母親 successful parents 多；個別 evaluate</li>
+<li>「她若 unable RTW 護理師 — career identity 心理？」 → Identity grief；意義 recreation；護理師 expertise + experience valuable in many roles；teaching、advocacy、policy、research；不必 go nursing 完全；transferable skills；心理諮商 + career counselor + peer support（同病不同職業 mentor）</li>
+<li>「她現在還可以工作嗎 acute phase？」 → No — focus rehab + treatment + recovery；6-12 個月 acute phase；不要 push RTW too early；公司請假（病假 / 留職停薪）；醫師診斷書支持</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>NMOSD 不影響 fertility；SCI female fertility preserved</li>
+<li>Pregnancy planning：disease control 6-12 個月 stable + immunosuppression switch + folate + vaccinations + multidisciplinary counseling</li>
+<li>★ Rituximab → azathioprine 6 個月 before conception（pregnancy compatible）</li>
+<li>★ MMF teratogenic — strict avoidance</li>
+<li>Steroid（low dose）OK；avoid high-dose 1st trimester</li>
+<li>Pregnancy management：multidisciplinary（neurology + 高 risk OB + anesthesia + nephrology + nutrition + 心理）</li>
+<li>Delivery：vaginal preferred；NMOSD 不 indicate cesarean；epidural for AD prevention（NLI T4）；anesthesia consult pre-delivery</li>
+<li>Breastfeeding：steroid + azathioprine + rituximab compatible；MMF avoid</li>
+<li>★ Postpartum relapse peak 3-6 個月；resume immunosuppression immediately</li>
+<li>RTW 護理師：外科病房 unlikely full；modified clinical（outpatient、case manager、衛教）or non-clinical（administration、teaching）；part-time + flexible</li>
+<li>制度：健保重大傷病、身障 1-2 級、勞保失能（普通）、長照 2.0、公司團保</li>
+<li>男友 informed decision before marriage；caregiver education；婚姻 partnership not 義務</li>
+<li>本案 plan：Y1 disease control + 婚禮、Y1.5-2 pre-conception switch + counseling、Y2-3 pregnancy + delivery、postpartum critical surveillance、RTW modified role</li>
+</ul>`,
+      },
+      {
+        q: '長期 surveillance + relapse 預警 + 家庭整合怎麼安排？',
+        keywords: [
+          'Lifelong NMOSD surveillance',
+          'AQP4 titer trend',
+          'MRI brain + spine yearly',
+          'Vision OCT + VEP yearly',
+          'Bladder UDS yearly',
+          'Bone density DEXA',
+          'Mental health (depression, anxiety, suicide risk)',
+          'Relapse warning signs',
+          'Patient self-monitoring',
+          'Family education',
+          'NMOSD patient support groups',
+          'Caregiver burnout',
+          'Pregnancy + family planning long-term',
+          'Career + life integration',
+          'Children education about disease',
+          'Psychological + spiritual support',
+        ],
+        points: [
+          '<strong>NMOSD 是 lifelong disease — surveillance 必須系統 + 持續</strong>',
+          '<strong>關鍵原則</strong>',
+          '(1) Early relapse detection → early treatment → less cumulative disability',
+          '(2) Treatment monitoring → adjust as needed',
+          '(3) Comorbidity surveillance（SCI sequelae）',
+          '(4) Quality of life optimization',
+          '(5) Mental health + family wellbeing',
+          '<strong>Surveillance Schedule（必背）</strong>',
+          '<strong>Neurology + Disease Activity</strong>',
+          'Neurological exam q3-6 monthly',
+          'AQP4-IgG titer yearly + relapse',
+          'MRI brain + 全脊椎 + with contrast yearly + symptom-driven',
+          'Vision：fundoscopy + visual acuity + OCT + VEP yearly',
+          'Treatment monitoring：CD19 + IgG q6 monthly（rituximab）；CBC + LFT + Cr q3 monthly',
+          '<strong>SCI Sequelae Surveillance（同 traumatic SCI）</strong>',
+          'Bladder：UDS yearly × 2 → q2-3y stable',
+          'Renal echo + creatinine q6 monthly',
+          'KUB stones yearly',
+          'Bowel program review every OPD',
+          'Skin daily check（家屬）+ every OPD（醫師）',
+          'Bone density DEXA q1-2y（steroid + immobility）',
+          'Cardiovascular：BP、lipid、glucose、HbA1c yearly（steroid impact）',
+          'Spasticity + ROM every OPD',
+          'AD card refresh yearly',
+          '<strong>Mental Health</strong>',
+          'PHQ-9 yearly + screen',
+          'Anxiety screen',
+          'Suicide risk assessment',
+          'Sleep quality',
+          'Substance use',
+          '<strong>Comorbidity Surveillance</strong>',
+          'Vaccination schedule（influenza yearly、boosters as needed）',
+          'Cancer screening（age-appropriate — Pap、mammogram、colonoscopy）',
+          'Bone health（DEXA + supplement）',
+          'Cardiovascular age-appropriate',
+          '<strong>Relapse Warning Signs（家屬 + 病人必背）</strong>',
+          'New / worsening visual symptoms（blurring、scotoma、color desaturation）',
+          'New / worsening motor weakness',
+          'New / worsening sensory level',
+          'New bladder / bowel dysfunction',
+          'New AD episodes',
+          'Intractable hiccups / nausea / vomiting（area postrema syndrome）',
+          'New brainstem symptoms（diplopia、cranial nerve palsy）',
+          'Acute fatigue / cognitive decline',
+          'Any of above → urgent neurology contact / ER',
+          '<strong>Patient + Family Education</strong>',
+          'Disease nature + lifelong + relapse risk',
+          'Treatment commitment + side effects',
+          'Vaccinations + infection precautions',
+          'Self-monitoring + symptom diary',
+          '緊急聯絡 protocol',
+          'Pregnancy + family planning timeline',
+          '<strong>Support Resources</strong>',
+          'NMOSD Foundation Taiwan / 罕見疾病基金會',
+          'NMOSD patient support groups（社群 + 線上）',
+          '神經免疫疾病學會',
+          'SCI Foundation Taiwan（部分 share）',
+          '罕病健保資源 + 商業險 + 政府補助 navigation',
+          '<strong>Caregiver（男友 → 將來先生）</strong>',
+          'Caregiver education + Zarit Burden Interview yearly',
+          'Caregiver own health + own support',
+          'Boundary + 個人時間',
+          '經濟 + 工作 balance',
+          '婚姻 counseling 視 needed',
+          '<strong>Future Children Considerations</strong>',
+          'NMOSD 不是 hereditary',
+          'Child of NMOSD parent risk minimally elevated（&lt; 1%）',
+          'Children education about parent disease（age-appropriate、honest、reassuring）',
+          'Family routines adapted for parent disability',
+          'Children psychological：not parentified、age-appropriate role',
+          '<strong>Psychological + Spiritual</strong>',
+          'Lifelong disease 心理 burden',
+          'Identity adjustment（career、parenthood、relationships）',
+          'Existential / spiritual exploration',
+          '個別 + 家庭 counseling',
+          'Religious / spiritual community 視 personal',
+          '<strong>本案 Long-term Plan Summary</strong>',
+          'Year 1：acute → recovery → rituximab + 婚禮 + functional rehab',
+          'Year 2-3：disease stable → pre-conception switch → pregnancy + delivery → postpartum surveillance',
+          'Year 3-5：family established → modified RTW + life integration',
+          'Long-term：lifelong surveillance + maintenance + family + meaningful life',
+          '<strong>每 3 個月 cluster OPD（neurology + PMR + ophthalmology + 必要時 OB / 心理 / 社工）</strong>',
+        ],
+        a: `<h4>口試答題框架（Long-term integration、最後一題、整合性）</h4>
+<p>NMOSD lifelong management = surveillance + relapse prevention + quality of life + family + career。標準展開：</p>
+<ol>
+<li><strong>Surveillance schedule（neurology + SCI + comorbidity + mental health）</strong></li>
+<li><strong>Relapse warning signs</strong></li>
+<li><strong>Patient + family education</strong></li>
+<li><strong>Support resources</strong></li>
+<li><strong>Caregiver wellbeing</strong></li>
+<li><strong>Future children considerations</strong></li>
+<li><strong>本案 plan summary</strong></li>
+</ol>
+
+<h4>1. Surveillance Schedule</h4>
+
+<p><strong>(1) Neurology + Disease Activity</strong></p>
+<table>
+<tr><th>Test</th><th>Frequency</th></tr>
+<tr><td>Neurological exam</td><td>q3-6 monthly</td></tr>
+<tr><td>AQP4-IgG titer</td><td>Yearly + relapse</td></tr>
+<tr><td>MRI brain + 全脊椎 with contrast</td><td>Yearly + symptom-driven</td></tr>
+<tr><td>Vision：fundoscopy + acuity + OCT + VEP</td><td>Yearly</td></tr>
+<tr><td>CD19 + IgG（rituximab）</td><td>q6 monthly</td></tr>
+<tr><td>CBC + LFT + Cr</td><td>q3 monthly</td></tr>
+<tr><td>Hep B / C / HIV / TB</td><td>Baseline + symptom</td></tr>
+</table>
+
+<p><strong>(2) SCI Sequelae（同 traumatic SCI core）</strong></p>
+<table>
+<tr><th>Test</th><th>Frequency</th></tr>
+<tr><td>Bladder UDS</td><td>Yearly × 2 → q2-3y stable</td></tr>
+<tr><td>Renal echo + creatinine</td><td>q6 monthly</td></tr>
+<tr><td>KUB stones</td><td>Yearly</td></tr>
+<tr><td>Bowel program review</td><td>Every OPD</td></tr>
+<tr><td>Skin daily check + OPD inspection</td><td>Daily + every OPD</td></tr>
+<tr><td>Bone density DEXA</td><td>q1-2 yearly（steroid + immobility）</td></tr>
+<tr><td>Cardiovascular（BP + lipid + glucose）</td><td>Yearly</td></tr>
+<tr><td>Spasticity + ROM</td><td>Every OPD</td></tr>
+<tr><td>AD card refresh</td><td>Yearly</td></tr>
+</table>
+
+<p><strong>(3) Mental Health + Comorbidity</strong></p>
+<table>
+<tr><th>Test</th><th>Frequency</th></tr>
+<tr><td>PHQ-9 + GAD-7</td><td>Yearly</td></tr>
+<tr><td>Suicide risk assessment</td><td>Yearly + acute</td></tr>
+<tr><td>Sleep quality</td><td>Yearly</td></tr>
+<tr><td>Vaccinations</td><td>Influenza yearly、boosters as needed</td></tr>
+<tr><td>Cancer screening（age-appropriate）</td><td>Pap、mammogram（later age）、colonoscopy（later age）</td></tr>
+<tr><td>Bone health supplement（vit D + Ca）</td><td>Daily</td></tr>
+</table>
+
+<h4>2. Relapse Warning Signs（必背、家屬 + 病人）</h4>
+<table>
+<tr><th>Symptom</th><th>Action</th></tr>
+<tr><td>★ New / worsening visual（blurring、scotoma、color desaturation）</td><td>Urgent neurology / ER</td></tr>
+<tr><td>★ New / worsening motor weakness</td><td>Urgent neurology / ER</td></tr>
+<tr><td>★ New / worsening sensory level</td><td>Urgent neurology</td></tr>
+<tr><td>★ New bladder / bowel dysfunction</td><td>Urgent neurology</td></tr>
+<tr><td>★ New AD episodes</td><td>AD acute treatment + neurology</td></tr>
+<tr><td>★ Intractable hiccups / nausea / vomiting</td><td>Urgent — area postrema syndrome</td></tr>
+<tr><td>★ New brainstem（diplopia、cranial nerve palsy）</td><td>Urgent neurology / ER</td></tr>
+<tr><td>★ Acute fatigue / cognitive decline</td><td>Neurology + 排除其他</td></tr>
+</table>
+
+<h4>3. Patient + Family Education</h4>
+<table>
+<tr><th>Topic</th><th>Content</th></tr>
+<tr><td>Disease nature</td><td>Lifelong + autoimmune + relapsing + treatment effective</td></tr>
+<tr><td>Treatment commitment</td><td>Rituximab lifelong + side effects + monitoring</td></tr>
+<tr><td>Vaccinations</td><td>Inactivated up-to-date；avoid live；annual flu</td></tr>
+<tr><td>Self-monitoring</td><td>Symptom diary + warning signs</td></tr>
+<tr><td>Emergency contact</td><td>24 hr neurology hotline + ER protocol</td></tr>
+<tr><td>Pregnancy + family</td><td>Timeline + immunosuppression switch + delivery + postpartum</td></tr>
+<tr><td>Career + work</td><td>Modified role + part-time + disability path</td></tr>
+<tr><td>Mental health</td><td>Recognition + counseling + medication if needed</td></tr>
+</table>
+
+<h4>4. Support Resources（Taiwan）</h4>
+<table>
+<tr><th>Resource</th><th>Role</th></tr>
+<tr><td>罕見疾病基金會</td><td>NMOSD 雖未必正式 rare disease list、相關 spectrum 在 list；資源 navigation</td></tr>
+<tr><td>NMOSD patient support groups</td><td>線上 + 實體；同儕經驗 invaluable</td></tr>
+<tr><td>神經免疫疾病學會</td><td>學術資源 + 病友會</td></tr>
+<tr><td>SCI Foundation Taiwan</td><td>SCI sequelae 部分 share</td></tr>
+<tr><td>健保重大傷病</td><td>申請 — 醫療費用部分負擔免除</td></tr>
+<tr><td>身障鑑定 + 長照 2.0</td><td>6 個月後申請</td></tr>
+<tr><td>勞保失能</td><td>普通失能（非職災）— 一次給付 + 失能年金</td></tr>
+<tr><td>商業保險</td><td>公司團保 + 個人；新申請困難（pre-existing）</td></tr>
+<tr><td>Mental health</td><td>心理諮商（健保 + 自費）+ 精神科</td></tr>
+<tr><td>社工 case management</td><td>資源整合 + 家庭支持</td></tr>
+</table>
+
+<h4>5. Caregiver Wellbeing（男友 / 將來先生）</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>Caregiver education</td><td>★ 婚前 fully informed</td></tr>
+<tr><td>Zarit Burden Interview</td><td>Yearly + acute crisis</td></tr>
+<tr><td>Caregiver own health</td><td>Yearly check + own counseling</td></tr>
+<tr><td>Boundary + 個人時間</td><td>每週 personal time + hobbies</td></tr>
+<tr><td>經濟 + 工作 balance</td><td>Family income planning</td></tr>
+<tr><td>婚姻 counseling</td><td>視 needed</td></tr>
+<tr><td>Caregiver support group</td><td>NMOSD partner / spouse community</td></tr>
+<tr><td>Burnout 預防</td><td>長照 2.0 喘息 + 心理 + 社工</td></tr>
+</table>
+
+<h4>6. Future Children Considerations</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>Hereditary?</td><td>★ Not hereditary；child risk minimally elevated（&lt; 1%）</td></tr>
+<tr><td>Children education</td><td>Age-appropriate disclosure；honest about parent disease；reassure not their fault</td></tr>
+<tr><td>Family routines</td><td>Adapt for parent disability；involve children appropriately</td></tr>
+<tr><td>Children psychological</td><td>Not parentified；age-appropriate role；own activities + friendships</td></tr>
+<tr><td>Children if relapse</td><td>Honest + reassuring + 緊急 caregiver plan</td></tr>
+<tr><td>School communication</td><td>Teacher / counselor aware；support if 學業 / behavior issue</td></tr>
+</table>
+
+<h4>7. Psychological + Spiritual</h4>
+<ul>
+<li>Lifelong disease 心理 burden — chronic grief + uncertainty</li>
+<li>Identity adjustment（career、parenthood、relationships）</li>
+<li>Existential / spiritual exploration</li>
+<li>個別 + 家庭 counseling</li>
+<li>Religious / spiritual community 視 personal preference</li>
+<li>Resilience building + meaningful life construction</li>
+<li>Peer support invaluable</li>
+</ul>
+
+<h4>8. 本案 Long-term Plan Summary</h4>
+<table>
+<tr><th>Phase</th><th>Focus</th></tr>
+<tr><td><strong>Year 1（acute → recovery）</strong></td><td>★ Disease control + rituximab + functional rehab + 婚禮 + family adjustment</td></tr>
+<tr><td><strong>Year 2-3（pregnancy phase）</strong></td><td>Disease 6-12 mo stable → switch immunosuppression → pre-conception → pregnancy → delivery → postpartum</td></tr>
+<tr><td><strong>Year 3-5（family established）</strong></td><td>Modified RTW + parenting + life integration + caregiver support</td></tr>
+<tr><td><strong>Long-term（&gt; 5 years）</strong></td><td>★ Lifelong maintenance therapy + surveillance + meaningful life + dynamic adjustment</td></tr>
+</table>
+
+<p><strong>Cluster OPD</strong>：每 3 個月（neurology + PMR + ophthalmology + 必要時 OB / 心理 / 社工）</p>
+
+<h4>跟病人 + 男友最終整合對話</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「<strong>NMOSD 是 lifelong disease — 但 lifelong ≠ 永遠 acute</strong>。<br><br>
+<strong>關鍵原則</strong>：<br>
+1. <strong>早期 detect relapse → 早治療 → 累積 disability 少</strong><br>
+2. <strong>持續 maintenance therapy</strong> → relapse rate 大降<br>
+3. <strong>monitoring 持續 lifelong</strong><br>
+4. <strong>家庭 + 工作 + 心理 dynamic adjustment</strong><br><br>
+<strong>Surveillance schedule（必背）</strong>：<br>
+• <strong>Neurology check 每 3-6 個月</strong><br>
+• <strong>每年 MRI 全脊椎 + 腦 + 視力（OCT + VEP）</strong><br>
+• <strong>每年 AQP4 抗體 titer + UDS + DEXA + 心血管 screen</strong><br>
+• <strong>每 3 個月 抽血</strong>（CBC + LFT + Cr）<br>
+• <strong>每 6 個月 IgG + B 細胞</strong>（rituximab monitoring）<br><br>
+<strong>Relapse warning signs（您 + 男友 + 家人必背）</strong>：<br>
+任何<strong>新</strong>的：<br>
+1. <strong>視力問題</strong>（模糊、視野缺、顏色看不出）<br>
+2. <strong>無力</strong>（手 / 腳 / 任何 muscle）<br>
+3. <strong>麻 / 感覺改變</strong><br>
+4. <strong>排尿 / 排便問題加重</strong><br>
+5. <strong>AD episode</strong>（BP 突升 + 頭痛）<br>
+6. <strong>不停的打嗝 / 噁心 / 嘔吐</strong>（area postrema syndrome — 危險 sign）<br>
+7. <strong>複視 / 顏面神經 issue</strong><br>
+8. <strong>急性疲勞 / 認知變化</strong><br><br>
+<strong>→ 立刻 ER / 神經科 hotline</strong>。<strong>不要等</strong>、不要 self-medicate、不要 wait next OPD。<br><br>
+<strong>每 3 個月 cluster OPD</strong>：<br>
+• 神經科<br>
+• 復健科<br>
+• 眼科<br>
+• 必要時 + 婦產科 / 心理 / 社工<br>
+• 您 + 男友一起<br><br>
+<strong>支持資源</strong>：<br>
+• 罕病基金會 + NMOSD 病友會（線上 + 實體）<br>
+• 神經免疫疾病學會<br>
+• SCI Foundation 部分 overlap<br>
+• 健保重大傷病、身障鑑定、長照 2.0、勞保失能（次題已詳）<br>
+• 心理諮商 / 婚姻諮商 視 needed<br><br>
+<strong>給男友（將來先生）</strong>：<br>
+• 您是<strong>partner、caregiver、decision-maker、co-parent</strong>（將來）<br>
+• 您必須<strong>每年 own health check</strong>、自己的 mental health、自己的 hobby + 朋友<br>
+• 不要全部 burden 在自己 — 我們有 caregiver support group + 長照喘息<br>
+• <strong>婚姻 partnership 不是 義務</strong>—<strong>互相滋養</strong>是 long-term goal<br>
+• Zarit Burden Interview 每年我們會 monitor 您 burnout signs<br><br>
+<strong>給<u>未來</u>的孩子</strong>（如有）：<br>
+• <strong>NMOSD 不是 hereditary disease</strong>、孩子 risk 跟一般人差不多<br>
+• 等孩子<strong>能理解時 honest 解釋</strong>媽媽的病<br>
+• 不讓孩子 parentified（過度擔心 / 照顧媽媽）<br>
+• 家庭 routine 為媽媽身體 design 但孩子有自己的 童年 + 朋友 + 活動<br>
+• 學校老師 aware、必要時 school counselor<br><br>
+<strong>長期心理 + 心靈</strong>：<br>
+• Lifelong disease 是<strong>chronic grief + uncertainty</strong> — normal<br>
+• Identity 重新 design — 您不再是「8 年外科護理師」、是<strong>「資深 nurse + 適應 NMOSD 的智慧 + 將來媽媽」</strong><br>
+• 心理諮商 ongoing<br>
+• Religious / spiritual community 視個人<br>
+• 同儕（NMOSD 病友 + 同樣經歷的）— invaluable<br><br>
+<strong>最後</strong>：<br>
+您 32 歲 + diagnosis 不是<strong>「人生結束」</strong> — 是<strong>「需要重新 design 的下一段」</strong>。<br>
+我看過 NMOSD 病人最終結婚、生孩子、有 modified careers、過 meaningful life。<br>
+<strong>不會回到 diagnosis 前、但會找到新的 normal — 我們陪你們走完整段</strong>。」</p>
+
+<h4>口試考官可能追問</h4>
+<ul>
+<li>「她若 lifelong rituximab 後 hypogammaglobulinemia severe？」 → IVIG replacement（0.4 g/kg q4 wk）；考慮減低 rituximab dose 或延長 interval；某些 case 換 azathioprine + maintenance 較低 immunosuppression intensity；個別 evaluate</li>
+<li>「她小孩會不會是「特殊家庭」？」 → 是不同 family system；但<strong>不必 negative</strong>；研究顯示 chronically ill parent 的 children develop empathy + maturity + responsibility；關鍵 not parentified、open communication、external support；多 successful adults</li>
+<li>「她 lifelong disease 心理上 manage 不下去怎麼辦？」 → Multi-modal：counseling + 藥物 if depression/anxiety + 病友會 + spiritual community；個別 case suicide risk assessment + safety planning；不要單打獨鬥；mental health 是 medical issue not 軟弱</li>
+<li>「她 attack 多次累積 disability 嚴重 — long-term planning？」 → Realistic dynamic：每次 relapse 後 reassess goals + 家庭 + 工作；可能 need permanent wheelchair user + visual aid + cognitive support；長照 2.0 + 家屬 care planning；advance care planning 視 progression；保持 hope + meaning</li>
+<li>「Cluster OPD 在台灣 NMOSD 病人 access 多 easy？」 → 醫學中心 multi-discipline neurology + 復健 same day 可；ophthalmology coordinate；某些 medical center 有 demyelinating disease clinic；個別 institution 需 patient + provider 主動 schedule；台灣健保 visit limits 多容許</li>
+<li>「她若 want 過 normal life 不想 frequent OPD？」 → Respect autonomy + balance；minimum essential surveillance：q6 monthly check + symptom-driven；如 stable 多年 → 可調整 q-yearly check + ongoing maintenance；emphasis on warning signs awareness + emergency access</li>
+<li>「Insurance new policy 申請 difficult？」 → 是 — pre-existing condition；Taiwan 強制健保 OK；商業 insurance（new policy）多 exclude NMOSD or 加價 / 拒保；建議 keep 現有 policy + 公司團保；醫療商業 insurance now 加保 困難</li>
+<li>「她父母擔心、想搬來照顧？」 → 個別 family discussion；父母 aging；獨生女 caregiver burden；可能 feasible（同住 + share responsibilities）但 also burden 父母；alternative：定期 visit + emergency available；不必 default solution</li>
+<li>「Pregnancy 後她 attack 嚴重 leave 嬰兒怎麼辦？」 → Caregiver plan essential pre-pregnancy：先生 + 父母 + 月嫂 + 育嬰護理 + 緊急 plan；長照 2.0；如 prolonged hospitalization → temporary out-of-home care arrangement；不要一個人 backup</li>
+<li>「她 lifelong meaning what？」 → Disease 是<strong>part of life, not whole life</strong>；continue meaningful career（modified）+ family + relationships + hobbies + community + spiritual + 病友 advocacy；NMOSD patient 多 lead full lives；focus on what is possible not what was lost</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>NMOSD lifelong disease — surveillance + relapse prevention + quality of life + family integration</li>
+<li>Surveillance：neurology q3-6 mo、AQP4 + MRI + vision yearly、CD19 + IgG q6 mo、SCI sequelae（bladder、bone、CV、skin）、mental health</li>
+<li><strong>Relapse warning signs</strong>：vision、motor、sensory、bladder、AD、area postrema、brainstem、acute fatigue → urgent neurology / ER</li>
+<li>Patient + family education：disease + treatment + vaccinations + self-monitor + emergency + pregnancy + career + mental health</li>
+<li>Support resources：罕病基金會、NMOSD 病友會、學會、SCI Foundation、健保重大傷病、身障、長照、勞保、商業險、心理 counseling</li>
+<li>Caregiver wellbeing：education + Zarit + own health + boundary + counseling + 喘息</li>
+<li>Future children：not hereditary、age-appropriate education、not parentified、family routine adapted</li>
+<li>Psychological + spiritual lifelong support；peer + counseling + community + meaning</li>
+<li>本案 plan：Y1 disease + 婚禮、Y2-3 pregnancy phase、Y3-5 family established + RTW、long-term lifelong</li>
+<li>Cluster OPD q3 monthly</li>
+<li><strong>「Disease 是 part of life, not whole life — design new normal」</strong></li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
