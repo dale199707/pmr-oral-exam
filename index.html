@@ -32131,6 +32131,1084 @@ Compliance = 150/5 = <strong>30 mL/cmH₂O</strong>（正常邊界）<br><br>
       },
     ],
   },
+  {
+    id: 'sci_005',
+    domain: 'sci',
+    title: 'Anterior Spinal Artery Syndrome — 主動脈剝離後 T8 不完全 SCI 合併左 AK 截肢（58M 業務經理、HTN 高 risk、雙重失能）',
+    context: `58 歲男性，業務經理（外商企業），已婚有一子（25 歲）。3 個月前在公司開會時突發劇烈胸痛、背痛、隨後雙下肢無力、急救送醫。
+
+【既往病史】
+- HTN 10 年（控制不佳，常忘記吃藥，平日 SBP 150-170）、高血脂
+- 抽菸 30 pack-year、應酬飲酒
+- 10 年前因 DM foot infection + osteomyelitis → <strong>左下肢 AK（above-knee）amputation</strong>，使用義肢規律行走，工作生活完全獨立
+- DM 二型 12 年（HbA1c 7.5、metformin + insulin）
+- 父親 60 歲心肌梗塞猝逝、母親 high BP
+
+【急性期經過】
+- 急診 BP 90/50（胸主動脈剝離常見 hypotension）、cyanosis、胸痛 VAS 9
+- CT angiography：<strong>Stanford type B aortic dissection</strong>（始於 L subclavian 遠端、延伸至 abdominal aorta）
+- TEE 確認、立即 ICU 處置（控壓 + 鎮痛 + 觀察 / 介入）
+- 急診 D2 注意到雙下肢肌力 0、感覺異常 → 神經科會診：<strong>Anterior Spinal Artery Syndrome（ASA syndrome）at T8 level</strong>（artery of Adamkiewicz 灌流不足）
+- 接受 <strong>TEVAR（Thoracic Endovascular Aortic Repair）</strong>覆膜支架
+- 術後 SCI 改善有限：T8 以下 motor preserved 部分、pain/temp 完全消失、proprioception 保留
+- 2 週後轉復健病房
+
+【目前狀況（受傷後 3 個月）】
+- 上肢：5/5 normal
+- 下肢肌力（神經學檢查條列）：
+  <ul>
+    <li>右側：L2 = 2、L3 = 1、L4 = 0、L5 = 0、S1 = 0</li>
+    <li>左側：<strong>NT</strong>（已截肢於膝上 — Above-knee amputation）</li>
+  </ul>
+- Sensory：
+  <ul>
+    <li>Light touch：T1-T7 normal、T8 起 normal/decreased patchy（dorsal column 保留）</li>
+    <li>Pinprick / temperature：<strong>T8 起完全 absent</strong>（spinothalamic 受損）</li>
+    <li>Proprioception：preserved（dorsal column）</li>
+  </ul>
+- DAP absent、VAC absent、S4-5 sensory absent
+- 大小便失禁、Foley 留置中
+- 站立訓練時頻繁 orthostatic（站起 SBP 80）
+- 過去使用之 AK 義肢無法穩定使用（下肢肌力差）
+- 傷後感覺遲鈍 → 右下肢已出現 1 處輕度壓瘡（heel）
+- 神經痛：T8 以下 burning（VAS 5）
+
+【家屬與社會】
+- 太太 55 歲、會計師、健康
+- 兒子 25 歲、研究所
+- 病人原月薪 250K、業務經理職務需經常出差、爬樓梯、上下車
+- 病人問：「我以前裝義肢是好好的，現在連站都站不起來。我還能不能站？工作怎麼辦？」`,
+    questions: [
+      {
+        q: '請說明主動脈剝離如何造成脊髓損傷，以及急性期診斷重點。',
+        keywords: [
+          'Aortic dissection',
+          'Stanford type A vs B',
+          'Type A involves ascending aorta (surgical)',
+          'Type B distal to L subclavian (TEVAR or medical)',
+          'Spinal cord blood supply',
+          'Anterior spinal artery (single)',
+          'Posterior spinal arteries (paired)',
+          'Artery of Adamkiewicz (T8-L2 range)',
+          'Watershed area T4-T8',
+          'Aortic dissection → branch occlusion / hypoperfusion',
+          'Iatrogenic from aortic surgery',
+          'Acute severe back / chest pain',
+          'Pulse deficits',
+          'Aortic regurgitation murmur',
+          'BP differential between arms',
+          'CT angiography first-line',
+          'TEE',
+          'Cord ischemia onset hours after',
+        ],
+        points: [
+          '<strong>Aortic dissection 兩型（Stanford）</strong>：<strong>Type A</strong>（升主動脈或弓部）— 緊急手術；<strong>Type B</strong>（左 subclavian 遠端）— 醫療控壓 / TEVAR',
+          '<strong>SCI 機轉</strong>：① intercostal / lumbar arteries 灌流中斷 ② <strong>Artery of Adamkiewicz（最大 segmental medullary artery，T8-L2 範圍）灌流喪失</strong> ③ 主動脈手術 / TEVAR 過程中的 ischemia',
+          '<strong>Watershed area</strong>：T4-T8 是 anterior spinal artery 灌流分水嶺 → 最易缺血',
+          '<strong>SCI 多在 dissection 後幾小時出現</strong>，可能 delayed → 需動態追蹤',
+          '<strong>2022 真題</strong>：HTN 病人胸痛 + 突發雙下肢無力 → DDx → Aortic dissection（type A or B?）',
+          '<strong>三大臨床表現</strong>：① 撕裂樣劇痛（胸/背）② Pulse / BP 不對稱（左右肢差 &gt; 20 mmHg）③ AR murmur（type A）',
+          '<strong>第一線檢查</strong>：CT angiography（最快、敏感）；TEE 補充 type A 評估',
+          '<strong>本病人 type B</strong>：劇痛 + BP 不對稱 + neuro deficit + CT confirm → ASA syndrome',
+        ],
+        a: `<h4>1. Aortic Dissection Stanford 分型</h4>
+
+<table>
+<tr><th>Type</th><th>位置</th><th>處置</th></tr>
+<tr><td><strong>Type A</strong></td><td>升主動脈 ± 弓部 ± 降主動脈</td><td><strong>緊急開心手術</strong>（破裂 + tamponade 風險高）</td></tr>
+<tr><td><strong>Type B</strong></td><td>左 subclavian artery 遠端開始</td><td><strong>初期醫療控壓</strong>（β-blocker、target SBP &lt; 120）；complicated 用 <strong>TEVAR</strong></td></tr>
+</table>
+
+<p>本病人為 <strong>Type B</strong>，已接受 TEVAR。</p>
+
+<h4>2. Spinal Cord 血管供應</h4>
+
+<table>
+<tr><th>Artery</th><th>供應</th><th>特性</th></tr>
+<tr><td><strong>Anterior spinal artery（單支）</strong></td><td>Cord 前 2/3</td><td>從 vertebral 起始；下行需要 segmental reinforcement</td></tr>
+<tr><td><strong>Posterior spinal arteries（成對）</strong></td><td>Cord 後 1/3（dorsal column）</td><td>較有 redundancy</td></tr>
+<tr><td><strong>Segmental medullary arteries</strong></td><td>從 intercostal / lumbar branches</td><td>多寡因人而異</td></tr>
+<tr><td><strong>Artery of Adamkiewicz</strong></td><td>最大 segmental medullary artery</td><td>多在 T8-L2 範圍（80% T9-T12 左側）；主導 lower thoracic + lumbar cord 灌流</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>關鍵概念</strong>：T4-T8 是 anterior spinal artery <strong>watershed area</strong>（兩端血流會合）→ 灌流壓最低 → 缺血最易發生。本病人 T8 ASA syndrome 是 watershed 經典位置。
+</p>
+
+<h4>3. Aortic Dissection → SCI 的機轉</h4>
+
+<ol>
+<li><strong>分流（false lumen）阻塞 segmental arteries</strong> → 失去供血</li>
+<li><strong>Artery of Adamkiewicz 起源動脈被剝離切斷</strong> → 大範圍 cord 缺血</li>
+<li><strong>系統性 hypotension</strong>（dissection 病人多 hypotensive）→ watershed 灌流不足</li>
+<li><strong>Iatrogenic（TEVAR / surgery）</strong>：覆膜支架可能 cover 重要 segmental artery；clamp time 過長</li>
+</ol>
+
+<h4>4. 急性期臨床表現（2022 真題核心）</h4>
+
+<table>
+<tr><th>系統</th><th>症狀</th></tr>
+<tr><td><strong>疼痛</strong></td><td>突發劇烈撕裂樣胸 / 背痛（VAS 9-10），常 radiate to back</td></tr>
+<tr><td><strong>循環</strong></td><td>BP 不對稱（左右肢差 &gt; 20 mmHg）、pulse deficit、皮膚冷</td></tr>
+<tr><td><strong>心臟（type A）</strong></td><td>AR murmur、cardiac tamponade、MI</td></tr>
+<tr><td><strong>神經</strong></td><td>突發雙下肢無力 / 感覺異常（SCI）、stroke（carotid involvement）</td></tr>
+<tr><td><strong>內臟</strong></td><td>Mesenteric ischemia（腸缺血）、renal infarction、limb ischemia</td></tr>
+</table>
+
+<h4>5. 急性診斷</h4>
+
+<table>
+<tr><th>檢查</th><th>角色</th></tr>
+<tr><td><strong>CT angiography</strong></td><td>第一線（快、敏感、廣泛 — 看全主動脈）</td></tr>
+<tr><td><strong>TEE</strong></td><td>Type A 評估、ICU bedside；不需 contrast</td></tr>
+<tr><td><strong>MRA</strong></td><td>慢性 follow-up（不適合急性）</td></tr>
+<tr><td><strong>D-dimer</strong></td><td>升高（rule out 用，但 specificity 低）</td></tr>
+<tr><td><strong>CXR</strong></td><td>Mediastinal widening、aortic knob 異常 → 提示 dissection（敏感度低）</td></tr>
+<tr><td><strong>EKG</strong></td><td>排除 MI（type A 可造成 STEMI）</td></tr>
+</table>
+
+<h4>6. 急性處置</h4>
+
+<table>
+<tr><th>面向</th><th>處置</th></tr>
+<tr><td><strong>BP 控制</strong></td><td>β-blocker（labetalol、esmolol） + nitroprusside；<strong>target SBP 100-120</strong>；HR &lt; 60</td></tr>
+<tr><td><strong>止痛</strong></td><td>Morphine（避免 BP 飆 → 加重 dissection）</td></tr>
+<tr><td><strong>Type A</strong></td><td>緊急開心手術</td></tr>
+<tr><td><strong>Type B</strong></td><td>Uncomplicated → 醫療控壓；complicated（malperfusion、rupture、refractory pain）→ TEVAR</td></tr>
+<tr><td><strong>SCI 預防</strong></td><td>① 維持 MAP &gt; 80-90 mmHg ② 必要時 CSF drainage（lumbar drain）③ Steroid（爭議）</td></tr>
+</table>
+
+<h4>7. 本病人診斷流程</h4>
+
+<ol>
+<li>急診胸背劇痛 + HTN 史 + BP 不對稱 → 高度懷疑 dissection</li>
+<li>CT angiography：Stanford Type B（左 subclavian 遠端起）</li>
+<li>TEE 確認</li>
+<li>ICU β-blocker + nitroprusside 控壓</li>
+<li>D2 觀察到雙下肢無力 → 神經科會診，<strong>ASA syndrome at T8</strong>（沒有單獨 cord MRI 也能診斷）</li>
+<li>TEVAR：考量 cover 範圍與 segmental artery 影響</li>
+<li>術後 cord MRI 確認 ASA pattern（cord central area 缺血）</li>
+</ol>
+
+<h4>口試重點</h4>
+<ul>
+<li>2022 真題：胸痛 + 雙下肢無力 → DDx aortic dissection</li>
+<li>Stanford A（升主動脈、開心）vs B（subclavian 遠端、TEVAR / medical）</li>
+<li>SCI 機轉：segmental artery occlusion、Adamkiewicz 失血、hypotension、iatrogenic</li>
+<li>Adamkiewicz 多 T8-L2、80% 左側</li>
+<li>Watershed area T4-T8 是 anterior spinal artery 最脆弱區</li>
+<li>第一線檢查：CT angiography</li>
+<li>BP 控制 target SBP 100-120、HR &lt; 60</li>
+<li>SCI 預防：MAP &gt; 80-90、CSF drainage（lumbar drain）</li>
+<li>本病人 type B + ASA syndrome at T8 是 watershed 經典</li>
+<li>SCI onset 可能 delayed hours-days，急性期需動態 neuro check</li>
+</ul>`,
+      },
+      {
+        q: '請說明 Anterior Cord Syndrome 的臨床特色與預後。',
+        keywords: [
+          'Anterior 2/3 of cord supplied by ASA',
+          'Posterior 1/3 (dorsal column) supplied by PSAs',
+          'Lost: corticospinal (motor)',
+          'Lost: spinothalamic (pain/temperature)',
+          'Preserved: dorsal column (proprioception, vibration, fine touch)',
+          'Sphincter dysfunction (autonomic in lateral horn)',
+          'Worst prognosis among incomplete syndromes',
+          '10-20% functional recovery',
+          'Compared with Brown-Séquard (best)',
+          'Compared with Central Cord (mid)',
+          'Compared with Posterior Cord (rare)',
+          'Etiology: ischemic (ASA occlusion, dissection, surgery)',
+          'Etiology: traumatic compression (anterior cord crush)',
+        ],
+        points: [
+          '<strong>Anterior Cord Syndrome (ACS)</strong>：Cord 前 2/3 受傷（ASA 缺血或 anterior crush）',
+          '<strong>失去</strong>：① <strong>Motor</strong>（corticospinal tract 在 lateral / anterior column）② <strong>Pain & temperature</strong>（spinothalamic 在 anterolateral column）③ Bowel/bladder（lateral horn autonomic）',
+          '<strong>保留</strong>：<strong>Proprioception、vibration、fine touch（dorsal column 在 posterior column，PSA 供血未受影響）</strong>',
+          '<strong>不完全症候群中預後最差</strong>：functional recovery 約 10-20%',
+          '<strong>比較</strong>：Brown-Séquard（最佳，&gt; 90% 走路）&gt; Central（中等）&gt; Anterior（最差）',
+          '<strong>Etiology</strong>：① Ischemic（ASA occlusion、aortic dissection、surgical complication）② Traumatic（anterior compression by retropulsed bone fragment）',
+          '<strong>本病人</strong>：T8 anterior cord syndrome 從 aortic dissection；motor partial recovery（L2-L3）+ proprioception preserved',
+          '<strong>感覺解離（sensory dissociation）</strong>是 ACS 經典：<strong>pain/temp 失、proprio 保留</strong>',
+        ],
+        a: `<h4>1. 解剖基礎</h4>
+
+<table>
+<tr><th>Tract</th><th>位置</th><th>血供</th><th>功能</th></tr>
+<tr><td><strong>Corticospinal</strong></td><td>Lateral / anterior</td><td>ASA</td><td>Motor</td></tr>
+<tr><td><strong>Spinothalamic</strong></td><td>Anterolateral</td><td>ASA</td><td>Pain / temperature</td></tr>
+<tr><td><strong>Dorsal column</strong></td><td>Posterior</td><td><strong>PSA（保留）</strong></td><td>Proprioception / vibration / fine touch</td></tr>
+<tr><td><strong>Lateral horn</strong>（autonomic）</td><td>Lateral grey matter</td><td>ASA</td><td>Sympathetic、bowel / bladder</td></tr>
+</table>
+
+<h4>2. ACS 臨床特色</h4>
+
+<table>
+<tr><th>面向</th><th>表現</th></tr>
+<tr><td><strong>Motor</strong></td><td>受傷 level 以下無力 / 麻痺</td></tr>
+<tr><td><strong>Pain / Temperature</strong></td><td><strong>受傷 level 以下完全消失</strong>（spinothalamic 在 ASA 範圍）</td></tr>
+<tr><td><strong>Proprioception / Vibration</strong></td><td><strong>保留</strong>（dorsal column 由 PSA 供血）</td></tr>
+<tr><td><strong>Fine touch</strong></td><td>保留</td></tr>
+<tr><td><strong>Bowel / Bladder</strong></td><td>Dysfunction（autonomic in ASA territory）</td></tr>
+<tr><td><strong>感覺解離（sensory dissociation）</strong></td><td><strong>Pain/temp 失 + proprio 保留</strong>是 ACS 經典 sign</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>感覺解離（Dissociated sensory loss）</strong>是 ACS 與其他不完全症候群的關鍵鑑別點：<br>
+本病人 → pain/temp 完全 absent，但 proprio + vibration preserved → <strong>典型 ACS pattern</strong>。
+</p>
+
+<h4>3. 不完全症候群預後比較</h4>
+
+<table>
+<tr><th>Syndrome</th><th>Functional walking</th><th>備註</th></tr>
+<tr><td><strong>Brown-Séquard</strong></td><td><strong>&gt; 90%</strong></td><td>最佳</td></tr>
+<tr><td><strong>Central Cord</strong></td><td>50-75%（依年齡）</td><td>手部最差</td></tr>
+<tr><td><strong>Anterior Cord</strong></td><td><strong>10-20%</strong></td><td><strong>最差</strong></td></tr>
+<tr><td>Posterior Cord</td><td>變異</td><td>少見；主要 ataxic gait</td></tr>
+<tr><td>Conus medullaris</td><td>變異</td><td>Mixed UMN + LMN</td></tr>
+<tr><td>Cauda equina</td><td>急救處理後可</td><td>純 LMN</td></tr>
+</table>
+
+<h4>4. ACS Etiology</h4>
+
+<table>
+<tr><th>類型</th><th>原因</th></tr>
+<tr><td><strong>Ischemic</strong></td><td>ASA occlusion、<strong>Aortic dissection（本病人）</strong>、cardiac surgery、aortic aneurysm repair、severe hypotension、vasculitis、cocaine</td></tr>
+<tr><td><strong>Traumatic</strong></td><td>Burst fracture 的 retropulsed bone 壓 anterior cord、HIVD large central</td></tr>
+<tr><td><strong>Compressive</strong></td><td>Tumor anterior、abscess、hematoma</td></tr>
+<tr><td><strong>Iatrogenic</strong></td><td>TEVAR / aortic surgery 過程</td></tr>
+</table>
+
+<h4>5. 為什麼 ACS 預後最差</h4>
+
+<ul>
+<li>ASA territory 涵蓋 cord 大部分（2/3）— 包括 grey matter motor neurons</li>
+<li>Ischemic injury 多 irreversible（不像 compression 解除後可恢復）</li>
+<li>Watershed 區灌流恢復困難</li>
+<li>Lateral horn autonomic dysfunction 影響 BP / bowel / bladder 全面性</li>
+</ul>
+
+<h4>6. 本病人預後評估</h4>
+
+<table>
+<tr><th>面向</th><th>當前狀態</th><th>3-6 月預期</th></tr>
+<tr><td>Motor</td><td>L2 = 2、L3 = 1、其餘 0（右側）</td><td>可能小幅進步（L2-L3 +1 grade），完全恢復不太可能</td></tr>
+<tr><td>Pain / Temp</td><td>完全 absent</td><td>多無恢復（ischemic 不可逆）</td></tr>
+<tr><td>Proprio</td><td>Preserved</td><td>保持</td></tr>
+<tr><td>Bowel / Bladder</td><td>Dysfunction</td><td>多需 long-term CIC</td></tr>
+<tr><td>Walking</td><td>Wheelchair primary</td><td>可能短距 KAFO（搭配義肢）；community walking 不太可能</td></tr>
+</table>
+
+<h4>7. 跟病人解釋（接續他的問題：「我以前裝義肢好好的，現在連站都站不起來」）</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您之前左腳裝義肢能走得很好，是因為右腳是健康的、可以支撐。<strong>現在主動脈剝離造成脊髓血流受傷，雙腳力量都減弱了，所以義肢即使裝著也站不穩</strong>。<br><br>
+您這種類型叫 <strong>Anterior Cord Syndrome</strong>，在不完全 SCI 裡<strong>恢復比較困難</strong>。motor 可能有部分進步，但要回到以前的程度比較不容易。<br><br>
+不過好消息是：<strong>您的位置覺保留了</strong>（知道腿在哪裡），這對義肢使用反而是個保護 — 讓您即使力量恢復不多，搭配輔具仍可短距離站立移位。長距離移動還是會以輪椅為主。<br><br>
+我們的目標：① 持續復健 6 個月，看 motor 能恢復多少 ② 評估義肢是否需要改成更穩定型（如 stance-control KAFO 結合義肢）③ 訓練輪椅獨立 ④ 重要的是您的工作可以調整成不需爬樓梯、不需出差的型態 — 您的能力（管理、業務經驗）沒有失去。」</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>ACS = ASA territory 缺血 / 受傷</li>
+<li>失：motor、pain/temp、autonomic；保留：proprioception、vibration、fine touch</li>
+<li>感覺解離（pain/temp 失 + proprio 保留）= ACS 經典 sign</li>
+<li>不完全症候群預後：Brown-Séquard &gt; Central &gt; Anterior（最差）</li>
+<li>Etiology：ischemic（dissection、surgery）&gt; traumatic（burst fracture）&gt; compressive</li>
+<li>10-20% functional recovery — 是預後最差的不完全 SCI</li>
+<li>本病人 T8 ACS + 既有 AKA → 雙重失能（後續題目延伸）</li>
+<li>Proprioception preserved 對義肢 / 步行訓練是優勢（但 motor 是關鍵）</li>
+<li>感覺解離保護機制：proprio 保留讓病人知道肢體位置，但 pain/temp 失 → 易燙傷、壓瘡</li>
+<li>Pain/temp 失 → 必須積極預防壓瘡、燙傷、皮膚傷害（病人不會痛）</li>
+</ul>`,
+      },
+      {
+        q: '請依此病人神經學檢查資料判讀 ASIA。截肢側為何標記為 NT？',
+        keywords: [
+          'NT = Not Testable',
+          'Amputation prevents standard motor / sensory testing',
+          'Use contralateral side',
+          'Determine NLI based on best testable',
+          'AIS classification still possible',
+          'Document reason for NT',
+          'Sensory level R: T7 (light touch normal until T7)',
+          'Pinprick / temp: completely absent below T8',
+          'Motor level R: L2',
+          'Motor level L: NT',
+          'NLI R: T7-T8 (use sensory)',
+          'NLI L: NT but use R side as proxy',
+          'ZPP only AIS A',
+          'Proprioception preserved → AIS A or B differentiation',
+          'DAP / VAC absent → AIS A',
+        ],
+        points: [
+          '<strong>NT (Not Testable)</strong>：截肢、固定包紮、嚴重 contracture、認知無法配合等情況下無法測試',
+          '<strong>必須記錄 NT 原因</strong>（"AKA"），不可空白或猜測',
+          '<strong>2022 真題</strong>：左下肢標 NT 是因為 AK amputation；考官會追問 NT 的意義與 NLI 怎麼定',
+          '<strong>NLI 決定</strong>：截肢側無法測 → 用對側 best score 確定（左 NT 不可作為 NLI）',
+          '<strong>本病人判讀</strong>：sensory R = T7（light touch；pinprick T8 起 absent）；motor R = L2；motor L = NT；S4-5 sensory absent；DAP absent；VAC absent',
+          '<strong>NLI = T7（右 sensory level，因為 pinprick 已 absent at T8 → 嚴格 sensory level 看 light touch + pinprick 都 normal 的最低 level = T7）</strong>',
+          '<strong>AIS = A</strong>（S4-5 sensory + DAP + VAC 全 absent）',
+          '<strong>ZPP（AIS A 才寫）</strong>：sensory R = T7（pinprick）/ proprio 仍 preserved 故 ZPP 可記較長；motor R = L2；左側 NT',
+        ],
+        a: `<h4>1. NT (Not Testable) 規則</h4>
+
+<table>
+<tr><th>情況</th><th>處理</th></tr>
+<tr><td><strong>截肢</strong>（本病人左 AKA）</td><td>標 NT，<strong>記錄原因</strong>（"AKA"）</td></tr>
+<tr><td><strong>固定 / 石膏</strong></td><td>標 NT，註明</td></tr>
+<tr><td><strong>嚴重 contracture / spasticity</strong></td><td>標 NT，註明</td></tr>
+<tr><td><strong>認知 / 配合度差</strong></td><td>標 NT，註明</td></tr>
+<tr><td><strong>插管 / 鎮靜</strong></td><td>急性期可暫標 NT</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>NT 不等於 0 也不等於正常</strong>。空白、猜測、或標 0 都是錯誤。<br>
+NT 是合法的 ASIA 紀錄方式，但<strong>必須有原因記載</strong>。
+</p>
+
+<h4>2. 截肢病人 ASIA 判讀規則</h4>
+
+<table>
+<tr><th>面向</th><th>處理</th></tr>
+<tr><td>截肢側 motor</td><td>所有 key muscles 標 <strong>NT</strong></td></tr>
+<tr><td>截肢側 sensory</td><td>截肢以下無法測 → NT；保留部分以上可測 → 仍評估</td></tr>
+<tr><td><strong>NLI 確定</strong></td><td>用<strong>對側 best score</strong>確定；不能用 NT 側</td></tr>
+<tr><td>AIS</td><td>仍可分級（依 sacral function、可測側評估）</td></tr>
+<tr><td><strong>ZPP（若 AIS A）</strong></td><td>對側仍寫；NT 側標 NT</td></tr>
+</table>
+
+<h4>3. 本病人判讀（步驟）</h4>
+
+<table>
+<tr><th>步驟</th><th>右側</th><th>左側</th></tr>
+<tr><td><strong>Sensory level（LT + PP normal）</strong></td><td>T7（T8 起 pinprick absent，雖 light touch 部分保留 → sensory level 嚴格用兩者皆 normal）</td><td>NT (AKA 以下無法測；以上 normal)</td></tr>
+<tr><td><strong>Motor level</strong></td><td>L2（hip flex = 2 ≥ 3 不符；但 T 段無 key muscle，default upper = 5 → motor level 看 L2 = 2 是否 ≥ 3 — 否，故嚴格 motor level 為 T7=sensory）。本病人 motor 在 L2-L3 仍有殘餘 → 記為 motor ZPP（ZPP 規則 ≥ 1 即記）</td><td><strong>NT</strong></td></tr>
+<tr><td><strong>S4-5 sensory</strong></td><td colspan="2">Absent</td></tr>
+<tr><td><strong>DAP</strong></td><td colspan="2">Absent</td></tr>
+<tr><td><strong>VAC</strong></td><td colspan="2">Absent</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>判讀（口試標準回答）</strong>：<br>
+「Sensory level 右 T7、左 NT（AKA 以下無法測）；Motor level 右 = T7（嚴格 — T 段 key muscle 在 L2 = 2 不達 ≥ 3）、左 = NT；<strong>NLI = T7</strong>（用右側 best score）。S4-5 sensory + DAP + VAC 全 absent → <strong>AIS A（complete）</strong>。<br><br>
+ZPP（AIS A）：sensory R = T7、motor R = L2（有 motor function）、左側皆 NT。<br><br>
+特殊：proprioception preserved（dorsal column 由 PSA 供血）→ ASIA scale 不直接記，但臨床描述為<strong>「complete motor SCI with sensory dissociation: pain/temp absent, proprioception preserved」</strong>。」
+</p>
+
+<h4>4. ASIA 對 ACS 的限制</h4>
+
+<ul>
+<li>ASIA 標準 sensory 用 light touch + pinprick → 可測出 spinothalamic injury</li>
+<li><strong>但 ASIA 沒有測 proprioception</strong> → 純看 ASIA 會錯過 ACS 的關鍵診斷特色</li>
+<li>因此 ASIA 之外，必須加做 proprioception、vibration 評估 → 才能確診 ACS</li>
+<li>本病人 AIS A（complete by ASIA），但<strong>臨床仍是 incomplete syndrome</strong>（proprio preserved）</li>
+</ul>
+
+<h4>5. 截肢病人額外評估項目</h4>
+
+<table>
+<tr><th>面向</th><th>內容</th></tr>
+<tr><td><strong>殘肢狀況</strong></td><td>Suture line、皮膚、感染、neuroma、phantom pain</td></tr>
+<tr><td><strong>對側下肢</strong></td><td>仍是 weight-bearing 主力 — 完整 PE</td></tr>
+<tr><td><strong>義肢 fit</strong></td><td>Socket、suspension、alignment</td></tr>
+<tr><td><strong>站立 / 步行能力</strong></td><td>Pre-injury baseline 比對</td></tr>
+<tr><td><strong>燒傷 / 壓瘡</strong></td><td>義肢接觸面、感覺差時更易發生</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>2022 真題：截肢側 NT、考官會問為什麼</li>
+<li>NT = Not Testable，不等於 0、不等於 normal</li>
+<li>必須記錄 NT 原因（AKA、cast、contracture 等）</li>
+<li>NLI 決定用對側 best score（NT 側無法用）</li>
+<li>AIS 仍可分級（看可測側 + sacral function）</li>
+<li>ASIA 不測 proprioception → ACS 純看 ASIA 會錯過經典感覺解離</li>
+<li>本病人 AIS A by ASIA，但臨床仍是 ACS（proprio preserved）</li>
+<li>ZPP only AIS A；截肢側仍標 NT</li>
+<li>截肢病人需額外評估殘肢、義肢、對側下肢</li>
+<li>本病人雙重失能（SCI + AKA）→ ASIA 無法完整描述功能 → 需 SCIM、FIM 等補充</li>
+</ul>`,
+      },
+      {
+        q: '請說明此病人的步行訓練與義肢評估。',
+        keywords: [
+          'Dual disability: SCI + AKA',
+          'Energy expenditure compounded',
+          'Original AKA prosthesis no longer suitable',
+          'Stance-control / locked KAFO needed',
+          'Hip mechanism for AKA',
+          'Energy storing foot',
+          'Microprocessor knee (C-leg) — typically not appropriate when high level SCI',
+          'Bilateral lower limb weakness',
+          'Walking aids: walker, parallel bars',
+          'Sit-stand transitions training',
+          'Standing program',
+          'Wheelchair as primary mobility',
+          'Realistic goal: short-distance household ambulation',
+          'Energy conservation',
+          'Skin / stump care (sensation lost)',
+          'Frequent prosthetist follow-up',
+        ],
+        points: [
+          '<strong>雙重失能病人能量消耗極高</strong>：AKA 義肢 1.6-2x、SCI T8 KAFO 6-10x → 兩者結合 community walking 幾乎不可能',
+          '<strong>原 AKA 義肢已不適用</strong>：之前能走是因為右腳健康、可以代償；現在右腳 hip flex 2、quad 1 → 義肢無法穩定',
+          '<strong>義肢方案需重新設計</strong>：① <strong>Stance-control / locked-knee AKA prosthesis</strong>（鎖定 knee 提供穩定）② 對側右腳加 <strong>KAFO</strong>（鎖膝 + AFO）③ Walker / parallel bars 配合',
+          '<strong>不適合 microprocessor knee（C-leg）</strong>：C-leg 需要 active hip + good proprioception 控制，本病人雖 proprio 保留但 hip 力量不足',
+          '<strong>站立訓練優先</strong>：每天 30-60 min standing frame；改善 BMD、痙攣、循環、心理',
+          '<strong>感覺缺失帶來義肢風險</strong>：pain/temp 失 → 殘肢易燙傷、壓瘡；右腳感覺也異常 → KAFO 接觸面需頻繁檢查',
+          '<strong>輪椅是主要 mobility</strong>：全功能 manual wheelchair（病人上肢 normal）',
+          '<strong>實際目標</strong>：① 站立訓練（治療性）② 短距離 household 站立 / 移位（搭配義肢 + KAFO + walker）③ Community = 輪椅',
+        ],
+        a: `<h4>1. 雙重失能能量學</h4>
+
+<table>
+<tr><th>移動方式</th><th>能量消耗（vs 正常）</th></tr>
+<tr><td>正常走路</td><td>1×</td></tr>
+<tr><td>單側 AKA + 義肢</td><td><strong>1.6-2.0×</strong></td></tr>
+<tr><td>SCI T8 KAFO</td><td><strong>6-10×</strong></td></tr>
+<tr><td><strong>雙重失能組合</strong></td><td><strong>10× 以上 → community walking 不可行</strong></td></tr>
+<tr><td>輪椅</td><td>~ 1× 持平</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>關鍵訊息</strong>：本病人能量消耗已遠超心血管系統可承受（特別他有 HTN + 高血脂、心血管 risk 高）→ 即使可以「走」，也只能<strong>短距離 household 治療性</strong>。Community mobility 必須依賴輪椅。
+</p>
+
+<h4>2. 原 AKA 義肢為何不再適用</h4>
+
+<table>
+<tr><th>之前</th><th>現在</th></tr>
+<tr><td>右腳 5/5 → 強力代償義肢</td><td>右腳 hip flex 2、quad 1 → 無法代償</td></tr>
+<tr><td>標準 dynamic-knee 義肢</td><td>需要 stance-control 或 locked-knee</td></tr>
+<tr><td>無感覺缺失</td><td>感覺缺失 → 殘肢易傷</td></tr>
+<tr><td>單一裝置</td><td>需義肢 + 對側 KAFO 雙裝</td></tr>
+</table>
+
+<h4>3. 義肢方案選擇</h4>
+
+<table>
+<tr><th>類型</th><th>適用</th><th>本病人</th></tr>
+<tr><td><strong>Standard dynamic AKA</strong></td><td>對側下肢健康、活動度高</td><td>❌ 已不適</td></tr>
+<tr><td><strong>Stance-control knee</strong></td><td>站立穩定、行走時釋放</td><td>✅ 候選</td></tr>
+<tr><td><strong>Locked-knee（manual locking）</strong></td><td>嚴重不穩、安全優先</td><td>✅ 短距離站立移位首選</td></tr>
+<tr><td><strong>Microprocessor knee（C-leg、Genium）</strong></td><td>需 hip 控制 + good proprio + 心血管耐受</td><td>❌（hip 力量不足、心血管 risk）</td></tr>
+<tr><td>義肢 socket</td><td>Suction、pin-lock、vacuum</td><td>需評估殘肢狀態（萎縮、皮膚）</td></tr>
+<tr><td>義肢腳</td><td>SACH、energy-storing、multi-axis</td><td>SACH 簡單穩定即可</td></tr>
+</table>
+
+<h4>4. 對側下肢輔具（右腳 SCI 受影響）</h4>
+
+<table>
+<tr><th>輔具</th><th>用途</th></tr>
+<tr><td><strong>Locked KAFO</strong></td><td>Knee 鎖直 + ankle 中立位 → 提供 stance phase 穩定（取代 quadriceps function）</td></tr>
+<tr><td><strong>AFO（若 KAFO 太重）</strong></td><td>較輕但無 knee control</td></tr>
+<tr><td><strong>Stance-control KAFO</strong></td><td>站立鎖定、行走時釋放（高階）</td></tr>
+<tr><td><strong>RGO（reciprocating gait orthosis）</strong></td><td>雙側下肢用，但本病人左腳已截肢 → 不適用</td></tr>
+</table>
+
+<h4>5. 步行訓練計畫</h4>
+
+<table>
+<tr><th>階段</th><th>內容</th></tr>
+<tr><td><strong>第 1 階段：站立訓練</strong></td><td>Tilt table → standing frame；每天 30-60 min；改善 OH、BMD、痙攣</td></tr>
+<tr><td><strong>第 2 階段：parallel bars</strong></td><td>戴 locked AKA + 右 KAFO，雙手扶 bars，重心轉移、單腳支撐</td></tr>
+<tr><td><strong>第 3 階段：walker</strong></td><td>從 parallel bars 進階到 4-wheel walker；step-to gait（兩腳並步）</td></tr>
+<tr><td><strong>第 4 階段：household ambulation</strong></td><td>短距離家中移動；3-5 步、休息</td></tr>
+<tr><td><strong>輪椅同步訓練</strong></td><td>Manual wheelchair（上肢 normal）；長距離主力</td></tr>
+</table>
+
+<h4>6. 殘肢與皮膚照護（感覺缺失重要）</h4>
+
+<table>
+<tr><th>面向</th><th>內容</th></tr>
+<tr><td><strong>殘肢檢查</strong></td><td>每天視診（鏡子、家屬幫忙）；皮膚紅、破皮、suture line</td></tr>
+<tr><td><strong>義肢 socket</strong></td><td>每次脫下後檢查接觸面；汗液 / 細菌</td></tr>
+<tr><td><strong>對側下肢（KAFO 接觸）</strong></td><td>每天視診、骨突點 padding</td></tr>
+<tr><td><strong>溫度</strong></td><td>不可碰高溫（不會痛）；洗澡水 &lt; 40°C；家屬代測</td></tr>
+<tr><td><strong>義肢時間</strong></td><td>初期短時段（15-30 min）→ 漸增；不可一整天穿</td></tr>
+<tr><td><strong>義肢師 follow-up</strong></td><td>初期每 2 週、穩定後每 3-6 個月</td></tr>
+</table>
+
+<h4>7. 目標設定（與病人對話）</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您之前裝義肢能走得這麼好，是因為右腳健康在支撐。現在右腳力量也減弱了，所以情況不同了。<br><br>
+<strong>實際的目標</strong>：<br>
+① <strong>站立移位</strong>（從輪椅站起、轉到馬桶 / 床、洗澡）— 這是<strong>有機會做到</strong>的，需要新的鎖膝義肢 + 右腳 KAFO + walker<br>
+② <strong>家中短距離走</strong>（3-5 步、扶著家具）— 需要 6-12 個月訓練<br>
+③ <strong>外出移動 = 輪椅</strong>，這不是失敗，而是務實 — 用輪椅可以走遠、不疲累、保留體力做工作和家庭<br><br>
+您原本的工作能力（管理、業務經驗、人脈）<strong>沒有失去</strong>。我們可以幫您把工作型態調整成不需爬樓梯、不需出差、可以在輪椅上做的方式。」</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>雙重失能（SCI + AKA）能量消耗 &gt; 10× → community walking 不可行</li>
+<li>原 AKA 義肢需重新設計：locked-knee 或 stance-control（不能用 dynamic）</li>
+<li>不適合 microprocessor knee（需 hip 控制）</li>
+<li>對側下肢需 KAFO（鎖膝代償 quadriceps）</li>
+<li>步行訓練階段：tilt table → standing frame → parallel bars → walker</li>
+<li>輪椅是主要 mobility（病人上肢 normal，manual wheelchair 適合）</li>
+<li>感覺缺失 → 殘肢與 KAFO 接觸面易傷 → 每天視診</li>
+<li>義肢時間漸進（初期 15-30 min）</li>
+<li>義肢師 follow-up：初 2 週、穩定 3-6 月</li>
+<li>本病人 + HTN + 高血脂 → 心血管耐受是 walking ceiling</li>
+<li>務實目標：站立移位 + 家中短距走 + 輪椅 community</li>
+</ul>`,
+      },
+      {
+        q: '本病人站立訓練時頻繁 orthostatic hypotension。請說明評估與處置。',
+        keywords: [
+          'OH = SBP drop ≥ 20 or DBP drop ≥ 10 within 3 min',
+          'SCI > T6 highest risk (sympathetic failure)',
+          'Loss of vasoconstriction below injury',
+          'Venous pooling',
+          'Symptoms: dizziness, syncope, blurred vision',
+          'Asymptomatic OH common in SCI',
+          'Tilt table progression',
+          'Compression stockings',
+          'Abdominal binder',
+          'Hydration',
+          'Salt liberalization',
+          'Midodrine (α1 agonist)',
+          'Fludrocortisone (mineralocorticoid)',
+          'Caffeine, ephedrine',
+          'Avoid sudden upright',
+          'Meal timing (postprandial)',
+          'Differential: dehydration, anemia, sepsis, cardiac',
+        ],
+        points: [
+          '<strong>OH 定義</strong>：起立 3 分鐘內 SBP 下降 ≥ 20 mmHg 或 DBP 下降 ≥ 10 mmHg',
+          '<strong>SCI &gt; T6 是高 risk</strong>：sympathetic outflow（T1-L2）被切斷 → 站起時無法 vasoconstriction → 血液 pool 在下肢',
+          '<strong>本病人 T8 + AKA + 1 隻腿（殘肢無法 vasoconstriction 也無法肌肉幫助 venous return）→ 雪上加霜</strong>',
+          '<strong>SCI 病人很多 asymptomatic OH</strong>（感覺差不會頭暈）→ 跌倒 / 暈厥風險高',
+          '<strong>處置光譜</strong>：① 漸進站立（tilt table 30° → 60° → 90°）② Compression stockings + abdominal binder ③ 充分 hydration ④ Salt 增加 ⑤ Midodrine（α1 agonist）⑥ Fludrocortisone',
+          '<strong>Midodrine 5-10 mg tid</strong>是 SCI OH 第一線藥；睡前不用（怕 supine HTN）',
+          '<strong>Postprandial OH</strong>：飯後 30-90 min 加重，避免飯後立即站立',
+          '<strong>鑑別</strong>：dehydration、anemia、sepsis、cardiac dysfunction（本病人有 HTN history）— 排除 reversible causes',
+        ],
+        a: `<h4>1. OH 機轉（為什麼 SCI 高 risk）</h4>
+
+<table>
+<tr><th>正常人</th><th>SCI &gt; T6</th></tr>
+<tr><td>站起 → baroreceptor → 大腦 → sympathetic outflow → vasoconstriction（splanchnic、下肢）→ BP 維持</td><td>Cord 切斷 → sympathetic outflow 失去 → <strong>無法 vasoconstriction</strong> → 血液 pool 下肢 → BP drop</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人特殊</strong>：T8 SCI（剛好在 T6 cutoff 以下，但 sympathetic 仍受影響）+ 左 AKA（殘肢無法收縮幫助 venous return）+ 右腳肌力極差 → 三重失調。
+</p>
+
+<h4>2. OH 診斷標準</h4>
+
+<table>
+<tr><th>項目</th><th>標準</th></tr>
+<tr><td><strong>診斷</strong></td><td>站起 3 min 內：SBP ↓ ≥ 20 或 DBP ↓ ≥ 10</td></tr>
+<tr><td><strong>嚴重 OH</strong></td><td>SBP ↓ ≥ 30 或 SBP &lt; 90</td></tr>
+<tr><td><strong>Symptomatic vs Asymptomatic</strong></td><td>SCI 病人多 asymptomatic — 仍要治療（跌倒、cognitive、心血管事件）</td></tr>
+<tr><td><strong>Postprandial OH</strong></td><td>飯後 30-90 min 加重（gut 血流增加）</td></tr>
+</table>
+
+<h4>3. 評估</h4>
+
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>Lying-to-sitting-to-standing BP</strong></td><td>每階段 1、3、5、10 min 測量</td></tr>
+<tr><td>HR response</td><td>正常代償心跳上升；SCI 多無代償（sympathetic blocked）</td></tr>
+<tr><td>Tilt table test</td><td>受控環境評估</td></tr>
+<tr><td>排除其他原因</td><td>Hb（anemia）、urine output（脫水）、CBC（infection）、EKG（arrhythmia）、藥物（α-blocker、TCA）</td></tr>
+</table>
+
+<h4>4. 非藥物處置（第一線）</h4>
+
+<table>
+<tr><th>方法</th><th>內容</th></tr>
+<tr><td><strong>漸進站立</strong></td><td>Tilt table 30° → 45° → 60° → 90°；每階段穩定 5-10 min 才進階；初期可能需數週</td></tr>
+<tr><td><strong>Compression stockings</strong></td><td>20-30 mmHg、覆蓋至大腿；本病人左側 AKA → 右腳穿即可，殘肢需特殊 compression sleeve</td></tr>
+<tr><td><strong>Abdominal binder</strong></td><td>減少 splanchnic pooling；每天穿著</td></tr>
+<tr><td><strong>充分 hydration</strong></td><td>每天 ≥ 2 L（除非心衰、腎不全）；早晨 quickly 喝 500 ml 是 trick</td></tr>
+<tr><td><strong>Salt 增加</strong></td><td>每天 6-10 g（注意 HTN history — 本病人需 BP 兩極化平衡）</td></tr>
+<tr><td><strong>避免 trigger</strong></td><td>突然站起、長時間站、熱（蒸汽浴）、酒、大餐、postural extremes</td></tr>
+<tr><td><strong>體位技巧</strong></td><td>站起前 leg crossing、tensing、physical maneuvers</td></tr>
+<tr><td><strong>頭抬高睡眠</strong></td><td>床頭抬 10-20°（增加 morning renin、減少夜間 supine HTN）</td></tr>
+</table>
+
+<h4>5. 藥物（非藥物無效時）</h4>
+
+<table>
+<tr><th>藥</th><th>劑量</th><th>注意</th></tr>
+<tr><td><strong>Midodrine（α1 agonist）</strong></td><td>5-10 mg tid（飯前）</td><td>第一線；<strong>睡前 4 hr 內不用</strong>（supine HTN）；piloerection、urinary retention</td></tr>
+<tr><td><strong>Fludrocortisone（mineralocorticoid）</strong></td><td>0.1-0.2 mg qd</td><td>體液滯留 → 加重 HF；低 K、HTN；長期用要監測</td></tr>
+<tr><td>Caffeine</td><td>100-300 mg</td><td>Adjunct</td></tr>
+<tr><td>Pyridostigmine</td><td>30-60 mg tid</td><td>Acetylcholinesterase inhibitor；mild OH</td></tr>
+<tr><td>Droxidopa</td><td>100-600 mg tid</td><td>NE precursor；非台灣常用</td></tr>
+<tr><td>Erythropoietin</td><td>—</td><td>合併 anemia 時</td></tr>
+</table>
+
+<h4>6. 本病人特殊考量</h4>
+
+<table>
+<tr><th>因素</th><th>處理</th></tr>
+<tr><td>HTN history（控制不良）</td><td><strong>OH 治療與 HTN 治療互相對立</strong>；目標：站立 SBP &gt; 90、坐 / 臥 SBP &lt; 140</td></tr>
+<tr><td>Tamsulosin（α1-blocker for BPH）</td><td>加重 OH → 與泌尿科討論替代或停藥</td></tr>
+<tr><td>左 AKA</td><td>無法穿 compression stockings；殘肢用 sleeve；abdominal binder 重要</td></tr>
+<tr><td>右下肢肌力差</td><td>無法做 muscle pump → 更依賴 binder + medication</td></tr>
+<tr><td>Postprandial OH</td><td>飯後不立即站立；少量多餐</td></tr>
+</table>
+
+<h4>7. 本病人具體計畫</h4>
+
+<ol>
+<li>排除 reversible causes：CBC（anemia）、urine output、EKG、用藥檢視（tamsulosin！）</li>
+<li><strong>Tilt table progression</strong>：每天 30° 開始 → 漸增；至少 30-60 min/day 站立</li>
+<li>Abdominal binder + compression sleeve（殘肢）+ 右腳 compression stocking</li>
+<li>Hydration 2-2.5 L/day、salt 6-8 g/day</li>
+<li>停 / 減 tamsulosin（評估 BPH 嚴重度）</li>
+<li>啟動 <strong>midodrine 5 mg tid</strong>（飯前；睡前 4 hr 內不用）</li>
+<li>1-2 週評估；若仍 SBP &lt; 90 → 加 fludrocortisone 0.1 mg qd</li>
+<li>監測 supine HTN（夜間 / 早晨 lying BP）</li>
+</ol>
+
+<h4>口試重點</h4>
+<ul>
+<li>OH 定義：站起 3 min SBP ↓ ≥ 20 或 DBP ↓ ≥ 10</li>
+<li>SCI &gt; T6 高 risk（sympathetic outflow 切斷）</li>
+<li>SCI 病人多 asymptomatic OH — 仍需治療</li>
+<li>處置光譜：tilt table → 物理（binder、stockings、hydration、salt）→ 藥物</li>
+<li>Midodrine 第一線；睡前 4 hr 內不用（supine HTN）</li>
+<li>Fludrocortisone 第二線；注意體液滯留</li>
+<li>Postprandial OH 是常被忽略的 trigger</li>
+<li>本病人 HTN history → 治療兩極化平衡（站立 SBP &gt; 90、坐臥 &lt; 140）</li>
+<li>Tamsulosin（α-blocker）會加重 OH，必檢視</li>
+<li>Compression stockings 適用範圍 + abdominal binder 重要（特別截肢病人）</li>
+</ul>`,
+      },
+      {
+        q: '此病人合併嚴重心血管 risk，請說明 SCI 後的心肺復健（cardiac rehab）。',
+        keywords: [
+          'SCI cardiovascular disease ↑↑',
+          'Leading cause of death in chronic SCI',
+          'Atherogenic dyslipidemia',
+          'Insulin resistance',
+          'Sedentary lifestyle',
+          'Sympathetic dysfunction',
+          'Cardiac rehab phases I-IV',
+          'Exercise prescription FITT',
+          'Arm ergometry',
+          'FES cycle ergometry',
+          'Wheelchair propulsion as exercise',
+          'Aquatic therapy',
+          'Target HR difficult in SCI > T6',
+          'Borg RPE scale',
+          'Aspirin, statin, BP control',
+          'Smoking cessation',
+          'Diet, weight management',
+          'Aortic dissection long-term: BP < 120/80',
+          'Avoid Valsalva',
+        ],
+        points: [
+          '<strong>SCI 病人心血管疾病風險 ↑↑↑</strong>（leading cause of death in chronic SCI）',
+          '<strong>機轉</strong>：① 久坐 → atherogenic ② Sympathetic dysfunction（HR、BP 異常）③ Insulin resistance ④ Body composition（fat ↑ muscle ↓）⑤ 既有 risk factor（HTN、高血脂、抽菸、DM）',
+          '<strong>本病人是極高 risk</strong>：HTN（aortic dissection 主因）、抽菸、應酬、HbA1c 7.5、家族史 MI；TEVAR 後仍要控壓避免再剝離',
+          '<strong>Cardiac rehab 4 phases</strong>：I（住院）、II（門診監督，6-12 週）、III（社區監督）、IV（自主）',
+          '<strong>FITT 處方</strong>：Frequency（3-5x/週）、Intensity（依 Borg / HR）、Time（20-60 min）、Type（依失能）',
+          '<strong>SCI 運動形式</strong>：① <strong>Arm ergometry（手搖車）</strong>② <strong>FES cycle ergometry</strong>（電刺激下肢踩車）③ Wheelchair propulsion ④ Aquatic therapy ⑤ Adapted strengthening',
+          '<strong>Target HR 在 SCI &gt; T6 不適用</strong>（sympathetic blocked、HR 不會升）→ 用 <strong>Borg RPE scale 11-13（somewhat hard）</strong>',
+          '<strong>本病人 + aortic dissection 後</strong>：<strong>BP target &lt; 120/80</strong>；避免 Valsalva（重訓憋氣）；長期 β-blocker；強烈戒菸',
+        ],
+        a: `<h4>1. SCI 病人心血管疾病風險</h4>
+
+<table>
+<tr><th>因素</th><th>機轉</th></tr>
+<tr><td><strong>久坐</strong></td><td>VO₂max ↓、insulin resistance、atherogenic profile</td></tr>
+<tr><td><strong>Sympathetic dysfunction</strong></td><td>HRV ↓、BP 不穩、cardiac autonomic neuropathy-like</td></tr>
+<tr><td><strong>Body composition</strong></td><td>Lean mass ↓、fat mass ↑（特別 visceral）→ metabolic syndrome</td></tr>
+<tr><td><strong>Lipid profile</strong></td><td>HDL ↓、TG ↑（atherogenic）</td></tr>
+<tr><td><strong>Insulin resistance</strong></td><td>SCI 病人 type 2 DM 風險 2-4x</td></tr>
+<tr><td><strong>傳統 risk factor</strong></td><td>HTN、抽菸、家族史 — 本病人皆有</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Chronic SCI 死亡原因第一名：心血管疾病</strong>（不是 SCI 本身的併發症）。<br>
+本病人 + aortic dissection + 既有 risk factor → <strong>cardiac rehab 是 long-term survival 關鍵</strong>。
+</p>
+
+<h4>2. Cardiac Rehab 4 個階段</h4>
+
+<table>
+<tr><th>階段</th><th>時期</th><th>內容</th></tr>
+<tr><td><strong>Phase I</strong></td><td>住院（acute）</td><td>早期動員、坐起、tilt table、衛教</td></tr>
+<tr><td><strong>Phase II</strong></td><td>門診監督（6-12 週）</td><td>EKG monitor 下運動、漸進負荷、衛教、心理</td></tr>
+<tr><td><strong>Phase III</strong></td><td>社區監督</td><td>較少 monitoring、團體運動、生活型態鞏固</td></tr>
+<tr><td><strong>Phase IV</strong></td><td>自主維持</td><td>Lifelong adherence；定期 medical follow-up</td></tr>
+</table>
+
+<h4>3. FITT 運動處方</h4>
+
+<table>
+<tr><th>項目</th><th>建議</th></tr>
+<tr><td><strong>Frequency</strong></td><td>3-5 次/週</td></tr>
+<tr><td><strong>Intensity</strong></td><td>Borg RPE 11-13（somewhat hard）；SCI &gt; T6 不用 HR target</td></tr>
+<tr><td><strong>Time</strong></td><td>每次 20-60 min（漸進）</td></tr>
+<tr><td><strong>Type</strong></td><td>依失能 — 見下表</td></tr>
+</table>
+
+<h4>4. SCI 病人運動形式</h4>
+
+<table>
+<tr><th>運動</th><th>說明</th><th>適合本病人</th></tr>
+<tr><td><strong>Arm ergometry（手搖車）</strong></td><td>最常用 SCI 心肺訓練</td><td>✅</td></tr>
+<tr><td><strong>FES cycle ergometry</strong></td><td>電刺激下肢踩車；增加肌量、心肺、骨密度</td><td>✅（強烈推薦 — 也促進右腿肌力）</td></tr>
+<tr><td><strong>Wheelchair propulsion</strong></td><td>日常本身即運動</td><td>✅</td></tr>
+<tr><td><strong>Aquatic therapy</strong></td><td>水阻力 + 浮力；OH 較少</td><td>✅（注意 Foley）</td></tr>
+<tr><td><strong>Adapted resistance training</strong></td><td>上肢、core；避免 Valsalva</td><td>✅</td></tr>
+<tr><td><strong>Standing program</strong></td><td>本身對心肺幫助有限，但同時做</td><td>✅</td></tr>
+<tr><td>Rowing ergometer</td><td>需 trunk control</td><td>不適合（T8 trunk 部分不穩）</td></tr>
+</table>
+
+<h4>5. SCI Exercise 特殊考量</h4>
+
+<table>
+<tr><th>議題</th><th>處置</th></tr>
+<tr><td><strong>Target HR 不適用</strong>（&gt; T6 sympathetic blocked → HR 不升）</td><td>用 <strong>Borg RPE</strong>；或 perceived exertion + symptom monitoring</td></tr>
+<tr><td><strong>OH 風險</strong></td><td>運動前 hydration、binder、漸進站立</td></tr>
+<tr><td><strong>AD 風險</strong>（不是本病人 — T8 不嚴重，但仍要警覺）</td><td>運動中 BP 監測；若 SBP 飆 → 立即停</td></tr>
+<tr><td><strong>體溫調節差</strong>（autonomic dysfunction）</td><td>運動環境溫度適中、頻繁喝水</td></tr>
+<tr><td><strong>Skin breakdown</strong></td><td>運動座墊壓力檢查</td></tr>
+<tr><td><strong>Shoulder overuse</strong></td><td>輪椅 + 上肢運動 → 長期肩 impingement；OT 評估技巧</td></tr>
+<tr><td><strong>Aortic dissection 病史</strong></td><td><strong>避免 Valsalva（憋氣重訓）、避免極度 isometric、BP 控制</strong></td></tr>
+</table>
+
+<h4>6. 二級預防（藥物 + 生活型態）</h4>
+
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>BP 控制</strong></td><td><strong>Target &lt; 120/80</strong>（aortic dissection 後 lifelong tight control）；β-blocker 第一線（labetalol、metoprolol）+ ARB / ACEI</td></tr>
+<tr><td><strong>Statin</strong></td><td>High-intensity statin（atorvastatin 40-80 mg）— 本病人 ASCVD risk 極高</td></tr>
+<tr><td><strong>Aspirin</strong></td><td>81 mg qd（次發 prevention）</td></tr>
+<tr><td><strong>DM 控制</strong></td><td>HbA1c &lt; 7%；可考慮 GLP-1 / SGLT-2（cardio-renal protection）</td></tr>
+<tr><td><strong>戒菸</strong></td><td>強烈動機；Varenicline / NRT</td></tr>
+<tr><td><strong>飲食</strong></td><td>地中海或 DASH；低鈉（OH 例外）；體重控制</td></tr>
+<tr><td><strong>飲酒</strong></td><td>停止應酬飲酒</td></tr>
+</table>
+
+<h4>7. Aortic Dissection 後 Long-term Follow-up</h4>
+
+<ul>
+<li><strong>BP &lt; 120/80</strong> 是 lifelong 目標</li>
+<li>β-blocker 第一線（減少 dP/dt）</li>
+<li>ARB（candesartan、losartan）有 evidence 減少 aortic growth</li>
+<li>每 6 個月 → 1 年 CT angiography（aorta）</li>
+<li>避免 high-intensity isometric exercise、Valsalva</li>
+<li>穩定後可中度有氧、阻力訓練（low-moderate intensity）</li>
+</ul>
+
+<h4>8. 本病人具體計畫</h4>
+
+<ol>
+<li>BP target &lt; 120/80（與 OH 站立 SBP &gt; 90 平衡）— 用 β-blocker（labetalol、metoprolol）+ ARB</li>
+<li>Statin（atorvastatin 40 mg）+ aspirin 81 mg</li>
+<li>戒菸啟動：varenicline + 心理諮商</li>
+<li>Cardiac rehab：phase II 6-12 週門診監督</li>
+<li>運動處方：arm ergometry 30 min × 3-5 次/週、Borg 11-13</li>
+<li>+ FES cycle ergometry 2 次/週（同時促進右腿肌力）</li>
+<li>避免 Valsalva、isometric extreme（aortic dissection 史）</li>
+<li>體重控制（飲食 + 運動）；BMI target &lt; 25</li>
+<li>每 6 個月 CT angiography aortic follow-up</li>
+<li>每年完整心血管 panel：lipid、HbA1c、EKG、echo、stress test（依需要）</li>
+</ol>
+
+<h4>口試重點</h4>
+<ul>
+<li>Chronic SCI 死亡 #1 cause = 心血管疾病</li>
+<li>SCI 病人 metabolic syndrome 風險 ↑↑（久坐 + autonomic + body composition）</li>
+<li>Cardiac rehab 4 phases — phase II 是核心</li>
+<li>FITT 處方；SCI &gt; T6 用 Borg RPE 取代 HR target</li>
+<li>SCI 運動：arm ergometry、FES cycle、wheelchair、aquatic、resistance</li>
+<li>Aortic dissection 後 BP &lt; 120/80 lifelong；β-blocker 第一線</li>
+<li>避免 Valsalva、extreme isometric（dissection 史）</li>
+<li>本病人 ASCVD 高 risk → high-intensity statin + aspirin + 戒菸</li>
+<li>FES cycle 一石二鳥：心肺 + 肌量 + BMD</li>
+<li>OH 與 BP 控制需平衡（站立 SBP &gt; 90、坐臥 &lt; 120/80）</li>
+</ul>`,
+      },
+      {
+        q: '若此病人 1 年後出現上肢進行性無力與感覺異常，需考慮什麼？如何評估？',
+        keywords: [
+          'Post-traumatic syringomyelia',
+          'Onset months to years post-SCI',
+          'Ascending neurologic deterioration',
+          'New pain, weakness, sensory loss above injury level',
+          'Loss of pain/temp with preserved touch (cape distribution)',
+          'Progressive scoliosis',
+          'Sweating changes',
+          'MRI: cystic cavity within cord',
+          'T1 hypo, T2 hyper',
+          'Communicating vs non-communicating',
+          'Tethered cord',
+          'Surgical: shunt (syringo-subarachnoid, -peritoneal)',
+          'Untethering',
+          'Conservative if asymptomatic',
+          'Avoid Valsalva',
+          'Differential: tumor, syrinx vs cyst',
+        ],
+        points: [
+          '<strong>Post-traumatic syringomyelia</strong>：SCI 後 cord 內出現 cystic cavity（多在受傷 level 上方延伸）',
+          '<strong>盛行率</strong>：SCI 病人 5-25%（symptomatic）；MRI 看到（不一定有症狀）更多',
+          '<strong>發生時間</strong>：可從受傷後幾個月到數十年（中位 5-10 年）',
+          '<strong>臨床症狀</strong>：① <strong>Ascending sensory level（感覺平面上升）</strong>② <strong>新的上肢無力</strong>③ <strong>新的疼痛 / dysesthesia</strong>④ <strong>Cape-distribution sensory loss（pain/temp 失、touch preserved — dissociated）</strong>⑤ Progressive scoliosis ⑥ Sweating 變化 ⑦ Worsening spasticity / AD',
+          '<strong>本病人</strong> 1 年後若出現上肢無力 + 感覺異常 → <strong>第一個鑑別是 syringomyelia</strong>',
+          '<strong>診斷</strong>：MRI（T1 hypo、T2 hyper cyst within cord）；whole spine MRI 確認延伸範圍',
+          '<strong>處置</strong>：① Asymptomatic 多 conservative observe ② Symptomatic / progressive → <strong>shunt（syringo-subarachnoid / -peritoneal / -pleural）或 untethering</strong>',
+          '<strong>避免 Valsalva、cough straining、持續高 intra-abdominal pressure</strong>（會增加 syrinx 壓力）',
+        ],
+        a: `<h4>1. Post-traumatic Syringomyelia 概論</h4>
+
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>定義</strong></td><td>SCI 後 cord 內形成 fluid-filled cystic cavity</td></tr>
+<tr><td><strong>盛行率</strong></td><td>Symptomatic：5-25%；MRI 看到（不一定有症狀）更高</td></tr>
+<tr><td><strong>發生時間</strong></td><td>幾個月 - 數十年；中位 5-10 年</td></tr>
+<tr><td><strong>位置</strong></td><td>多從受傷 level 向 <strong>上</strong>延伸（少數向下）</td></tr>
+<tr><td><strong>機轉</strong></td><td>不確定；可能 CSF flow obstruction、tethered cord、micro-cyst 融合</td></tr>
+</table>
+
+<h4>2. 臨床症狀（Ascending Neurologic Deterioration）</h4>
+
+<table>
+<tr><th>症狀</th><th>頻率</th></tr>
+<tr><td><strong>新的疼痛</strong>（受傷 level 以上）</td><td>50-90%（最常見初發症狀）</td></tr>
+<tr><td><strong>新的無力</strong>（受傷 level 以上）</td><td>常</td></tr>
+<tr><td><strong>感覺異常</strong>：cape-distribution（披肩狀）</td><td>常 — pain/temp 失、touch preserved（典型 dissociated sensory loss）</td></tr>
+<tr><td><strong>感覺平面上升</strong></td><td>客觀指標</td></tr>
+<tr><td><strong>Worsening spasticity / AD</strong></td><td>可能</td></tr>
+<tr><td><strong>Sweating 變化</strong></td><td>不對稱出汗</td></tr>
+<tr><td><strong>Progressive scoliosis</strong>（兒童 / 青少年）</td><td>—</td></tr>
+<tr><td>Bowel / bladder 變化</td><td>較少</td></tr>
+</table>
+
+<h4>3. Cape-Distribution Sensory Loss</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+Syrinx 在 cord 中央 → 影響 <strong>spinothalamic fibers crossing</strong>（在 anterior commissure 過 midline）→ 雙側對稱 pain/temp 缺失於受影響 level。<br><br>
+<strong>"Cape distribution"</strong>：肩、上背、上肢呈披肩狀感覺解離 — pain/temp 失，touch（dorsal column）保留。<br><br>
+這跟 ACS 的感覺解離方向相反：ACS 是 below level pain/temp 失；syrinx 是 segmental cape pattern。
+</p>
+
+<h4>4. 本病人警覺指標</h4>
+
+<table>
+<tr><th>線索</th><th>意義</th></tr>
+<tr><td>1 年後出現上肢進行性無力</td><td>受傷 level（T8）以上的新症狀 = ascending → 高度懷疑 syrinx</td></tr>
+<tr><td>新的上肢感覺異常</td><td>同上</td></tr>
+<tr><td>新的神經痛 quality 變化</td><td>提示 syrinx 進展</td></tr>
+<tr><td>原本穩定的痙攣突然惡化</td><td>提示</td></tr>
+</table>
+
+<h4>5. 診斷</h4>
+
+<table>
+<tr><th>檢查</th><th>所見</th></tr>
+<tr><td><strong>Whole spine MRI</strong></td><td>第一線：cord 內 T1 hypo、T2 hyper cystic cavity；判斷延伸範圍</td></tr>
+<tr><td><strong>Sagittal + axial</strong></td><td>Sagittal 看延伸；axial 看 transverse 範圍</td></tr>
+<tr><td>Contrast</td><td>排除 tumor / inflammatory（syrinx 不 enhance）</td></tr>
+<tr><td>CSF flow MRI</td><td>評估 communicating vs non-communicating</td></tr>
+<tr><td>EMG / NCS</td><td>客觀化 motor 變化、評估恢復</td></tr>
+<tr><td>連續 ASIA</td><td>追蹤 neurologic level 變化</td></tr>
+</table>
+
+<h4>6. 鑑別診斷</h4>
+
+<table>
+<tr><th>鑑別</th><th>線索</th></tr>
+<tr><td>Spinal cord tumor（intramedullary）</td><td>Enhancing on contrast；progressive；可能合併 syrinx</td></tr>
+<tr><td>Tethered cord</td><td>Cord 末端固定；多在 conus level</td></tr>
+<tr><td>Arachnoid cyst</td><td>Extramedullary</td></tr>
+<tr><td>Recurrent SCI（new lesion）</td><td>新的 trauma history</td></tr>
+<tr><td>MS（新發）</td><td>多 plaques、enhancement、年輕</td></tr>
+</table>
+
+<h4>7. 處置</h4>
+
+<table>
+<tr><th>策略</th><th>適用</th></tr>
+<tr><td><strong>Conservative observe</strong></td><td>Asymptomatic 或 minimal symptoms；6-12 個月 MRI follow-up</td></tr>
+<tr><td><strong>Avoid Valsalva</strong></td><td>所有病人衛教（cough、straining、heavy lifting → 增加 syrinx 壓力）</td></tr>
+<tr><td><strong>Surgical drainage（shunt）</strong></td><td>① Syringo-subarachnoid ② Syringo-peritoneal ③ Syringo-pleural — symptomatic / progressive</td></tr>
+<tr><td><strong>Untethering</strong></td><td>合併 tethered cord</td></tr>
+<tr><td><strong>Expansion duraplasty</strong></td><td>合併 arachnoid scar</td></tr>
+<tr><td>Tumor resection</td><td>合併 tumor</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>手術預後</strong>：50-70% 症狀改善 / 穩定；30-50% recurrence over years；單純 shunt 失敗率高（5 年 50%）→ 多需 untethering ± duraplasty 組合。
+</p>
+
+<h4>8. 跟病人衛教</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「未來如果您發現<strong>原本好的部位（如手臂）變得無力、麻木或新的疼痛</strong>，請務必告訴我們 — 這可能是脊髓裡長了一個叫做 <strong>syringomyelia</strong> 的水囊腫，是 SCI 病人 5-25% 會發生的情況。<br><br>
+<strong>預防：</strong>① 不要憋氣用力（搬重、用力解便）② 控制咳嗽 ③ 規律 follow-up。<br><br>
+若真的發生，我們有<strong>手術引流的選項</strong>，多半可以穩定症狀；早期發現預後較好。」</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>109 真題、考法地圖：syringomyelia（影像、症狀、治療）</li>
+<li>盛行率 SCI 病人 5-25% symptomatic</li>
+<li>發生時間幾個月到數十年（中位 5-10 年）</li>
+<li>核心症狀：ascending neurologic deterioration（受傷 level 以上的新症狀）</li>
+<li>典型：cape-distribution sensory loss（pain/temp 失、touch preserved）</li>
+<li>診斷：whole spine MRI（T1 hypo、T2 hyper cyst）</li>
+<li>處置：asymptomatic observe、symptomatic 手術 shunt / untethering</li>
+<li>避免 Valsalva 是衛教重點（咳嗽、用力、重訓）</li>
+<li>SCI 病人每年完整 ASIA + 警覺新症狀是 routine</li>
+<li>本病人有 cord ischemia 背景 → 也是 syrinx 的 risk factor</li>
+</ul>`,
+      },
+      {
+        q: '請說明此病人的職業重建與心理支持。',
+        keywords: [
+          'Vocational rehabilitation',
+          'Pre-injury job analysis',
+          'Job modification vs job change',
+          'Workplace accommodation',
+          'Disability certification + 勞保失能',
+          'RTW (return to work) planning',
+          'Graded return',
+          'SCI depression 30-50%',
+          'PTSD after sudden injury',
+          'Adjustment disorder',
+          'Pre-existing AKA acceptance vs new disability grief',
+          'Identity reconstruction',
+          'Peer support',
+          'Family system stress',
+          'CBT, mindfulness, antidepressant',
+          'Counseling resources',
+          'Functional capacity evaluation (FCE)',
+          'Computer-based work, remote work',
+        ],
+        points: [
+          '<strong>職業重建是復健成功的關鍵指標</strong>之一 — 重返職場 = 重建 identity + 經濟獨立',
+          '<strong>本病人原是業務經理（高薪、複雜社交）</strong>：原工作需爬樓梯、出差、客戶交際 — 多無法回到原型',
+          '<strong>RTW 三條路徑</strong>：① <strong>Same job, modified</strong>（最理想）② <strong>Same employer, different role</strong>（轉內勤、辦公室、培訓部門）③ <strong>Different career</strong>（顧問、SOHO、教學）',
+          '<strong>本病人優勢</strong>：認知 normal、上肢 normal、業務專業知識 + 人脈 → 適合「轉顧問 / 內勤 / 培訓」型工作',
+          '<strong>SCI depression 30-50%</strong>，本病人加 PTSD（突發 dissection、瀕死經驗）+ 第二次失能（既有 AKA → 已適應，現在第二次重大失能）',
+          '<strong>本病人特殊心理議題</strong>：「我已經接受失去左腿、活了 10 年；現在又一次 — 為什麼是我？」 → 復發性 grief、「punishment narrative」',
+          '<strong>支持資源</strong>：① 心理師 / 精神科 ② Peer support（脊髓損傷協會、截肢者協會 — 雙重身份）③ 家庭治療 ④ 職業重建中心',
+          '<strong>勞動部職業重建中心、勞保失能給付、身障鑑定、就業服務</strong>是主要制度資源',
+        ],
+        a: `<h4>1. RTW（Return to Work）三條路徑</h4>
+
+<table>
+<tr><th>路徑</th><th>內容</th><th>本病人</th></tr>
+<tr><td><strong>① Same job, modified</strong></td><td>原職務調整工作環境（無障礙辦公室、彈性時間、減少出差）</td><td>困難（業務需出差、爬樓梯）</td></tr>
+<tr><td><strong>② Same employer, different role</strong></td><td>同公司轉內勤（培訓、客戶服務、產品經理、顧問）</td><td>✅ 最務實</td></tr>
+<tr><td><strong>③ Different career</strong></td><td>自主開業（顧問、SOHO）、教學、寫作、線上業務</td><td>✅ 候選方案</td></tr>
+<tr><td>退休 / 部分時段</td><td>若無法 RTW</td><td>勞保失能給付</td></tr>
+</table>
+
+<h4>2. RTW 評估流程</h4>
+
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>1. 個人評估</td><td>認知、體能、emotional readiness、動機</td></tr>
+<tr><td>2. <strong>Functional Capacity Evaluation (FCE)</strong></td><td>OT 客觀評估能 / 不能做的事（坐多久、抓握、視野、注意力）</td></tr>
+<tr><td>3. 工作分析</td><td>原工作的 essential tasks、physical / cognitive demands</td></tr>
+<tr><td>4. Match 評估</td><td>能力 vs 工作需求 → 找 gap</td></tr>
+<tr><td>5. 工作場所改造</td><td>無障礙、設備、軟體輔助</td></tr>
+<tr><td>6. Graded RTW</td><td>從 part-time / remote 開始 → 逐步增加</td></tr>
+<tr><td>7. Follow-up</td><td>3、6、12 個月評估 sustainability</td></tr>
+</table>
+
+<h4>3. 工作場所無障礙改造</h4>
+
+<table>
+<tr><th>面向</th><th>內容</th></tr>
+<tr><td><strong>進出</strong></td><td>無障礙廁所、停車位、電梯、入口斜坡</td></tr>
+<tr><td><strong>辦公桌</strong></td><td>輪椅高度、可升降桌</td></tr>
+<tr><td><strong>科技</strong></td><td>大螢幕、語音輸入、視訊會議（取代出差）</td></tr>
+<tr><td><strong>時間彈性</strong></td><td>避免長時間連續坐（壓瘡、OH）；可遠距</td></tr>
+<tr><td><strong>休息</strong></td><td>每小時 push-up、定時 CIC、餐後不立即站立</td></tr>
+</table>
+
+<h4>4. SCI 心理併發症</h4>
+
+<table>
+<tr><th>診斷</th><th>盛行率</th><th>篩檢工具</th></tr>
+<tr><td><strong>Depression</strong></td><td>30-50%（vs 一般人 7%）</td><td>PHQ-9</td></tr>
+<tr><td><strong>Anxiety</strong></td><td>20-40%</td><td>GAD-7</td></tr>
+<tr><td><strong>PTSD</strong></td><td>急性 trauma 後 10-30%</td><td>PCL-5</td></tr>
+<tr><td><strong>Adjustment disorder</strong></td><td>急性期常見</td><td>—</td></tr>
+<tr><td><strong>Suicide risk</strong></td><td>SCI 病人 ↑ 5x</td><td>C-SSRS</td></tr>
+<tr><td><strong>Substance use</strong></td><td>常合併（自我治療）</td><td>AUDIT、DAST</td></tr>
+</table>
+
+<h4>5. 本病人特殊心理議題</h4>
+
+<table>
+<tr><th>議題</th><th>說明</th></tr>
+<tr><td><strong>第二次重大失能</strong></td><td>10 年前 AKA 已重新建立 identity；現在第二次 disruption → 復發性 grief；可能 "why me again" narrative</td></tr>
+<tr><td><strong>瀕死經驗（aortic dissection）</strong></td><td>PTSD risk；夜驚、迴避、過度警覺</td></tr>
+<tr><td><strong>角色喪失</strong></td><td>從「家庭主要經濟支柱、業務經理」→ 突然依賴 → identity 衝擊</td></tr>
+<tr><td><strong>對未來不確定</strong></td><td>能不能再走？工作？經濟？兒子畢業？</td></tr>
+<tr><td><strong>對太太內疚</strong></td><td>「她要照顧我」</td></tr>
+<tr><td><strong>性與親密</strong></td><td>未必主動提，但需主動詢問</td></tr>
+</table>
+
+<h4>6. 心理介入</h4>
+
+<table>
+<tr><th>方式</th><th>適用</th></tr>
+<tr><td><strong>Psychoeducation</strong></td><td>SCI 之路、預期、可達目標</td></tr>
+<tr><td><strong>Cognitive Behavioral Therapy (CBT)</strong></td><td>認知扭曲（catastrophizing、helplessness）</td></tr>
+<tr><td><strong>Acceptance & Commitment Therapy (ACT)</strong></td><td>「接受不能改變的、行動可改變的」</td></tr>
+<tr><td><strong>Mindfulness</strong></td><td>慢性疼痛、焦慮</td></tr>
+<tr><td><strong>EMDR</strong></td><td>PTSD（dissection 場景）</td></tr>
+<tr><td><strong>Antidepressant</strong></td><td>SSRI（sertraline、escitalopram）；SNRI（duloxetine — 兼治神經痛）</td></tr>
+<tr><td><strong>Peer support</strong></td><td><strong>最強 evidence</strong> — 過來人經驗</td></tr>
+<tr><td><strong>Family therapy</strong></td><td>系統介入、太太也是病患（caregiver burden）</td></tr>
+</table>
+
+<h4>7. 台灣制度資源</h4>
+
+<table>
+<tr><th>資源</th><th>內容</th></tr>
+<tr><td><strong>勞保失能給付</strong></td><td>SCI + AKA 為「終身無工作能力」可領一次金或年金</td></tr>
+<tr><td><strong>勞動部職業重建中心</strong></td><td>各縣市有；OT-led 評估 + 就業媒合 + 工作場所改造補助</td></tr>
+<tr><td><strong>身障鑑定 + 重大傷病卡</strong></td><td>多項補助、健保部分負擔減免</td></tr>
+<tr><td><strong>長照 2.0</strong></td><td>居家照護、輔具、無障礙改造</td></tr>
+<tr><td><strong>商業保險</strong></td><td>失能扶助、重大傷病、意外險（dissection 是否屬意外有爭議）</td></tr>
+<tr><td><strong>脊髓損傷協會</strong></td><td>Peer support、職訓、生活重建</td></tr>
+<tr><td><strong>截肢者協會</strong></td><td>本病人雙重身份、雙協會資源</td></tr>
+</table>
+
+<h4>8. 跟病人對話（核心 — 希望 + 現實）</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您 10 年前重建了自己的人生 — 從截肢、學會用義肢、回到業務經理的位置。<strong>您已經證明過自己可以走過很大的失去再站起來</strong>。現在發生這件事，我可以理解您會問『為什麼又是我』 — 這是合理的情緒。<br><br>
+<strong>關於工作</strong>：以前那種需要爬樓梯、出差、應酬的業務型態確實不容易回去。但您的<strong>能力沒有失去</strong>：產業知識、客戶關係、判斷力、語言、人脈 — 這些都還在。我們可以一起想：<br>
+　• 同公司轉內勤（培訓、產品、顧問）— 這是最務實的<br>
+　• 自己當顧問、SOHO — 您的專業有市場<br>
+　• 教學、寫作、線上業務 — 第二曲線<br><br>
+<strong>關於心理</strong>：我會建議您看一下心理師 — 不是因為您『有問題』，而是因為您正面對的事很重，<strong>有專業同行會走得比較穩</strong>。也建議您加入脊髓損傷協會跟截肢者協會 — 那裡有過來人的智慧。<br><br>
+<strong>關於太太</strong>：她這段時間也是病人。我們會幫她安排照顧者支持資源，讓你們兩個人都被照顧到。<br><br>
+您兒子 25 歲，您還有很多時間陪他、看他成家。<strong>不是回到原本的生活，而是建立第三個版本的人生</strong>。」</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>RTW 三路徑：same job modified / same employer different role / different career</li>
+<li>本病人 Path 2 + 3 是務實選擇（業務 → 顧問 / 內勤）</li>
+<li>FCE 是 OT 客觀評估工具</li>
+<li>SCI depression 30-50%、suicide ↑ 5x → 必篩檢</li>
+<li>本病人雙重失能（10 年前 AKA + 現 SCI）→ 復發性 grief</li>
+<li>瀕死經驗 → PTSD risk</li>
+<li>心理介入：CBT、ACT、mindfulness、EMDR、藥物、peer support</li>
+<li>Peer support 是 SCI 心理復健最強 evidence</li>
+<li>制度資源：勞保失能、職業重建中心、身障鑑定、長照 2.0、商業保險</li>
+<li>家屬（太太）也是病人 — caregiver burden 同步處理</li>
+<li>「不是回到原本，而是建立第三版人生」是核心對話</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
