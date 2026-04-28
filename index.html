@@ -30201,6 +30201,877 @@ Compliance = 150/5 = <strong>30 mL/cmH₂O</strong>（正常邊界）<br><br>
       },
     ],
   },
+  {
+    id: 'sci_003',
+    domain: 'sci',
+    title: 'Metastatic SCI — T10 paraplegia AIS A（65M 退休教師、肺腺癌轉移、餘命 < 6 個月）',
+    context: `65 歲男性，退休國中歷史教師，已婚、育有 2 名成年子女。長期吸菸 40 pack-year（10 年前戒菸）、HTN 控制中、無糖尿病。
+
+【就診經過】
+- 1 個月前家中脫衣服時聽到背部「喀」一聲，劇痛、無法久站，<strong>急診</strong>
+- PE：背部 knocking tenderness 明顯（T10 棘突），雙下肢肌力 5/5、感覺正常
+- 急診 T-L X-ray：T10 vertebral body 高度減少、<strong>右側 pedicle 看不到（winking owl sign）</strong>
+- 急診醫師判斷為「osteoporotic compression fracture」、給予止痛 + 背架後返家
+- <strong>1 週後</strong>再次急診：雙下肢無力（肌力 0）、大小便失禁、感覺缺失到 T10 以下
+- T-spine MRI：T10 vertebral body 異常 signal、<strong>右側 pedicle 整個被破壞、extradural mass 壓迫 cord</strong>、cord T2 hyperintensity；Lung CT：<strong>右上葉 4 cm mass、多處骨轉移（T10、L2、左 6th rib）</strong>
+- <strong>緊急 OP</strong>：T9-T11 posterior decompression + fixation；術後病理：<strong>metastatic adenocarcinoma, lung primary（TTF-1+, EGFR L858R 突變）</strong>
+- 腫瘤科會診：cT4N2M1c stage IVB，已轉移至骨、肝、腎上腺；開始 osimertinib 標靶 + zoledronic acid
+
+【目前狀況（OP 後 3 週）】
+- 上肢：肌力 5（normal）
+- 下肢：T10 以下完全 paraplegia（AIS A）、感覺至 T10 absent
+- DAP absent、VAC absent
+- Foley 留置中、bowel program 每天
+- 反覆低燒 + 濁尿（最近 2 週內 2 次）
+- ECOG 2（多數時間能自我照顧但需協助移位）
+- KPS 60
+- <strong>腫瘤科評估：預期餘命 4-6 個月</strong>（多重轉移、symptomatic）
+
+【病人與家屬】
+- 太太 62 歲、退休護理師、健康
+- 兒子 35 歲（住外縣市）、女兒 32 歲（住附近）
+- 病人意識清楚、知道自己癌末，<strong>已簽署 DNR</strong>
+- 病人問：「我也許剩半年不到，能不能多陪家人、減少痛苦？復健還有意義嗎？」
+- 太太問：「他這個情況還要不要做尿管訓練？換來換去他會不會更痛苦？」`,
+    questions: [
+      {
+        q: '此病人初次急診時，你會安排哪些檢查？',
+        keywords: [
+          'PE: knocking tenderness on spinous process',
+          'Sensory level',
+          'Motor level',
+          'Bowel/bladder function',
+          'Saddle sensation',
+          'Anal tone, DAP',
+          'Red flags: age > 50, cancer hx, weight loss, night pain',
+          'CBC, CRP, ESR',
+          'Calcium, ALP',
+          'Tumor markers',
+          'X-ray T-L spine AP + lateral',
+          'Pedicle integrity (winking owl sign)',
+          'MRI level decision (T or L)',
+          'MRI based on sensory level',
+          'Whole spine if metastatic suspected',
+          'Bone scan',
+          'CT chest/abdomen for primary',
+        ],
+        points: [
+          '<strong>PE 紅旗</strong>：年齡 &gt; 50、體重減輕、夜間痛、癌症病史、神經學變化、knocking tenderness（敲擊脊突劇痛）',
+          '<strong>113、2024 真題</strong>：PE 一定要提到「knocking tenderness」',
+          '<strong>背痛 + neuro 變化的鑑別</strong>：① 壓迫性骨折（osteoporotic）② 病理性骨折（mets、myeloma、primary tumor）③ 感染（osteomyelitis、TB）④ HIVD ⑤ Trauma',
+          '<strong>本病人線索</strong>：65 歲、長期吸菸、無外傷、winking owl sign → <strong>強烈懷疑 mets</strong>',
+          '<strong>影像策略（113 真題）</strong>：T-L spine X-ray AP + lateral → 找<strong>pedicle 完整性、vertebral body 高度、椎間隙</strong>',
+          '<strong>113 真題：MRI 部位選擇</strong> → <strong>依 sensory level 決定要 T 還是 L spine MRI</strong>（病人 T10 sensory level → T-spine）',
+          '<strong>懷疑 mets → whole spine MRI</strong>（多處轉移可能）',
+          '<strong>系統性 work-up</strong>：CBC、CRP/ESR、Ca²⁺、ALP、tumor markers、CT chest/abdomen 找 primary、bone scan',
+        ],
+        a: `<h4>1. PE 重點（紅旗檢查）</h4>
+
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>Knocking tenderness</strong></td><td>敲擊脊突劇痛 → 骨折 / 感染 / 腫瘤（113、2024 真題必提）</td></tr>
+<tr><td>Neuro exam</td><td>Sensory level、motor level、anal tone、DAP、saddle sensation</td></tr>
+<tr><td>步態</td><td>Antalgic、weakness</td></tr>
+<tr><td>SLR / FABER</td><td>排除 radiculopathy、SI joint</td></tr>
+<tr><td>系統性</td><td>體重、淋巴結、乳房 / 攝護腺、肺部聽診</td></tr>
+</table>
+
+<h4>2. 背痛紅旗（age &gt; 50 必想 mets）</h4>
+
+<ul>
+<li>年齡 &gt; 50（或 &lt; 18）</li>
+<li>癌症病史</li>
+<li>體重減輕、發燒、盜汗</li>
+<li>夜間痛、休息不緩解</li>
+<li>鞍區麻、大小便失禁、雙下肢無力 → cauda equina / cord compression</li>
+<li>外傷史、長期類固醇、IV drug use</li>
+<li>Knocking tenderness 陽性</li>
+</ul>
+
+<h4>3. Lab</h4>
+
+<table>
+<tr><th>檢查</th><th>意義</th></tr>
+<tr><td>CBC</td><td>貧血（mets、慢性病）</td></tr>
+<tr><td>CRP / ESR</td><td>感染 vs 腫瘤</td></tr>
+<tr><td>Ca²⁺</td><td>Hypercalcemia of malignancy</td></tr>
+<tr><td>ALP</td><td>骨轉移、Paget、骨折癒合</td></tr>
+<tr><td>Tumor markers</td><td>PSA、CEA、CA19-9、AFP（依懷疑）</td></tr>
+<tr><td>SPEP / UPEP</td><td>Multiple myeloma</td></tr>
+</table>
+
+<h4>4. 影像策略（113 真題核心）</h4>
+
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>① X-ray T-L spine AP + lateral</td><td>看 vertebral body 高度、pedicle、disc space、alignment</td></tr>
+<tr><td>② <strong>MRI 部位選擇</strong></td><td><strong>依 sensory level 決定</strong>：sensory level 在 T10 → T-spine MRI；L1-L3 → T-L spine；S → L-S spine</td></tr>
+<tr><td>③ 懷疑 mets → <strong>Whole spine MRI</strong></td><td>找多處病灶</td></tr>
+<tr><td>④ Bone scan</td><td>全身骨轉移篩檢</td></tr>
+<tr><td>⑤ CT chest/abdomen/pelvis</td><td>找 primary（lung、breast、prostate、kidney、thyroid 為骨轉移五大來源）</td></tr>
+<tr><td>⑥ PET-CT</td><td>進一步 staging</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>113 真題重現</strong>：「梁主任會一直追問是要 T 還是 L spine MRI、依據什麼？」<br>
+正解：<strong>依 sensory level 決定影像範圍</strong>。本病人 sensory level = T10 → T-spine（含 T8-L2 涵蓋）；若不確定 → whole spine。
+</p>
+
+<h4>5. 本病人初次就診的關鍵錯誤</h4>
+
+<p>第一次急診被診斷為「osteoporotic compression fracture」放回家是<strong>常見的誤診</strong>：</p>
+<ul>
+<li>未注意 winking owl sign（pedicle 消失 = 病理性骨折特徵）</li>
+<li>未做 MRI 排除腫瘤</li>
+<li>未做 lab（Ca²⁺、ALP、tumor markers）</li>
+<li>未追問體重、夜間痛、癌症 risk</li>
+</ul>
+
+<p><strong>結果</strong>：1 週後神經學惡化、cord compression → cauda equina syndrome。<strong>背痛 + 紅旗 + age &gt; 50 → 必須 MRI</strong>。</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>113、2024 真題：PE 必提 knocking tenderness</li>
+<li>113 真題：MRI 部位依 sensory level 決定</li>
+<li>背痛紅旗：age &gt; 50、weight loss、night pain、cancer hx、neuro deficit</li>
+<li>Winking owl sign（AP view pedicle 消失）= mets 經典 sign</li>
+<li>骨轉移五大 primary：lung、breast、prostate、kidney、thyroid</li>
+<li>不放心就 whole spine MRI（多處病灶常見）</li>
+<li>Lab：CBC、CRP、Ca²⁺、ALP、tumor markers</li>
+<li>本病人初診誤診是真實臨床警示 — 老年新發背痛不可只靠 X-ray</li>
+</ul>`,
+      },
+      {
+        q: '請判讀此 T-L spine X-ray。',
+        keywords: [
+          'AP + lateral view',
+          'Vertebral body height loss',
+          'Pedicle integrity',
+          'Winking owl sign',
+          'Owl eye = pedicle on AP view',
+          'Missing pedicle = mets / osteolytic',
+          'Pathologic vs osteoporotic fracture',
+          'Disc space preserved in mets',
+          'Soft tissue mass',
+          'Pleural effusion',
+          'Posterior cortex involvement',
+          'Compression fracture',
+          'Burst fracture',
+          'Wedge deformity',
+          'Multiple level involvement',
+        ],
+        points: [
+          '<strong>判讀架構</strong>：alignment → vertebral body 高度 → pedicle → disc space → soft tissue',
+          '<strong>Winking owl sign（113、2024 真題）</strong>：AP view 看 pedicle 像兩隻眼睛，<strong>單側 pedicle 消失 = winking</strong> → 強烈提示<strong>骨溶解性轉移</strong>',
+          '<strong>本病人</strong>：T10-T11 右側 pedicle 看不到 → winking owl sign',
+          '<strong>Pathologic fracture vs osteoporotic 鑑別</strong>：pathologic 多 <strong>posterior cortex involvement、pedicle destruction、soft tissue mass、disc space preserved</strong>；osteoporotic 多前楔狀、disc 也可能塌',
+          '<strong>溶骨性 vs 成骨性</strong>：肺、腎、甲狀腺、myeloma → osteolytic；攝護腺、乳癌 → 多 osteoblastic',
+          '<strong>Multiple level involvement</strong>是 mets 強烈指標',
+          '<strong>AS 鑑別</strong>：dagger sign、bamboo spine、sacroiliitis（113 真題的另一個鑑別）',
+          '<strong>Compression fracture 三型</strong>：anterior wedge、burst、Chance — 多 high-energy；老年人 compression 多 osteoporotic 但要排除 mets',
+        ],
+        a: `<h4>1. X-ray 判讀順序</h4>
+
+<table>
+<tr><th>步驟</th><th>看什麼</th></tr>
+<tr><td>1. Alignment</td><td>Anterior、posterior、spinolaminar lines；kyphosis</td></tr>
+<tr><td>2. Vertebral body height</td><td>Wedge（前楔）、burst（中央）、塌陷</td></tr>
+<tr><td>3. <strong>Pedicle</strong></td><td>AP view 看兩個 oval（owl eyes）；缺少一個 = winking owl</td></tr>
+<tr><td>4. Disc space</td><td>Preserved（mets）vs collapsed（infection、severe osteoporosis）</td></tr>
+<tr><td>5. Soft tissue</td><td>Para-spinal mass、pleural effusion</td></tr>
+<tr><td>6. Sacroiliac</td><td>Sacroiliitis（AS rule out）</td></tr>
+</table>
+
+<h4>2. Winking Owl Sign（113、2024 真題）</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>機轉</strong>：Pedicle 是 vertebral body 後外側的環狀骨；AP view 上呈圓形 / 橢圓形 → 兩個 pedicle = 兩隻眼睛 = "owl"。<br><br>
+<strong>Mets 早期 osteolytic destruction 多從 pedicle 開始</strong>（pedicle 血流豐富、cancellous bone 多）→ 單側 pedicle 消失 → winking owl。<br><br>
+<strong>本病人 T10-T11 右側 pedicle 消失 → 強烈提示 osteolytic mets</strong>。
+</p>
+
+<h4>3. Pathologic vs Osteoporotic Fracture 鑑別</h4>
+
+<table>
+<tr><th>特徵</th><th>Pathologic（mets）</th><th>Osteoporotic</th></tr>
+<tr><td>Pedicle</td><td><strong>常被破壞</strong>（winking owl）</td><td>完整</td></tr>
+<tr><td>Posterior cortex</td><td><strong>常 involvement</strong></td><td>多保留</td></tr>
+<tr><td>Disc space</td><td>多保留</td><td>可能 collapse</td></tr>
+<tr><td>Soft tissue mass</td><td>常見（para-spinal）</td><td>無</td></tr>
+<tr><td>多 level</td><td>常見（&gt; 70% 多發）</td><td>單一或散發</td></tr>
+<tr><td>形狀</td><td>多不規則</td><td>多前楔狀</td></tr>
+<tr><td>骨折線</td><td>多無清楚骨折線</td><td>清楚 fracture line</td></tr>
+</table>
+
+<h4>4. 骨轉移類型（影像）</h4>
+
+<table>
+<tr><th>類型</th><th>影像</th><th>常見 primary</th></tr>
+<tr><td><strong>Osteolytic</strong></td><td>Lucent area、destruction</td><td><strong>Lung、kidney、thyroid、myeloma</strong></td></tr>
+<tr><td><strong>Osteoblastic</strong></td><td>Sclerotic、增白</td><td><strong>Prostate、breast（部分）</strong></td></tr>
+<tr><td><strong>Mixed</strong></td><td>Both</td><td>Breast、lung（部分）</td></tr>
+</table>
+
+<p>本病人為肺腺癌轉移 → 多 osteolytic。</p>
+
+<h4>5. AS 鑑別（113 真題另一個影像）</h4>
+
+<table>
+<tr><th>AS 特徵</th><th>X-ray</th></tr>
+<tr><td>Dagger sign</td><td>Lateral view 中央縱線（ossified ligaments）</td></tr>
+<tr><td>Bamboo spine</td><td>Syndesmophytes 連接 vertebral bodies</td></tr>
+<tr><td>Sacroiliitis</td><td>SI joint sclerosis、erosion、ankylosis</td></tr>
+<tr><td>Squaring of vertebrae</td><td>Anterior corner erosion</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>113、2024 真題：Winking owl sign = pedicle 消失 = osteolytic mets</li>
+<li>判讀順序：alignment → body → pedicle → disc → soft tissue</li>
+<li>Pathologic vs osteoporotic：pedicle、posterior cortex、disc、soft tissue mass 為鑑別點</li>
+<li>骨轉移五大 primary：肺、乳、攝護腺、腎、甲狀腺</li>
+<li>Osteolytic（肺、腎、甲、myeloma）vs osteoblastic（攝、部分乳）</li>
+<li>多 level 病灶 &gt; 單一病灶 → 強烈支持 mets</li>
+<li>AS 鑑別：dagger、bamboo、sacroiliitis（113 真題會考）</li>
+<li>X-ray 看到 pedicle 消失 → 不要再嘗試保守治療，立即 MRI</li>
+</ul>`,
+      },
+      {
+        q: '請判讀此 T-spine MRI。',
+        keywords: [
+          'Vertebral body T1 hypointense + T2 hyperintense',
+          'Marrow replacement',
+          'Pedicle destruction',
+          'Extradural mass',
+          'Epidural extension',
+          'Cord compression',
+          'Cord T2 hyperintensity',
+          'Cord edema',
+          'Posterior cortex destruction',
+          'Soft tissue extension paraspinal',
+          'Multiple level involvement',
+          'Disc space preserved',
+          'Compartment: extradural / intradural extramedullary / intramedullary',
+          'Bilski grading of epidural compression',
+          'Differential: mets vs primary tumor vs infection',
+        ],
+        points: [
+          '<strong>判讀架構</strong>：vertebral body signal → pedicle → epidural space → cord → 軟組織',
+          '<strong>本病人 T1 transverse view</strong>：T10 vertebral body 訊號異常、<strong>右側 pedicle 整個被破壞</strong>、extradural mass 從右後方壓 cord',
+          '<strong>Lateral view (sagittal)</strong>：extradural tumor 沿 cord 後方延伸、cord T2 hyperintensity 表示 myelomalacia / edema',
+          '<strong>Mets MRI 典型訊號</strong>：T1 <strong>hypo</strong>（marrow replacement）、T2 <strong>hyper</strong>、enhance with contrast',
+          '<strong>Disc space 多保留</strong>（與感染區別 — 感染多侵蝕 disc）',
+          '<strong>三大 compartment</strong>：① Extradural（最多 — 多 mets、HIVD）② Intradural extramedullary（meningioma、schwannoma、neurofibroma）③ Intramedullary（ependymoma、astrocytoma、syrinx）',
+          '<strong>Bilski grading</strong>：epidural cord compression 嚴重度（0 = no、3 = cord compressed with no CSF）',
+          '<strong>本病人 = extradural mets with cord compression Bilski 3</strong>',
+        ],
+        a: `<h4>1. MRI 判讀架構</h4>
+
+<table>
+<tr><th>步驟</th><th>看什麼</th></tr>
+<tr><td>1. Vertebral body signal</td><td>T1（normal: hyper from fat marrow）vs T2；mets 多 T1 hypo、T2 hyper</td></tr>
+<tr><td>2. <strong>Pedicle / posterior elements</strong></td><td>Destruction？兩側對稱？</td></tr>
+<tr><td>3. <strong>Epidural space</strong></td><td>Mass、cord compression？哪個方向？</td></tr>
+<tr><td>4. <strong>Cord signal</strong></td><td>T2 hyperintensity = edema / myelomalacia；cord swelling</td></tr>
+<tr><td>5. Disc space</td><td>Preserved（mets）vs collapse（infection）</td></tr>
+<tr><td>6. Para-spinal soft tissue</td><td>Mass extension、pleural effusion</td></tr>
+<tr><td>7. Multi-level</td><td>多處病灶 → mets 強烈</td></tr>
+</table>
+
+<h4>2. Mets 典型 MRI Signal</h4>
+
+<table>
+<tr><th>Sequence</th><th>Mets</th><th>正常 vertebral body</th></tr>
+<tr><td>T1</td><td><strong>Hypo</strong>（marrow 被取代）</td><td>Hyper（fat marrow）</td></tr>
+<tr><td>T2</td><td><strong>Hyper</strong></td><td>中等</td></tr>
+<tr><td>STIR</td><td>Hyper（fat 抑制 → 病灶突出）</td><td>抑制</td></tr>
+<tr><td>Post-contrast</td><td><strong>Enhancing</strong></td><td>不 enhance</td></tr>
+</table>
+
+<h4>3. 三大 Compartment（解剖鑑別）</h4>
+
+<table>
+<tr><th>Compartment</th><th>典型 lesion</th><th>本病人</th></tr>
+<tr><td><strong>Extradural</strong></td><td>Mets（最多）、HIVD、abscess、hematoma</td><td>✅</td></tr>
+<tr><td><strong>Intradural extramedullary</strong></td><td>Meningioma、schwannoma、neurofibroma</td><td>—</td></tr>
+<tr><td><strong>Intramedullary</strong></td><td>Ependymoma、astrocytoma、syrinx、demyelination、infarct</td><td>—</td></tr>
+</table>
+
+<h4>4. Bilski Epidural Spinal Cord Compression Grading</h4>
+
+<table>
+<tr><th>Grade</th><th>定義</th></tr>
+<tr><td>0</td><td>Bone-only mets，無 epidural extension</td></tr>
+<tr><td>1a</td><td>Epidural impingement，無 thecal sac deformation</td></tr>
+<tr><td>1b</td><td>Thecal sac deformed，cord 無 contact</td></tr>
+<tr><td>1c</td><td>Cord 接觸，但無 compression</td></tr>
+<tr><td>2</td><td>Cord compression，仍有 CSF visible around cord</td></tr>
+<tr><td><strong>3</strong></td><td><strong>Cord compression，無 CSF visible</strong>（最嚴重）</td></tr>
+</table>
+
+<p>本病人 = <strong>Bilski 3</strong>（cord 被擠壓、CSF 消失）→ 緊急手術指徵。</p>
+
+<h4>5. Mets vs Primary tumor vs Infection 鑑別</h4>
+
+<table>
+<tr><th>特徵</th><th>Mets</th><th>Primary tumor</th><th>Infection（osteomyelitis）</th></tr>
+<tr><td>年齡</td><td>多 &gt; 50</td><td>各年齡</td><td>各年齡</td></tr>
+<tr><td>Disc space</td><td>Preserved</td><td>Preserved</td><td><strong>Destroyed</strong></td></tr>
+<tr><td>Multi-level</td><td>常</td><td>少</td><td>相鄰兩節常見（contiguous）</td></tr>
+<tr><td>Endplate</td><td>多保留</td><td>多保留</td><td><strong>Endplate destruction</strong></td></tr>
+<tr><td>Pedicle</td><td>常被破壞</td><td>可能</td><td>可能</td></tr>
+<tr><td>Soft tissue</td><td>Para-spinal mass</td><td>Mass</td><td>Phlegmon / abscess（rim enhancing）</td></tr>
+<tr><td>Lab</td><td>Tumor marker、Ca²⁺</td><td>Tumor marker</td><td>CRP / ESR / WBC 升高</td></tr>
+</table>
+
+<h4>6. 本病人影像總結</h4>
+
+<ul>
+<li>T10 vertebral body T1 hypo / T2 hyper、marrow 被取代</li>
+<li>右側 pedicle 完全破壞</li>
+<li>Posterior cortex 突破 → epidural mass</li>
+<li>Cord T2 hyperintensity（edema）</li>
+<li>CSF 在 T10 level 消失（Bilski 3）</li>
+<li>Disc space 保留</li>
+<li>Para-spinal soft tissue mass extension</li>
+<li>L2、左 6th rib 也見訊號異常 → 多處骨轉移</li>
+<li><strong>診斷：metastatic disease with cord compression → 緊急 OP</strong></li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>判讀順序：body signal → pedicle → epidural → cord → disc → soft tissue → multi-level</li>
+<li>Mets MRI：T1 hypo、T2 hyper、enhancing</li>
+<li>Disc space preserved 是 mets / tumor 與 infection 重要鑑別</li>
+<li>三大 compartment：extradural（mets 最多）、intradural extramedullary、intramedullary</li>
+<li>Bilski grading 0-3，3 = cord compression no CSF（必須 OP）</li>
+<li>113 真題：transverse view 看 pedicle、lateral view 看 extradural extension</li>
+<li>本病人 = extradural mets with Bilski 3 cord compression</li>
+<li>Cord T2 hyperintensity 持續超過 3 個月 = 不可逆 myelomalacia → 預後差</li>
+</ul>`,
+      },
+      {
+        q: '癌症性 SCI 與外傷 SCI 在復健目標上有何不同？',
+        keywords: [
+          'NOMS framework (Neurologic, Oncologic, Mechanical, Systemic)',
+          'Tokuhashi / Tomita prognosis scoring',
+          'Surgery indication: instability + cord compression + life expectancy > 3 mo',
+          'Patchell trial: surgery + RT > RT alone',
+          'SINS (spinal instability neoplastic score)',
+          'Palliative rehab',
+          'Pain control primary',
+          'QoL focus',
+          'Symptom management',
+          'Brace for stability and pain',
+          'TLSO',
+          'Prevent pressure ulcer',
+          'Bowel/bladder management',
+          'Family time priority',
+          'Spiritual care',
+          'Avoid aggressive recovery goals',
+          'Energy conservation',
+          'Realistic functional goals',
+        ],
+        points: [
+          '<strong>手術指徵（NOMS framework）</strong>：① N — 神經學變化（cord compression）② O — 腫瘤對 RT/CT 反應 ③ M — mechanical instability ④ S — systemic（餘命、PS）',
+          '<strong>SINS score（spinal instability neoplastic score）</strong>：≥ 7 分 = potentially unstable，需 surgery consult',
+          '<strong>Patchell trial</strong>：MSCC（malignant spinal cord compression）→ <strong>surgery + RT &gt; RT alone</strong>（前提：餘命 &gt; 3 個月、symptomatic）',
+          '<strong>本病人</strong>：cord compression Bilski 3 + 神經學惡化 + 餘命 4-6 個月 → 緊急 OP 是正確決策',
+          '<strong>癌症 SCI 復健核心：palliative，不是 cure-oriented</strong>',
+          '<strong>四大目標</strong>：① <strong>止痛</strong>（最重要）② <strong>QoL / 家庭時間</strong> ③ <strong>背架（穩定 + 止痛）</strong> ④ <strong>壓瘡預防</strong>',
+          '<strong>113、2024 真題</strong>：「癌症復健目標 vs 外傷 SCI 不同 → 止痛、背架、QoL、靈性照護」',
+          '<strong>Energy conservation</strong>：保留體力給對病人重要的事（家人、興趣、宗教）',
+        ],
+        a: `<h4>1. 癌症 SCI vs 外傷 SCI 復健思維對比</h4>
+
+<table>
+<tr><th>面向</th><th>外傷 SCI</th><th>癌症 SCI</th></tr>
+<tr><td><strong>時間軸</strong></td><td>長期（數十年）</td><td>多 &lt; 1 年</td></tr>
+<tr><td><strong>核心目標</strong></td><td>最大功能恢復、獨立、重返社會</td><td><strong>QoL、止痛、家庭時間</strong></td></tr>
+<tr><td><strong>復健強度</strong></td><td>強化、激進</td><td>溫和、節省體力</td></tr>
+<tr><td><strong>輔具</strong></td><td>輪椅技能、KAFO 訓練</td><td>輕便輔具、轉位安全</td></tr>
+<tr><td><strong>背架</strong></td><td>骨折癒合期暫用</td><td><strong>長期穩定 + 止痛</strong>（TLSO）</td></tr>
+<tr><td><strong>並存問題</strong></td><td>痙攣、AD、HO、UTI</td><td><strong>癌症本身：疼痛、惡液質、化療副作用、轉移處症狀</strong></td></tr>
+<tr><td><strong>心理</strong></td><td>長期 depression/grief</td><td><strong>面對死亡、家屬告別</strong></td></tr>
+<tr><td><strong>家屬</strong></td><td>長期照顧負擔</td><td>陪伴 / 預期性悲傷</td></tr>
+<tr><td><strong>決策</strong></td><td>aggressive treatment</td><td><strong>SDM / ACP / DNR</strong></td></tr>
+</table>
+
+<h4>2. 癌症 SCI 手術指徵</h4>
+
+<table>
+<tr><th>Framework</th><th>內容</th></tr>
+<tr><td><strong>NOMS</strong></td><td>N（neuro）、O（oncologic — RT 反應好就保守）、M（mechanical — SINS ≥ 7 不穩）、S（systemic — 餘命 &gt; 3 個月）</td></tr>
+<tr><td><strong>Patchell trial 結論</strong></td><td>MSCC + 餘命 &gt; 3 個月 + symptomatic → <strong>OP + RT 走路率 84% &gt; RT alone 57%</strong></td></tr>
+<tr><td><strong>不開刀</strong></td><td>餘命 &lt; 3 個月、太差 PS、放射線敏感型 tumor（lymphoma、myeloma、germ cell）</td></tr>
+</table>
+
+<h4>3. 癌症 SCI 復健核心 — 4 大目標（113、2024 真題）</h4>
+
+<ol>
+<li><strong>止痛（最重要）</strong>：opioid、NSAID、神經痛藥（gabapentin）、bisphosphonate、palliative RT、神經阻斷術</li>
+<li><strong>QoL 與家庭時間</strong>：避免過多治療打斷陪伴；設定病人重視的目標（看孫子畢業、寫遺囑、宗教儀式）</li>
+<li><strong>背架穩定 + 止痛</strong>：TLSO 提供 axial support、減輕 vertebral body 壓力 → 顯著改善疼痛 + 站立移位</li>
+<li><strong>壓瘡 / 卧床併發症預防</strong>：規律翻身、cushion、bowel/bladder 簡化照護；避免 hospital-acquired complication</li>
+</ol>
+
+<h4>4. 預後評分（決定治療強度）</h4>
+
+<table>
+<tr><th>Score</th><th>內容</th></tr>
+<tr><td><strong>Tokuhashi score</strong></td><td>原發癌、PS、轉移數、major organ mets、palsy → 預測餘命；&gt; 12 = 1 年以上、&lt; 9 = &lt; 6 個月</td></tr>
+<tr><td><strong>Tomita score</strong></td><td>Tumor type + visceral mets + bone mets → surgical strategy 決策</td></tr>
+<tr><td><strong>SINS</strong></td><td>位置、痛、骨溶解性、alignment、塌陷、posterior elements → ≥ 7 = potentially unstable</td></tr>
+<tr><td><strong>KPS / ECOG</strong></td><td>Functional status；ECOG ≤ 2、KPS ≥ 60 → 適合 active rehab</td></tr>
+</table>
+
+<h4>5. 本病人具體復健計畫</h4>
+
+<table>
+<tr><th>面向</th><th>計畫</th></tr>
+<tr><td>疼痛</td><td>Long-acting opioid 基底 + breakthrough、gabapentin（神經痛）、zoledronic acid、palliative RT 8-30 Gy</td></tr>
+<tr><td>背架</td><td>TLSO（custom or off-shelf），坐立移位時穿著</td></tr>
+<tr><td>移位</td><td>Sliding board with assist；避免複雜訓練（病人不需「重返職場」）</td></tr>
+<tr><td>輪椅</td><td>輕便型 manual + cushion；非主要活動目標</td></tr>
+<tr><td>排尿</td><td>留 Foley 或 cystostomy（簡化照護，後續題目延伸）</td></tr>
+<tr><td>排便</td><td>規律 program；避免 impaction 引發疼痛</td></tr>
+<tr><td>心理 / 靈性</td><td>家屬會晤、心理師、宗教師（依需求）</td></tr>
+<tr><td>家屬</td><td>照顧訓練、預期性悲傷諮商、ACP 討論</td></tr>
+<tr><td>合作</td><td>安寧團隊、社工、宗教師、家屬會議</td></tr>
+</table>
+
+<h4>6. 跟病人對話（希望 + 現實）</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「您問復健還有沒有意義 — <strong>有，但目標跟年輕車禍受傷的病人不一樣</strong>。<br><br>
+車禍受傷的人花 1-2 年練回去走路、回去工作；<strong>您現在的重點不是訓練多強的肌力，而是讓您接下來的時間品質好、痛少、能跟家人在一起</strong>。<br><br>
+我們可以做的事：① <strong>止痛</strong>（藥物 + 必要時做姑息性放射線 — 對骨轉移很有效）② <strong>背架</strong>讓您坐起來、移位時不痛 ③ 教家人如何照顧您不會傷到自己 ④ 預防像壓瘡這種會讓您更受苦的併發症。<br><br>
+也想跟您聊聊 — <strong>接下來這幾個月，您最想做的事是什麼？</strong>看孫子？寫些東西？回老家？我們一起規劃，讓復健配合您的願望，不是反過來。」</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>113、2024 真題：癌症 SCI 復健 4 目標 — 止痛、背架、QoL、靈性照護</li>
+<li>NOMS framework 決定手術 vs 保守</li>
+<li>Patchell trial：MSCC + 餘命 &gt; 3 個月 → OP + RT 優於單獨 RT</li>
+<li>SINS ≥ 7 = potentially unstable，需 surgery consult</li>
+<li>Tokuhashi 預測餘命；Tomita 決策手術範圍</li>
+<li>外傷 vs 癌症 SCI：時間軸、目標、強度、心理 / 家屬全不同</li>
+<li>Palliative RT 對骨轉移止痛非常有效（80% 顯著改善）</li>
+<li>Bisphosphonate（zoledronic acid）+ denosumab 減少 SRE</li>
+<li>本病人是「OP 後 + 標靶 + 骨保護」的完整治療路徑</li>
+<li>家屬會議、ACP、靈性照護是癌症 SCI 不可省略的</li>
+</ul>`,
+      },
+      {
+        q: '請判讀此 UDS 並說明處置選擇。',
+        keywords: [
+          'Pdet, Pves, Pabd, EMG, infused volume',
+          'Infusion rate 30 ml/min',
+          'Small DO',
+          'DSD',
+          'Compliance calculation',
+          'Detrusor overactivity (low-amplitude)',
+          'Suprasacral SCI = UMN bladder',
+          'Antimuscarinic',
+          'Beta-3 agonist (mirabegron)',
+          'Botox detrusor',
+          'α-blocker for sphincter',
+          'Foley vs CIC vs cystostomy',
+          'Goal in palliative: comfort + simplicity',
+          'Avoid high pressure → kidney',
+        ],
+        points: [
+          '<strong>113 真題</strong>：UDS 判讀 — infusion rate 30 ml/min 用來算 volume、有小小的 DO',
+          '<strong>判讀要點</strong>：① 五條 tracing 確認 ② 算 compliance（30 ml/min × 時間 = volume；ΔV/ΔP）③ 找 DO（Pdet 非自主收縮）④ 找 DSD（Pdet 收縮時 EMG 同時放電）',
+          '<strong>癌症 SCI 病人 UDS 解讀的不同</strong>：目標不是「最佳功能」而是「<strong>避免高壓傷腎 + 簡化照護</strong>」',
+          '<strong>處置原則（一般 SCI）</strong>：降逼尿肌（antimuscarinic / Botox）+ 降括約肌（α-blocker）+ 排空（CIC / Foley）',
+          '<strong>本病人特殊考量</strong>：① 餘命短，「保腎」目標時間短 ② 家屬照顧負擔重 ③ Foley 簡單但 UTI 多 ④ CIC 雖好但需頻繁照護介入',
+          '<strong>選擇</strong>：① Foley（最簡單，現況已是）② Suprapubic cystostomy（少 UTI、不影響尿道）③ CIC（best long-term，但本病人不適合）',
+          '<strong>UDS 對本病人的意義</strong>：主要在判斷「目前管理是否安全」（壓力夠低、無 hydro）',
+          '<strong>本病人為 T10 完全 SCI</strong>：預期 UMN bladder（DO + DSD），目前 Foley 留置中、有 UTI 史',
+        ],
+        a: `<h4>1. UDS 判讀架構（複習）</h4>
+
+<table>
+<tr><th>項目</th><th>正常值</th></tr>
+<tr><td>Filling pressure</td><td>&lt; 15 cmH₂O</td></tr>
+<tr><td>DLPP</td><td>&lt; 40（&gt; 40 傷腎）</td></tr>
+<tr><td>Voiding</td><td>40-60（&gt; 80 = DSD / outlet）</td></tr>
+<tr><td>Compliance</td><td>&gt; 30 mL/cmH₂O</td></tr>
+<tr><td>First desire</td><td>~ 150 mL</td></tr>
+<tr><td>Capacity</td><td>300-500 mL</td></tr>
+</table>
+
+<h4>2. 113 真題判讀（infusion 30 ml/min + 小 DO + 是否符合 image）</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>步驟</strong>：<br>
+① 灌注時間 × 30 ml/min = 累積 volume<br>
+② Pdet 上升曲線 → ΔV/ΔP = compliance<br>
+③ 找 Pdet 非自主性突起（DO）<br>
+④ Pdet 收縮時 EMG 同步活躍（DSD）<br><br>
+<strong>本病人 T10 suprasacral SCI 預期 UMN pattern</strong>：DO + DSD + 高壓 + 小容量。
+</p>
+
+<h4>3. 治療選擇</h4>
+
+<table>
+<tr><th>目標</th><th>口服</th><th>侵入</th></tr>
+<tr><td><strong>降低 detrusor 壓</strong></td><td>Antimuscarinic（oxybutynin、solifenacin、tolterodine）<br>Beta-3 agonist（mirabegron）</td><td>Botox 200U detrusor injection（健保 2nd line、6-9 個月）</td></tr>
+<tr><td><strong>降低括約肌阻力</strong></td><td>α-blocker（terazosin、tamsulosin）<br>Muscle relaxant（baclofen）</td><td>Botox 外括 / sphincterotomy</td></tr>
+</table>
+
+<h4>4. 排空策略選擇 — 癌症 SCI 特殊考量</h4>
+
+<table>
+<tr><th>方式</th><th>優點</th><th>缺點</th><th>適合本病人？</th></tr>
+<tr><td><strong>Foley 留置</strong></td><td>最簡單、即時 drainage、家屬負擔最低</td><td>UTI 多、結石、膀胱 cancer 風險（&gt; 1 年）、尿道糜爛</td><td>✅ 短期可（餘命 &lt; 6 個月，cancer 風險不重要）</td></tr>
+<tr><td><strong>Suprapubic cystostomy</strong></td><td>不傷尿道、UTI 較少、性活動較舒適、可換管</td><td>需小手術、stoma site 照護</td><td>✅ 中期合理（反覆 UTI 時改善 QoL）</td></tr>
+<tr><td><strong>CIC</strong></td><td>最少 UTI、無 indwelling、最 physiological</td><td>需手功能 + 照護介入頻繁（4-6 hr 一次）</td><td>⚠️ 病人 T10 上肢 normal 可自做，但餘命短不一定值得學新技術</td></tr>
+<tr><td><strong>Reflex voiding + condom catheter</strong></td><td>男性可用、無 indwelling</td><td>需低壓、無嚴重 DSD</td><td>❌ 高壓 + DSD 不適合</td></tr>
+</table>
+
+<h4>5. 本病人具體建議</h4>
+
+<ol>
+<li>UDS 結果若 high-pressure：先用 antimuscarinic + α-blocker 降壓</li>
+<li>當前持續 Foley、密切監測 UTI 與壓力</li>
+<li>反覆 UTI 不癒 → 考慮 <strong>suprapubic cystostomy</strong>（中期改善 QoL）</li>
+<li>不建議積極推 CIC（餘命短、家屬負擔、學習成本）</li>
+<li>每 1-3 個月 renal sono + creatinine 監測腎功能</li>
+<li>UTI 預防：規律 Foley 換管（每月）、足夠水分、避免長期抗生素</li>
+</ol>
+
+<h4>口試重點</h4>
+<ul>
+<li>113 真題：UDS infusion rate 30 ml/min 算 volume</li>
+<li>判讀順序：tracing 確認 → compliance 計算 → DO/DSD</li>
+<li>癌症 SCI 處置目標：避免高壓傷腎 + 簡化照護 + 病人舒適</li>
+<li>排空 4 選 1：Foley、cystostomy、CIC、reflex voiding</li>
+<li>本病人優先 Foley → 反覆 UTI 改 cystostomy</li>
+<li>不要把 CIC 當成「金科玉律」強推於癌末病人</li>
+<li>α-blocker 與 antimuscarinic 仍適用（降壓保腎）</li>
+<li>Botox detrusor 對短期病人 cost-benefit 較差，不優先</li>
+<li>Renal sono + creatinine 是 minimal monitoring</li>
+</ul>`,
+      },
+      {
+        q: '病人反覆發生泌尿道感染，請說明治療選擇與優劣。',
+        keywords: [
+          'Recurrent UTI = 2+ in 6 mo or 3+ in 1 yr',
+          'Treat symptomatic only',
+          'Asymptomatic bacteriuria not treated',
+          'Find root cause',
+          'High pressure / poor emptying / stones / Foley / DSD',
+          'Foley change schedule',
+          'Suprapubic cystostomy',
+          'Switch to CIC',
+          'Hydrophilic catheter',
+          'Hydration',
+          'Methenamine, cranberry (limited evidence)',
+          'Avoid long-term prophylactic antibiotics',
+          'Bladder irrigation (controversial)',
+          'Methenamine + Vit C',
+          'Anatomic / functional correction',
+          'In palliative: comfort over cure',
+        ],
+        points: [
+          '<strong>SCI 反覆 UTI 定義</strong>：6 個月內 ≥ 2 次或 1 年內 ≥ 3 次（symptomatic）',
+          '<strong>原則 1：Asymptomatic bacteriuria 不治療</strong>',
+          '<strong>原則 2：找根本原因</strong> — 高壓膀胱、不完全排空、結石、Foley、DSD、CIC 技術不正確',
+          '<strong>選擇</strong>（依 invasiveness）：① 改善現有技術 / 增加飲水 / 規律換 Foley ② 改 Foley → CIC（若可行）③ <strong>Suprapubic cystostomy</strong>（少 UTI、不傷尿道）④ 補強 — methenamine + Vit C、cranberry（limited evidence）',
+          '<strong>不建議：長期預防性抗生素</strong>（會選殖 resistant flora）',
+          '<strong>本病人特殊</strong>：餘命 4-6 個月 + 男性 + Foley → 反覆 UTI 改 <strong>suprapubic cystostomy</strong> 是合理選擇',
+          '<strong>Cystostomy 優點</strong>：① UTI 較少（30-50% 減少）② 不影響尿道（避免副睪炎、urethral erosion）③ 性活動較舒適 ④ 可自己換管（依訓練）⑤ 比 Foley 美觀（不外露）',
+          '<strong>Cystostomy 缺點</strong>：① 需小手術（但可在內視鏡下放置）② Stoma site 感染、結石、漏尿 ③ 仍需定期換管（每 4-6 週）',
+        ],
+        a: `<h4>1. 反覆 UTI 評估流程</h4>
+
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>1. 確認 symptomatic</td><td>排除 asymptomatic bacteriuria（不治療）</td></tr>
+<tr><td>2. 找根本原因</td><td>UDS（高壓？）、PVR、renal sono（結石、hydro）、KUB、cystoscopy（必要時）</td></tr>
+<tr><td>3. 評估目前管理</td><td>Foley 換管頻率、CIC 技術、衛生、飲水量</td></tr>
+<tr><td>4. Culture + sensitivity</td><td>抗生素準確選擇 + 找 resistant flora</td></tr>
+<tr><td>5. 介入</td><td>由保守到 invasive（見下）</td></tr>
+</table>
+
+<h4>2. 介入光譜（由保守到 invasive）</h4>
+
+<table>
+<tr><th>介入</th><th>內容</th><th>適用</th></tr>
+<tr><td><strong>① 行為 / 衛生改善</strong></td><td>多飲水、規律 CIC、勤換 Foley（每月）、改 hydrophilic 管</td><td>所有反覆 UTI 第一線</td></tr>
+<tr><td><strong>② 解決根本原因</strong></td><td>高壓 → 用藥 / Botox；結石 → 移除；DSD → α-blocker</td><td>有結構 / 功能異常時</td></tr>
+<tr><td><strong>③ Foley → CIC</strong></td><td>改間歇性導尿</td><td>手功能 OK、照護者配合、病人預期壽命長</td></tr>
+<tr><td><strong>④ Suprapubic cystostomy</strong></td><td>恥骨上膀胱造瘻</td><td>長期 indwelling + 反覆 UTI + 不適合 CIC</td></tr>
+<tr><td><strong>⑤ 補強治療</strong></td><td>Methenamine（urinary antiseptic）+ Vit C（酸化尿）；cranberry（evidence limited）</td><td>輔助使用</td></tr>
+<tr><td><strong>⑥ Bladder augmentation / urinary diversion</strong></td><td>手術擴大膀胱、ileal conduit</td><td>嚴重案例、預期壽命長</td></tr>
+</table>
+
+<h4>3. Foley vs CIC vs Suprapubic Cystostomy 比較</h4>
+
+<table>
+<tr><th>面向</th><th>Foley</th><th>CIC</th><th>Cystostomy</th></tr>
+<tr><td>UTI 風險</td><td>高（chronic colonization）</td><td><strong>最低</strong></td><td>中（&lt; Foley）</td></tr>
+<tr><td>結石</td><td>中</td><td>低</td><td>中（造瘻周邊）</td></tr>
+<tr><td>尿道糜爛 / 副睪炎</td><td>男性常見</td><td>低</td><td>無（不過尿道）</td></tr>
+<tr><td>性活動</td><td>受影響</td><td>可</td><td>較不受影響</td></tr>
+<tr><td>家屬負擔</td><td>低（換管門診）</td><td>高（每 4-6 hr）</td><td>低（每 4-6 週換）</td></tr>
+<tr><td>長期 cancer 風險</td><td>有（≥ 10 年）</td><td>低</td><td>有（&lt; Foley）</td></tr>
+<tr><td>適合本病人</td><td>短期</td><td>不需要</td><td><strong>最佳長期方案</strong></td></tr>
+</table>
+
+<h4>4. 不建議的做法</h4>
+
+<ul>
+<li><strong>長期預防性抗生素</strong>：promotes resistance、不減少症狀性 UTI（多研究否定）</li>
+<li><strong>頻繁更換 Foley「以為更乾淨」</strong>：實際上每次操作就增加 colonization 機會</li>
+<li><strong>治療 asymptomatic bacteriuria</strong>：只增加 resistance、無臨床益處</li>
+<li><strong>Bladder irrigation 常規使用</strong>：證據不足，部分情況下增加 UTI</li>
+</ul>
+
+<h4>5. 本病人具體計畫</h4>
+
+<ol>
+<li>確認最近兩次 UTI 為 symptomatic（發燒 + 濁尿）</li>
+<li>檢查根本原因：renal sono（結石、hydro）、UDS（壓力）、Foley 換管時間</li>
+<li>近期管理：規律每月換 Foley、增加飲水、適當抗生素 culture-guided</li>
+<li>若 1-2 個月內仍反覆 → 考慮 <strong>Suprapubic cystostomy</strong>（urology 會診）</li>
+<li>避免長期預防性抗生素</li>
+<li>家屬衛教：症狀識別（發燒、痙攣、AD、血尿）、何時就醫</li>
+</ol>
+
+<h4>口試重點</h4>
+<ul>
+<li>113、2024 真題：反覆 UTI 治療選擇 + 優劣</li>
+<li>SCI asymptomatic bacteriuria 不治療</li>
+<li>反覆 UTI = 6 個月 ≥ 2 或 1 年 ≥ 3 次</li>
+<li>找根本原因：高壓、結石、不完全排空、Foley</li>
+<li>長期 indwelling + 反覆 UTI → suprapubic cystostomy 是合理升級</li>
+<li>Cystostomy 比 Foley UTI 少、不影響尿道、性活動較舒適</li>
+<li>不建議長期預防性抗生素</li>
+<li>Methenamine + Vit C 為輔助；cranberry 證據 limited</li>
+<li>本病人餘命短 → cystostomy 是中期 QoL 改善的合理選擇</li>
+</ul>`,
+      },
+      {
+        q: '病人餘命 6 個月，是否拔除 Foley 改 CIC？',
+        keywords: [
+          'Goal of care: comfort vs function',
+          'Patient autonomy',
+          'Family caregiver burden',
+          'CIC requires hand function + frequent care',
+          'Foley convenient but UTI / stones / urethral erosion',
+          'Suprapubic cystostomy as middle ground',
+          'SDM (shared decision making)',
+          'ACP (advance care planning)',
+          'Reversibility',
+          'Time investment vs life expectancy',
+          'Burden of learning new technique',
+          'Quality of remaining time',
+          'Symptom burden',
+          'Hospice / palliative care team',
+        ],
+        points: [
+          '<strong>核心思維：餘命短 → 不為「最佳長期方案」而犧牲現在的舒適</strong>',
+          '<strong>SDM（shared decision making）</strong>：與病人、家屬共同決策，了解病人優先順序',
+          '<strong>本病人 T10 上肢正常，理論上可學 CIC</strong>，但要評估 cost-benefit',
+          '<strong>反對拔 Foley 改 CIC 的理由</strong>：① 學習新技術消耗體力與時間 ② 家屬負擔（每 4-6 hr）③ 短期內 UTI 風險不會明顯降低 ④ 病人想花時間陪家人',
+          '<strong>支持拔 Foley 的理由</strong>：① 病人感受 Foley 不適 ② 反覆 UTI 持續困擾 ③ 病人主動表達希望「自己能控制」',
+          '<strong>113、2024 真題答案：可做 cystostomy</strong>',
+          '<strong>Cystostomy 是「中間方案」</strong>：保留 indwelling 簡便 + 大幅減少 UTI、副睪炎、尿道糜爛',
+          '<strong>不論選哪個，原則是「以病人為中心」</strong> — 不是「醫師認為什麼最好」',
+        ],
+        a: `<h4>1. 決策框架</h4>
+
+<table>
+<tr><th>面向</th><th>問題</th></tr>
+<tr><td><strong>Patient values</strong></td><td>病人最在意的是什麼？舒適？獨立？陪家人？避免醫療介入？</td></tr>
+<tr><td><strong>Time horizon</strong></td><td>4-6 個月 — 投資學新技術的回報期 vs 立即可改善 QoL 的方案</td></tr>
+<tr><td><strong>Caregiver burden</strong></td><td>太太是退休護理師（有能力但年紀 62）；CIC 每 4-6 hr → 影響她的休息與探視時間</td></tr>
+<tr><td><strong>Reversibility</strong></td><td>選錯了能改回來嗎？Foley → cystostomy → CIC 的路徑都可逆</td></tr>
+<tr><td><strong>Symptom burden</strong></td><td>目前反覆 UTI 是病人最大困擾之一</td></tr>
+</table>
+
+<h4>2. 三個方案的評估</h4>
+
+<table>
+<tr><th>方案</th><th>優點</th><th>缺點</th><th>適合本病人</th></tr>
+<tr><td><strong>① 維持 Foley</strong></td><td>家屬最低負擔、簡單</td><td>UTI 持續、副睪炎風險、尿道糜爛、病人可能感不適</td><td>反覆 UTI → 不夠</td></tr>
+<tr><td><strong>② 拔 Foley 改 CIC</strong></td><td>UTI 最少、最 physiological、病人較有控制感</td><td>每 4-6 hr 一次、學習成本、家屬 / 病人時間消耗、夜間需起來導尿</td><td>⚠️ 餘命短，cost-benefit 不佳</td></tr>
+<tr><td><strong>③ Suprapubic cystostomy</strong></td><td>UTI 大幅減少、不影響尿道、家屬負擔仍低、可長期使用</td><td>需小手術（多在門診內視鏡可做）、stoma 照護、約 4-6 週換管</td><td><strong>✅ 最佳折衷</strong>（113、2024 真題答案）</td></tr>
+</table>
+
+<h4>3. 113、2024 真題：可做 Cystostomy 的理由</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Cystostomy 在癌末病人是合理選擇</strong>，因為：<br>
+① 顯著減少反覆 UTI（病人最大困擾之一）<br>
+② 避免 Foley 引發的副睪炎（後續題目延伸）<br>
+③ 不增加家屬日常負擔（換管頻率 4-6 週 vs CIC 每 4-6 小時）<br>
+④ 病人尿道舒適度改善<br>
+⑤ 手術本身侵入性低（門診內視鏡 / 局麻可做）<br>
+⑥ 改善病人「自我控制感」<br><br>
+<strong>關鍵</strong>：cystostomy 不是 CIC 的「失敗替代」，而是癌末病人的合理選擇。
+</p>
+
+<h4>4. SDM 對話流程</h4>
+
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>1. 確認病人對病情的理解</td><td>「您現在最知道您的狀況，剩下時間有限」</td></tr>
+<tr><td>2. 探詢價值觀</td><td>「在這幾個月裡，最重要的是什麼？舒服？陪家人？少進醫院？」</td></tr>
+<tr><td>3. 客觀說明三個選項</td><td>不偏袒、列出優缺點 + cost / benefit</td></tr>
+<tr><td>4. 確認家屬負擔可承受</td><td>太太、女兒能否輪班？</td></tr>
+<tr><td>5. 共同決策</td><td>不是醫師單方決定，也不是病人單獨承擔</td></tr>
+<tr><td>6. 預留改變空間</td><td>「未來不適合再調整」</td></tr>
+</table>
+
+<h4>5. ACP（Advance Care Planning）</h4>
+
+<ul>
+<li>本病人已簽 DNR — 已有 ACP 起點</li>
+<li><strong>病主法（&gt; 18 歲）</strong>：可預立醫療決定（AD），涵蓋末期、不可逆昏迷、植物人、極重失智、其他公告疾病</li>
+<li>除了急救，也應討論：管灌、人工呼吸、輸血、抗生素積極使用、住院 vs 在家 / 安寧</li>
+<li>本病人 ACP 應涵蓋：① 病房 vs 安寧 vs 居家 ② 反覆 UTI 是否每次都住院 ③ 失能進展時的選擇</li>
+</ul>
+
+<h4>6. 跟太太對話</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「我了解您擔心換來換去他更痛苦。我們有三個選項：<br><br>
+<strong>① 繼續 Foley</strong>：最簡單，但他這樣已經感染兩次了，未來可能更頻繁，每次都要抗生素、發燒、不舒服。<br><br>
+<strong>② 改 CIC（自己導尿）</strong>：他上肢功能正常，理論上可以學。但<strong>每 4-6 小時一次、夜間也要</strong>。對他剩下的時間來說，學新技術 + 頻繁中斷生活，可能不值得。<br><br>
+<strong>③ 做一個叫做「恥骨上膀胱造瘻」的小手術</strong>：在肚子下方開一個小口接管子取代尿道。可以接尿袋、感染少很多、不影響他的尿道、你們<strong>每 4-6 週換一次管子就好</strong>。<br><br>
+我會建議第三個選擇。但我想先問先生，他自己希望怎樣？這幾個月對他來說最重要的事是什麼？我們把醫療配合他的願望，不是反過來。」</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>113、2024 真題核心：餘命短 → 可考慮 cystostomy（不要硬推 CIC）</li>
+<li>決策框架：patient values + time horizon + caregiver burden + reversibility</li>
+<li>三個選項：Foley / CIC / Cystostomy 各有適應症</li>
+<li>Cystostomy 不是 CIC 的「失敗替代」，是癌末病人合理選擇</li>
+<li>SDM：與病人、家屬共同決策，不是醫師單方</li>
+<li>ACP / 病主法：DNR 已有，但完整 ACP 涵蓋更多面向</li>
+<li>反問病人「您最重要的是什麼」是癌末照護核心技巧</li>
+<li>Foley 長期 = 副睪炎、尿道糜爛、UTI、結石（後續延伸）</li>
+<li>Cystostomy 換管頻率 4-6 週，遠優於 CIC 每 4-6 hr</li>
+<li>留下「未來可調整」的空間 — 不要把決定當絕對</li>
+</ul>`,
+      },
+      {
+        q: '病人出現右側睪丸紅腫，請說明鑑別診斷與致病機轉。',
+        keywords: [
+          'Epididymo-orchitis',
+          'Testicular torsion',
+          'Hydrocele',
+          'Inguinal hernia',
+          'Testicular tumor',
+          'Mechanism in SCI: external sphincter spasm → high bladder pressure → reflux into vas deferens',
+          'Indwelling Foley = chronic colonization',
+          'E. coli, Pseudomonas common',
+          'Long-term Foley → urethritis → epididymitis',
+          'Doppler ultrasound',
+          'Treatment: antibiotics + α-blocker',
+          'Sphincterotomy / Botox external sphincter',
+          'Switch to suprapubic cystostomy',
+          'NSAID for pain',
+          'Scrotal elevation',
+        ],
+        points: [
+          '<strong>SCI 男性睪丸紅腫鑑別</strong>：副睪炎（最常）、testicular torsion、hydrocele、hernia、tumor',
+          '<strong>113、2024 真題核心：副睪炎機轉</strong>',
+          '<strong>機轉</strong>：① 外括約肌痙攣（DSD）→ ② 排尿時膀胱內壓飆高 → ③ <strong>尿液逆流入相對低壓的輸精管 (vas deferens) / 副睪</strong> → ④ 細菌感染、發炎',
+          '<strong>長期 Foley 的相關機轉</strong>：尿道與膀胱長期 colonization → 沿 vas deferens 上行性感染',
+          '<strong>本病人</strong>：T10 SCI + DSD + 長期 Foley + 反覆 UTI → 副睪炎風險極高',
+          '<strong>診斷</strong>：scrotal Doppler US（排除 torsion — 缺血 vs 副睪炎血流增加）、urine + blood culture',
+          '<strong>治療</strong>：① 抗生素（Ceftriaxone or fluoroquinolone，療程 2-4 週）② α-blocker 降括約肌阻力 ③ NSAID 止痛 ④ 抬高陰囊 ⑤ 反覆發作 → <strong>改 suprapubic cystostomy</strong> 或 sphincterotomy / Botox 外括',
+          '<strong>預防</strong>：規律換 Foley、降膀胱壓（antimuscarinic、Botox）、改 CIC 或 cystostomy',
+        ],
+        a: `<h4>1. 男性 SCI 睪丸 / 陰囊腫脹鑑別</h4>
+
+<table>
+<tr><th>診斷</th><th>特徵</th><th>診斷工具</th></tr>
+<tr><td><strong>副睪炎 / 睪丸炎（epididymo-orchitis）</strong></td><td>紅腫熱痛、發燒、UTI 史；SCI 病人最常</td><td>Doppler US（血流增加）、urine culture</td></tr>
+<tr><td><strong>Testicular torsion</strong></td><td>突發劇痛、睪丸 high-riding、horizontal lie；SCI 病人感覺缺失易遲診</td><td>Doppler US（無血流）</td></tr>
+<tr><td><strong>Hydrocele</strong></td><td>無痛、透光、緩慢</td><td>Transillumination + US</td></tr>
+<tr><td><strong>Inguinal hernia</strong></td><td>站立加劇、可推回、腸鳴音</td><td>PE + US</td></tr>
+<tr><td><strong>Testicular tumor</strong></td><td>無痛硬塊、年輕男性 / 老年</td><td>US + tumor markers（AFP、β-hCG、LDH）</td></tr>
+<tr><td><strong>Hematoma</strong></td><td>外傷史</td><td>US</td></tr>
+</table>
+
+<h4>2. SCI 副睪炎機轉（113、2024 真題核心）</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>機轉路徑（必背）</strong>：<br><br>
+<strong>外括約肌過度痙攣（DSD）</strong><br>
+↓<br>
+<strong>排尿時膀胱內壓飆升</strong>（&gt; 80 cmH₂O）<br>
+↓<br>
+<strong>尿液逆流進入相對低壓的輸精管 / 副睪</strong>（vas deferens / epididymis）<br>
+↓<br>
+<strong>細菌（多 E. coli、Pseudomonas、Enterococcus）感染</strong><br>
+↓<br>
+<strong>副睪炎 → 蔓延 → 睪丸炎</strong>
+</p>
+
+<h4>3. 長期 Foley 加成機轉</h4>
+
+<table>
+<tr><th>因素</th><th>影響</th></tr>
+<tr><td>Indwelling Foley</td><td>尿道與膀胱長期 bacterial colonization</td></tr>
+<tr><td>Foley balloon</td><td>機械刺激尿道、urethritis、骨盆底發炎</td></tr>
+<tr><td>細菌沿尿道 → vas deferens 上行</td><td>直接到副睪</td></tr>
+<tr><td>男性尿道長</td><td>但 SCI 病人因高壓 + Foley 削弱屏障</td></tr>
+</table>
+
+<h4>4. 治療</h4>
+
+<table>
+<tr><th>面向</th><th>內容</th></tr>
+<tr><td><strong>抗生素</strong></td><td>急性：Ceftriaxone IV / fluoroquinolone（complicated UTI 對應）；療程 <strong>2-4 週</strong>（比一般 UTI 長）</td></tr>
+<tr><td><strong>降括約肌阻力</strong></td><td>α-blocker（tamsulosin、silodosin）</td></tr>
+<tr><td><strong>降膀胱壓</strong></td><td>Antimuscarinic + 必要時 Botox detrusor</td></tr>
+<tr><td><strong>對症</strong></td><td>NSAID 止痛、抬高陰囊（scrotal elevation）、冷敷</td></tr>
+<tr><td><strong>反覆發作 → 升級</strong></td><td>① <strong>Suprapubic cystostomy</strong>（避開尿道，最佳長期方案）② Botox 外括約肌注射 ③ Sphincterotomy（不可逆，少做）</td></tr>
+</table>
+
+<h4>5. 本病人具體計畫</h4>
+
+<ol>
+<li>立即 Doppler US 排除 torsion（雖機率較低）</li>
+<li>Urine + blood culture 後 empirical Ceftriaxone IV</li>
+<li>NSAID 止痛、抬高陰囊</li>
+<li>α-blocker（tamsulosin 0.4mg qd）— 降括約肌阻力</li>
+<li><strong>強烈考慮改 suprapubic cystostomy</strong>（已反覆 UTI + 現副睪炎，Foley 已不適合）</li>
+<li>抗生素療程 2-4 週</li>
+<li>家屬衛教副睪炎 warning sign</li>
+</ol>
+
+<h4>6. 跟病人與太太說明</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+「先生右邊睪丸的紅腫是『副睪炎』，是 SCI 男性病人常見的併發症。<br><br>
+<strong>原因</strong>：因為脊髓損傷讓膀胱出口的肌肉太緊，排尿壓力很高，尿液會被『擠』回到輸精管 → 細菌跟著進入副睪 → 發炎。<strong>長期放尿管也會增加這個機率</strong>。<br><br>
+<strong>這次處理</strong>：靜脈注射抗生素 2-4 週、止痛、用藥讓括約肌放鬆。<br><br>
+<strong>長期建議</strong>：考慮我們前面討論過的<strong>恥骨上膀胱造瘻</strong>。一個關鍵原因就是：它<strong>不經過尿道</strong>，副睪炎會大幅減少。先生現在這個情況我覺得是時候做這個調整了。」</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>113、2024 真題：副睪炎機轉 — 外括太緊 → 膀胱壓高 → 逆流入輸精管</li>
+<li>SCI 男性睪丸腫脹首先想副睪炎，但仍要排除 torsion（Doppler）</li>
+<li>長期 Foley 是副睪炎重要 risk factor</li>
+<li>治療：抗生素 2-4 週（比一般 UTI 長）+ α-blocker + 對症</li>
+<li>反覆發作 → 改 suprapubic cystostomy（避開尿道）</li>
+<li>Sphincterotomy 不可逆，今多被 Botox 外括取代</li>
+<li>本病人有 DSD + 長期 Foley + 反覆 UTI → 副睪炎是預期內併發症</li>
+<li>癌末病人副睪炎處置不只看「治癒」，要看「整體 QoL 改善」</li>
+<li>抬高陰囊 + 冷敷是常被忽略的對症</li>
+<li>機轉題是 113、2024 真題的關鍵測驗點 — 必須能完整講出 DSD → 高壓 → 逆流路徑</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
