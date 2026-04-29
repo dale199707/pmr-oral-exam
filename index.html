@@ -39736,6 +39736,807 @@ ACL 受傷的力學原理：落地時膝關節呈 <strong>dynamic valgus</strong
       },
     ],
   },
+  {
+    id: 'ortho_002',
+    domain: 'msk',
+    title: 'AS（年輕男性下背痛、兵役判定）',
+    context: `26 歲男性，工程師（久坐）。
+主訴：下背痛 4 個月，越來越嚴重，<strong>偶爾延伸至左側臀部後側</strong>。
+特徵：晨僵 &gt; 60 分鐘、活動後改善、夜間翻身會痛醒。
+無外傷史、無 IBD / psoriasis / uveitis 病史。
+
+理學檢查：
+- BMI 22，無體重減輕
+- Lumbar ROM：flexion 受限、extension 受限、side-bending 雙側受限
+- <strong>Modified Schober test：增加 3.5 cm（正常 &gt; 5 cm）</strong>
+- SLRT：bilateral negative
+- <strong>FABER (+) 左側</strong>、<strong>SI distraction (+)</strong>、Gaenslen (+) 左
+- Chest expansion：3 cm（正常 &gt; 5 cm）
+- 無神經學異常
+
+實驗室：HLA-B27 (+)、ESR 38、CRP 1.8 mg/dL、RF (-)。
+病人問：「我能不能不用當兵？」`,
+    questions: [
+      {
+        q: '請給出 5 個不同部位（解剖層次）的鑑別診斷。',
+        keywords: [
+          '皮膚（VZV、shingles）',
+          '神經（Sciatica / L5-S1 radiculopathy）',
+          '肌肉（Piriformis syndrome）',
+          'Hip joint（OA、AVN、FAI）',
+          'Ischial tuberosity（hamstring origin、ischial bursitis）',
+          'SI joint（sacroiliitis、AS、PSA）',
+          'L-spine（HIVD、stenosis、spondylolisthesis）',
+          'Red flag：tumor、infection、cauda equina',
+        ],
+        points: [
+          '<strong>謝霖芬必考：「請列出 5 個不同部位的 DDx」</strong>',
+          '依解剖層次分層：皮膚 → 神經 → 肌肉 → 關節 → 骨骼 → 內臟',
+          '<strong>皮膚：VZV（herpes zoster）</strong>',
+          '神經：sciatica、L5-S1 radiculopathy',
+          '肌肉：piriformis syndrome、myofascial',
+          '關節：hip OA、SI joint（AS、PSA、reactive）',
+          '骨骼：ischial tuberosity、L-spine（HIVD、AS）',
+          '<strong>紅旗</strong>：tumor、infection、cauda equina、AAA',
+        ],
+        a: `<h4>1. 5 個不同部位的鑑別診斷（解剖分層）</h4>
+<table>
+<tr><th>解剖層次</th><th>診斷</th><th>關鍵特徵</th></tr>
+<tr><td><strong>皮膚</strong></td><td>Herpes zoster（VZV）</td><td>單側 dermatome 分布、水泡、allodynia</td></tr>
+<tr><td><strong>神經</strong></td><td>Sciatica（L5/S1 radiculopathy）</td><td>放射至小腿/腳、SLRT (+)、dermatome 麻</td></tr>
+<tr><td><strong>肌肉</strong></td><td>Piriformis syndrome</td><td>Beatty/Pace/Freiberg test (+)、深部臀痛</td></tr>
+<tr><td><strong>關節</strong></td><td>SI joint（sacroiliitis）</td><td>FABER/distraction/thigh thrust (+)、晨僵</td></tr>
+<tr><td><strong>骨骼</strong></td><td>L-spine（HIVD / AS / spondylolisthesis）</td><td>L-spine ROM 受限、神經學異常</td></tr>
+</table>
+
+<h4>2. 進階分類：發炎性 vs 機械性下背痛</h4>
+<table>
+<tr><th>特徵</th><th>發炎性（IBP）</th><th>機械性</th></tr>
+<tr><td><strong>晨僵</strong></td><td>&gt; 30 分鐘 ⭐</td><td>&lt; 30 分鐘</td></tr>
+<tr><td><strong>夜間痛</strong></td><td>有，半夜痛醒 ⭐</td><td>較少</td></tr>
+<tr><td><strong>活動後</strong></td><td>改善 ⭐</td><td>加重</td></tr>
+<tr><td><strong>休息後</strong></td><td>加重</td><td>改善</td></tr>
+<tr><td><strong>年齡</strong></td><td>&lt; 40-45 歲</td><td>任何年齡</td></tr>
+<tr><td><strong>NSAIDs</strong></td><td>反應極好 ⭐</td><td>部分反應</td></tr>
+</table>
+
+<h4>3. 紅旗（Red Flags）必排除</h4>
+<table>
+<tr><th>紅旗</th><th>對應疾病</th></tr>
+<tr><td>體重減輕、夜間痛、年齡 &gt; 50</td><td>Tumor / metastasis</td></tr>
+<tr><td>發燒、IVDU、近期感染</td><td>Spondylodiscitis、epidural abscess</td></tr>
+<tr><td>Saddle anesthesia、bowel/bladder dysfunction</td><td>Cauda equina syndrome</td></tr>
+<tr><td>外傷、骨質疏鬆病史</td><td>Compression fracture</td></tr>
+<tr><td>類固醇使用、雙側症狀</td><td>骨折、神經壓迫</td></tr>
+<tr><td>腹部搏動性腫塊</td><td>AAA</td></tr>
+</table>
+
+<h4>4. 本病人特徵符合 IBP 5 條</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>ASAS Inflammatory Back Pain Criteria（≥ 4 條 IBP 高度懷疑）</strong><br>
+① &lt; 40 歲發病 ✅<br>
+② 慢性發作（&gt; 3 個月）✅<br>
+③ 晨僵 &gt; 30 分鐘 ✅<br>
+④ 活動後改善 ✅<br>
+⑤ 半夜痛醒 ✅<br>
+→ 本病人 5/5 符合，<strong>高度懷疑 axial spondyloarthritis（特別是 AS）</strong>。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>解剖分層列 DDx</strong>：皮膚 → 神經 → 肌肉 → 關節 → 骨骼（必背框架）</li>
+<li>謝霖芬主問：5 個部位 DDx 是固定問法</li>
+<li><strong>IBP 4/5 條 → 高度懷疑 axSpA</strong></li>
+<li>紅旗必排除（tumor / infection / cauda equina）</li>
+<li><strong>VZV 易被忘記</strong>，皮膚層次必含</li>
+</ul>`,
+      },
+      {
+        q: '請在 SP 身上示範 5 個 SI joint 的理學檢查，並說明 Modified Schober test 操作。',
+        keywords: [
+          'Distraction test（仰臥、雙手壓 ASIS 向外下）',
+          'Compression test（側臥、壓 iliac crest 向中線）',
+          'Thigh thrust（仰臥、屈髖 90°、軸向壓）',
+          'Gaenslen test（一腳懸空、一腳屈髖）',
+          'Sacral thrust（俯臥、壓 sacrum）',
+          'FABER（Patrick test）',
+          'Laslett cluster：≥ 3/5 → 高 sensitivity',
+          'Modified Schober：L5-S1 + 10 cm 上 + 5 cm 下',
+        ],
+        points: [
+          '<strong>謝霖芬必考：「請示範 5 個 SI joint PE」</strong>',
+          'Distraction（會問：手壓在哪？→ ASIS 向外下、ipsilateral）',
+          'Compression（側臥患側朝上、壓 iliac crest）',
+          '<strong>Thigh thrust（站患側對側做更好）</strong>',
+          'Gaenslen test（檢查者在患側做）',
+          'Sacral thrust（俯臥、雙手壓 sacrum 中央）',
+          '<strong>Laslett cluster：5 個中 ≥ 3 個陽性 → sensitivity 91%、specificity 78%</strong>',
+          'Modified Schober：L5-S1 中點 + 上 10 cm + 下 5 cm，正常彎腰時增加 &gt; 5 cm',
+        ],
+        a: `<h4>1. SI Joint 5 個 PE（Laslett Provocation Tests）</h4>
+<table>
+<tr><th>Test</th><th>姿勢</th><th>操作</th></tr>
+<tr><td><strong>Distraction</strong></td><td>仰臥</td><td>雙手壓 <strong>兩側 ASIS 向外下</strong>（撐開 SI joint anterior ligaments）</td></tr>
+<tr><td><strong>Compression</strong></td><td>側臥（患側朝上）</td><td>雙手壓 iliac crest <strong>向中線</strong>（壓縮 SI joint posterior ligaments）</td></tr>
+<tr><td><strong>Thigh thrust</strong></td><td>仰臥（屈髖屈膝 90°）</td><td>檢查者站<strong>對側</strong>，雙手抱膝沿股骨軸向 <strong>向後（向下）施力</strong></td></tr>
+<tr><td><strong>Gaenslen</strong></td><td>仰臥（患側腳懸出床緣）</td><td>健側膝抱胸、患側腳懸空向下伸 → 患側 SI joint 受 stress</td></tr>
+<tr><td><strong>Sacral thrust</strong></td><td>俯臥</td><td>雙手交疊壓 <strong>sacrum 中央</strong>，向地面方向施力</td></tr>
+</table>
+
+<h4>2. Laslett Cluster 判讀</h4>
+<table>
+<tr><th>陽性數</th><th>診斷意義</th></tr>
+<tr><td>≥ 3/5 陽性</td><td><strong>SI joint pain 高度懷疑（sensitivity 91%、specificity 78%）</strong></td></tr>
+<tr><td>0/5 陽性</td><td>排除 SI joint pain（sensitivity 高 → 陰性可排除）</td></tr>
+<tr><td>常用 cluster</td><td>Distraction + Compression + Thigh thrust + Gaenslen + Sacral thrust</td></tr>
+</table>
+
+<h4>3. FABER（Patrick）Test</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>姿勢</td><td>仰臥，患側 <strong>F</strong>lexion + <strong>AB</strong>duction + <strong>E</strong>xternal <strong>R</strong>otation（4 字形）</td></tr>
+<tr><td>操作</td><td>一手固定對側 ASIS、另一手壓患側膝向外向下</td></tr>
+<tr><td>判讀</td><td>① 鼠蹊 / 髖前痛 → <strong>Hip joint 病變（OA/FAI）</strong><br>② 同側臀後痛 → <strong>SI joint / lumbar</strong></td></tr>
+<tr><td>意義</td><td>FABER 是「篩檢題」，可區分 hip vs SI joint，但 specificity 不高</td></tr>
+</table>
+
+<h4>4. Modified Schober Test 操作（必考）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>病人站立、雙腳併攏</td></tr>
+<tr><td>定位</td><td><strong>L5-S1 棘突連線（≈ Dimples of Venus / PSIS 連線中點）</strong></td></tr>
+<tr><td>標記</td><td>從定位點 <strong>向上 10 cm</strong> 標記、<strong>向下 5 cm</strong> 標記（總長 15 cm）</td></tr>
+<tr><td>動作</td><td>請病人 <strong>full forward flexion</strong>（彎腰摸地）</td></tr>
+<tr><td>測量</td><td>兩標記點間距離增加量</td></tr>
+<tr><td>判讀</td><td>正常 <strong>≥ 5 cm 增加</strong>；&lt; 5 cm 為腰椎僵硬（AS、HIVD、其他結構性問題）</td></tr>
+</table>
+
+<h4>5. AS 病人完整 axial PE 套裝</h4>
+<table>
+<tr><th>項目</th><th>正常值</th><th>AS 表現</th></tr>
+<tr><td>Modified Schober</td><td>≥ 5 cm 增加</td><td>&lt; 5 cm（本病人 3.5 cm）</td></tr>
+<tr><td>Chest expansion</td><td>≥ 5 cm（4th IC space）</td><td>&lt; 2.5 cm（晚期）</td></tr>
+<tr><td>Occiput-to-wall</td><td>0 cm（貼牆）</td><td>&gt; 0 cm（駝背）</td></tr>
+<tr><td>Tragus-to-wall</td><td>≤ 15 cm</td><td>&gt; 15 cm</td></tr>
+<tr><td>Cervical rotation</td><td>≥ 70°</td><td>受限</td></tr>
+<tr><td>Lateral lumbar flexion</td><td>≥ 10 cm</td><td>&lt; 10 cm</td></tr>
+<tr><td>Intermalleolar distance</td><td>髖關節 abduction，≥ 100 cm</td><td>受限</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>BASMI（Bath AS Metrology Index）</strong>是追蹤 AS 病人的標準工具，包含 5 項：<br>
+Lumbar flexion（Schober）+ Cervical rotation + Tragus-to-wall + Lumbar side flexion + Intermalleolar distance。<br>
+分數 0-10，數值越高僵硬越嚴重。臨床上每 6-12 個月追蹤。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>SI joint 5 PE（Laslett cluster）</strong>：Distraction、Compression、Thigh thrust、Gaenslen、Sacral thrust</li>
+<li><strong>Thigh thrust 站對側做更好</strong>（謝霖芬細節題）</li>
+<li>≥ 3/5 陽性 → SI joint pain 高度懷疑</li>
+<li><strong>Modified Schober：L5-S1 + 上 10 cm + 下 5 cm，正常 ≥ 5 cm</strong></li>
+<li>FABER 區分 hip（鼠蹊痛）vs SI joint（臀後痛）</li>
+<li>BASMI 5 項追蹤 AS 病程</li>
+</ul>`,
+      },
+      {
+        q: 'Pelvic X-ray 顯示雙側 SI joint grade III 變化。請判讀並說明 AS 診斷標準。',
+        keywords: [
+          'Sacroiliitis grading（NY 0-IV）',
+          'Modified New York Criteria',
+          'ASAS classification criteria',
+          'Bilateral SI joint sclerosis、erosions',
+          'Trolley track sign（vertebral body 邊緣鈣化）',
+          'Bamboo spine（晚期 syndesmophyte fusion）',
+          'Romanus lesion（shiny corner sign）',
+          'Pseudo-widening → narrowing → ankylosis',
+        ],
+        points: [
+          '<strong>Sacroiliitis grading（NY 0-IV）</strong>',
+          'Grade 0：正常；I：可疑；II：mild（erosion + sclerosis）',
+          'III：moderate（明確 erosion、sclerosis、widening/narrowing）',
+          'IV：ankylosis（完全融合）',
+          '<strong>Modified NY criteria：bilateral grade ≥ II 或 unilateral grade ≥ III + 1 個臨床條件</strong>',
+          '臨床條件：① 下背痛 &gt; 3 個月、活動改善 ② 腰椎 ROM 受限 ③ chest expansion 受限',
+          '<strong>Trolley track sign</strong>：vertebral body 邊緣鈣化（lateral view 可見）',
+          'Bamboo spine（晚期）、Romanus lesion / shiny corner sign（早期）',
+        ],
+        a: `<h4>1. Sacroiliitis 分級（New York Grading 0-IV）</h4>
+<table>
+<tr><th>Grade</th><th>X-ray 表現</th></tr>
+<tr><td>0</td><td>正常</td></tr>
+<tr><td>I</td><td>可疑（suspicious changes）</td></tr>
+<tr><td>II</td><td>Mild：限定範圍 erosion 或 sclerosis、無 joint width 變化</td></tr>
+<tr><td><strong>III</strong></td><td><strong>Moderate</strong>：明確 erosion、sclerosis、widening/narrowing、partial ankylosis</td></tr>
+<tr><td>IV</td><td>Total ankylosis（完全融合）</td></tr>
+</table>
+
+<h4>2. Modified New York Criteria（1984）</h4>
+<table>
+<tr><th>類別</th><th>內容</th></tr>
+<tr><td><strong>Radiologic criterion（必須）</strong></td><td><strong>Bilateral grade ≥ II</strong> 或 <strong>Unilateral grade ≥ III-IV</strong></td></tr>
+<tr><td><strong>Clinical criteria（≥ 1）</strong></td><td>① 下背痛 &gt; 3 個月，活動改善、休息加重<br>② Lumbar spine 三方向 ROM 受限（flexion/lateral flexion）<br>③ Chest expansion &lt; 2.5 cm（依年齡性別）</td></tr>
+<tr><td><strong>Definite AS</strong></td><td>Radiologic + ≥ 1 clinical criterion</td></tr>
+</table>
+
+<h4>3. ASAS Classification Criteria（2009）— 進階分類</h4>
+<table>
+<tr><th>條件</th><th>內容</th></tr>
+<tr><td><strong>進入條件</strong></td><td>下背痛 ≥ 3 個月，發病 &lt; 45 歲</td></tr>
+<tr><td><strong>Imaging arm</strong></td><td>Sacroiliitis on imaging（X-ray Modified NY 標準 或 <strong>MRI active inflammation</strong>）+ ≥ 1 SpA 特徵</td></tr>
+<tr><td><strong>Clinical arm</strong></td><td>HLA-B27 (+) + ≥ 2 SpA 特徵</td></tr>
+<tr><td><strong>SpA 特徵</strong></td><td>① IBP ② Arthritis ③ Enthesitis（heel）④ Uveitis ⑤ Dactylitis ⑥ Psoriasis ⑦ IBD ⑧ NSAIDs 反應好 ⑨ 家族史 ⑩ HLA-B27 (+) ⑪ ↑ CRP</td></tr>
+</table>
+
+<h4>4. AS 進階 X-ray 特徵（必認得）</h4>
+<table>
+<tr><th>影像 Sign</th><th>位置 / 意義</th></tr>
+<tr><td><strong>Sacroiliitis</strong></td><td>SI joint：pseudowidening → erosion → sclerosis → narrowing → ankylosis</td></tr>
+<tr><td><strong>Romanus lesion / Shiny corner</strong></td><td>Vertebral body 角落 erosion + reactive sclerosis（早期）</td></tr>
+<tr><td><strong>Squaring of vertebrae</strong></td><td>Vertebral body 前緣 erosion → 變方形（早期）</td></tr>
+<tr><td><strong>Syndesmophyte</strong></td><td>Vertebral body 邊緣 vertical 鈣化橋（vs DISH 是 flowing）</td></tr>
+<tr><td><strong>Bamboo spine</strong></td><td>多節 syndesmophyte 融合（晚期、不可逆）</td></tr>
+<tr><td><strong>Trolley track sign</strong></td><td>AP view：spinous process + facet joints + ALL 三條垂直鈣化線（晚期）</td></tr>
+<tr><td><strong>Dagger sign</strong></td><td>AP view：interspinous + supraspinous ligament 鈣化（中央單一垂直線）</td></tr>
+<tr><td><strong>Andersson lesion</strong></td><td>Disc 周圍 erosion + sclerosis（pseudoarthrosis）</td></tr>
+</table>
+
+<h4>5. 本病人診斷確認</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Modified NY 診斷確認</strong><br>
+✅ Radiologic：Bilateral SI joint grade III（&gt; bilateral grade II 或 unilateral III）<br>
+✅ Clinical：① 下背痛 &gt; 3 個月、活動改善 ② Schober 3.5 cm（&lt; 5）腰椎 ROM 受限 ③ Chest expansion 3 cm（&lt; 5）<br>
+→ <strong>Definite Ankylosing Spondylitis（AS）</strong><br>
++ HLA-B27 (+)、CRP ↑ → 預後評估 + 藥物選擇參考
+</p>
+
+<h4>6. AS vs DISH（重要 DDx）</h4>
+<table>
+<tr><th>特徵</th><th>AS</th><th>DISH</th></tr>
+<tr><td>Syndesmophyte 形態</td><td>Vertical、thin（marginal）</td><td>Flowing、thick（non-marginal）</td></tr>
+<tr><td>SI joint</td><td><strong>Sacroiliitis（必有）</strong></td><td>正常</td></tr>
+<tr><td>Disc space</td><td>保留</td><td>保留</td></tr>
+<tr><td>年齡</td><td>年輕（20-40）</td><td>老年（&gt; 50）</td></tr>
+<tr><td>HLA-B27</td><td>(+) 90%</td><td>(-)</td></tr>
+<tr><td>診斷標準</td><td>Modified NY</td><td>Resnick：≥ 4 節 vertebral body 連續 flowing ossification</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Sacroiliitis grading 0-IV</strong>（必背）</li>
+<li><strong>Modified NY：bilateral grade ≥ II 或 unilateral ≥ III + 1 clinical</strong></li>
+<li>謝霖芬 X-ray 陷阱：要看 SI joint，不只是 hip joint（pelvis frog view）</li>
+<li><strong>Trolley track sign（3 條垂直線）vs Dagger sign（1 條垂直線）</strong></li>
+<li>AS：bilateral；reactive arthritis：unilateral；PSA：asymmetric</li>
+<li>AS vs DISH：SI joint 受影響 → AS；syndesmophyte 形態（thin marginal vs flowing）</li>
+</ul>`,
+      },
+      {
+        q: 'Spinal MRI 顯示多節 vertebral corner bone marrow edema。請判讀 AS 的 MRI 特徵。',
+        keywords: [
+          'STIR / T2 fat sat: bone marrow edema',
+          'T1: fatty replacement (chronic)',
+          'Active inflammation: Romanus lesion',
+          'Anderson lesion (discitis-like)',
+          'Sacroiliitis on MRI（active vs structural）',
+          'ASAS MRI definition: ≥ 1 lesion on ≥ 2 slices 或 ≥ 2 lesions on 1 slice',
+          'Enthesitis（接骨點發炎）',
+          'Costovertebral / facet joint involvement',
+        ],
+        points: [
+          '<strong>STIR/T2 fat sat 看活動性發炎（high signal = bone marrow edema）</strong>',
+          '<strong>T1 看慢性結構變化（fatty replacement、erosion、ankylosis）</strong>',
+          'Active sacroiliitis：subchondral bone marrow edema',
+          'Romanus lesion：vertebral corner edema → 慢性 → fatty replacement',
+          '<strong>Andersson lesion</strong>：disc-vertebral 接合處 erosion + sclerosis（pseudoarthrosis）',
+          'ASAS MRI 標準：≥ 1 lesion on ≥ 2 slices 或 ≥ 2 lesions on 1 slice',
+          'MRI 比 X-ray 早 5-10 年偵測（pre-radiographic axSpA）',
+          'Enthesitis：肌腱韌帶接骨點水腫（heel、SI joint、 vertebrae）',
+        ],
+        a: `<h4>1. AS 的 MRI Sequence 與用途</h4>
+<table>
+<tr><th>Sequence</th><th>看什麼</th></tr>
+<tr><td><strong>STIR / T2 fat sat（最重要）</strong></td><td><strong>Active inflammation</strong>（bone marrow edema → 高訊號）</td></tr>
+<tr><td>T1</td><td>解剖、慢性結構變化（fatty replacement、erosion、ankylosis）</td></tr>
+<tr><td>T1 with contrast</td><td>Synovitis、enhancement，non-contrast STIR 已足夠</td></tr>
+<tr><td>常用 plane</td><td>Sagittal（vertebra）、Coronal oblique（SI joint）</td></tr>
+</table>
+
+<h4>2. AS 的 MRI Findings</h4>
+<table>
+<tr><th>Finding</th><th>位置 / 意義</th></tr>
+<tr><td><strong>Active sacroiliitis</strong></td><td>SI joint subchondral bone marrow edema（最早期、最敏感）</td></tr>
+<tr><td><strong>Romanus lesion / Anterior corner inflammatory lesion (ACIL)</strong></td><td>Vertebral body 前 corner 高訊號（早期）→ 慢性後變 fatty replacement</td></tr>
+<tr><td><strong>Andersson lesion</strong></td><td>Disc-vertebral junction erosion + edema（pseudoarthrosis）</td></tr>
+<tr><td><strong>Enthesitis</strong></td><td>肌腱韌帶接骨點水腫（後韌帶、interspinous）</td></tr>
+<tr><td><strong>Costovertebral joint involvement</strong></td><td>胸椎肋骨關節 → chest expansion 受限機轉</td></tr>
+<tr><td><strong>Facet joint synovitis</strong></td><td>Facet 周圍水腫</td></tr>
+<tr><td><strong>Fatty replacement</strong></td><td>T1 高訊號（慢性化指標、不可逆）</td></tr>
+<tr><td><strong>Syndesmophyte / Ankylosis</strong></td><td>晚期影像，骨橋形成</td></tr>
+</table>
+
+<h4>3. ASAS MRI Active Sacroiliitis Definition（2009）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Active sacroiliitis on MRI</strong>：<br>
+STIR/T2 fat sat 上 subchondral bone marrow edema，且：<br>
+① <strong>≥ 1 個 lesion 出現在 ≥ 2 個連續切片</strong>，或<br>
+② <strong>同一切片上 ≥ 2 個 lesions</strong><br>
+→ 即可定義為 active sacroiliitis（不需 X-ray 變化即可診斷 axial SpA）。<br>
+<strong>意義</strong>：MRI 比 X-ray 早 5-10 年偵測，是 <strong>nr-axSpA（non-radiographic axSpA）</strong>診斷的關鍵。
+</p>
+
+<h4>4. axSpA 兩大型態</h4>
+<table>
+<tr><th>類型</th><th>定義</th><th>進展</th></tr>
+<tr><td><strong>r-axSpA（AS）</strong></td><td>X-ray 已有 sacroiliitis（Modified NY）</td><td>已是慢性結構性病變</td></tr>
+<tr><td><strong>nr-axSpA</strong></td><td>X-ray 正常，但 MRI 有 active sacroiliitis 或 ≥ 2 SpA 特徵 + HLA-B27</td><td>~10-40% 在 5-10 年進展為 AS</td></tr>
+</table>
+
+<h4>5. 本病人 MRI 推測</h4>
+<table>
+<tr><th>Finding</th><th>意義</th></tr>
+<tr><td>Active sacroiliitis（bilateral subchondral edema）</td><td>急性發炎 → 對抗發炎治療反應好</td></tr>
+<tr><td>Multiple Romanus lesions（vertebral corner edema）</td><td>多節脊椎 active inflammation</td></tr>
+<tr><td>已有 X-ray bilateral grade III</td><td>已是 r-axSpA（AS）</td></tr>
+<tr><td>無 fatty replacement / 無 ankylosis</td><td>慢性化未完全、有治療空間</td></tr>
+</table>
+
+<h4>6. SPARCC Score（追蹤工具）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>SPARCC（Spondyloarthritis Research Consortium of Canada）SI joint MRI score</strong>：<br>
+量化 active sacroiliitis 的 0-72 分系統，用於藥物治療反應評估。<br>
+臨床 / 研究中常用，配合 BASDAI / BASMI 全面追蹤。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>STIR/T2 fat sat = active inflammation；T1 = chronic structural</strong></li>
+<li><strong>Romanus lesion = vertebral corner edema</strong>（早期）</li>
+<li><strong>Andersson lesion = disc-vertebra pseudoarthrosis</strong></li>
+<li><strong>ASAS MRI 標準：≥ 1 lesion on ≥ 2 slices 或 ≥ 2 on 1 slice</strong></li>
+<li>MRI 比 X-ray 早 5-10 年偵測（nr-axSpA 關鍵）</li>
+<li>診斷確認後仍需 MRI：① 評估 active inflammation ② 預測藥物反應 ③ 鑑別 disc / nerve / red flag</li>
+</ul>`,
+      },
+      {
+        q: 'AS 的藥物治療階梯為何？生物製劑何時介入？',
+        keywords: [
+          'NSAIDs 第一線（celecoxib、indomethacin、naproxen）',
+          'PT + 衛教（藥物前提）',
+          'csDMARDs（sulfasalazine、MTX）對 axial 無效',
+          'TNFi（adalimumab、etanercept、infliximab、golimumab、certolizumab）',
+          'IL-17i（secukinumab、ixekizumab）',
+          'JAK inhibitor（tofacitinib、upadacitinib）',
+          'BASDAI ≥ 4 + 2 種 NSAIDs 失敗 → 生物製劑',
+          'TNFi 副作用：感染、TB reactivation',
+        ],
+        points: [
+          '<strong>第一線：NSAIDs + PT + 衛教</strong>（4 週嘗試）',
+          '<strong>NSAIDs 規則使用比 PRN 更有效</strong>',
+          'csDMARDs（sulfasalazine、MTX）對 <strong>axial 無效</strong>，僅 peripheral arthritis 有效',
+          '<strong>TNFi 第一線生物製劑</strong>：5 種選擇（infliximab、etanercept 等）',
+          'IL-17i 第二線：對 axial 反應好；<strong>避免用於 IBD（會惡化）</strong>',
+          'JAK inhibitor 為較新選擇',
+          '<strong>生物製劑 indication：BASDAI ≥ 4 + ≥ 2 種 NSAIDs 失敗（≥ 2-4 週每種）</strong>',
+          'TNFi 啟動前必排除：TB、HBV、HCV、HIV',
+        ],
+        a: `<h4>1. AS 藥物治療階梯（ASAS-EULAR 2022）</h4>
+<table>
+<tr><th>階梯</th><th>藥物</th><th>備註</th></tr>
+<tr><td><strong>第一線</strong></td><td>NSAIDs + PT + 衛教</td><td>嘗試 ≥ 2 種 NSAIDs，每種 ≥ 2-4 週</td></tr>
+<tr><td><strong>第二線（peripheral）</strong></td><td>csDMARDs：sulfasalazine、methotrexate</td><td><strong>對 axial 無效，僅 peripheral arthritis 有效</strong></td></tr>
+<tr><td><strong>第二線（axial）</strong></td><td><strong>bDMARDs：TNFi 或 IL-17i</strong></td><td>BASDAI ≥ 4 + NSAIDs 失敗</td></tr>
+<tr><td><strong>第三線</strong></td><td>切換至另一種 bDMARDs（TNFi ↔ IL-17i）</td><td>第一個生物製劑無效或失效</td></tr>
+<tr><td><strong>新型</strong></td><td>JAK inhibitor（tofacitinib、upadacitinib）</td><td>口服選擇</td></tr>
+<tr><td><strong>輔助</strong></td><td>Local 注射（IA、enthesitis）</td><td>類固醇 IA 注射 → enthesitis、SI joint</td></tr>
+<tr><td><strong>避免</strong></td><td><strong>長期口服 systemic steroid</strong></td><td>對 axial 無效，副作用大</td></tr>
+</table>
+
+<h4>2. NSAIDs 使用要點</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>第一線</td><td>Celecoxib、indomethacin、naproxen、etoricoxib</td></tr>
+<tr><td>劑量</td><td>足量、規則使用（&gt; PRN）</td></tr>
+<tr><td>嘗試時程</td><td>≥ 2 種、每種 ≥ 2-4 週</td></tr>
+<tr><td>反應評估</td><td>BASDAI、夜間痛、晨僵時間、活動度</td></tr>
+<tr><td>副作用</td><td>GI、CV、腎、CNS（indomethacin）</td></tr>
+<tr><td>連續使用</td><td>有研究顯示可<strong>延緩 radiographic progression</strong></td></tr>
+</table>
+
+<h4>3. 生物製劑（bDMARDs）介入時機</h4>
+<table>
+<tr><th>條件</th><th>內容</th></tr>
+<tr><td><strong>Active disease</strong></td><td>BASDAI ≥ 4 / 10 + 醫師整體評估</td></tr>
+<tr><td><strong>NSAIDs 失敗</strong></td><td>≥ 2 種 NSAIDs，每種 ≥ 2-4 週</td></tr>
+<tr><td><strong>對 peripheral arthritis</strong></td><td>需嘗試 csDMARDs（SSZ、MTX）</td></tr>
+<tr><td><strong>啟動前篩檢</strong></td><td>TB（IGRA / TST）、HBV、HCV、HIV、CXR、心衰、demyelinating disease</td></tr>
+</table>
+
+<h4>4. 生物製劑選擇</h4>
+<table>
+<tr><th>類別</th><th>藥物</th><th>備註</th></tr>
+<tr><td><strong>TNFi</strong></td><td>Infliximab（IV）、adalimumab（SC）、etanercept（SC）、golimumab（SC）、certolizumab（SC）</td><td>第一線生物製劑</td></tr>
+<tr><td><strong>IL-17i</strong></td><td>Secukinumab、ixekizumab</td><td>對 axial 反應好；<strong>禁忌：IBD（會誘發/惡化）</strong></td></tr>
+<tr><td><strong>JAK inhibitor</strong></td><td>Tofacitinib、upadacitinib</td><td>口服、近年加入；副作用 VTE、感染</td></tr>
+</table>
+
+<h4>5. TNFi 重要副作用 / 禁忌</h4>
+<table>
+<tr><th>副作用 / 禁忌</th><th>備註</th></tr>
+<tr><td><strong>TB reactivation（最重要）</strong></td><td>啟動前必須 IGRA + CXR；潛伏 TB → 治療 ≥ 1 個月後啟動</td></tr>
+<tr><td>HBV reactivation</td><td>HBsAg / HBcAb 篩檢；必要時 antiviral prophylaxis</td></tr>
+<tr><td>感染（細菌、機會性）</td><td>嚴重感染風險 ↑</td></tr>
+<tr><td>Demyelinating disease</td><td>MS / 視神經炎 → 禁忌</td></tr>
+<tr><td>心衰（NYHA III-IV）</td><td>禁忌</td></tr>
+<tr><td>惡性腫瘤</td><td>過去 5 年活動性癌症慎用</td></tr>
+<tr><td>Drug-induced lupus</td><td>少見</td></tr>
+</table>
+
+<h4>6. 治療反應評估（必背工具）</h4>
+<table>
+<tr><th>工具</th><th>內容</th></tr>
+<tr><td><strong>BASDAI</strong></td><td>Bath AS Disease Activity Index：6 題自評（疲勞、脊椎痛、周邊關節、enthesitis、晨僵程度、晨僵時間），0-10 分；≥ 4 為 active</td></tr>
+<tr><td><strong>ASDAS</strong></td><td>AS Disease Activity Score：含 CRP，更客觀；&lt; 1.3 inactive、≥ 2.1 high、≥ 3.5 very high</td></tr>
+<tr><td><strong>BASFI</strong></td><td>Functional Index：日常活動 10 題</td></tr>
+<tr><td><strong>BASMI</strong></td><td>Metrology Index：5 項 ROM 測量</td></tr>
+<tr><td>治療反應</td><td>BASDAI 改善 ≥ 50% 或 ≥ 2 點；3-6 個月評估</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人治療建議</strong><br>
+26 歲、HLA-B27 (+)、bilateral SI III、active inflammation on MRI、CRP 1.8。<br>
+→ <strong>第一步</strong>：NSAIDs（celecoxib 200 mg BID 或 naproxen 500 mg BID）規則使用 4 週 + PT。<br>
+→ <strong>追蹤</strong>：BASDAI、夜間痛、晨僵時間。<br>
+→ 若 4 週後 BASDAI 仍 ≥ 4 → 換另一種 NSAIDs 4 週。<br>
+→ 仍無效（共 ≥ 2 種 NSAIDs 失敗）→ <strong>啟動 TNFi</strong>（先 TB / HBV 篩檢）。<br>
+→ 局部關節炎可考慮 IA steroid 注射（避免反覆）。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>第一線：NSAIDs + PT + 衛教</strong></li>
+<li><strong>csDMARDs（SSZ、MTX）對 axial 無效</strong>，僅 peripheral arthritis 有效</li>
+<li><strong>生物製劑 indication：BASDAI ≥ 4 + ≥ 2 種 NSAIDs 失敗</strong></li>
+<li>TNFi 啟動前必篩 <strong>TB（IGRA + CXR）+ HBV/HCV/HIV</strong></li>
+<li><strong>IL-17i 禁忌 IBD</strong>（會惡化）</li>
+<li>長期口服 steroid 對 AS axial 無效，避免使用</li>
+<li>追蹤工具：<strong>BASDAI / ASDAS / BASFI / BASMI</strong></li>
+</ul>`,
+      },
+      {
+        q: '請設計 AS 病人完整復健計畫，包含 PT、OT、姿勢、心肺。',
+        keywords: [
+          '伸展（脊椎、髖、肩）',
+          'McKenzie extension exercise',
+          'Postural training（avoid kyphosis）',
+          '深呼吸 + chest expansion',
+          '游泳（最佳整體運動）',
+          'Aerobic exercise（心血管預防）',
+          'OT：日常活動、職業調整、人因工程',
+          'Group-based vs home-based program',
+          '避免接觸性運動、避免高衝擊',
+        ],
+        points: [
+          '<strong>運動是 AS 治療核心，不只是輔助</strong>',
+          '<strong>四大支柱：伸展、姿勢、深呼吸、有氧</strong>',
+          '伸展：脊椎、肩、髖（特別 hip extension、IR）',
+          '<strong>姿勢訓練避免 kyphosis（俯臥 30 min/day、prone position）</strong>',
+          '深呼吸 + chest expansion 防止胸廓融合',
+          '<strong>游泳是 AS 最佳整體運動</strong>',
+          'Group-based 比 home-based 效果好（社交支持 + 督促）',
+          '<strong>避免：接觸性運動、過度屈曲、高衝擊跳躍</strong>',
+        ],
+        a: `<h4>1. AS 復健治療四大支柱</h4>
+<table>
+<tr><th>支柱</th><th>內容</th></tr>
+<tr><td><strong>① 伸展（Stretching）</strong></td><td>脊椎、肩、髖、膝；特別 hip extension、IR、shoulder ROM</td></tr>
+<tr><td><strong>② 姿勢（Posture）</strong></td><td>避免 kyphosis、俯臥訓練、人因工程、書桌椅高度</td></tr>
+<tr><td><strong>③ 深呼吸（Breathing）</strong></td><td>胸廓擴張、incentive spirometry、橫膈膜呼吸</td></tr>
+<tr><td><strong>④ 有氧（Aerobic）</strong></td><td>游泳、walking、cycling；防止心血管共病</td></tr>
+</table>
+
+<h4>2. 伸展運動處方</h4>
+<table>
+<tr><th>部位</th><th>動作</th></tr>
+<tr><td><strong>脊椎</strong></td><td>Cat-cow、cobra（McKenzie extension）、segmental rotation</td></tr>
+<tr><td><strong>肩</strong></td><td>Wand exercise（前舉 / 外展 / 外旋）、wall climb</td></tr>
+<tr><td><strong>髖</strong></td><td>Hip extension（俯臥抬腿）、IR、ABD、Thomas position 反向（防 flexion contracture）</td></tr>
+<tr><td><strong>膝</strong></td><td>Quadriceps、hamstring 伸展（防膝彎曲縮短）</td></tr>
+<tr><td><strong>頻率</strong></td><td>每日 ≥ 1 次、每組 30 秒、3-5 次</td></tr>
+</table>
+
+<h4>3. 姿勢訓練（重點：避免 Kyphosis）</h4>
+<table>
+<tr><th>策略</th><th>內容</th></tr>
+<tr><td><strong>俯臥訓練</strong></td><td><strong>每日俯臥 30 分鐘</strong>（讀書、看電視時），延伸髖與脊椎</td></tr>
+<tr><td>姿勢自我覺察</td><td>鏡前檢查、occiput-to-wall test 自我追蹤</td></tr>
+<tr><td>人因工程</td><td>螢幕高度與眼平視、坐姿支撐、避免低頭工作</td></tr>
+<tr><td>睡眠</td><td>硬床墊、薄枕（避免 cervical flexion）、避免側睡蜷曲</td></tr>
+<tr><td>站姿</td><td>Wall posture：occiput、scapula、buttocks、heels 貼牆</td></tr>
+</table>
+
+<h4>4. 心肺訓練</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>深呼吸</strong></td><td>橫膈膜呼吸、6-pack breathing；每日 ≥ 10 次深呼吸</td></tr>
+<tr><td><strong>Incentive spirometry</strong></td><td>胸廓擴張訓練、可量化追蹤</td></tr>
+<tr><td><strong>有氧運動</strong></td><td>每週 ≥ 150 min 中強度（預防心血管疾病）</td></tr>
+<tr><td><strong>游泳</strong></td><td>水中減少關節負擔、全身運動、伸展 + 心肺<br><strong>最推薦的整體運動</strong></td></tr>
+<tr><td>cycling</td><td>注意姿勢避免長期前傾</td></tr>
+</table>
+
+<h4>5. OT 與日常生活</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>日常活動</td><td>家事分散、避免長時間同一姿勢、定時起身伸展</td></tr>
+<tr><td>職業調整</td><td>避免久坐、可調整桌椅、定時休息</td></tr>
+<tr><td>駕駛</td><td>後視鏡頸部旋轉受限 → 加裝 wide-angle mirror、blind spot mirror</td></tr>
+<tr><td>身體保護</td><td>跌倒時避免脊椎骨折（晚期 AS 脊椎僵硬 → 易 chalk-stick fracture）</td></tr>
+<tr><td>輔具</td><td>長柄取物器（hip flexion 受限）、穿襪輔助器、鞋拔</td></tr>
+</table>
+
+<h4>6. Group-based vs Home-based</h4>
+<table>
+<tr><th>類型</th><th>優點</th></tr>
+<tr><td><strong>Group-based（醫院 / 社區課程）</strong></td><td>督促、社交支持、技術正確、成效顯著（研究證實 &gt; home-based）</td></tr>
+<tr><td>Home-based</td><td>方便、成本低、需強自律</td></tr>
+<tr><td>Spa therapy</td><td>溫泉 + 運動，研究顯示有助緩解</td></tr>
+</table>
+
+<h4>7. 應避免的活動</h4>
+<table>
+<tr><th>活動</th><th>原因</th></tr>
+<tr><td>接觸性運動（橄欖球、武術）</td><td>晚期 AS 脊椎僵硬，受傷易 chalk-stick fracture</td></tr>
+<tr><td>過度屈曲動作（仰臥起坐、深前彎）</td><td>會加重 kyphosis</td></tr>
+<tr><td>高衝擊跳躍</td><td>對 SI joint、骨質疏鬆者風險高</td></tr>
+<tr><td>過度休息</td><td>反而加速僵硬</td></tr>
+</table>
+
+<h4>8. 共病預防</h4>
+<table>
+<tr><th>共病</th><th>預防</th></tr>
+<tr><td>骨質疏鬆</td><td>BMD 追蹤、鈣 + Vit D、有氧運動、戒菸</td></tr>
+<tr><td>心血管疾病（CV risk ↑ 60%）</td><td>有氧運動、戒菸、控制血壓血脂</td></tr>
+<tr><td>Uveitis</td><td>視力模糊立即眼科</td></tr>
+<tr><td>IBD</td><td>消化道症狀注意</td></tr>
+<tr><td>憂鬱、慢性疲勞</td><td>多模式介入、心理支持</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人客製化處方</strong><br>
+26 歲工程師（久坐）→ <strong>姿勢人因工程是首要</strong>。<br>
+推薦每天：<br>
+① 早上 15 min 全身伸展（特別 hip + chest）<br>
+② 工作每 30-60 分鐘起身做 5 個 cobra extension<br>
+③ 中午 / 晚上俯臥 30 分鐘<br>
+④ 每週 3-5 次游泳或快走 30 分鐘以上<br>
+⑤ 每月參加 AS 病友支持團體運動課<br>
+⑥ 避免長時間低頭看手機、不熬夜
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>運動是 AS 治療核心</strong>（與藥物並列），不是輔助</li>
+<li><strong>四大支柱：伸展 + 姿勢 + 深呼吸 + 有氧</strong></li>
+<li><strong>俯臥 30 min/day</strong> 是經典處方（避免 kyphosis）</li>
+<li><strong>游泳是最佳整體運動</strong></li>
+<li><strong>Group-based &gt; home-based</strong>（社交 + 督促 + 技術）</li>
+<li>避免接觸性運動、過度屈曲、高衝擊</li>
+<li>共病預防：骨質疏鬆、心血管、uveitis</li>
+</ul>`,
+      },
+      {
+        q: '病人問：「我能不能不用當兵？」請說明 AS 兵役體位判定標準。',
+        keywords: [
+          '徵兵規則 體位區分標準',
+          '免役（戊等）vs 替代役（丙等）',
+          '常備役（甲等、乙等）',
+          '脊椎部分：第十六條',
+          'AS 免役條件：HLA-B27(+) + 影像學確診 + 臨床症狀',
+          'Modified Schober &lt; 2.5 cm（部分版本）',
+          'Chest expansion &lt; 2.5 cm',
+          '需附醫院診斷證明 + 影像 + HLA',
+        ],
+        points: [
+          '<strong>兵役判定 = 體位區分標準（內政部役政署）</strong>',
+          '<strong>戊等（免役）</strong>：身高 / BMI 極端、嚴重失能、AS 確診且嚴重',
+          '<strong>丙等（替代役）</strong>：中度失能、AS 確診但功能尚可',
+          '常備役（甲、乙等）：健康 / 輕微異常',
+          'AS 免役條件（一般版本）：HLA-B27 (+) + 影像學 sacroiliitis + 臨床確診',
+          '<strong>單純 HLA-B27 (+) 不算</strong>，需有影像 + 臨床',
+          '需準備：醫院診斷書（≥ 6 個月追蹤）、X-ray / MRI、HLA-B27 報告',
+          '提醒病人：不應為了免役延誤治療，疾病本身比兵役重要',
+        ],
+        a: `<h4>1. 兵役體位區分（4 等級）</h4>
+<table>
+<tr><th>體位</th><th>對應</th><th>說明</th></tr>
+<tr><td><strong>甲等</strong></td><td>常備役</td><td>身體健康、適合服役</td></tr>
+<tr><td><strong>乙等</strong></td><td>常備役</td><td>輕微異常但可服役</td></tr>
+<tr><td><strong>丙等</strong></td><td>替代役 / 補充役</td><td>中度異常、不適合常備役</td></tr>
+<tr><td><strong>丁等</strong></td><td>免役</td><td>顯著失能（過往已合併入戊等）</td></tr>
+<tr><td><strong>戊等</strong></td><td>免役</td><td>嚴重失能或重大疾病</td></tr>
+</table>
+
+<h4>2. AS 兵役判定的關鍵</h4>
+<table>
+<tr><th>條件</th><th>內容</th></tr>
+<tr><td><strong>必備證據</strong></td><td>① <strong>HLA-B27 (+)</strong><br>② <strong>影像學證據</strong>（X-ray Modified NY 標準 或 MRI active sacroiliitis）<br>③ <strong>臨床症狀 ≥ 6 個月</strong>（IBP、晨僵、活動受限）<br>④ 醫院（教學醫院）正式診斷書</td></tr>
+<tr><td><strong>體位判定（一般版本）</strong></td><td>戊等（免役）：AS 確診 + 顯著功能受限（脊椎僵硬、ROM 嚴重受限）<br>丙等（替代役）：AS 確診但功能受限尚輕</td></tr>
+<tr><td><strong>檢查項目</strong></td><td>Modified Schober、chest expansion、occiput-to-wall、cervical ROM、BASFI / BASMI 分數</td></tr>
+<tr><td><strong>常見爭議</strong></td><td>① 單純 HLA-B27 (+) 無症狀 → 不符合<br>② nr-axSpA（X-ray 無變化、僅 MRI 有）→ 需個案審查<br>③ 早期 AS 功能尚可 → 可能僅判丙等</td></tr>
+</table>
+
+<h4>3. 申請流程</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>① 早期就醫紀錄</td><td>≥ 6 個月以上規律追蹤</td></tr>
+<tr><td>② 檢查完整</td><td>HLA-B27、X-ray pelvis（AP + frog leg view）、必要時 MRI</td></tr>
+<tr><td>③ 醫院診斷書</td><td>教學醫院、風濕免疫科或復健科專科醫師開立</td></tr>
+<tr><td>④ 兵役體檢</td><td>攜帶完整資料至指定醫院（國軍醫院）體檢複查</td></tr>
+<tr><td>⑤ 體位判定</td><td>由國防部依規則判定（病人不能直接決定）</td></tr>
+</table>
+
+<h4>4. 重要倫理提醒</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>醫師立場</strong>：<br>
+① <strong>誠實診斷、誠實開立證明</strong>，不誇大也不刻意省略。<br>
+② 不應「為了讓病人免役」而給診斷，那是偽造文書。<br>
+③ <strong>真正的 AS 病人不應該為了免役延誤治療</strong>—— 早期治療可預防 ankylosis、保留功能。<br>
+④ 兵役只是「身分判定」，疾病本身是「終身議題」，治療優先序遠高於兵役問題。<br>
+⑤ 提醒病人：免役不是好事，<strong>免役代表的是疾病嚴重度</strong>。早期積極治療 + 規律運動，才是長期預後關鍵。
+</p>
+
+<h4>5. 其他骨科常見免役 / 替代役條件（參考）</h4>
+<table>
+<tr><th>疾病</th><th>條件</th></tr>
+<tr><td>Scoliosis</td><td>Cobb angle &gt; 40° 通常免役</td></tr>
+<tr><td>扁平足（Pes planus）</td><td>影像學 + 功能受限（如 navicular drop test、Foot Posture Index）</td></tr>
+<tr><td>青蛙肢（Genu valgum）</td><td>Intermalleolar distance &gt; 標準</td></tr>
+<tr><td>RA</td><td>確診 + 關節變形 + 功能受限</td></tr>
+<tr><td>嚴重 HIVD</td><td>影像 + 神經學異常 + 功能受限</td></tr>
+<tr><td>骨折術後（鋼板留存）</td><td>視部位與固定狀況</td></tr>
+</table>
+
+<h4>6. 對病人的回答（情境對話）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>病人</strong>：「醫師，我這樣會不會免役？」<br>
+<strong>醫師</strong>：「以你目前的條件 —— HLA-B27 (+)、X-ray bilateral grade III、Schober 3.5 cm、chest expansion 3 cm —— <strong>從醫療角度確實達到 AS 確診標準</strong>。<br>
+但兵役體位判定是國防部的權責，不是我能決定的。我能做的是：<br>
+① 開立完整的診斷書，附 X-ray、MRI、HLA 報告。<br>
+② 紀錄你過去 4 個月的症狀演變、PE 發現、治療反應。<br>
+③ 至體檢時，由國軍醫院複查判定。<br>
+<strong>但我必須誠實告訴你</strong>：免役不應該是你的目標，控制好你的 AS 才是。<br>
+因為 AS 一輩子都會跟著你，治療得當可以正常生活，治療延誤會脊椎變形。<br>
+我們先把你的疾病控制好（NSAIDs + 運動 + 必要時生物製劑），體位判定就交給制度。」<br>
+家屬：「健康比兵役重要太多。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>體位四等：甲、乙（常備役）/ 丙（替代役）/ 戊（免役）</strong></li>
+<li>AS 免役需 <strong>HLA-B27 + 影像學 + 臨床症狀 + 教學醫院診斷書</strong></li>
+<li>單純 HLA-B27 (+) 無症狀 ≠ AS</li>
+<li>判定權責在 <strong>國防部</strong>，醫師只負責誠實診斷</li>
+<li>倫理：不應為免役偽造、不應為免役延誤治療</li>
+<li>免役 = 疾病嚴重度的反映，不是值得追求的「好事」</li>
+<li>108 兵役題：扁平足、青蛙肢、scoliosis 也常考</li>
+</ul>`,
+      },
+      {
+        q: '若另診斷 piriformis syndrome 想做注射，解剖定位如何？並說明 AS 病人長期 SDM 對話。',
+        keywords: [
+          'Piriformis 解剖：S2-4 anterior → greater trochanter',
+          'PSIS-GT 連線、PSIS-coccyx 中點-GT 連線',
+          'Piriformis muscle 在兩線之間',
+          'Sciatic nerve：避開內側 1/3',
+          'Echo-guided injection（最安全）',
+          'Beatty / Pace / Freiberg test',
+          'AS SDM：終身管理、預期、家屬支持',
+          'BASDAI / BASMI 追蹤',
+        ],
+        points: [
+          '<strong>Piriformis 解剖</strong>：origin S2-4 anterior sacrum、insertion greater trochanter（GT）',
+          'Palpable landmark 1：<strong>PSIS 與 GT 連線</strong>',
+          'Palpable landmark 2：<strong>PSIS 與 coccyx 連線中點 → GT 連線</strong>',
+          '<strong>Piriformis muscle 位於兩線之間</strong>',
+          'Sciatic nerve 走向：<strong>第二條線（PSIS-coccyx 中點 → GT）的內側 1/3</strong>',
+          '注射避雷：避開內側 1/3、最安全用 <strong>echo-guided</strong>',
+          'Piriformis test：Beatty（側臥抬腿）、Pace（resisted abduction）、Freiberg（passive IR）',
+          'AS SDM 重點：終身管理、規律運動、家屬支持、共病監測',
+        ],
+        a: `<h4>1. Piriformis 解剖</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>Origin</strong></td><td>Sacrum anterior surface（S2-4 level）</td></tr>
+<tr><td><strong>Insertion</strong></td><td>Greater trochanter 上緣</td></tr>
+<tr><td><strong>動作</strong></td><td>Hip external rotation（屈髖時變 abductor）</td></tr>
+<tr><td><strong>神經支配</strong></td><td>S1, S2 root direct branch</td></tr>
+<tr><td><strong>關鍵關係</strong></td><td><strong>Sciatic nerve 通常從 piriformis 下緣穿出（85%）</strong>；Beaton classification 6 種變異</td></tr>
+</table>
+
+<h4>2. Piriformis 注射 Anatomy-Guided 定位（必背）</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td><strong>Landmark 1</strong></td><td>PSIS（後上髂棘）、GT（greater trochanter）、coccyx</td></tr>
+<tr><td><strong>第一條線</strong></td><td><strong>PSIS → GT 連線</strong>（上線）</td></tr>
+<tr><td><strong>第二條線</strong></td><td><strong>「PSIS 與 coccyx 連線中點」→ GT 連線</strong>（下線）</td></tr>
+<tr><td><strong>Piriformis 位置</strong></td><td>位於上下兩條線之間的區域</td></tr>
+<tr><td><strong>Sciatic nerve 走向</strong></td><td>第二條線（下線）的<strong>內側 1/3 段</strong>，與 ischial tuberosity-GT 連線中點接近</td></tr>
+<tr><td><strong>安全注射點</strong></td><td>兩線中段偏外側（避開內側 1/3）</td></tr>
+<tr><td><strong>最安全方式</strong></td><td><strong>Echo-guided injection</strong>（避免 sciatic nerve 受傷）</td></tr>
+</table>
+
+<h4>3. Echo-Guided Piriformis Injection</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>姿勢</td><td>俯臥（patient prone）</td></tr>
+<tr><td>探頭</td><td>Curved low-frequency（2-5 MHz）</td></tr>
+<tr><td>定位</td><td>① 找 sacrum、ilium、GT 解剖標記<br>② 識別 piriformis muscle（梭形、深部）<br>③ 識別 <strong>sciatic nerve（hyperechoic、honeycomb pattern）</strong></td></tr>
+<tr><td>注射</td><td>In-plane 由外向內、針尖進入 piriformis 肌腹（避開 sciatic nerve）</td></tr>
+<tr><td>藥物</td><td>① Local anesthetic（lidocaine）+ steroid（trigger point 注射）<br>② Botulinum toxin（refractory case）</td></tr>
+</table>
+
+<h4>4. Piriformis Test 操作</h4>
+<table>
+<tr><th>Test</th><th>姿勢</th><th>操作</th></tr>
+<tr><td><strong>Beatty test</strong></td><td>側臥（患側朝上）</td><td>患側膝彎曲、抬離床面（抗重力 abduction + ER）→ 臀痛 (+)</td></tr>
+<tr><td><strong>Pace test</strong></td><td>坐姿</td><td>Resisted hip abduction + ER → 臀痛 (+)</td></tr>
+<tr><td><strong>Freiberg test</strong></td><td>仰臥</td><td>Passive hip IR with extension → 臀痛 (+)（伸長 piriformis）</td></tr>
+<tr><td><strong>FAIR test</strong></td><td>側臥（患側朝上）</td><td>Hip <strong>F</strong>lexion + <strong>A</strong>dduction + <strong>I</strong>nternal <strong>R</strong>otation → 臀痛 (+)</td></tr>
+</table>
+
+<h4>5. AS 病人的 SDM「希望 + 現實」對話</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>病人</strong>：「醫師，我會不會像新聞上的人一樣彎腰駝背一輩子？」<br>
+<strong>醫師</strong>：「我希望你不會（希望）。但要誠實告訴你（現實）：<br>
+① <strong>AS 是終身疾病</strong>，沒辦法「治癒」，但可以控制得很好。<br>
+② 你現在 26 歲，<strong>是治療的黃金期</strong>。早期介入 NSAIDs + 規律運動，加上必要時生物製劑，<strong>多數病人可以維持接近正常的功能與生活品質</strong>。<br>
+③ <strong>不治療 / 不運動 → 10-20 年後脊椎融合（bamboo spine）、駝背、胸廓僵硬、心肺功能下降</strong>。<br>
+④ <strong>規律運動比藥物更重要</strong>。藥物控制發炎，運動維持功能，兩者缺一不可。<br>
+⑤ 我們會用 BASDAI、BASMI 每 3-6 個月追蹤。<br>
+⑥ 還要監測：眼睛（uveitis）、骨密度（osteoporosis）、心血管、IBD 症狀。<br>
+⑦ 兵役判定我們會誠實處理，但你的疾病管理永遠是優先順序的第一位。」<br>
+家屬：「我們陪你一起運動、一起注意飲食。AS 不是你一個人的事。」
+</p>
+
+<h4>6. 長期管理重點清單</h4>
+<table>
+<tr><th>類別</th><th>追蹤項目</th></tr>
+<tr><td>疾病活動度</td><td>BASDAI、ASDAS（每 3-6 個月）；CRP、ESR</td></tr>
+<tr><td>結構變化</td><td>BASMI（每 6-12 個月）、X-ray（每 1-2 年）、MRI 視需要</td></tr>
+<tr><td>功能</td><td>BASFI、職業 / 日常活動評估</td></tr>
+<tr><td>共病</td><td>骨密度（每 1-2 年）、眼科（每年 / 有症狀立即）、CV risk、IBD 症狀</td></tr>
+<tr><td>運動依從度</td><td>運動日記、group class 出席</td></tr>
+<tr><td>藥物副作用</td><td>NSAIDs（GI、腎）、生物製劑（感染、TB reactivation）</td></tr>
+<tr><td>心理</td><td>憂鬱、慢性疲勞、HRQoL 量表</td></tr>
+</table>
+
+<h4>7. PMR 在 AS 全程的角色</h4>
+<table>
+<tr><th>階段</th><th>PMR 介入</th></tr>
+<tr><td>診斷期</td><td>PE 確認 axSpA 特徵、轉介風濕免疫科共同照護</td></tr>
+<tr><td>急性期</td><td>NSAIDs + 急性復健 + 姿勢衛教</td></tr>
+<tr><td>穩定期</td><td><strong>結構性運動處方（伸展 + 姿勢 + 心肺）</strong>、group exercise</td></tr>
+<tr><td>進展期</td><td>輔具（駕駛、家居）、人因工程、職業調整</td></tr>
+<tr><td>晚期</td><td>跌倒預防（chalk-stick fracture）、生活品質維持</td></tr>
+<tr><td>共病管理</td><td>骨質疏鬆運動、CV 預防、心理支持</td></tr>
+<tr><td>家屬</td><td>衛教、運動陪伴、心理支持</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Piriformis 解剖：S2-4 anterior → GT</strong></li>
+<li><strong>注射定位：PSIS-GT 連線 + PSIS/coccyx 中點-GT 連線之間</strong></li>
+<li><strong>Sciatic nerve 在下線內側 1/3 段</strong>（必避開）</li>
+<li>最安全：<strong>Echo-guided injection</strong></li>
+<li>Piriformis test：Beatty / Pace / Freiberg / FAIR</li>
+<li>AS SDM：終身管理、運動 ≥ 藥物、家屬支持、共病監測</li>
+<li>PMR 角色：<strong>結構性運動處方 + 共病預防 + 長期生活品質</strong></li>
+<li>「希望 + 現實」：早期治療可以接近正常生活，但要終身規律運動</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
