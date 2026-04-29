@@ -39047,6 +39047,695 @@ NMES 的特別之處：電流會繞過大腦自主控制，<strong>強迫</stron
       },
     ],
   },
+  {
+    id: 'ortho_001',
+    domain: 'msk',
+    title: 'ACL tear（年輕籃球員、跳投落地受傷）',
+    context: `22 歲男性，業餘籃球聯賽選手。
+昨晚跳投落地時聽到「啪」一聲，左膝立即劇痛、無法續賽。
+2 小時內出現大範圍腫脹，今晨 ER 求診。
+
+理學檢查：
+- 左膝中度腫脹、ballottement test (+)
+- ROM：flexion 0-90°（疼痛限制），extension full
+- Lachman test (+) soft end-feel
+- Anterior drawer test (+)
+- Pivot shift test (+)（病人因痛排斥）
+- McMurray test：medial click (+)
+- Valgus stress test 30°：mild laxity (+)
+
+VAS 7/10，無法承重，需扶拐入診。
+平時每週打球 3-4 次，目標重返球場。`,
+    questions: [
+      {
+        q: '請列舉 5 個膝蓋急性外傷的鑑別診斷。',
+        keywords: [
+          'ACL tear（前十字韌帶斷裂）',
+          'PCL tear',
+          'Meniscus tear（半月板撕裂）',
+          'MCL/LCL injury（側副韌帶）',
+          'Patellar dislocation/fracture',
+          'Tibial plateau fracture',
+          'Unhappy triad（ACL+MCL+medial meniscus）',
+          'Quadriceps/patellar tendon rupture',
+          'Osteochondral fracture',
+          'Hemarthrosis 2 小時內 → ACL 75%',
+        ],
+        points: [
+          '<strong>急性血腫（&lt;2 hr）→ 高度懷疑 ACL（70-80%）</strong>',
+          '韌帶傷：ACL（pivoting）、PCL（dashboard）、MCL/LCL（valgus/varus）',
+          '半月板：McMurray (+)、locking',
+          '骨折：tibial plateau（高能量）、patellar fx',
+          '關節面：osteochondral fx（loose body）',
+          '脫位：patellar dislocation（apprehension test）',
+          '<strong>Unhappy triad：ACL + MCL + medial meniscus</strong>（valgus 受傷）',
+          '伸肌裝置：quadriceps/patellar tendon rupture（無法 SLR）',
+        ],
+        a: `<h4>1. 5 個膝蓋急性外傷鑑別診斷</h4>
+<table>
+<tr><th>診斷</th><th>受傷機轉</th><th>關鍵 PE</th></tr>
+<tr><td><strong>ACL tear</strong></td><td>Pivoting + valgus（跳投落地、轉身）</td><td>Lachman、Anterior drawer、Pivot shift</td></tr>
+<tr><td><strong>Meniscus tear</strong></td><td>Twisting on weight-bearing</td><td>McMurray、Apley、Thessaly、joint line tenderness</td></tr>
+<tr><td><strong>MCL/LCL injury</strong></td><td>Valgus（MCL）/ varus（LCL）外力</td><td>Valgus/varus stress test 0° & 30°</td></tr>
+<tr><td><strong>Patellar dislocation</strong></td><td>Valgus + ER + quad 收縮</td><td>Patellar apprehension、J-sign</td></tr>
+<tr><td><strong>Tibial plateau fracture</strong></td><td>高能量壓擠（跌落、車禍）</td><td>無法 WB、X-ray、CT</td></tr>
+</table>
+
+<h4>急性血腫的時間性判讀</h4>
+<table>
+<tr><th>出血時間</th><th>最常見診斷</th><th>機率</th></tr>
+<tr><td><strong>&lt;2 小時（rapid hemarthrosis）</strong></td><td><strong>ACL tear</strong></td><td>70-80%</td></tr>
+<tr><td>2-24 小時</td><td>Meniscus tear（peripheral）、osteochondral fx</td><td>—</td></tr>
+<tr><td>&gt;24 小時</td><td>輕微韌帶/軟組織</td><td>—</td></tr>
+</table>
+
+<h4>Unhappy Triad（O'Donoghue triad）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Valgus + ER + flexion</strong> 機轉常合併三組織傷害：<br>
+① ACL tear ② MCL tear ③ <strong>Medial meniscus tear</strong>（最新研究：實際以 lateral meniscus 較多，但傳統定義為 medial）<br>
+本病患 valgus stress (+) + McMurray (+) + Lachman (+)，<strong>高度懷疑 unhappy triad</strong>。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>2 小時內血腫 → ACL 機率 70-80%</strong>（必背數字）</li>
+<li>機轉「啪」一聲 + 立即無法續賽 → ACL pop sign</li>
+<li>急性期排除骨折（先 X-ray，再考慮 MRI）</li>
+<li>Pivot shift 病人會排斥 → 急性期不易測，<strong>Lachman 最敏感</strong></li>
+</ul>`,
+      },
+      {
+        q: '請說明膝關節完整 PE，並示範 Lachman 與 Pivot shift test。',
+        keywords: [
+          'Inspection: swelling, deformity, alignment',
+          'ROM: flexion 0-135°, extension 0°',
+          'Effusion: ballottement, bulge sign',
+          'Lachman test 30° flexion',
+          'Anterior drawer 90° flexion',
+          'Pivot shift（最 specific）',
+          'McMurray、Apley、Thessaly',
+          'Valgus/varus stress test（0° vs 30°）',
+          'End feel: soft / firm / hard',
+        ],
+        points: [
+          '<strong>Lachman 最 sensitive（85-95%）、Pivot shift 最 specific（98%）</strong>',
+          'Lachman 30° flexion + 拉脛骨 → soft end-feel = ACL tear',
+          'Anterior drawer 90° flexion，急性期 hamstring spasm 易偽陰',
+          'Pivot shift：valgus + IR + flexion → 30° 復位 clunk',
+          'Valgus stress 0° = capsule + ACL/PCL；30° = MCL isolated',
+          'Joint line tenderness → meniscus 高度提示',
+          '<strong>急性期 Lachman 最可靠</strong>（pivot shift 病人排斥）',
+          'End feel：ACL tear = soft；正常 = firm',
+        ],
+        a: `<h4>1. 膝關節完整 PE 流程</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>Inspection</td><td>腫脹、瘀青、肌肉萎縮（VMO）、alignment（varus/valgus）、Q angle</td></tr>
+<tr><td>Palpation</td><td>Joint line tenderness（meniscus）、patella、tibial tubercle、MCL/LCL 走向</td></tr>
+<tr><td>Effusion</td><td><strong>Ballottement test</strong>（patellar tap）、bulge sign（少量積液）</td></tr>
+<tr><td>ROM</td><td>Active/passive flexion (0-135°)、extension (0°)、有無 locking</td></tr>
+<tr><td>Strength</td><td>Quadriceps、hamstring（與健側比）</td></tr>
+<tr><td>韌帶 test</td><td>Lachman、Anterior/Posterior drawer、Pivot shift、Valgus/varus stress</td></tr>
+<tr><td>半月板 test</td><td>McMurray、Apley compression/distraction、Thessaly</td></tr>
+<tr><td>髕骨 test</td><td>Patellar apprehension、grinding test</td></tr>
+</table>
+
+<h4>2. Lachman Test 操作（最關鍵）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>仰臥，膝關節 <strong>20-30° flexion</strong>（不是 90°！）</td></tr>
+<tr><td>固定</td><td>一手抓住 distal femur 從外側固定</td></tr>
+<tr><td>施力</td><td>另一手抓 proximal tibia 從內側，<strong>向前拉 tibia</strong></td></tr>
+<tr><td>判讀</td><td>位移 &gt;3 mm、<strong>soft end-feel = ACL tear</strong>；正常為 firm endpoint</td></tr>
+<tr><td>分級</td><td>Grade I（&lt;5mm）/ II（5-10mm）/ III（&gt;10mm）</td></tr>
+</table>
+
+<h4>3. Pivot Shift Test 操作（最 specific）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>仰臥，膝關節 <strong>full extension</strong></td></tr>
+<tr><td>施力</td><td>① Valgus stress + ② Internal rotation tibia + ③ 慢慢 flexion</td></tr>
+<tr><td>判讀</td><td><strong>flexion 20-30° 時感到「clunk」</strong>（脛骨從前移半脫位 → 復位）</td></tr>
+<tr><td>機轉</td><td>ACL 缺損時，extension 時 tibia 半脫位前移；flexion 時 ITB 拉回復位</td></tr>
+<tr><td>限制</td><td>急性期病人排斥；在麻醉下最準</td></tr>
+</table>
+
+<h4>4. ACL 三大 test 比較</h4>
+<table>
+<tr><th>Test</th><th>姿勢</th><th>Sensitivity</th><th>Specificity</th><th>備註</th></tr>
+<tr><td><strong>Lachman</strong></td><td>30° flexion</td><td>85-95% ⭐</td><td>~94%</td><td>急性期最可靠</td></tr>
+<tr><td>Anterior drawer</td><td>90° flexion</td><td>~62%</td><td>~88%</td><td>急性期 hamstring spasm 偽陰</td></tr>
+<tr><td><strong>Pivot shift</strong></td><td>0° → flex</td><td>~24% 醒著 / ~98% 麻醉</td><td>98% ⭐</td><td>麻醉下最準</td></tr>
+</table>
+
+<h4>5. 半月板 test</h4>
+<table>
+<tr><th>Test</th><th>操作</th></tr>
+<tr><td>McMurray</td><td>Knee flexion + ER（medial）/ IR（lateral）+ 慢慢 extension → click + pain</td></tr>
+<tr><td>Apley compression</td><td>俯臥 + flex 90° + 軸向壓 + 旋轉 → pain = meniscus</td></tr>
+<tr><td>Thessaly</td><td>單腳站 20° flex + 旋轉 3 次 → pain（最 functional）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>急性期 PE 的實務技巧</strong><br>
+急性期病人疼痛 + hamstring spasm，<strong>Anterior drawer 易偽陰</strong>、<strong>Pivot shift 病人排斥</strong>。<br>
+此時 <strong>Lachman 是最重要的工具</strong>，因為 30° 屈曲 + soft end-feel 在 hamstring 較放鬆狀態下仍可靠。<br>
+若 PE 不確定，可考慮 1-2 週後消腫再測，或直接安排 MRI。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Lachman = ACL 急性期黃金 PE</strong></li>
+<li>Lachman <strong>30° flexion</strong>（不是 90°，與 anterior drawer 區分）</li>
+<li>End feel：<strong>soft = ACL tear；firm = 正常</strong></li>
+<li>Pivot shift 麻醉下 specificity 98%，常作為手術前最終確認</li>
+<li>Valgus stress：<strong>0° = ACL/PCL/capsule；30° = MCL isolated</strong></li>
+</ul>`,
+      },
+      {
+        q: 'X-ray 顯示外側脛骨平台撕裂性骨折。請判讀並說明意義。',
+        keywords: [
+          'Segond fracture',
+          '外側脛骨平台撕裂性骨折',
+          'Lateral capsular ligament avulsion',
+          'Pathognomonic of ACL tear（75-100%）',
+          'Anterolateral ligament (ALL)',
+          'Reverse Segond → PCL tear',
+          'Iliotibial band 牽引',
+          'X-ray AP / lateral / sunrise / Rosenberg',
+        ],
+        points: [
+          '<strong>Segond fracture = ACL tear 的病理性指標（75-100%）</strong>',
+          '位置：外側脛骨平台 cortex avulsion（小三角片）',
+          '機轉：Anterolateral ligament (ALL) + lateral capsular ligament 撕裂性骨折',
+          'AP view 最易見，lateral view 不易發現',
+          'Reverse Segond（內側）→ PCL tear + medial meniscus',
+          '<strong>必排 MRI 確認 ACL/meniscus/cartilage</strong>',
+          '其他 ACL 相關 X-ray sign：deep lateral femoral notch sign',
+          'Knee X-ray 標準 4 view：AP、lateral、sunrise、Rosenberg（45° flexion）',
+        ],
+        a: `<h4>1. X-ray 判讀</h4>
+<table>
+<tr><th>影像所見</th><th>意義</th></tr>
+<tr><td><strong>外側脛骨平台 cortex 撕裂性骨折</strong></td><td><strong>Segond fracture</strong>（病理性指標）</td></tr>
+<tr><td>骨折碎片大小</td><td>典型為 1-2 cm 小三角片，平行於 tibial plateau</td></tr>
+<tr><td>Lateral femoral condyle</td><td>檢查 deep notch sign（凹陷 &gt; 1.5 mm → ACL tear）</td></tr>
+<tr><td>Tibial spine</td><td>檢查 avulsion fracture（兒童 ACL tear 常見型態）</td></tr>
+<tr><td>關節間隙</td><td>有無 narrowing、subchondral 變化</td></tr>
+</table>
+
+<h4>2. Segond Fracture 重點</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>定義</strong></td><td>外側脛骨平台 cortex 撕裂性骨折（lateral capsular ligament + ALL avulsion）</td></tr>
+<tr><td><strong>機轉</strong></td><td>Internal rotation + varus stress（與 ACL 受傷機轉相同）</td></tr>
+<tr><td><strong>臨床意義</strong></td><td><strong>ACL tear 機率 75-100%（pathognomonic）</strong></td></tr>
+<tr><td>合併傷</td><td>Lateral meniscus tear（66-75%）</td></tr>
+<tr><td>ALL 角色</td><td>Anterolateral ligament，2013 後被認為是 rotational stability 關鍵結構</td></tr>
+<tr><td>Reverse Segond</td><td>內側脛骨平台 → PCL tear + medial meniscus + MCL</td></tr>
+</table>
+
+<h4>3. 下一步影像安排</h4>
+<table>
+<tr><th>檢查</th><th>看什麼</th></tr>
+<tr><td><strong>MRI（必排）</strong></td><td>ACL（最重要）、meniscus、MCL/LCL、bone bruise（lateral femoral condyle + posterolateral tibia 是 ACL pivot shift bone bruise pattern）、cartilage</td></tr>
+<tr><td>超音波</td><td>看 MCL、IT band、伸肌裝置；ACL 看不到</td></tr>
+<tr><td>CT</td><td>骨折細節（Segond fragment 大小、tibial plateau 涉及程度）</td></tr>
+</table>
+
+<h4>4. ACL Tear 的 X-ray 其他 sign</h4>
+<ul>
+<li><strong>Segond fracture</strong>（外側）→ ACL（最常考）</li>
+<li><strong>Deep lateral femoral notch sign</strong>（&gt; 1.5 mm 凹陷）</li>
+<li><strong>Tibial spine avulsion fracture</strong>（兒童常見型態）</li>
+<li>Reverse Segond → PCL</li>
+<li>Pellegrini-Stieda lesion → 慢性 MCL 鈣化</li>
+</ul>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Segond Fracture 為什麼考試愛考？</strong><br>
+因為它是<strong>「看到 X-ray 就要想到 ACL tear」</strong>的經典範例。考官通常會：<br>
+① 給一張 AP X-ray 指出小撕裂片 → ② 問機轉 → ③ 問下一步檢查 → ④ 進階問 ALL 角色。<br>
+大部分考生只記得「ACL tear」答案，但若能說出 <strong>ALL（anterolateral ligament）</strong> 為近年解剖學新發現，會大加分。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Segond fracture = ACL tear（75-100%）</strong> ⭐ 必背</li>
+<li>位置：<strong>外側脛骨平台</strong>（reverse 在內側 → PCL）</li>
+<li>機轉：IR + varus，撕裂的是 lateral capsular ligament + ALL</li>
+<li>下一步必排 <strong>MRI</strong>（看 ACL、meniscus、bone bruise）</li>
+<li><strong>ACL tear 典型 bone bruise 位置</strong>：lateral femoral condyle + posterolateral tibia（pivot shift pattern）</li>
+</ul>`,
+      },
+      {
+        q: 'MRI 顯示 ACL 不連續，內側半月板後角撕裂。請判讀並說明 ACL tear 在 MRI 的特徵。',
+        keywords: [
+          'PD/T2 sagittal: ACL discontinuity',
+          'Empty notch sign（coronal）',
+          'Bone bruise: lateral femoral condyle + posterolateral tibia',
+          'Pivot shift bone contusion pattern',
+          'Anterior tibial translation',
+          'Buckled PCL sign',
+          'Secondary signs: Segond, deep notch',
+          'Meniscus tear: bucket-handle, root tear',
+        ],
+        points: [
+          '<strong>Direct sign：ACL fiber 連續性中斷（sagittal PD/T2）</strong>',
+          '<strong>Empty notch sign（coronal）</strong>：原本 ACL 影像消失',
+          'Bone bruise：lateral femoral condyle + posterolateral tibia plateau（pivot shift pattern）',
+          'Anterior tibial translation &gt; 7 mm',
+          'Buckled PCL sign：ACL 缺失時 PCL 因前移而彎曲',
+          'Secondary signs：Segond fx、deep notch、posterior horn lateral meniscus uncovered',
+          '<strong>合併傷</strong>：medial meniscus（unhappy triad）/ lateral meniscus / MCL',
+          'MRI sequence：PD fat sat（韌帶 + meniscus）、T2（積液）、T1（解剖）',
+        ],
+        a: `<h4>1. ACL Tear 的 MRI 特徵</h4>
+<table>
+<tr><th>類別</th><th>影像所見</th></tr>
+<tr><td><strong>Direct sign</strong></td><td>① ACL fiber 連續性中斷（sagittal PD）<br>② Fiber 鬆弛、波浪狀<br>③ Empty notch sign（coronal）</td></tr>
+<tr><td><strong>Indirect / Secondary sign</strong></td><td>① Bone bruise：lateral femoral condyle + posterolateral tibia<br>② Anterior tibial translation &gt; 7 mm<br>③ Buckled PCL sign（PCL 彎曲）<br>④ Posterior horn of lateral meniscus uncovered<br>⑤ Deep lateral femoral notch sign</td></tr>
+</table>
+
+<h4>2. Pivot Shift Bone Bruise Pattern（必背）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+ACL tear 受傷瞬間，<strong>lateral femoral condyle 撞到 posterolateral tibial plateau</strong>，<br>
+形成獨特的 <strong>"kissing contusion" pattern</strong>。<br>
+這個 bone bruise pattern 即使 ACL 已部分復原，仍可在 MRI 上維持數月，是 <strong>ACL tear 的高度特異性間接證據</strong>。
+</p>
+
+<h4>3. MRI Sequence 用途</h4>
+<table>
+<tr><th>Sequence</th><th>看什麼</th></tr>
+<tr><td><strong>PD fat sat（最重要）</strong></td><td>ACL/PCL/meniscus/cartilage（液體高訊號 + 抑脂後對比清楚）</td></tr>
+<tr><td>T2 fat sat</td><td>Bone bruise、effusion、軟組織水腫</td></tr>
+<tr><td>T1</td><td>解剖結構、骨髓信號、慢性病變</td></tr>
+<tr><td>Coronal & sagittal</td><td>韌帶（sagittal 看 ACL/PCL；coronal 看 MCL/LCL/meniscus）</td></tr>
+</table>
+
+<h4>4. 半月板撕裂分類</h4>
+<table>
+<tr><th>類型</th><th>位置 / 特徵</th><th>處理</th></tr>
+<tr><td>Vertical longitudinal</td><td>沿 meniscus 長軸</td><td>peripheral 1/3 紅區可修復</td></tr>
+<tr><td><strong>Bucket-handle tear</strong></td><td>longitudinal 完整撕脫，內移到 notch → locking</td><td>需手術修復</td></tr>
+<tr><td>Radial tear</td><td>橫切纖維</td><td>影響 hoop stress，預後較差</td></tr>
+<tr><td>Horizontal cleavage</td><td>退化性常見</td><td>多保守</td></tr>
+<tr><td>Root tear</td><td>後角附著處撕裂</td><td>等同全切除，<strong>必須手術</strong></td></tr>
+</table>
+
+<h4>5. 本病人 MRI 結論</h4>
+<ul>
+<li>ACL complete tear（fiber 連續性中斷）</li>
+<li>Medial meniscus posterior horn tear</li>
+<li>Lateral femoral condyle + posterolateral tibia bone bruise（pivot shift pattern）</li>
+<li>Segond fracture（X-ray 已見）</li>
+<li><strong>整體：典型 ACL tear with unhappy triad 變異型</strong>（無明顯 MCL grade III）</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Empty notch sign</strong>（coronal）：必背的 ACL 直接 sign</li>
+<li><strong>Bone bruise: lateral femoral condyle + posterolateral tibia</strong> = pivot shift pattern</li>
+<li>MRI 主力 sequence：<strong>PD fat sat</strong>（韌帶 + meniscus）</li>
+<li>合併傷：高度懷疑 meniscus tear（特別 medial / lateral root）</li>
+<li>Bucket-handle 與 root tear <strong>必須手術</strong>，其他可考慮保守</li>
+</ul>`,
+      },
+      {
+        q: '保守治療與手術治療的選擇？重建可使用的肌腱？',
+        keywords: [
+          '手術 indication: young, active, pivot sport',
+          '保守 indication: low demand, partial tear, elderly',
+          'Bone-Patellar Tendon-Bone (BPTB)',
+          'Hamstring (semi-T + gracilis)',
+          'Quadriceps tendon',
+          'Allograft（同種異體移植）',
+          'Internal Bracing / suture repair',
+          'Pre-op rehab: ROM, swelling, quad activation',
+          'Timing: 3-6 weeks（quiet knee）',
+        ],
+        points: [
+          '<strong>年輕運動員、pivot sport → 手術重建</strong>',
+          '低活動度、partial tear、伴 OA、復健配合度差 → 保守',
+          'BPTB（金標準）：強度高、骨對骨癒合，但 anterior knee pain',
+          'Hamstring：取得方便、傷口小，但強度較低、感本體感受變差',
+          'Quadriceps tendon：近年熱門，強度與 BPTB 相當',
+          'Allograft：年長、多次手術；風險：感染、再撕裂率高',
+          '<strong>急性期不立即手術</strong>，先 quiet knee（消腫、ROM、quad）',
+          '<strong>Timing：傷後 3-6 週手術</strong>（避免 arthrofibrosis）',
+        ],
+        a: `<h4>1. 手術 vs 保守治療</h4>
+<table>
+<tr><th>策略</th><th>適應症</th></tr>
+<tr><td><strong>手術重建</strong></td><td>① 年輕（&lt; 50）<br>② 高活動度（pivot sport：籃球、足球、滑雪）<br>③ 持續不穩定 / giving way<br>④ 合併 meniscus tear（須修復）<br>⑤ ACL 完全斷裂、明顯 instability</td></tr>
+<tr><td><strong>保守治療</strong></td><td>① 年長、低活動度（&gt; 60）<br>② Partial tear（&lt; 50% fiber）<br>③ 沒有 instability、無 pivot 需求<br>④ 嚴重共病、不適合手術<br>⑤ 復健配合度差<br>⑥ 已有 advanced OA（手術價值低）</td></tr>
+</table>
+
+<h4>2. 重建肌腱選擇</h4>
+<table>
+<tr><th>移植物</th><th>優點</th><th>缺點</th></tr>
+<tr><td><strong>BPTB（patellar tendon）</strong></td><td>強度高（金標準）、骨對骨癒合最快、bone block 固定佳</td><td>Anterior knee pain（10-20%）、跪痛、髕骨骨折風險</td></tr>
+<tr><td><strong>Hamstring（ST + gracilis）</strong></td><td>傷口小、無 anterior knee pain、可保留 4 股</td><td>強度較低、本體感受變差、無 bone block、女性 hamstring 細</td></tr>
+<tr><td><strong>Quadriceps tendon</strong></td><td>強度與 BPTB 相當、無 anterior pain、近年熱門</td><td>取材技術門檻較高</td></tr>
+<tr><td><strong>Allograft（屍體肌腱）</strong></td><td>傷口小、無 donor site morbidity、年長 / revision 適用</td><td>感染風險（&lt; 1%）、再撕裂率高（年輕族群）、貴</td></tr>
+</table>
+
+<h4>3. 受傷多久後可以開刀？（必考）</h4>
+<table>
+<tr><th>時期</th><th>建議</th></tr>
+<tr><td>0-1 週（acute）</td><td><strong>不立即開</strong>。腫脹嚴重時 arthrofibrosis 風險高</td></tr>
+<tr><td>1-3 週</td><td>Pre-op rehab：消腫、ROM、quadriceps activation、SLR</td></tr>
+<tr><td><strong>3-6 週（quiet knee）</strong></td><td><strong>最佳手術時機</strong>。腫脹消退、ROM 接近正常、quad 啟動好</td></tr>
+<tr><td>&gt; 6 週</td><td>仍可開，但 meniscus 二次傷害風險增（每延遲 1 個月 +1%）</td></tr>
+</table>
+
+<h4>4. Pre-op Rehab「Quiet Knee」目標</h4>
+<ul>
+<li>消腫至 minimal effusion（bulge sign 陰性）</li>
+<li>Full ROM（特別是 full extension）</li>
+<li>Quadriceps activation：SLR 不出現 lag</li>
+<li>正常步態、可承重</li>
+<li>心理準備、術後復健衛教</li>
+</ul>
+
+<h4>5. Partial ACL Tear 處理</h4>
+<table>
+<tr><th>分類</th><th>處理</th></tr>
+<tr><td>&lt; 25% fiber 撕裂、stable</td><td>保守，可接受</td></tr>
+<tr><td>25-50% fiber 撕裂、stable</td><td>保守試 + 密集復健 3 個月</td></tr>
+<tr><td>&gt; 50% fiber、unstable</td><td>手術重建</td></tr>
+<tr><td>進階選項</td><td><strong>Internal bracing / suture repair</strong>（近端 avulsion 適用）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病患的決策建議</strong><br>
+22 歲業餘籃球選手 + ACL complete tear + medial meniscus tear + Segond fx + 目標重返球場。<br>
+→ <strong>手術重建（建議 BPTB 或 Quadriceps tendon）+ 同時 meniscus 修復</strong>。<br>
+時程：先 3-6 週 pre-op quiet knee → 手術 → 9-12 個月分階段復健 → 才能重返 pivot sport。<br>
+<strong>千萬不要承諾「3-6 個月可重返球場」</strong>，這是常見誤解，會讓病人提早回去再受傷。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>BPTB = 金標準</strong>，年輕運動員首選；缺點 anterior knee pain</li>
+<li><strong>Hamstring</strong>：傷口小、無 anterior pain，但強度較弱</li>
+<li>受傷 <strong>3-6 週為手術黃金期</strong>（quiet knee）</li>
+<li>急性期立即開 → arthrofibrosis 風險高</li>
+<li><strong>Partial tear &lt; 50% fiber + stable</strong> 可保守 3-6 個月觀察</li>
+<li>合併 meniscus tear（特別 root / bucket-handle）→ 同時修復</li>
+</ul>`,
+      },
+      {
+        q: '請為病人設計 ACL 重建術後分階段復健計畫。',
+        keywords: [
+          'Phase 1 (0-2 wk): protect, swelling, ROM, quad activation',
+          'Phase 2 (2-6 wk): WBAT, full ROM, CKC',
+          'Phase 3 (6-12 wk): strength, proprioception',
+          'Phase 4 (3-6 mo): plyometrics, agility',
+          'Phase 5 (6-9 mo): sport-specific, return to sport',
+          'CKC vs OKC（避免 0-30° OKC ext）',
+          'Quad lag、SLR、E-stim',
+          'CPM、cryotherapy、bracing',
+        ],
+        points: [
+          '<strong>Phase 1（0-2w）</strong>：消腫、保護、ROM 0-90°、quad activation、SLR',
+          '<strong>Phase 2（2-6w）</strong>：WBAT、ROM full、CKC、closed chain squat',
+          '<strong>Phase 3（6-12w）</strong>：肌力、本體感受、單腳平衡',
+          '<strong>Phase 4（3-6m）</strong>：plyometrics、agility、跑步',
+          '<strong>Phase 5（6-9m）</strong>：sport-specific、return to play test',
+          '<strong>避免 OKC 0-30° extension（前三個月）</strong>：對 graft 剪力大',
+          'CKC（leg press、squat）安全：對 ACL 應力小',
+          'E-stim 用於 quad lag / activation 不全',
+        ],
+        a: `<h4>1. ACL 重建術後分階段復健（5 階段）</h4>
+
+<h4>Phase 1（0-2 週）— Protection Phase</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>保護</td><td>Hinged knee brace（locked extension）、weight-bearing 漸進依手術型態</td></tr>
+<tr><td>消腫</td><td>RICE、cryotherapy、compression、抬高</td></tr>
+<tr><td>ROM</td><td><strong>Flexion 0-90°</strong>（CPM 可用）、full extension（避免 flexion contracture）</td></tr>
+<tr><td>肌力</td><td>Quadriceps activation（quad sets、SLR）、ankle pumping、glute sets</td></tr>
+<tr><td>步態</td><td>拐杖步行 PWB → FWB（依手術型態調整）</td></tr>
+<tr><td>禁忌</td><td><strong>OKC knee extension（特別 0-30°）對 graft 剪力大</strong></td></tr>
+</table>
+
+<h4>Phase 2（2-6 週）— Early Strength Phase</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>步態</td><td>正常步態、棄拐</td></tr>
+<tr><td>ROM</td><td><strong>達到 full ROM（0-135°）</strong></td></tr>
+<tr><td>肌力</td><td>CKC（mini squat、leg press 0-60°）、Hamstring curl、step-up</td></tr>
+<tr><td>平衡</td><td>雙腳 balance board、weight shift</td></tr>
+<tr><td>有氧</td><td>固定式腳踏車、游泳（傷口癒合後）</td></tr>
+</table>
+
+<h4>Phase 3（6-12 週）— Strengthening Phase</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>肌力</td><td>進階 squat（深蹲）、lunges、step-down、leg press 加重</td></tr>
+<tr><td>本體感受</td><td>單腳站、wobble board、BOSU ball</td></tr>
+<tr><td>有氧</td><td>橢圓機、跑步機快走 → 慢跑（12 週後）</td></tr>
+<tr><td>OKC</td><td>3 個月後可開始 OKC 30-90°（避免 0-30°）</td></tr>
+</table>
+
+<h4>Phase 4（3-6 個月）— Power & Agility Phase</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>跑步</td><td>直線跑步 → 變速 → 變方向</td></tr>
+<tr><td>Plyometrics</td><td>雙腳跳 → 單腳跳 → box jump、drop jump</td></tr>
+<tr><td>Agility</td><td>Cone drill、ladder、cutting drill（小角度 → 大角度）</td></tr>
+<tr><td>肌力</td><td>Quad / Hamstring 達 健側 80%</td></tr>
+</table>
+
+<h4>Phase 5（6-9 個月）— Return to Sport Phase</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>專項訓練</td><td>籃球：運球、急停跳投、防守滑步</td></tr>
+<tr><td>對抗</td><td>非對抗練習 → 半對抗 → 全對抗</td></tr>
+<tr><td>心理</td><td>恐懼評估（Tampa Scale of Kinesiophobia）</td></tr>
+<tr><td>確認</td><td>通過 Return to Sport criteria</td></tr>
+</table>
+
+<h4>2. Return to Sport Criteria（必背）</h4>
+<table>
+<tr><th>標準</th><th>內容</th></tr>
+<tr><td><strong>時間</strong></td><td>術後 ≥ 9 個月（&lt; 9 個月再撕裂率高 4 倍）</td></tr>
+<tr><td><strong>肌力對稱</strong></td><td>Quad / HS LSI（Limb Symmetry Index）<strong>≥ 90%</strong>（兩側肌力差 ≤ 10%）</td></tr>
+<tr><td><strong>Hop test</strong></td><td>Single hop / triple hop / crossover hop / 6m timed hop 四項全部 LSI ≥ 90%</td></tr>
+<tr><td><strong>功能測試</strong></td><td>Y-balance、drop jump landing kinematics（無 dynamic valgus）</td></tr>
+<tr><td><strong>心理</strong></td><td>ACL-RSI（Return to Sport after Injury Scale）&gt; 65 分</td></tr>
+<tr><td><strong>專項</strong></td><td>能完成 sport-specific drill 無代償</td></tr>
+</table>
+
+<h4>3. CKC vs OKC 應力比較（重要觀念）</h4>
+<table>
+<tr><th>運動</th><th>對 ACL 應力</th><th>建議</th></tr>
+<tr><td><strong>CKC（squat、leg press、lunges）</strong></td><td>低（co-contraction）</td><td>術後早期即可</td></tr>
+<tr><td><strong>OKC knee extension（坐姿伸膝）</strong></td><td>0-30° 應力最大</td><td><strong>術後 3 個月內避免 0-30°</strong></td></tr>
+<tr><td>OKC 30-90°</td><td>應力較低</td><td>3 個月後可進行</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>「希望 + 現實」對話框</strong><br>
+病人問：「醫師，我多久可以打球？」<br>
+回答：「我理解你想盡快重返球場（希望）。<strong>但 ACL 重建後韌帶要 9-12 個月才完成 ligamentization（生物學重塑）</strong>，太早回場再撕裂率比一般人高 4 倍以上（現實）。<br>
+我們會在 6 個月時做 hop test 與肌力測試，<strong>四項 hop test 兩側差 ≤ 10%、quad 肌力 ≥ 90%、加上心理準備量表</strong>都達標才回場。<br>
+這段時間我會陪你按階段訓練，先紮實再快速。」<br>
+家屬：「過程辛苦，但是值得的。回去太快只會讓孩子再開一次刀。」
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>5 階段復健：0-2w / 2-6w / 6-12w / 3-6m / 6-9m</strong>（必背架構）</li>
+<li><strong>OKC 0-30° 三個月內禁忌</strong>（剪力對 graft 最大）</li>
+<li><strong>CKC（squat / leg press）安全</strong>，可早期介入</li>
+<li>Return to Sport：<strong>≥ 9 個月 + LSI ≥ 90% + Hop test + 心理</strong></li>
+<li>每延遲 1 個月回場，再撕裂率減半</li>
+<li>復健核心：<strong>quad activation → ROM → strength → proprioception → plyometrics → sport-specific</strong></li>
+</ul>`,
+      },
+      {
+        q: '術後 brace 與輔具如何處方？如何預防再撕裂？',
+        keywords: [
+          'Hinged knee brace（術後 0-6 週）',
+          'Functional ACL brace（重返運動）',
+          'Brace 角度設定 0-90° → full ROM',
+          'Crutch: PWB → FWB（依手術型態）',
+          'ACL prevention program（FIFA 11+, PEP）',
+          'Neuromuscular training',
+          'Drop jump landing mechanics',
+          'Re-tear rate 5-10%（同側）+ 對側 ACL 5-10%',
+        ],
+        points: [
+          '<strong>Hinged brace 0-6 週</strong>：保護移植物 + 限制 ROM',
+          'Brace 角度 Phase 1: 0-90° → Phase 2: full ROM',
+          '<strong>Functional ACL brace</strong> 用於重返運動 1-2 年',
+          '雙拐步行 0-2 週（依手術 weight-bearing 規則）',
+          '單拐 → 棄拐通常 2-4 週',
+          '<strong>FIFA 11+ / PEP program</strong>：全球公認 ACL 預防方案',
+          '神經肌肉訓練 + plyometrics + landing mechanics',
+          '<strong>再撕裂率：同側 5-10%、對側 5-10%</strong>（年輕女性更高）',
+        ],
+        a: `<h4>1. Brace 處方</h4>
+<table>
+<tr><th>類型</th><th>使用時機</th><th>角度設定</th></tr>
+<tr><td><strong>Post-op hinged knee brace</strong></td><td>術後 0-6 週</td><td>Phase 1: 0-90°（locked extension 走路）→ Phase 2: full ROM</td></tr>
+<tr><td>過渡期 brace</td><td>6 週 - 3 個月</td><td>Full ROM，可隨意脫戴</td></tr>
+<tr><td><strong>Functional ACL brace</strong></td><td>重返運動後 1-2 年（高風險族群）</td><td>運動時穿戴，支持側向穩定</td></tr>
+<tr><td>客製 brace</td><td>合併 MCL/LCL 手術</td><td>依韌帶保護方向設計</td></tr>
+</table>
+
+<h4>2. 步行輔具處方</h4>
+<table>
+<tr><th>時期</th><th>輔具</th><th>承重</th></tr>
+<tr><td>0-2 週</td><td>雙拐</td><td>PWB（partial weight bearing）；簡單 BPTB / Hamstring 可 WBAT</td></tr>
+<tr><td>2-4 週</td><td>單拐 / 雙拐漸進</td><td>FWB（full weight bearing）逐步達成</td></tr>
+<tr><td>4-6 週</td><td>棄拐</td><td>正常步態</td></tr>
+<tr><td>合併 meniscus 修復</td><td>雙拐至少 4-6 週</td><td>NWB → PWB → FWB（依 meniscus 修復方式）</td></tr>
+</table>
+
+<h4>3. ACL 再撕裂風險（必背數字）</h4>
+<table>
+<tr><th>項目</th><th>風險</th></tr>
+<tr><td>同側再撕裂</td><td><strong>5-10%</strong>（年輕運動員可達 15-20%）</td></tr>
+<tr><td>對側 ACL 撕裂</td><td><strong>5-10%</strong>（同側完成手術後）</td></tr>
+<tr><td>高風險族群</td><td>① 年輕女性（女性風險 2-8 倍）<br>② &lt; 9 個月回場<br>③ Pivot sport（足球、籃球、滑雪）<br>④ Quad weakness、dynamic valgus</td></tr>
+</table>
+
+<h4>4. ACL 預防訓練（Prevention Program）</h4>
+<table>
+<tr><th>方案</th><th>內容</th></tr>
+<tr><td><strong>FIFA 11+</strong></td><td>足球員專用，每週 2-3 次，全球公認最佳<br>包含：跑步暖身 + 肌力 + plyometrics + 平衡（共 15 個動作）</td></tr>
+<tr><td><strong>PEP Program</strong></td><td>(Prevent injury, Enhance Performance)<br>強調 neuromuscular control、core、plyometric、肌力</td></tr>
+<tr><td><strong>關鍵元素</strong></td><td>① <strong>Landing mechanics</strong>：膝蓋對齊腳尖、避免 valgus collapse<br>② Quadriceps + Hamstring + Glute 肌力<br>③ Core stability<br>④ Plyometric training（drop jump、hop）<br>⑤ Cutting / pivoting drill</td></tr>
+</table>
+
+<h4>5. Dynamic Valgus 矯正（核心預防）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+ACL 受傷的力學原理：落地時膝關節呈 <strong>dynamic valgus</strong>（外翻）+ 膝關節接近 full extension + 軀幹側傾。<br>
+預防核心：<strong>「膝蓋對齊腳尖」</strong>原則（knee over toe）。<br>
+訓練：drop jump 慢動作影片回饋、mirror feedback、雙腳深蹲先學會 → 進階單腳。
+</p>
+
+<h4>6. 復健藥物 / 輔助治療</h4>
+<table>
+<tr><th>項目</th><th>使用</th></tr>
+<tr><td>NSAIDs</td><td>急性期短期止痛（&lt; 2 週）；長期影響 graft healing 仍有爭議，建議短期</td></tr>
+<tr><td>冰敷 / cryotherapy</td><td>術後 48-72 小時持續使用</td></tr>
+<tr><td>E-stim（NMES）</td><td>Quadriceps activation 不全時使用，特別 quad lag 病人</td></tr>
+<tr><td>Blood flow restriction (BFR) training</td><td>近年熱門，低負荷下達到肌肥大效果，適合術後早期</td></tr>
+<tr><td>骨密度 / 營養</td><td>蛋白質 1.6-2.0 g/kg、Vit D、Ca 補充支持 graft 癒合</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Hinged brace 6 週</strong>：保護 graft + 限制 ROM</li>
+<li>運動員可考慮 <strong>functional ACL brace</strong> 重返運動 1-2 年</li>
+<li><strong>FIFA 11+ / PEP program</strong>：全球公認預防方案</li>
+<li><strong>再撕裂率同側 5-10% + 對側 5-10%</strong>，加總 10-20%</li>
+<li>女性風險 2-8 倍，年輕運動員 + &lt; 9 個月回場最高</li>
+<li>核心預防：<strong>landing mechanics（膝蓋對齊腳尖）</strong>+ neuromuscular training</li>
+</ul>`,
+      },
+      {
+        q: '請說明 ACL 重建術後常見併發症與長期 OA 風險。如何向病人衛教？',
+        keywords: [
+          'Arthrofibrosis（關節纖維化）',
+          'Cyclops lesion（伸膝受限）',
+          'Graft failure / re-tear',
+          'Infection（&lt; 1%）、DVT',
+          'Persistent pain、quad weakness',
+          'Donor site morbidity（BPTB knee pain / HS weakness）',
+          'Long-term OA risk（10-20 年後 50%）',
+          'Meniscus integrity 是 OA 預防關鍵',
+        ],
+        points: [
+          '<strong>Arthrofibrosis</strong>：最常見、ROM 受限（特別 extension 不足）',
+          '<strong>Cyclops lesion</strong>：ACL 前方纖維化結節 → 伸膝受限',
+          'Graft failure 5-10%、年輕族群 15-20%',
+          '感染 &lt; 1%（手術相關）、DVT 風險低（年輕族群）',
+          'Quad weakness 持續 6-12 個月，BPTB 病人 anterior knee pain',
+          'Hamstring：膝彎曲肌力降 10-15%（特別深屈曲）',
+          '<strong>長期 OA：10-20 年後 50% 病人有放射學 OA</strong>',
+          'Meniscus 完整性是 OA 預防最關鍵因素（&gt; ACL 本身）',
+        ],
+        a: `<h4>1. ACL 術後早期併發症（&lt; 6 個月）</h4>
+<table>
+<tr><th>併發症</th><th>發生率</th><th>處理</th></tr>
+<tr><td><strong>Arthrofibrosis（關節纖維化）</strong></td><td>2-10%</td><td>積極 ROM 復健、必要時 manipulation under anesthesia 或 arthroscopic release</td></tr>
+<tr><td><strong>Cyclops lesion</strong></td><td>1-10%</td><td>ACL 前方纖維結節，造成 <strong>extension 受限 + 機械性 block</strong>，需 arthroscopic 切除</td></tr>
+<tr><td>感染</td><td>&lt; 1%</td><td>抗生素 + 必要時 arthroscopic irrigation；保留 graft</td></tr>
+<tr><td>DVT</td><td>&lt; 2%（年輕族群低）</td><td>早期下床、ankle pumping、必要時抗凝血</td></tr>
+<tr><td>Graft failure（早期）</td><td>1-3%</td><td>Tunnel placement 不正確、固定不良、過早回場</td></tr>
+<tr><td>Quadriceps weakness</td><td>常見，6-12 個月恢復</td><td>E-stim、CKC 訓練、BFR training</td></tr>
+</table>
+
+<h4>2. ACL 術後中長期併發症</h4>
+<table>
+<tr><th>併發症</th><th>內容</th></tr>
+<tr><td><strong>Graft re-tear（同側）</strong></td><td>5-10%（年輕運動員 15-20%）</td></tr>
+<tr><td><strong>對側 ACL 撕裂</strong></td><td>5-10%</td></tr>
+<tr><td>Persistent anterior knee pain</td><td>BPTB 10-20%（kneeling pain）</td></tr>
+<tr><td>Hamstring weakness</td><td>HS graft 病人深屈曲肌力降 10-15%</td></tr>
+<tr><td><strong>Long-term OA</strong></td><td><strong>10-20 年後 50% 有放射學 OA</strong>（重建未必能完全預防）</td></tr>
+</table>
+
+<h4>3. Donor Site Morbidity 比較</h4>
+<table>
+<tr><th>移植物</th><th>主要 morbidity</th></tr>
+<tr><td>BPTB</td><td><strong>Anterior knee pain（10-20%）、kneeling pain</strong>、髕骨骨折（&lt; 1%）、patellar tendinitis</td></tr>
+<tr><td>Hamstring</td><td><strong>深屈曲 HS 肌力降 10-15%</strong>、saphenous nerve 感覺異常、爆發力下降</td></tr>
+<tr><td>Quadriceps tendon</td><td>近端伸膝肌力短暫下降、傷口較大</td></tr>
+<tr><td>Allograft</td><td>無 donor site 問題；但感染 + re-tear 風險高（年輕族群）</td></tr>
+</table>
+
+<h4>4. 長期 OA 預防策略</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+研究顯示：ACL 重建後 10-20 年，<strong>~50% 病人發展 radiographic OA</strong>，但症狀性 OA 比例較低。<br>
+<strong>OA 風險最關鍵因素：meniscus 完整性</strong>（&gt; ACL 重建本身）。<br>
+→ <strong>能修復 meniscus 就修復、不要輕易切除</strong>（meniscectomy 後 OA 風險翻倍）。<br>
+→ 維持理想體重、肌力訓練、避免過度衝擊。<br>
+→ ACL 重建主要解決「不穩定」問題，但無法完全逆轉軟骨損傷。
+</p>
+
+<h4>5. SDM「希望 + 現實」對話</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>病人</strong>：「醫師，開完刀我膝蓋會跟以前一樣嗎？」<br>
+<strong>醫師</strong>：「我希望可以盡量恢復（希望）。<br>
+<strong>但要誠實告訴你（現實）</strong>：<br>
+① 現代手術技術可以讓 80-90% 病人重返運動，<strong>但 5-10% 會再撕裂</strong>。<br>
+② <strong>另一邊膝蓋也有 5-10% 風險</strong>，因為再受傷的力學模式類似。<br>
+③ 即使手術成功，<strong>10-20 年後約一半病人會出現 X 光上的 OA 變化</strong>，但有症狀的較少。<br>
+④ 你今天合併半月板撕裂，這個如果能修復（不切掉），對長期關節保護更重要。<br>
+⑤ <strong>術後 9-12 個月的紮實復健 + 終生肌力維持</strong>，比手術本身更決定你的長期預後。」<br>
+家屬：「孩子，這次不是傷好就沒事，而是你接下來要養成新的訓練習慣。」
+</p>
+
+<h4>6. 衛教重點清單</h4>
+<table>
+<tr><th>類別</th><th>衛教內容</th></tr>
+<tr><td>急性期</td><td>傷口照護、冰敷、抬高、抗凝血藥使用、何時拆線</td></tr>
+<tr><td>復健配合</td><td>每階段目標、CPM 使用、brace 穿戴、不可跳階段</td></tr>
+<tr><td>飲食</td><td>蛋白質、Vit D、Ca、控制體重</td></tr>
+<tr><td>運動</td><td><strong>9 個月內絕對不回 pivot sport</strong>、不可跳級訓練</td></tr>
+<tr><td>長期</td><td>終生肌力訓練、神經肌肉控制、預防對側 ACL</td></tr>
+<tr><td>心理</td><td>正視恐懼（Tampa Scale）、必要時心理諮商</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Cyclops lesion</strong>：ACL 前方纖維結節 → extension 受限（必背的特殊併發症）</li>
+<li><strong>Arthrofibrosis</strong>：最常見早期併發症，積極 ROM 復健</li>
+<li><strong>Long-term OA：10-20 年 50%</strong>（必背數字）</li>
+<li><strong>Meniscus 完整性是 OA 預防最關鍵</strong>（&gt; ACL 重建）</li>
+<li>BPTB 主要 morbidity：anterior knee pain；HS 主要 morbidity：深屈曲肌力下降</li>
+<li>SDM 重點：誠實告知再撕裂、對側風險、長期 OA，但給予具體可行的預防策略</li>
+<li>PMR 角色：<strong>術前 quiet knee、術後分階段復健、長期肌力維持、ACL 預防方案推廣</strong></li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
