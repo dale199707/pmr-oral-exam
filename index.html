@@ -44379,6 +44379,762 @@ DM 病人 frozen shoulder 治療要點：<br>
       },
     ],
   },
+  {
+    id: 'ortho_008',
+    domain: 'msk',
+    title: 'Hip AVN（Ficat staging + 術後復健）',
+    context: `65 歲女性，DM 控制中。
+否認喝酒、未使用類固醇、不抽菸。
+1 個月前跌倒後右髖關節持續疼痛，<strong>放射至鼠蹊部</strong>。
+走路、上下樓加重；夜間痛、無法側睡患側。
+無發燒、無體重減輕。
+
+理學檢查：
+- 步態：antalgic gait（短 stance phase 患側）
+- ROM（仰臥）：
+  - <strong>Hip IR 受限疼痛（最受限）</strong>
+  - Flexion 100°、ABD 25°（受限）、ER 25°
+  - 健側 IR 35°、ABD 45°
+- <strong>FADIR (+)、FABER (+)、Stinchfield test (+)</strong>
+- Patrick test (+) 鼠蹊部痛
+- Neurovascular intact
+- VAS 7/10
+
+X-ray：右 hip joint space narrowing、subchondral sclerosis、<strong>crescent sign（subchondral collapse 微小）</strong>。`,
+    questions: [
+      {
+        q: '請列舉 5 個髖痛鑑別診斷，並說明 hip ROM 量測方法（基準線、姿勢）。',
+        keywords: [
+          'Hip OA',
+          'AVN（avascular necrosis）',
+          'FAI（femoroacetabular impingement）',
+          'Labral tear',
+          'Trochanteric bursitis',
+          'Iliopsoas bursitis / tendinitis',
+          'L-spine radiculopathy（referred）',
+          'SI joint',
+          'Hip ROM goniometry',
+          'Hip capsular pattern: IR &gt; flex &gt; ABD',
+        ],
+        points: [
+          '<strong>Hip 5 大 DDx</strong>：OA、AVN、FAI、labral tear、trochanteric bursitis',
+          '進階：iliopsoas、SI joint、L-spine referred、tumor、infection',
+          '<strong>Hip capsular pattern：IR &gt; flexion &gt; ABD</strong>（必背）',
+          '<strong>Hip ROM 量測姿勢</strong>：仰臥 vs 俯臥 vs 坐姿',
+          'Flexion：仰臥（屈膝避免 hamstring 限制）',
+          'Extension：俯臥（測 IR / ER 也可俯臥屈膝 90°）',
+          'ABD/Add：仰臥',
+          'IR/ER：仰臥屈髖屈膝 90° 或俯臥屈膝 90°',
+          '<strong>基準線：goniometer 軸對 anterior superior iliac spine（ASIS）對應點</strong>',
+        ],
+        a: `<h4>1. 5 個髖痛鑑別診斷（依機轉 / 解剖分層）</h4>
+<table>
+<tr><th>類別</th><th>診斷</th><th>關鍵特徵</th></tr>
+<tr><td><strong>關節（cartilage）</strong></td><td>Hip OA</td><td>晨僵 &lt; 30 min、活動加重、IR 最受限、varus alignment</td></tr>
+<tr><td><strong>關節（骨）</strong></td><td><strong>AVN（osteonecrosis）</strong></td><td>Hip IR 受限、跌倒後痛、X-ray crescent sign、Ficat staging</td></tr>
+<tr><td><strong>結構性</strong></td><td>FAI（cam / pincer）、labral tear</td><td>FADIR (+)、深屈時痛、年輕、hip flexion clicking</td></tr>
+<tr><td><strong>軟組織</strong></td><td>Trochanteric bursitis、iliopsoas tendinitis</td><td>外側 / 鼠蹊部痛、resisted flex / ER 痛</td></tr>
+<tr><td><strong>Referred</strong></td><td>L-spine radiculopathy、SI joint</td><td>SLRT (+)、Spurling、SI joint test (+)</td></tr>
+</table>
+
+<h4>2. 進階 DDx</h4>
+<table>
+<tr><th>類別</th><th>診斷</th></tr>
+<tr><td>骨</td><td>Stress fracture、femoral neck fx、insufficiency fx</td></tr>
+<tr><td>感染 / tumor</td><td>Septic arthritis、osteomyelitis、tumor / metastasis（特別 femoral neck）</td></tr>
+<tr><td>系統性</td><td>RA、AS、PsA、reactive arthritis</td></tr>
+<tr><td>神經</td><td>Meralgia paresthetica（lateral femoral cutaneous nerve）、piriformis syndrome</td></tr>
+<tr><td>血管</td><td>Iliac artery atherosclerosis（claudication-like 鼠蹊痛）</td></tr>
+</table>
+
+<h4>3. Hip 紅旗排除</h4>
+<table>
+<tr><th>紅旗</th><th>對應疾病</th></tr>
+<tr><td>跌倒後突發 + 無法承重</td><td>Femoral neck fx、AVN</td></tr>
+<tr><td>夜間痛 + 體重減輕</td><td>Tumor、metastasis</td></tr>
+<tr><td>發燒 + 紅腫</td><td>Septic hip arthritis</td></tr>
+<tr><td>類固醇使用、酒精</td><td>AVN（重要 risk factor）</td></tr>
+<tr><td>突發無力 + 神經學異常</td><td>Cauda equina、L-spine</td></tr>
+<tr><td>多關節對稱</td><td>RA、PsA</td></tr>
+</table>
+
+<h4>4. Hip ROM 正常值（必背）</h4>
+<table>
+<tr><th>動作</th><th>正常值</th><th>姿勢</th></tr>
+<tr><td><strong>Flexion</strong></td><td>120-140°（屈膝）/ 90°（伸膝、hamstring limit）</td><td>仰臥屈膝</td></tr>
+<tr><td><strong>Extension</strong></td><td>10-30°</td><td>俯臥</td></tr>
+<tr><td><strong>Abduction</strong></td><td>40-45°</td><td>仰臥</td></tr>
+<tr><td><strong>Adduction</strong></td><td>20-30°（過 midline）</td><td>仰臥</td></tr>
+<tr><td><strong>Internal Rotation</strong></td><td>30-45°</td><td>仰臥屈髖屈膝 90°（首選）或俯臥屈膝 90°</td></tr>
+<tr><td><strong>External Rotation</strong></td><td>40-60°</td><td>仰臥屈髖屈膝 90°（首選）或俯臥屈膝 90°</td></tr>
+</table>
+
+<h4>5. Hip ROM 量測操作（陳良城重點）</h4>
+<table>
+<tr><th>動作</th><th>姿勢 / 操作</th><th>基準線（goniometer）</th></tr>
+<tr><td><strong>Flexion</strong></td><td>仰臥、屈膝（避免 hamstring 限制）；對側髖維持伸直；觀察是否出現 pelvic tilt（lumbar flexion）</td><td>軸對 greater trochanter；fixed arm 沿 lateral midline of pelvis；moving arm 沿 femur shaft</td></tr>
+<tr><td><strong>Extension</strong></td><td>俯臥、骨盆固定；觀察 lumbar lordosis 代償</td><td>同上</td></tr>
+<tr><td><strong>Abduction / Adduction</strong></td><td>仰臥、雙腳伸直；對側固定；觀察 pelvic 代償</td><td>軸對 ASIS；fixed arm 連兩側 ASIS；moving arm 沿 femur 中線（向 patella 中央）</td></tr>
+<tr><td><strong>IR / ER</strong></td><td><strong>仰臥屈髖屈膝 90°</strong>（首選）—— 用 tibial axis 來測<br>或 <strong>俯臥屈膝 90°</strong>（替代）</td><td>軸對膝中央；fixed arm 垂直地面（IR / ER 起始位）；moving arm 沿 tibial shaft</td></tr>
+</table>
+
+<h4>6. 「躺著還是坐著」的選擇（陳良城追問）</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>陳良城追問：「測 hip ROM 是躺著還是坐著？」</strong><br>
+<strong>標準答案：依動作而定</strong><br>
+① <strong>Flexion / ABD / Add → 仰臥</strong>（標準 AAOS 規範）<br>
+② <strong>Extension → 俯臥</strong>（伸髖時 lumbar 不會代償）<br>
+③ <strong>IR / ER → 仰臥屈髖屈膝 90° 或俯臥屈膝 90°</strong>（測 tibial axis 角度）<br>
+&nbsp;&nbsp;&nbsp;&nbsp;・<strong>仰臥</strong>：髖在 90° flexion，模擬 closed-pack position<br>
+&nbsp;&nbsp;&nbsp;&nbsp;・<strong>俯臥</strong>：髖在 0° extension，更貼近 functional 站姿<br>
+&nbsp;&nbsp;&nbsp;&nbsp;・兩者結果不同（俯臥 IR 通常較少）<br>
+④ <strong>坐姿</strong>：可用於評估 IR / ER（屈髖 90°），但不建議當主要測量姿勢
+</p>
+
+<h4>7. Hip Capsular Pattern（必考）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>Capsular pattern</strong></td><td><strong>Internal Rotation &gt; Flexion &gt; Abduction</strong>（受限程度由大到小）</td></tr>
+<tr><td>意義</td><td>Joint capsule 攣縮 / 發炎、advanced OA、frozen hip、AVN</td></tr>
+<tr><td>本病人</td><td><strong>IR 受限最嚴重 → 符合 hip capsular pattern → AVN 或 advanced OA</strong></td></tr>
+</table>
+
+<h4>8. 本病人 PE 解讀</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+✅ Antalgic gait：減少患側 stance time<br>
+✅ <strong>IR 受限最嚴重（capsular pattern）→ Hip 關節內病變（AVN / 嚴重 OA）</strong><br>
+✅ FADIR (+)：FAI / labral tear / hip 關節內病變<br>
+✅ FABER (+)：hip joint / SI joint<br>
+✅ Stinchfield test (+)：hip 關節內病變（仰臥 SLR + resisted hip flex 30° → 鼠蹊痛）<br>
+✅ Patrick test (+) 鼠蹊痛 → hip 關節內<br>
+✅ X-ray crescent sign → <strong>AVN！</strong><br>
+→ <strong>診斷：Hip AVN（probable Ficat stage III）</strong>，須進一步影像確認
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>5 個髖痛 DDx</strong>：OA、AVN、FAI、labral、bursitis（必背）</li>
+<li><strong>Hip capsular pattern：IR &gt; flexion &gt; ABD</strong></li>
+<li><strong>Hip ROM 正常值</strong>：flex 120-140°、ABD 45°、IR 35°、ER 50°</li>
+<li><strong>Flexion 仰臥屈膝 / Extension 俯臥</strong></li>
+<li><strong>IR/ER 仰臥屈髖屈膝 90° 或俯臥屈膝 90°</strong></li>
+<li>Goniometer 軸：flex/ext 對 GT；ABD/Add 對 ASIS；IR/ER 對膝</li>
+<li>本病人 IR 受限最嚴重 + crescent sign → AVN（probable Ficat III）</li>
+</ul>`,
+      },
+      {
+        q: '請示範 Patrick test、FADIR、Stinchfield test，並說明 Patrick test 手要擺哪裡。',
+        keywords: [
+          'FABER (Patrick) test 操作',
+          'FADIR test（impingement / OA）',
+          'Stinchfield test',
+          'Trendelenburg test',
+          'Thomas test（hip flexion contracture）',
+          'Log roll test',
+          'Ober test（IT band）',
+          'Ely test（rectus femoris）',
+        ],
+        points: [
+          '<strong>Patrick test = FABER（Flexion + ABDuction + External Rotation）</strong>',
+          '一手固定<strong>對側 ASIS</strong>，另一手<strong>壓患側膝關節</strong>',
+          '陳良城重點：<strong>「手要擺對側 ASIS 提供反作用力」</strong>',
+          'FABER 區分：鼠蹊痛 → hip joint；同側臀後痛 → SI joint',
+          'FADIR：F+ADd+IR（仰臥屈髖 90° + adduction + IR）→ FAI / OA / labral',
+          'Stinchfield：仰臥 + 直腿 hip flex 30° + resisted → 鼠蹊痛 (+) → 關節內',
+          'Trendelenburg：單腳站，骨盆下垂 → glute med 無力',
+          'Thomas test：仰臥屈對側膝胸 → 患側髖無法平貼 → flexion contracture',
+        ],
+        a: `<h4>1. Patrick (FABER) Test 操作（陳良城追問重點）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>仰臥</td></tr>
+<tr><td>動作</td><td>① 患側 hip <strong>F</strong>lexion（屈髖）<br>② <strong>AB</strong>duction（外展）<br>③ <strong>E</strong>xternal <strong>R</strong>otation（外旋）<br>④ 將腳踝放在對側膝上方（呈 4 字形）</td></tr>
+<tr><td><strong>檢查者手位（陳良城重點）</strong></td><td><strong>① 一手壓住「對側 ASIS（前上髂棘）」</strong>提供反作用力 + 防止 pelvic rotation<br><strong>② 另一手壓住「患側膝外側」</strong>向外向下施壓</td></tr>
+<tr><td>判讀</td><td>① 鼠蹊 / hip 前方痛 → <strong>Hip joint 病變（OA / FAI / AVN）</strong><br>② 同側臀後 / SI joint 痛 → <strong>SI joint 病變</strong><br>③ 內側股骨 / adductor 痛 → adductor strain</td></tr>
+<tr><td>備註</td><td>是「篩檢題」可區分 hip vs SI joint，但 specificity 不高（合併其他 test）</td></tr>
+</table>
+
+<h4>2. FADIR Test（FAI / OA / Labral 高敏感）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>仰臥，hip <strong>F</strong>lexion 90° + 屈膝 90°</td></tr>
+<tr><td>動作</td><td>檢查者一手壓膝向下（維持 flexion）+ 另一手 <strong>AD</strong>duction（內收）+ <strong>I</strong>nternal <strong>R</strong>otation（內旋）</td></tr>
+<tr><td>判讀</td><td>鼠蹊部痛 (+) → <strong>FAI（cam type）/ OA / Labral tear / 髖關節 anterior 病變</strong></td></tr>
+<tr><td>Sensitivity</td><td>FAI 約 88%（高敏感）</td></tr>
+<tr><td>備註</td><td>本病人 FADIR (+) 強烈支持 hip 關節內病變</td></tr>
+</table>
+
+<h4>3. Stinchfield Test（簡單而強）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>仰臥、雙腳伸直</td></tr>
+<tr><td>動作</td><td>請病人主動 hip flex 至 30° 並維持；檢查者於膝上方<strong>向下抗阻</strong></td></tr>
+<tr><td>判讀</td><td>鼠蹊部痛 (+) → <strong>關節內病變</strong>（OA、AVN、labral、FAI）</td></tr>
+<tr><td>備註</td><td>iliopsoas 收縮會 stress hip joint capsule + 軟骨</td></tr>
+</table>
+
+<h4>4. Trendelenburg Test（gluteus medius）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>站立，請病人單腳站（懸空患側對側腳）</td></tr>
+<tr><td>觀察</td><td>骨盆是否水平</td></tr>
+<tr><td>判讀</td><td>① <strong>骨盆向懸空側下垂 → Trendelenburg sign (+)</strong> = 站立側 gluteus medius 無力（superior gluteal nerve、L5 root、hip joint 病變）<br>② 同時伴 trunk 向站立側傾斜 = compensated（避免下垂）</td></tr>
+<tr><td>應用</td><td>Hip OA、AVN 病人常 Trendelenburg (+)，因疼痛 / disuse 引發 glute med 無力</td></tr>
+</table>
+
+<h4>5. Thomas Test（Hip Flexion Contracture）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>仰臥、屁股靠床緣</td></tr>
+<tr><td>動作</td><td>① 對側膝抱胸（消除 lumbar lordosis）<br>② 觀察患側髖、膝</td></tr>
+<tr><td>判讀</td><td>① 患側 hip 無法平貼床面（仍 flexion） → <strong>Hip flexion contracture（iliopsoas 緊或 capsule 攣縮）</strong><br>② 患側 knee 自動 extension → rectus femoris 緊<br>③ 患側 hip 外展 → ITB 緊<br>④ 量化角度：lumbar 平貼床時，患側股骨與床面的角度</td></tr>
+</table>
+
+<h4>6. Log Roll Test（最 specific for hip joint）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>仰臥、雙腳伸直</td></tr>
+<tr><td>動作</td><td>檢查者抓 distal femur，被動 IR / ER 整條腿（如同 log 滾動）</td></tr>
+<tr><td>判讀</td><td>鼠蹊部痛 / 卡住感 (+) → <strong>純 hip joint 病變（specificity 高，因不 stress 周圍軟組織）</strong></td></tr>
+<tr><td>備註</td><td>是區分 hip joint 與周圍軟組織痛最具 specificity 的 test</td></tr>
+</table>
+
+<h4>7. 其他重要 Hip Test</h4>
+<table>
+<tr><th>Test</th><th>用途</th></tr>
+<tr><td><strong>Ober test</strong></td><td>側臥，懸空患側腿，被動 ABD → release → 看是否能 ADD 至中線；無法 = ITB / gluteus medius / TFL 緊</td></tr>
+<tr><td><strong>Ely test</strong></td><td>俯臥，被動 knee flex → 患側髖自動 flex = rectus femoris 緊</td></tr>
+<tr><td><strong>SLR</strong></td><td>排除 sciatica（仰臥 SLR + dorsiflexion → radiating &lt; 70°）</td></tr>
+<tr><td><strong>Hip impingement test</strong></td><td>FADIR test（前面已述）；posterior impingement test（俯臥 ER + extension）</td></tr>
+<tr><td><strong>Resisted SLR</strong></td><td>仰臥 SLR + 抗阻 → iliopsoas 痛 = iliopsoas strain</td></tr>
+<tr><td><strong>Snapping hip test</strong></td><td>仰臥 hip flex + abd + ER → ext + add + IR；聽到 snap = ITB external snapping</td></tr>
+</table>
+
+<h4>8. PE 整合解讀</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+本病人三項 (+)：<strong>Patrick + FADIR + Stinchfield</strong> → 高度符合 hip 關節內病變<br>
++ <strong>IR 受限最嚴重（capsular pattern）+ X-ray crescent sign</strong> → <strong>AVN（最可能 Ficat III）</strong><br>
+排除：trochanteric bursitis（無外側壓痛、resisted ABD 不痛）；iliopsoas（resisted SLR 不過度痛）；SI joint（SI joint test 應為 (-)）<br>
+須進一步：<strong>MRI 確認 Ficat staging + 評估對側</strong>（雙側 AVN 風險）
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Patrick (FABER) 操作</strong>：手要壓對側 ASIS（提供反作用 + 防 pelvic 旋轉）</li>
+<li>FABER 鼠蹊痛 → hip；臀後痛 → SI joint</li>
+<li><strong>FADIR test</strong>：F+Add+IR → FAI、OA、labral、AVN（鼠蹊痛 (+)）</li>
+<li><strong>Stinchfield test</strong>：直腿 hip flex 30° + resisted → 關節內病變</li>
+<li>Trendelenburg：站立側 glute med 無力</li>
+<li>Thomas test：hip flexion contracture 量化</li>
+<li><strong>Log roll test specificity 最高</strong>（純 hip joint）</li>
+<li>Ober（ITB）、Ely（rectus femoris）肌肉緊度測試</li>
+</ul>`,
+      },
+      {
+        q: '請說明 AVN 影像判讀（X-ray、MRI），Ficat staging 與 crescent sign 意義。',
+        keywords: [
+          'X-ray AP + frog leg lateral',
+          'Ficat staging 0-IV',
+          'Crescent sign（subchondral fracture）',
+          'MRI: T1 / T2 fat sat',
+          'Double line sign（MRI 經典）',
+          'Bone marrow edema',
+          'KL grading（OA 比較）',
+          'Risk factors: steroid, alcohol, DM, sickle cell',
+          'Bilateral involvement 50-80%',
+        ],
+        points: [
+          '<strong>Ficat staging（最常用）：0、I、II、III、IV</strong>',
+          'Stage 0：影像正常、可能對側已有變化；只能 MRI 偵測',
+          'Stage I：X-ray 正常 / 微小變化；<strong>MRI 才能診斷</strong>',
+          'Stage II：X-ray 看到 subchondral sclerosis、cyst（無 collapse）',
+          '<strong>Stage III：Crescent sign（subchondral fracture）+ joint surface 開始 collapse</strong>',
+          'Stage IV：joint space narrowing + secondary OA（涉及 acetabulum）',
+          '<strong>MRI 黃金診斷</strong>：double line sign（內 hyperintense + 外 hypointense）',
+          '雙側 AVN 機率 50-80%（必須對側 MRI 篩檢）',
+        ],
+        a: `<h4>1. AVN Risk Factors（必背）</h4>
+<table>
+<tr><th>類別</th><th>原因</th></tr>
+<tr><td><strong>外傷性（traumatic）</strong></td><td>Femoral neck fracture、hip dislocation（中斷血供）</td></tr>
+<tr><td><strong>非外傷性（non-traumatic）</strong></td><td>① <strong>類固醇</strong>（最常見）<br>② <strong>酒精</strong>（&gt; 400 mL/wk）<br>③ <strong>Sickle cell disease</strong><br>④ Lupus / autoimmune<br>⑤ <strong>DM</strong>（本病人）<br>⑥ Caisson disease（潛水）<br>⑦ Pregnancy、Gaucher disease、HIV、化療<br>⑧ <strong>Idiopathic（30%）</strong></td></tr>
+</table>
+
+<h4>2. X-ray 判讀（AP + Frog Leg Lateral）</h4>
+<table>
+<tr><th>Stage</th><th>X-ray 表現</th></tr>
+<tr><td>0</td><td>完全正常（asymptomatic）</td></tr>
+<tr><td>I</td><td>多正常或微小 sclerosis；對影像 insensitive，需 MRI</td></tr>
+<tr><td><strong>II</strong></td><td>Subchondral sclerosis（mottled appearance）、subchondral cyst<br>無 subchondral collapse、無 joint space narrowing</td></tr>
+<tr><td><strong>III ⭐</strong></td><td><strong>Crescent sign（subchondral fracture）</strong><br>Femoral head 形狀變形、collapse 開始<br>Joint space 仍保留</td></tr>
+<tr><td>IV</td><td>Joint space narrowing + secondary OA（acetabulum 也受影響）<br>Femoral head flattening 嚴重<br>進階 hip OA</td></tr>
+</table>
+
+<h4>3. Ficat Staging 詳解</h4>
+<table>
+<tr><th>Stage</th><th>X-ray</th><th>MRI</th><th>臨床</th></tr>
+<tr><td>0（preclinical）</td><td>正常</td><td>正常 / 微小</td><td>無症狀；對側病人偵測到</td></tr>
+<tr><td><strong>I（preradiographic）</strong></td><td>正常</td><td><strong>Bone marrow edema、double line sign</strong></td><td>輕度 hip 痛、IR 略受限</td></tr>
+<tr><td><strong>II（cystic / sclerotic）</strong></td><td>Sclerosis、cyst<br><strong>無 collapse</strong></td><td>明顯 necrosis 區域</td><td>明顯痛、ROM 受限</td></tr>
+<tr><td><strong>III（crescent sign / collapse）</strong> ⭐</td><td><strong>Crescent sign + 開始 collapse</strong><br>Joint space 保留</td><td>Necrosis + subchondral fracture</td><td>嚴重痛、明顯 limp</td></tr>
+<tr><td>IV（OA 期）</td><td>Joint space 狹窄、secondary OA<br>Femoral head 嚴重 flattening</td><td>進階變化</td><td>嚴重痛、ROM 嚴重受限</td></tr>
+</table>
+
+<h4>4. Crescent Sign（必認影像）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>定義</strong></td><td>X-ray 上 femoral head 軟骨下出現「月牙形（crescent）」透亮帶</td></tr>
+<tr><td><strong>本質</strong></td><td><strong>Subchondral fracture</strong>（軟骨下骨折）— 死骨 vs 活骨之間的骨折線</td></tr>
+<tr><td><strong>臨床意義</strong></td><td><strong>Stage III</strong> 的關鍵 sign；意味 femoral head 即將 collapse</td></tr>
+<tr><td><strong>看到位置</strong></td><td>常在 anterosuperior femoral head（最 weight-bearing 區域）</td></tr>
+<tr><td><strong>Frog leg lateral 特別敏感</strong></td><td>AP view 可能漏失，必加 frog leg lateral</td></tr>
+<tr><td><strong>113 加分題</strong></td><td>「另一隻腳 MRI 有 hypointensity 一開始看不出來，他說是 crescent sign」</td></tr>
+</table>
+
+<h4>5. MRI 判讀（黃金診斷）</h4>
+<table>
+<tr><th>Sequence</th><th>Finding</th></tr>
+<tr><td><strong>T1（最重要）</strong></td><td>Necrosis 區域 = 低訊號（替代正常 fat marrow 高訊號）</td></tr>
+<tr><td><strong>T2 fat sat / STIR</strong></td><td>① <strong>Bone marrow edema</strong>（早期、提示活動性）<br>② Necrosis area 內部信號變異</td></tr>
+<tr><td><strong>Double Line Sign（經典）</strong> ⭐</td><td>T2 fat sat 上：<strong>內側 hyperintense（granulation tissue）+ 外側 hypointense（reactive sclerosis）</strong>—— 為 AVN pathognomonic sign</td></tr>
+<tr><td>Subchondral fracture</td><td>低訊號 line on T1, T2</td></tr>
+<tr><td>Joint effusion</td><td>T2 高訊號於 joint space</td></tr>
+<tr><td>Femoral head contour</td><td>Stage III 開始可見 flattening</td></tr>
+<tr><td><strong>對側篩檢</strong></td><td><strong>必須對側 hip MRI（即使無症狀）</strong>—— 雙側 AVN 50-80%</td></tr>
+</table>
+
+<h4>6. ARCO Classification（國際另一系統）</h4>
+<table>
+<tr><th>Stage</th><th>內容</th></tr>
+<tr><td>1</td><td>Reversible early（X-ray 正常、MRI 異常）</td></tr>
+<tr><td>2</td><td>Irreversible early（X-ray 開始有 sclerosis / cyst，無 collapse）</td></tr>
+<tr><td>3</td><td>Crescent sign + 開始 collapse</td></tr>
+<tr><td>4</td><td>OA 期</td></tr>
+<tr><td><strong>區別 Ficat</strong></td><td>ARCO 加入 quantitative measurement（lesion size、location），更精確；新版 ARCO 2019 簡化</td></tr>
+</table>
+
+<h4>7. 量化評估（影響治療選擇）</h4>
+<table>
+<tr><th>量化方法</th><th>內容</th></tr>
+<tr><td><strong>Necrotic angle（Kerboul angle）</strong></td><td>AP + lateral view 兩個 angle 相加；&lt; 200° 預後好；&gt; 240° 預後差（high collapse 風險）</td></tr>
+<tr><td><strong>Lesion size（MRI）</strong></td><td>&lt; 15% small；15-30% medium；&gt; 30% large（high collapse 風險）</td></tr>
+<tr><td><strong>Lesion location</strong></td><td>Lateral / superior weight-bearing area → high collapse 風險（Mont classification A、B、C）</td></tr>
+</table>
+
+<h4>8. 本病人影像推測</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+本病人 X-ray：joint space narrowing + subchondral sclerosis + <strong>crescent sign（subchondral collapse 微小）</strong><br>
+→ <strong>Ficat Stage III</strong>（已 collapse 但 joint space 仍有保留）<br>
+進一步建議：<br>
+① <strong>MRI 雙側 hip</strong> 確認對側是否有 silent AVN（Stage 0-I）<br>
+② 量化 lesion size + Kerboul angle 評估 collapse 風險<br>
+③ 加 frog leg lateral X-ray 確認 crescent sign 範圍<br>
+④ 113 加分題：「對側給一張 MRI 有 hypointensity，他說是 crescent sign」→ <strong>對側已 Stage III！</strong>（雙側 AVN 50-80%）<br>
+⑤ 醫師回答 grade III AVN，但考官說 grade II，問治療 → <strong>因為 grade II 仍有 joint preservation 機會</strong>
+</p>
+
+<h4>9. AVN vs Hip OA 鑑別</h4>
+<table>
+<tr><th>特徵</th><th>AVN</th><th>Hip OA</th></tr>
+<tr><td>年齡</td><td>30-50 歲（年輕）</td><td>&gt; 50-60 歲</td></tr>
+<tr><td>機轉</td><td>Steroid、酒精、DM、外傷</td><td>退化性、肥胖、過用</td></tr>
+<tr><td>X-ray 早期</td><td><strong>Subchondral sclerosis 但 joint space 保留</strong></td><td>Joint space narrowing 早期</td></tr>
+<tr><td>Crescent sign</td><td>有（Stage III）⭐</td><td>無</td></tr>
+<tr><td>MRI</td><td>Double line sign</td><td>Cartilage 變薄、subchondral edema</td></tr>
+<tr><td>雙側</td><td>50-80%</td><td>20-30%</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Ficat staging 0-IV</strong>（必背）</li>
+<li>Stage I：X-ray 正常，<strong>必 MRI 才能診斷</strong></li>
+<li>Stage II：sclerosis + cyst，<strong>無 collapse</strong></li>
+<li><strong>Stage III：Crescent sign + collapse，joint space 仍保留</strong></li>
+<li>Stage IV：OA 期</li>
+<li><strong>Crescent sign = subchondral fracture</strong>（必背 113 加分題）</li>
+<li><strong>MRI: Double line sign（內 hyper + 外 hypo）</strong>= AVN pathognomonic</li>
+<li><strong>必對側 MRI 篩檢</strong>（雙側 50-80%）</li>
+<li>量化：Kerboul angle、lesion size、location（影響治療）</li>
+</ul>`,
+      },
+      {
+        q: 'AVN 各 stage 治療策略？AVN 相關用藥？joint preservation 手術 vs THA？',
+        keywords: [
+          'Stage I-II 保守 + 用藥 + 早期手術 (core decompression)',
+          'Stage III-IV → THA',
+          'Bisphosphonates（alendronate）',
+          'Statin（降膽固醇 + 抗發炎）',
+          'Anticoagulant（hypercoagulable AVN）',
+          'Iloprost（vasodilator）',
+          'Core decompression（早期）',
+          'Vascularized fibular graft',
+          'Rotational osteotomy',
+          'THA（總膝置換）',
+        ],
+        points: [
+          '<strong>Stage 0-II（pre-collapse）：joint preservation 為主</strong>',
+          '<strong>Stage III-IV（post-collapse）：多需 THA</strong>',
+          'Risk factor 移除（停類固醇、戒酒、控糖）',
+          '保守：減重、避免 weight bearing、PT、輔具',
+          '<strong>Bisphosphonates（alendronate 70 mg/wk）</strong>：減緩 collapse、減痛',
+          'Statin：降膽固醇 + 抗發炎效果（特別 steroid-induced AVN）',
+          'Anticoagulant：hypercoagulable AVN（Lupus、protein C/S deficiency）',
+          'Iloprost (PGI2 analog)：vasodilator + 抗 platelet',
+          '<strong>Core decompression</strong>：Stage I-II 早期手術',
+          '<strong>THA</strong>：Stage III-IV 標準治療',
+        ],
+        a: `<h4>1. 治療策略總覽（依 Ficat staging）</h4>
+<table>
+<tr><th>Stage</th><th>治療</th></tr>
+<tr><td><strong>Stage 0-I</strong></td><td>① 移除 risk factor（停類固醇、戒酒、控糖）<br>② 減 weight bearing（手杖 / 雙拐 PWB）<br>③ 藥物：bisphosphonates、statin<br>④ <strong>Core decompression（最佳時機）</strong></td></tr>
+<tr><td><strong>Stage II（pre-collapse）</strong></td><td>① Core decompression ± stem cell / BMP<br>② Bisphosphonates<br>③ Vascularized fibular graft（年輕、large lesion）<br>④ Rotational osteotomy（特定 case）</td></tr>
+<tr><td><strong>Stage III（crescent sign / 開始 collapse）</strong></td><td>① Joint preservation 仍可嘗試（年輕病人 + 小 lesion）<br>② <strong>Vascularized fibular graft</strong> 仍是選項<br>③ <strong>多數需轉 THA</strong></td></tr>
+<tr><td><strong>Stage IV（OA 期）</strong></td><td><strong>THA 是標準治療</strong></td></tr>
+</table>
+
+<h4>2. AVN 相關藥物（必考）</h4>
+<table>
+<tr><th>藥物</th><th>機轉</th><th>使用</th></tr>
+<tr><td><strong>Bisphosphonates（alendronate、zoledronate）</strong></td><td>抑制 osteoclast、保護 subchondral bone、預防 collapse</td><td>Alendronate 70 mg/wk x 12 個月；研究支持減緩 progression、減痛、延後 THA</td></tr>
+<tr><td><strong>Statin（atorvastatin、simvastatin）</strong></td><td>① 降膽固醇（減少 fat embolism）<br>② 抗發炎、改善血管內皮功能<br>③ 預防 steroid-induced AVN</td><td>需長期類固醇病人預防性使用</td></tr>
+<tr><td><strong>Anticoagulant（warfarin、enoxaparin）</strong></td><td>抗凝血、防 microvascular thrombosis</td><td>Hypercoagulable AVN（Lupus、APS、protein C/S deficiency）</td></tr>
+<tr><td><strong>Iloprost（PGI2 analog）</strong></td><td>① Vasodilation<br>② 抗 platelet<br>③ 改善 bone marrow circulation</td><td>IV 5 day course；歐洲使用較多；對早期 AVN（Stage I-II）有助</td></tr>
+<tr><td><strong>Vitamin D + Calcium</strong></td><td>支持骨質、骨修復</td><td>所有 AVN 病人補充</td></tr>
+<tr><td>NSAIDs / acetaminophen</td><td>止痛</td><td>急性期短期使用</td></tr>
+<tr><td><strong>Avoid</strong></td><td>類固醇（除非絕對必要）；長期 NSAIDs（影響骨癒合）</td><td>—</td></tr>
+</table>
+
+<h4>3. 保守治療（適用 Stage 0-II）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>移除 risk factor</td><td>停類固醇（討論 IM）、戒酒、HbA1c &lt; 7、控制 hyperlipidemia</td></tr>
+<tr><td>Weight bearing 限制</td><td><strong>NWB / PWB（雙拐）數週至數月</strong>，減少 femoral head loading</td></tr>
+<tr><td>輔具</td><td>健側手杖、雙拐</td></tr>
+<tr><td>PT</td><td>Hip ROM（避免 contracture）、quadriceps、glute med、core；游泳 / 水中運動（無 weight bearing）</td></tr>
+<tr><td>體重控制</td><td>減重降低 hip loading（每 1 公斤 = 髖負擔 4 公斤）</td></tr>
+<tr><td>追蹤</td><td>每 3-6 個月 X-ray + MRI 評估 progression</td></tr>
+<tr><td>預後</td><td>純保守 Stage I-II 仍有 50-80% 進展為 collapse；故多搭配早期手術 / 藥物</td></tr>
+</table>
+
+<h4>4. Joint Preservation 手術選項</h4>
+<table>
+<tr><th>術式</th><th>適應症</th><th>內容</th></tr>
+<tr><td><strong>Core decompression</strong></td><td>Stage I-II（pre-collapse）；年輕病人</td><td>從 femoral neck 鑽 1-3 個 hole 進入 necrotic area，降低 IM pressure、促進 revascularization；可加 bone graft / stem cell / BMP</td></tr>
+<tr><td><strong>Bone grafting</strong></td><td>Stage II-III、large lesion</td><td>① Non-vascularized：autograft / allograft<br>② <strong>Vascularized fibular graft（VFG）</strong>：保留血供、年輕病人 + large lesion 首選；技術門檻高</td></tr>
+<tr><td><strong>Rotational osteotomy（Sugioka）</strong></td><td>年輕、lesion 在前外側、joint surface 仍保留</td><td>Femoral head 旋轉，將 necrotic area 移離 weight-bearing 區域；技術困難、爭議</td></tr>
+<tr><td><strong>Stem cell / BMP injection</strong></td><td>Stage I-II 輔助治療</td><td>常與 core decompression 合併；個別 case 報告效果</td></tr>
+<tr><td><strong>Tantalum rod implantation</strong></td><td>Stage II-III</td><td>支撐 femoral head、預防 collapse；爭議大、近年較少使用</td></tr>
+</table>
+
+<h4>5. THA（Total Hip Arthroplasty）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>適應症</strong></td><td>Stage III（已 collapse + 嚴重痛 + 保守 / preservation 失敗）<br>Stage IV（OA 期）</td></tr>
+<tr><td>Approach</td><td>① <strong>Posterior（最常）</strong>：較快但 dislocation 風險高<br>② Anterior（DAA）：dislocation 風險低、恢復快、技術門檻高<br>③ Anterolateral / Lateral</td></tr>
+<tr><td>Implant 選擇</td><td>① Cemented（年長 / 骨質疏鬆）<br>② Uncemented（年輕、好骨質、長期固定）<br>③ Hybrid<br>④ Bearing surface：metal-on-poly（最常）/ ceramic-on-poly / ceramic-on-ceramic（年輕）</td></tr>
+<tr><td>預期</td><td>15-25 年 implant survival；活動度大幅恢復；多數病人滿意</td></tr>
+<tr><td>併發症</td><td>Dislocation（1-3%）、infection（&lt; 1%）、DVT、neurovascular injury（sciatic nerve）、leg length discrepancy、loosening、periprosthetic fx</td></tr>
+</table>
+
+<h4>6. THA 擺位禁忌（必考衛教）</h4>
+<table>
+<tr><th>Approach</th><th>禁忌姿勢（前 6-12 週）</th></tr>
+<tr><td><strong>Posterior approach（最常用）</strong></td><td><strong>① 不能 hip flexion &gt; 90°</strong>（包含坐矮椅、深蹲、打結鞋帶、撿地上東西、坐馬桶低）<br><strong>② 不能 IR + adduction（雙腳交叉、翹腳、轉身）</strong><br>③ 側睡時雙膝中間夾枕頭</td></tr>
+<tr><td>Anterior（DAA）</td><td>① 避免極端 ER + extension<br>② 避免 hip extension（向後伸腿）<br>限制較少，恢復較快</td></tr>
+<tr><td>Lateral</td><td>避免 ABD（外展抗阻），保護 abductor 修復</td></tr>
+<tr><td>共同</td><td>避免跌倒、避免極端動作 6-12 週</td></tr>
+</table>
+
+<h4>7. 113 加分題情境解析</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>113 考官加分題</strong>：給對側 MRI（看似有 hypointensity）<br>
+醫師回答：「Crescent sign → grade III AVN」<br>
+考官說：「不對，是 grade II」<br>
+問：「治療？」<br>
+<strong>解答邏輯</strong>：<br>
+① Stage II 仍 pre-collapse、joint space 保留 → <strong>仍有 joint preservation 機會</strong><br>
+② 治療：<strong>① 移除 risk factor（控糖）② Bisphosphonate ③ Core decompression ± bone graft ④ NWB / 雙拐</strong><br>
+③ <strong>不需要立即 THA</strong>（這是區分 II 與 III 的關鍵：II 仍可保留 joint）<br>
+④ 對側雖無症狀，但 silent AVN 必須積極處理 → 防止 progression<br>
+⑤ 規律追蹤（每 3-6 個月 X-ray + MRI）
+</p>
+
+<h4>8. 給本病人的整合處方</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+65F、DM、右髖 Stage III + 對側 silent Stage II：<br>
+<strong>右髖（Stage III）</strong>：<br>
+→ 保守：<strong>NWB 雙拐 + 控糖 + 體重控制 + bisphosphonate</strong><br>
+→ <strong>SDM 討論：joint preservation（VFG）vs THA</strong><br>
+→ 65 歲、Stage III、明顯痛 → <strong>多數臨床建議 THA</strong>（生活品質、預期壽命、preservation 預後較差）<br>
+<strong>左髖（Stage II silent）</strong>：<br>
+→ 積極預防：<strong>Bisphosphonate + 控糖 + statin + 減 weight bearing</strong><br>
+→ <strong>Core decompression（pre-collapse 黃金時機）</strong><br>
+→ 規律追蹤 MRI
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Stage 0-II → joint preservation；Stage III-IV → THA</strong></li>
+<li>移除 risk factor 永遠是第一步（停類固醇、戒酒、控糖）</li>
+<li><strong>AVN 用藥</strong>：Bisphosphonate（alendronate）、statin、anticoagulant、iloprost、Vit D + Ca</li>
+<li><strong>Core decompression</strong>：Stage I-II 早期黃金手術</li>
+<li><strong>Vascularized fibular graft</strong>：年輕 + large lesion 首選</li>
+<li>Stage II 仍可保留 joint，<strong>不立即 THA</strong></li>
+<li>THA approach：posterior 最常用 → 必衛教 hip 三禁忌（&gt; 90° flex、IR + adduction、雙腳交叉）</li>
+<li>113 加分題：grade II 治療 = 保守 + bisphosphonate + core decompression（不是 THA）</li>
+</ul>`,
+      },
+      {
+        q: 'THA 術後復健時程？開車、做愛、用 walker 多久？請示範 ankle pumping 與擺位重點。',
+        keywords: [
+          'Phase 1 (0-2 wk): hip precaution, transfer, ankle pumping',
+          'Phase 2 (2-6 wk): walker → cane',
+          'Phase 3 (6-12 wk): full WBAT, gait',
+          'Phase 4 (3-6 mo): functional return',
+          'Walker：4-6 週',
+          '開車：6 週（右髖術後）',
+          '做愛：4-6 週、6 週後 + 改良姿勢',
+          'Ankle pumping：預防 DVT',
+          'Hip precaution（前 6-12 週）',
+        ],
+        points: [
+          '<strong>Phase 1（0-2 週）</strong>：hip precaution、ankle pumping、transfer、廁所輔具',
+          '<strong>Phase 2（2-6 週）</strong>：walker → 單拐 → 健側手杖',
+          '<strong>Phase 3（6-12 週）</strong>：full WBAT、正常步態',
+          '<strong>Phase 4（3-6 月）</strong>：日常活動、輕度運動',
+          'Walker：<strong>2-4 週（多數）→ 6 週（高齡 / 雙側）</strong>',
+          '開車：<strong>右髖術後 6 週、左髖術後 4 週（自排車）</strong>',
+          '做愛：<strong>4-6 週、頂多 6 週後 + 改良姿勢（避免 hip flex &gt; 90°、IR + adduction）</strong>',
+          '<strong>Ankle pumping：每小時 10-20 次，預防 DVT</strong>',
+        ],
+        a: `<h4>1. THA 術後分階段復健</h4>
+
+<h4>Phase 1（0-2 週）— Acute / Hospital + Home</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>術後 day 1</td><td>Sit out of bed、stand、walk with walker；觀察 dislocation 風險</td></tr>
+<tr><td>Hip precaution（必教）</td><td>Posterior approach：① 不能 hip flex &gt; 90°（三禁忌）② 不能 IR + adduction ③ 不能雙腳交叉</td></tr>
+<tr><td><strong>Ankle pumping</strong> ⭐</td><td><strong>每小時 10-20 次</strong>，每次 dorsiflexion + plantarflexion 10 秒；預防 DVT、calf circulation</td></tr>
+<tr><td>Quad / glute sets</td><td>等長收縮維持肌力</td></tr>
+<tr><td>Transfer</td><td>從床上 / 椅子 / 廁所；避免低座椅（&lt; 50 cm）</td></tr>
+<tr><td>輔具</td><td>① <strong>Walker</strong>（2-4 週）<br>② Raised toilet seat、shower chair、long-handled reacher、sock aid<br>③ 床邊 commode（嚴重病人）</td></tr>
+<tr><td>抗凝血</td><td>Enoxaparin / DOAC / aspirin（依醫囑）</td></tr>
+<tr><td>傷口照護</td><td>保持乾燥、觀察感染徵象</td></tr>
+</table>
+
+<h4>Phase 2（2-6 週）— Early Rehab</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>步態</td><td><strong>Walker（2-4 週）→ 單拐 → 健側手杖</strong>（4-6 週）；漸進 WBAT</td></tr>
+<tr><td>ROM</td><td>Hip flex 至 80-90°（不超過）；ABD、ER 在 precaution 內</td></tr>
+<tr><td>肌力</td><td>Quadriceps、glute med、glute max；isometric → light resistance</td></tr>
+<tr><td>步態</td><td>消除 antalgic pattern、gait training</td></tr>
+<tr><td>有氧</td><td>固定式腳踏車（座椅高至無 hip flex &gt; 90°）</td></tr>
+</table>
+
+<h4>Phase 3（6-12 週）— Functional</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>步態</td><td>棄拐杖（多數 6-8 週）；正常步態</td></tr>
+<tr><td>ROM</td><td>Hip flex 漸進至 100-110°（仍避免極端）；ABD、ER 改善</td></tr>
+<tr><td>肌力</td><td>進階 CKC（mini squat、step-up、leg press）；漸進阻力</td></tr>
+<tr><td>本體感受</td><td>單腳站、weight shift</td></tr>
+<tr><td>Hip precaution</td><td><strong>6-12 週後可放鬆部分限制</strong>（依手術 approach）</td></tr>
+</table>
+
+<h4>Phase 4（3-6 個月）— Return to Activity</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>日常活動</td><td>正常 ADL、上下樓、長距離步行</td></tr>
+<tr><td>運動</td><td>低衝擊：步行、騎車、游泳、瑜伽（modified）；<strong>避免：跑步、跳躍、深蹲、高接觸性運動</strong>（增加 implant 磨損）</td></tr>
+<tr><td>追蹤</td><td>術後 3、6、12 個月 X-ray；後續每 1-2 年</td></tr>
+</table>
+
+<h4>2. 病人常見問題（113 必考）</h4>
+<table>
+<tr><th>問題</th><th>答案</th><th>備註</th></tr>
+<tr><td><strong>Walker 要用多久？</strong></td><td><strong>2-4 週</strong>（多數）；高齡、雙側、體弱：6 週</td><td>之後改單拐 / 健側手杖（共 6-8 週）</td></tr>
+<tr><td><strong>幾個月可以開車？</strong></td><td><strong>右髖術後：6 週</strong>（需快速反應煞車）<br><strong>左髖 + 自排車：4 週</strong></td><td>因素：止痛藥、reaction time、precaution 仍在</td></tr>
+<tr><td><strong>幾個月能做愛？</strong></td><td><strong>4-6 週開始可恢復</strong><br><strong>6 週後 + 改良姿勢</strong></td><td>避免 hip flex &gt; 90°、IR + adduction；患側在下方、avoid extreme position；可諮詢專業 OT</td></tr>
+<tr><td>什麼時候能游泳？</td><td>傷口完全癒合（4-6 週）、avoid breaststroke（kicking 動作）</td><td>初期 walking in water 即可</td></tr>
+<tr><td>什麼時候能搭飛機？</td><td>4-6 週（DVT 風險高、輻射檢查問題、座椅深屈）</td><td>長途：起身走動 1-2 小時一次</td></tr>
+<tr><td>能蹲下嗎？</td><td>3-6 個月後仍建議避免深蹲（&gt; 90° flex）</td><td>長期：避免 deep squat、yoga deep pose</td></tr>
+<tr><td>能不能抬腳？</td><td>術後初期（前 2 週）<strong>可以平躺抬腳</strong>（active hip flex），但<strong>不超過 90°</strong></td><td>113 考題重點：注意 hip flex angle</td></tr>
+</table>
+
+<h4>3. Ankle Pumping 操作（113 重點）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>姿勢</strong></td><td>仰臥或坐姿</td></tr>
+<tr><td><strong>動作</strong></td><td>① 主動 dorsiflexion（腳尖往上）→ 維持 5 秒<br>② 主動 plantarflexion（腳尖往下）→ 維持 5 秒<br>③ 重複交替</td></tr>
+<tr><td><strong>頻率</strong></td><td><strong>每小時 10-20 次</strong>（白天清醒時）</td></tr>
+<tr><td><strong>機轉</strong></td><td>Calf muscle pump 促進靜脈回流 → 預防 DVT；維持 ankle ROM</td></tr>
+<tr><td><strong>適應症</strong></td><td>所有 hip / knee surgery 後、長期臥床、長途飛行</td></tr>
+<tr><td><strong>陳良城重點</strong></td><td>「示範給病人看」、強調「每小時 10-20 次」</td></tr>
+</table>
+
+<h4>4. 術後擺位重點（113 必考）</h4>
+<table>
+<tr><th>姿勢</th><th>注意事項</th></tr>
+<tr><td><strong>仰臥</strong></td><td>① 雙腿稍 ABD（雙膝間夾枕頭）<br>② 避免 IR + adduction<br>③ 患側不可翹腳<br>④ 可以平躺抬腳但 &lt; 90°</td></tr>
+<tr><td><strong>側臥</strong></td><td>① <strong>健側朝下</strong>（患側朝上）<br>② <strong>雙膝間夾大枕頭</strong>（防 adduction + IR）<br>③ 患側朝下睡：技術上可行但需大量支持，多數醫院建議 6 週後</td></tr>
+<tr><td>俯臥</td><td>術後 2-4 週後可嘗試（hip extension 對 implant 較少 stress）</td></tr>
+<tr><td>從床起身</td><td>① 健側先下床<br>② 用手臂撐起<br>③ 雙腿同時擺到床邊<br>④ 用 walker / 拐杖站起</td></tr>
+<tr><td>坐姿</td><td>椅子高度 ≥ 50 cm（避免 hip flex &gt; 90°）；坐直、不前傾；扶手協助起身</td></tr>
+<tr><td>馬桶</td><td><strong>Raised toilet seat</strong>（提高 10-15 cm）；扶手</td></tr>
+<tr><td>洗澡</td><td>Shower chair；防滑墊；避免進浴缸（hip flex &gt; 90°）</td></tr>
+<tr><td>穿襪 / 鞋</td><td>Sock aid、long-handled shoehorn、無鞋帶懶人鞋</td></tr>
+</table>
+
+<h4>5. THA Hip Precaution 總整理（必衛教）</h4>
+<table>
+<tr><th>禁忌</th><th>具體動作</th></tr>
+<tr><td><strong>① Hip flexion &gt; 90°</strong></td><td>坐矮椅 / 矮馬桶、深蹲、撿地上東西、打結鞋帶、進低車、坐沙發深陷</td></tr>
+<tr><td><strong>② IR + adduction（雙腳交叉）</strong></td><td>翹腳、shoes 跨過 midline、轉身把腳轉內側</td></tr>
+<tr><td><strong>③ 雙腳交叉</strong></td><td>盤腿、雙腳交叉站立、躺著腳交疊</td></tr>
+<tr><td>持續時間</td><td>Posterior approach：6-12 週嚴格；之後漸進放鬆<br>Anterior approach：限制較少（避免 ER + extension）</td></tr>
+<tr><td>長期建議</td><td>即使 12 週後，仍建議避免 deep squat、yoga deep poses 等極端動作（implant 磨損）</td></tr>
+</table>
+
+<h4>6. AVN（未開刀）的復健（保守階段）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>Weight bearing</td><td>NWB（雙拐）→ PWB（健側手杖）→ FWB；依 stage 與症狀</td></tr>
+<tr><td>ROM</td><td>避免 hip stiffness；gentle ROM in pain-free range</td></tr>
+<tr><td>肌力</td><td>Quadriceps、glute med、core；維持但不加重 hip joint 負擔</td></tr>
+<tr><td>有氧</td><td><strong>水中運動 / 游泳（首選）</strong>；固定式腳踏車（高座椅）</td></tr>
+<tr><td>避免</td><td>跑步、跳躍、deep squat、高衝擊運動</td></tr>
+<tr><td>體重</td><td>減重（每 1 公斤 = 髖負擔 4 公斤）</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>4 階段復健：0-2w / 2-6w / 6-12w / 3-6m</strong></li>
+<li><strong>Walker 2-4 週、單拐 / 手杖 6-8 週、棄拐 8 週</strong></li>
+<li><strong>右髖開車 6 週；左髖自排 4 週</strong></li>
+<li><strong>做愛 4-6 週恢復、6 週後 + 改良姿勢</strong></li>
+<li><strong>Ankle pumping：每小時 10-20 次</strong>，預防 DVT</li>
+<li><strong>Hip precaution 三禁忌</strong>（必衛教）</li>
+<li>擺位：側臥健側朝下 + 雙膝間夾枕頭；坐姿椅高 ≥ 50 cm</li>
+<li>113 重點：問「能不能抬腳？」答 hip flex &lt; 90° 可以</li>
+<li>輔具：raised toilet、shower chair、reacher、sock aid（必教）</li>
+</ul>`,
+      },
+      {
+        q: '請說明 THA 併發症（特別 dislocation 預防）、long-term 注意事項與 SDM。',
+        keywords: [
+          'Dislocation（早期最重要、posterior approach 高風險）',
+          'Infection (PJI)',
+          'DVT / PE',
+          'Periprosthetic fracture',
+          'Leg length discrepancy',
+          'Aseptic loosening',
+          'Heterotopic ossification',
+          'Sciatic nerve injury',
+          'Implant survival 15-25 年',
+        ],
+        points: [
+          '<strong>Dislocation 1-3%</strong>（前 3 個月最高）；posterior approach 風險較高',
+          'Infection (PJI)：&lt; 1%；嚴重併發症需 2-stage revision',
+          '<strong>DVT / PE：抗凝血預防 4-6 週</strong>',
+          'Periprosthetic fracture：跌倒、骨質疏鬆病人',
+          '<strong>Leg length discrepancy</strong>：常見抱怨，需 lift 鞋墊調整',
+          '<strong>Aseptic loosening</strong>：長期最常見原因 → revision',
+          '<strong>Heterotopic ossification</strong>：硬皮、ROM 受限；indomethacin / radiation 預防',
+          'Sciatic nerve injury：罕見但嚴重',
+        ],
+        a: `<h4>1. THA 早期併發症（&lt; 3 個月）</h4>
+<table>
+<tr><th>併發症</th><th>發生率</th><th>處理 / 預防</th></tr>
+<tr><td><strong>Dislocation ⭐</strong></td><td>1-3%（前 3 個月最高）</td><td>嚴守 hip precaution；急性處理：closed reduction → re-precaution；反覆脫位 → revision（liner 加大、constrained liner）</td></tr>
+<tr><td><strong>Infection（PJI）</strong></td><td>&lt; 1%</td><td>術前抗生素、無菌技術；急性 → I&amp;D + 抗生素；慢性 → 2-stage revision</td></tr>
+<tr><td><strong>DVT / PE</strong></td><td>有預防 5-10%、無預防 30-50%</td><td><strong>抗凝血 4-6 週</strong>（enoxaparin、DOAC、aspirin 依風險）+ ankle pumping + 早期下床</td></tr>
+<tr><td>Periprosthetic fracture</td><td>1-2%</td><td>跌倒預防；急性處理依 Vancouver classification</td></tr>
+<tr><td><strong>Sciatic nerve injury</strong></td><td>0.5-2%</td><td>Posterior approach 風險高；多 neuropraxia 自行恢復</td></tr>
+<tr><td>Leg length discrepancy</td><td>&lt; 1 cm 多無症狀；&gt; 1.5 cm 需 lift 鞋墊</td><td>術前 templating；術後步態評估</td></tr>
+<tr><td>Hematoma</td><td>1-3%</td><td>Drain、必要時引流</td></tr>
+<tr><td>Wound healing 問題</td><td>DM、肥胖、吸菸者風險高</td><td>術前優化（HbA1c、戒菸、減重）</td></tr>
+</table>
+
+<h4>2. THA 中長期併發症</h4>
+<table>
+<tr><th>併發症</th><th>內容</th></tr>
+<tr><td><strong>Aseptic loosening</strong></td><td>最常見 long-term 失敗原因；polyethylene wear → osteolysis → loosening；15-25 年 implant survival；revision rate 1%/year</td></tr>
+<tr><td><strong>Heterotopic ossification（HO）</strong></td><td>15-30% 影像學；3-5% 嚴重 ROM 受限；高風險：男性、AS、之前 HO；預防：indomethacin 6 週、單次 radiation；嚴重需手術切除</td></tr>
+<tr><td>Late infection</td><td>後續血液性感染（牙科、UTI、皮膚感染）→ implant 感染風險；牙科 procedure 是否需 prophylactic antibiotic 有爭議（多數已不建議常規）</td></tr>
+<tr><td>Implant wear</td><td>Polyethylene wear、metal-on-metal pseudotumor</td></tr>
+<tr><td>Periprosthetic fracture（晚期）</td><td>跌倒、osteolysis 引發 fracture risk</td></tr>
+<tr><td>Trochanteric bursitis</td><td>術後 5-10% 病人有外側痛</td></tr>
+</table>
+
+<h4>3. Dislocation 詳解（最重要）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>機轉</strong></td><td>Femoral head 從 acetabular cup 脫位</td></tr>
+<tr><td><strong>方向</strong></td><td>Posterior（&gt; 90%，posterior approach 後）→ 限制 hip flex + IR + adduction<br>Anterior（少見，anterior approach 後）→ 限制 hip extension + ER</td></tr>
+<tr><td><strong>時程</strong></td><td>① <strong>Early（&lt; 3 個月）</strong>：60-70% 發生在前 3 個月（軟組織未癒合）<br>② Late（&gt; 1 年）：implant wear 或 polyethylene damage</td></tr>
+<tr><td><strong>Risk factors</strong></td><td>① <strong>Posterior approach</strong>（&gt; anterior 2-3 倍）<br>② Female<br>③ 高齡（&gt; 75）<br>④ Cognitive impairment<br>⑤ Revision THA<br>⑥ AS、neuromuscular disease<br>⑦ Improper component positioning（cup anteversion / inclination）</td></tr>
+<tr><td><strong>處理</strong></td><td>① 急性：Sedation + closed reduction（在急診 / OR）<br>② 反覆脫位（≥ 3 次）→ revision（liner 加大、constrained liner、dual mobility cup）<br>③ Component malposition → revision</td></tr>
+<tr><td><strong>預防</strong></td><td>① <strong>嚴守 hip precaution 6-12 週</strong><br>② 適當 implant 選擇（dual mobility cup for 高風險）<br>③ 教育、家屬支持<br>④ 環境調整（高椅、廁所輔具、無低座椅）</td></tr>
+</table>
+
+<h4>4. 「希望 + 現實」對話框</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>病人</strong>：「醫師，我這個換了人工關節之後可以恢復多少？跌倒過怎麼辦？」<br>
+<strong>醫師</strong>：「我希望你能恢復到接近正常的生活（希望）。<br>
+但要誠實告訴你（現實）：<br>
+① 你的右髖 Stage III + 跌倒後 collapse → <strong>THA 是最好的選項</strong>（preservation 在這個階段預後較差）。<br>
+② <strong>對側 Stage II silent AVN</strong> → 必須積極處理，<strong>不能讓它惡化到 III</strong>。建議 core decompression + bisphosphonate + 積極控糖。<br>
+③ THA 預期：<strong>15-25 年 implant survival</strong>，多數病人滿意；不過：<br>
+&nbsp;&nbsp;・前 3 個月嚴守 hip precaution（脫位風險最高）<br>
+&nbsp;&nbsp;・終身避免：跑步、跳躍、深蹲、高接觸運動（implant 磨損）<br>
+&nbsp;&nbsp;・15-20 年後可能需要 revision（但你 65 歲 → 可能足夠用）<br>
+④ 跌倒問題：<strong>跌倒預防是長期重點</strong>—— 環境改善、平衡訓練、視力檢查、用藥檢視、骨密度。<br>
+⑤ <strong>DM 控制好（HbA1c &lt; 7）會減少感染風險、術後癒合更好</strong>。<br>
+⑥ 對側預防：核心減壓手術 + 控糖 + 規律追蹤；目標 → 永遠不需要再開另一邊。」<br>
+家屬：「我們會幫忙改善家裡環境，把矮椅子、矮馬桶都換掉。控糖飲食一起配合。」
+</p>
+
+<h4>5. PMR 在 AVN / THA 全程角色</h4>
+<table>
+<tr><th>階段</th><th>PMR 角色</th></tr>
+<tr><td>診斷</td><td>PE、Hip ROM、影像判讀、Ficat staging</td></tr>
+<tr><td>非手術期</td><td>Risk factor 移除、weight bearing 限制、藥物（bisphosphonate）、輔具</td></tr>
+<tr><td>術前</td><td>Prehab（quadriceps、glute、core 肌力）、衛教、SDM、HbA1c 控制</td></tr>
+<tr><td>術後早期</td><td>急性 ROM、肌力、ankle pumping、DVT 預防、hip precaution 教育</td></tr>
+<tr><td>術後中期</td><td>步態訓練、輔具漸進、生活問題（開車、做愛、旅行）</td></tr>
+<tr><td>長期</td><td>跌倒預防、骨質疏鬆管理、共病監測、運動處方</td></tr>
+<tr><td>對側</td><td>對側 silent AVN 追蹤 + 早期介入</td></tr>
+<tr><td>家屬</td><td>環境改善、照顧負擔、長期支持</td></tr>
+</table>
+
+<h4>6. 長期生活建議</h4>
+<table>
+<tr><th>類別</th><th>內容</th></tr>
+<tr><td>運動</td><td><strong>低衝擊：步行、游泳、cycling、瑜伽（modified）</strong>；避免高衝擊（跑步、籃球、足球）</td></tr>
+<tr><td>飲食</td><td>充足蛋白質、Vit D + Ca、控糖、控制體重</td></tr>
+<tr><td>骨密度</td><td>每 2 年 DEXA；bisphosphonate 持續使用</td></tr>
+<tr><td>跌倒預防</td><td>視力 / 聽力檢查、環境改善（防滑、照明、扶手）、用藥檢視（避免眩暈藥）</td></tr>
+<tr><td>規律追蹤</td><td>術後 3、6、12 月 X-ray；後續每 1-2 年；對側 hip 規律追蹤</td></tr>
+<tr><td>感染預防</td><td>口腔衛生、UTI 早期治療、皮膚感染積極處理</td></tr>
+<tr><td>共病管理</td><td>DM（HbA1c &lt; 7）、HTN、cholesterol</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>Dislocation 1-3%</strong>：前 3 個月最高、posterior approach 高風險、預防靠 precaution</li>
+<li><strong>DVT 預防：抗凝血 4-6 週 + ankle pumping + 早期下床</strong></li>
+<li>Infection &lt; 1%（PJI）：嚴重 → 2-stage revision</li>
+<li><strong>Aseptic loosening</strong>：長期最常見失敗原因（15-25 年 implant survival）</li>
+<li>Heterotopic ossification：indomethacin 6 週預防（高風險族群）</li>
+<li>Leg length discrepancy &gt; 1.5 cm 需 lift</li>
+<li>長期：避免高衝擊運動、終身關節保護</li>
+<li>對側 AVN 不能忽視（雙側 50-80%）</li>
+<li>SDM：誠實告知 implant 壽命 + revision 可能 + 終身管理</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
