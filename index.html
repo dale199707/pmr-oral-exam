@@ -42231,6 +42231,740 @@ PE：medial joint line tender、McMurray (+)、Thessaly (+)、varus laxity、pat
       },
     ],
   },
+  {
+    id: 'ortho_005',
+    domain: 'msk',
+    title: 'SLAP lesion + Anterior instability（遛狗跌倒）',
+    context: `64 歲女性，平日喜愛瑜伽。
+2 週前遛狗時被牽繩拉扯跌倒，<strong>右肩著地</strong>。
+當下劇痛、無脫位感，但之後右肩持續疼痛 + 無力。
+特定動作（梳頭、舉物、bench press 起手）會出現「卡住 + 痠痛」感。
+夜間痛、無法側睡。
+
+理學檢查：
+- ROM：active flexion 140°（疼痛限制），passive 160°
+- AROM &lt; PROM（painful arc 60-120°）
+- <strong>O'brien test (+)</strong>（內外旋對比痛 → SLAP）
+- <strong>Biceps load II test (+)</strong>（SLAP 特異性）
+- <strong>Anterior apprehension test (+)</strong>
+- Relocation test (+)
+- Neer / Hawkins / Empty can / Speed test：均 (+)
+- ER / IR strength：對稱
+- Sulcus sign (-)、Cervical PE 正常
+
+VAS 6/10，無法回到瑜伽課。`,
+    questions: [
+      {
+        q: '請列舉 5 個肩痛鑑別診斷。',
+        keywords: [
+          'Rotator cuff tendinopathy / tear',
+          'Subacromial bursitis / impingement',
+          'SLAP lesion（labrum tear）',
+          'Anterior instability / Bankart lesion',
+          'Adhesive capsulitis（frozen shoulder）',
+          'AC joint arthropathy',
+          'Calcific tendinitis',
+          'Cervical radiculopathy（referred）',
+          'Glenohumeral OA、 RA',
+        ],
+        points: [
+          '<strong>分層思維</strong>：軟組織 → 關節 → 神經 → referred',
+          '軟組織：RCT、bursitis、calcific tendinitis、bicipital tendinitis',
+          '關節：GH OA、AC OA、SLAP、Bankart、frozen shoulder',
+          '神經：cervical radiculopathy（C5-6）、Parsonage-Turner',
+          '骨：clavicle / proximal humerus fx、AVN',
+          '紅旗：tumor、infection、heart referred、PMR',
+          '<strong>本病人 64F + 跌倒外傷 + 卡住感 + apprehension (+) → SLAP + 可能 Bankart</strong>',
+          '年齡加 cuff pathology DDx 必含',
+        ],
+        a: `<h4>1. 5 個肩痛鑑別診斷（依機轉分類）</h4>
+<table>
+<tr><th>類別</th><th>診斷</th><th>關鍵特徵</th></tr>
+<tr><td><strong>軟組織</strong></td><td>Rotator cuff tendinopathy / tear、subacromial bursitis</td><td>側舉痛、夜間痛、empty can (+)、ROM AROM &lt; PROM</td></tr>
+<tr><td><strong>關節（labrum）</strong></td><td>SLAP lesion、Bankart lesion</td><td>機械性卡住、O'brien (+)、apprehension (+)</td></tr>
+<tr><td><strong>關節（cartilage）</strong></td><td>GH OA、AC OA</td><td>晨僵、AC tenderness、cross-arm test (+)</td></tr>
+<tr><td><strong>關節囊</strong></td><td>Adhesive capsulitis（frozen shoulder）</td><td><strong>Capsular pattern：ER &gt; ABD &gt; IR</strong>，AROM = PROM 都受限</td></tr>
+<tr><td><strong>神經 / referred</strong></td><td>Cervical radiculopathy（C5-6）、Parsonage-Turner</td><td>Spurling (+)、神經學異常、近 dermatome 麻痛</td></tr>
+</table>
+
+<h4>2. 進階肩痛 DDx（年齡相關）</h4>
+<table>
+<tr><th>年齡</th><th>常見診斷</th></tr>
+<tr><td>&lt; 30 歲</td><td>Anterior instability / Bankart、SLAP（運動員）、AC sprain</td></tr>
+<tr><td>30-50 歲</td><td>Impingement、bursitis、calcific tendinitis、frozen shoulder</td></tr>
+<tr><td>&gt; 50 歲</td><td><strong>Rotator cuff tear（degenerative）</strong>、GH OA、frozen shoulder（特別 DM）</td></tr>
+<tr><td>&gt; 70 歲</td><td>Cuff arthropathy、massive cuff tear、proximal humerus fx</td></tr>
+</table>
+
+<h4>3. 紅旗（必排除）</h4>
+<table>
+<tr><th>紅旗</th><th>對應疾病</th></tr>
+<tr><td>夜間痛 + 體重減輕 + age &gt; 50</td><td>Tumor、Pancoast tumor</td></tr>
+<tr><td>發燒 + 紅腫 + 系統性</td><td>Septic arthritis、calcific tendinitis acute flare</td></tr>
+<tr><td>急性外傷 + 變形</td><td>Dislocation、proximal humerus fracture</td></tr>
+<tr><td>左肩痛 + 運動相關</td><td>心肌梗塞 referred pain</td></tr>
+<tr><td>多關節晨僵 &gt; 1 hr</td><td>RA、PMR（polymyalgia rheumatica）</td></tr>
+<tr><td>VZV 神經痛</td><td>Herpes zoster（113 考題重點）</td></tr>
+</table>
+
+<h4>4. 各關節 Capsular Pattern 整理（提醒）</h4>
+<table>
+<tr><th>關節</th><th>Capsular pattern</th></tr>
+<tr><td><strong>Glenohumeral（肩）</strong></td><td><strong>ER &gt; ABD &gt; IR</strong></td></tr>
+<tr><td>AC joint</td><td>無特定 pattern；end-range 痛</td></tr>
+<tr><td>Elbow</td><td>Flexion &gt; extension</td></tr>
+<tr><td>Knee</td><td>Flexion &gt; extension</td></tr>
+<tr><td>Hip</td><td>IR &gt; flex &gt; ABD</td></tr>
+</table>
+
+<h4>5. 本病人特徵歸納</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+64F、跌倒右肩著地、機械性卡住感、O'brien (+)、Biceps load II (+)、apprehension (+)、relocation (+)。<br>
+✅ <strong>O'brien (+)、Biceps load II (+) → SLAP lesion</strong><br>
+✅ <strong>Apprehension (+)、Relocation (+) → Anterior instability ± Bankart lesion</strong><br>
+✅ Neer / Hawkins / Empty can (+) → 合併 secondary impingement / cuff irritation<br>
+✅ Painful arc 60-120° → impingement secondary<br>
+→ <strong>診斷：SLAP lesion ± Anterior labral tear（Bankart）+ secondary impingement</strong><br>
++ 64 歲 + 跌倒外傷 → 須排除 RCT（年齡相關）、GH cartilage damage
+</p>
+
+<h4>6. 跌倒後肩痛特殊考量</h4>
+<table>
+<tr><th>機轉</th><th>常見傷害</th></tr>
+<tr><td>FOOSH（伸手撐地）</td><td>Distal radius fx、scaphoid fx、shoulder dislocation</td></tr>
+<tr><td>直接撞擊肩外側</td><td>AC sprain / dislocation、clavicle fx、cuff contusion</td></tr>
+<tr><td><strong>牽引性受傷（被拉扯）</strong></td><td><strong>SLAP（biceps anchor pull）、anterior labrum、brachial plexus stretch</strong></td></tr>
+<tr><td>跌倒著地肩前</td><td>Anterior dislocation、Bankart、Hill-Sachs lesion</td></tr>
+<tr><td>跌倒著地肩後</td><td>Posterior dislocation（罕見、易遺漏）</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>5 個肩痛 DDx</strong>：軟組織 → 關節 → 神經 → referred 分層</li>
+<li>年齡是 DDx 重要線索：年輕 → instability、年長 → cuff / OA</li>
+<li><strong>本病人關鍵：O'brien + Biceps load II + apprehension → SLAP + Bankart</strong></li>
+<li>跌倒被拉扯 → 牽引性傷害（SLAP、labrum、brachial plexus）</li>
+<li>紅旗：tumor、infection、心肌梗塞 referred</li>
+<li>Capsular pattern shoulder：<strong>ER &gt; ABD &gt; IR</strong></li>
+</ul>`,
+      },
+      {
+        q: '請說明完整 shoulder PE，並示範 O\\\'brien test、Biceps load II test、Anterior apprehension test。',
+        keywords: [
+          'Inspection / palpation / ROM',
+          'Capsular pattern: ER &gt; ABD &gt; IR',
+          'O\\\'brien active compression test',
+          'Biceps load II test',
+          'Anterior apprehension test',
+          'Relocation test (Jobe)',
+          'Surprise test',
+          'Crank test, anterior slide test',
+          'Sulcus sign（multidirectional instability）',
+        ],
+        points: [
+          'Inspection：deformity（square shoulder = anterior dislocation）、scapular dyskinesis',
+          'ROM：active vs passive（labrum / instability：AROM &lt; PROM 因 apprehension）',
+          '<strong>O\\\'brien</strong>：屈肘伸 90° + adduction 10° + IR（thumb down）→ 痛；ER（thumb up）→ 不痛',
+          '<strong>Biceps load II</strong>：仰臥、ABD 120° + max ER + 屈肘 90° → resisted flexion → 痛 (+)',
+          '<strong>Anterior apprehension</strong>：仰臥、ABD 90° + ER 90° → 病人感到「要脫位」恐懼',
+          'Relocation（Jobe）：apprehension 姿勢 + 壓住肱骨頭向後 → 恐懼消失 (+)',
+          'Surprise test：Relocation 後突然放開 → 恐懼回來 (+)',
+          'Sulcus sign：手臂下拉，肩峰下凹陷 → MDI（multidirectional instability）',
+        ],
+        a: `<h4>1. Shoulder Complete PE 流程</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>Inspection</td><td>Square shoulder（anterior dislocation）、scapular dyskinesis（SICK scapula）、肌肉萎縮（supraspinatus / infraspinatus fossa）</td></tr>
+<tr><td>Palpation</td><td>AC joint、bicipital groove、greater tuberosity、glenohumeral line</td></tr>
+<tr><td>ROM</td><td>Active vs passive；flex 180°、ABD 180°、ER 90°、IR（背後達 T7 棘突）</td></tr>
+<tr><td>Strength</td><td>Empty can（supraspinatus）、ER（infraspinatus / teres minor）、IR + lift-off（subscapularis）</td></tr>
+<tr><td>Impingement tests</td><td>Neer、Hawkins-Kennedy、painful arc</td></tr>
+<tr><td>Cuff tests</td><td>Empty can、ER lag sign、lift-off / belly press、drop arm</td></tr>
+<tr><td>Biceps tests</td><td>Speed、Yergason</td></tr>
+<tr><td><strong>SLAP tests</strong></td><td><strong>O'brien、Biceps load II、anterior slide、crank test</strong></td></tr>
+<tr><td><strong>Instability tests</strong></td><td><strong>Anterior apprehension、relocation、surprise、sulcus sign、load-and-shift</strong></td></tr>
+<tr><td>AC joint</td><td>Cross-arm test、scarf test</td></tr>
+<tr><td>C-spine</td><td>Spurling、cervical ROM（必排 referred pain）</td></tr>
+</table>
+
+<h4>2. O'brien Active Compression Test（SLAP 必考）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>站立 / 坐姿</td></tr>
+<tr><td>準備</td><td>Shoulder flexion 90° + 屈肘伸直 + adduction 10°（橫過身體）</td></tr>
+<tr><td><strong>第一階段</strong></td><td>前臂 <strong>maximum pronation（thumb down）</strong>，檢查者向下施壓 → 病人抗阻 → <strong>深部痛 (+)</strong></td></tr>
+<tr><td><strong>第二階段</strong></td><td>前臂 <strong>supination（thumb up）</strong>，同樣向下施壓 → <strong>痛感消失或減輕</strong></td></tr>
+<tr><td>判讀</td><td>Thumb down 痛 + thumb up 不痛 = 陽性<br>① 深部痛 → SLAP lesion ② 淺部痛（AC 處）→ AC arthropathy</td></tr>
+<tr><td>Sensitivity / Specificity</td><td>Sensitivity 47-78%、specificity 11-73%（差異大）</td></tr>
+</table>
+
+<h4>3. Biceps Load II Test（SLAP 特異性高）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>仰臥</td></tr>
+<tr><td>準備</td><td><strong>Shoulder ABD 120° + maximum ER</strong> + 屈肘 90° + 前臂 supination</td></tr>
+<tr><td>動作</td><td>檢查者一手抓 wrist（resisted）、另一手固定 humerus<br>請病人 <strong>resisted elbow flexion</strong></td></tr>
+<tr><td>判讀</td><td>抗阻時肩痛或恐懼 = 陽性 → SLAP lesion</td></tr>
+<tr><td>Sensitivity / Specificity</td><td><strong>Sensitivity 90%、specificity 97%</strong>（最 specific 的 SLAP test）</td></tr>
+<tr><td>機轉</td><td>Biceps 收縮 → 拉扯 superior labrum（biceps anchor）</td></tr>
+</table>
+
+<h4>4. Anterior Apprehension Test（Crank Test for Instability）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>仰臥（首選）或坐姿</td></tr>
+<tr><td>動作</td><td>① Shoulder ABD 90° + 屈肘 90°<br>② 慢慢 ER 至 90° 或更多<br>③ 部分版本加 anterior force on humeral head</td></tr>
+<tr><td>判讀</td><td><strong>病人感覺「要脫位、害怕、apprehension」</strong> = 陽性<br>單純疼痛不算 apprehension（要看「恐懼感」）</td></tr>
+<tr><td>意義</td><td>Anterior instability、Bankart lesion</td></tr>
+<tr><td>Specificity</td><td>~96%（高），但 sensitivity 較低（~72%）</td></tr>
+</table>
+
+<h4>5. Relocation Test（Jobe）+ Surprise Test</h4>
+<table>
+<tr><th>Test</th><th>步驟 / 判讀</th></tr>
+<tr><td><strong>Relocation</strong></td><td>Apprehension 姿勢 + <strong>壓住肱骨頭向後（posteriorly）</strong> → apprehension 消失 = 陽性<br>意義：證實是 anterior instability（不是純粹疼痛）</td></tr>
+<tr><td><strong>Surprise（release）</strong></td><td>Relocation 後突然放開後壓 → apprehension 立即回來 = 陽性<br>Specificity 最高（~99%）</td></tr>
+<tr><td>意義</td><td>三者組合（apprehension + relocation + surprise）= <strong>anterior instability 黃金診斷組合</strong></td></tr>
+</table>
+
+<h4>6. SLAP Tests 比較表</h4>
+<table>
+<tr><th>Test</th><th>Sensitivity</th><th>Specificity</th></tr>
+<tr><td><strong>Biceps load II</strong></td><td>90% ⭐</td><td>97% ⭐</td></tr>
+<tr><td>Active compression（O'brien）</td><td>47-78%</td><td>11-73%</td></tr>
+<tr><td>Crank test</td><td>46%</td><td>56%</td></tr>
+<tr><td>Anterior slide test</td><td>78%</td><td>92%</td></tr>
+<tr><td>Speed test</td><td>32%</td><td>61%</td></tr>
+<tr><td>Composite（≥ 3 (+)）</td><td>78%</td><td>92%</td></tr>
+</table>
+
+<h4>7. Instability Tests 比較表</h4>
+<table>
+<tr><th>Test</th><th>Sensitivity</th><th>Specificity</th></tr>
+<tr><td>Anterior apprehension</td><td>72%</td><td>96%</td></tr>
+<tr><td>Relocation</td><td>81%</td><td>92%</td></tr>
+<tr><td><strong>Surprise（release）</strong></td><td>64%</td><td>99% ⭐</td></tr>
+<tr><td>Load-and-shift</td><td>50-89%</td><td>50-93%</td></tr>
+<tr><td>Sulcus sign（MDI）</td><td>67-72%</td><td>54-85%</td></tr>
+</table>
+
+<h4>8. Sulcus Sign（Multidirectional Instability）</h4>
+<table>
+<tr><th>步驟</th><th>細節</th></tr>
+<tr><td>姿勢</td><td>站立 / 坐姿，arm at side</td></tr>
+<tr><td>動作</td><td>檢查者向下牽引 humerus</td></tr>
+<tr><td>判讀</td><td>肩峰下出現 &gt; 1 cm 凹陷 = 陽性<br>Grade 1（&lt; 1 cm）/ 2（1-2 cm）/ 3（&gt; 2 cm）</td></tr>
+<tr><td>意義</td><td>Inferior capsule laxity → MDI、Ehlers-Danlos、generalized hypermobility</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 PE 推測解讀</strong><br>
+✅ O'brien (+) deep pain → SLAP<br>
+✅ Biceps load II (+) → SLAP（specificity 97%）<br>
+✅ Apprehension (+) → Anterior instability<br>
+✅ Relocation (+) → 證實是 instability，非純粹 cuff pathology<br>
+✅ Painful arc 60-120° → 合併 secondary impingement<br>
+✅ AROM &lt; PROM → 因 apprehension / 疼痛抑制（不是真的 capsular contracture）<br>
+→ <strong>SLAP lesion + Anterior labral tear（probable Bankart）</strong>
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>O'brien</strong>：thumb down 痛 + thumb up 不痛 = SLAP（深部痛）/ AC（淺部痛）</li>
+<li><strong>Biceps load II 是 SLAP specificity 最高的 test（97%）</strong></li>
+<li>Apprehension：感覺「要脫位」（恐懼），不是單純疼痛</li>
+<li>Relocation 證實 instability（壓肱骨頭向後 → 恐懼消失）</li>
+<li>Surprise test specificity 99%，是最終確認 instability</li>
+<li>Sulcus sign → 偵測 MDI（inferior capsule laxity）</li>
+<li>多 test 組合 &gt; 單一 test，搭配 cervical PE 排除 referred pain</li>
+</ul>`,
+      },
+      {
+        q: 'X-ray 應安排哪些 view？可能看到什麼？下一步影像？',
+        keywords: [
+          'AP（true AP）、scapular Y、axillary view',
+          'West Point view、Stryker notch view',
+          'Hill-Sachs lesion（後外側 humeral head 缺損）',
+          'Bony Bankart lesion（前下 glenoid rim 撕裂）',
+          'Glenoid bone loss measurement',
+          'GH joint space',
+          'Calcific deposit（calcific tendinitis）',
+          '下一步：MR arthrogram（黃金診斷 SLAP / labrum）',
+        ],
+        points: [
+          '<strong>標準 3 view：AP（true AP）+ scapular Y + axillary</strong>',
+          'True AP：球體完整不重疊 → 看 GH joint、Hill-Sachs',
+          'Scapular Y view：看肩峰 type、acromiohumeral interval、dislocation 方向',
+          'Axillary view：anterior/posterior dislocation、glenoid bone loss',
+          'West Point view：偵測 anteroinferior glenoid bone loss（Bankart）',
+          'Stryker notch view：偵測 Hill-Sachs lesion',
+          '<strong>Hill-Sachs / Bony Bankart 是 anterior dislocation 經典伴隨</strong>',
+          '<strong>SLAP / labrum tear 黃金診斷：MR arthrogram（gadolinium IA）</strong>',
+        ],
+        a: `<h4>1. Shoulder X-ray Views</h4>
+<table>
+<tr><th>View</th><th>看什麼</th></tr>
+<tr><td><strong>True AP（Grashey view）</strong></td><td>GH joint space、Hill-Sachs lesion、glenoid contour、calcific deposit、greater tuberosity</td></tr>
+<tr><td><strong>Scapular Y view（lateral）</strong></td><td>Acromion type（I flat / II curved / III hooked）、acromiohumeral interval（&lt; 7 mm = cuff tear）、anterior vs posterior dislocation</td></tr>
+<tr><td><strong>Axillary view</strong></td><td>Anterior / posterior dislocation、glenoid bone loss（必須做！）、coracoid、acromion</td></tr>
+<tr><td><strong>West Point view</strong></td><td>偵測 <strong>anteroinferior glenoid bone loss（Bony Bankart）</strong></td></tr>
+<tr><td><strong>Stryker notch view</strong></td><td>偵測 <strong>Hill-Sachs lesion</strong>（posterolateral humeral head defect）</td></tr>
+<tr><td>AP IR / ER view</td><td>對比下看 calcific deposit、cuff tear sign</td></tr>
+<tr><td>Outlet view</td><td>Acromion morphology（Bigliani type）</td></tr>
+</table>
+
+<h4>2. 本病人可能 X-ray 發現</h4>
+<table>
+<tr><th>影像所見</th><th>意義</th></tr>
+<tr><td><strong>Hill-Sachs lesion</strong></td><td>後外側肱骨頭凹陷、壓縮骨折 → 過去曾有過 anterior subluxation / dislocation</td></tr>
+<tr><td><strong>Bony Bankart lesion</strong></td><td>Anteroinferior glenoid rim 撕裂性骨折 → anterior labral / capsular avulsion</td></tr>
+<tr><td>Glenoid bone loss</td><td>"Inverted pear" sign：&gt; 25% bone loss → 影響手術選擇</td></tr>
+<tr><td>GH joint space</td><td>正常 OR 退化變窄</td></tr>
+<tr><td>Greater tuberosity fx</td><td>跌倒後可能合併</td></tr>
+<tr><td>Calcific deposit</td><td>不在本病人主要考量，但仍要看</td></tr>
+</table>
+
+<h4>3. Hill-Sachs Lesion vs Bankart Lesion 對照</h4>
+<table>
+<tr><th>項目</th><th>Hill-Sachs</th><th>Bankart</th></tr>
+<tr><td>位置</td><td>Posterolateral humeral head</td><td>Anteroinferior glenoid（labrum / bone）</td></tr>
+<tr><td>機轉</td><td>Anterior dislocation 時肱骨頭撞 anterior glenoid rim → 壓縮骨折</td><td>Anterior dislocation 時肱骨頭把 anterior labrum / glenoid 拉扯撕裂</td></tr>
+<tr><td>類型</td><td>① Bony Hill-Sachs（壓縮骨折） ② Soft tissue Hill-Sachs（罕見）</td><td>① Labral Bankart（軟組織） ② Bony Bankart（含 glenoid 骨）</td></tr>
+<tr><td>偵測 X-ray</td><td>Stryker notch view ⭐</td><td>West Point view ⭐</td></tr>
+<tr><td>偵測 MRI</td><td>看到</td><td>MR arthrogram 最敏感</td></tr>
+<tr><td>意義</td><td>"Engaging" Hill-Sachs（在 ABD + ER 時與 glenoid 卡住）→ 反覆脫位</td><td>Critical bone loss &gt; 25% → 手術 + Latarjet / bone graft</td></tr>
+</table>
+
+<h4>4. MR Arthrogram（labrum / SLAP 黃金診斷）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td><strong>Sensitivity / Specificity for SLAP</strong></td><td>Sensitivity 90-95%、specificity 90-95%（顯著優於 standard MRI）</td></tr>
+<tr><td>原理</td><td>IA 注射 gadolinium contrast（稀釋 1:200）→ 撐開 capsule → 對比強化、顯現 labral tear</td></tr>
+<tr><td><strong>Sequence 重點</strong></td><td><strong>T1 fat sat with contrast</strong>（最重要）、PD fat sat、T2、ABER position（abduction external rotation 看 anterior labrum）</td></tr>
+<tr><td>觀察重點</td><td>Labrum 連續性、contrast 漏入 labrum / 肱二頭肌 anchor、Hill-Sachs、capsule、cuff、bone marrow edema</td></tr>
+<tr><td>禁忌</td><td>Gadolinium 過敏、嚴重腎功能異常（GFR &lt; 30）、注射部位感染</td></tr>
+<tr><td>缺點</td><td>侵入性、需 IA 注射、輻射（透視下）、費用高</td></tr>
+</table>
+
+<h4>5. 影像安排決策</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>1. X-ray 標準 3 view</td><td>AP + scapular Y + axillary（必做）</td></tr>
+<tr><td>2. 加做 view</td><td>West Point（Bankart）、Stryker notch（Hill-Sachs）若懷疑 instability</td></tr>
+<tr><td>3. 超音波</td><td>Cuff、bursa、calcific deposit；對 labrum 無診斷價值</td></tr>
+<tr><td>4. MRI（standard）</td><td>適合 cuff tear、frozen shoulder；對 SLAP sensitivity 50-65%</td></tr>
+<tr><td><strong>5. MR arthrogram（首選 SLAP / labrum）</strong></td><td><strong>Sensitivity 90-95%、specificity 90-95%</strong></td></tr>
+<tr><td>6. CT（含 3D reconstruction）</td><td>Glenoid bone loss 量化（&gt; 25% 影響手術）、Bony Bankart 大小</td></tr>
+<tr><td>7. EMG / NCV</td><td>排除 brachial plexus injury、cervical radiculopathy</td></tr>
+</table>
+
+<h4>6. SLAP MRI 影像特徵</h4>
+<table>
+<tr><th>Finding</th><th>意義</th></tr>
+<tr><td><strong>Contrast 漏入 superior labrum</strong></td><td>Type II SLAP（最常見）</td></tr>
+<tr><td>High signal at biceps anchor</td><td>SLAP 變異</td></tr>
+<tr><td>Labrum 高訊號延伸至附著面</td><td>SLAP I-IV 分類</td></tr>
+<tr><td>Anteroinferior labrum tear</td><td>Bankart lesion</td></tr>
+<tr><td>Hill-Sachs lesion（posterolateral）</td><td>過去 anterior dislocation</td></tr>
+<tr><td>正常變異須認識</td><td>Sublabral foramen、Buford complex（前上 labrum 缺損 + cord-like MGHL）→ <strong>不要誤判為 SLAP</strong></td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>標準 X-ray 3 view：AP + scapular Y + axillary</strong>（缺一不可）</li>
+<li>懷疑 instability 加做 <strong>West Point + Stryker notch</strong></li>
+<li><strong>SLAP / labrum 黃金診斷：MR arthrogram（90-95%）</strong></li>
+<li>Standard MRI 對 SLAP 敏感度只有 50-65%，不夠</li>
+<li>Hill-Sachs（後外肱骨頭）vs Bankart（前下 glenoid）</li>
+<li><strong>Glenoid bone loss &gt; 25% → 手術 + Latarjet</strong></li>
+<li>正常變異（Buford complex、sublabral foramen）不要誤判 SLAP</li>
+<li>EMG / NCV 排除 brachial plexus injury</li>
+</ul>`,
+      },
+      {
+        q: '請說明 SLAP lesion 的 Snyder 分類，以及 Bankart 變異。',
+        keywords: [
+          'SLAP（Superior Labrum Anterior to Posterior）',
+          'Snyder classification I-IV（後續延伸至 X）',
+          'Type II 最常見（biceps anchor avulsion）',
+          'Bankart variants',
+          'Bony Bankart',
+          'ALPSA (Anterior Labroligamentous Periosteal Sleeve Avulsion)',
+          'GLAD (Glenoid Labral Articular Disruption)',
+          'HAGL (Humeral Avulsion of Glenohumeral Ligament)',
+        ],
+        points: [
+          'Labrum：fibrocartilaginous ring 圍繞 glenoid，深化關節窩',
+          'Biceps long head 起點在 superior labrum（biceps anchor）',
+          '<strong>Snyder I-IV 是 classic 分類，後延伸至 X 等 10 型</strong>',
+          'Type I：fraying（退化、年長常見）',
+          'Type II：<strong>biceps anchor avulsion（最常見、最重要）</strong>',
+          'Type III：bucket-handle tear（biceps 仍附著）',
+          'Type IV：bucket-handle 延伸至 biceps tendon',
+          '<strong>Bankart variants：Bony / ALPSA / GLAD / HAGL（必認）</strong>',
+        ],
+        a: `<h4>1. Glenoid Labrum 解剖</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>結構</td><td>Fibrocartilaginous ring 圍繞 glenoid 周圍，深化關節窩約 50%</td></tr>
+<tr><td>厚度</td><td>3-4 mm，年輕時較豐厚，年長退化</td></tr>
+<tr><td>附著</td><td>下半部緊密附著於 glenoid；上半部與 biceps anchor 連續、較鬆</td></tr>
+<tr><td>Biceps anchor</td><td>長頭 biceps 肌腱起點在 supraglenoid tubercle，與 superior labrum 融合</td></tr>
+<tr><td>韌帶</td><td>SGHL、MGHL、IGHL（superior / middle / inferior glenohumeral ligament）附著於 anterior labrum</td></tr>
+<tr><td>血管</td><td>Suprascapular artery、circumflex scapular artery、posterior humeral circumflex artery（peripheral 有血供，central 無）</td></tr>
+<tr><td>正常變異</td><td>Sublabral foramen（前上 labrum）、Buford complex（前上 labrum 缺損 + cord-like MGHL）</td></tr>
+</table>
+
+<h4>2. SLAP Lesion Snyder Classification（I-IV 經典）</h4>
+<table>
+<tr><th>Type</th><th>內容</th><th>處理</th></tr>
+<tr><td><strong>I</strong></td><td>Superior labrum fraying / 退化，biceps anchor 仍附著穩固</td><td>Debridement（多保守即可）</td></tr>
+<tr><td><strong>II（最常見）</strong></td><td><strong>Biceps anchor 撕裂，labrum + biceps 從 glenoid 拉起</strong>（avulsion）</td><td>Repair / biceps tenodesis</td></tr>
+<tr><td><strong>III</strong></td><td>Bucket-handle tear of superior labrum，但 biceps tendon 完整、仍附著</td><td>Debridement / repair</td></tr>
+<tr><td><strong>IV</strong></td><td>Bucket-handle tear 延伸至 biceps tendon</td><td>Tenodesis 或 repair（依年齡 / 活動度）</td></tr>
+</table>
+
+<h4>3. SLAP Extended Classification（V-X）</h4>
+<table>
+<tr><th>Type</th><th>內容</th></tr>
+<tr><td>V</td><td>Type II + 延伸至 anterior Bankart</td></tr>
+<tr><td>VI</td><td>Type II + flap tear</td></tr>
+<tr><td>VII</td><td>Type II + 延伸至 MGHL</td></tr>
+<tr><td>VIII</td><td>Type II + 延伸至 posterior labrum</td></tr>
+<tr><td>IX</td><td>Type II + 360° labral involvement</td></tr>
+<tr><td>X</td><td>Type II + posterior reverse Bankart</td></tr>
+</table>
+
+<h4>4. SLAP Type II 進一步亞型（重要）</h4>
+<table>
+<tr><th>亞型</th><th>位置</th><th>備註</th></tr>
+<tr><td>Anterior</td><td>Anterosuperior labrum + biceps anchor</td><td>運動員較多</td></tr>
+<tr><td>Posterior</td><td>Posterosuperior labrum + biceps anchor</td><td>投擲運動常見、合併 internal impingement</td></tr>
+<tr><td>Combined</td><td>Anterior + posterior</td><td>嚴重 instability 常合併</td></tr>
+</table>
+
+<h4>5. Bankart Lesion 與變異（必認）</h4>
+<table>
+<tr><th>類型</th><th>內容</th></tr>
+<tr><td><strong>Classic Bankart</strong></td><td>Anteroinferior labrum 從 glenoid 撕脫（純軟組織）</td></tr>
+<tr><td><strong>Bony Bankart</strong></td><td>Anteroinferior glenoid rim 撕裂性骨折（含骨）</td></tr>
+<tr><td><strong>ALPSA</strong>（Anterior Labroligamentous Periosteal Sleeve Avulsion）</td><td>Labrum + periosteum 內側剝離 + 內移、healing 在內側 → 慢性</td></tr>
+<tr><td><strong>GLAD</strong>（Glenoid Labral Articular Disruption）</td><td>Anteroinferior labrum 撕裂 + 鄰近 glenoid 軟骨 flap 損傷</td></tr>
+<tr><td><strong>Perthes lesion</strong></td><td>Labrum 撕裂但 periosteum 完整 → labrum 漂浮在原位（容易遺漏）</td></tr>
+<tr><td><strong>HAGL</strong>（Humeral Avulsion of Glenohumeral Ligament）</td><td>IGHL 從 humeral neck 撕脫（非 glenoid 端）→ 較少見但容易遺漏</td></tr>
+<tr><td><strong>Bony HAGL</strong></td><td>HAGL + humeral neck avulsion fracture</td></tr>
+</table>
+
+<h4>6. SLAP / Bankart 機轉分析</h4>
+<table>
+<tr><th>機轉</th><th>常見傷害</th></tr>
+<tr><td>FOOSH（伸手撐地）</td><td>SLAP（superior compression）、Bankart（anterior translation）</td></tr>
+<tr><td>過頭投擲（throwing）</td><td>SLAP（peel-back mechanism in late cocking）</td></tr>
+<tr><td>突發牽拉</td><td><strong>SLAP（biceps anchor pull）</strong>—— 本病人遛狗被拉</td></tr>
+<tr><td>跌倒著地肩前</td><td>Anterior dislocation → Bankart + Hill-Sachs</td></tr>
+<tr><td>反覆 micro-trauma</td><td>慢性 SLAP（年長退化型）、cuff tear 合併</td></tr>
+</table>
+
+<h4>7. 本病人最可能診斷</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+基於：64F、被牽繩拉扯（牽拉機轉）、O'brien (+)、Biceps load II (+)、apprehension (+)、relocation (+)：<br>
+✅ <strong>SLAP Type II</strong>（biceps anchor avulsion；牽拉機轉典型）<br>
+✅ ± <strong>SLAP Type V</strong>（延伸至 anterior Bankart，因有 apprehension）<br>
+✅ 可能合併 <strong>Bankart 或其變異</strong>（apprehension + relocation 都 (+)）<br>
+✅ 須排除 <strong>cuff tear</strong>（年齡 + Neer/Hawkins (+)；secondary impingement）<br>
+→ 最終診斷需要 <strong>MR arthrogram + 必要時 arthroscopic confirmation</strong>
+</p>
+
+<h4>8. 各 lesion 影像特徵速記</h4>
+<table>
+<tr><th>Lesion</th><th>MR arthrogram 特徵</th></tr>
+<tr><td>SLAP II</td><td>Contrast 漏入 superior labrum 與 biceps anchor 之間</td></tr>
+<tr><td>Bankart（軟組織）</td><td>Anteroinferior labrum 與 glenoid 分離、contrast 漏入</td></tr>
+<tr><td>Bony Bankart</td><td>Anteroinferior glenoid rim 缺損 + 撕裂性骨片</td></tr>
+<tr><td>ALPSA</td><td>Labrum 內移於 glenoid 內側 + 慢性 healing</td></tr>
+<tr><td>HAGL</td><td>IGHL 從 humeral neck 撕脫，"J sign" on coronal MRI（contrast 漏到 axillary recess 之外）</td></tr>
+<tr><td>Hill-Sachs</td><td>Posterolateral humeral head 凹陷，T2 高訊號（急性）/ 骨硬化（慢性）</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>SLAP Snyder I-IV 必背</strong>（後延伸 V-X 加分）</li>
+<li><strong>Type II 最常見</strong>（biceps anchor avulsion）</li>
+<li>Type III：bucket-handle，biceps 完整；Type IV：bucket-handle 延伸至 biceps</li>
+<li><strong>Bankart variants：Bony Bankart、ALPSA、GLAD、HAGL、Perthes</strong>（必認）</li>
+<li>HAGL 易遺漏：IGHL 從 humeral neck 撕脫</li>
+<li>正常變異：Sublabral foramen、Buford complex（不要誤判 SLAP）</li>
+<li>機轉：牽拉 → SLAP；著地 → Bankart + Hill-Sachs</li>
+<li>本病人最可能：SLAP II + 可能 Bankart 合併</li>
+</ul>`,
+      },
+      {
+        q: '保守治療 vs 手術選擇？SLAP repair vs biceps tenodesis 的差別？',
+        keywords: [
+          '保守 4-6 個月優先（中年以上）',
+          'PT：scapular stability、posterior capsule stretch、cuff strength',
+          'IA / subacromial steroid（合併 impingement）',
+          'PRP（新興）',
+          'Arthroscopic SLAP repair（年輕、運動員）',
+          'Biceps tenodesis（年齡 &gt; 35-40 SLAP repair 失敗風險高）',
+          'Biceps tenotomy（年長、不在意 popeye sign）',
+          'Bankart repair（apprehension + 不穩定）',
+          'Latarjet（&gt; 25% glenoid bone loss）',
+        ],
+        points: [
+          '<strong>SLAP 保守治療優先 4-6 個月</strong>（特別 &gt; 35 歲）',
+          'PT：scapular stability、posterior capsule stretch（GIRD 矯正）、cuff balance',
+          '注射：SA steroid（impingement 合併）、IA steroid（少用）、PRP',
+          '<strong>SLAP repair 失敗率隨年齡上升</strong>—— &gt; 35-40 歲建議 tenodesis',
+          'Biceps tenodesis：將 biceps 切斷再固定到 humerus（保留 contour、肌力）',
+          'Biceps tenotomy：純切斷、不固定（恢復快、popeye sign）',
+          '<strong>Anterior instability：Bankart repair（軟組織）</strong>',
+          'Glenoid bone loss &gt; 25% → Latarjet（coracoid transfer）',
+        ],
+        a: `<h4>1. 保守治療階梯</h4>
+<table>
+<tr><th>階段</th><th>內容</th></tr>
+<tr><td><strong>急性期（0-2 週）</strong></td><td>① 相對休息（避免極端 ABD + ER） ② NSAIDs 短期 ③ 冰敷 ④ 維持 ROM 在無痛範圍</td></tr>
+<tr><td><strong>恢復期（2-6 週）</strong></td><td>① ROM 訓練（特別 IR、horizontal adduction） ② 肩胛骨穩定肌訓練 ③ Posterior capsule stretching（sleeper stretch） ④ 等長 cuff 訓練</td></tr>
+<tr><td><strong>強化期（6-12 週）</strong></td><td>① Cuff 漸進阻力（彈力帶 → 啞鈴） ② Scapular dyskinesis 矯正（serratus anterior、rhomboid、lower trap） ③ 動力鏈訓練（hip / core）</td></tr>
+<tr><td><strong>功能訓練（12 週後）</strong></td><td>① 模擬日常活動、瑜伽 ② 漸進回 sport-specific ③ 評估是否手術</td></tr>
+<tr><td><strong>注射選項</strong></td><td>Subacromial steroid（impingement）、IA HA / steroid（GH joint）、Biceps tendon sheath（生物學引導 echo）、PRP（labral tear 新興）</td></tr>
+<tr><td><strong>觀察期</strong></td><td>4-6 個月積極保守，若仍 functional impairment → 手術</td></tr>
+</table>
+
+<h4>2. 手術適應症</h4>
+<table>
+<tr><th>適應症</th><th>內容</th></tr>
+<tr><td>① 保守失敗</td><td>4-6 個月積極保守無效</td></tr>
+<tr><td>② 急性 traumatic SLAP</td><td>年輕、活躍、運動員（特別 throwing athlete）</td></tr>
+<tr><td>③ Anterior instability</td><td>反覆 dislocation、apprehension 影響日常 / 工作</td></tr>
+<tr><td>④ 大型 Bony Bankart / Hill-Sachs</td><td>結構性骨損失需重建</td></tr>
+<tr><td>⑤ 合併 cuff tear（重要）</td><td>需同時修復 cuff</td></tr>
+<tr><td>⑥ 機械性症狀</td><td>明顯 catching、locking</td></tr>
+</table>
+
+<h4>3. SLAP 手術選項</h4>
+<table>
+<tr><th>術式</th><th>適應症</th><th>備註</th></tr>
+<tr><td><strong>Arthroscopic SLAP repair</strong></td><td>① &lt; 35-40 歲 ② 急性 traumatic SLAP II ③ Throwing athlete</td><td>Suture anchor 將 labrum + biceps anchor 重新固定到 glenoid</td></tr>
+<tr><td><strong>Biceps tenodesis</strong></td><td>① &gt; 35-40 歲 ② SLAP repair 失敗 risk ③ 合併 biceps pathology ④ 年長運動員</td><td>切斷 biceps long head 在 superior labrum 附著處 → 重新固定到 humerus（subpectoral 或 suprapectoral）</td></tr>
+<tr><td><strong>Biceps tenotomy</strong></td><td>① 年長（&gt; 60） ② 不在意 popeye 變形 ③ 低活動度</td><td>純切斷、不固定，恢復快但會 popeye sign（10-30%）</td></tr>
+<tr><td><strong>SLAP debridement</strong></td><td>Type I（fraying）、年長退化型</td><td>切除磨損部分，不修復</td></tr>
+</table>
+
+<h4>4. SLAP Repair vs Biceps Tenodesis 比較（重要決策）</h4>
+<table>
+<tr><th>項目</th><th>SLAP Repair</th><th>Biceps Tenodesis</th></tr>
+<tr><td><strong>適合年齡</strong></td><td>&lt; 35-40 歲</td><td>&gt; 35-40 歲</td></tr>
+<tr><td><strong>運動族群</strong></td><td>Throwing athlete（投手）</td><td>非投擲運動 / 一般族群</td></tr>
+<tr><td><strong>恢復時程</strong></td><td>6-9 個月（重返 throwing 12 個月）</td><td>3-4 個月（一般活動）、6 個月（運動）</td></tr>
+<tr><td><strong>結果滿意度</strong></td><td>年輕運動員 80-95%；&gt; 35 歲 50-70%（顯著下降）</td><td>所有年齡 85-95%</td></tr>
+<tr><td><strong>Re-operation rate</strong></td><td>&gt; 35 歲：10-30%</td><td>&lt; 5%</td></tr>
+<tr><td><strong>併發症</strong></td><td>Stiffness（最常見）、failure</td><td>Popeye sign（5-10%）、cramping</td></tr>
+<tr><td><strong>研究趨勢</strong></td><td>近年 SLAP repair 適應症縮小</td><td><strong>近年 tenodesis 為 &gt; 35 歲首選</strong></td></tr>
+</table>
+
+<h4>5. Anterior Instability 手術選項</h4>
+<table>
+<tr><th>術式</th><th>適應症</th><th>內容</th></tr>
+<tr><td><strong>Arthroscopic Bankart Repair</strong></td><td>軟組織 Bankart、Glenoid bone loss &lt; 13-15%</td><td>Suture anchor 將 anterior labrum 重新固定到 glenoid</td></tr>
+<tr><td><strong>Open Bankart Repair</strong></td><td>失敗 arthroscopic、複雜傷害</td><td>Open 暴露、加強 capsular shift</td></tr>
+<tr><td><strong>Latarjet（coracoid transfer）</strong></td><td>① <strong>Bone loss &gt; 25%</strong> ② Engaging Hill-Sachs ③ 失敗 Bankart repair ④ 高接觸性運動</td><td>將 coracoid + conjoint tendon 移到 anterior glenoid<br>三重穩定機轉：bony block + sling + capsular reinforcement</td></tr>
+<tr><td><strong>Bone graft（iliac crest / distal tibia）</strong></td><td>Bone loss &gt; 25-30%、無 coracoid 可用</td><td>Allograft / autograft 重建 glenoid</td></tr>
+<tr><td><strong>Remplissage</strong></td><td>Engaging Hill-Sachs lesion</td><td>將 infraspinatus + posterior capsule 縫到 Hill-Sachs defect 內，將 defect 變成 extra-articular</td></tr>
+</table>
+
+<h4>6. 本病人手術決策考量</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+本病人 64 歲、瑜伽愛好者、跌倒後 SLAP + 可能 Bankart：<br>
+<strong>建議優先 4-6 個月積極保守</strong>，原因：<br>
+① 64 歲 → SLAP repair 失敗率高（&gt; 35 歲 50-70% 滿意度）<br>
+② 主要為瑜伽（非高接觸 / 投擲運動）<br>
+③ 跌倒急性受傷 → 部分 labrum 仍可癒合<br>
+<strong>若保守失敗 / 持續 instability</strong>：<br>
+→ <strong>SLAP 部分：建議 biceps tenodesis（不要 SLAP repair）</strong><br>
+→ <strong>Bankart 部分：先看 glenoid bone loss</strong>。&lt; 13% → arthroscopic Bankart repair；&gt; 25% → Latarjet<br>
+→ <strong>合併 cuff tear（若有）→ 同時修復</strong>
+</p>
+
+<h4>7. 手術風險告知</h4>
+<table>
+<tr><th>風險</th><th>內容</th></tr>
+<tr><td>Stiffness</td><td>SLAP repair 後最常見併發症（10-25%），需積極術後復健</td></tr>
+<tr><td>Re-tear / failure</td><td>SLAP repair 年長者 10-30%；Bankart repair 5-15%（年齡相關）</td></tr>
+<tr><td>感染</td><td>&lt; 1%</td></tr>
+<tr><td>神經損傷</td><td>Axillary nerve（Latarjet 時 musculocutaneous nerve）</td></tr>
+<tr><td>Popeye sign</td><td>Tenotomy 30%、tenodesis 5-10%</td></tr>
+<tr><td>Cramping / 持續痛</td><td>Tenodesis 罕見，通常輕微</td></tr>
+<tr><td>Hardware failure</td><td>Suture anchor 鬆脫（罕見）</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>保守優先 4-6 個月</strong>（特別 &gt; 35 歲）</li>
+<li>PT 重點：<strong>scapular stability + posterior capsule stretch + cuff balance</strong></li>
+<li><strong>SLAP repair 適合 &lt; 35-40 歲、急性、運動員</strong></li>
+<li><strong>&gt; 35 歲建議 biceps tenodesis（&gt; SLAP repair）</strong>，研究趨勢明確</li>
+<li>Tenodesis vs tenotomy：tenodesis 保留 contour 與肌力</li>
+<li><strong>Anterior instability：Bankart repair vs Latarjet（看 bone loss &gt; 25%）</strong></li>
+<li>Engaging Hill-Sachs → Remplissage</li>
+<li>本病人 64 歲：建議保守 → 必要時 tenodesis + Bankart repair</li>
+</ul>`,
+      },
+      {
+        q: '請設計 SLAP repair 或 biceps tenodesis 術後復健計畫，並說明重返瑜伽 SDM。',
+        keywords: [
+          'Phase 1 (0-2 wk): sling, gentle PROM',
+          'Phase 2 (2-6 wk): AAROM, scapular',
+          'Phase 3 (6-12 wk): AROM, light strength',
+          'Phase 4 (3-6 mo): progressive strength',
+          'Phase 5 (6-9 mo): sport-specific',
+          'Tenodesis 較 SLAP repair 早恢復',
+          'Throwing athlete 12 個月才回投',
+          '瑜伽特殊考量：避免 ABD + ER 極端、handstand',
+          'SDM：年齡、預後、瑜伽調整',
+        ],
+        points: [
+          'SLAP repair 5 階段，重視保護 biceps anchor',
+          'Tenodesis 復健較快（無 biceps anchor 修復需求）',
+          '<strong>0-2 週：sling 制動，gentle PROM forward elevation 90°</strong>',
+          '<strong>2-6 週：AAROM、scapular stabilizer、避免 ABD + ER 極端</strong>',
+          '6-12 週：AROM、light strength、姿勢',
+          '3-6 月：progressive strength、core / hip 動力鏈',
+          '6-9 月：sport-specific、return to activity test',
+          '瑜伽動作分級調整：避免 chaturanga、handstand 6 個月以上',
+        ],
+        a: `<h4>1. SLAP Repair 術後復健（5 階段，較保守）</h4>
+
+<h4>Phase 1（0-2 週）— Protection</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>固定</td><td>Sling immobilization（含 small pillow）24/7</td></tr>
+<tr><td>消腫</td><td>冰敷、抬高</td></tr>
+<tr><td>ROM</td><td><strong>Gentle PROM</strong>：forward elevation 90°、ER 至 30° in scapular plane（避免 ABD + max ER）</td></tr>
+<tr><td>禁忌</td><td><strong>避免 active biceps contraction</strong>（屈肘抗阻）、ABD + ER 極端</td></tr>
+<tr><td>遠端</td><td>Wrist / hand ROM、肘關節 ROM 在無痛範圍</td></tr>
+</table>
+
+<h4>Phase 2（2-6 週）— Early Mobilization</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>固定</td><td>白天棄 sling，夜間仍可使用</td></tr>
+<tr><td>ROM</td><td>PROM 進至 forward elevation 140°、ER 45°、IR 至 belt level；6 週後 AAROM 開始</td></tr>
+<tr><td>肌肉</td><td>Scapular stabilizer 等長訓練（serratus anterior、rhomboid、middle/lower trap）</td></tr>
+<tr><td>禁忌</td><td>仍避免 active biceps contraction、ABD + ER &gt; 90°</td></tr>
+</table>
+
+<h4>Phase 3（6-12 週）— Strengthening</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>ROM</td><td>達到 full PROM；AROM 漸進至 full</td></tr>
+<tr><td>肌力</td><td>Light cuff strengthening（彈力帶 / 啞鈴 1-2 lb）：ER、IR、empty can 漸進；scapular stabilizer 進階</td></tr>
+<tr><td>Biceps</td><td><strong>6-8 週後可開始輕度 active biceps</strong>（屈肘無阻 → 漸進阻力）</td></tr>
+<tr><td>禁忌</td><td>仍避免 plyometric、deep ABD + ER</td></tr>
+</table>
+
+<h4>Phase 4（3-6 個月）— Advanced Strengthening</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>肌力</td><td>達到 對側 80% 肌力（dynamometer 測量）</td></tr>
+<tr><td>動力鏈</td><td>Core、hip、scapular 整合訓練</td></tr>
+<tr><td>耐力</td><td>多重 set / rep、漸進阻力</td></tr>
+<tr><td>本體感受</td><td>Closed chain（牆面 push-up、wobble board）</td></tr>
+</table>
+
+<h4>Phase 5（6-9 個月）— Return to Sport</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>專項</td><td>瑜伽：先輕度 → 漸進至完整課程</td></tr>
+<tr><td>Throwing athletes</td><td>Interval throwing program（投擲運動員 9-12 個月才回投）</td></tr>
+<tr><td>Return to sport criteria</td><td>① 對側 90% 肌力 ② 完整無痛 ROM ③ 無 instability ④ 通過 sport-specific testing</td></tr>
+</table>
+
+<h4>2. Biceps Tenodesis 術後復健（較快）</h4>
+<table>
+<tr><th>時期</th><th>內容</th></tr>
+<tr><td>0-2 週</td><td>Sling、gentle ROM；避免 active biceps</td></tr>
+<tr><td>2-6 週</td><td>Full PROM、AAROM、scapular stabilizer</td></tr>
+<tr><td>6-8 週</td><td><strong>開始 active biceps（早於 SLAP repair）</strong>；輕度 cuff strengthening</td></tr>
+<tr><td>8-12 週</td><td>Progressive strength；無 biceps anchor 保護需求</td></tr>
+<tr><td>3-4 個月</td><td>多數可回到日常活動 + 輕度運動</td></tr>
+<tr><td>4-6 個月</td><td>Sport-specific（運動員）</td></tr>
+</table>
+
+<h4>3. SLAP Repair vs Tenodesis 復健比較</h4>
+<table>
+<tr><th>項目</th><th>SLAP Repair</th><th>Biceps Tenodesis</th></tr>
+<tr><td>Sling 時間</td><td>2-4 週</td><td>1-2 週</td></tr>
+<tr><td>禁止 active biceps</td><td>6-8 週</td><td>4-6 週</td></tr>
+<tr><td>達到 full ROM</td><td>10-12 週</td><td>6-8 週</td></tr>
+<tr><td>Return to ADL</td><td>3-4 個月</td><td>2-3 個月</td></tr>
+<tr><td>Return to sport</td><td>6-9 個月</td><td>4-6 個月</td></tr>
+<tr><td>Throwing</td><td>9-12 個月</td><td>不適用</td></tr>
+</table>
+
+<h4>4. 瑜伽動作風險分級（重要）</h4>
+<table>
+<tr><th>風險</th><th>動作</th><th>建議</th></tr>
+<tr><td><strong>低風險</strong></td><td>Cat-cow、child's pose、warrior I-II（手平展）、tree pose、forward fold</td><td>3-4 個月可恢復</td></tr>
+<tr><td><strong>中風險</strong></td><td>Downward dog、cobra、warrior II（深 ER）、bow pose</td><td>4-6 個月漸進</td></tr>
+<tr><td><strong>高風險</strong></td><td><strong>Chaturanga（plank push-down）</strong>、wheel pose、camel pose、deep backbend、hands behind back</td><td>6 個月以上</td></tr>
+<tr><td><strong>極高風險</strong></td><td><strong>Handstand、headstand、forearm stand、crow pose</strong>（高 cuff loading + ABD/ER 極端）</td><td>9-12 個月以上、由教練分級指導</td></tr>
+</table>
+
+<h4>5. SDM「希望 + 現實」對話框</h4>
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>病人</strong>：「醫師，我多久可以回去做瑜伽？」<br>
+<strong>醫師</strong>：「我希望你能盡快回到瑜伽（希望）。<br>
+但要誠實告訴你（現實）：<br>
+① 你 64 歲 + SLAP + 可能合併 Bankart，<strong>研究顯示 35 歲以後 SLAP repair 滿意度只有 50-70%</strong>。<br>
+② 我們先試 4-6 個月積極保守 —— 復健、姿勢調整、必要時注射。<br>
+③ 如果保守失敗，<strong>建議 biceps tenodesis（不是 SLAP repair）</strong>，恢復快、預後好。<br>
+④ <strong>瑜伽不是「能不能做」，而是「怎麼做」</strong>。我們會分級調整：<br>
+&nbsp;&nbsp;・低風險動作 3-4 個月可恢復<br>
+&nbsp;&nbsp;・<strong>chaturanga / handstand 等動作要 6-9 個月以上</strong>，且要與教練配合分級<br>
+&nbsp;&nbsp;・有些極限動作（forearm stand）建議終身避免或大幅改良<br>
+⑤ <strong>不是放棄瑜伽，是改變瑜伽方式</strong>。許多瑜伽老師會教 modification（用 block、wall、改良姿勢）。<br>
+⑥ 重點是肩胛穩定 + 核心 + 動力鏈，這些練好瑜伽會更深入。」<br>
+家屬：「健康比挑戰高難度動作重要太多。慢慢來，回到課程仍然會很享受。」
+</p>
+
+<h4>6. 重返瑜伽 Return-to-Practice 評估</h4>
+<table>
+<tr><th>標準</th><th>內容</th></tr>
+<tr><td>肌力</td><td>對側 90%（cuff、scapular、biceps）</td></tr>
+<tr><td>ROM</td><td>無痛 full ROM，特別 ER + ABD + IR</td></tr>
+<tr><td>無 apprehension</td><td>各方向動作無恐懼感</td></tr>
+<tr><td>動力鏈</td><td>Core、hip 整合、單腳平衡</td></tr>
+<tr><td>專項</td><td>能完成 modified yoga sequence 無痛</td></tr>
+<tr><td>心理</td><td>準備好（不緊張、有信心）</td></tr>
+</table>
+
+<h4>7. PMR 在 SLAP / Bankart 全程角色</h4>
+<table>
+<tr><th>階段</th><th>PMR 角色</th></tr>
+<tr><td>診斷</td><td>PE、影像安排、SLAP/Bankart 鑑別</td></tr>
+<tr><td>非手術</td><td><strong>結構性復健（首要）</strong>、注射、活動調整</td></tr>
+<tr><td>術前</td><td>SDM、prehab（ROM、肌力、姿勢）</td></tr>
+<tr><td>術後</td><td>分階段復健、漸進 ROM / strength、Phase 進階指引</td></tr>
+<tr><td>Sport-specific</td><td>瑜伽 / throwing / weightlifting 特殊調整</td></tr>
+<tr><td>長期</td><td>姿勢、動作習慣、預防再受傷</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li><strong>SLAP repair 5 階段</strong>（保守）vs <strong>Tenodesis 較快</strong></li>
+<li>0-2 週禁止 active biceps（保護 biceps anchor / tenodesis site）</li>
+<li>避免 ABD + max ER 至 12 週後</li>
+<li><strong>SLAP repair：return to sport 6-9 個月，throwing 9-12 個月</strong></li>
+<li>Tenodesis：return to sport 4-6 個月（較快）</li>
+<li>瑜伽動作分級：<strong>chaturanga / handstand 是高風險</strong>，6-9 個月以上才能漸進</li>
+<li>Return to sport：對側 90% 肌力 + 無 apprehension + sport-specific test</li>
+<li>SDM：誠實說明預後、調整 sport 方式比放棄更重要</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
