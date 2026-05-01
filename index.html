@@ -57534,9 +57534,956 @@ ECG：Sinus tachycardia around 110+ bpm；BP 120-130/75-85。
       },
     ],
   },
+  {
+    id: 'pulmonary_006',
+    domain: 'pulmonary',
+    title: 'IPF / ILD 限制型肺病肺復健',
+    context: `70 歲男性，無吸菸史。
+3 年前因進行性活動性呼吸困難就醫，HRCT 顯示 bilateral lower lobe + subpleural reticular change with honeycombing，符合 UIP（Usual Interstitial Pneumonia）pattern，診斷為 IPF（Idiopathic Pulmonary Fibrosis）。
+
+目前藥物：Pirfenidone 801 mg TID（抗纖維化藥）。
+
+最近 6 個月病情惡化：
+- mMRC dyspnea = 3
+- 走 50-100 m 就需停下喘氣
+- 慢性乾咳（無痰）
+- SpO₂ rest 92%、運動會降至 84%
+- 6 個月內 6MWT 距離由 380 m 降至 280 m
+
+胸腔科轉介復健科，希望進行肺復健。
+
+考官：請依序回答下列問題。`,
+    questions: [
+      {
+        q: 'ILD 的分類有哪些？IPF 的特徵與診斷標準？預後？',
+        keywords: [
+          'IIP idiopathic interstitial pneumonia',
+          'CTD-ILD',
+          'HP hypersensitivity pneumonitis',
+          'Sarcoidosis',
+          'Pneumoconiosis',
+          'Drug-induced',
+          'UIP pattern',
+          'Honeycombing',
+          'Median survival 3-5 years',
+          'Acute exacerbation IPF',
+        ],
+        points: [
+          'ILD 分類：(1) IIP（idiopathic interstitial pneumonias，含 IPF、NSIP、COP 等） (2) CTD-ILD（自體免疫疾病相關，如 RA、SSc、PM/DM） (3) Hypersensitivity pneumonitis (4) Sarcoidosis (5) Pneumoconiosis（職業塵肺，如 silicosis、asbestosis、talc） (6) Drug-induced（amiodarone、bleomycin、MTX、nitrofurantoin） (7) Smoking-related（DIP、RB-ILD）',
+          'IPF 特徵：60+ 歲、男性多、慢性進行性 dyspnea + 乾咳、HRCT UIP pattern、無已知 cause',
+          'UIP HRCT pattern：subpleural、basal predominant、reticular、honeycombing ± traction bronchiectasis',
+          'IPF 診斷：HRCT 符合 + 排除已知 ILD 病因；典型 case 不需 biopsy',
+          'Pirfenidone、Nintedanib 為兩大抗纖維化藥（slows decline，不能逆轉）',
+          'Median survival 3-5 年，個體差異大',
+          'Acute exacerbation IPF：30 天內 dyspnea 急遽惡化 + 新 GGO/consolidation，mortality 50-80%',
+          '本病人 6 個月 6MWT 降 100 m → 顯示快速進展，預後差',
+        ],
+        a: `<h4>ILD 分類（簡化）</h4>
+<table>
+<tr><th>類別</th><th>具體疾病</th><th>原因</th></tr>
+<tr><td>IIP（idiopathic）</td><td>IPF、NSIP、COP、AIP、DIP、RB-ILD、LIP</td><td>不明</td></tr>
+<tr><td>CTD-ILD</td><td>RA、SSc、PM/DM、SLE、Sjögren</td><td>自體免疫</td></tr>
+<tr><td>Hypersensitivity pneumonitis</td><td>Bird fancier's、farmer's lung</td><td>過敏原暴露</td></tr>
+<tr><td>Sarcoidosis</td><td>—</td><td>granulomatous</td></tr>
+<tr><td>Pneumoconiosis</td><td>Silicosis、asbestosis、talc lung</td><td>職業塵肺</td></tr>
+<tr><td>Drug-induced</td><td>Amiodarone、bleomycin、MTX、nitrofurantoin</td><td>藥物</td></tr>
+<tr><td>Smoking-related</td><td>DIP、RB-ILD、PLCH</td><td>吸菸</td></tr>
+<tr><td>Vasculitis-associated</td><td>GPA、EGPA、MPA</td><td>血管炎</td></tr>
+</table>
+
+<h4>IPF 特徵與診斷</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>流行病學</td><td>60+ 歲、男 &gt; 女、吸菸史多有；本病人 70 歲符合</td></tr>
+<tr><td>症狀</td><td>慢性進行性 dyspnea on exertion、乾咳（少痰）</td></tr>
+<tr><td>體徵</td><td>Bibasilar fine velcro crackle、clubbing（50%）</td></tr>
+<tr><td>HRCT UIP pattern</td><td>(1) Subpleural distribution (2) Basal predominant (3) Reticular abnormality (4) Honeycombing ± traction bronchiectasis</td></tr>
+<tr><td>PFT</td><td>Restrictive pattern、DLCO 顯著下降</td></tr>
+<tr><td>診斷</td><td>HRCT 符合 + 排除其他 ILD 病因；需 multidisciplinary discussion；不典型 case 才考慮 biopsy</td></tr>
+<tr><td>排除</td><td>CTD（autoimmune panel）、HP（暴露史 + lavage）、drug、environmental</td></tr>
+</table>
+
+<h4>UIP vs Non-UIP HRCT Pattern</h4>
+<table>
+<tr><th>UIP（IPF）</th><th>NSIP</th></tr>
+<tr><td>Heterogeneous</td><td>Homogeneous</td></tr>
+<tr><td>Honeycombing</td><td>Less honeycombing</td></tr>
+<tr><td>Subpleural / basal</td><td>Subpleural sparing 常見</td></tr>
+<tr><td>Traction bronchiectasis</td><td>GGO 為主</td></tr>
+<tr><td>Reticular</td><td>Reticular + GGO</td></tr>
+</table>
+
+<h4>IPF 治療</h4>
+<table>
+<tr><th>藥物 / 介入</th><th>內容</th></tr>
+<tr><td>Pirfenidone（本病人）</td><td>801 mg TID；抗纖維化、抗發炎；副作用：GI、光敏感、肝</td></tr>
+<tr><td>Nintedanib</td><td>150 mg BID；TKI（VEGFR、PDGFR、FGFR）；副作用：腹瀉、肝</td></tr>
+<tr><td>O₂ supplementation</td><td>低氧時必用</td></tr>
+<tr><td>Pulmonary rehab</td><td>改善 dyspnea、6MWT、QoL</td></tr>
+<tr><td>Lung transplant</td><td>End-stage 唯一根治；早期 referral</td></tr>
+<tr><td>Antacid</td><td>GERD 控制（部分研究）</td></tr>
+<tr><td>Vaccination</td><td>流感、肺鏈球菌、COVID</td></tr>
+<tr><td>避免</td><td>類固醇、azathioprine、NAC（PANTHER trial 顯示有害）</td></tr>
+</table>
+
+<h4>IPF 預後</h4>
+<table>
+<tr><th>指標</th><th>數據</th></tr>
+<tr><td>Median survival</td><td>3-5 年（從診斷起）</td></tr>
+<tr><td>5 年存活率</td><td>20-40%</td></tr>
+<tr><td>FVC 年下降速率</td><td>不治療：150-200 mL/年；抗纖維化藥：減半</td></tr>
+<tr><td>Acute exacerbation</td><td>5-10% / 年；單次發作 mortality 50-80%</td></tr>
+<tr><td>Lung cancer 風險</td><td>升高（共有 risk factor）</td></tr>
+</table>
+
+<h4>不良預後因子</h4>
+<ul>
+<li>FVC 下降 ≥ 10% / 6 個月</li>
+<li>DLCO 下降 ≥ 15% / 6 個月</li>
+<li>6MWT 距離下降（如本病人 100 m / 6 個月）</li>
+<li>Pulmonary HTN 出現</li>
+<li>Honeycombing 廣泛</li>
+<li>GAP score 高</li>
+</ul>
+
+<h4>GAP Score（IPF 預後）</h4>
+<table>
+<tr><th>項目</th><th>0 分</th><th>1 分</th><th>2 分</th></tr>
+<tr><td><strong>G</strong>ender</td><td>女</td><td>男</td><td>—</td></tr>
+<tr><td><strong>A</strong>ge</td><td>≤ 60</td><td>61-65</td><td>&gt; 65</td></tr>
+<tr><td>FVC</td><td>&gt; 75%</td><td>50-75%</td><td>&lt; 50%</td></tr>
+<tr><td>DLCO</td><td>&gt; 55%</td><td>36-55%</td><td>≤ 35%</td></tr>
+</table>
+
+<table>
+<tr><th>Stage</th><th>總分</th><th>1 年死亡率</th></tr>
+<tr><td>I</td><td>0-3</td><td>6%</td></tr>
+<tr><td>II</td><td>4-5</td><td>16%</td></tr>
+<tr><td>III</td><td>6-8</td><td>39%</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人預後</strong>：(1) 70 歲男性 → 已 4 分 (2) 6 個月 6MWT 降 100 m → progressive (3) Pirfenidone 在用但仍進展。GAP 分數估計 II-III stage，預後不佳。應考慮 (1) 強化治療（評估 nintedanib 替換或合併） (2) Lung transplant 評估 referral（年齡 70 為 borderline，依其他 comorbidity 而定） (3) 整合 palliative care。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>ILD 7 大類：<strong>IIP、CTD、HP、Sarcoid、Pneumoconiosis、Drug、Smoking</strong></li>
+<li>IPF 是 IIP 中最常見、預後最差</li>
+<li>UIP HRCT 四大特徵：<strong>subpleural、basal、reticular、honeycombing</strong></li>
+<li>抗纖維化藥：<strong>Pirfenidone、Nintedanib</strong>（slows decline）</li>
+<li>GAP score 預後評估</li>
+<li>Median survival 3-5 年；acute exacerbation mortality 50-80%</li>
+</ul>`,
+      },
+      {
+        q: 'PFT：FEV1/FVC 85%、FEV1 60% predicted、FVC 58% predicted、TLC 60% predicted、DLCO 32% predicted、KCO 60% predicted。判讀並說明嚴重度。Restrictive 病因鑑別？',
+        keywords: [
+          'Restrictive pattern',
+          'TLC < 80% predicted',
+          'Severity by FVC or TLC',
+          'Severe restriction',
+          'DLCO disproportionate',
+          'Parenchymal vs extra-parenchymal',
+          'Neuromuscular cause',
+          'Chest wall disease',
+          'Pleural disease',
+          'KCO interpretation',
+        ],
+        points: [
+          'FEV1/FVC 85% > 70% → 無 obstruction',
+          'TLC 60% < 80% → restrictive',
+          'FVC 58% / TLC 60% → moderate-severe restrictive',
+          'DLCO 32% → severe diffusion impairment',
+          'KCO 60% → DLCO 下降不只是肺體積，還有 gas exchange 異常 → 真正的 parenchymal disease',
+          'Restrictive 可分：(1) Parenchymal（肺實質：ILD、肺切除、edema） (2) Extra-parenchymal（chest wall、neuromuscular、pleural）',
+          'IPF 屬 parenchymal restrictive，DLCO 與 KCO 都下降',
+          'Neuromuscular cause（如 ALS）：DLCO 正常 / 微降，KCO 升高（小肺但單位功能 OK）',
+          'FVC 是 IPF 追蹤主要指標：每 3-6 個月一次',
+        ],
+        a: `<h4>本病人 PFT 判讀</h4>
+<table>
+<tr><th>指標</th><th>數值</th><th>判讀</th></tr>
+<tr><td>FEV1/FVC</td><td>85%</td><td>&gt; 70% 無 obstruction</td></tr>
+<tr><td>FEV1 % predicted</td><td>60%</td><td>因 FVC 下降而下降</td></tr>
+<tr><td>FVC % predicted</td><td>58%</td><td>Moderate-severe restriction</td></tr>
+<tr><td>TLC % predicted</td><td>60%</td><td>Moderate-severe restriction</td></tr>
+<tr><td>DLCO % predicted</td><td>32%</td><td>Severe diffusion impairment</td></tr>
+<tr><td>KCO % predicted</td><td>60%</td><td>DLCO 下降不全是體積；真正 gas exchange 異常</td></tr>
+<tr><td>整體</td><td colspan="2"><strong>Moderate-severe restrictive with severe diffusion impairment（典型 IPF）</strong></td></tr>
+</table>
+
+<h4>Restrictive Severity（依 ATS/ERS）</h4>
+<table>
+<tr><th>Severity</th><th>FVC 或 TLC % predicted</th></tr>
+<tr><td>Mild</td><td>≥ 70%</td></tr>
+<tr><td>Moderate</td><td>60-69%</td></tr>
+<tr><td>Moderately severe</td><td>50-59%</td></tr>
+<tr><td>Severe</td><td>34-49%</td></tr>
+<tr><td>Very severe</td><td>&lt; 35%</td></tr>
+</table>
+
+<h4>DLCO Severity</h4>
+<table>
+<tr><th>DLCO % predicted</th><th>嚴重度</th></tr>
+<tr><td>≥ 80%</td><td>正常</td></tr>
+<tr><td>60-79%</td><td>Mild</td></tr>
+<tr><td>40-59%</td><td>Moderate</td></tr>
+<tr><td><strong>&lt; 40%</strong>（本病人 32%）</td><td><strong>Severe</strong></td></tr>
+</table>
+
+<h4>Restrictive 病因分類</h4>
+<table>
+<tr><th>類型</th><th>具體疾病</th><th>DLCO</th><th>KCO</th></tr>
+<tr><td><strong>Parenchymal（肺實質）</strong></td><td>ILD（IPF、NSIP）、肺水腫、肺炎、肺切除</td><td>↓↓</td><td><strong>↓</strong></td></tr>
+<tr><td>Extra-parenchymal（chest wall）</td><td>Kyphoscoliosis、obesity、ankylosing spondylitis、pectus</td><td>↓ / 正常</td><td>↑ / 正常</td></tr>
+<tr><td>Extra-parenchymal（neuromuscular）</td><td>ALS、myasthenia gravis、muscular dystrophy、phrenic nerve injury、SCI</td><td>↓ / 正常</td><td>↑ / 正常</td></tr>
+<tr><td>Pleural</td><td>Effusion、pleural fibrosis、mesothelioma、pneumothorax</td><td>↓ / 正常</td><td>↑ / 正常</td></tr>
+</table>
+
+<h4>DLCO 與 KCO 組合鑑別（複習）</h4>
+<table>
+<tr><th>DLCO</th><th>KCO</th><th>意義</th><th>本病人</th></tr>
+<tr><td>↓</td><td><strong>↓</strong></td><td>真正 gas exchange 障礙（fibrosis、emphysema、PAH）</td><td><strong>✓ IPF</strong></td></tr>
+<tr><td>↓</td><td>正常 / ↑</td><td>肺體積減少但 unit 功能 OK</td><td>—</td></tr>
+<tr><td>正常</td><td>↑</td><td>Compensatory 過度擴張</td><td>—</td></tr>
+<tr><td>↑</td><td>—</td><td>Polycythemia、alveolar hemorrhage、L→R shunt、obesity</td><td>—</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人</strong>：FVC 58% + DLCO 32% + KCO 60% → 典型 parenchymal restrictive + severe gas exchange 異常，符合 IPF。<strong>DLCO 32% 是運動時 desaturation 的結構基礎</strong>，運動處方必須<strong>監測 SpO₂ + 充分 O₂</strong>。
+</p>
+
+<h4>IPF PFT 追蹤指標</h4>
+<table>
+<tr><th>頻率</th><th>項目</th><th>意義</th></tr>
+<tr><td>每 3-6 個月</td><td>FVC</td><td>下降 ≥ 10% / 6 個月為快速進展、預後差</td></tr>
+<tr><td>每 6 個月</td><td>DLCO</td><td>下降 ≥ 15% / 6 個月為快速進展</td></tr>
+<tr><td>每 3-6 個月</td><td>6MWT</td><td>下降 ≥ 50 m 為臨床顯著</td></tr>
+<tr><td>定期</td><td>SpO₂ rest + exercise</td><td>監測低氧進展</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>Restrictive 嚴重度依 FVC / TLC % predicted</li>
+<li>DLCO &lt; 40% 為 severe</li>
+<li>Restrictive 4 大病因類型：parenchymal / chest wall / neuromuscular / pleural</li>
+<li>DLCO + KCO 都下降 = parenchymal disease（IPF 經典）</li>
+<li>FVC 是 IPF 追蹤指標（&gt; 10% 下降 / 6 個月為快速進展）</li>
+</ul>`,
+      },
+      {
+        q: 'CPET：RER 1.08、Peak VO₂ 11 mL/kg/min（48% predicted）、AT 7、BR 25%、VE/VCO₂ slope 48、SpO₂ rest 92% / nadir 78%（給 4 L O₂），HR Peak 85% predicted、End-point dyspnea + desaturation。判讀。Pulmonary vascular involvement？',
+        keywords: [
+          'Severe pulmonary limitation',
+          'Profound desaturation',
+          'High VE/VCO₂ slope',
+          'Pulmonary HTN suspicion',
+          'BR moderate but VE inefficient',
+          'Reduced O₂ pulse plateau',
+          'Rapid shallow breathing',
+          'Tachypnea pattern',
+          'Restrictive ventilatory limit',
+          'Lung transplant evaluation',
+        ],
+        points: [
+          'RER 1.08 接近 max（dyspnea + desaturation 為 end-point limit）',
+          'Peak VO₂ 11（3.1 MET、48% predicted）→ severe',
+          'AT 7（64% Peak）正常比例',
+          'BR 25%：相對 COPD（&lt; 15% 嚴重）較高，但 ILD 病人因 rapid shallow breathing 達 max VE',
+          'VE/VCO₂ slope 48：嚴重 ventilation inefficiency，提示 V/Q mismatch + pulmonary HTN possibility',
+          'SpO₂ rest 92% → nadir 78% 即使給 4L O₂ → severe gas exchange impairment',
+          'ILD 典型 CPET：rapid shallow breathing（高 RR、低 VT）、O₂ pulse plateau、嚴重 desaturation',
+          'VE/VCO₂ &gt; 45 + desaturation 顯著 → 強烈懷疑 pulmonary HTN，需 echo + RHC',
+          '本病人 Peak VO₂ &lt; 50% predicted + 嚴重 desaturation → lung transplant 評估 referral',
+        ],
+        a: `<h4>本病人 CPET 解讀</h4>
+<table>
+<tr><th>指標</th><th>數值</th><th>判讀</th></tr>
+<tr><td>RER</td><td>1.08</td><td>接近 max（限於 desaturation）</td></tr>
+<tr><td>Peak VO₂</td><td>11（3.1 MET、48% predicted）</td><td>Severe reduction</td></tr>
+<tr><td>AT</td><td>7（64% Peak）</td><td>比例正常</td></tr>
+<tr><td>BR</td><td>25%</td><td>邊界（&lt; 30% mild ventilatory limit）</td></tr>
+<tr><td>VE/VCO₂ slope</td><td>48</td><td><strong>嚴重升高</strong>（&gt; 45 → suspect PAH）</td></tr>
+<tr><td>SpO₂ nadir</td><td>78%（with 4 L O₂）</td><td><strong>Profound desaturation</strong></td></tr>
+<tr><td>HR</td><td>85% predicted</td><td>達 max</td></tr>
+<tr><td>End-point</td><td>Dyspnea + desaturation</td><td>Pulmonary 受限</td></tr>
+</table>
+
+<h4>ILD CPET 典型 Pattern</h4>
+<table>
+<tr><th>特徵</th><th>機轉</th></tr>
+<tr><td><strong>Rapid shallow breathing</strong></td><td>低 lung compliance → 高 RR + 低 VT 較省力</td></tr>
+<tr><td>VT plateau early</td><td>受限於肺纖維化</td></tr>
+<tr><td><strong>顯著 desaturation</strong></td><td>Diffusion limit + V/Q mismatch + low DLCO</td></tr>
+<tr><td>VE/VCO₂ slope ↑↑</td><td>Dead space ventilation 增加 + chemosensitivity</td></tr>
+<tr><td>O₂ pulse 早期 plateau</td><td>SV 限制 + 部分 PHTN</td></tr>
+<tr><td>BR 看似正常</td><td>因 rapid shallow breathing 達 max VE 但靠 RR 而非 VT</td></tr>
+</table>
+
+<h4>VE/VCO₂ Slope 判讀（IPF / ILD）</h4>
+<table>
+<tr><th>VE/VCO₂ slope</th><th>意義</th></tr>
+<tr><td>&lt; 30</td><td>正常</td></tr>
+<tr><td>30-35</td><td>Mild ventilatory inefficiency</td></tr>
+<tr><td>35-45</td><td>Moderate；提示 V/Q mismatch</td></tr>
+<tr><td><strong>&gt; 45</strong>（本病人 48）</td><td><strong>Severe；強烈 suspect PAH</strong></td></tr>
+</table>
+
+<h4>Pulmonary HTN（PHTN）in ILD</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>盛行率</td><td>IPF 中 30-40% 出現 PHTN</td></tr>
+<tr><td>機轉</td><td>慢性低氧 → vasoconstriction + 微血管破壞 + RV strain</td></tr>
+<tr><td>CPET 線索</td><td>VE/VCO₂ slope 顯著升、severe desaturation、O₂ pulse plateau、Peak VO₂ 顯著下降</td></tr>
+<tr><td>確診</td><td>Echo（RVSP）→ Right heart catheterization（RHC）gold standard</td></tr>
+<tr><td>診斷標準</td><td>Mean PAP &gt; 20 mmHg（2018 update）</td></tr>
+<tr><td>治療</td><td>Treat underlying ILD、O₂、利尿劑；ILD-PHTN 不建議純 PAH 藥物（Inhaled treprostinil 為 INCREASE 試驗例外）</td></tr>
+</table>
+
+<h4>運動受限類型鑑別（再複習）</h4>
+<table>
+<tr><th>受限</th><th>BR</th><th>VE/VCO₂</th><th>SpO₂</th><th>本病人</th></tr>
+<tr><td>Pulmonary（COPD）</td><td>&lt; 15-30%</td><td>升</td><td>降</td><td>—</td></tr>
+<tr><td><strong>ILD with PHTN</strong></td><td>邊界</td><td>顯著升 &gt; 45</td><td>顯著降</td><td>✓</td></tr>
+<tr><td>Pulmonary vascular（pure）</td><td>&gt; 30%</td><td>顯著升</td><td>降</td><td>—</td></tr>
+<tr><td>Cardiac</td><td>&gt; 30%</td><td>升</td><td>正常</td><td>—</td></tr>
+</table>
+
+<h4>Lung Transplant 評估時機</h4>
+<table>
+<tr><th>適應指標（IPF）</th><th>標準</th></tr>
+<tr><td>HRCT 診斷 IPF</td><td>確診即可考慮 referral（早期評估）</td></tr>
+<tr><td>FVC 下降 ≥ 10% / 6 個月</td><td>考慮 listing</td></tr>
+<tr><td>DLCO 下降 ≥ 15% / 6 個月</td><td>考慮 listing</td></tr>
+<tr><td>SpO₂ &lt; 88% on 6MWT</td><td>考慮 listing</td></tr>
+<tr><td>Pulmonary HTN 出現</td><td>考慮 listing</td></tr>
+<tr><td>Hospitalization for AE-IPF</td><td>考慮 listing</td></tr>
+<tr><td>年齡限制</td><td>單肺 &lt; 70、雙肺 &lt; 65（依中心）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 CPET 結論</strong>：(1) Peak VO₂ 48% predicted（severe） (2) Profound desaturation 即使給氧 (3) VE/VCO₂ 48 → 強烈 suspect PHTN (4) Rapid shallow breathing pattern 典型 ILD。<strong>需立即安排 echo 評估 PHTN，並啟動 lung transplant 評估</strong>（年齡 70 為單肺 borderline）。同時積極 pulmonary rehab 維持 functional capacity。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>ILD CPET 典型：<strong>rapid shallow breathing、profound desaturation、VE/VCO₂ ↑、O₂ pulse plateau</strong></li>
+<li>VE/VCO₂ &gt; 45 → 強烈 suspect PHTN</li>
+<li>BR 在 ILD 不一定低（rapid shallow 達 max VE）</li>
+<li>IPF 30-40% 合併 PHTN</li>
+<li>嚴重 ILD（VO₂ &lt; 50%、PHTN）→ lung transplant referral</li>
+</ul>`,
+      },
+      {
+        q: '請為本病人開立完整 ILD/IPF 肺復健處方（FITT-VP）。與 COPD 處方差異？氧氣需求？',
+        keywords: [
+          'Lower intensity than COPD',
+          'O₂ supplementation aggressive',
+          'Interval training',
+          'Resistance training',
+          'IMT',
+          'Energy conservation',
+          'Pursed-lip less effective',
+          'High flow O₂ during exercise',
+          'Avoid hyperventilation',
+          'Smaller MCID benefit',
+        ],
+        points: [
+          'Frequency 3 次/週監督式 × 8-12 週',
+          'Intensity：起始較 COPD 保守（40-60% Peak work rate）；RPE 11-13 / Borg dyspnea 3-4',
+          'Time：暖身 10 min + 主訓練 15-30 min（漸進）+ cool-down 10 min；嚴重者可用 interval',
+          'Type：有氧 + 阻力 + IMT + 柔軟度 + 平衡',
+          '與 COPD 差異：(1) ILD 處方強度需更保守 (2) 氧氣需求顯著更高（運動中 6-15 L 或 HFNC） (3) Pursed-lip breathing 對 ILD 效果有限（無 air trapping） (4) MCID 相對 COPD 較小',
+          'O₂：運動中目標 SpO₂ &gt; 88-90%；本病人 4 L 仍 nadir 78% → 需 6 L+ / mask / HFNC',
+          'IMT：30-40% PImax；ILD 病人 IMT 證據較少但仍建議',
+          '進階保守、避免突然增加負荷誘發 desaturation',
+          '營養：避免肥胖 + 避免 cachexia',
+        ],
+        a: `<h4>ILD / IPF 肺復健處方（FITT-VP）</h4>
+<table>
+<tr><th>FITT</th><th>處方</th></tr>
+<tr><td><strong>Frequency</strong></td><td>監督式 3 次/週 × 8-12 週</td></tr>
+<tr><td><strong>Intensity</strong></td><td>有氧：40-60% Peak work rate（保守）；RPE 11-13；Borg dyspnea 3-4<br>嚴重病人 → Interval：30 sec / 60 sec rest<br>阻力：50-60% 1RM<br>IMT：30-40% PImax</td></tr>
+<tr><td><strong>Time</strong></td><td>暖身 10 min + 主訓練 15-30 min + cool-down 10 min</td></tr>
+<tr><td><strong>Type</strong></td><td>有氧（cycle / 走路）+ 阻力 + IMT + 柔軟度 + 平衡</td></tr>
+<tr><td><strong>Volume</strong></td><td>目標逐漸達 90-150 min/週</td></tr>
+<tr><td><strong>Progression</strong></td><td>每 2 週微調；保守進階；先增 time 再增強度</td></tr>
+</table>
+
+<h4>ILD vs COPD 處方差異</h4>
+<table>
+<tr><th>項目</th><th>COPD</th><th>ILD（本病人）</th></tr>
+<tr><td>強度</td><td>60-80% Peak（可較高）</td><td>40-60% Peak（保守）</td></tr>
+<tr><td>O₂ 需求</td><td>低-中度（需 1-3 L）</td><td><strong>高（需 4-15 L 或 HFNC）</strong></td></tr>
+<tr><td>SpO₂ drop</td><td>有但通常 mild</td><td><strong>顯著（嚴重 desaturation）</strong></td></tr>
+<tr><td>Pursed-lip breathing</td><td><strong>有效</strong>（防 airway collapse）</td><td>效果有限</td></tr>
+<tr><td>主要問題</td><td>Air trapping、dyspnea</td><td>Restrictive、desaturation、cough</td></tr>
+<tr><td>MCID 6MWT</td><td>25-35 m</td><td>24-45 m（類似）</td></tr>
+<tr><td>效益持續</td><td>3-6 個月後消失</td><td>3-6 個月後消失（且疾病 progressive）</td></tr>
+<tr><td>Interval 適用</td><td>嚴重者</td><td>嚴重者更適用</td></tr>
+<tr><td>進階速度</td><td>較積極</td><td>保守、緩慢</td></tr>
+</table>
+
+<h4>ILD 氧氣處方</h4>
+<table>
+<tr><th>情境</th><th>處方</th></tr>
+<tr><td>休息</td><td>本病人 SpO₂ 92% → 邊界，需 ABG 確認 LTOT 適應</td></tr>
+<tr><td>運動</td><td>必須積極：起始 4 L → 漸增至 6-15 L；目標 SpO₂ &gt; 88%</td></tr>
+<tr><td>夜間</td><td>需 PSG 評估；ILD 病人夜間 desaturation 常見</td></tr>
+<tr><td>裝置</td><td>鼻導管 1-6 L；超過 → mask 或 HFNC（可達 60 L、FiO₂ 可達 100%）</td></tr>
+<tr><td>Pulse-dose</td><td>嚴重 ILD 病人不一定夠（continuous flow 較佳）</td></tr>
+</table>
+
+<h4>呼吸技巧（ILD 特化）</h4>
+<table>
+<tr><th>技巧</th><th>ILD 適用度</th></tr>
+<tr><td>Pursed-lip breathing</td><td>效果有限（無 air trapping）</td></tr>
+<tr><td>Diaphragmatic breathing</td><td>適用，放鬆減緊張</td></tr>
+<tr><td>Paced breathing</td><td>有效（協調活動 + 呼吸）</td></tr>
+<tr><td>避免 hyperventilation</td><td>ILD 病人易快淺呼吸 → 教導 controlled、深呼吸</td></tr>
+<tr><td>Cough technique</td><td>多為乾咳；可教 huffing 對黏稠痰</td></tr>
+<tr><td>Energy conservation</td><td><strong>非常重要</strong>（節能技巧改善 ADL）</td></tr>
+</table>
+
+<h4>本病人特化處方</h4>
+<table>
+<tr><th>項目</th><th>具體</th></tr>
+<tr><td>F</td><td>3 次/週監督式 × 8 週</td></tr>
+<tr><td>I</td><td>有氧：Cycle ergometer、interval 30 sec/60 sec rest，起始 40% Peak work rate；漸進 50-60%<br>運動中 O₂ 6 L 鼻導管 起，依 SpO₂ titrate（必要時 HFNC）<br>RPE 11-12、Borg dyspnea 3-4</td></tr>
+<tr><td>T</td><td>暖身 10 min + interval 15-20 min + cool-down 10 min</td></tr>
+<tr><td>T</td><td>Cycle + 上肢 dynamic + 阻力（下肢為主）+ IMT 30% + 柔軟度 + 平衡</td></tr>
+<tr><td>監測</td><td>SpO₂ 連續、HR、Borg dyspnea、症狀；停止標準較嚴</td></tr>
+</table>
+
+<h4>停止運動指標（ILD 特化）</h4>
+<ul>
+<li>SpO₂ &lt; 85% 即使 with high O₂</li>
+<li>Borg dyspnea &gt; 5（CR-10）</li>
+<li>新發胸痛、palpitation、頭暈</li>
+<li>SBP 下降 &gt; 10 mmHg</li>
+<li>RR &gt; 40（rapid shallow 表示無法維持）</li>
+<li>HR &gt; 85% predicted（已 max）</li>
+</ul>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人核心處方策略</strong>：(1) Interval &gt; continuous（嚴重 desaturation） (2) <strong>充分 O₂</strong>是介入成敗關鍵 → 必要時 HFNC (3) IMT 起始保守 30% PImax (4) 上肢訓練改善 ADL（嚴重 ILD 上肢負荷會誘發 dyspnea） (5) 平衡訓練（70 歲 + 肌少症 + O₂ 拖管） (6) 整合節能技巧、心理支持 (7) Lung transplant 評估同步進行。
+</p>
+
+<h4>肺復健效益（ILD）</h4>
+<table>
+<tr><th>項目</th><th>改善</th></tr>
+<tr><td>Dyspnea</td><td>Mild-moderate improvement</td></tr>
+<tr><td>6MWT</td><td>+24-45 m</td></tr>
+<tr><td>QoL（SGRQ）</td><td>−5 to −10</td></tr>
+<tr><td>Exercise endurance</td><td>+30-50%</td></tr>
+<tr><td>Mortality</td><td>未證實</td></tr>
+<tr><td>持續</td><td>3-6 個月後消失（且疾病 progressive）</td></tr>
+<tr><td>居家運動 maintenance</td><td>必要</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>ILD 處方<strong>較 COPD 保守</strong>，O₂ 需求顯著更高</li>
+<li>Pursed-lip 對 ILD 效果有限</li>
+<li>運動中 SpO₂ 目標 &gt; 88%，需要時用 HFNC</li>
+<li>ILD 效益較 COPD 略小但仍有意義</li>
+<li>疾病 progressive，需<strong>持續居家運動</strong>維持</li>
+<li>整合 lung transplant 評估</li>
+</ul>`,
+      },
+      {
+        q: '何謂 Acute Exacerbation of IPF？診斷標準？早期警訊？復健科角色？',
+        keywords: [
+          'AE-IPF definition',
+          'Within 30 days',
+          'Worsening dyspnea',
+          'New GGO on HRCT',
+          'Excluded other causes',
+          'High dose steroid',
+          '50-80% mortality',
+          'Trigger: infection / aspiration',
+          'Hold exercise',
+          'Palliative care integration',
+        ],
+        points: [
+          'AE-IPF 定義（2016 update）：(1) 既有 IPF 診斷 (2) Acute worsening of dyspnea ≤ 1 個月 (3) HRCT 新出現 bilateral GGO / consolidation overlying UIP background (4) 排除 cardiac failure、PE、感染等其他原因',
+          '頻率：5-10% IPF 病人 / 年',
+          'Mortality：50-80% per episode',
+          'Triggers：感染（病毒、細菌、隱性）、aspiration、surgery、bronchoscopy、高 O₂ 中毒、idiopathic',
+          '早期警訊：原本穩定病人 SOB 急速加重、咳嗽加劇、發燒、SpO₂ 急降、新發 chest pain、6MWT 突降',
+          '處置：高劑量類固醇（methylprednisolone 1 g × 3 days）、抗生素 empirical、O₂、ventilator support 必要時',
+          '預防：疫苗、避免感染、controlled GERD、避免 high O₂ 中毒、avoid 不必要的 bronchoscopy/surgery',
+          '復健科角色：(1) 暫停高強度運動 (2) 維持 chest care + 排痰 (3) Bedside ROM + NMES 防 deconditioning (4) 整合 palliative care (5) 家屬支持',
+        ],
+        a: `<h4>AE-IPF 診斷標準（2016 International Working Group）</h4>
+<table>
+<tr><th>項目</th><th>標準</th></tr>
+<tr><td>1</td><td>Previous or concurrent diagnosis of IPF</td></tr>
+<tr><td>2</td><td>Acute worsening or development of dyspnea typically &lt; 1 個月</td></tr>
+<tr><td>3</td><td>HRCT：新出現 bilateral GGO / consolidation overlying background UIP pattern</td></tr>
+<tr><td>4</td><td>Deterioration not fully explained by cardiac failure or fluid overload</td></tr>
+</table>
+
+<table>
+<tr><th>分類</th><th>說明</th></tr>
+<tr><td>Triggered AE-IPF</td><td>確認 trigger（感染、aspiration、drug）</td></tr>
+<tr><td>Idiopathic AE-IPF</td><td>無確認 trigger</td></tr>
+</table>
+
+<h4>AE-IPF 流行病學</h4>
+<table>
+<tr><th>項目</th><th>數據</th></tr>
+<tr><td>年發生率</td><td>5-10% IPF 病人</td></tr>
+<tr><td>每次 mortality</td><td>50-80%</td></tr>
+<tr><td>住院 mortality</td><td>50%+</td></tr>
+<tr><td>30 天 mortality</td><td>30-50%</td></tr>
+<tr><td>1 年 mortality</td><td>70-90%</td></tr>
+</table>
+
+<h4>Triggers</h4>
+<table>
+<tr><th>類別</th><th>具體</th></tr>
+<tr><td>感染</td><td>病毒（流感、CMV）、細菌（隱性 / atypical）、aspergillus</td></tr>
+<tr><td>Aspiration</td><td>GERD silent aspiration</td></tr>
+<tr><td>Procedure</td><td>Bronchoscopy、surgery（特別 lung surgery）</td></tr>
+<tr><td>O₂ toxicity</td><td>長期 high FiO₂</td></tr>
+<tr><td>Drug-induced</td><td>Amiodarone、chemo</td></tr>
+<tr><td>環境</td><td>空污、PM2.5</td></tr>
+<tr><td>Idiopathic</td><td>不明（最多）</td></tr>
+</table>
+
+<h4>早期警訊（病人 / 家屬識別）</h4>
+<ul>
+<li>SOB 急速惡化（&lt; 1-2 週）</li>
+<li>咳嗽加劇</li>
+<li>發燒、寒顫</li>
+<li>SpO₂ 急降（家用 pulse oximeter）</li>
+<li>新發胸痛</li>
+<li>無法平躺</li>
+<li>食慾下降、極度疲憊</li>
+<li>6MWT 距離急降</li>
+</ul>
+
+<h4>處置</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>住院</td><td>多需 ICU 或高 dependency unit</td></tr>
+<tr><td>氧氣</td><td>HFNC、NIV、IMV（依嚴重度）</td></tr>
+<tr><td>類固醇</td><td>Methylprednisolone 500-1000 mg/day × 3 days，再 taper</td></tr>
+<tr><td>抗生素</td><td>Empirical broad-spectrum（涵蓋 atypical）</td></tr>
+<tr><td>抗病毒</td><td>Oseltamivir（if flu suspected）</td></tr>
+<tr><td>抗纖維化藥</td><td>持續 pirfenidone / nintedanib</td></tr>
+<tr><td>支持治療</td><td>營養、預防 DVT、treat 合併症</td></tr>
+<tr><td>End-of-life</td><td>Code status discussion、palliative care</td></tr>
+</table>
+
+<h4>復健科角色（AE-IPF 急性期）</h4>
+<table>
+<tr><th>階段</th><th>處置</th></tr>
+<tr><td>急性期</td><td>(1) 暫停 outpatient 處方 (2) ICU bedside intervention (3) PROM、positioning (4) Chest care 配合 (5) 預防 deconditioning（NMES）</td></tr>
+<tr><td>穩定期（住院後期）</td><td>(1) 漸進 mobilization 依 Hodgson 紅綠燈 (2) IMT 30% PImax 起 (3) 充分氧氣 (4) 心理支持</td></tr>
+<tr><td>出院後</td><td>(1) Reassess functional capacity (2) 重新訂處方（通常更保守） (3) Lung transplant 評估推進 (4) Palliative care 整合</td></tr>
+</table>
+
+<h4>預防 AE-IPF</h4>
+<table>
+<tr><th>策略</th><th>內容</th></tr>
+<tr><td>疫苗</td><td>流感（每年）、肺鏈球菌、COVID、RSV、Tdap</td></tr>
+<tr><td>感染預防</td><td>戴口罩、手部衛生、避免人群</td></tr>
+<tr><td>GERD 控制</td><td>PPI、避免高油大餐、頭抬高</td></tr>
+<tr><td>避免 trigger</td><td>避免不必要的 bronchoscopy / surgery</td></tr>
+<tr><td>O₂ 處方</td><td>不要過度（&gt; 92% 不需更多）</td></tr>
+<tr><td>抗纖維化藥</td><td>持續使用（部分研究顯示降低 AE 頻率）</td></tr>
+<tr><td>環境</td><td>避免空污、PM2.5 高時 N95</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>復健科的責任性</strong>：IPF 病人在門診肺復健過程中是<strong>最早接觸 functional decline 的科別</strong>。如果發現 6MWT 急降、SpO₂ 加速降低、新症狀，<strong>立即通報胸腔科</strong>，不要等下次回診。家屬同樣訓練識別早期警訊與緊急聯繫流程。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>AE-IPF 4 大診斷標準</li>
+<li>Mortality 50-80%（極差預後）</li>
+<li>Triggers：感染最常見（其次 aspiration、procedure）</li>
+<li>處置核心：高劑量 steroid + 支持治療</li>
+<li>復健科<strong>暫停高強度</strong>、維持基本 ROM、整合 palliative care</li>
+<li>預防：疫苗、感染控制、GERD 治療、抗纖維化藥</li>
+</ul>`,
+      },
+      {
+        q: '本病人是否適合 lung transplant？早期 referral 時機？復健科在等待 transplant 期間的角色？',
+        keywords: [
+          'ISHLT 2021 criteria',
+          'Single vs bilateral lung',
+          'Age limit single < 70',
+          'BMI 18-30',
+          'No active malignancy',
+          'No severe comorbidity',
+          'Listing criteria',
+          'LAS score',
+          'Bridge to transplant',
+          'Pre-transplant rehab',
+        ],
+        points: [
+          'Referral timing：ALL patients with confirmed IPF（早期 referral，不要等 end-stage）',
+          'Listing criteria（決定 listing）：(1) FVC 下降 ≥ 10% / 6 個月 (2) DLCO &lt; 35-40% (3) SpO₂ &lt; 88% on 6MWT (4) Pulmonary HTN (5) Hospitalization for AE-IPF',
+          '適應條件（ISHLT 2021）：年齡（單肺 &lt; 70、雙肺 &lt; 65 多數中心）、BMI 18-30、無 active cancer（5 年）、無嚴重 comorbidity、心理穩定、社會支持',
+          '禁忌：年齡 &gt; 75、活動性感染 / cancer、嚴重 organ dysfunction、藥物依賴、psychiatric uncontrolled、無 adherence、嚴重 functional limitation 不可逆',
+          'IPF 多選 single lung（年齡考量、捐贈受限）',
+          'LAS（Lung Allocation Score）：依 medical urgency + transplant benefit 排序',
+          '本病人 70 歲為單肺 transplant borderline，需綜合評估',
+          'Bridge to transplant：在等待過程嚴重者可 ECMO bridge',
+          '復健科角色：(1) Pre-transplant prehab 維持 functional capacity (2) Education 與心理準備 (3) 家屬訓練 (4) 緊急時 inpatient 介入',
+        ],
+        a: `<h4>IPF Lung Transplant Referral 流程</h4>
+<table>
+<tr><th>階段</th><th>時機</th><th>內容</th></tr>
+<tr><td>Referral</td><td>確診 IPF 即可 referral（早期）</td><td>建立 baseline、長期 follow</td></tr>
+<tr><td>Evaluation</td><td>有 listing 適應症時</td><td>完整檢查、心理、social work</td></tr>
+<tr><td>Listing</td><td>達 listing criteria</td><td>UNOS / 各國 system 排隊</td></tr>
+<tr><td>Transplant</td><td>有合適 donor 時</td><td>緊急手術</td></tr>
+<tr><td>Post-Tx</td><td>長期 follow</td><td>免疫抑制 + rehab</td></tr>
+</table>
+
+<h4>Listing Criteria（IPF）</h4>
+<table>
+<tr><th>標準</th><th>細節</th></tr>
+<tr><td>FVC 下降 ≥ 10% / 6 個月</td><td>快速進展</td></tr>
+<tr><td>DLCO &lt; 35-40% predicted</td><td>嚴重 gas exchange</td></tr>
+<tr><td>SpO₂ &lt; 88% on 6MWT</td><td>運動低氧</td></tr>
+<tr><td>6MWT &lt; 250 m</td><td>嚴重 functional limit</td></tr>
+<tr><td>Pulmonary HTN（mPAP &gt; 25）</td><td>合併症</td></tr>
+<tr><td>Hospitalization for AE-IPF</td><td>已有重大事件</td></tr>
+</table>
+
+<h4>適應條件（ISHLT 2021）</h4>
+<table>
+<tr><th>類別</th><th>標準</th></tr>
+<tr><td>年齡</td><td>單肺 &lt; 70（borderline）；雙肺 &lt; 65（多中心 65-70 也可考慮 fitness 佳者）</td></tr>
+<tr><td>BMI</td><td>18-30（&gt; 30 增併發症、&lt; 18 cachexia）</td></tr>
+<tr><td>Cancer</td><td>5 年內無 active malignancy（皮膚癌例外）</td></tr>
+<tr><td>Functional</td><td>有 transplant 後 rehab 潛能</td></tr>
+<tr><td>合併症</td><td>無嚴重 cardiac、renal、liver、neurologic dysfunction</td></tr>
+<tr><td>感染</td><td>無 chronic active infection（HIV、TB 控制下可考慮）</td></tr>
+<tr><td>心理</td><td>Psychiatric stable、無 substance abuse、good adherence</td></tr>
+<tr><td>社會</td><td>有 caregiver、住處、保險 / 經濟</td></tr>
+</table>
+
+<h4>禁忌</h4>
+<table>
+<tr><th>絕對禁忌</th><th>相對禁忌</th></tr>
+<tr><td>Active malignancy（&lt; 2 yr）</td><td>年齡 &gt; 75</td></tr>
+<tr><td>Severe organ dysfunction（其他系統）</td><td>BMI &gt; 35 或 &lt; 17</td></tr>
+<tr><td>Active infection（HIV uncontrolled、active TB）</td><td>骨質疏鬆</td></tr>
+<tr><td>Uncontrolled psychiatric / substance abuse</td><td>Mechanical ventilation 長期</td></tr>
+<tr><td>Non-adherence</td><td>糖尿病 uncontrolled</td></tr>
+<tr><td>無 caregiver / 社會支持</td><td>—</td></tr>
+</table>
+
+<h4>本病人評估</h4>
+<table>
+<tr><th>項目</th><th>本病人</th><th>判讀</th></tr>
+<tr><td>診斷</td><td>IPF 3 年</td><td>適合 referral</td></tr>
+<tr><td>年齡 70</td><td>—</td><td>單肺 transplant borderline</td></tr>
+<tr><td>FVC 58%、DLCO 32%</td><td>DLCO &lt; 40%</td><td>達 listing</td></tr>
+<tr><td>6MWT 280 m、SpO₂ nadir 84%</td><td>—</td><td>達 listing</td></tr>
+<tr><td>Suspected PHTN（CPET）</td><td>—</td><td>達 listing</td></tr>
+<tr><td>結論</td><td colspan="2">適合 single lung transplant referral，需多重評估</td></tr>
+</table>
+
+<h4>LAS（Lung Allocation Score）</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>計算</td><td>基於 medical urgency（1 年 mortality 風險） + transplant benefit（1 年 post-Tx 預期生存）</td></tr>
+<tr><td>範圍</td><td>0-100 分</td></tr>
+<tr><td>影響因子</td><td>FVC、6MWT、SpO₂、PaCO₂、PHTN、需要 O₂、ventilator、age、診斷</td></tr>
+<tr><td>IPF</td><td>多分數較 COPD 高（progression 快、mortality 高）</td></tr>
+</table>
+
+<h4>等待 Transplant 期間復健（Pre-transplant Rehab）</h4>
+<table>
+<tr><th>目標</th><th>內容</th></tr>
+<tr><td>維持 functional capacity</td><td>有氧 + 阻力 + IMT、保守進階</td></tr>
+<tr><td>避免 deconditioning</td><td>規律運動 + 居家計畫</td></tr>
+<tr><td>體重 / 營養 optimization</td><td>BMI 18-30 維持</td></tr>
+<tr><td>心理準備</td><td>焦慮、憂鬱 management</td></tr>
+<tr><td>家屬訓練</td><td>了解 post-Tx 流程</td></tr>
+<tr><td>Mobile O₂</td><td>確保活動範圍</td></tr>
+<tr><td>Vaccination 完整</td><td>Post-Tx 不能再打活疫苗</td></tr>
+<tr><td>戒菸 / 戒酒</td><td>必須</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人個別化建議</strong>：(1) 立即 referral 至 transplant center（不要等更糟） (2) 同時積極 pulmonary rehab 維持 fitness（有助 LAS + post-Tx 預後） (3) 70 歲為 borderline，需綜合 fitness、合併症評估 (4) 若不適合 transplant，整合 palliative care 與 advanced care planning (5) 家屬全程參與。
+</p>
+
+<h4>Post-Transplant 復健（補充）</h4>
+<table>
+<tr><th>階段</th><th>內容</th></tr>
+<tr><td>ICU early</td><td>PROM、ventilator weaning support、IMT</td></tr>
+<tr><td>Phase I（住院）</td><td>Mobilization、chest care、漸進有氧</td></tr>
+<tr><td>Phase II（出院 3-6 個月）</td><td>有氧 + 阻力（避免胸骨 6-8 週）+ IMT；密切監測 rejection / infection</td></tr>
+<tr><td>長期</td><td>每年 reassess；CLAD（chronic lung allograft dysfunction）監測</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>IPF 確診即可 referral（早期）</li>
+<li>Listing 主要指標：<strong>FVC 下降、DLCO &lt; 35-40%、SpO₂、PHTN、AE-IPF</strong></li>
+<li>年齡限制：單肺 &lt; 70、雙肺 &lt; 65（borderline 個別化）</li>
+<li>LAS 決定 transplant 排序（urgency + benefit）</li>
+<li>Pre-transplant rehab 維持 fitness、改善 LAS、改善 post-Tx 預後</li>
+<li>本病人 70 歲為 borderline，需 multidisciplinary 評估</li>
+</ul>`,
+      },
+      {
+        q: 'Restrictive lung disease 不同病因（ILD vs neuromuscular vs chest wall）的肺復健處方差異？',
+        keywords: [
+          'Parenchymal ILD aggressive O₂',
+          'Neuromuscular emphasize IMT',
+          'Chest wall positioning',
+          'Kyphoscoliosis',
+          'ALS / DMD',
+          'NIV nocturnal',
+          'Cough assist',
+          'Mechanical insufflator-exsufflator',
+          'Energy conservation',
+          'Disease-specific tailoring',
+        ],
+        points: [
+          'ILD（如 IPF）：問題是 gas exchange + diffusion → 處方核心 O₂ supplementation + interval training',
+          'Neuromuscular（ALS、DMD、SMA、myasthenia）：問題是呼吸肌力 → 處方核心 NIV + IMT + cough assist',
+          'Chest wall（kyphoscoliosis、AS、obesity）：問題是 mechanical → 處方核心 positioning、stretching、weight management',
+          '共同：能量保存、IMT、姿位、心理支持',
+          'Neuromuscular 不適合高強度阻力（怕 fatigue / overuse），用低強度多 reps',
+          'Cough peak flow（CPF）&lt; 270 L/min → 需 cough assist；&lt; 160 L/min 為 emergency',
+          'Mechanical insufflator-exsufflator（MI-E）為 neuromuscular 重要 device',
+          'Chest wall 病人配合 brace 或 surgery 後處方有別',
+          'Obesity hypoventilation：減重 + PAP + 運動',
+        ],
+        a: `<h4>Restrictive Lung Disease 處方差異總表</h4>
+<table>
+<tr><th>類型</th><th>主要問題</th><th>處方核心</th><th>避免</th></tr>
+<tr><td><strong>ILD（IPF/NSIP）</strong></td><td>Diffusion + V/Q</td><td>O₂ aggressive、interval training、IMT、低-中強度</td><td>過度負荷誘 desat</td></tr>
+<tr><td><strong>Neuromuscular（ALS、DMD）</strong></td><td>呼吸肌力</td><td>NIV、IMT 低強度、cough assist、energy conservation</td><td>高強度阻力、overuse</td></tr>
+<tr><td><strong>Chest wall（kyphoscoliosis、AS、obesity）</strong></td><td>Mechanical 受限</td><td>Positioning、stretching、weight management、有氧</td><td>—</td></tr>
+<tr><td><strong>Pleural（fibrosis、effusion）</strong></td><td>肺擴張受限</td><td>胸廓 stretch、深呼吸、肺擴張技巧</td><td>—</td></tr>
+</table>
+
+<h4>ILD 處方（複習，本病人）</h4>
+<ul>
+<li>強度保守（40-60% Peak）、interval 為主</li>
+<li><strong>O₂ aggressive</strong>（運動中需 4-15 L 或 HFNC）</li>
+<li>IMT 30-40% PImax</li>
+<li>避免突然增加負荷誘 desaturation</li>
+<li>進階緩慢</li>
+</ul>
+
+<h4>Neuromuscular 處方</h4>
+<table>
+<tr><th>類型</th><th>處方</th></tr>
+<tr><td>有氧</td><td>低強度 walking / cycling / aquatic；多 reps、避免 fatigue</td></tr>
+<tr><td>阻力</td><td><strong>禁忌</strong>高強度（&gt; 70% 1RM）；用低強度（30-50%）多 reps</td></tr>
+<tr><td>IMT</td><td>低 resistance（10-30% PImax）；過度可能 overuse weakness</td></tr>
+<tr><td>NIV</td><td>當 FVC &lt; 50% 或 PImax 顯著下降開始；夜間 BiPAP 為主</td></tr>
+<tr><td>Cough assist</td><td>MI-E 設備；CPF &lt; 270 即考慮</td></tr>
+<tr><td>姿位</td><td>頭抬高、避免 supine（橫膈受限）</td></tr>
+<tr><td>Energy conservation</td><td>非常重要</td></tr>
+</table>
+
+<h4>Cough Peak Flow（CPF）評估</h4>
+<table>
+<tr><th>CPF</th><th>意義</th><th>處置</th></tr>
+<tr><td>&gt; 360 L/min</td><td>正常</td><td>監測</td></tr>
+<tr><td>270-360</td><td>Marginal</td><td>教導 manual / glossopharyngeal cough</td></tr>
+<tr><td><strong>&lt; 270</strong></td><td>需 cough assist</td><td>Manual + MI-E</td></tr>
+<tr><td><strong>&lt; 160</strong></td><td>Emergency</td><td>立即 MI-E + secretion management</td></tr>
+</table>
+
+<h4>Mechanical Insufflator-Exsufflator（MI-E、Cough Assist）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>機制</td><td>Positive pressure inflate（+30-40 cmH₂O）→ rapid switch to negative pressure（−30-40 cmH₂O）→ 模擬 cough</td></tr>
+<tr><td>適應</td><td>Neuromuscular weakness with weak cough、SCI、ICU 拔管後</td></tr>
+<tr><td>頻率</td><td>4-6 cycles × 每次、依需要每 2-4 hr</td></tr>
+<tr><td>禁忌</td><td>未治療 pneumothorax、bullous emphysema、未控制 hemoptysis</td></tr>
+</table>
+
+<h4>Chest Wall 處方</h4>
+<table>
+<tr><th>類型</th><th>處方</th></tr>
+<tr><td>Kyphoscoliosis</td><td>胸廓 stretch、姿勢矯正、bracing 配合、有氧 + 阻力</td></tr>
+<tr><td>Ankylosing spondylitis</td><td>胸廓 stretch、深呼吸、避免 prolonged static、規律運動是核心治療</td></tr>
+<tr><td>Obesity hypoventilation</td><td>減重 + PAP + 有氧 + 阻力；BMI 目標 &lt; 30</td></tr>
+<tr><td>Post-thoracoplasty</td><td>胸廓 ROM、肌肉強化、姿勢矯正</td></tr>
+</table>
+
+<h4>共同處方原則</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>Energy conservation</td><td>ADL 拆分、節能技巧、坐姿活動、優先排序</td></tr>
+<tr><td>姿勢</td><td>頭抬高 30-45°（限制 supine 時橫膈活動）</td></tr>
+<tr><td>呼吸技巧</td><td>Diaphragmatic breathing、paced breathing</td></tr>
+<tr><td>心理</td><td>焦慮、憂鬱常見；CBT、家屬支持</td></tr>
+<tr><td>營養</td><td>避免 cachexia / sarcopenia；BMI 維持</td></tr>
+<tr><td>疫苗</td><td>流感、肺鏈、COVID</td></tr>
+<tr><td>家屬訓練</td><td>急救、cough assist 操作（neuromuscular）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>處方原則總結</strong>：<strong>Restrictive 不是同質群體</strong>。Parenchymal（ILD）核心是<strong>O₂ + interval</strong>；Neuromuscular 核心是<strong>NIV + cough assist + 避免 overuse</strong>；Chest wall 核心是<strong>stretching + 姿勢 + weight</strong>。處方要<strong>個別化</strong>而非一套模板。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Restrictive 三大類：<strong>parenchymal、neuromuscular、chest wall</strong></li>
+<li>ILD 處方核心：<strong>O₂ + interval + IMT 中度</strong></li>
+<li>Neuromuscular 處方核心：<strong>NIV + cough assist + 低強度 IMT</strong></li>
+<li>Chest wall 核心：<strong>stretching + 姿勢 + weight</strong></li>
+<li>CPF &lt; 270 需 cough assist；&lt; 160 emergency</li>
+<li>共通：energy conservation、姿勢、呼吸技巧、心理、營養</li>
+</ul>`,
+      },
+      {
+        q: 'IPF 屬 progressive disease，預後差。請說明 palliative care 整合與 advanced care planning。復健科在 end-of-life 階段角色？',
+        keywords: [
+          'Early palliative care integration',
+          'Symptom management',
+          'Refractory dyspnea',
+          'Low-dose opioid',
+          'Anxiety / depression',
+          'Advanced care planning',
+          'DNR / DNI',
+          'Hospice criteria',
+          'Family support',
+          'Bereavement',
+        ],
+        points: [
+          'IPF 應<strong>早期整合 palliative care</strong>（不是只有 end-of-life）',
+          '症狀管理：dyspnea、cough、fatigue、anxiety、depression、pain',
+          'Refractory dyspnea：低劑量 opioid（morphine 1-2 mg PO PRN 或 sustained-release）+ benzodiazepine（panic component）',
+          'Cough：opioid、gabapentin、cromolyn',
+          'Anxiety / depression：SSRI、CBT、benzodiazepine PRN',
+          'Advanced care planning：價值觀、intubation/ventilator 意願、DNR/DNI、醫療委任代理、宗教信仰',
+          'Hospice criteria：FEV1 / FVC &lt; 30-40%、frequent ER visits、weight loss、recurrent infection',
+          '復健科 end-of-life 角色：(1) 暫停高強度 (2) 轉向 comfort + functional maintenance (3) Energy conservation 教學 (4) 家屬訓練 (5) 傾聽、尊嚴 (6) Bereavement 支持',
+          '即使 hospice，仍可有 maintenance ROM、呼吸技巧、輕度活動',
+        ],
+        a: `<h4>Palliative Care 整合時機</h4>
+<table>
+<tr><th>傳統觀念</th><th>現代整合</th></tr>
+<tr><td>End-stage 才轉介</td><td><strong>確診時即整合</strong></td></tr>
+<tr><td>「放棄治療」</td><td>「症狀控制 + QoL」與 disease-modifying 並行</td></tr>
+<tr><td>Hospice 等同 palliative</td><td>Palliative ≠ Hospice；Hospice 是 palliative 的最後階段</td></tr>
+</table>
+
+<h4>IPF 主要 palliative 症狀管理</h4>
+<table>
+<tr><th>症狀</th><th>處置</th></tr>
+<tr><td><strong>Refractory dyspnea</strong></td><td>(1) Low-dose opioid（morphine IR 1-2 mg PO PRN q4h；severe 用 SR） (2) Fan therapy（簡單但有效） (3) Benzodiazepine for panic component (4) NIV bridge</td></tr>
+<tr><td><strong>慢性乾咳</strong></td><td>Opioid、gabapentin、cromolyn nebulizer、benzonatate</td></tr>
+<tr><td>Fatigue</td><td>Energy conservation、運動（少量）、treat depression、貧血校正</td></tr>
+<tr><td>Anxiety</td><td>SSRI（escitalopram）、CBT、benzodiazepine PRN</td></tr>
+<tr><td>Depression</td><td>SSRI、SNRI、psychotherapy</td></tr>
+<tr><td>Pain</td><td>Acetaminophen、avoid NSAIDs（renal）、opioid for severe</td></tr>
+<tr><td>Insomnia</td><td>Sleep hygiene、avoid benzo if OSA、treat dyspnea / anxiety</td></tr>
+<tr><td>Constipation（opioid 副作用）</td><td>Stool softener、laxative routine</td></tr>
+</table>
+
+<h4>Low-dose Opioid for Dyspnea</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>機轉</td><td>降低 air hunger、降低 ventilatory drive、降低 anxiety</td></tr>
+<tr><td>劑量</td><td>Morphine IR 1-2 mg PO q4h PRN，可漸增；fentanyl patch 12 mcg/hr 替代</td></tr>
+<tr><td>禁忌</td><td>無絕對禁忌；rule out 解剖原因</td></tr>
+<tr><td>副作用</td><td>便秘（必預防）、噁心、嗜睡、呼吸抑制（低劑量罕見）</td></tr>
+<tr><td>證據</td><td>ATS 2010 推薦；多個 RCT 顯示 dyspnea 顯著改善</td></tr>
+</table>
+
+<h4>Advanced Care Planning</h4>
+<table>
+<tr><th>主題</th><th>討論內容</th></tr>
+<tr><td>價值觀</td><td>「對你來說什麼是 good death？」</td></tr>
+<tr><td>Goals of care</td><td>延長生命 vs 舒適？平衡點？</td></tr>
+<tr><td>Intubation / MV</td><td>願意 intubation 嗎？多久後 trial？</td></tr>
+<tr><td>CPR / DNR</td><td>心跳停止時要 CPR 嗎？</td></tr>
+<tr><td>Hospitalization</td><td>願意因 AE-IPF 住院嗎？ICU？</td></tr>
+<tr><td>地點</td><td>希望在家、安寧、醫院死亡？</td></tr>
+<tr><td>家人</td><td>誰是醫療委任代理？</td></tr>
+<tr><td>宗教 / 信仰</td><td>有特殊儀式或 preference？</td></tr>
+</table>
+
+<h4>台灣相關法規（補充）</h4>
+<table>
+<tr><th>法規</th><th>內容</th></tr>
+<tr><td>安寧緩和醫療條例（2000）</td><td>末期病人可拒絕 CPR、ventilator</td></tr>
+<tr><td>病人自主權利法（2019）</td><td>需 ACP 諮商 → 預立醫療決定 AD（含 IPF 等不可逆病況）</td></tr>
+<tr><td>HPC（健保末期照護）</td><td>多種 covered 包含 IPF</td></tr>
+</table>
+
+<h4>Hospice 適應（IPF）</h4>
+<table>
+<tr><th>標準（依 NHPCO）</th></tr>
+<tr><td>FEV1 / FVC &lt; 30-40%</td></tr>
+<tr><td>SpO₂ rest &lt; 88% on room air</td></tr>
+<tr><td>Cor pulmonale</td></tr>
+<tr><td>Frequent ER / hospital admission</td></tr>
+<tr><td>Weight loss &gt; 10% / 6 個月</td></tr>
+<tr><td>Resting tachycardia &gt; 100</td></tr>
+<tr><td>預估生存 &lt; 6 個月</td></tr>
+</table>
+
+<h4>復健科在 End-of-Life 的角色</h4>
+<table>
+<tr><th>階段</th><th>復健重點</th></tr>
+<tr><td>早期（穩定）</td><td>標準肺復健 + ACP 啟動</td></tr>
+<tr><td>進展期</td><td>降低強度、改 comfort focus；energy conservation 教學；居家設備（O₂、NIV）</td></tr>
+<tr><td>末期</td><td>(1) 暫停高強度 (2) Bedside ROM、positioning (3) 呼吸技巧 (4) 心理、靈性支持 (5) 家屬訓練 (6) 配合 palliative team</td></tr>
+<tr><td>Bereavement</td><td>家屬 bereavement support、轉介資源</td></tr>
+</table>
+
+<h4>復健科避免的常見錯誤</h4>
+<ul>
+<li>不要告知病人「沒有什麼可以做了」</li>
+<li>不要在 end-of-life 階段強迫高強度運動</li>
+<li>不要避談 DNR / advanced directive</li>
+<li>不要忽略<strong>家屬</strong>的 distress</li>
+<li>不要假設病人不想知道 prognosis</li>
+</ul>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>復健哲學在 progressive disease</strong>：肺復健的目標<strong>不是治癒</strong>，而是<strong>改善 QoL、症狀、功能、心理、社會參與</strong>。即使在 end-of-life，仍有「<strong>maintenance rehab</strong>」的角色——幫助病人保持 dignity、自理能力、與家人互動。<strong>Care</strong> &gt; <strong>Cure</strong>。
+</p>
+
+<h4>家屬支持</h4>
+<table>
+<tr><th>需求</th><th>內容</th></tr>
+<tr><td>教育</td><td>疾病進展、症狀管理、emergency 處置</td></tr>
+<tr><td>照護技巧</td><td>O₂ 操作、cough assist、positioning</td></tr>
+<tr><td>心理</td><td>Anticipatory grief、罪惡感、burnout 預防</td></tr>
+<tr><td>實質</td><td>居家設備、社工資源、保險</td></tr>
+<tr><td>Bereavement</td><td>追蹤、轉介支持團體</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>Palliative care <strong>早期整合</strong>，不是 end-of-life 才開始</li>
+<li>Refractory dyspnea：<strong>low-dose opioid</strong> + fan therapy</li>
+<li>Advanced care planning 涵蓋價值觀、intubation、DNR、地點、宗教</li>
+<li>台灣有<strong>安寧緩和醫療條例 + 病人自主權利法</strong></li>
+<li>Hospice 適應：FEV1 &lt; 30-40%、SpO₂ &lt; 88%、cor pulmonale、weight loss</li>
+<li>復健科 end-of-life 角色：<strong>comfort + functional maintenance + 家屬支持</strong></li>
+<li><strong>Care &gt; Cure</strong>：肺復健哲學在 progressive disease</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
+
 
 
 
