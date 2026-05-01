@@ -58480,9 +58480,862 @@ ECG：Sinus tachycardia around 110+ bpm；BP 120-130/75-85。
       },
     ],
   },
+  {
+    id: 'pulmonary_007',
+    domain: 'pulmonary',
+    title: 'Mixed Cardiopulmonary：老人 CAD 合併 COPD/ILD 急診喘鳴',
+    context: `78 歲男性，過去病史：
+- Cardiac event 2 年前曾發生 STEMI，s/p PCI with DES（LAD proximal）
+- HFrEF（LVEF 40%）
+- 高血壓、糖尿病
+- 慢性咳嗽、活動後喘多年（未正式診斷肺病）
+- 30 PY 吸菸史，10 年前戒菸
+
+藥物：Aspirin、Clopidogrel、Atorvastatin、Bisoprolol、Ramipril、Metformin。
+
+本次主訴：3 天前開始喘加重、合併喘鳴（wheezing），急診就醫。
+
+題幹敘述（影像 / 檢驗）：
+- CXR：雙下肺葉 reticular change、bilateral C-P angle blunting、partial GGO、Cardiomegaly
+- 12-lead EKG：II, III, aVF T wave inversion；V5 ST depression
+- PFT（穩定後）：FEV1/FVC 65%、FEV1 70% predicted、TLC 75% predicted、DLCO 50%、KCO 55%、FEF 25-75% 顯著下降
+
+考官：請依序回答下列問題。`,
+    questions: [
+      {
+        q: 'CXR 同時出現 reticular change、C-P angle blunting、GGO、Cardiomegaly。各別意義？整合判讀？',
+        keywords: [
+          'Reticular fibrosis',
+          'Pleural effusion',
+          'Pulmonary edema GGO',
+          'Cardiomegaly CTR > 0.5',
+          'CHF + ILD overlap',
+          'Multi-etiology',
+          'Need ABG / BNP',
+          'Echo for LVEF',
+          'HRCT for ILD',
+          'Acute on chronic',
+        ],
+        points: [
+          'Reticular change：間質性 fibrosis 表現，可能 ILD（含 smoking-related）、慢性肺淤血',
+          'C-P angle blunting：胸腔積液（>200-300 mL 才看到），常見原因 HF、感染、惡性、低蛋白',
+          'GGO：肺泡填充（edema、感染、出血、ILD）',
+          'Cardiomegaly：CTR > 0.5（PA view），與 LVEF 40% 相符',
+          '整合：本病人三重打擊→慢性 ILD（吸菸史 + reticular）+ HFrEF 急性失代償（GGO + effusion + cardiomegaly）+ 可能 superimposed AECOPD（喘鳴）',
+          '需進一步檢查：ABG、BNP（區分 cardiac vs pulmonary edema）、Troponin、Echo、HRCT（ILD 鑑別）',
+          '臨床鑑別最關鍵：BNP > 500 強烈支持 cardiac、< 100 排除',
+          '影像不能單獨診斷，需整合臨床、檢驗、用藥史',
+        ],
+        a: `<h4>各別 CXR 發現的鑑別</h4>
+<table>
+<tr><th>發現</th><th>可能病因</th></tr>
+<tr><td>Reticular change（雙下肺）</td><td>ILD（IPF、smoking-related）、慢性肺淤血、職業塵肺、CTD-ILD</td></tr>
+<tr><td>C-P angle blunting</td><td>Pleural effusion（HF、感染、惡性、低蛋白）、pleural fibrosis</td></tr>
+<tr><td>GGO（partial）</td><td>Pulmonary edema、感染、ILD active、出血</td></tr>
+<tr><td>Cardiomegaly</td><td>HFrEF、HFpEF、valve disease、pericardial effusion</td></tr>
+</table>
+
+<h4>本病人整合判讀</h4>
+<table>
+<tr><th>慢性背景</th><th>急性事件</th></tr>
+<tr><td>30 PY 吸菸史 + reticular change → 可能 smoking-related ILD（如 RB-ILD、DIP）或早期 IPF</td><td>急性 dyspnea + GGO + effusion → HFrEF 失代償</td></tr>
+<tr><td>HFrEF（LVEF 40%、s/p PCI）</td><td>喘鳴 → 可能 superimposed bronchospasm（cardiac asthma vs AECOPD）</td></tr>
+<tr><td>慢性咳嗽多年</td><td>可能未診斷的 COPD（FEV1/FVC 65% 已 borderline）</td></tr>
+</table>
+
+<h4>三大可能機轉同時存在</h4>
+<table>
+<tr><th>機轉</th><th>本病人證據</th><th>處置</th></tr>
+<tr><td><strong>HFrEF 失代償</strong></td><td>Cardiomegaly、GGO、effusion、LVEF 40%</td><td>利尿、限水、optimize HF medication</td></tr>
+<tr><td><strong>慢性 ILD / 塵肺</strong></td><td>吸菸史、雙下肺 reticular、DLCO 50%、KCO 55%</td><td>HRCT 確診、抗纖維化評估</td></tr>
+<tr><td><strong>Superimposed COPD（混合）</strong></td><td>FEV1/FVC 65% borderline、喘鳴、長期 cough</td><td>支氣管擴張劑、ICS 評估</td></tr>
+</table>
+
+<h4>區分 Cardiac vs Pulmonary Edema</h4>
+<table>
+<tr><th>指標</th><th>Cardiac</th><th>Non-cardiac (e.g. ARDS)</th></tr>
+<tr><td>BNP / NT-proBNP</td><td>↑↑（&gt; 500 / &gt; 1800）</td><td>正常或微升</td></tr>
+<tr><td>分布</td><td>對稱、central、Kerley B、cephalization</td><td>Patchy、peripheral、不對稱</td></tr>
+<tr><td>心臟大小</td><td>常 cardiomegaly</td><td>正常</td></tr>
+<tr><td>Effusion</td><td>常見（雙側）</td><td>較少</td></tr>
+<tr><td>Echo</td><td>LVEF 低 / diastolic dysfunction</td><td>正常</td></tr>
+</table>
+
+<h4>進一步檢查順序</h4>
+<table>
+<tr><th>順序</th><th>檢查</th><th>目的</th></tr>
+<tr><td>1</td><td>ABG</td><td>判讀低氧、CO₂ retention、acid-base</td></tr>
+<tr><td>2</td><td>BNP / NT-proBNP</td><td>區分 cardiac vs pulmonary</td></tr>
+<tr><td>3</td><td>Troponin</td><td>排除 acute MI（已知 EKG 變化）</td></tr>
+<tr><td>4</td><td>Echo</td><td>LVEF、wall motion、effusion、PHTN</td></tr>
+<tr><td>5</td><td>HRCT</td><td>ILD pattern 確認、acute changes</td></tr>
+<tr><td>6</td><td>PFT post-bronchodilator</td><td>Reversibility（asthma、COPD）</td></tr>
+<tr><td>7</td><td>D-dimer / CTPA（必要時）</td><td>排除 PE</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>影像判讀的口試技巧</strong>：(1) 先逐項描述客觀發現（不下診斷） (2) 再給 differential diagnosis（按可能性排序） (3) 最後說明需要哪些<strong>進一步檢查</strong>來確認。混合性病人不要只說一個診斷，要呈現整合思考。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>四大發現各自意義必背</li>
+<li>混合 cardiopulmonary 病人 → 不要只看一個器官</li>
+<li>BNP 是區分 cardiac vs pulmonary 的關鍵</li>
+<li>Reticular + 吸菸史 → 強烈考慮 smoking-related ILD</li>
+<li>整合 EKG（ischemia）+ CXR + PFT + Echo 才能完整評估</li>
+</ul>`,
+      },
+      {
+        q: 'EKG 顯示 II/III/aVF T wave inversion + V5 ST↓。如何判斷是新發 ischemia 或 chronic ischemic change？需要什麼進一步檢查？',
+        keywords: [
+          'Compare with prior EKG',
+          'Troponin trend',
+          'Symptoms correlation',
+          'Inferior + lateral ischemia',
+          'Reciprocal change',
+          'Acute vs chronic',
+          'Wraparound LAD',
+          'Type 1 vs Type 2 MI',
+          'Demand ischemia',
+          'CCB / β-blocker assessment',
+        ],
+        points: [
+          '新發 vs 陳舊：(1) 比對 prior EKG（最重要） (2) Troponin trend（rise + fall = acute MI） (3) 症狀相關性 (4) wall motion echo 變化',
+          '本病人 LAD proximal s/p PCI → 可能 wraparound 影響 inferior wall（急性 vs in-stent restenosis）',
+          'V5 ST↓ + II/III/aVF T inversion → ischemia in inferior + lateral wall',
+          'Type 1 MI（plaque rupture）vs Type 2 MI（demand ischemia）：本病人喘 + 失代償 → demand ischemia 可能（HF + tachypnea + hypoxia）',
+          '進一步：troponin serial、echo（新 wall motion abnormality）、症狀與 EKG 相關性',
+          '若確認新發 → 心臟科 consult、可能再次 angiography',
+          '若 demand ischemia → 治療 underlying cause（HF 失代償）後 EKG 通常改善',
+          '處置：暫停運動、O₂、限制活動、心臟科會診',
+        ],
+        a: `<h4>EKG 變化的判讀流程</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>1. 比對 prior EKG</td><td>最重要的單一步驟；新發 vs chronic 區分</td></tr>
+<tr><td>2. Troponin trend</td><td>2-3 次 series（0、3、6 hr）；rise &amp; fall pattern → acute MI</td></tr>
+<tr><td>3. 症狀</td><td>胸痛？呼吸喘？冒冷汗？關聯時序</td></tr>
+<tr><td>4. Echo</td><td>新 wall motion abnormality？新 dysfunction？</td></tr>
+<tr><td>5. 持續監測</td><td>EKG 動態變化（新 Q wave、ST 演化）</td></tr>
+</table>
+
+<h4>本病人 EKG 變化解讀</h4>
+<table>
+<tr><th>Lead</th><th>變化</th><th>對應</th><th>意義</th></tr>
+<tr><td>II, III, aVF</td><td>T wave inversion</td><td>Inferior wall</td><td>Ischemia / chronic / 已恢復 MI 後遺</td></tr>
+<tr><td>V5</td><td>ST depression</td><td>Lateral wall</td><td>Ischemia / reciprocal change</td></tr>
+</table>
+
+<h4>本病人特殊考量</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>2 年前 STEMI s/p PCI（LAD proximal）</td><td>可能<strong>wraparound LAD</strong>（繞至 inferior wall），舊 inferior 區仍可能有 chronic T inversion</td></tr>
+<tr><td>In-stent restenosis</td><td>新發 ischemia 可能來自 stent restenosis（DES 仍 1-5%/year）</td></tr>
+<tr><td>Multi-vessel disease</td><td>原本只 PCI LAD，可能 RCA / LCx 也有 disease</td></tr>
+<tr><td>Demand ischemia</td><td>HF 失代償 + hypoxia + tachypnea → 心肌氧耗增加但供應不足，無新 plaque rupture</td></tr>
+</table>
+
+<h4>Type 1 vs Type 2 MI</h4>
+<table>
+<tr><th>項目</th><th>Type 1</th><th>Type 2</th></tr>
+<tr><td>機轉</td><td>Plaque rupture / erosion → thrombosis</td><td>Supply-demand mismatch（無 plaque event）</td></tr>
+<tr><td>Trigger</td><td>—</td><td>HF 失代償、severe anemia、sepsis、tachycardia、hypoxia、hypotension</td></tr>
+<tr><td>Troponin</td><td>顯著升 + rise/fall</td><td>升高但較輕</td></tr>
+<tr><td>EKG</td><td>常 ST↑（STEMI）或 dynamic ST↓</td><td>ST↓ / T inversion 較常見</td></tr>
+<tr><td>處置</td><td>Acute reperfusion（PCI / fibrinolysis）</td><td>治療 underlying trigger（HF、anemia 等）</td></tr>
+<tr><td>本病人</td><td>—</td><td>HF + hypoxia → <strong>Type 2 MI 較可能</strong></td></tr>
+</table>
+
+<h4>處置流程</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>1</td><td>O₂、限制活動、IV 軸建立</td></tr>
+<tr><td>2</td><td>Serial troponin、CK-MB</td></tr>
+<tr><td>3</td><td>Compare with prior EKG</td></tr>
+<tr><td>4</td><td>Echo（new wall motion abnormality）</td></tr>
+<tr><td>5</td><td>心臟科 consult</td></tr>
+<tr><td>6</td><td>治療 underlying（HF 失代償 → 利尿、O₂、限水）</td></tr>
+<tr><td>7</td><td>若 troponin 升 + 持續症狀 → 考慮 angiography</td></tr>
+<tr><td>8</td><td>復健科：暫停運動、密切監測、待穩定</td></tr>
+</table>
+
+<h4>復健介入時的 EKG 監測</h4>
+<table>
+<tr><th>狀況</th><th>處置</th></tr>
+<tr><td>運動中新發 ST↓ &gt; 1 mm</td><td>降強度、評估</td></tr>
+<tr><td>運動中 ST↓ &gt; 2 mm horizontal/downsloping</td><td><strong>立即停止</strong></td></tr>
+<tr><td>運動中 ST↑</td><td>立即停止 + 緊急通報</td></tr>
+<tr><td>新發 sustained VT / SVT</td><td>立即停止</td></tr>
+<tr><td>新發 LBBB / RBBB</td><td>停止（影響判讀）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人復健科處置</strong>：(1) 急性期暫停 outpatient 處方 (2) 等心臟科處置完、症狀穩定再回 phase II (3) 重新做 risk stratification（可能 high risk 因 ischemia + LVEF 40%） (4) 強度<strong>更保守</strong>，EKG 連續監測 (5) Ischemia threshold 出現的 HR 為處方上限。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>EKG 判讀<strong>必比 prior</strong></li>
+<li>Troponin trend（rise &amp; fall）+ 症狀 + EKG 動態 = acute MI</li>
+<li>Type 2 MI 在多重共病老人常見（demand ischemia）</li>
+<li>Wraparound LAD 可解釋 inferior 表現</li>
+<li>復健介入需配合心臟科時序，不貿然恢復運動</li>
+</ul>`,
+      },
+      {
+        q: 'PFT：FEV1/FVC 65%、FEV1 70%、TLC 75%、DLCO 50%、KCO 55%、FEF 25-75% 顯著下降。請判讀 pattern。FEF 25-75 標準與意義？DLCO/KCO 都下降意義？',
+        keywords: [
+          'Mixed obstructive + restrictive',
+          'FEF 25-75 small airway',
+          'FEF 25-75 normal > 65%',
+          'DLCO + KCO both reduced',
+          'Parenchymal disease',
+          'Smoking-related',
+          'Lower limit of normal',
+          'BD reversibility test',
+          'Plethysmography vs spirometry',
+          'Severity classification',
+        ],
+        points: [
+          'FEV1/FVC 65% < 70% → obstructive',
+          'TLC 75% < 80% → restrictive（雖 borderline）',
+          'Mixed pattern：obstructive + restrictive',
+          'FEV1 70% predicted → moderate',
+          'FEF 25-75%：反映 small airway disease（FVC 中段流速）；正常 > 65% predicted；early COPD / asthma 下降',
+          'FEF 25-75% 對<strong>大個體變異</strong>敏感度低，但特異度高；不單獨用於診斷',
+          'DLCO 50% + KCO 55% 都下降 → 真正 parenchymal disease（不只是體積問題）',
+          'KCO 也降表示<strong>不是單純肺體積減少</strong>（neuromuscular、chest wall 會 KCO 升）',
+          '本病人吸菸 30 PY + reticular CXR + DLCO/KCO 都降 → 強烈支持 smoking-related ILD（DIP、RB-ILD、PLCH）或 IPF',
+          '需 HRCT 進一步分類',
+        ],
+        a: `<h4>本病人 PFT 整合判讀</h4>
+<table>
+<tr><th>指標</th><th>數值</th><th>判讀</th></tr>
+<tr><td>FEV1/FVC</td><td>65%</td><td>&lt; 70% → Obstructive</td></tr>
+<tr><td>FEV1 % predicted</td><td>70%</td><td>Moderate</td></tr>
+<tr><td>TLC % predicted</td><td>75%</td><td>&lt; 80% → Restrictive（borderline）</td></tr>
+<tr><td>FEF 25-75%</td><td>顯著下降</td><td>Small airway disease</td></tr>
+<tr><td>DLCO % predicted</td><td>50%</td><td>Moderate diffusion impairment</td></tr>
+<tr><td>KCO % predicted</td><td>55%</td><td>真正 gas exchange 異常</td></tr>
+<tr><td>整體</td><td colspan="2"><strong>Mixed obstructive-restrictive with moderate diffusion impairment</strong></td></tr>
+</table>
+
+<h4>FEF 25-75%（中段呼氣流速）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>定義</td><td>FVC 25%-75% 段的平均呼氣流速</td></tr>
+<tr><td>反映</td><td>Small airway（&lt; 2 mm 直徑）</td></tr>
+<tr><td>正常</td><td>&gt; 65% predicted</td></tr>
+<tr><td>用途</td><td>Early COPD、asthma small airway disease 偵測</td></tr>
+<tr><td>限制</td><td>Inter-individual variability 大；不單獨用於診斷；對 effort 敏感</td></tr>
+<tr><td>本病人</td><td>顯著下降 → 早期 small airway involvement，與吸菸史相符</td></tr>
+</table>
+
+<h4>DLCO + KCO 組合鑑別（再複習）</h4>
+<table>
+<tr><th>DLCO</th><th>KCO</th><th>意義</th><th>本病人</th></tr>
+<tr><td>↓</td><td><strong>↓</strong></td><td>真正 parenchymal disease</td><td><strong>✓</strong></td></tr>
+<tr><td>↓</td><td>正常 / ↑</td><td>單純肺體積減少（neuromuscular、chest wall）</td><td>—</td></tr>
+<tr><td>正常</td><td>↑</td><td>Compensatory（如 mild restriction）</td><td>—</td></tr>
+<tr><td>↑</td><td>—</td><td>Polycythemia、alveolar hemorrhage、L→R shunt</td><td>—</td></tr>
+</table>
+
+<h4>本病人鑑別診斷</h4>
+<table>
+<tr><th>診斷</th><th>支持證據</th><th>反對</th></tr>
+<tr><td>Combined Pulmonary Fibrosis + Emphysema (CPFE)</td><td>30 PY 吸菸、男性、reticular + 可能 emphysema、DLCO 嚴重下降</td><td>需 HRCT</td></tr>
+<tr><td>Smoking-related ILD（RB-ILD、DIP）</td><td>吸菸史、reticular、DLCO 下降</td><td>需 HRCT 確認</td></tr>
+<tr><td>IPF</td><td>年齡 78、男、reticular、DLCO 下降</td><td>需 HRCT UIP pattern</td></tr>
+<tr><td>慢性 HF + COPD</td><td>HFrEF、吸菸史</td><td>主要 finding 是 reticular，HF 不會造成</td></tr>
+<tr><td>Asbestos / talc</td><td>—</td><td>無職業暴露史</td></tr>
+</table>
+
+<h4>Combined Pulmonary Fibrosis + Emphysema (CPFE)</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>定義</td><td>上葉 emphysema + 下葉 fibrosis 並存（多吸菸者）</td></tr>
+<tr><td>PFT</td><td>FEV1 與 FVC 看似正常或 mixed（兩種疾病互相抵消肺容積）；<strong>DLCO 顯著下降</strong>是關鍵線索</td></tr>
+<tr><td>HRCT</td><td>上葉 emphysema + 下葉 reticular / honeycombing</td></tr>
+<tr><td>預後</td><td>較單純 IPF / COPD 差，PHTN 風險高</td></tr>
+<tr><td>治療</td><td>戒菸、抗纖維化（如有 UIP pattern）、O₂、肺復健</td></tr>
+</table>
+
+<h4>進一步檢查建議</h4>
+<table>
+<tr><th>檢查</th><th>目的</th></tr>
+<tr><td>HRCT</td><td>確認 ILD pattern、區分 CPFE</td></tr>
+<tr><td>Post-BD spirometry</td><td>Reversibility（asthma 排除）</td></tr>
+<tr><td>Echo</td><td>PHTN 評估、LVEF、wall motion</td></tr>
+<tr><td>BNP</td><td>Cardiac vs pulmonary</td></tr>
+<tr><td>CTD panel</td><td>RA factor、ANA、Anti-CCP（CTD-ILD 排除）</td></tr>
+<tr><td>α1-antitrypsin</td><td>若 emphysema 但吸菸不嚴重、年輕、家族史</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人關鍵診斷思路</strong>：30 PY + 老人男性 + mixed PFT + DLCO/KCO 都顯著下降 + 雙下肺 reticular → 強烈 suspect <strong>CPFE 或 smoking-related ILD</strong>。HRCT 是區分關鍵。臨床意涵：(1) 戒菸已 10 年但傷害已造成 (2) 預後可能比單純 COPD 差 (3) PHTN 風險高 (4) 處方需保守 + O₂ aggressive。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>FEV1/FVC + TLC 同時異常 = mixed pattern</li>
+<li>FEF 25-75% 反映 small airway，但個體變異大不單獨診斷</li>
+<li>DLCO + KCO 都下降 = 真正 gas exchange 異常</li>
+<li>吸菸 + reticular + DLCO 嚴重下降 → 考慮 CPFE</li>
+<li>HRCT 是 ILD 診斷的關鍵</li>
+</ul>`,
+      },
+      {
+        q: 'CPET：RER 1.10、Peak VO₂ 13（45% predicted）、AT 8、BR 22%、HR Reserve 8、O₂ Pulse plateau early、PETCO2 plateau early、VD/VT 不降（rest 0.32 → exercise 0.30）、VE/VCO₂ slope 42、SpO₂ rest 92% / nadir 86%（with O₂ 4 L）。如何判別 maximal effort？心 vs 肺紅綠燈各看哪些指標？',
+        keywords: [
+          'Maximal effort RER ≥ 1.10',
+          'Cardiac indicators',
+          'Pulmonary indicators',
+          'O₂ Pulse plateau cardiac',
+          'PETCO₂ early plateau',
+          'VD/VT failure to decrease',
+          'BR < 30%',
+          'HR Reserve',
+          'Both systems involved',
+          'Mixed limitation',
+        ],
+        points: [
+          'Maximal effort：RER 1.10 達標準；Peak HR & BR 須一起看',
+          '心臟紅綠燈（cardiac indicators）：(1) HR Reserve / Peak HR % predicted (2) O₂ Pulse 軌跡 (3) BP response (4) ST 變化 (5) Chronotropic response',
+          '肺臟紅綠燈（pulmonary indicators）：(1) BR (2) SpO₂ (3) VD/VT (4) VE/VCO₂ slope (5) PETCO₂ trajectory (6) Tidal volume / RR pattern',
+          '本病人：HR Reserve 8（&lt; 15 已達 max），O₂ Pulse plateau early → cardiac limit 線索',
+          '同時：BR 22%（borderline）、SpO₂ drop、VD/VT 不降、VE/VCO₂ 42 → pulmonary 也受限',
+          '結論：<strong>Mixed cardiac + pulmonary limitation</strong>',
+          'Peak VO₂ 13（45%）→ severe，AACVPR high risk（&lt; 5 MET = 3.7）',
+        ],
+        a: `<h4>Maximal Effort 判別（複習）</h4>
+<table>
+<tr><th>標準</th><th>本病人</th></tr>
+<tr><td>RER ≥ 1.10</td><td>✓ 1.10</td></tr>
+<tr><td>Peak HR &gt; 85% predicted</td><td>HR Reserve 8 表示已達 max（受 β-blocker 影響可下修至 70%）</td></tr>
+<tr><td>Plateau VO₂</td><td>需看波形</td></tr>
+<tr><td>RPE &gt; 17</td><td>—</td></tr>
+</table>
+
+<h4>心 vs 肺紅綠燈指標</h4>
+<table>
+<tr><th>系統</th><th>正常（綠燈）</th><th>異常（紅燈）</th><th>本病人</th></tr>
+<tr><td><strong>心臟</strong></td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>HR Reserve</td><td>&gt; 15</td><td>&lt; 15（達 max）或過低（chronotropic incomp）</td><td>8 → max 達 / β-blocker 影響</td></tr>
+<tr><td>Peak HR % predicted</td><td>&gt; 85%</td><td>—</td><td>需計算</td></tr>
+<tr><td>O₂ Pulse</td><td>持續上升至 plateau near peak</td><td>Early plateau / 下降 → SV 受限</td><td><strong>Early plateau ✗</strong></td></tr>
+<tr><td>BP response</td><td>逐漸升</td><td>下降 / 不升 / 過度升</td><td>—</td></tr>
+<tr><td>ST 變化</td><td>無</td><td>ST↓ / ST↑</td><td>本 CPET 未提；EKG baseline 已有</td></tr>
+<tr><td>HRR 1 min</td><td>&gt; 12</td><td>&lt; 12 → autonomic 失能</td><td>—</td></tr>
+<tr><td>CI</td><td>&gt; 0.8</td><td>&lt; 0.8</td><td>—</td></tr>
+<tr><td><strong>肺</strong></td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>BR</td><td>&gt; 30%</td><td>&lt; 30% mild、&lt; 15% severe</td><td>22% mild ✗</td></tr>
+<tr><td>SpO₂ drop</td><td>&lt; 4%</td><td>≥ 4%</td><td>92→86, 6% drop ✗</td></tr>
+<tr><td>VD/VT</td><td>運動下降至 &lt; 0.20</td><td>不降 / 升</td><td>0.32→0.30 不降 ✗</td></tr>
+<tr><td>VE/VCO₂ slope</td><td>&lt; 30</td><td>&gt; 35 borderline、&gt; 45 severe（PHTN）</td><td>42 ✗</td></tr>
+<tr><td>PETCO₂</td><td>運動上升至 AT，之後下降</td><td>Early plateau / 下降早</td><td>Early plateau ✗</td></tr>
+<tr><td>RR / VT pattern</td><td>VT 增加優先</td><td>Rapid shallow（高 RR、低 VT）</td><td>—</td></tr>
+</table>
+
+<h4>本病人 CPET 整合解讀</h4>
+<table>
+<tr><th>指標</th><th>本病人</th><th>解讀</th></tr>
+<tr><td>RER 1.10</td><td>達 max</td><td>有效測試</td></tr>
+<tr><td>Peak VO₂ 13（45% predicted）</td><td>—</td><td>Severe reduction</td></tr>
+<tr><td>HR Reserve 8</td><td>&lt; 15</td><td>達 max（or β-blocker）</td></tr>
+<tr><td>O₂ Pulse early plateau</td><td>—</td><td><strong>Cardiac limit</strong></td></tr>
+<tr><td>BR 22%</td><td>邊界</td><td>Mild pulmonary limit</td></tr>
+<tr><td>SpO₂ drop 6%</td><td>even with 4 L O₂</td><td>Pulmonary gas exchange ✗</td></tr>
+<tr><td>VD/VT 不降</td><td>0.32→0.30</td><td>V/Q mismatch（PAH? 肺切除? CPFE?）</td></tr>
+<tr><td>VE/VCO₂ 42</td><td>—</td><td>Suspect PHTN / V/Q mismatch</td></tr>
+<tr><td>整體</td><td colspan="2"><strong>Mixed cardiac + pulmonary limitation with suspect PHTN</strong></td></tr>
+</table>
+
+<h4>本病人 AACVPR Risk</h4>
+<table>
+<tr><th>項目</th><th>本病人</th><th>分類</th></tr>
+<tr><td>Peak MET</td><td>13/3.5 = 3.7（&lt; 5）</td><td><strong>High</strong></td></tr>
+<tr><td>LVEF</td><td>40%</td><td>40-49% Moderate（接近 high）</td></tr>
+<tr><td>Stable CAD（s/p PCI）</td><td>有</td><td>—</td></tr>
+<tr><td>Recent decompensation</td><td>有</td><td>High</td></tr>
+<tr><td>結論</td><td colspan="2"><strong>AACVPR High risk</strong></td></tr>
+</table>
+
+<h4>Mixed Limitation 處方含意</h4>
+<table>
+<tr><th>原則</th><th>內容</th></tr>
+<tr><td>強度</td><td>取兩系統<strong>較保守</strong>者</td></tr>
+<tr><td>O₂</td><td>運動中需 4-6 L 維持 SpO₂ &gt; 88%</td></tr>
+<tr><td>監測</td><td>EKG 連續（cardiac）+ SpO₂ 連續（pulmonary）</td></tr>
+<tr><td>類型</td><td>Interval &gt; continuous</td></tr>
+<tr><td>停止標準</td><td>cardiac + pulmonary 都要警覺</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Mixed 病人 CPET 報告策略</strong>：(1) 先報 maximal effort 是否達成 (2) 心 + 肺紅綠燈各別報告 (3) 整合判斷哪個是<strong>主要 limit</strong>（或同等） (4) 結論給<strong>functional severity</strong>（用 Peak VO₂ % predicted） (5) 處方含意。本病人是<strong>同等受限</strong>，處方需雙系統考量。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Maximal effort：RER 1.10、Peak HR、plateau、RPE</li>
+<li>心臟指標：HRR、O₂ pulse、BP、ST、CI</li>
+<li>肺臟指標：BR、SpO₂、VD/VT、VE/VCO₂、PETCO₂</li>
+<li>O₂ Pulse early plateau = cardiac SV 受限</li>
+<li>VD/VT 不降 + VE/VCO₂ &gt; 35 → suspect V/Q mismatch（PHTN？）</li>
+<li>Mixed limitation 處方取較保守者，雙系統監測</li>
+</ul>`,
+      },
+      {
+        q: '請說明如何依 Watt 設定運動強度。針對心 vs 肺不同疾病，運動強度設定有何差異？什麼狀況下需要給氧？',
+        keywords: [
+          'Cycle ergometer Watt',
+          '50-70% Peak Watt',
+          'AT-based Watt',
+          'Cardiac: HR-based / VO₂R',
+          'Pulmonary: RPE / SpO₂',
+          'HF + β-blocker → RPE',
+          'COPD interval',
+          'O₂ if SpO₂ < 88%',
+          'Re-CPET adjustment',
+          '1 MET = ~17 Watt',
+        ],
+        points: [
+          'Cycle ergometer 強度直接由 Watt 設定（外部 work rate）',
+          '依 CPET 結果計算：起始 50-70% Peak Watt；或對應 AT 的 Watt（更保守）',
+          'HR 估算（≈ 1 MET）：1 MET ≈ 3.5 mL/kg/min VO₂；1 Watt cycling ≈ 0.6-1 W per kg；男性 70 kg → 1 Watt ≈ 0.05 MET 換算粗估',
+          '心臟病：HR-based（HRR、% HRmax）；HF + β-blocker → RPE-based',
+          '肺病：RPE / Borg dyspnea / SpO₂ titrate；COPD interval、ILD continuous low intensity',
+          '本病人混合：取較保守者，AT-based Watt + RPE 11-13 + SpO₂ 監測',
+          '需給氧情境：(1) 運動中 SpO₂ &lt; 88-90% (2) 嚴重 dyspnea (3) PHTN (4) 已 LTOT 病人',
+          '依 6MWT / CPET 結果決定起始 O₂ 流量、運動中 titrate',
+        ],
+        a: `<h4>Watt-based 強度設定</h4>
+<table>
+<tr><th>方法</th><th>計算</th><th>本病人估算</th></tr>
+<tr><td>% Peak Watt（CPET 後）</td><td>起始 50-70% Peak Watt；漸進至 70-85%</td><td>需 CPET Peak Watt 數據</td></tr>
+<tr><td>AT-based Watt</td><td>對應 AT 的 Watt（最保守、最 individual）</td><td>AT 8 mL/kg/min 對應 Watt</td></tr>
+<tr><td>VO₂R</td><td>(VO₂peak − VO₂rest) × % + VO₂rest，再轉 Watt</td><td>40-70% VO₂R</td></tr>
+<tr><td>Karvonen HRR</td><td>(HRpeak − HRrest) × % + HRrest（β-blocker 不適用）</td><td>本病人 BB 不可靠</td></tr>
+<tr><td>RPE</td><td>11-13（Borg 6-20）</td><td>本病人主用</td></tr>
+</table>
+
+<h4>VO₂ - Watt - MET 大致換算</h4>
+<table>
+<tr><th>VO₂ (mL/kg/min)</th><th>MET</th><th>對應 Watt（70 kg）</th></tr>
+<tr><td>3.5</td><td>1</td><td>休息</td></tr>
+<tr><td>10.5</td><td>3</td><td>~30-50 W</td></tr>
+<tr><td>17.5</td><td>5</td><td>~75-100 W</td></tr>
+<tr><td>24.5</td><td>7</td><td>~120-150 W</td></tr>
+<tr><td>35</td><td>10</td><td>~200 W</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+精確 Watt 換算因人而異（體重、騎車效率），CPET ramp protocol 直接給出每病人個別的 work rate-VO₂ 曲線，最準確。
+</p>
+
+<h4>不同疾病強度設定差異</h4>
+<table>
+<tr><th>疾病</th><th>強度首選</th><th>O₂</th><th>類型</th></tr>
+<tr><td><strong>CAD（無 HF）</strong></td><td>HRR 50-80%、Karvonen</td><td>SpO₂ &lt; 90% 才需</td><td>Continuous moderate</td></tr>
+<tr><td><strong>HFrEF</strong></td><td>RPE 11-13（β-blocker 影響 HR）；AT-based</td><td>SpO₂ &lt; 90%</td><td>Continuous or interval</td></tr>
+<tr><td><strong>COPD（嚴重）</strong></td><td>RPE 4-6 (CR-10) / Borg dyspnea；60-80% Peak Watt</td><td>運動中 SpO₂ &lt; 88%</td><td><strong>Interval</strong></td></tr>
+<tr><td><strong>ILD</strong></td><td>40-60% Peak Watt（保守）；RPE 11-13；Borg 3-4</td><td><strong>aggressive</strong>（運動需 4-15 L）</td><td>Continuous low / Interval</td></tr>
+<tr><td><strong>Mixed（本病人）</strong></td><td>取較保守者；AT-based Watt + RPE</td><td>運動中 4-6 L、目標 SpO₂ &gt; 88%</td><td><strong>Interval</strong></td></tr>
+</table>
+
+<h4>給氧時機（運動中）</h4>
+<table>
+<tr><th>情境</th><th>處置</th></tr>
+<tr><td>SpO₂ &lt; 88-90%</td><td>給 O₂、titrate 至 &gt; 88%</td></tr>
+<tr><td>已 LTOT</td><td>運動中流量加大（通常 +2-4 L）</td></tr>
+<tr><td>PHTN</td><td>積極給氧（避免 hypoxic vasoconstriction）</td></tr>
+<tr><td>嚴重 dyspnea + 邊界 SpO₂</td><td>嘗試給氧（部分病人即使 SpO₂ 91% 仍受益）</td></tr>
+<tr><td>Cardiac病人 + SpO₂ 正常</td><td>不需給氧（無證據改善預後）</td></tr>
+<tr><td>急性 ischemia 中</td><td>不必常規（DETO2X、AVOID 試驗無益）</td></tr>
+</table>
+
+<h4>本病人運動處方建議</h4>
+<table>
+<tr><th>FITT</th><th>處方</th></tr>
+<tr><td>F</td><td>監督式 3 次/週 × 12 週（高風險）</td></tr>
+<tr><td>I</td><td>有氧：Cycle interval 30 sec/60 sec rest，起始 AT-based Watt（保守）；漸進 50-60% Peak Watt<br>RPE 11-12、Borg dyspnea 3-4<br>運動中 O₂ 4 L 起、titrate 維持 SpO₂ &gt; 88%</td></tr>
+<tr><td>T</td><td>暖身 10 min + interval 15-20 min + cool-down 10 min</td></tr>
+<tr><td>T</td><td>Cycle + 上肢 dynamic + 阻力（下肢為主）+ IMT + 柔軟度 + 平衡</td></tr>
+<tr><td>監測</td><td>EKG 連續（前 12 次）、BP、SpO₂ 連續、Borg dyspnea、症狀</td></tr>
+<tr><td>進度</td><td>每 2-4 週 reassess；3 個月重做 CPET</td></tr>
+</table>
+
+<h4>停止運動指標（mixed 病人）</h4>
+<ul>
+<li>Cardiac：胸痛、ST↓ &gt; 2 mm、SBP 下降 &gt; 10 mmHg、新發 arrhythmia</li>
+<li>Pulmonary：SpO₂ &lt; 85%、嚴重 dyspnea（Borg &gt; 6）、RR &gt; 40</li>
+<li>共同：頭暈、極度疲憊、RPE &gt; 17</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>Watt-based 強度設定<strong>最 individual</strong>（依 CPET ramp）</li>
+<li>HR-based 不適用 β-blocker 病人</li>
+<li>不同疾病強度設定差異：HF RPE、COPD interval、ILD aggressive O₂</li>
+<li>SpO₂ &lt; 88% 是給氧主要 trigger</li>
+<li>Mixed 病人取<strong>較保守</strong>者</li>
+<li>O₂ titrate 在運動中即時調整</li>
+</ul>`,
+      },
+      {
+        q: '請以 ABCDE 模式進行衛教。COPD 與 ILD 在排痰與 chest care 重點有何差異？',
+        keywords: [
+          'A - ACBT',
+          'B - Breathing control',
+          'C - Coughing huff',
+          'D - Drainage / Devices',
+          'E - Exercise',
+          'COPD pursed-lip',
+          'ILD paced breathing',
+          'COPD productive cough',
+          'ILD dry cough',
+          'O₂ titration difference',
+        ],
+        points: [
+          'A = ACBT、B = Breathing control、C = Cough/Huff、D = Drainage/Devices、E = Exercise',
+          'COPD vs ILD 主要差異：(1) 痰量 (2) 呼吸技巧 (3) O₂ 需求量 (4) 氣道塌陷與否 (5) 主要症狀',
+          'COPD：痰多、需排痰技巧（ACBT、PEP、autogenic drainage）、pursed-lip 為核心、低中流量 O₂',
+          'ILD：乾咳為主、痰少、pursed-lip 效果有限、高流量 O₂ 必要、運動限制更嚴',
+          'COPD 姿位引流可積極使用；ILD 一般不需（無痰）',
+          'COPD pursed-lip 防 airway collapse；ILD 用 paced breathing 協調活動 + 呼吸',
+          '本病人 mixed → 兼具兩者元素：(1) 有 COPD 成分需排痰 (2) 有 ILD 成分需 O₂ (3) HF 需限水 + 限制體位（避 head-down）',
+        ],
+        a: `<h4>ABCDE 衛教（混合病人版）</h4>
+<table>
+<tr><th>字母</th><th>內容</th><th>本病人特化</th></tr>
+<tr><td>A - ACBT</td><td>BC → TEE × 3-4 → huffing</td><td>因有 COPD 成分仍可使用</td></tr>
+<tr><td>B - Breathing</td><td>Diaphragmatic、pursed-lip（COPD 部分）、paced breathing</td><td>同時練 pursed-lip 與 paced</td></tr>
+<tr><td>C - Coughing</td><td>Huff（COPD）、splinted（術後）</td><td>有痰用 huff、乾咳用 paced breathing 中斷</td></tr>
+<tr><td>D - Drainage / Devices</td><td>姿位引流、PEP、IS、Acapella</td><td>HF 病人<strong>避 head-down</strong>；可用 IS、Acapella</td></tr>
+<tr><td>E - Exercise</td><td>運動本身排痰</td><td>規律有氧 + interval</td></tr>
+</table>
+
+<h4>COPD vs ILD chest care 主要差異</h4>
+<table>
+<tr><th>項目</th><th>COPD</th><th>ILD</th></tr>
+<tr><td>主要病理</td><td>Air trapping、痰多、氣道塌陷</td><td>Fibrosis、低氧、無 air trapping</td></tr>
+<tr><td>典型咳嗽</td><td>Productive（黃 / 白痰）</td><td>Dry cough</td></tr>
+<tr><td>痰量</td><td>多</td><td>少</td></tr>
+<tr><td>排痰技巧</td><td><strong>必要</strong>：ACBT、PEP、autogenic drainage、姿位</td><td>多無痰可排；少數情況需用</td></tr>
+<tr><td>Pursed-lip breathing</td><td><strong>核心技巧</strong>（防 airway collapse、降 dyspnea）</td><td>效果有限（無 air trapping）</td></tr>
+<tr><td>Diaphragmatic breathing</td><td>有效</td><td>有效</td></tr>
+<tr><td>Paced breathing</td><td>有效</td><td><strong>核心技巧</strong>（協調活動 + 呼吸）</td></tr>
+<tr><td>姿位引流</td><td>常用</td><td>不需（無痰）</td></tr>
+<tr><td>O₂ 需求</td><td>低-中（1-3 L 多數）</td><td><strong>高</strong>（4-15 L 或 HFNC）</td></tr>
+<tr><td>運動限制</td><td>Dyspnea / dynamic hyperinflation</td><td>Severe desaturation / fibrosis</td></tr>
+<tr><td>IMT</td><td>有效</td><td>有效但證據較少</td></tr>
+<tr><td>處方類型</td><td>Interval &gt; continuous（嚴重者）</td><td>Continuous low intensity 或 interval</td></tr>
+<tr><td>BD 反應</td><td>部分有</td><td>無</td></tr>
+</table>
+
+<h4>各排痰技巧細部</h4>
+<table>
+<tr><th>技巧</th><th>適用</th><th>禁忌 / 注意</th></tr>
+<tr><td>ACBT</td><td>所有有痰病人</td><td>—</td></tr>
+<tr><td>Pursed-lip</td><td>COPD（核心）</td><td>—</td></tr>
+<tr><td>Paced breathing</td><td>ILD、ADL 整合</td><td>—</td></tr>
+<tr><td>Postural drainage</td><td>COPD、bronchiectasis、CF</td><td>HF 避 head-down、未控制 GERD、ICP 升高</td></tr>
+<tr><td>Manual percussion / vibration</td><td>痰液黏稠</td><td>骨折、osteoporosis、emphysema bullae 區域</td></tr>
+<tr><td>Acapella / Flutter</td><td>痰多 COPD、bronchiectasis</td><td>—</td></tr>
+<tr><td>PEP mask</td><td>痰多、術後</td><td>—</td></tr>
+<tr><td>Incentive spirometer</td><td>術後肺擴張、deconditioned</td><td>無法配合（意識）</td></tr>
+<tr><td>Autogenic drainage</td><td>慢性病人、CF</td><td>需教學時間</td></tr>
+<tr><td>MI-E（cough assist）</td><td>Neuromuscular weakness、CPF &lt; 270</td><td>未治療 pneumothorax、bullous</td></tr>
+</table>
+
+<h4>本病人特化衛教</h4>
+<table>
+<tr><th>項目</th><th>具體</th></tr>
+<tr><td>排痰</td><td>有 COPD 成分 → 教 ACBT；可用 Acapella；若白天痰多用 huffing</td></tr>
+<tr><td>Pursed-lip</td><td>有 COPD 成分 → 練習，運動中 dyspnea 時用</td></tr>
+<tr><td>Paced breathing</td><td>有 ILD 成分 → 上樓梯時 4 步 1 吸 / 4 步 1 吐，配合呼吸節奏</td></tr>
+<tr><td>姿位</td><td><strong>避 head-down</strong>（HF 病人）；頭抬高 30-45° 睡眠</td></tr>
+<tr><td>O₂</td><td>運動中 4 L 鼻導管，依 SpO₂ titrate；睡眠 PSG 評估夜間需求</td></tr>
+<tr><td>感染預防</td><td>戴口罩、手部衛生、疫苗（流感、肺鏈、COVID、RSV、Tdap）</td></tr>
+<tr><td>家屬訓練</td><td>觀察痰量 / 顏色、識別 AECOPD / AE-IPF / HF 失代償徵兆、O₂ 操作</td></tr>
+<tr><td>戒菸</td><td>已戒 10 年、強化避免二手菸</td></tr>
+</table>
+
+<h4>三種急性事件早期警訊（家屬）</h4>
+<table>
+<tr><th>事件</th><th>警訊</th></tr>
+<tr><td>AECOPD</td><td>痰量增加 / 變色、SOB↑、需更多 SABA</td></tr>
+<tr><td>AE-ILD</td><td>SOB 急速惡化（&lt; 1 個月）、SpO₂ 急降</td></tr>
+<tr><td>HF 失代償</td><td>體重急升 &gt; 1 kg/day、下肢水腫、orthopnea、PND</td></tr>
+<tr><td>新 cardiac event</td><td>胸痛、palpitation、syncope</td></tr>
+<tr><td>共通</td><td>休息也喘、cyanosis、意識變化、發燒</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Mixed 病人衛教核心</strong>：個別化整合 — 從 COPD 拿排痰、pursed-lip、interval；從 ILD 拿 paced breathing、aggressive O₂；從 HF 拿避 head-down、限水、體重監測。<strong>家屬</strong>是延伸眼睛，識別三種急性事件的早期警訊。
+</p>
+
+<h4>Lifestyle 衛教（共通）</h4>
+<table>
+<tr><th>項目</th><th>建議</th></tr>
+<tr><td>水分</td><td>HF 病人需限水（依心臟科建議，多 1.5-2 L/day）</td></tr>
+<tr><td>飲食</td><td>地中海 / DASH、低鈉（HF 重要）</td></tr>
+<tr><td>體重</td><td>每天監測（HF 早期警訊）</td></tr>
+<tr><td>疫苗</td><td>流感、肺鏈、COVID、RSV、Tdap</td></tr>
+<tr><td>口腔衛生</td><td>每日刷牙 + 漱口（降吸入性肺炎）</td></tr>
+<tr><td>避免刺激</td><td>菸、二手菸、油煙、空污；外出口罩</td></tr>
+<tr><td>運動</td><td>每天規律（不論強度）</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>ABCDE 是 chest care 完整衛教架構</li>
+<li>COPD 與 ILD chest care 主要差異：<strong>痰量、呼吸技巧、O₂ 需求</strong></li>
+<li>COPD 必教 pursed-lip；ILD 必教 paced breathing</li>
+<li>姿位引流：HF 避 head-down</li>
+<li>家屬訓練識別<strong>三種急性事件</strong>早期警訊</li>
+</ul>`,
+      },
+      {
+        q: '請為本病人開立完整 phase II cardiopulmonary rehab 處方（FITT-VP）。整合心臟與肺臟需求？頻率與監測？',
+        keywords: [
+          'AACVPR high risk',
+          'AT-based or 40-60% VO₂R',
+          'RPE 11-13',
+          'Interval training',
+          'EKG continuous',
+          'SpO₂ continuous',
+          'O₂ supplementation',
+          'Resistance lower body',
+          'IMT 30% PImax',
+          'Multidisciplinary',
+        ],
+        points: [
+          'Frequency 3 次/週監督式 × 12-24 週（health 險心臟復健 36 次 / 肺復健 24 次）',
+          'Intensity（取雙系統較保守）：起始 40-50% VO₂R 或 AT-based Watt；RPE 11-13；Borg dyspnea 3-4',
+          'Time 暖身 10-15 min + 主訓練 15-30 min（漸進至 30-40 min）+ cool-down 10 min',
+          'Type Interval 為主（30 sec/60 sec rest）；阻力（下肢為主、避胸肌出力誘 dyspnea）；IMT 30% PImax；柔軟度；平衡',
+          '監測：EKG 連續（高風險前 12 次）+ SpO₂ 連續 + BP（暖身/巔峰/cool-down）+ Borg dyspnea + 症狀 + 體重（每天）',
+          'O₂：運動中 4 L 起、titrate 維持 SpO₂ &gt; 88%',
+          '心臟二級預防同步：Aspirin、Clopidogrel、statin、ACEi、β-blocker（已用）',
+          'Multidisciplinary：胸腔科、心臟科、復健、營養、心理、家屬',
+          '進度：每 2-4 週微調；3 個月重做 6MWT、CPET 客觀評估',
+        ],
+        a: `<h4>本病人完整 Phase II Cardiopulmonary Rehab 處方</h4>
+<table>
+<tr><th>FITT-VP</th><th>處方</th></tr>
+<tr><td><strong>Frequency</strong></td><td>監督式 3 次/週 × 12-24 週</td></tr>
+<tr><td><strong>Intensity</strong></td><td>有氧：起始 40-50% VO₂R / AT-based Watt（最保守）；RPE 11-13；Borg dyspnea 3-4<br>漸進：50-60% VO₂R、RPE 12-13<br>阻力：50-60% 1RM、8-12 reps、2 set<br>IMT：30% PImax、漸進至 40-50%</td></tr>
+<tr><td><strong>Time</strong></td><td>暖身 10-15 min（含關節 ROM、低強度 cycle）<br>主訓練 15-30 min（interval 30 sec/60 sec rest）<br>Cool-down 10 min（漸進降強度）</td></tr>
+<tr><td><strong>Type</strong></td><td>有氧（cycle 為主、走路次之）<br>阻力（下肢為主、彈力帶上肢 dynamic、避胸肌出力）<br>IMT（threshold device）<br>柔軟度（每日）<br>平衡訓練（老人、防跌）</td></tr>
+<tr><td><strong>Volume</strong></td><td>目標 90-150 min/週中強度 + 阻力 2 次/週</td></tr>
+<tr><td><strong>Progression</strong></td><td>每 2-4 週 reassess；先增 time 再增強度；3 個月重做 6MWT + CPET</td></tr>
+</table>
+
+<h4>監測（高風險 mixed 病人）</h4>
+<table>
+<tr><th>項目</th><th>頻率</th><th>停止標準</th></tr>
+<tr><td><strong>EKG</strong></td><td>連續監測前 12 次（high risk）</td><td>ST↓ &gt; 2 mm、ST↑、新發 sustained arrhythmia</td></tr>
+<tr><td><strong>BP</strong></td><td>暖身 / 巔峰 / cool-down</td><td>SBP &lt; 90 / &gt; 200、DBP &gt; 110、SBP 下降 &gt; 10</td></tr>
+<tr><td><strong>SpO₂</strong></td><td>連續監測（pulmonary）</td><td>&lt; 88% 雖給氧</td></tr>
+<tr><td><strong>HR</strong></td><td>連續</td><td>&gt; 130（β-blocker 下異常）</td></tr>
+<tr><td>RPE</td><td>每 stage</td><td>&gt; 17</td></tr>
+<tr><td>Borg dyspnea</td><td>每 stage</td><td>&gt; 6 (CR-10)</td></tr>
+<tr><td>體重</td><td>每天</td><td>&gt; 1 kg/day（HF 失代償）</td></tr>
+<tr><td>症狀</td><td>每次運動</td><td>胸痛、頭暈、palpitation、嚴重 dyspnea</td></tr>
+</table>
+
+<h4>O₂ 處方</h4>
+<table>
+<tr><th>情境</th><th>處方</th></tr>
+<tr><td>運動中</td><td>起始 4 L 鼻導管，依 SpO₂ titrate；目標 &gt; 88%</td></tr>
+<tr><td>休息</td><td>SpO₂ 92% borderline → 安排 ABG 確認 LTOT 適應</td></tr>
+<tr><td>夜間</td><td>PSG 評估</td></tr>
+<tr><td>嚴重 desat</td><td>HFNC 或 mask</td></tr>
+</table>
+
+<h4>整合二級預防（cardiopulmonary）</h4>
+<table>
+<tr><th>類別</th><th>內容</th></tr>
+<tr><td>心臟（ABCDEF）</td><td>Aspirin + Clopidogrel（DAPT 一年後 SAPT）、ACEi（Ramipril）、β-blocker（Bisoprolol，HF 適應）、statin（atorvastatin 高強度，LDL &lt; 70）、控制 HTN/DM</td></tr>
+<tr><td>肺臟</td><td>戒菸維持、避免二手菸、疫苗（流感、肺鏈、COVID、RSV、Tdap）、O₂ 處方</td></tr>
+<tr><td>HF</td><td>限鈉 &lt; 2 g/day、限水（依需求）、體重監測、利尿劑 adherence</td></tr>
+<tr><td>共通</td><td>飲食 DASH、體重、心理 screening、睡眠、口腔衛生</td></tr>
+</table>
+
+<h4>Multidisciplinary 整合</h4>
+<table>
+<tr><th>科別</th><th>角色</th></tr>
+<tr><td>復健科</td><td>處方、監督、衛教、心理支持、家屬訓練</td></tr>
+<tr><td>心臟科</td><td>HFrEF + CAD optimize、新 ischemia 評估</td></tr>
+<tr><td>胸腔科</td><td>ILD 鑑別（HRCT）、抗纖維化藥評估、O₂ 處方</td></tr>
+<tr><td>營養科</td><td>BMI、低鈉、避肌少症</td></tr>
+<tr><td>心理 / 精神</td><td>Depression、anxiety、戒菸（已戒但 maintenance）</td></tr>
+<tr><td>呼吸治療</td><td>O₂ 設備、IMT 設備、cough assist</td></tr>
+<tr><td>社工 / 家屬</td><td>居家設備、保險、support 系統</td></tr>
+</table>
+
+<h4>本病人特殊注意</h4>
+<table>
+<tr><th>項目</th><th>注意</th></tr>
+<tr><td>HFrEF + 新近 ischemia EKG</td><td>急性期穩定後再恢復；強度更保守</td></tr>
+<tr><td>β-blocker（Bisoprolol）</td><td>HR 不可靠 → RPE 為主</td></tr>
+<tr><td>ILD / CPFE 可能</td><td>O₂ aggressive、處方保守、HRCT 確診</td></tr>
+<tr><td>78 歲老人</td><td>平衡訓練、跌倒預防、認知評估</td></tr>
+<tr><td>家屬</td><td>三種急性事件警訊訓練、O₂ 操作、emergency 流程</td></tr>
+<tr><td>Advanced care planning</td><td>主動討論（LVEF 40% + 多重共病）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Mixed 病人 phase II 處方核心</strong>：(1) <strong>取雙系統較保守</strong>者作為起始 (2) <strong>EKG + SpO₂ 雙連續監測</strong> (3) Interval &gt; continuous (4) O₂ 不可少 (5) 整合二級預防（cardiopulmonary 兼顧） (6) Multidisciplinary 缺一不可。長期目標<strong>不是追數字</strong>，而是<strong>QoL、症狀、再住院預防、死亡率降低</strong>。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>FITT-VP 完整、雙系統並重</li>
+<li>強度<strong>取較保守</strong>者</li>
+<li>監測：EKG + SpO₂ 雙連續、BP、Borg、體重</li>
+<li>O₂ 必用、依需求 titrate</li>
+<li>整合心 + 肺二級預防</li>
+<li>Multidisciplinary 為核心</li>
+</ul>`,
+      },
+      {
+        q: '加分題：請分享心肺復健相關的重要研究與 evidence。心肺復健 vs 單純 medical therapy 的差異？',
+        keywords: [
+          'AACVPR / ATS guidelines',
+          'Cardiac rehab Cochrane',
+          'Pulmonary rehab Cochrane',
+          'Mortality reduction',
+          'Hospitalization reduction',
+          'QoL improvement',
+          'HF-ACTION trial',
+          'COPD trials',
+          'Cost-effectiveness',
+          'Adherence challenges',
+        ],
+        points: [
+          '心臟復健 evidence：(1) Cochrane meta-analysis 顯示降低 cardiovascular mortality 25-30% (2) Hospitalization 降低 18% (3) HF-ACTION trial（HFrEF）：運動 vs 標準治療，secondary endpoint 顯著改善但 primary 是 trend（合併人口統計校正後 +）',
+          '肺復健 evidence：(1) Cochrane review 在 COPD 顯示 6MWT、QoL（SGRQ）、dyspnea 顯著改善 (2) 急性 AECOPD 後肺復健降低再住院 50% (3) ILD/IPF 較少 RCT 但顯示功能改善',
+          '主要 guideline：AACVPR、AHA/ACC（心臟）；ATS/ERS（肺）',
+          '台灣健保：心臟復健 36 次、肺復健 24 次，phase II 期間給付',
+          'Adherence 仍是最大挑戰：完成率 30-50%，遠端 / hybrid 模式可改善',
+          '成本效益佳：投入 1 美元，省下 4-7 美元 healthcare cost',
+          '個人經驗（口試加分題）：可分享參與的研究、case 經驗、文獻 review',
+          '本病人是<strong>complex case 整合</strong>典型：cardiac + pulmonary + 老人 + 多重共病 → 教科書例子',
+        ],
+        a: `<h4>心臟復健 Evidence 重點</h4>
+<table>
+<tr><th>研究 / 來源</th><th>主要發現</th></tr>
+<tr><td>Cochrane Review（exercise CR for CAD）</td><td>降低 CV mortality 17-26%、降低 hospitalization 18%、改善 QoL</td></tr>
+<tr><td>HF-ACTION trial</td><td>HFrEF 運動 vs 標準；primary（all-cause death + hospitalization）是 trend，校正後 +；secondary 顯著改善</td></tr>
+<tr><td>EXTRAMATCH 系列</td><td>HF 病人 exercise training 改善 Peak VO₂ 1.5-2 mL/kg/min</td></tr>
+<tr><td>Heran 2011 Cochrane</td><td>Exercise-based CR vs usual care：mortality 全因 13%、CV 26% 下降</td></tr>
+<tr><td>Recent meta-analyses</td><td>Hybrid / home-based CR 與監督式 outcomes 接近，可擴大 reach</td></tr>
+</table>
+
+<h4>肺復健 Evidence 重點</h4>
+<table>
+<tr><th>研究 / 來源</th><th>主要發現</th></tr>
+<tr><td>Cochrane Review (PR for COPD)</td><td>6MWT、CAT、SGRQ 顯著改善；dyspnea 降；exacerbation 與 hospitalization 下降</td></tr>
+<tr><td>Puhan 2016 Cochrane</td><td>AECOPD 後肺復健 vs usual care：降低 readmission（OR 0.44）、mortality（OR 0.58）</td></tr>
+<tr><td>ATS/ERS Statement on PR</td><td>強烈推薦 COPD GOLD II-IV、ILD、術前肺癌</td></tr>
+<tr><td>Dowman 2014 ILD review</td><td>ILD 肺復健改善 6MWT、dyspnea、QoL（雖 effect size 較 COPD 小）</td></tr>
+<tr><td>Edvardsen 2015</td><td>術前肺癌 prehab 4 週降低 PPC 50%</td></tr>
+</table>
+
+<h4>主要 Guidelines</h4>
+<table>
+<tr><th>領域</th><th>Guideline</th></tr>
+<tr><td>心臟復健</td><td>AACVPR Guidelines（最新版）、AHA/ACC Scientific Statement、ESC HF Guidelines</td></tr>
+<tr><td>肺復健</td><td>ATS/ERS Pulmonary Rehabilitation Statement（2013, 2015 update）、BTS Guideline</td></tr>
+<tr><td>COPD</td><td>GOLD（每年更新）</td></tr>
+<tr><td>IPF</td><td>ATS/ERS/JRS/ALAT Guideline</td></tr>
+<tr><td>HF</td><td>AHA/ACC/HFSA HF Guideline、ESC HF Guideline</td></tr>
+</table>
+
+<h4>台灣健保心肺復健覆蓋</h4>
+<table>
+<tr><th>類型</th><th>給付</th><th>條件</th></tr>
+<tr><td>心臟復健 phase II</td><td>36 次</td><td>MI / PCI / CABG / HF / 心瓣膜術後等</td></tr>
+<tr><td>肺復健 phase II</td><td>24 次</td><td>COPD / ILD 等慢性肺病</td></tr>
+<tr><td>急性住院期</td><td>每日</td><td>—</td></tr>
+<tr><td>居家</td><td>無常規</td><td>需獨立保險或自費</td></tr>
+</table>
+
+<h4>Cost-effectiveness</h4>
+<table>
+<tr><th>研究</th><th>結果</th></tr>
+<tr><td>Cardiac rehab</td><td>每投入 1 美元，省下 healthcare cost 4-7 美元</td></tr>
+<tr><td>Pulmonary rehab</td><td>降低 hospitalization 帶來顯著 cost saving</td></tr>
+<tr><td>Cost / QALY</td><td>遠低於多數 medical therapy 標準</td></tr>
+</table>
+
+<h4>Adherence 挑戰與對策</h4>
+<table>
+<tr><th>挑戰</th><th>對策</th></tr>
+<tr><td>完成率 30-50%</td><td>結構化 reminder、家屬參與、tele-rehab</td></tr>
+<tr><td>交通不便</td><td>Home-based / hybrid 模式</td></tr>
+<tr><td>經濟負擔</td><td>健保給付確認、社工資源</td></tr>
+<tr><td>動機</td><td>設定具體目標、個別化、進度回饋</td></tr>
+<tr><td>合併症</td><td>Multidisciplinary 整合</td></tr>
+<tr><td>心理</td><td>焦慮 / 憂鬱 screening + treat</td></tr>
+</table>
+
+<h4>新興趨勢</h4>
+<table>
+<tr><th>趨勢</th><th>內容</th></tr>
+<tr><td>Telerehabilitation</td><td>遠端監督、wearable 整合、與 in-person 接近 outcomes</td></tr>
+<tr><td>Hybrid models</td><td>監督 + 居家結合，提升完成率</td></tr>
+<tr><td>Wearable / digital health</td><td>心率、SpO₂、步數即時追蹤</td></tr>
+<tr><td>Specific disease programs</td><td>Heart transplant、LVAD、lung transplant、ICD/CRT-D 專門 program</td></tr>
+<tr><td>Cancer rehab integration</td><td>心肺合併 cancer rehab</td></tr>
+<tr><td>Frailty assessment</td><td>老人 frailty 整合處方</td></tr>
+</table>
+
+<h4>口試「加分題」如何回答</h4>
+<table>
+<tr><th>策略</th><th>內容</th></tr>
+<tr><td>個人參與經驗</td><td>「住院醫師期間參與 XX 研究 / case 整理」</td></tr>
+<tr><td>近期文獻</td><td>引用 1-2 個經典研究 + 1 個近期</td></tr>
+<tr><td>本院經驗</td><td>「本院心肺復健 program 結構、follow-up」</td></tr>
+<tr><td>未來方向</td><td>Tele-rehab、AI 監測、個別化處方</td></tr>
+<tr><td>謙虛</td><td>不誇大；承認研究參與的範圍</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>研究經驗分享心法</strong>：(1) 真實 — 不要捏造參與的研究 (2) 具體 — 提到研究 design、自己角色、學到什麼 (3) 連結臨床 — 研究發現如何改變你的處方 / 衛教 (4) 開放討論 — 表現出對 evidence-based practice 的態度 (5) 表現 humility — 承認限制與未知。
+</p>
+
+<h4>本病人 evidence 整合應用</h4>
+<table>
+<tr><th>處方面向</th><th>Evidence 支持</th></tr>
+<tr><td>有氧 + 阻力 + IMT 整合</td><td>多 meta-analysis 支持</td></tr>
+<tr><td>Interval &gt; continuous（嚴重）</td><td>Vogiatzis 系列研究</td></tr>
+<tr><td>運動中 O₂ supplementation</td><td>NHLBI、ATS 推薦</td></tr>
+<tr><td>EKG 連續監測（high risk）</td><td>AACVPR 標準</td></tr>
+<tr><td>戒菸維持 + 二級預防</td><td>無數研究支持</td></tr>
+<tr><td>家屬參與</td><td>提升 adherence、降 readmission</td></tr>
+<tr><td>Multidisciplinary</td><td>HF、COPD 都有強 evidence</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>心臟復健：Cochrane mortality 17-26% 降、hospitalization 18% 降</li>
+<li>肺復健：6MWT、QoL、exacerbation、hospitalization 都改善</li>
+<li>主要 guideline：AACVPR、ATS/ERS、GOLD、IPF guideline</li>
+<li>台灣健保：心臟 36 次 / 肺 24 次</li>
+<li>Adherence 是最大挑戰：30-50%</li>
+<li>Tele-rehab、hybrid 是未來方向</li>
+<li>Mixed 病人是<strong>整合 evidence</strong>應用的典型 case</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
+
 
 
 
