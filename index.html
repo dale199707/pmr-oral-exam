@@ -56690,9 +56690,854 @@ ECG：Sinus tachycardia around 110+ bpm；BP 120-130/75-85。
       },
     ],
   },
+  {
+    id: 'pulmonary_005',
+    domain: 'pulmonary',
+    title: 'COPD 穩定期門診肺復健',
+    context: `68 歲男性，吸菸 50 Pack-Year（仍未戒），慢性咳嗽多痰多年。
+近 2 年因 AECOPD 住院 3 次，最近一次半年前。
+
+平日活動：mMRC dyspnea scale = 3（走路 100 m 就需停下喘氣）、CAT score = 22。
+日常需鼻導管 2 L/min O₂（exertion 使用）。
+
+藥物：LABA + LAMA + ICS（triple therapy）、salbutamol PRN。
+
+從未做過正式肺復健。今由胸腔科轉介至復健科門診，希望接受結構化肺復健計畫。
+
+考官：請依序回答下列問題。`,
+    questions: [
+      {
+        q: 'PFT：FEV1/FVC 55%（post-BD）、FEV1 38% predicted、TLC 130%、RV 180%、DLCO 45%。請判讀並說明 GOLD 分級與分組。',
+        keywords: [
+          'GOLD I-IV by FEV1',
+          'GOLD III severe',
+          'Hyperinflation TLC↑ RV↑',
+          'Air trapping',
+          'DLCO emphysema',
+          'GOLD ABE 2023',
+          'mMRC ≥ 2 high symptom',
+          'CAT ≥ 10 high symptom',
+          'Exacerbation history',
+          'Group E (≥ 2 mod or ≥ 1 hospitalized)',
+        ],
+        points: [
+          'FEV1/FVC 55% < 0.7 post-BD → 確診 COPD',
+          'FEV1 38% predicted → GOLD III（severe，30-49%）',
+          'TLC 130% + RV 180% → hyperinflation + air trapping（emphysema 表現）',
+          'DLCO 45% → moderate-severe diffusion impairment（emphysema 微血管破壞）',
+          'mMRC 3 + CAT 22 → high symptom burden',
+          '近 2 年住院 3 次 → ≥ 1 次住院 = exacerbation 高風險',
+          'GOLD 2023 ABE 分組：本病人為 Group E（高 exacerbation）',
+          '舊 GOLD ABCD 分組：本病人為 Group D（高 symptom + 高 exacerbation）',
+        ],
+        a: `<h4>本病人 PFT 判讀</h4>
+<table>
+<tr><th>指標</th><th>數值</th><th>判讀</th></tr>
+<tr><td>FEV1/FVC（post-BD）</td><td>55%</td><td>&lt; 0.7 → COPD 確診</td></tr>
+<tr><td>FEV1 % predicted</td><td>38%</td><td>GOLD III（severe）</td></tr>
+<tr><td>TLC % predicted</td><td>130%</td><td>Hyperinflation</td></tr>
+<tr><td>RV % predicted</td><td>180%</td><td>Air trapping</td></tr>
+<tr><td>DLCO % predicted</td><td>45%</td><td>Moderate-severe（emphysema）</td></tr>
+<tr><td>整體</td><td colspan="2"><strong>GOLD III COPD with emphysema phenotype + hyperinflation</strong></td></tr>
+</table>
+
+<h4>GOLD 嚴重度分級（依 FEV1 % predicted post-BD）</h4>
+<table>
+<tr><th>GOLD</th><th>FEV1</th><th>嚴重度</th></tr>
+<tr><td>I</td><td>≥ 80%</td><td>Mild</td></tr>
+<tr><td>II</td><td>50-79%</td><td>Moderate</td></tr>
+<tr><td>III</td><td><strong>30-49%</strong>（本病人）</td><td>Severe</td></tr>
+<tr><td>IV</td><td>&lt; 30%</td><td>Very severe</td></tr>
+</table>
+
+<h4>GOLD 2023 ABE 分組</h4>
+<table>
+<tr><th>分組</th><th>Symptom (mMRC / CAT)</th><th>Exacerbation</th></tr>
+<tr><td>A</td><td>Low（mMRC 0-1、CAT &lt; 10）</td><td>0-1 中度（無住院）</td></tr>
+<tr><td>B</td><td>High（mMRC ≥ 2、CAT ≥ 10）</td><td>0-1 中度（無住院）</td></tr>
+<tr><td><strong>E</strong></td><td>不分症狀</td><td><strong>≥ 2 中度 / ≥ 1 住院</strong></td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 GOLD III、Group E</strong>：FEV1 38% + 2 年內 3 次住院 + mMRC 3 + CAT 22。屬於高風險 + 高症狀，<strong>強烈適應肺復健</strong>。Triple therapy（LABA+LAMA+ICS）已是 Group E 推薦藥物。
+</p>
+
+<h4>mMRC Dyspnea Scale</h4>
+<table>
+<tr><th>Grade</th><th>描述</th></tr>
+<tr><td>0</td><td>劇烈運動才喘</td></tr>
+<tr><td>1</td><td>趕快走或上小坡會喘</td></tr>
+<tr><td>2</td><td>走平地比同齡慢、需要停下休息</td></tr>
+<tr><td><strong>3</strong></td><td><strong>走 100 m 或數分鐘需停下</strong>（本病人）</td></tr>
+<tr><td>4</td><td>穿脫衣服都喘 / 不能離家</td></tr>
+</table>
+
+<h4>CAT Score（COPD Assessment Test）</h4>
+<table>
+<tr><th>Score</th><th>意義</th></tr>
+<tr><td>&lt; 10</td><td>Low impact</td></tr>
+<tr><td>10-20</td><td>Medium impact</td></tr>
+<tr><td><strong>21-30</strong></td><td><strong>High impact</strong>（本病人 22）</td></tr>
+<tr><td>&gt; 30</td><td>Very high impact</td></tr>
+</table>
+
+<h4>Hyperinflation 與 Air trapping</h4>
+<table>
+<tr><th>指標</th><th>意義</th></tr>
+<tr><td>TLC ↑ &gt; 120%</td><td>Hyperinflation</td></tr>
+<tr><td>RV ↑ &gt; 140%</td><td>Air trapping</td></tr>
+<tr><td>RV/TLC ↑ &gt; 0.4</td><td>Air trapping ratio</td></tr>
+<tr><td>FRC ↑</td><td>Resting hyperinflation；運動更糟（dynamic hyperinflation）</td></tr>
+</table>
+
+<h4>Emphysema vs Chronic bronchitis Phenotype</h4>
+<table>
+<tr><th>項目</th><th>Emphysema</th><th>Chronic bronchitis</th></tr>
+<tr><td>主要病理</td><td>肺泡破壞</td><td>慢性氣道發炎、痰多</td></tr>
+<tr><td>身體</td><td>「Pink puffer」消瘦</td><td>「Blue bloater」水腫</td></tr>
+<tr><td>DLCO</td><td>顯著下降</td><td>正常 / 輕度下降</td></tr>
+<tr><td>Hyperinflation</td><td>顯著</td><td>較輕</td></tr>
+<tr><td>痰</td><td>少</td><td>多</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>COPD 確診：post-BD FEV1/FVC &lt; 0.7</li>
+<li>GOLD I-IV 依 FEV1 %（80 / 50 / 30 / &lt; 30）</li>
+<li>GOLD 2023 改 ABE 三組（取消 ABCD 中 D 與合併 C）</li>
+<li>本病人 GOLD III + Group E + emphysema phenotype</li>
+<li>DLCO 下降 + hyperinflation = emphysema 經典</li>
+</ul>`,
+      },
+      {
+        q: '6MWT：距離 280 m、SpO₂ 從 92% 降至 84%、Borg dyspnea 7、需停 2 次。如何判讀？意義？',
+        keywords: [
+          '6MWT < 350 m increased mortality',
+          'BODE index',
+          'Desaturation > 4% significant',
+          'SpO₂ nadir < 88% need O₂',
+          'Predicted distance formula',
+          'MCID 25-35 m',
+          'Stops indicate severity',
+          'O₂ titration during exercise',
+          'Borg dyspnea',
+          'Test repeat 1-week',
+        ],
+        points: [
+          '6MWT 280 m 偏低（健康成人 > 400 m）；< 350 m 為 mortality 增加 cutoff',
+          'Predicted 距離公式：男 = 7.57 × 身高(cm) − 5.02 × age − 1.76 × 體重(kg) − 309',
+          'SpO₂ drop 8% > 4% → significant exercise-induced desaturation',
+          'SpO₂ nadir 84% < 88% → 運動時需 supplemental O₂',
+          'Borg dyspnea 7 / 10 → severe，符合 mMRC 3 嚴重病人',
+          '需停 2 次 → severe limitation',
+          '6MWT 是 BODE index 一部分（B=BMI、O=Obstruction FEV1、D=Dyspnea、E=Exercise 6MWT）',
+          'MCID（最小臨床意義改變）：6MWT 25-35 m 進步即有意義',
+          '建議重做 1 次（learning effect），間隔至少 30 min 或隔日',
+        ],
+        a: `<h4>6MWT 判讀架構</h4>
+<table>
+<tr><th>項目</th><th>本病人</th><th>意義</th></tr>
+<tr><td>距離</td><td>280 m</td><td>嚴重受限（&lt; 350 m → mortality 增加）</td></tr>
+<tr><td>SpO₂ rest</td><td>92%</td><td>邊界低氧</td></tr>
+<tr><td>SpO₂ nadir</td><td>84%</td><td><strong>嚴重 desaturation，需 O₂</strong></td></tr>
+<tr><td>SpO₂ drop</td><td>8%</td><td>&gt; 4% 為 significant</td></tr>
+<tr><td>Borg dyspnea</td><td>7/10</td><td>Severe</td></tr>
+<tr><td>停下次數</td><td>2 次</td><td>Severe limitation</td></tr>
+<tr><td>HR</td><td>記錄 baseline + peak</td><td>—</td></tr>
+</table>
+
+<h4>6MWT 距離臨床意義</h4>
+<table>
+<tr><th>距離</th><th>意義</th></tr>
+<tr><td>&gt; 600 m</td><td>正常</td></tr>
+<tr><td>400-600 m</td><td>輕度受限</td></tr>
+<tr><td>350-400 m</td><td>中度受限</td></tr>
+<tr><td><strong>&lt; 350 m</strong></td><td><strong>Mortality 風險增加</strong>（COPD / HF）</td></tr>
+<tr><td>&lt; 200 m</td><td>嚴重失能</td></tr>
+</table>
+
+<h4>SpO₂ 變化判讀</h4>
+<table>
+<tr><th>變化</th><th>意義</th><th>處置</th></tr>
+<tr><td>Drop &lt; 4%</td><td>正常</td><td>—</td></tr>
+<tr><td>Drop ≥ 4%</td><td>Exercise-induced desaturation</td><td>需注意</td></tr>
+<tr><td>Nadir &lt; 88%</td><td>需 supplemental O₂</td><td><strong>處方 O₂ titration</strong></td></tr>
+<tr><td>Drop &gt; 6%</td><td>Significant gas exchange 異常</td><td>進一步檢查</td></tr>
+</table>
+
+<h4>BODE Index（COPD 預後）</h4>
+<table>
+<tr><th>項目</th><th>0 分</th><th>1 分</th><th>2 分</th><th>3 分</th></tr>
+<tr><td><strong>B</strong>MI</td><td>&gt; 21</td><td>≤ 21</td><td>—</td><td>—</td></tr>
+<tr><td><strong>O</strong>bstruction（FEV1）</td><td>≥ 65%</td><td>50-64%</td><td>36-49%</td><td>≤ 35%</td></tr>
+<tr><td><strong>D</strong>yspnea（mMRC）</td><td>0-1</td><td>2</td><td>3</td><td>4</td></tr>
+<tr><td><strong>E</strong>xercise（6MWT）</td><td>≥ 350 m</td><td>250-349</td><td>150-249</td><td>≤ 149</td></tr>
+</table>
+
+<table>
+<tr><th>BODE 總分</th><th>4 年生存率</th></tr>
+<tr><td>0-2</td><td>80%</td></tr>
+<tr><td>3-4</td><td>70%</td></tr>
+<tr><td>5-6</td><td>60%</td></tr>
+<tr><td>7-10</td><td>20%</td></tr>
+</table>
+
+<h4>本病人 BODE 估算</h4>
+<table>
+<tr><th>項目</th><th>本病人</th><th>分數</th></tr>
+<tr><td>BMI</td><td>未明</td><td>?</td></tr>
+<tr><td>FEV1 38%</td><td>36-49%</td><td>2</td></tr>
+<tr><td>mMRC 3</td><td>—</td><td>2</td></tr>
+<tr><td>6MWT 280 m</td><td>250-349</td><td>1</td></tr>
+<tr><td>合計</td><td colspan="2">5+（中重度，4 年生存率 ~60%）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 6MWT 解讀</strong>：280 m + SpO₂ nadir 84% + Borg 7 → 嚴重失能、預後差。臨床意涵：(1) 處方時必須<strong>O₂ titration</strong>（運動中 2-4 L 鼻導管） (2) interval training 比 continuous 適合 (3) IMT 為核心 (4) 設定<strong>現實</strong>進步目標：6MWT MCID 25-35 m 即有意義 (5) 整合 BODE 5+ → 強烈適應肺復健。
+</p>
+
+<h4>6MWT 標準操作</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>場地</td><td>30 m 直線走廊、轉折錐</td></tr>
+<tr><td>準備</td><td>休息 10 min、量 baseline BP/HR/SpO₂/Borg</td></tr>
+<tr><td>指令</td><td>「6 分鐘內走最遠的距離，可以慢、可以停、可以跑」</td></tr>
+<tr><td>鼓勵</td><td>每分鐘標準鼓勵語</td></tr>
+<tr><td>結束</td><td>記錄距離、HR、SpO₂、Borg、停下次數</td></tr>
+<tr><td>重做</td><td>建議 1 週內重做（learning effect 約 5-10%）</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>6MWT 距離 &lt; 350 m → mortality 增加</li>
+<li>SpO₂ nadir &lt; 88% → 處方需 O₂</li>
+<li>BODE index：BMI / Obstruction / Dyspnea / Exercise，預測生存率</li>
+<li>MCID 25-35 m，目標設定要現實</li>
+<li>Learning effect 5-10%，建議重做</li>
+</ul>`,
+      },
+      {
+        q: 'CPET：RER 1.05、Peak VO₂ 12 mL/kg/min（45% predicted）、AT 8、BR 8%、SpO₂ rest 92% / nadir 82%（給 O₂ 4 L）、End-point dyspnea + leg fatigue。如何判讀？',
+        keywords: [
+          'Submaximal due to symptom',
+          'Pulmonary limit BR < 15',
+          'Severe desaturation',
+          'Dynamic hyperinflation',
+          'Inspiratory capacity decrease',
+          'IC drop > 15% diagnostic',
+          'O₂ titration in CPET',
+          'Leg fatigue concomitant',
+          'Cardiac normal',
+          'Exercise prescription challenge',
+        ],
+        points: [
+          'RER 1.05 < 1.10：未達傳統 max，但 COPD 病人因 ventilatory limit 常無法達 1.10，1.05 + 症狀 limit 可接受',
+          'Peak VO₂ 12（45% predicted）→ severe reduction',
+          'BR 8% < 15% → severe ventilatory limitation（pulmonary 受限）',
+          'SpO₂ nadir 82% even with 4L O₂ → 嚴重 gas exchange 異常，運動需 high flow O₂',
+          'End-point dyspnea + leg fatigue → typical COPD pattern（上肢做工 + 下肢 deconditioning）',
+          'Dynamic hyperinflation：運動時 IC 下降 > 15% → 診斷標準',
+          '心臟方面（HRR、O₂ pulse）若正常 → 排除 cardiac limit',
+          '處方挑戰：強度受限，需 interval + O₂ + IMT 整合',
+        ],
+        a: `<h4>本病人 CPET 解讀</h4>
+<table>
+<tr><th>指標</th><th>數值</th><th>判讀</th></tr>
+<tr><td>RER</td><td>1.05</td><td>未達 max（1.10），但 COPD ventilatory limit 常無法達 → 接受</td></tr>
+<tr><td>Peak VO₂</td><td>12 mL/kg/min（3.4 MET、45% predicted）</td><td>Severe reduction</td></tr>
+<tr><td>AT</td><td>8（67% Peak）</td><td>比例尚可</td></tr>
+<tr><td>BR</td><td>8%</td><td><strong>&lt; 15% severe pulmonary limit</strong></td></tr>
+<tr><td>SpO₂ rest</td><td>92%</td><td>Borderline</td></tr>
+<tr><td>SpO₂ nadir</td><td>82%（with 4 L O₂）</td><td><strong>Severe desaturation</strong></td></tr>
+<tr><td>End-point</td><td>Dyspnea + leg fatigue</td><td>Pulmonary + 下肢 deconditioning</td></tr>
+</table>
+
+<h4>Pulmonary Limitation 三大特徵</h4>
+<table>
+<tr><th>特徵</th><th>本病人</th><th>正常 / Cutoff</th></tr>
+<tr><td>BR 低</td><td>8%</td><td>&lt; 15% severe、&lt; 30% mild</td></tr>
+<tr><td>VE 達 MVV</td><td>是</td><td>—</td></tr>
+<tr><td>Dynamic hyperinflation</td><td>需測 IC</td><td>IC drop &gt; 15% during exercise → 診斷</td></tr>
+<tr><td>SpO₂ 下降</td><td>10%（含 O₂）</td><td>&gt; 4% drop 異常</td></tr>
+<tr><td>End-point dyspnea</td><td>是</td><td>—</td></tr>
+</table>
+
+<h4>Dynamic Hyperinflation 概念</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>機轉</td><td>COPD 病人氣道阻力高、呼氣時間不足 → 每次呼吸殘留更多氣體 → EELV 漸升、IC 漸降</td></tr>
+<tr><td>運動表現</td><td>VT 升高受限 → RR 代償升高 → 呼吸做工大、dyspnea 嚴重</td></tr>
+<tr><td>診斷</td><td>運動中 IC 下降 ≥ 15% (vs rest)</td></tr>
+<tr><td>影響</td><td>限制 exercise capacity 主要原因</td></tr>
+<tr><td>治療</td><td>支氣管擴張劑、pursed-lip、IMT、aerobic training</td></tr>
+</table>
+
+<h4>運動受限類型鑑別（複習）</h4>
+<table>
+<tr><th>受限</th><th>BR</th><th>HRR</th><th>VE/VCO₂</th><th>SpO₂</th><th>本病人</th></tr>
+<tr><td>Cardiac</td><td>&gt; 30%</td><td>&lt; 15</td><td>升</td><td>正常</td><td>—</td></tr>
+<tr><td><strong>Pulmonary</strong></td><td><strong>&lt; 15-30%</strong></td><td>&gt; 15</td><td>升</td><td>降</td><td>✓</td></tr>
+<tr><td>Pulmonary vascular</td><td>&gt; 30%</td><td>—</td><td>顯著升</td><td>降</td><td>—</td></tr>
+<tr><td>Deconditioning</td><td>&gt; 30%</td><td>&gt; 15</td><td>正常</td><td>正常</td><td>部分</td></tr>
+</table>
+
+<h4>O₂ Titration During CPET</h4>
+<table>
+<tr><th>原則</th><th>內容</th></tr>
+<tr><td>初始流量</td><td>依 baseline SpO₂；本病人 92% → 開始 2 L</td></tr>
+<tr><td>目標</td><td>運動中 SpO₂ &gt; 88-90%</td></tr>
+<tr><td>調整</td><td>每分鐘檢查；不夠就加</td></tr>
+<tr><td>流量受限</td><td>鼻導管 max 6 L/min；超過需 mask 或 high-flow nasal cannula</td></tr>
+<tr><td>本病人</td><td>4 L 仍 nadir 82% → 需 6 L 或 HFNC（運動時）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 CPET 結論</strong>：(1) Severe pulmonary limitation（BR 8%） (2) Severe exercise-induced desaturation 即使 with O₂ (3) 推測有 dynamic hyperinflation (4) Leg fatigue concomitant → 下肢 deconditioning。<strong>處方挑戰大</strong>：需 interval training、運動時 high flow O₂、IMT 為核心、合併下肢 strengthening。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>COPD 病人 RER 不一定能達 1.10，因 ventilatory 先 limit</li>
+<li>BR &lt; 15% severe、&lt; 30% mild pulmonary limit</li>
+<li>Dynamic hyperinflation：IC drop &gt; 15% 為診斷</li>
+<li>SpO₂ 即使 with O₂ 仍 &lt; 88% → 需更高 flow</li>
+<li>End-point dyspnea + leg fatigue 為 COPD typical</li>
+</ul>`,
+      },
+      {
+        q: '請開立完整 COPD 肺復健處方（FITT-VP）。Interval vs continuous？阻力訓練處方？',
+        keywords: [
+          '60-80% Peak work rate',
+          'Interval 30 sec / 30 sec',
+          'Continuous 60% Peak',
+          'Endurance time',
+          'RPE 4-6 / Borg 10',
+          'Resistance 60-70% 1RM',
+          'Upper limb training',
+          'IMT 30-50% PImax',
+          'Flexibility',
+          'Balance training (elderly)',
+        ],
+        points: [
+          'Frequency 3-5 次/週監督式 + 居家持續',
+          'Intensity（有氧）：Continuous 60-80% Peak work rate；或 60% VO₂R；或 RPE 4-6（CR-10）/ Borg dyspnea 4-6',
+          '嚴重 COPD（如本病人 BR 低）→ Interval training 較適合：30 sec high / 30 sec rest 或 1 min/1 min',
+          'Time：主訓練漸進至 30-40 min（含暖身 cool-down）',
+          'Type：cycle / 走路 / treadmill；上肢訓練（上肢輔助 ADL）；阻力訓練；IMT；柔軟度；平衡',
+          '阻力：60-70% 1RM、8-12 reps、2-3 set、2-3 次/週、大肌群為主',
+          '上肢訓練：避免大舉、避免 isometric（增加 dyspnea）；多用 dynamic、低 weight',
+          'IMT：30-50% PImax；每日 30 次 × 2 set',
+          '老人 + COPD → 加平衡訓練（fall risk 高）',
+          '時程：2-3 個月完整 phase II（健保 24-36 次）',
+        ],
+        a: `<h4>COPD 肺復健完整處方（FITT-VP）</h4>
+<table>
+<tr><th>FITT</th><th>處方</th></tr>
+<tr><td><strong>Frequency</strong></td><td>監督式 3-5 次/週 × 8-12 週；居家持續</td></tr>
+<tr><td><strong>Intensity</strong></td><td>有氧：60-80% Peak work rate / 60% VO₂R / RPE 4-6 (CR-10)<br>嚴重病人 → Interval：30 sec high (80-100% Peak) / 30 sec rest<br>阻力：60-70% 1RM<br>IMT：30-50% PImax</td></tr>
+<tr><td><strong>Time</strong></td><td>暖身 5-10 min + 主訓練 20-30 min（漸進至 30-40） + cool-down 5-10 min</td></tr>
+<tr><td><strong>Type</strong></td><td>有氧（cycle / 走路 / treadmill）+ 上肢 + 阻力 + IMT + 柔軟度 + 平衡</td></tr>
+<tr><td><strong>Volume</strong></td><td>目標 150 min/週中強度 + 阻力 2-3 次/週</td></tr>
+<tr><td><strong>Progression</strong></td><td>每 1-2 週微調；先增 time、頻率，最後增強度</td></tr>
+</table>
+
+<h4>Interval vs Continuous 訓練</h4>
+<table>
+<tr><th>項目</th><th>Continuous</th><th>Interval</th></tr>
+<tr><td>強度</td><td>60-80% Peak work rate（中等）</td><td>High 80-100% / Rest 0-30%</td></tr>
+<tr><td>時間比</td><td>不分</td><td>1:1 起、可進到 2:1</td></tr>
+<tr><td>適合</td><td>輕-中度 COPD</td><td><strong>嚴重 COPD（BR 低、dyspnea 嚴重）</strong></td></tr>
+<tr><td>優勢</td><td>易實施</td><td>可達高強度、降 dyspnea 限制</td></tr>
+<tr><td>本病人</td><td>—</td><td><strong>建議 interval（BR 8% 嚴重受限）</strong></td></tr>
+</table>
+
+<h4>阻力訓練處方（COPD 特化）</h4>
+<table>
+<tr><th>項目</th><th>處方</th></tr>
+<tr><td>強度</td><td>60-70% 1RM（可從 50% 起步）</td></tr>
+<tr><td>反覆次數</td><td>8-12 reps、2-3 set</td></tr>
+<tr><td>頻率</td><td>2-3 次/週、非連續日</td></tr>
+<tr><td>肌群</td><td>大肌群為主：股四頭、臀大、胸、背、肩</td></tr>
+<tr><td>注意</td><td>避免 Valsalva、isometric、大重量上肢（誘發 dyspnea）</td></tr>
+<tr><td>進階</td><td>每 2 週重測 1RM、漸進加重</td></tr>
+</table>
+
+<h4>上肢訓練（COPD 特殊重要）</h4>
+<table>
+<tr><th>項目</th><th>處方</th></tr>
+<tr><td>為何重要</td><td>呼吸輔助肌與上肢肌共用 → COPD 上肢活動易誘發 dyspnea；改善上肢功能可改善 ADL</td></tr>
+<tr><td>類型</td><td>Arm ergometer、彈力帶、輕啞鈴 dynamic exercise</td></tr>
+<tr><td>強度</td><td>低 weight、高 reps（15-20）；避免 isometric / overhead</td></tr>
+<tr><td>頻率</td><td>2-3 次/週</td></tr>
+<tr><td>呼吸協調</td><td>用力時吐氣（不憋氣）</td></tr>
+</table>
+
+<h4>IMT 處方</h4>
+<table>
+<tr><th>項目</th><th>處方</th></tr>
+<tr><td>適應</td><td>PImax &lt; 60% predicted</td></tr>
+<tr><td>強度</td><td>起始 30% PImax、漸進 50-60% PImax</td></tr>
+<tr><td>頻率</td><td>每日 30 次 × 2 set（5-15 min）</td></tr>
+<tr><td>設備</td><td>Threshold IMT、POWERbreathe</td></tr>
+<tr><td>追蹤</td><td>每 2 週重測 PImax 調整</td></tr>
+<tr><td>證據</td><td>降低 dyspnea、改善 6MWT 30-50 m</td></tr>
+</table>
+
+<h4>本病人特化處方建議</h4>
+<table>
+<tr><th>FITT</th><th>具體</th></tr>
+<tr><td>F</td><td>3 次/週監督式 × 12 週</td></tr>
+<tr><td>I</td><td>有氧 Interval 30 sec/30 sec、起始 60-70% Peak work rate；漸進至 80% / 30 sec rest<br>運動中 O₂ 4-6 L 維持 SpO₂ &gt; 88%<br>RPE 4-5 起、Borg dyspnea 4-5</td></tr>
+<tr><td>T</td><td>暖身 10 min + interval 20 min + cool-down 10 min</td></tr>
+<tr><td>T</td><td>Cycle ergometer + 上肢 dynamic + 阻力（下肢為主）+ IMT 30% PImax + 柔軟度 + 平衡</td></tr>
+<tr><td>監測</td><td>SpO₂ 連續、HR、Borg dyspnea、症狀</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>嚴重 COPD 處方核心策略</strong>：(1) <strong>Interval &gt; Continuous</strong>（避免 ventilatory 達極限） (2) 運動中<strong>充分 O₂</strong>，目標 SpO₂ &gt; 88% (3) <strong>IMT</strong> 為呼吸肌訓練核心 (4) <strong>上肢訓練</strong>改善 ADL (5) 老人加<strong>平衡訓練</strong>防跌倒 (6) <strong>家屬參與</strong>提升居家 adherence。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>COPD 處方核心：<strong>有氧 + 阻力 + IMT + 上肢 + 柔軟度 + 平衡</strong></li>
+<li>嚴重 COPD（BR 低）→ Interval training</li>
+<li>運動中 O₂ titration 目標 SpO₂ &gt; 88%</li>
+<li>上肢 dynamic、避免 isometric（誘發 dyspnea）</li>
+<li>IMT 30-50% PImax</li>
+<li>改善 mortality、QoL、住院率、dyspnea、6MWT</li>
+</ul>`,
+      },
+      {
+        q: '本病人在何時需要氧氣治療？運動氧氣？居家 LTOT？適應症與設定？',
+        keywords: [
+          'LTOT criteria',
+          'PaO₂ ≤ 55 mmHg',
+          'SaO₂ ≤ 88%',
+          'PaO₂ 56-59 with cor pulmonale or HCT > 55%',
+          '15+ hours / day',
+          'Exercise-induced desaturation',
+          'Ambulatory O₂',
+          'Nocturnal O₂',
+          'CO₂ retention risk',
+          'Low flow 1-3 L/min',
+        ],
+        points: [
+          'LTOT 適應症：(1) PaO₂ ≤ 55 mmHg 或 SaO₂ ≤ 88% (2) PaO₂ 56-59 mmHg 合併 cor pulmonale、polycythemia (HCT > 55%)、或 P pulmonale on EKG',
+          'LTOT 必須 ≥ 15 hr/day（含夜間），目標 PaO₂ > 60 / SaO₂ > 90%',
+          'LTOT 證據：嚴重低血氧病人 LTOT 可降低 mortality（NOTT、MRC trials）',
+          '運動氧氣（ambulatory O₂）：運動中 SpO₂ < 88% 者；改善 endurance、減 dyspnea',
+          '夜間氧氣：睡眠 SpO₂ < 88% 持續 ≥ 5 min',
+          'CO₂ retention 風險：COPD 給高流量 O₂ → 抑制呼吸驅動 + Haldane effect → CO₂ 累積',
+          '一般 COPD 起始 1-2 L 鼻導管，目標 SpO₂ 88-92%（不要過度給氧）',
+          '高流量 nasal cannula（HFNC）適合 acute / 運動需高流量者',
+        ],
+        a: `<h4>LTOT（Long-term O₂ Therapy）適應症</h4>
+<table>
+<tr><th>條件</th><th>標準</th></tr>
+<tr><td><strong>絕對適應</strong></td><td>PaO₂ ≤ 55 mmHg 或 SaO₂ ≤ 88%（休息、清醒、穩定狀態 30 天內 2 次測量）</td></tr>
+<tr><td><strong>相對適應</strong></td><td>PaO₂ 56-59 mmHg 或 SaO₂ ≤ 89% + 任一：(1) Cor pulmonale 證據（peripheral edema、P pulmonale on EKG、RV hypertrophy） (2) Polycythemia HCT &gt; 55%</td></tr>
+<tr><td>不適應</td><td>PaO₂ ≥ 60 mmHg（無法降低 mortality）</td></tr>
+</table>
+
+<h4>LTOT 處方</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>時間</td><td>≥ 15 hr/day（含夜間 8 hr）；越長越好</td></tr>
+<tr><td>流量</td><td>從 1-2 L/min 起始</td></tr>
+<tr><td>目標</td><td>PaO₂ &gt; 60 / SaO₂ &gt; 90%</td></tr>
+<tr><td>注意</td><td>不要過度（&gt; 92%）以免 CO₂ retention</td></tr>
+<tr><td>追蹤</td><td>每 1-3 個月重測 ABG</td></tr>
+<tr><td>機型</td><td>家用 concentrator 為主、攜帶 cylinder 或 portable concentrator 出門</td></tr>
+</table>
+
+<h4>運動氧氣（Ambulatory O₂）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>適應</td><td>運動中 SpO₂ &lt; 88% 持續 ≥ 5 min</td></tr>
+<tr><td>流量</td><td>運動時通常 high than rest（2-6 L 鼻導管 / mask / HFNC）</td></tr>
+<tr><td>益處</td><td>改善 endurance、減 dyspnea、提高 functional capacity</td></tr>
+<tr><td>portable</td><td>Pulse-dose conserver、portable concentrator</td></tr>
+</table>
+
+<h4>夜間氧氣</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>適應</td><td>夜間 SpO₂ &lt; 88% ≥ 5 min（即使白天 SpO₂ 正常）</td></tr>
+<tr><td>診斷</td><td>Overnight oximetry / polysomnography</td></tr>
+<tr><td>處方</td><td>Same as LTOT；可獨立或合併 LTOT</td></tr>
+<tr><td>合併 OSA</td><td>需 PAP，不只是 O₂</td></tr>
+</table>
+
+<h4>CO₂ Retention 機轉</h4>
+<table>
+<tr><th>機轉</th><th>說明</th></tr>
+<tr><td>抑制 hypoxic drive</td><td>慢性低氧者 chemoreceptor 對 PaO₂ 反應；過高 O₂ 抑制此 drive</td></tr>
+<tr><td>Haldane effect</td><td>O₂ 取代 Hb 上的 CO₂ → CO₂ 釋出 → PaCO₂ 升高</td></tr>
+<tr><td>V/Q mismatch</td><td>O₂ 引起 hypoxic vasoconstriction 解除 → 部分 perfusion 增至 dead space</td></tr>
+<tr><td>後果</td><td>CO₂ 累積 → CO₂ narcosis、acidosis、呼吸抑制</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 O₂ 處方建議</strong>：(1) 安排 ABG 確認 LTOT 適應（題幹 SpO₂ 92% rest 偏低，需 ABG） (2) 運動氧氣：運動中 4-6 L 鼻導管、目標 SpO₂ &gt; 88% (3) 夜間 oximetry 評估夜間需求 (4) 整體目標 SpO₂ 88-92%，不要追 95% (5) 配合戒菸（吸菸時 O₂ 有火災風險）。
+</p>
+
+<h4>O₂ Delivery 系統比較</h4>
+<table>
+<tr><th>裝置</th><th>FiO₂</th><th>流量</th><th>適用</th></tr>
+<tr><td>Nasal cannula</td><td>24-44%</td><td>1-6 L/min</td><td>居家、運動</td></tr>
+<tr><td>Simple mask</td><td>40-60%</td><td>5-10 L/min</td><td>急性</td></tr>
+<tr><td>Venturi mask</td><td>24-50% precise</td><td>4-15 L/min</td><td>COPD（精準避 CO₂ 累積）</td></tr>
+<tr><td>Non-rebreather</td><td>60-95%</td><td>10-15 L/min</td><td>急救</td></tr>
+<tr><td>HFNC</td><td>21-100%</td><td>30-60 L/min</td><td>嚴重低氧、運動</td></tr>
+<tr><td>NIV (BiPAP)</td><td>—</td><td>—</td><td>CO₂ retention、急性 exac</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>LTOT 適應：<strong>PaO₂ ≤ 55 / SaO₂ ≤ 88%</strong>，相對適應加 cor pulmonale 或 polycythemia</li>
+<li>LTOT 時間 <strong>≥ 15 hr/day</strong> 才有 mortality benefit</li>
+<li>目標 SpO₂ <strong>88-92%</strong>，不要過度</li>
+<li>運動氧氣：SpO₂ &lt; 88% ≥ 5 min</li>
+<li>CO₂ retention 機轉：抑制 hypoxic drive + Haldane + V/Q</li>
+<li>Venturi mask 是 COPD 精準給氧首選（急性）</li>
+</ul>`,
+      },
+      {
+        q: '本病人 50 PY 仍未戒菸。請說明戒菸介入策略。藥物選擇？復健科角色？',
+        keywords: [
+          '5 As model',
+          'Ask / Advise / Assess / Assist / Arrange',
+          'Nicotine replacement therapy',
+          'Bupropion',
+          'Varenicline',
+          'Behavioral counseling',
+          'Stages of change',
+          'Quitline',
+          'Pharmacy combination',
+          'Relapse prevention',
+        ],
+        points: [
+          '5 As model：Ask（問）→ Advise（勸）→ Assess（評估意願）→ Assist（協助）→ Arrange（追蹤）',
+          'Stages of change：pre-contemplation → contemplation → preparation → action → maintenance',
+          'NRT（尼古丁替代療法）：patch（24 hr 持續）+ gum/lozenge（PRN）combination 效果最好',
+          'Bupropion 150 mg BID：抗 dopamine reuptake、降 craving；contraindication：seizure、ED',
+          'Varenicline 0.5 mg → 1 mg BID：最有效，partial nicotinic agonist；副作用 nausea、neuropsych',
+          '行為治療：個人 / 團體 counseling、motivational interviewing、CBT；單獨用效果有限',
+          '藥物 + 行為治療最有效（quit rate 30-40%）',
+          'Relapse 是常見過程，多次嘗試正常',
+          '復健科角色：每次 visit 詢問 + 強化動機、轉介戒菸門診、衛教、家屬參與',
+        ],
+        a: `<h4>戒菸 5 As Model</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td><strong>Ask</strong></td><td>每次 visit 詢問吸菸狀態（量、年數）</td></tr>
+<tr><td><strong>Advise</strong></td><td>清楚、強烈、個別化勸戒</td></tr>
+<tr><td><strong>Assess</strong></td><td>評估戒菸意願（stages of change）</td></tr>
+<tr><td><strong>Assist</strong></td><td>提供 counseling + 藥物</td></tr>
+<tr><td><strong>Arrange</strong></td><td>follow-up（電話、回診）</td></tr>
+</table>
+
+<h4>Stages of Change</h4>
+<table>
+<tr><th>Stage</th><th>表現</th><th>介入</th></tr>
+<tr><td>Pre-contemplation</td><td>無戒菸意願</td><td>提供資訊、關心，不強迫</td></tr>
+<tr><td>Contemplation</td><td>考慮中（半年內）</td><td>分析利弊、增加動機</td></tr>
+<tr><td>Preparation</td><td>準備行動（30 天內）</td><td>制定戒菸計畫、藥物、設定 quit date</td></tr>
+<tr><td>Action</td><td>正在戒菸（6 個月內）</td><td>密切支持、處理 craving / withdrawal</td></tr>
+<tr><td>Maintenance</td><td>戒菸 &gt; 6 個月</td><td>預防 relapse、慶祝里程</td></tr>
+<tr><td>Relapse</td><td>復吸</td><td>認識為過程，重新動機</td></tr>
+</table>
+
+<h4>戒菸藥物比較</h4>
+<table>
+<tr><th>藥物</th><th>機轉</th><th>劑量</th><th>注意</th></tr>
+<tr><td><strong>NRT - Patch</strong></td><td>緩慢釋放尼古丁</td><td>21 mg → 14 mg → 7 mg（&gt; 10 cig/day）</td><td>皮膚反應、避免吸菸合併</td></tr>
+<tr><td><strong>NRT - Gum / Lozenge</strong></td><td>快速釋放</td><td>2-4 mg PRN，每 1-2 hr</td><td>嚼咬技巧、口腔刺激</td></tr>
+<tr><td><strong>NRT - Inhaler / Spray</strong></td><td>快速釋放</td><td>—</td><td>處方</td></tr>
+<tr><td><strong>Bupropion</strong></td><td>降 craving（DA/NE reuptake）</td><td>150 mg/day → BID × 7-12 週</td><td>禁忌：seizure、ED、bipolar</td></tr>
+<tr><td><strong>Varenicline</strong></td><td>Partial nicotinic agonist</td><td>0.5 mg QD → BID → 1 mg BID × 12 週</td><td>Nausea、abnormal dreams、neuropsych</td></tr>
+</table>
+
+<h4>藥物 Combination</h4>
+<table>
+<tr><th>組合</th><th>效益</th></tr>
+<tr><td>NRT patch + gum/lozenge PRN</td><td>持續 + 急性 craving，quit rate 高</td></tr>
+<tr><td>Bupropion + NRT</td><td>協同效果</td></tr>
+<tr><td>Varenicline + NRT</td><td>仍可考慮（依研究）</td></tr>
+</table>
+
+<h4>行為治療</h4>
+<table>
+<tr><th>類型</th><th>內容</th></tr>
+<tr><td>Individual counseling</td><td>動機增強、CBT、解決問題</td></tr>
+<tr><td>Group counseling</td><td>互相支持、社會支持</td></tr>
+<tr><td>Telephone Quitline</td><td>0800-636-363（台灣戒菸專線）</td></tr>
+<tr><td>App / Text</td><td>SmokefreeTXT、Quit Genius</td></tr>
+<tr><td>Motivational interviewing</td><td>非評判式、引導動機</td></tr>
+</table>
+
+<h4>復健科特殊角色</h4>
+<table>
+<tr><th>每次 visit</th><th>內容</th></tr>
+<tr><td>持續詢問</td><td>5 As 每次都做</td></tr>
+<tr><td>連結進步</td><td>「你的 6MWT 進步 30 m，戒菸後可以再多 50%」</td></tr>
+<tr><td>實質 incentive</td><td>戒菸後省下的錢、健康獲益</td></tr>
+<tr><td>處理 trigger</td><td>運動可取代吸菸 craving</td></tr>
+<tr><td>家屬參與</td><td>同戒、避免家中 trigger、二手菸</td></tr>
+<tr><td>轉介</td><td>戒菸門診、Quitline</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人戒菸策略</strong>：(1) 確認 stage of change（先評估意願） (2) 解釋 LTOT 與吸菸<strong>火災風險</strong>（強動機） (3) 處方 varenicline 或 NRT 雙重 (4) 行為 counseling 加 quitline (5) 設定 quit date、家屬支持 (6) Follow-up 1 週、1 個月、3 個月、6 個月 (7) 強調戒菸<strong>任何時間</strong>都有益（即使 50 PY）。
+</p>
+
+<h4>戒菸效益（即使老人 + 嚴重 COPD）</h4>
+<table>
+<tr><th>時程</th><th>效益</th></tr>
+<tr><td>20 分鐘</td><td>HR、BP 下降</td></tr>
+<tr><td>12 hr</td><td>CO 濃度回正常</td></tr>
+<tr><td>2-12 週</td><td>循環、肺功能改善</td></tr>
+<tr><td>1-9 個月</td><td>咳嗽、SOB 減少</td></tr>
+<tr><td>1 年</td><td>CHD 風險減半</td></tr>
+<tr><td>5 年</td><td>Stroke 風險回正常</td></tr>
+<tr><td>10 年</td><td>肺癌風險減半</td></tr>
+<tr><td>15 年</td><td>CHD 風險與不吸菸者相當</td></tr>
+<tr><td>COPD 病人戒菸</td><td>FEV1 下降速率回到正常老化速率</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>5 As model 必背</li>
+<li>Stages of change 對應 individualized 介入</li>
+<li>藥物：NRT、Bupropion、Varenicline（最有效）</li>
+<li>藥物 + 行為治療 quit rate 30-40%</li>
+<li>復健科<strong>每次 visit</strong> 都做 5 As</li>
+<li>戒菸<strong>任何時間</strong>都有益，相對 risk reduction 顯著</li>
+</ul>`,
+      },
+      {
+        q: '本病人 2 年 3 次 AECOPD 住院。請說明 AECOPD 預防策略、action plan 衛教、與 frequent exacerbator 處置。',
+        keywords: [
+          'Frequent exacerbator',
+          'Eosinophilic phenotype',
+          'Vaccination',
+          'Action plan',
+          'Yellow zone steroids',
+          'Red zone hospitalization',
+          'Roflumilast',
+          'Azithromycin prophylaxis',
+          'PR reduces exacerbation',
+          'Ehs medication adherence',
+        ],
+        points: [
+          'Frequent exacerbator 定義：≥ 2 中度或 ≥ 1 住院/年',
+          '預防三大支柱：(1) Optimization of inhaler therapy (2) Pulmonary rehab (3) Lifestyle（戒菸、疫苗、運動、營養）',
+          'Vaccination：流感（每年）、肺炎鏈球菌（PCV13/PPSV23）、COVID-19、Tdap、RSV（≥ 60）',
+          'COPD action plan（自我管理）：Green / Yellow / Red zone 對應行動',
+          'Yellow zone（症狀加重）：增加 SABA、開始 prednisone 30-40 mg × 5 天 ± 抗生素',
+          'Red zone（嚴重）：立即就醫',
+          '進階藥物：roflumilast（PDE4i，chronic bronchitis 表型）、azithromycin（每週 3 次預防）、生物製劑（eosinophilic）',
+          '肺復健可降低 AECOPD 住院率 30-50%',
+          '本病人應整合戒菸、triple therapy 確認、肺復健、action plan 訓練',
+        ],
+        a: `<h4>Frequent Exacerbator 定義與管理</h4>
+<table>
+<tr><th>定義</th><th>標準</th></tr>
+<tr><td>Frequent exacerbator</td><td>≥ 2 中度 / 年 或 ≥ 1 住院 / 年</td></tr>
+<tr><td>Severe phenotype</td><td>本病人 2 年 3 次住院 → 高風險</td></tr>
+</table>
+
+<h4>AECOPD 預防三大支柱</h4>
+<table>
+<tr><th>支柱</th><th>內容</th></tr>
+<tr><td><strong>1. 藥物 optimization</strong></td><td>LABA + LAMA → 加 ICS（eosinophilic）→ 進階：roflumilast、azithromycin、生物製劑（dupilumab、benralizumab for eos）</td></tr>
+<tr><td><strong>2. 肺復健</strong></td><td>降低 AECOPD 住院率 30-50%、改善 QoL、降低 mortality</td></tr>
+<tr><td><strong>3. Lifestyle</strong></td><td>戒菸、疫苗、運動、營養、avoid trigger</td></tr>
+</table>
+
+<h4>疫苗建議（COPD 病人）</h4>
+<table>
+<tr><th>疫苗</th><th>建議</th></tr>
+<tr><td>Influenza</td><td>每年</td></tr>
+<tr><td>Pneumococcal</td><td>PCV13 → 1 年後 PPSV23（&gt; 65 歲）；或新版 PCV20</td></tr>
+<tr><td>COVID-19</td><td>依疫情建議</td></tr>
+<tr><td>Tdap</td><td>每 10 年</td></tr>
+<tr><td>RSV</td><td>≥ 60 歲（新適應）</td></tr>
+<tr><td>Herpes zoster</td><td>≥ 50 歲</td></tr>
+</table>
+
+<h4>COPD Action Plan（自我管理）</h4>
+<table>
+<tr><th>Zone</th><th>症狀</th><th>行動</th></tr>
+<tr><td><strong>Green</strong>（穩定）</td><td>平日基線</td><td>持續日常藥物、運動、健康習慣</td></tr>
+<tr><td><strong>Yellow</strong>（症狀加重）</td><td>SOB↑、咳嗽↑、痰量增 / 變色、需要更多 SABA</td><td>(1) 增加 SABA 用量 (2) 開始 prednisone 30-40 mg × 5 天 (3) ± 抗生素 5-7 天（amoxicillin、azithromycin） (4) 24-48 hr 內回診</td></tr>
+<tr><td><strong>Red</strong>（嚴重）</td><td>嚴重 SOB、無法說完整句、cyanosis、neck muscle use、意識變化</td><td>立即就醫 / 急診</td></tr>
+</table>
+
+<h4>進階藥物</h4>
+<table>
+<tr><th>藥物</th><th>適應</th><th>機轉</th></tr>
+<tr><td>Roflumilast</td><td>Chronic bronchitis + frequent exacerbator + FEV1 &lt; 50%</td><td>PDE-4 inhibitor、抗發炎</td></tr>
+<tr><td>Azithromycin</td><td>≥ 65 歲 frequent exacerbator</td><td>250 mg QD 或 500 mg 3x/週、降發炎 + 抗菌</td></tr>
+<tr><td>Mucolytics（NAC、carbocysteine）</td><td>Chronic bronchitis + frequent exacerbator</td><td>溶痰</td></tr>
+<tr><td>生物製劑（dupilumab、benralizumab）</td><td>Eosinophilic COPD（eos &gt; 300）</td><td>Anti-IL-4Rα、anti-IL-5</td></tr>
+<tr><td>Long-term O₂</td><td>適應症符合者</td><td>降 mortality</td></tr>
+</table>
+
+<h4>本病人整合介入計畫</h4>
+<table>
+<tr><th>項目</th><th>建議</th></tr>
+<tr><td>藥物</td><td>確認 triple therapy adherence、技巧；考慮 roflumilast / azithromycin（已 frequent exacerbator）</td></tr>
+<tr><td>戒菸</td><td>核心介入（見 Q6）</td></tr>
+<tr><td>疫苗</td><td>流感、肺鏈球菌、COVID、RSV（年齡 68）、Tdap</td></tr>
+<tr><td>肺復健</td><td>Phase II 8-12 週監督式</td></tr>
+<tr><td>O₂</td><td>確認 LTOT 適應（ABG）</td></tr>
+<tr><td>Action plan</td><td>家屬一同訓練、書面紙本</td></tr>
+<tr><td>營養</td><td>避免 sarcopenia（蛋白 1.2-1.5 g/kg）</td></tr>
+<tr><td>心理</td><td>Depression / anxiety screening</td></tr>
+<tr><td>合併症</td><td>篩 OSA、cor pulmonale、osteoporosis</td></tr>
+</table>
+
+<h4>AECOPD Triggers</h4>
+<table>
+<tr><th>Trigger</th><th>預防</th></tr>
+<tr><td>呼吸道感染</td><td>疫苗、洗手、口罩、避人群</td></tr>
+<tr><td>空氣污染</td><td>外出 PM2.5 監測、N95</td></tr>
+<tr><td>菸 / 二手菸</td><td>戒菸、家中無菸</td></tr>
+<tr><td>低溫</td><td>保暖、口鼻保暖</td></tr>
+<tr><td>過敏原</td><td>居家清潔、寵物</td></tr>
+<tr><td>藥物 non-adherence</td><td>定期確認 inhaler 技巧、reminder</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人重點介入</strong>：(1) <strong>戒菸 + 肺復健</strong>是最有 impact 的兩件事 (2) 自我管理 action plan 訓練 → 早期 yellow zone 介入避免進入 red (3) 確認 inhaler 技巧（嚴重 COPD 70% 用錯） (4) 整合 multidisciplinary：胸腔科、復健、營養、心理、家屬。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Frequent exacerbator：<strong>≥ 2 中度 / ≥ 1 住院 per year</strong></li>
+<li>預防三柱：藥物 + 肺復健 + lifestyle</li>
+<li>疫苗：流感、肺鏈球菌、COVID、RSV、Tdap、zoster</li>
+<li>Action plan：Green / Yellow / Red 三 zone</li>
+<li>Yellow zone：steroid + SABA + 抗生素</li>
+<li>肺復健降 AECOPD 住院 30-50%</li>
+</ul>`,
+      },
+      {
+        q: '肺復健可預期哪些效益？追蹤頻率？COPD 常見合併症與處置？',
+        keywords: [
+          'Improved 6MWT 30-50 m',
+          'Improved CAT/SGRQ',
+          'Reduced dyspnea',
+          'Reduced exacerbation',
+          'Improved survival',
+          'Cor pulmonale',
+          'Pulmonary HTN',
+          'OSA overlap',
+          'Osteoporosis (steroid)',
+          'Anxiety / depression',
+        ],
+        points: [
+          '主要效益：(1) Dyspnea ↓ (2) 6MWT ↑ 30-50 m (3) QoL（CAT、SGRQ） ↑ (4) Exacerbation ↓ (5) Hospitalization ↓ (6) Mortality 下降（部分研究）',
+          'Functional：ADL 獨立、爬樓梯、社交活動恢復',
+          '心理：焦慮憂鬱改善',
+          '追蹤：Phase II 結束後每 3-6 個月 visit + reassess；6MWT、CAT、PFT、藥物、疫苗',
+          '常見合併症：cor pulmonale、PHTN、OSA、osteoporosis（steroid + immobility）、anxiety/depression、cachexia / sarcopenia、CV disease',
+          'OSA + COPD = overlap syndrome，預後更差，需 PAP',
+          'Osteoporosis：DEXA 篩檢、阻力訓練、Ca + Vit D、bisphosphonate',
+          '合併心血管：CAD、HF 常見，treadmill stress test 整合',
+          '長期目標：維持 functional status、預防 exacerbation、QoL、prepare end-of-life discussions',
+        ],
+        a: `<h4>肺復健預期效益</h4>
+<table>
+<tr><th>項目</th><th>改善幅度</th><th>MCID</th></tr>
+<tr><td>Dyspnea（mMRC、Borg）</td><td>顯著</td><td>mMRC −1</td></tr>
+<tr><td>6MWT</td><td>+30-50 m</td><td>25-35 m</td></tr>
+<tr><td>CAT score</td><td>−2 to −5</td><td>−2</td></tr>
+<tr><td>SGRQ（QoL）</td><td>−4 to −10</td><td>−4</td></tr>
+<tr><td>Exercise endurance</td><td>+50-100%</td><td>—</td></tr>
+<tr><td>Exacerbation rate</td><td>−30 to 50%</td><td>—</td></tr>
+<tr><td>Hospitalization</td><td>−30 to 50%</td><td>—</td></tr>
+<tr><td>Survival</td><td>部分研究 +</td><td>—</td></tr>
+<tr><td>Anxiety / depression</td><td>顯著改善</td><td>—</td></tr>
+</table>
+
+<h4>追蹤計畫</h4>
+<table>
+<tr><th>時程</th><th>內容</th></tr>
+<tr><td>Phase II 期間</td><td>每次 session 監測；每 4 週 reassess</td></tr>
+<tr><td>Phase II 結束</td><td>重做 6MWT、CAT、CPET（必要）；制定居家計畫</td></tr>
+<tr><td>3 個月後</td><td>回診評估 adherence、症狀、AECOPD 史</td></tr>
+<tr><td>每 6-12 個月</td><td>PFT、6MWT、藥物 review</td></tr>
+<tr><td>每年</td><td>疫苗、CV risk、cancer screening、合併症</td></tr>
+</table>
+
+<h4>COPD 常見合併症</h4>
+<table>
+<tr><th>合併症</th><th>盛行率</th><th>處置</th></tr>
+<tr><td>Cardiovascular（CAD、HF、Afib）</td><td>30-50%</td><td>篩檢 + treat as standard CV care；β-blocker 安全</td></tr>
+<tr><td>Cor pulmonale / PHTN</td><td>10-30%（嚴重 COPD）</td><td>LTOT、treat underlying COPD、嚴重者特殊治療</td></tr>
+<tr><td>OSA（overlap syndrome）</td><td>10-25%</td><td>PSG、CPAP / BiPAP；overlap 預後更差</td></tr>
+<tr><td>Osteoporosis</td><td>30-60%</td><td>DEXA、Ca + Vit D、bisphosphonate、阻力訓練</td></tr>
+<tr><td>Anxiety / depression</td><td>20-40%</td><td>篩檢（PHQ-9、GAD-7）、CBT、SSRI</td></tr>
+<tr><td>Cachexia / sarcopenia</td><td>20-40%（嚴重 COPD）</td><td>蛋白補充、阻力、testosterone（特殊）</td></tr>
+<tr><td>Lung cancer</td><td>≥ 1% / 年</td><td>每年 LDCT screening（USPSTF 標準）</td></tr>
+<tr><td>GERD</td><td>常見</td><td>PPI；惡化 cough</td></tr>
+<tr><td>Diabetes</td><td>10-15%</td><td>HbA1c、steroid 影響</td></tr>
+</table>
+
+<h4>Cor Pulmonale</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>定義</td><td>因 lung disease 引起 RV hypertrophy / dilation / failure</td></tr>
+<tr><td>機轉</td><td>慢性低氧 → pulmonary vasoconstriction → PHTN → RV strain</td></tr>
+<tr><td>臨床</td><td>JVD、peripheral edema、RV heave、loud P2、TR</td></tr>
+<tr><td>Echo</td><td>RV dilation、RV dysfunction、TR jet → estimate PA pressure</td></tr>
+<tr><td>EKG</td><td>P pulmonale（右房肥大）、RAD、RBBB</td></tr>
+<tr><td>處置</td><td>LTOT 為核心、治療 underlying COPD、利尿劑、避免 fluid overload</td></tr>
+</table>
+
+<h4>OSA + COPD（Overlap Syndrome）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>定義</td><td>OSA + COPD 共存</td></tr>
+<tr><td>盛行率</td><td>10-25% COPD 病人</td></tr>
+<tr><td>後果</td><td>夜間 desaturation 嚴重、PHTN 加速、mortality 增加</td></tr>
+<tr><td>診斷</td><td>夜間 polysomnography</td></tr>
+<tr><td>處置</td><td>PAP（CPAP / BiPAP / AVAPS）、減重、戒菸</td></tr>
+<tr><td>本病人</td><td>需篩檢（夜間 SOB、白天嗜睡、體型）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>長期照護重點</strong>：COPD 是慢性進行性疾病，肺復健效益若無持續運動會在 6-12 個月後消失。<strong>居家持續運動 + 定期回診 reassess + 合併症篩檢與治療 + 心理支持</strong>缺一不可。Advanced care planning 與 end-of-life discussions 在 GOLD III-IV 病人應主動提出。
+</p>
+
+<h4>Advanced Care Planning（嚴重 COPD）</h4>
+<ul>
+<li>了解病人對治療的價值觀</li>
+<li>討論 intubation / mechanical ventilation 意願</li>
+<li>DNR / DNI 文件</li>
+<li>醫療委任代理人</li>
+<li>Palliative care 整合（dyspnea、anxiety 管理）</li>
+<li>Hospice 適應（last 6 months）</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>肺復健效益：<strong>6MWT、QoL、exacerbation、hospitalization</strong>都改善</li>
+<li>MCID：6MWT 25-35 m、CAT −2、SGRQ −4</li>
+<li>合併症必篩：<strong>CV、cor pulmonale、OSA、osteoporosis、depression、cancer</strong></li>
+<li>Overlap syndrome（OSA + COPD）預後更差，需 PAP</li>
+<li>長期維持：<strong>居家持續運動</strong>是關鍵，否則效益消失</li>
+<li>Advanced care planning 在 GOLD III-IV 主動討論</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
+
 
 
 
