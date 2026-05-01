@@ -55959,9 +55959,741 @@ ECG：Sinus tachycardia around 110+ bpm；BP 120-130/75-85。
       },
     ],
   },
+  {
+    id: 'pulmonary_004',
+    domain: 'pulmonary',
+    title: '肺癌術前 Prehab 與術後困難拔管 Chest Care',
+    context: `62 歲女性，無吸菸史，無重大病史，向來沒有運動習慣。
+這一年多容易咳嗽、多痰，容易累。
+
+公司健檢時發現第 II 期肺腺癌（Lung Adenocarcinoma），腫瘤約 6 公分，有區域淋巴轉移。
+胸腔外科已安排切除手術（lobectomy）。
+
+入院第一天會診復健科，希望安排術前心肺運動測試與介入。
+
+考官：請依序回答下列問題。`,
+    questions: [
+      {
+        q: 'PFT：FEV1/FVC 80%、FEV1 78% predicted、TLC 78% predicted、DLCO 65% predicted。判讀 pattern 與嚴重度？VD/VT 在運動過程的正常表現？病人維持 0.3 是否異常？',
+        keywords: [
+          'Mild restrictive',
+          'No obstruction',
+          'DLCO mild reduction',
+          'VD/VT physiologic dead space',
+          'Rest 0.3 normal',
+          'Exercise VD/VT decreases',
+          'Exercise < 0.20',
+          'Failure to decrease abnormal',
+          'Lung cancer mass effect',
+          'Pulmonary vascular disease',
+        ],
+        points: [
+          'FEV1/FVC 80% > 70% → 無 obstruction',
+          'TLC 78% < 80% → mild restrictive',
+          'FEV1 78% predicted → 雖屬 mild，但因為 restrictive 導致；考量肺癌占空間效應',
+          'DLCO 65% → mild reduction',
+          'VD/VT = 生理死腔比，反映 ventilation 與 perfusion matching',
+          '休息時正常 0.30-0.35（解剖死腔 + 部分 alveolar dead space）',
+          '運動時應下降至 < 0.20（recruitment + 增加 VT，相對降低 dead space 比例）',
+          '運動全程維持 0.30 → 異常，提示 V/Q mismatch（pulmonary vascular disease、PHTN、肺癌 mass effect、肺切除後）',
+          '本病人術前若 VD/VT 不降，反映腫瘤對 ventilation/perfusion 影響；術後可能更嚴重',
+        ],
+        a: `<h4>PFT Pattern 判讀</h4>
+<table>
+<tr><th>指標</th><th>本病人</th><th>判讀</th></tr>
+<tr><td>FEV1/FVC</td><td>80%</td><td>&gt; 70% 無 obstruction</td></tr>
+<tr><td>FEV1 % predicted</td><td>78%</td><td>Mild reduction</td></tr>
+<tr><td>TLC % predicted</td><td>78%</td><td>&lt; 80% → mild restrictive</td></tr>
+<tr><td>DLCO % predicted</td><td>65%</td><td>Mild reduction</td></tr>
+<tr><td>整體</td><td colspan="2"><strong>Mild restrictive with mild diffusion impairment</strong></td></tr>
+</table>
+
+<h4>VD/VT（生理死腔比）</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>定義</td><td>VD（dead space volume）/ VT（tidal volume），反映 ventilation 與 perfusion matching</td></tr>
+<tr><td>組成</td><td>解剖死腔（airway）+ alveolar dead space（V/Q 失調）</td></tr>
+<tr><td>計算（Bohr 方程式）</td><td>VD/VT = (PaCO₂ − PETCO₂) / PaCO₂</td></tr>
+<tr><td>休息時正常</td><td>0.30-0.35</td></tr>
+<tr><td>運動時正常</td><td><strong>下降至 &lt; 0.20</strong></td></tr>
+<tr><td>運動時異常</td><td>不降或升高 → V/Q mismatch</td></tr>
+</table>
+
+<h4>運動時 VD/VT 為何下降</h4>
+<ul>
+<li>VT 增加（運動時呼吸更深），分母變大</li>
+<li>Pulmonary capillary recruitment 增加，alveolar dead space 減少</li>
+<li>Ventilation 與 perfusion 匹配改善</li>
+</ul>
+
+<h4>VD/VT 不降的疾病</h4>
+<table>
+<tr><th>疾病</th><th>機轉</th></tr>
+<tr><td>Pulmonary vascular disease（PE、PAH）</td><td>Alveolar dead space 增加</td></tr>
+<tr><td>Pulmonary HTN</td><td>同上</td></tr>
+<tr><td>Emphysema</td><td>肺泡破壞、V/Q 失調</td></tr>
+<tr><td>Lung cancer / mass effect</td><td>區域 V/Q 失調</td></tr>
+<tr><td>Lung resection 後</td><td>剩餘肺 dead space 比例升</td></tr>
+<tr><td>HF</td><td>Pulmonary congestion 影響</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人</strong>：術前 VD/VT 維持 0.30 → 提示<strong>已有 V/Q mismatch</strong>（腫瘤 mass effect + 區域淋巴 + 可能輕度 pulmonary vascular changes）。臨床意義：(1) 對 ventilation efficiency 影響 (2) 術後切除肺葉後，剩餘肺須代償，VD/VT 可能更高 (3) 預測術後 dyspnea 更明顯。
+</p>
+
+<h4>VD/VT 對運動處方意涵</h4>
+<table>
+<tr><th>影響</th><th>處方調整</th></tr>
+<tr><td>Ventilation 效率差</td><td>同樣負荷需更高 VE，dyspnea 較重</td></tr>
+<tr><td>VE/VCO₂ slope 升高</td><td>處方上限保守</td></tr>
+<tr><td>運動時可能 desaturation</td><td>需 SpO₂ 監測 + O₂ titration</td></tr>
+<tr><td>IMT 重要</td><td>降低 work of breathing</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>PFT 四步驟：Pattern → Severity → Reversibility → DLCO</li>
+<li>VD/VT 休息 0.3、運動應 &lt; 0.2</li>
+<li>運動時 VD/VT 不降 → V/Q mismatch（PE、PAH、emphysema、lung mass）</li>
+<li>本病人術前已有 mass effect，術後須警覺 VD/VT 進一步升高</li>
+<li>VE/VCO₂ slope 與 VD/VT 相關，都是 ventilation efficiency 指標</li>
+</ul>`,
+      },
+      {
+        q: 'CPET：RER 1.12、Peak VO₂ 18 mL/kg/min（56% predicted）、AT 11、RCP 16、VE/VCO₂ slope 36、Breathing Reserve 18%、SpO₂ rest 98% / nadir 95%、無心律不整、無 ST 變化。是否盡力？AT/RCP/Peak？Breathing Reserve 意義？',
+        keywords: [
+          'RER ≥ 1.10 max',
+          'Peak VO₂ 56% predicted',
+          'AT 50-65% Peak',
+          'RCP 80-90% Peak',
+          'Breathing Reserve = 1 − VE/MVV',
+          'BR < 30% ventilatory limit',
+          'SpO₂ drop < 4% normal',
+          'VE/VCO₂ > 35 borderline',
+          'Pulmonary limitation',
+          'Surgery risk stratification',
+        ],
+        points: [
+          'RER 1.12 ≥ 1.10 → maximal effort 達成',
+          'Peak VO₂ 18 mL/kg/min（5.1 MET、56% predicted）→ moderate reduction',
+          'AT 11（61% Peak）正常、RCP 16（89% Peak）正常',
+          'Breathing Reserve = 1 − VE_peak/MVV，正常 > 30%；本病人 18% → ventilatory limitation（肺受限）',
+          'SpO₂ 從 98% 降至 95%（drop 3%）→ 正常範圍（drop > 4% 才算 desaturation）',
+          'VE/VCO₂ 36 介於 borderline（> 35），與肺癌 mass effect 相符',
+          '無 arrhythmia、無 ST 變化 → 心臟方面 OK',
+          '整體：pulmonary-limited exercise, moderate severity；surgery risk 中等',
+        ],
+        a: `<h4>本病人 CPET 全面解讀</h4>
+<table>
+<tr><th>指標</th><th>數值</th><th>判讀</th></tr>
+<tr><td>RER</td><td>1.12</td><td>✓ Max effort（≥ 1.10）</td></tr>
+<tr><td>Peak VO₂</td><td>18 mL/kg/min（5.1 MET、56% predicted）</td><td>Moderate reduction</td></tr>
+<tr><td>AT</td><td>11（61% Peak、3.1 MET）</td><td>正常比例</td></tr>
+<tr><td>RCP</td><td>16（89% Peak）</td><td>正常比例</td></tr>
+<tr><td>VE/VCO₂ slope</td><td>36</td><td>Borderline（&gt; 35 開始異常）</td></tr>
+<tr><td>Breathing Reserve</td><td>18%</td><td><strong>&lt; 30% → ventilatory limited</strong></td></tr>
+<tr><td>SpO₂ drop</td><td>98 → 95（3%）</td><td>正常（&lt; 4% drop）</td></tr>
+<tr><td>EKG</td><td>無 arrhythmia / ST 變化</td><td>✓</td></tr>
+<tr><td>End-point</td><td>Dyspnea</td><td>Pulmonary 受限</td></tr>
+</table>
+
+<h4>Breathing Reserve（BR）概念</h4>
+<table>
+<tr><th>項目</th><th>說明</th></tr>
+<tr><td>定義</td><td>BR = 1 − (VE_peak / MVV) × 100%；MVV 也可用 FEV1 × 35-40 估算</td></tr>
+<tr><td>意義</td><td>運動巔峰時還剩多少 ventilatory reserve</td></tr>
+<tr><td>正常</td><td>&gt; 30%（健康成人約 40-50%）</td></tr>
+<tr><td>&lt; 30%</td><td><strong>Ventilatory limitation</strong>（肺先到極限）</td></tr>
+<tr><td>&lt; 15%</td><td>Severe pulmonary limitation</td></tr>
+</table>
+
+<h4>運動受限類型鑑別</h4>
+<table>
+<tr><th>受限</th><th>BR</th><th>HR Reserve</th><th>O₂ Pulse</th><th>VE/VCO₂</th><th>SpO₂</th></tr>
+<tr><td>Cardiac</td><td>&gt; 30%（夠）</td><td>&lt; 15（達 max）</td><td>低 / plateau</td><td>升</td><td>正常</td></tr>
+<tr><td><strong>Pulmonary</strong>（本病人）</td><td><strong>&lt; 30%</strong></td><td>&gt; 15（沒達 max）</td><td>正常</td><td>升</td><td>可能降</td></tr>
+<tr><td>Deconditioning</td><td>&gt; 30%</td><td>&gt; 15</td><td>低</td><td>正常</td><td>正常</td></tr>
+<tr><td>Pulmonary vascular</td><td>&gt; 30%</td><td>&lt; 15</td><td>低、plateau</td><td><strong>顯著升</strong></td><td>降</td></tr>
+</table>
+
+<h4>SpO₂ 變化判讀</h4>
+<table>
+<tr><th>變化</th><th>意義</th></tr>
+<tr><td>Drop &lt; 4%</td><td>正常</td></tr>
+<tr><td>Drop ≥ 4%</td><td>Exercise-induced desaturation</td></tr>
+<tr><td>Nadir &lt; 88%</td><td>需 supplemental O₂</td></tr>
+<tr><td>Drop &gt; 6%</td><td>Significant desaturation，提示 gas exchange 異常</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人受限類型：Pulmonary-limited</strong>。BR 18% &lt; 30% 為主要證據，SpO₂ 邊界正常但已有下降趨勢，VE/VCO₂ 36 borderline。心臟方面正常。Peak VO₂ 18（5.1 MET）為手術風險分層中的中等風險。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Maximal effort：<strong>RER ≥ 1.10、Peak HR &gt; 85% predicted、Plateau VO₂</strong></li>
+<li>BR 正常 &gt; 30%；&lt; 30% 為 ventilatory limitation</li>
+<li>受限類型鑑別：BR、HRR、O₂ pulse、VE/VCO₂、SpO₂ 五指標綜合</li>
+<li>SpO₂ drop &lt; 4% 為正常；nadir &lt; 88% 需給 O₂</li>
+<li>本病人 Pulmonary-limited，與 mass effect 相符</li>
+</ul>`,
+      },
+      {
+        q: '依心肺檢查結果，評估手術併發症風險與預後。需要哪些指標？',
+        keywords: [
+          'Peak VO₂ < 10 high risk',
+          'Peak VO₂ 10-15 moderate',
+          'Peak VO₂ > 20 low risk',
+          'ppoFEV1',
+          'ppoDLCO',
+          'ppo > 60% safe',
+          'ppo < 40% high risk',
+          '6MWT alternative',
+          'Stair climbing test',
+          'BTS / ACCP guideline',
+        ],
+        points: [
+          'Peak VO₂ 是肺切除術後併發症最強預測指標：> 20 low risk、15-20 moderate、10-15 high、< 10 prohibitive',
+          '本病人 Peak VO₂ 18 → moderate risk',
+          'ppoFEV1（predicted postoperative FEV1）= preoperative FEV1 × (1 − segments resected/total functional segments)',
+          'ppoDLCO 同樣計算',
+          'ppoFEV1 / ppoDLCO > 60% predicted → 安全；40-60% 中等；< 40% 高風險',
+          '6MWT 替代指標：> 400 m 較安全；< 300 m 高風險',
+          'Stair climbing：能爬 ≥ 22 m 高度（5 層樓）→ 較安全；< 12 m 高風險',
+          'BTS 2010 / ACCP 2013 guideline 為主要依據',
+          '本病人需估算 ppoFEV1 與 ppoDLCO，搭配 Peak VO₂ 共同評估',
+        ],
+        a: `<h4>肺切除術前風險評估流程（BTS/ACCP）</h4>
+<table>
+<tr><th>步驟</th><th>檢查</th><th>判讀</th></tr>
+<tr><td>1</td><td>Spirometry：FEV1、DLCO</td><td>FEV1 &gt; 1.5 L（lobectomy）/ &gt; 2 L（pneumonectomy）+ DLCO &gt; 80% → 直接手術</td></tr>
+<tr><td>2</td><td>計算 ppoFEV1、ppoDLCO</td><td>ppo &gt; 60% predicted → 安全</td></tr>
+<tr><td>3</td><td>若 ppo 40-60% → CPET</td><td>Peak VO₂ &gt; 15 → 可手術</td></tr>
+<tr><td>4</td><td>若 ppo &lt; 40% 或 Peak VO₂ &lt; 10</td><td>高風險 → 考慮非手術或限制性切除</td></tr>
+</table>
+
+<h4>Peak VO₂ 與術後併發症風險</h4>
+<table>
+<tr><th>Peak VO₂</th><th>風險</th><th>處置建議</th></tr>
+<tr><td>&gt; 20 mL/kg/min</td><td>Low</td><td>常規手術</td></tr>
+<tr><td>15-20</td><td>Moderate</td><td>仔細評估、可手術</td></tr>
+<tr><td>10-15（本病人 18 不在此區）</td><td>High</td><td>限制性切除、prehab 強化</td></tr>
+<tr><td>&lt; 10</td><td>Prohibitive</td><td>不建議切除手術</td></tr>
+</table>
+
+<h4>ppoFEV1 / ppoDLCO 計算</h4>
+<table>
+<tr><th>項目</th><th>公式</th></tr>
+<tr><td>Anatomic（segment counting）</td><td>ppoFEV1 = pre-op FEV1 × (1 − a/b)<br>a = 切除的功能性 segment 數<br>b = 全肺功能性 segment 總數（標準 19）</td></tr>
+<tr><td>Functional（V/Q scan）</td><td>ppoFEV1 = pre-op FEV1 × (1 − % perfusion to resected lung)<br>較精確，特別 RUL/RLL</td></tr>
+<tr><td>Cutoff</td><td>ppoFEV1 / ppoDLCO &gt; 60% predicted → 安全<br>40-60% → 中等，需 CPET<br>&lt; 40% → 高風險</td></tr>
+</table>
+
+<h4>本病人風險評估（需更多資料）</h4>
+<table>
+<tr><th>指標</th><th>本病人</th><th>判讀</th></tr>
+<tr><td>FEV1 78% predicted</td><td>夠（&gt; 60%）</td><td>邊界 OK</td></tr>
+<tr><td>DLCO 65% predicted</td><td>邊界</td><td>需算 ppoDLCO</td></tr>
+<tr><td>Peak VO₂ 18</td><td>15-20 moderate range</td><td>可手術但需 prehab 強化</td></tr>
+<tr><td>ppoFEV1（lobectomy）</td><td>78% × (1 − 4/19) ≈ 62%</td><td>安全</td></tr>
+<tr><td>ppoDLCO（lobectomy）</td><td>65% × (1 − 4/19) ≈ 51%</td><td>邊界（40-60% mid-range）</td></tr>
+<tr><td>整體</td><td colspan="2"><strong>Moderate risk for lobectomy</strong>，可手術但 prehab + 嚴密術後照顧</td></tr>
+</table>
+
+<h4>替代評估指標（CPET 不可行時）</h4>
+<table>
+<tr><th>檢查</th><th>Cutoff</th></tr>
+<tr><td>6MWT</td><td>&gt; 400 m 較安全；&lt; 300 m 高風險</td></tr>
+<tr><td>Stair climbing</td><td>能爬 22 m 高度（≈ 5 層樓） → 較安全；&lt; 12 m 高風險</td></tr>
+<tr><td>Shuttle walk test</td><td>&gt; 400 m 等同 Peak VO₂ &gt; 15</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人手術可行性</strong>：Peak VO₂ 18（moderate）+ ppoFEV1 估算 62%（安全） + ppoDLCO 估算 51%（邊界）→ <strong>可進行 lobectomy 但屬中等風險</strong>。建議 (1) 強化 prehab 4-6 週 (2) 術後 ICU 觀察 (3) 主動 chest care。注意：腫瘤 6 cm + 區域淋巴轉移 → 切除範圍可能不只 1 lobe。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>三大評估指標：<strong>FEV1/DLCO → ppo 計算 → Peak VO₂</strong></li>
+<li>Peak VO₂ &gt; 20 安全、10-15 高風險、&lt; 10 prohibitive</li>
+<li>ppoFEV1/ppoDLCO &gt; 60% 安全、&lt; 40% 高風險</li>
+<li>BTS 2010 / ACCP 2013 為標準 guideline</li>
+<li>替代指標：6MWT、stair climbing、shuttle walk</li>
+</ul>`,
+      },
+      {
+        q: '術前復健科可做哪些介入幫助病人有更好預後？需要多久？',
+        keywords: [
+          'Aerobic training',
+          'Resistance training',
+          'IMT 30% PImax',
+          'Smoking cessation',
+          'Nutritional optimization',
+          'Education',
+          'Mental preparation',
+          'Incentive spirometer',
+          'ACBT teaching',
+          '4-6 weeks duration',
+        ],
+        points: [
+          '時程：理想 4-6 週；最少 2 週 prehab',
+          '有氧：cycle / 走路、RPE 11-13、20-30 min、3-5 次/週；可 interval 訓練',
+          '阻力：低-中強度 40-60% 1RM、軀幹、上下肢、避 Valsalva、2 次/週',
+          'IMT：30% PImax 起、漸進至 50% PImax；每日 30 次 × 2 set；證據力強（降術後 PPC 50%）',
+          'Chest care 衛教：incentive spirometer 每小時 10 次、ACBT、有效咳嗽、姿位引流',
+          '營養優化：蛋白質 1.2-1.5 g/kg、足夠熱量；篩 sarcopenia',
+          '戒菸（本病人無菸但需確認二手菸）',
+          '心理：handheld 焦慮、安撫、家屬參與',
+          '術後路徑教育（ERAS）：早期下床、早期 chest care、疼痛管理',
+        ],
+        a: `<h4>肺癌術前 Prehab 處方</h4>
+<table>
+<tr><th>類型</th><th>處方</th><th>證據</th></tr>
+<tr><td>有氧</td><td>Cycle / 走路；RPE 11-13；20-30 min；3-5 次/週；可加 interval（1:1 work-rest）</td><td>降低 PPC、改善 VO₂</td></tr>
+<tr><td>阻力</td><td>40-60% 1RM、8-15 reps、2 set；2 次/週；軀幹 + 四肢；避 Valsalva</td><td>維持肌肉量、改善 functional capacity</td></tr>
+<tr><td><strong>IMT</strong></td><td>30% PImax → 50% PImax；每日 30 次 × 2 set</td><td><strong>證據強，降低 PPC 約 50%</strong></td></tr>
+<tr><td>柔軟度</td><td>胸廓擴展、肩關節 ROM；每日</td><td>術後 ROM 維持</td></tr>
+<tr><td>Chest care 衛教</td><td>Incentive spirometer 每小時 10 次（醒著時）<br>ACBT 練習<br>有效咳嗽 / huffing</td><td>術後立即可用</td></tr>
+</table>
+
+<h4>非運動介入</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>戒菸</td><td>本病人無吸菸；確認家庭暴露二手菸</td></tr>
+<tr><td>營養</td><td>蛋白質 1.2-1.5 g/kg/day、足夠熱量；篩 sarcopenia（SARC-F 量表）；BMI 過低或過高都需介入</td></tr>
+<tr><td>口腔衛生</td><td>降低術後肺炎風險（chlorhexidine 漱口）</td></tr>
+<tr><td>心理</td><td>確認焦慮 / 憂鬱（PHQ-9、GAD-7）；放鬆訓練</td></tr>
+<tr><td>家屬訓練</td><td>術後 chest care 協助、CPR、緊急狀況</td></tr>
+<tr><td>ERAS 路徑教育</td><td>術後早期下床、早 chest care、疼痛管理、營養補充</td></tr>
+</table>
+
+<h4>Prehab 時程建議</h4>
+<table>
+<tr><th>情境</th><th>時程</th></tr>
+<tr><td>理想 prehab</td><td>4-6 週</td></tr>
+<tr><td>最少有效</td><td>2 週（IMT + chest care 為主）</td></tr>
+<tr><td>急迫手術</td><td>1 週也可做 IMT + 衛教（仍有部分益處）</td></tr>
+</table>
+
+<h4>IMT 為何特別重要</h4>
+<ul>
+<li>強化 inspiratory muscle → 改善 PImax</li>
+<li>降低呼吸做工 → 改善 dyspnea</li>
+<li>改善 cough effectiveness → 降低 atelectasis 與肺炎</li>
+<li>Meta-analysis：術前 IMT 降低 PPC 約 50%、住院天數減少 1-2 天</li>
+<li>Threshold IMT 設備便宜、易居家使用</li>
+</ul>
+
+<h4>Postoperative Pulmonary Complications (PPC) 預防</h4>
+<table>
+<tr><th>併發症</th><th>Prehab 角色</th></tr>
+<tr><td>Atelectasis</td><td>IMT、chest care、incentive spirometer</td></tr>
+<tr><td>Pneumonia</td><td>口腔衛生、IMT、有效咳嗽</td></tr>
+<tr><td>Prolonged ventilation</td><td>IMT 強化呼吸肌、early extubation</td></tr>
+<tr><td>Air leak / Pneumothorax</td><td>避免 Valsalva、controlled breathing</td></tr>
+<tr><td>DVT / PE</td><td>Early mobilization、aerobic training</td></tr>
+<tr><td>ICU-AW</td><td>Pre-op functional capacity 維持</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 Prehab 重點</strong>：(1) Peak VO₂ 18 為 moderate risk → 4-6 週 prehab 應可改善至 20+ (2) BR 18% 顯示 ventilatory limit → IMT 是核心介入 (3) 病人從未運動 → 漸進式、避免過度 (4) 教導 chest care 為術後立即所需 (5) ERAS 路徑教育降低焦慮、加速恢復。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Prehab 三大支柱：<strong>有氧 + 阻力 + IMT</strong>，加上 chest care 衛教</li>
+<li>IMT 證據最強：降 PPC ~50%</li>
+<li>理想時程 4-6 週、最少 2 週</li>
+<li>非運動介入同樣重要：營養、口腔衛生、心理、家屬訓練</li>
+<li>本病人未運動者，<strong>漸進式</strong>是關鍵</li>
+</ul>`,
+      },
+      {
+        q: '術後轉至 ICU，遇到困難拔管問題。請安排復健科可介入的胸腔復健項目。',
+        keywords: [
+          'Difficult weaning',
+          'IMT during ventilation',
+          'Diaphragm dysfunction',
+          'Chest physiotherapy',
+          'Postural drainage',
+          'Suction',
+          'PEP / Acapella',
+          'Manual chest percussion',
+          'Spontaneous breathing trial',
+          'Weaning protocol',
+        ],
+        points: [
+          '困難拔管定義：3 次 SBT 失敗或拔管後 7 天內需重新插管',
+          '評估：呼吸肌（PImax、diaphragm US）、神經（CIP/CIM screening）、痰量、心肺穩定度',
+          'IMT during MV：threshold 接 ETT 端、依 PImax 設定（10-30% PImax 起、漸進）；證據顯示可加速 weaning',
+          'Chest care：姿位引流（避 head-down 嚴重病人）、percussion、vibration、suction',
+          'PEP devices：Acapella、PEP mask（術後肺擴張）',
+          'NMES 維持四肢肌肉量（防 ICU-AW）',
+          'Early mobilization：床上 ROM、坐床邊、站立、走（依 Hodgson 紅綠燈）',
+          'Weaning trial：T-piece SBT、PSV trial、CPAP support',
+          '與呼吸治療師、ICU 團隊共同合作',
+        ],
+        a: `<h4>困難拔管的鑑別與評估</h4>
+<table>
+<tr><th>原因</th><th>評估</th></tr>
+<tr><td>呼吸肌無力</td><td>PImax、diaphragm ultrasound（excursion、thickening fraction）</td></tr>
+<tr><td>ICU-AW</td><td>MRC sum score &lt; 48</td></tr>
+<tr><td>分泌物多</td><td>痰量、痰液性狀</td></tr>
+<tr><td>意識</td><td>RASS、cough strength</td></tr>
+<tr><td>循環</td><td>HF decompensation 影響呼吸</td></tr>
+<tr><td>感染</td><td>VAP、surgical site infection</td></tr>
+<tr><td>神經</td><td>Phrenic nerve injury（術中傷害）</td></tr>
+<tr><td>過敏 / 痰塞</td><td>Bronchospasm、mucus plug</td></tr>
+</table>
+
+<h4>復健科可介入項目</h4>
+<table>
+<tr><th>類別</th><th>具體項目</th></tr>
+<tr><td><strong>呼吸肌訓練</strong></td><td>IMT during MV：threshold device 接 ETT 端、依 PImax 設定 10-30%；每日 5-30 次反覆；證據可加速 weaning</td></tr>
+<tr><td><strong>Chest physiotherapy</strong></td><td>姿位引流（按 lobe 引流方向）、manual percussion / vibration、effective coughing assist、suction（必要時）</td></tr>
+<tr><td><strong>肺擴張技術</strong></td><td>Incentive spirometer（拔管後）、PEP（Acapella、PEP mask）、CPAP / NIV bridge</td></tr>
+<tr><td><strong>四肢復健</strong></td><td>NMES、PROM/AROM、in-bed cycling</td></tr>
+<tr><td><strong>Early mobilization</strong></td><td>依 Hodgson 紅綠燈：坐 → 站 → 走</td></tr>
+<tr><td><strong>姿位</strong></td><td>頭抬高 30-45°、側臥引流、prone（嚴重 ARDS）</td></tr>
+<tr><td><strong>疼痛管理協作</strong></td><td>Adequate analgesia 是 chest care 配合度的前提</td></tr>
+</table>
+
+<h4>姿位引流（依 lobe）</h4>
+<table>
+<tr><th>Lobe</th><th>姿位</th></tr>
+<tr><td>RUL apical</td><td>坐姿前傾</td></tr>
+<tr><td>RUL anterior</td><td>仰臥</td></tr>
+<tr><td>RUL posterior</td><td>俯臥</td></tr>
+<tr><td>RML</td><td>左側臥、足端 14° 抬高</td></tr>
+<tr><td>RLL anterior basal</td><td>仰臥、足端抬高</td></tr>
+<tr><td>RLL lateral basal</td><td>左側臥、足端抬高</td></tr>
+<tr><td>RLL posterior basal</td><td>俯臥、足端抬高</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>姿位引流注意</strong>：HF / 升高 ICP / 心肌缺血 / 無法耐受姿位的病人<strong>避免 head-down</strong>。引流前可先吸入支氣管擴張劑，搭配 percussion / vibration 效果更佳。每姿位 3-15 分鐘，總時間 30-60 分鐘。
+</p>
+
+<h4>Weaning Protocol 步驟</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>1. Readiness screen</td><td>感染控制、hemodynamics 穩定、神智清楚、PaO₂/FiO₂ &gt; 200、PEEP ≤ 8</td></tr>
+<tr><td>2. SBT</td><td>T-piece 或 PSV 5-7 cmH₂O × 30-120 min</td></tr>
+<tr><td>3. SBT 評估</td><td>RR &lt; 35、HR/BP 穩定、SpO₂ &gt; 90%、無 distress</td></tr>
+<tr><td>4. Extubation criteria</td><td>RSBI &lt; 105、cough strong、minimal secretion、cuff leak +</td></tr>
+<tr><td>5. 拔管後</td><td>HFNC 或 NIV bridge、密切監測 2-4 hr</td></tr>
+</table>
+
+<h4>Diaphragm Ultrasound</h4>
+<table>
+<tr><th>指標</th><th>正常</th><th>異常</th></tr>
+<tr><td>Diaphragm excursion（quiet breathing）</td><td>1-2 cm</td><td>&lt; 1 cm 為 dysfunction</td></tr>
+<tr><td>Thickening fraction</td><td>&gt; 20%</td><td>&lt; 20% 為 dysfunction</td></tr>
+<tr><td>Thickness（end-expiration）</td><td>&gt; 2 mm</td><td>&lt; 2 mm 為 atrophy</td></tr>
+</table>
+
+<h4>本病人特殊考量</h4>
+<table>
+<tr><th>項目</th><th>影響</th></tr>
+<tr><td>Lobectomy 術後</td><td>剩餘肺需 hyperinflation 代償，需 PEP / IS 重訓</td></tr>
+<tr><td>BR 術前 18%</td><td>術後更低 → ventilatory limitation</td></tr>
+<tr><td>VD/VT 術前 0.30 不降</td><td>術後 V/Q mismatch 加劇 → CO₂ retention 風險</td></tr>
+<tr><td>胸壁切口</td><td>疼痛影響 chest expansion → 充分鎮痛</td></tr>
+<tr><td>從未運動</td><td>呼吸肌儲備差 → IMT 重要</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>困難拔管的鑑別：<strong>呼吸肌、ICU-AW、痰、意識、循環、感染、神經</strong></li>
+<li>復健介入：<strong>IMT during MV、chest physiotherapy、肺擴張、early mobilization、NMES</strong></li>
+<li>姿位引流依 lobe；HF / 升高 ICP 不可 head-down</li>
+<li>Diaphragm US 量化呼吸肌功能（excursion、thickening fraction）</li>
+<li>本病人 lobectomy 後 BR 更低 → IMT + PEP 為核心</li>
+</ul>`,
+      },
+      {
+        q: '拔管後第 5 天轉普通病房，請安排住院期間運動處方。注意事項？',
+        keywords: [
+          'Phase I pulmonary rehab',
+          'Incentive spirometer hourly',
+          'ACBT',
+          'Shoulder ROM (post-thoracotomy)',
+          'Early ambulation',
+          'IMT continuation',
+          'Pain management',
+          'Chest tube precaution',
+          'Air leak monitoring',
+          'Adhesive capsulitis prevention',
+        ],
+        points: [
+          'Incentive spirometer 每小時 10 次（醒著時）',
+          'ACBT 每日 3-4 次：breathing control → thoracic expansion × 3-4 → huffing',
+          '肩關節 ROM 訓練：thoracotomy/VATS 病人易 frozen shoulder，需積極預防',
+          '胸壁伸展、軀幹旋轉（疼痛允許下）',
+          '床上 ROM、坐床邊、站立、走廊行走（漸進）',
+          'IMT 持續：依 PImax 重新設定強度',
+          '阻力訓練：暫緩需要胸肌出力的動作（術後 4-6 週）',
+          'Chest tube 在位時：移動需小心、避免拉扯、注意 air leak',
+          '疼痛管理協作：充分鎮痛是 chest care 配合度的前提',
+          '監測：BP、HR、SpO₂、痰量、症狀',
+        ],
+        a: `<h4>Phase I 住院期復健處方</h4>
+<table>
+<tr><th>類別</th><th>處方</th><th>頻率</th></tr>
+<tr><td><strong>肺擴張</strong></td><td>Incentive spirometer 10 次 / 小時（醒著時）</td><td>每小時</td></tr>
+<tr><td><strong>排痰</strong></td><td>ACBT、有效咳嗽、姿位引流（依需要）</td><td>3-4 次/日</td></tr>
+<tr><td><strong>呼吸肌</strong></td><td>IMT 30% PImax 起；30 次 × 2 set</td><td>每日</td></tr>
+<tr><td><strong>肩關節 ROM</strong></td><td>術側肩 active assisted ROM、避免 frozen shoulder</td><td>每日 2-3 次</td></tr>
+<tr><td><strong>軀幹 / 胸壁</strong></td><td>胸廓擴張 stretch、軀幹旋轉（疼痛允許）</td><td>每日</td></tr>
+<tr><td><strong>有氧</strong></td><td>走廊行走 5-10 min × 2-3 次/日 → 漸進至 20-30 min；RPE 11-13</td><td>每日</td></tr>
+<tr><td><strong>阻力</strong></td><td>低強度下肢 + 軀幹；上肢避免胸肌出力</td><td>2-3 次/週</td></tr>
+</table>
+
+<h4>Thoracotomy / VATS 後特殊注意</h4>
+<table>
+<tr><th>項目</th><th>注意</th></tr>
+<tr><td>Frozen shoulder 預防</td><td>術側肩關節易 adhesive capsulitis；早期 ROM、疼痛管理；目標 full ROM 6-8 週內</td></tr>
+<tr><td>Chest tube</td><td>在位時移動需小心；prevent dislodgement、避免拉扯；胸管固定後可下床、走動</td></tr>
+<tr><td>Air leak</td><td>持續性 air leak 是術後常見；運動可加速漏氣或延遲？實際多無顯著差異，仍正常 mobilize</td></tr>
+<tr><td>Pain</td><td>Intercostal nerve injury 常見；疼痛影響 chest expansion；epidural / PCA 充分鎮痛</td></tr>
+<tr><td>Cough</td><td>使用 splinted cough（手 / 枕頭壓胸壁）減痛、提升效率</td></tr>
+<tr><td>Posture</td><td>易因疼痛 protective posture（術側肩高、軀幹歪）；需主動矯正</td></tr>
+</table>
+
+<h4>VATS vs Thoracotomy 差異</h4>
+<table>
+<tr><th>項目</th><th>VATS</th><th>Open thoracotomy</th></tr>
+<tr><td>切口大小</td><td>幾個小切口</td><td>大切口（15-25 cm）</td></tr>
+<tr><td>恢復</td><td>較快</td><td>較慢</td></tr>
+<tr><td>疼痛</td><td>較輕</td><td>較重</td></tr>
+<tr><td>住院</td><td>3-5 天</td><td>5-10 天</td></tr>
+<tr><td>復健重點</td><td>較輕，但仍需肺擴張</td><td>更積極肩 ROM + 軀幹</td></tr>
+</table>
+
+<h4>監測指標</h4>
+<table>
+<tr><th>項目</th><th>頻率</th><th>異常標準</th></tr>
+<tr><td>BP / HR</td><td>運動前後</td><td>—</td></tr>
+<tr><td>SpO₂</td><td>運動中</td><td>&lt; 90% 加氧、&lt; 88% 停止</td></tr>
+<tr><td>RPE / Borg dyspnea</td><td>每 stage</td><td>&gt; 13 暫停</td></tr>
+<tr><td>Chest tube drainage</td><td>每班</td><td>急升 / 鮮血需通報</td></tr>
+<tr><td>Air leak</td><td>運動前後</td><td>新發 / 加劇</td></tr>
+<tr><td>痰量 / 性狀</td><td>每班</td><td>膿性、量多</td></tr>
+<tr><td>肩 ROM</td><td>每日</td><td>進步 stagnation 通報</td></tr>
+</table>
+
+<h4>進階里程碑</h4>
+<table>
+<tr><th>POD</th><th>目標</th></tr>
+<tr><td>POD 1</td><td>床上 ROM、坐床邊、IS 開始</td></tr>
+<tr><td>POD 2-3</td><td>站立、床邊踏步、IS 持續</td></tr>
+<tr><td>POD 3-5</td><td>走廊行走 5-10 m → 50 m</td></tr>
+<tr><td>POD 5-7</td><td>走廊 100-200 m、上下樓梯練習、肩 ROM 進階</td></tr>
+<tr><td>出院前</td><td>6MWT 評估、ADL 獨立、衛教完整、居家計畫</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人術後重點</strong>：(1) 困難拔管 → 呼吸肌可能弱，IMT 持續為核心 (2) 從未運動 → 漸進為主，避免過度 (3) 切除一葉 → BR 更低，運動需保守 (4) 肩 ROM 易僵 → 早期介入 (5) 充分鎮痛是 chest care 配合度的前提 (6) ERAS 路徑：早下床、早 chest care、早出院。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Phase I 三大柱：<strong>肺擴張（IS）+ 排痰（ACBT）+ 早期 mobilization</strong></li>
+<li>Thoracotomy 後肩 ROM 必須早期介入（防 frozen shoulder）</li>
+<li>Splinted cough 是減痛技巧</li>
+<li>Chest tube 在位時可正常 mobilize，但避免拉扯</li>
+<li>充分鎮痛 = chest care 配合度的前提</li>
+</ul>`,
+      },
+      {
+        q: '出院後安排 phase II 門診肺癌復健，請開立完整 FITT-VP 處方。化學治療期間如何調整？',
+        keywords: [
+          'Pulmonary rehab phase II',
+          'AT-based intensity',
+          'Re-CPET 4-6 weeks',
+          'Resistance after 6 weeks',
+          'Chemotherapy adjustment',
+          'Fatigue management',
+          'Cardiotoxicity (anthracycline)',
+          'Neutropenia',
+          'Anemia',
+          'Bone metastasis precaution',
+        ],
+        points: [
+          'Frequency 2-3 次/週監督式 × 8-12 次（健保肺復健 2-3 個月為一週期）',
+          'Intensity AT-based（術後 CPET 重做、依新 AT 調整）；RPE 11-13；漸進至 13-14',
+          'Time 暖身 10 min + 主訓練 20-30 min（漸進至 40-60 min）+ cool-down 10 min',
+          'Type 有氧 + 阻力（術後 6 週開始重訓）+ IMT + 柔軟度',
+          '化療期：依 fatigue、CBC 調整；強度 RPE 9-13、time 縮短',
+          '注意：anthracycline 心毒性、neutropenia 避免感染、anemia 影響運動耐受',
+          'Bone metastasis：避免高衝擊、避免特定姿位（如脊椎轉移避免重訓）',
+          '心理：cancer rehab 需整合 psychosocial support',
+        ],
+        a: `<h4>Phase II 門診肺癌復健處方</h4>
+<table>
+<tr><th>FITT-VP</th><th>處方</th></tr>
+<tr><td><strong>Frequency</strong></td><td>監督式 2-3 次/週 × 8-12 次（健保 phase II 肺復健 2-3 個月）</td></tr>
+<tr><td><strong>Intensity</strong></td><td>AT-based（術後 CPET 重做後依新 AT 調整）；RPE 11-13 → 13-14；HR-based：50-70% HRR</td></tr>
+<tr><td><strong>Time</strong></td><td>暖身 10 min + 主訓練 20-30 min（漸進至 40-60）+ cool-down 10 min</td></tr>
+<tr><td><strong>Type</strong></td><td>有氧 + 阻力（術後 6 週開始）+ IMT + 柔軟度</td></tr>
+<tr><td><strong>Volume</strong></td><td>目標 150 min/週中強度 + 阻力 2 次/週</td></tr>
+<tr><td><strong>Progression</strong></td><td>每 4 週 reassess；3 個月後 re-CPET</td></tr>
+</table>
+
+<h4>術後何時開始重訓</h4>
+<table>
+<tr><th>類型</th><th>時程</th></tr>
+<tr><td>有氧（走路、低 cycle）</td><td>POD 1-2 即開始（漸進）</td></tr>
+<tr><td>軀幹 stretch / ROM</td><td>POD 1 開始</td></tr>
+<tr><td>下肢阻力</td><td>POD 7-14 開始</td></tr>
+<tr><td>上肢阻力（避胸肌）</td><td>POD 14-28 開始</td></tr>
+<tr><td>胸肌 / 大重量</td><td>術後 6 週後（傷口完整癒合）</td></tr>
+</table>
+
+<h4>化學治療期間調整</h4>
+<table>
+<tr><th>副作用</th><th>運動處方調整</th></tr>
+<tr><td><strong>Fatigue（最常見）</strong></td><td>降強度（RPE 9-11）、縮短時間、增加休息；運動本身可<strong>減少</strong> cancer-related fatigue（CRF），不可完全停</td></tr>
+<tr><td>Neutropenia（ANC &lt; 500）</td><td>避免人群、戴口罩、避免 swimming pool；可繼續居家運動</td></tr>
+<tr><td>Thrombocytopenia（platelet &lt; 50K）</td><td>避免高衝擊、跌倒風險、避免 contact sports</td></tr>
+<tr><td>Anemia（Hb &lt; 8）</td><td>強度大幅降低、可能需先 transfusion</td></tr>
+<tr><td>Anthracycline 心毒性</td><td>定期 echo（LVEF 監測）；運動中 HR / BP / 症狀密切監測</td></tr>
+<tr><td>Peripheral neuropathy（platinum）</td><td>平衡訓練、本體感覺；防跌倒</td></tr>
+<tr><td>Mucositis</td><td>飲食調整、含 NaHCO₃ 漱口</td></tr>
+<tr><td>Nausea / vomiting</td><td>運動時段避開化療後 24-48 hr 高峰</td></tr>
+</table>
+
+<h4>Bone metastasis 注意</h4>
+<table>
+<tr><th>位置</th><th>限制</th></tr>
+<tr><td>脊椎</td><td>避免大重量、避免軀幹旋轉、避免高衝擊；考慮 brace</td></tr>
+<tr><td>長骨（femur、humerus）</td><td>避免高衝擊、避免該肢承重；fracture risk &gt; 50% 需固定</td></tr>
+<tr><td>骨盆</td><td>避免承重活動、輪椅 / 助行器</td></tr>
+<tr><td>多發性</td><td>整體保守、低衝擊、aquatic therapy 可考慮</td></tr>
+</table>
+
+<h4>Cancer Rehab 整體框架（5 個 component）</h4>
+<table>
+<tr><th>Component</th><th>內容</th></tr>
+<tr><td>運動</td><td>有氧 + 阻力 + 柔軟度 + 平衡</td></tr>
+<tr><td>營養</td><td>蛋白質 1.2-1.5 g/kg、抗發炎飲食、避免 sarcopenia</td></tr>
+<tr><td>心理</td><td>篩 distress、anxiety、depression（PHQ-9、GAD-7）；CBT、mindfulness</td></tr>
+<tr><td>症狀管理</td><td>Fatigue、pain、dyspnea、neuropathy</td></tr>
+<tr><td>Survivorship</td><td>長期 follow-up、recurrence surveillance、復發預防 lifestyle</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人重點</strong>：(1) 術後 4-6 週重做 CPET 評估新基準（切除後 ppoFEV1 才反映真實 functional capacity） (2) 預期化療階段會影響運動耐受 → 維持比進步重要 (3) 監測 cardiac toxicity（anthracycline）、bone health (4) 整合 psychosocial support（新診斷癌症焦慮） (5) 長期 survivorship 追蹤 5-10 年。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Phase II 處方：<strong>有氧 + 阻力 + IMT + 柔軟度</strong></li>
+<li>術後阻力時程：下肢早、上肢中、胸肌晚（6 週後）</li>
+<li>化療期：強度降、時間縮短、密切監測 CBC</li>
+<li>運動本身可減少 CRF，<strong>不可完全停止</strong></li>
+<li>Bone metastasis 改變處方策略，需影像評估</li>
+<li>Cancer rehab = 運動 + 營養 + 心理 + 症狀 + survivorship</li>
+</ul>`,
+      },
+      {
+        q: '請以 ABCDE 模式進行病人 chest care 衛教，並說明居家排痰方法。',
+        keywords: [
+          'A - ACBT',
+          'B - Breathing control',
+          'C - Coughing / Huff',
+          'D - Drainage / Devices',
+          'E - Exercise',
+          'Pursed-lip breathing',
+          'Diaphragmatic breathing',
+          'Postural drainage home',
+          'Acapella / PEP',
+          'Hydration',
+        ],
+        points: [
+          'A = Active Cycle of Breathing Technique（ACBT）：BC → TEE × 3-4 → FET（huff）',
+          'B = Breathing Control（diaphragmatic、pursed-lip）：放鬆呼吸、降 work of breathing',
+          'C = Coughing / Huffing：Huff 比 cough 更有效（避免 airway collapse）',
+          'D = Drainage / Devices：姿位引流（簡化居家版）、Acapella、PEP mask、incentive spirometer',
+          'E = Exercise：運動本身為最有效排痰',
+          '充足水分：稀釋痰液、利於咳出',
+          '避免 expectorant 過量（增加痰量）',
+          '居家排痰時機：晨起、睡前、運動前後',
+          '加溫加濕：吸入濕熱蒸氣、冬天注意',
+        ],
+        a: `<h4>ABCDE Chest Care 衛教</h4>
+<table>
+<tr><th>字母</th><th>內容</th><th>具體做法</th></tr>
+<tr><td><strong>A - ACBT</strong></td><td>Active Cycle of Breathing Technique</td><td>(1) Breathing control 放鬆呼吸 5-10 sec<br>(2) Thoracic expansion exercise（深呼吸 3-4 次）<br>(3) Forced expiration technique（huff 1-2 次）<br>循環 3-4 cycle，總時間 10-15 分</td></tr>
+<tr><td><strong>B - Breathing</strong></td><td>呼吸技巧</td><td>(1) Diaphragmatic breathing：放鬆肩、肚子鼓起<br>(2) Pursed-lip：吐氣噘嘴、ratio 1:2 入吐 → 防止 airway collapse、降 dyspnea</td></tr>
+<tr><td><strong>C - Coughing</strong></td><td>有效咳嗽 / Huffing</td><td>Huff：聲門開、強力 forced expiration「哈」聲<br>Cough：用於將大氣管痰咳出<br>Splinted cough（術後）：手 / 枕頭壓胸壁</td></tr>
+<tr><td><strong>D - Drainage / Devices</strong></td><td>姿位 + 機械輔助</td><td>(1) 姿位引流：依痰液位置選姿位<br>(2) Acapella / Flutter（PEP）：手持裝置、震盪 + 阻力<br>(3) Incentive spirometer：肺擴張<br>(4) PEP mask</td></tr>
+<tr><td><strong>E - Exercise</strong></td><td>運動本身就是最佳排痰</td><td>有氧 20-30 min/day；運動誘發深呼吸 + 增加 mucus mobilization</td></tr>
+</table>
+
+<h4>常見排痰技巧細部</h4>
+<table>
+<tr><th>技巧</th><th>步驟</th><th>適合</th></tr>
+<tr><td>Huffing（FET）</td><td>深吸氣 → 開喉嚨「哈～」forced expiration</td><td>所有人，特別 COPD（避免 airway collapse）</td></tr>
+<tr><td>Pursed-lip</td><td>鼻吸 1-2 sec → 嘴噘 4 sec 緩慢吐氣</td><td>COPD dyspnea</td></tr>
+<tr><td>Diaphragmatic</td><td>仰臥、一手胸一手腹、吸氣腹部鼓起</td><td>所有人，放鬆呼吸</td></tr>
+<tr><td>Autogenic drainage</td><td>不同肺容積的呼吸練習，3 phase</td><td>需訓練、CF、慢性</td></tr>
+<tr><td>Splinted cough</td><td>手 / 枕頭壓住切口處</td><td>術後</td></tr>
+<tr><td>Acapella / Flutter</td><td>口含設備呼氣、產生震盪 + PEP</td><td>痰量多、慢性肺病</td></tr>
+</table>
+
+<h4>居家姿位引流（簡化版）</h4>
+<table>
+<tr><th>痰液位置</th><th>姿位</th><th>時間</th></tr>
+<tr><td>上肺葉</td><td>坐姿前傾 / 仰臥</td><td>3-5 min</td></tr>
+<tr><td>中葉 / lingula</td><td>側臥（健側朝下）、足端 14° 抬高</td><td>5-10 min</td></tr>
+<tr><td>下肺葉</td><td>俯臥或側臥、足端抬高</td><td>5-10 min</td></tr>
+<tr><td>每姿位後</td><td>ACBT 排痰</td><td>—</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>家屬訓練重點</strong>：(1) 觀察痰液量 / 顏色變化 → 黃綠 / 量多 / 帶血需通報 (2) Percussion / vibration 技巧（手杯狀） (3) 姿位協助 (4) 緊急狀況處置（嚴重喘、cyanosis、SpO₂ &lt; 90%） (5) 認識 PPC 早期徵兆（fever、productive cough、SOB↑）。
+</p>
+
+<h4>輔助 Lifestyle 衛教</h4>
+<table>
+<tr><th>項目</th><th>建議</th></tr>
+<tr><td>水分</td><td>2-2.5 L/day（無 HF / renal failure 限制下）</td></tr>
+<tr><td>濕氣 / 加濕</td><td>濕熱蒸氣吸入；冬天保暖</td></tr>
+<tr><td>避免刺激</td><td>菸、二手菸、油煙、空污；外出口罩</td></tr>
+<tr><td>疫苗</td><td>流感（每年）、肺炎鏈球菌</td></tr>
+<tr><td>感染預防</td><td>勤洗手、避免人群</td></tr>
+<tr><td>口腔衛生</td><td>每日刷牙 + 漱口（降低吸入性肺炎）</td></tr>
+<tr><td>姿勢</td><td>避免長時間平躺、頭抬高 30°</td></tr>
+<tr><td>飲食</td><td>少量多餐、避免太飽（橫膈活動）</td></tr>
+</table>
+
+<h4>排痰技巧時機</h4>
+<table>
+<tr><th>時機</th><th>內容</th></tr>
+<tr><td>晨起</td><td>夜間累積痰液最多</td></tr>
+<tr><td>飯前 30 min</td><td>避免嘔吐、提升食慾</td></tr>
+<tr><td>睡前 1 小時</td><td>避免夜間刺激</td></tr>
+<tr><td>運動前後</td><td>運動誘發痰液後排出</td></tr>
+<tr><td>急性發作</td><td>每 2-4 hr</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>ABCDE 是 chest care 完整衛教架構</li>
+<li>Huff &gt; Cough（COPD 特別）</li>
+<li>Pursed-lip 對 COPD dyspnea 有效</li>
+<li>運動本身是最佳排痰方式</li>
+<li>居家姿位引流時間勿過久（每姿位 5-10 min）</li>
+<li>家屬訓練 + 警覺 PPC 早期徵兆</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
+
 
 
 
