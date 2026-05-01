@@ -55236,9 +55236,733 @@ ECG：Sinus tachycardia around 110+ bpm；BP 120-130/75-85。
       },
     ],
   },
+  {
+    id: 'pulmonary_003',
+    domain: 'pulmonary',
+    title: 'Stable CAD 預防性 CPET 與運動處方',
+    context: `66 歲女性，過去病史：高血壓、高血脂、糖尿病前期。
+平時無身體不適症狀，未服用任何藥物。
+極度缺乏運動，躺、坐式生活。
+
+家族史：父親 44 歲時發生心肌梗塞。
+
+今年自費接受冠狀動脈攝影（Angiography），發現有冠狀動脈狹窄。
+心內醫師認為不需侵入性處置，於是把病人轉到復健科，希望安排進一步心肺功能評估與介入。
+
+考官：請依序回答下列問題。`,
+    questions: [
+      {
+        q: '哪些情況是心肺功能檢查（CPET）的適應症？本病人為何適合？',
+        keywords: [
+          'Unexplained dyspnea',
+          'HF prognosis',
+          'Heart transplant evaluation',
+          'Exercise prescription',
+          'Pre-operative risk',
+          'Pulmonary HTN',
+          'CAD risk stratification',
+          'Pulmonary rehab',
+          'Exercise-induced bronchospasm',
+          'Disability evaluation',
+        ],
+        points: [
+          '不明原因 dyspnea 或運動耐受度差的鑑別（cardiac vs pulmonary vs muscle vs deconditioning）',
+          'HF 病人預後評估與 transplant 評估（VO₂ < 14 或 < 12 with BB）',
+          '訂定運動處方依據（依 AT、Peak VO₂、VT2）',
+          'CAD 病人 risk stratification（AACVPR low/mod/high）',
+          '術前 risk 評估（胸腹大手術 Peak VO₂ < 15 為高風險）',
+          'Pulmonary HTN 評估與追蹤',
+          'COPD / ILD pulmonary rehab 處方依據與追蹤',
+          '運動誘發疾病：EIB、運動性 hypoxemia、運動心肌缺血',
+          'Disability / fitness for work / fitness for surgery 評估',
+          '本病人為 stable CAD without symptom，需 risk stratification + 處方',
+        ],
+        a: `<h4>CPET 主要適應症</h4>
+<table>
+<tr><th>類別</th><th>具體情境</th></tr>
+<tr><td>診斷</td><td>不明 dyspnea / 運動耐受度差的<strong>病因鑑別</strong>（心 vs 肺 vs 肌肉 vs deconditioning）</td></tr>
+<tr><td>HF 評估</td><td>(1) NYHA 分級客觀化 (2) 預後預測（VE/VCO₂ slope、Peak VO₂）(3) <strong>心臟移植評估</strong>（VO₂ &lt; 14 或 &lt; 12 with BB）</td></tr>
+<tr><td>運動處方</td><td>依 AT、VT2、Peak VO₂ 訂定 individual 強度</td></tr>
+<tr><td>術前評估</td><td>胸腹大手術；Peak VO₂ &lt; 15 為高風險、AT &lt; 11 為高風險</td></tr>
+<tr><td>CAD</td><td>Risk stratification（AACVPR）、運動誘發 ischemia 評估</td></tr>
+<tr><td>肺病</td><td>COPD、ILD、PHTN、CF 嚴重度與處方</td></tr>
+<tr><td>運動性疾病</td><td>EIB（exercise-induced bronchoconstriction）、exercise-induced hypoxemia</td></tr>
+<tr><td>復健追蹤</td><td>介入前 / 後比較進步</td></tr>
+<tr><td>Disability</td><td>勞工失能、軍事、體適能評估</td></tr>
+</table>
+
+<h4>本病人適應症分析</h4>
+<table>
+<tr><th>項目</th><th>本病人</th></tr>
+<tr><td>已知 stable CAD（angio +）</td><td>需 <strong>risk stratification</strong></td></tr>
+<tr><td>HTN、HLD、糖前期</td><td>多重 CV risk factor</td></tr>
+<tr><td>家族史 MI 早發</td><td>遺傳風險</td></tr>
+<tr><td>極度缺乏運動</td><td>需<strong>運動處方依據</strong></td></tr>
+<tr><td>無症狀</td><td>客觀評估 functional capacity</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 CPET 三大目的</strong>：(1) 確認運動安全性（運動誘發 ischemia / arrhythmia） (2) 訂定 individualized 處方強度（AT-based） (3) 得到 baseline 客觀指標（Peak VO₂、VE/VCO₂、HRR）做未來追蹤。
+</p>
+
+<h4>CPET 與一般 ETT 差異</h4>
+<table>
+<tr><th>項目</th><th>ETT (treadmill stress test)</th><th>CPET</th></tr>
+<tr><td>主要目的</td><td>檢測 ischemia（ST 變化）</td><td>整體運動生理評估</td></tr>
+<tr><td>測量</td><td>EKG、BP、症狀</td><td>+ VO₂、VCO₂、VE、AT、RER、O₂ pulse</td></tr>
+<tr><td>處方依據</td><td>HR-based</td><td>VO₂R、AT、RPE</td></tr>
+<tr><td>適合</td><td>CAD diagnosis</td><td>HF、肺病、處方、術前</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>CPET 適應症五大類：<strong>診斷、HF、處方、術前、追蹤</strong></li>
+<li>Stable CAD without symptom 仍需 CPET 做 <strong>risk stratification + 處方</strong></li>
+<li>本病人多重 risk factor + 久坐 → CPET 是介入第一步</li>
+<li>CPET 比 ETT 多了 gas exchange 資訊，能精準訂處方</li>
+</ul>`,
+      },
+      {
+        q: '冠狀動脈攝影顯示 LAD mid 70% stenosis、其餘血管無顯著狹窄。請說明這條血管的供應區與意義。',
+        keywords: [
+          'LAD (Left Anterior Descending)',
+          'Anterior wall',
+          'Septal branch',
+          'Anteroseptal MI',
+          'Widow maker (LAD proximal)',
+          'V1-V4 leads',
+          'Wraparound LAD',
+          'Diagonal branch',
+          'Significant stenosis ≥ 70%',
+          'FFR / iFR',
+        ],
+        points: [
+          'LAD（Left Anterior Descending）= 左前降支，供應 anterior wall + anteroseptal + apex + 部分 lateral',
+          '對應 EKG lead：V1-V4（septal V1-V2，anterior V3-V4），有 wraparound 時也含 II/III/aVF',
+          'LAD proximal lesion 稱「widow maker」，因供血範圍大、急性閉塞死亡率高',
+          'Mid LAD 70% stenosis = significant（≥ 70% 視為 hemodynamically significant）',
+          '評估功能性意義：FFR < 0.80 或 iFR < 0.89 → 需介入；> 0.80 可保守治療',
+          '本病人 LAD mid 70% 但無症狀、心內醫師決定不介入 → 表示 FFR > 0.80 或臨床判斷可保守治療',
+          'Diagonal branch、septal perforator 為 LAD 主要分支',
+          '處置：optimal medical therapy（aspirin、statin、控制血壓血糖）+ 復健 + lifestyle modification',
+        ],
+        a: `<h4>冠狀動脈解剖與供應區</h4>
+<table>
+<tr><th>動脈</th><th>分支</th><th>供應區</th><th>對應 EKG</th></tr>
+<tr><td><strong>LAD</strong></td><td>Septal、Diagonal</td><td>Anterior wall、anteroseptal、apex、部分 lateral</td><td>V1-V4（V5-V6 if wrap）</td></tr>
+<tr><td>LCx</td><td>OM（obtuse marginal）</td><td>Lateral wall、posterior</td><td>I、aVL、V5-V6</td></tr>
+<tr><td>RCA</td><td>PDA、AM、SA / AV node branch</td><td>Inferior wall、RV、posterior、SA/AV node</td><td>II、III、aVF；V3R-V4R</td></tr>
+<tr><td>Left main</td><td>分 LAD + LCx</td><td>整個 left ventricle</td><td>—</td></tr>
+</table>
+
+<h4>LAD 解剖細部</h4>
+<table>
+<tr><th>位置</th><th>意義</th></tr>
+<tr><td>LAD proximal（D1 之前）</td><td><strong>「Widow maker」</strong>，急性閉塞高死亡率</td></tr>
+<tr><td>LAD mid（D1-D2 之間）</td><td>本病人位置；中等供血範圍</td></tr>
+<tr><td>LAD distal</td><td>影響範圍小</td></tr>
+<tr><td>Wraparound LAD</td><td>繞至 inferior wall，EKG 可呈現 anterior + inferior 變化</td></tr>
+</table>
+
+<h4>狹窄程度與處置</h4>
+<table>
+<tr><th>狹窄</th><th>意義</th><th>處置</th></tr>
+<tr><td>&lt; 50%</td><td>非顯著</td><td>OMT（optimal medical therapy）</td></tr>
+<tr><td>50-70%</td><td>邊界</td><td>需 FFR / iFR 確認</td></tr>
+<tr><td>70-90%</td><td>顯著</td><td>多需 PCI（症狀 / FFR &lt; 0.80）</td></tr>
+<tr><td>&gt; 90% / occluded</td><td>嚴重</td><td>PCI 或 CABG</td></tr>
+</table>
+
+<h4>FFR / iFR（功能性評估）</h4>
+<table>
+<tr><th>指標</th><th>計算</th><th>Cutoff</th></tr>
+<tr><td>FFR（Fractional Flow Reserve）</td><td>狹窄遠端 / 近端壓力比，需 adenosine</td><td>&lt; 0.80 → 需介入</td></tr>
+<tr><td>iFR（instantaneous wave-Free Ratio）</td><td>不需 adenosine，靜息期間</td><td>&lt; 0.89 → 需介入</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人為何不介入</strong>：可能 FFR &gt; 0.80（功能性不顯著），或臨床判斷無症狀 + 病灶位置適合 OMT。但仍是<strong>已確認的 stable CAD</strong>，必須積極二級預防（aspirin、statin、控制血壓血糖）+ 結構化心臟復健。
+</p>
+
+<h4>運動處方時的意涵</h4>
+<table>
+<tr><th>項目</th><th>處方注意</th></tr>
+<tr><td>EKG 重點 leads</td><td>V1-V6（特別 V3-V4 監測 anterior wall ischemia）</td></tr>
+<tr><td>運動中監測</td><td>ST↓ &gt; 1 mm 警示，&gt; 2 mm 停止</td></tr>
+<tr><td>強度</td><td>從低強度開始，CPET 確認 ischemia threshold 後再進階</td></tr>
+<tr><td>環境</td><td>避免極端溫度（誘發冠脈痙攣）</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>三大冠狀動脈 + EKG 對應必背</li>
+<li>LAD proximal = widow maker；mid LAD 影響中等</li>
+<li>≥ 70% 狹窄視為 significant，但功能性需 FFR / iFR</li>
+<li>Stable CAD without intervention 仍需 OMT + 復健</li>
+<li>運動測試重點 leads：V3-V4 監測 LAD 區 ischemia</li>
+</ul>`,
+      },
+      {
+        q: '進行 CPET 時，依此病人冠狀動脈攝影結果，要特別留意哪幾個 EKG lead？為什麼？',
+        keywords: [
+          'V1-V4 anterior',
+          'V3-V4 most sensitive for LAD',
+          'ST depression',
+          'ST elevation',
+          'Reciprocal change',
+          'J-point + 60-80 ms',
+          'Horizontal vs downsloping',
+          'False positive in women',
+          'Heart rate-corrected ST',
+          '12-lead continuous',
+        ],
+        points: [
+          'LAD 對應 anterior wall → 主要監測 V1-V4，特別 V3-V4 對 LAD ischemia 最敏感',
+          'V5-V6 也需注意（lateral wall + 部分 LAD wraparound）',
+          '12-lead 連續監測（CPET 標準）；不是只看單一 lead',
+          'ST depression 量測：J-point 後 60-80 ms 處',
+          'Significant：≥ 1 mm horizontal 或 downsloping ST↓（持續 ≥ 80 ms）',
+          'Upsloping ST↓ 較不可靠（false positive 多）',
+          'ST elevation > 1 mm 在 non-Q lead → 嚴重 ischemia / 痙攣，立即停止',
+          '女性 ETT false positive 較高，CPET（含 gas exchange）診斷 accuracy 較好',
+          '本病人 LAD mid 70% → 重點 leads V3-V4，預期可能在中等強度時出現 ischemia',
+        ],
+        a: `<h4>EKG Lead 與冠狀動脈對應（複習）</h4>
+<table>
+<tr><th>Leads</th><th>解剖</th><th>對應動脈</th></tr>
+<tr><td>V1-V2</td><td>Septal</td><td>LAD（septal branch）</td></tr>
+<tr><td><strong>V3-V4</strong></td><td><strong>Anterior</strong></td><td><strong>LAD</strong>（最直接）</td></tr>
+<tr><td>V5-V6</td><td>Lateral</td><td>LAD diagonal / LCx</td></tr>
+<tr><td>I, aVL</td><td>High lateral</td><td>LCx / LAD diagonal</td></tr>
+<tr><td>II, III, aVF</td><td>Inferior</td><td>RCA（85%）/ LCx</td></tr>
+</table>
+
+<h4>本病人重點 lead：V3-V4（含 V5-V6）</h4>
+<table>
+<tr><th>原因</th><th>說明</th></tr>
+<tr><td>LAD 供應 anterior wall</td><td>V3-V4 直接對應</td></tr>
+<tr><td>Mid LAD 影響中等範圍</td><td>不會大範圍 anterior，主要 V3-V4</td></tr>
+<tr><td>有 wraparound 可能</td><td>同時看 V5-V6、II/III/aVF（reciprocal）</td></tr>
+<tr><td>Septal V1-V2</td><td>輔助</td></tr>
+</table>
+
+<h4>ST 段變化判讀</h4>
+<table>
+<tr><th>類型</th><th>意義</th><th>診斷力</th></tr>
+<tr><td>Horizontal ST↓ ≥ 1 mm</td><td>Ischemia</td><td>高</td></tr>
+<tr><td>Downsloping ST↓ ≥ 1 mm</td><td>Ischemia（更嚴重）</td><td>很高</td></tr>
+<tr><td>Upsloping ST↓</td><td>常 false positive</td><td>低</td></tr>
+<tr><td>ST↑ ≥ 1 mm（non-Q lead）</td><td>嚴重 ischemia / 痙攣</td><td>非常高，立即停</td></tr>
+<tr><td>T-wave inversion 加深</td><td>輔助</td><td>低-中</td></tr>
+</table>
+
+<h4>量測標準</h4>
+<table>
+<tr><th>步驟</th><th>說明</th></tr>
+<tr><td>Reference 點</td><td>PR segment 為 isoelectric line</td></tr>
+<tr><td>Measure 點</td><td>J point 後 60-80 ms</td></tr>
+<tr><td>Significance</td><td>≥ 1 mm（0.1 mV）持續 ≥ 80 ms</td></tr>
+<tr><td>新近發展指標</td><td>ST/HR slope（heart rate adjusted）&gt; 1.6 μV/bpm 異常</td></tr>
+</table>
+
+<h4>女性 ETT 與 CPET 差異</h4>
+<table>
+<tr><th>項目</th><th>女性 ETT</th><th>CPET</th></tr>
+<tr><td>False positive</td><td>較高（hormonal、microvascular）</td><td>較低（含 gas exchange）</td></tr>
+<tr><td>建議</td><td>結合症狀、臨床機率</td><td>更 robust，加上 VO₂、O₂ pulse 軌跡</td></tr>
+<tr><td>O₂ pulse 變化</td><td>—</td><td>缺血時 O₂ pulse 會 plateau / 下降</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 CPET 監測重點</strong>：(1) <strong>V3-V4 持續監測</strong>（LAD 區） (2) 留意 O₂ pulse 軌跡是否 plateau (3) 預期 ischemia threshold 出現的 HR 與 work rate（之後處方上限） (4) 可能 false positive，配合 gas exchange 與症狀判斷。
+</p>
+
+<h4>運動中停止指標（缺血相關）</h4>
+<ul>
+<li>ST↑ ≥ 1 mm（非 Q lead）→ 立即停止</li>
+<li>ST↓ ≥ 2 mm horizontal/downsloping → 停止</li>
+<li>新發 LBBB 或 RBBB 影響判讀 → 停</li>
+<li>Sustained VT、新 AF with rapid response → 停</li>
+<li>胸痛 +/- ST 變化 → 停</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>LAD 主監測<strong>V3-V4</strong>；多個 lead 最佳（12-lead 連續）</li>
+<li>ST↓ 量測在<strong>J point 後 60-80 ms</strong>，horizontal / downsloping 才可靠</li>
+<li>女性 ETT false positive 高，CPET 較準（O₂ pulse 軌跡）</li>
+<li>Ischemia threshold（出現 ST↓ 的 HR / work rate）為日後處方<strong>上限</strong></li>
+<li>ST↑ 是緊急停止指標</li>
+</ul>`,
+      },
+      {
+        q: 'CPET：RER 1.15、Peak VO₂ 22 mL/kg/min（73% predicted）、Peak HR 145、AT 13、RCP 18、HRR 1 min = 18、Chronotropic Index 0.85、無 ST 變化。Maximal effort？Peak MET？AT/RCP？HRR 與 CI 是否異常？',
+        keywords: [
+          'RER ≥ 1.10',
+          'Peak MET = VO₂ / 3.5',
+          'AT 50-65% of Peak',
+          'RCP 80-90% of Peak',
+          'HRR > 12 normal',
+          'CI > 0.8 normal',
+          'Submaximal but acceptable',
+          'No ischemia',
+          'No EOV',
+          'Deconditioning pattern',
+        ],
+        points: [
+          'RER 1.15 ≥ 1.10 → maximal effort 達成',
+          'Peak VO₂ 22 mL/kg/min ÷ 3.5 = 6.3 MET',
+          'AT 13 mL/kg/min ÷ 3.5 = 3.7 MET（59% Peak VO₂，正常 50-65%）',
+          'RCP 18 mL/kg/min ÷ 3.5 = 5.1 MET（82% Peak VO₂，正常 80-90%）',
+          'HRR 1 min = 18 bpm（> 12 正常）→ autonomic 功能正常',
+          'CI 0.85（> 0.8 正常）→ 無 chronotropic incompetence',
+          'No ST change → CPET 中無誘發 ischemia（無 stress-induced ischemia）',
+          'Peak VO₂ 73% predicted 偏低 → 主要是 deconditioning（缺乏運動的久坐生活）而非心肺疾病',
+          '本 CPET 結果整體相對 reassuring，可進入 phase II 心臟復健',
+        ],
+        a: `<h4>本病人 CPET 全面解讀</h4>
+<table>
+<tr><th>指標</th><th>數值</th><th>正常 / Cutoff</th><th>判讀</th></tr>
+<tr><td>RER</td><td>1.15</td><td>≥ 1.10</td><td>✓ Max effort</td></tr>
+<tr><td>Peak VO₂</td><td>22 mL/kg/min（6.3 MET）</td><td>&gt; 85% predicted</td><td>73%，偏低（deconditioning）</td></tr>
+<tr><td>Peak HR</td><td>145</td><td>&gt; 85% predicted（&gt; 131 for age 66）</td><td>✓</td></tr>
+<tr><td>AT (VT1)</td><td>13（3.7 MET、59% Peak）</td><td>50-65% Peak VO₂</td><td>正常</td></tr>
+<tr><td>RCP (VT2)</td><td>18（5.1 MET、82% Peak）</td><td>80-90% Peak VO₂</td><td>正常</td></tr>
+<tr><td>HRR 1 min</td><td>18 bpm</td><td>&gt; 12（active）/ &gt; 18（passive）</td><td>正常</td></tr>
+<tr><td>Chronotropic Index</td><td>0.85</td><td>&gt; 0.8</td><td>正常</td></tr>
+<tr><td>ST 變化</td><td>無</td><td>—</td><td>✓ No stress ischemia</td></tr>
+</table>
+
+<h4>MET 換算（記憶）</h4>
+<table>
+<tr><th>VO₂ (mL/kg/min)</th><th>MET（÷ 3.5）</th><th>對應活動</th></tr>
+<tr><td>3.5</td><td>1</td><td>休息</td></tr>
+<tr><td>10.5</td><td>3</td><td>輕家事、慢走</td></tr>
+<tr><td>17.5</td><td>5</td><td>快走、上樓</td></tr>
+<tr><td>22</td><td>6.3（本病人 Peak）</td><td>輕慢跑、騎車</td></tr>
+<tr><td>24.5</td><td>7</td><td>NYHA I 下限</td></tr>
+<tr><td>35</td><td>10</td><td>跑步、competitive</td></tr>
+</table>
+
+<h4>AT、RCP 計算與意義</h4>
+<table>
+<tr><th>閾值</th><th>本病人</th><th>意義</th></tr>
+<tr><td>AT (VT1)</td><td>13 mL/kg/min（59% Peak）</td><td>有氧代謝上限；運動處方<strong>低-中強度起始點</strong></td></tr>
+<tr><td>RCP (VT2)</td><td>18 mL/kg/min（82% Peak）</td><td>無氧代謝主導；<strong>高強度上限</strong></td></tr>
+<tr><td>三區強度</td><td>&lt; AT、AT-RCP、&gt; RCP</td><td>低 / 中 / 高 訓練區間</td></tr>
+</table>
+
+<h4>HRR 與 CI 計算</h4>
+<table>
+<tr><th>指標</th><th>本病人計算</th></tr>
+<tr><td>HRR 1 min</td><td>18 bpm（正常 &gt; 12）</td></tr>
+<tr><td>Chronotropic Index</td><td>(145 − rest假設 75) / (220 − 66 − 75) = 70/79 = 0.89（&gt; 0.8 正常）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 CPET 整體 reassuring</strong>：(1) 達 max effort (2) AT/RCP 比例正常 (3) HRR 與 CI 正常（無 autonomic 失能） (4) 無 ST 變化（CPET 中無誘發 ischemia） (5) Peak VO₂ 偏低主要為 deconditioning。<strong>可安全進入 phase II 心臟復健，預後良好</strong>。
+</p>
+
+<h4>缺血指標（本病人皆陰性，但需熟記）</h4>
+<ul>
+<li>ST↓ ≥ 1 mm horizontal / downsloping</li>
+<li>O₂ pulse plateau / 下降（每增加負荷 stroke volume 不再升）</li>
+<li>運動中 SBP 下降 &gt; 10 mmHg</li>
+<li>Chronotropic incompetence with ischemia</li>
+<li>新發 arrhythmia at low workload</li>
+</ul>
+
+<h4>口試重點</h4>
+<ul>
+<li>Maximal effort 三標準：<strong>RER ≥ 1.10、plateau VO₂、Peak HR &gt; 85% predicted</strong></li>
+<li>VO₂ ÷ 3.5 = MET</li>
+<li>AT 約 50-65% Peak VO₂、RCP 約 80-90% Peak VO₂</li>
+<li>HRR &gt; 12（active recovery）、CI &gt; 0.8 為正常</li>
+<li>本病人 Peak VO₂ 偏低主因<strong>deconditioning</strong>，不是心肺疾病</li>
+</ul>`,
+      },
+      {
+        q: '其他 CPET 資料：Predicted Peak VO₂ = 30、VE/VCO₂ slope = 27.3、無 EOV、End-point dyspnea。請評估預後。',
+        keywords: [
+          '% predicted Peak VO₂',
+          'VE/VCO₂ slope < 30 normal',
+          'No EOV good',
+          'OUES',
+          'Mortality risk',
+          'Functional class',
+          'Cardiovascular events',
+          'Reversible with rehab',
+          'Deconditioning prognosis',
+          'Exercise capacity 1 MET = 12% mortality reduction',
+        ],
+        points: [
+          'Peak VO₂ 22 / Predicted 30 = 73% predicted（Mild reduction）',
+          'VE/VCO₂ slope 27.3 < 30 → Normal class，預後良好',
+          'No EOV → 預後好（EOV 是極差預後因子）',
+          'End-point dyspnea 但已達 max effort（RER 1.15）→ 受限主要是體能而非心肺結構問題',
+          'Weber HF class A（Peak VO₂ > 20）→ 心衰程度輕',
+          'Deconditioning 是可逆的 → 復健介入可顯著改善',
+          '研究顯示 Peak MET 每增加 1 MET，死亡率降低 12%',
+          '本病人介入後預後好，但仍有 stable CAD，須持續 OMT + 二級預防',
+        ],
+        a: `<h4>本病人預後指標統整</h4>
+<table>
+<tr><th>指標</th><th>本病人</th><th>預後意義</th></tr>
+<tr><td>Peak VO₂ % predicted</td><td>73%</td><td>Mild reduction、預後尚可</td></tr>
+<tr><td>VE/VCO₂ slope</td><td>27.3</td><td><strong>&lt; 30 normal</strong>，預後好</td></tr>
+<tr><td>EOV</td><td>無</td><td>預後好（EOV 為獨立死亡因子）</td></tr>
+<tr><td>HRR 1 min</td><td>18</td><td>正常，autonomic 健康</td></tr>
+<tr><td>CI</td><td>0.85</td><td>正常</td></tr>
+<tr><td>ST 變化</td><td>無</td><td>無 stress-induced ischemia</td></tr>
+<tr><td>End-point</td><td>Dyspnea（已 max）</td><td>Deconditioning，可訓練</td></tr>
+</table>
+
+<h4>VE/VCO₂ slope 預後分級</h4>
+<table>
+<tr><th>VE/VCO₂ slope</th><th>Class</th><th>預後</th></tr>
+<tr><td>&lt; 30</td><td><strong>Class I</strong>（本病人）</td><td>Normal、預後好</td></tr>
+<tr><td>30-35.9</td><td>Class II</td><td>Mild ventilatory inefficiency</td></tr>
+<tr><td>36-44.9</td><td>Class III</td><td>Moderate；HF 1 年死亡率高風險</td></tr>
+<tr><td>≥ 45</td><td>Class IV</td><td>Severe；極差預後</td></tr>
+</table>
+
+<h4>Weber HF Class</h4>
+<table>
+<tr><th>Class</th><th>Peak VO₂</th><th>本病人</th></tr>
+<tr><td>A</td><td>&gt; 20</td><td>✓（Peak 22）</td></tr>
+<tr><td>B</td><td>16-20</td><td>—</td></tr>
+<tr><td>C</td><td>10-16</td><td>—</td></tr>
+<tr><td>D</td><td>&lt; 10</td><td>—</td></tr>
+</table>
+
+<h4>運動能力與死亡率</h4>
+<table>
+<tr><th>研究發現</th><th>數據</th></tr>
+<tr><td>Peak MET 每增加 1 MET</td><td>全死因死亡率<strong>降低 ~12%</strong></td></tr>
+<tr><td>Peak VO₂ &lt; 14（無 BB）/ &lt; 12（with BB）</td><td>Heart transplant 評估</td></tr>
+<tr><td>Peak VO₂ &lt; 50% predicted</td><td>高風險</td></tr>
+<tr><td>VE/VCO₂ slope &gt; 35</td><td>HF 1 年死亡率高</td></tr>
+<tr><td>EOV 出現</td><td>預後極差</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人預後總結</strong>：(1) Peak VO₂ 73% predicted（mild reduction） (2) VE/VCO₂ slope normal (3) 無 EOV (4) HRR / CI 正常 (5) 無 ischemia → <strong>整體預後好，主要問題是 deconditioning</strong>。Deconditioning 是<strong>可逆的</strong>，<strong>結構化心臟復健可顯著改善 Peak VO₂ 15-25%</strong>。
+</p>
+
+<h4>整合 risk stratification</h4>
+<table>
+<tr><th>項目</th><th>本病人</th></tr>
+<tr><td>Stable CAD（LAD mid 70%）</td><td>有</td></tr>
+<tr><td>無症狀</td><td>是</td></tr>
+<tr><td>無 stress-induced ischemia</td><td>是</td></tr>
+<tr><td>No complex arrhythmia</td><td>是</td></tr>
+<tr><td>Functional capacity</td><td>6.3 MET（&gt; 5 MET）</td></tr>
+<tr><td>LVEF</td><td>未提，假設 normal</td></tr>
+<tr><td>整體分級</td><td><strong>AACVPR Moderate risk</strong>（題幹有 CAD 且 6.3 MET 在 5-7 之間）</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>四大預後指標：<strong>Peak VO₂、VE/VCO₂ slope、EOV、HRR/CI</strong></li>
+<li>VE/VCO₂ slope &lt; 30 為 Class I，預後好</li>
+<li>每 1 MET 進步降低死亡率 12%</li>
+<li>Deconditioning 是<strong>可逆的</strong>，復健介入可顯著改善</li>
+<li>本病人預後好，但仍需持續 OMT + 二級預防（aspirin、statin、控糖控壓）</li>
+</ul>`,
+      },
+      {
+        q: 'AACVPR 風險分級為何？分級依據？對處方有何影響？',
+        keywords: [
+          'AACVPR risk stratification',
+          'Low risk',
+          'Moderate risk',
+          'High risk',
+          '> 7 MET / 5-7 / < 5',
+          'LVEF > 50% / 40-49 / < 40',
+          'Complex arrhythmia',
+          'Cardiac arrest survivor',
+          'Clinical depression',
+          'Monitoring intensity',
+        ],
+        points: [
+          'Low risk（皆需符合）：> 7 MET、LVEF > 50%、無症狀、無 ischemia、uncomplicated MI、無 complex arrhythmia、無 depression',
+          'Moderate risk：MET 5-7、LVEF 40-49%',
+          'High risk（任一即可）：< 5 MET、LVEF < 40%、cardiac arrest survivor、complex arrhythmia、MI complicated、運動誘發 ischemia (ST↓ > 2 mm)、clinical depression',
+          '本病人 6.3 MET（5-7）、無 ischemia、無 arrhythmia、LVEF 未明（假設 normal）→ Moderate risk',
+          '若加上 stable CAD（LAD 70%）這項可能 push 至 moderate-high',
+          '處方影響：Low → 可考慮 home-based、少監測；Moderate → 監督式 6-12 次後可漸 home；High → 全程監督式、EKG 連續監測 ≥ 12 次',
+          '進度評估：每 6-12 次 reassess、依需要重做 CPET',
+          '健保心臟復健 36 次，Phase II 期間應確保安全進階',
+        ],
+        a: `<h4>AACVPR 風險分級準則</h4>
+<table>
+<tr><th>項目</th><th>Low（皆需符合）</th><th>Moderate</th><th>High（任一）</th></tr>
+<tr><td>運動能力</td><td>&gt; 7 MET</td><td>5-7 MET</td><td><strong>&lt; 5 MET</strong></td></tr>
+<tr><td>LVEF</td><td>&gt; 50%</td><td>40-49%</td><td><strong>&lt; 40%</strong></td></tr>
+<tr><td>運動症狀</td><td>無</td><td>—</td><td>胸痛、嚴重 dyspnea</td></tr>
+<tr><td>Ischemia</td><td>無</td><td>—</td><td><strong>ST↓ &gt; 2 mm</strong></td></tr>
+<tr><td>心律不整</td><td>無</td><td>—</td><td>運動誘發 complex arrhythmia</td></tr>
+<tr><td>事件</td><td>Uncomplicated MI</td><td>—</td><td>Cardiac arrest、MI complicated、心因性休克</td></tr>
+<tr><td>心理</td><td>—</td><td>—</td><td>Clinical depression</td></tr>
+</table>
+
+<h4>本病人分級</h4>
+<table>
+<tr><th>項目</th><th>本病人</th><th>分類</th></tr>
+<tr><td>運動能力</td><td>6.3 MET</td><td>Moderate</td></tr>
+<tr><td>LVEF</td><td>未明（無症狀，假設 &gt; 50%）</td><td>Low</td></tr>
+<tr><td>運動症狀</td><td>無</td><td>Low</td></tr>
+<tr><td>Ischemia</td><td>無</td><td>Low</td></tr>
+<tr><td>心律不整</td><td>無</td><td>Low</td></tr>
+<tr><td>已知 stable CAD（LAD 70%）</td><td>未介入</td><td>需保守</td></tr>
+<tr><td><strong>整體</strong></td><td colspan="2"><strong>AACVPR Moderate risk</strong></td></tr>
+</table>
+
+<h4>各風險級別的處方差異</h4>
+<table>
+<tr><th>項目</th><th>Low</th><th>Moderate</th><th>High</th></tr>
+<tr><td>監督式 sessions</td><td>6 次或可直接 home-based</td><td>6-12 次監督</td><td><strong>≥ 12 次監督</strong>，多數 36 次全監督</td></tr>
+<tr><td>EKG 監測</td><td>初幾次</td><td>前 6-12 次</td><td><strong>連續監測</strong></td></tr>
+<tr><td>強度</td><td>40-80% VO₂R</td><td>40-70% VO₂R</td><td>40-60% VO₂R 起、保守進階</td></tr>
+<tr><td>Reassess</td><td>每 4-6 週</td><td>每 2-4 週</td><td>每週</td></tr>
+<tr><td>緊急設備</td><td>基本</td><td>完整 ACLS</td><td>完整 ACLS + 醫師現場</td></tr>
+</table>
+
+<h4>本病人 phase II 處方建議</h4>
+<table>
+<tr><th>FITT</th><th>處方</th></tr>
+<tr><td>Frequency</td><td>監督式 3 次/週 × 12 次，之後可加居家</td></tr>
+<tr><td>Intensity</td><td>起始 40-60% VO₂R（≈ AT 13 mL/kg/min）；漸進至 50-70%；RPE 11-13</td></tr>
+<tr><td>Time</td><td>暖身 10 min + 主訓練 20-40 min + cool-down 10 min</td></tr>
+<tr><td>Type</td><td>有氧（cycle、走路、treadmill）+ 阻力（40-60% 1RM、2 次/週）+ 柔軟度</td></tr>
+<tr><td>監測</td><td>EKG 前 6-12 次、BP 暖身/巔峰/cool-down、症狀詢問</td></tr>
+<tr><td>進度</td><td>每 4 週 reassess、3-6 個月可重做 CPET</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 Moderate risk 重點</strong>：(1) 已知 LAD 70% 但無誘發 ischemia → 強度上限可設在 AT 附近、或 ischemia 出現的 HR (本案無，可較積極) (2) 監督式 6-12 次確認安全後可漸進 home-based (3) 同時加強<strong>二級預防</strong>：戒菸、控糖控壓、statin、aspirin、體重管理。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>AACVPR 三級：<strong>Low / Moderate / High</strong></li>
+<li>High 任一即是：<strong>&lt; 5 MET、LVEF &lt; 40%、ischemia、complex arrhythmia、MI complicated、depression</strong></li>
+<li>Low 必須<strong>全部符合</strong></li>
+<li>分級決定<strong>監督密度與 EKG 監測</strong></li>
+<li>復健配合 OMT 與二級預防才完整</li>
+</ul>`,
+      },
+      {
+        q: '本病人 stable CAD without intervention，請說明心臟復健以外的二級預防內容。',
+        keywords: [
+          'Antiplatelet aspirin',
+          'High-intensity statin',
+          'BP < 130/80',
+          'HbA1c < 7%',
+          'LDL-C < 70 mg/dL',
+          'Smoking cessation',
+          'Diet (Mediterranean / DASH)',
+          'Weight management',
+          'Stress / depression management',
+          'Vaccination (flu, pneumococcal)',
+        ],
+        points: [
+          '抗血小板：Aspirin 81-100 mg/day（出血風險低時）',
+          'Statin：高強度（atorvastatin 40-80、rosuvastatin 20-40），目標 LDL-C < 70 mg/dL（高風險可 < 55）',
+          '血壓：目標 < 130/80；藥物優先 ACEi/ARB（CAD 適應症）+ β-blocker',
+          '糖尿病前期：lifestyle 為主、HbA1c < 6.0；發展為 DM 則目標 HbA1c < 7%',
+          'BMI 控制（< 25）、腰圍（女 < 80 cm）',
+          '飲食：地中海或 DASH，低飽和脂肪、高纖、堅果魚類',
+          '戒菸：本病人無菸但仍須查詢是否暴露二手菸',
+          '運動：150 min/週中等強度 + 阻力 2 次',
+          '心理：篩檢 depression/anxiety（PHQ-9、GAD-7）；CAD 病人 depression 增加 2 倍死亡率',
+          '疫苗：流感每年、肺炎鏈球菌',
+          'Compliance follow-up、家屬衛教',
+        ],
+        a: `<h4>二級預防 ABCDEF（口訣）</h4>
+<table>
+<tr><th>字母</th><th>內容</th><th>本病人重點</th></tr>
+<tr><td><strong>A</strong></td><td>Antiplatelet（aspirin）+ ACEi / ARB</td><td>Aspirin 81-100、考慮 ACEi（HTN）</td></tr>
+<tr><td><strong>B</strong></td><td>β-blocker + Blood pressure</td><td>有 CAD 但無 MI 不一定要 BB；BP &lt; 130/80</td></tr>
+<tr><td><strong>C</strong></td><td>Cholesterol（statin）+ Cigarette cessation</td><td>高強度 statin、LDL &lt; 70</td></tr>
+<tr><td><strong>D</strong></td><td>Diet + Diabetes</td><td>DASH / Mediterranean、HbA1c &lt; 6（pre-DM）</td></tr>
+<tr><td><strong>E</strong></td><td>Exercise + Education</td><td>150 min/週 + 阻力 2 次</td></tr>
+<tr><td><strong>F</strong></td><td>Flu vaccine + Family screening</td><td>本病人有早發 MI 家族史 → 子女篩檢</td></tr>
+</table>
+
+<h4>藥物（OMT）</h4>
+<table>
+<tr><th>藥物</th><th>適應</th><th>目標</th></tr>
+<tr><td>Aspirin 81-100 mg</td><td>抗血小板</td><td>出血風險低時長期</td></tr>
+<tr><td>High-intensity statin</td><td>降低 CVD events</td><td>LDL-C &lt; 70（高風險 &lt; 55）</td></tr>
+<tr><td>ACEi / ARB</td><td>HTN + CAD（renal protection）</td><td>BP &lt; 130/80</td></tr>
+<tr><td>β-blocker</td><td>有 MI / HF / arrhythmia 時</td><td>本病人非必須</td></tr>
+<tr><td>Nitrate（PRN）</td><td>有 angina 才用</td><td>無症狀不需</td></tr>
+</table>
+
+<h4>非藥物 lifestyle</h4>
+<table>
+<tr><th>項目</th><th>建議</th></tr>
+<tr><td>飲食</td><td>地中海 / DASH：高蔬果、全穀、魚、堅果、橄欖油；少紅肉、加工肉、糖、鹽</td></tr>
+<tr><td>體重</td><td>BMI &lt; 25；腰圍女 &lt; 80 cm</td></tr>
+<tr><td>運動</td><td>有氧 150 min/週中強度 + 阻力 2 次/週 + 柔軟度</td></tr>
+<tr><td>戒菸</td><td>本病人無菸；避免二手菸</td></tr>
+<tr><td>飲酒</td><td>女 &lt; 1 drink/day</td></tr>
+<tr><td>睡眠</td><td>7-9 小時、screening OSA</td></tr>
+<tr><td>壓力</td><td>Mindfulness、心理諮商</td></tr>
+</table>
+
+<h4>糖尿病前期管理</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>檢驗</td><td>FPG、HbA1c、OGTT 確診</td></tr>
+<tr><td>目標</td><td>體重減輕 5-7%、HbA1c &lt; 6%</td></tr>
+<tr><td>飲食</td><td>限制碳水、低 GI、高纖</td></tr>
+<tr><td>運動</td><td>150 min/週可降低糖尿病發生 58%</td></tr>
+<tr><td>藥物</td><td>Metformin（特別是 BMI &gt; 35 或 GDM 史）</td></tr>
+</table>
+
+<h4>心理介入</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>篩檢</td><td>PHQ-9（depression）、GAD-7（anxiety）</td></tr>
+<tr><td>影響</td><td>CAD + depression → 死亡率 2 倍</td></tr>
+<tr><td>介入</td><td>Cognitive-behavioral therapy、運動本身有抗憂鬱效果、必要時藥物（避 TCA）</td></tr>
+<tr><td>本病人</td><td>新診斷 CAD 易焦慮，需主動詢問</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人重點</strong>：因有<strong>家族史早發 MI</strong>（父親 44 歲）+ 多重 risk factors，二級預防要積極：(1) 高強度 statin 必用 (2) Aspirin 評估出血風險後使用 (3) 糖尿病前期不能等發展為 DM (4) 子女篩檢 lipid + glucose (5) 心理支持（新診斷易 anxiety）。
+</p>
+
+<h4>追蹤頻率</h4>
+<table>
+<tr><th>項目</th><th>頻率</th></tr>
+<tr><td>藥物 follow-up</td><td>1-3 個月</td></tr>
+<tr><td>Lipid panel</td><td>3 個月後 statin titration、之後每年</td></tr>
+<tr><td>HbA1c</td><td>3-6 個月</td></tr>
+<tr><td>BP / 體重</td><td>每次回診</td></tr>
+<tr><td>心臟復健 reassess</td><td>每 4 週</td></tr>
+<tr><td>CPET 重做</td><td>3-6 個月後</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>二級預防口訣：<strong>ABCDEF</strong></li>
+<li>OMT 三大支柱：<strong>Aspirin + Statin + ACEi/ARB</strong></li>
+<li>LDL 目標 &lt; 70（高風險 &lt; 55）</li>
+<li>BP &lt; 130/80、HbA1c &lt; 7（DM）/ &lt; 6（pre-DM）</li>
+<li>心理篩檢必做（CAD + depression 死亡率 2 倍）</li>
+<li>家族早發 MI → 子女篩檢</li>
+</ul>`,
+      },
+      {
+        q: '請為本病人開立完整 phase II 心臟復健處方（FITT-VP），並說明監測重點與進階方式。',
+        keywords: [
+          'AT-based intensity 13 mL/kg/min',
+          'HR 50-80% HRR',
+          'RPE 11-13 → 13-14',
+          'Resistance 40-60% 1RM',
+          'Warm-up 10 min',
+          'Cool-down 10 min',
+          'EKG monitoring 6-12 sessions',
+          '36 sessions phase II',
+          'Re-CPET 3-6 months',
+          'Home-based progression',
+        ],
+        points: [
+          'Frequency 3-5 次/週監督式 × 12 次，之後加入居家',
+          'Intensity AT-based（13 mL/kg/min ≈ 50-60% VO₂R）；HR-based 可用 50-70% HRR；RPE 11-13 漸進至 13-14',
+          'Time 暖身 10 min + 主訓練 20-30 min（漸進至 40-60 min）+ cool-down 10 min',
+          'Type 有氧（cycle、走路、treadmill）+ 阻力（40-60% 1RM、8-15 reps、2 set、2 次/週）+ 柔軟度（每日）',
+          'Volume 目標 150 min/週中強度 + 阻力 2 次',
+          'Progression 每 4 週 reassess、依 RPE / 症狀漸進；3-6 個月重做 CPET',
+          'EKG 監測前 6-12 次（moderate risk）',
+          '監測：BP 暖身/巔峰/cool-down、SpO₂、症狀、RPE',
+          '目標：Peak VO₂ 改善 15-25%、6MWT 增加 50-70 m、QoL 改善、ABCDEF 二級預防達標',
+        ],
+        a: `<h4>完整 Phase II 處方（FITT-VP）</h4>
+<table>
+<tr><th>FITT</th><th>處方</th></tr>
+<tr><td><strong>Frequency</strong></td><td>監督式 3-5 次/週 × 12 次；居家持續</td></tr>
+<tr><td><strong>Intensity</strong></td><td>有氧：起始 40-60% VO₂R（≈ AT 13 mL/kg/min）；漸進 50-70%；RPE 11-13 → 13-14<br>HR-based：50-70% HRR（HRR = Peak HR − Rest HR）<br>阻力：40-60% 1RM、8-15 reps、2 set</td></tr>
+<tr><td><strong>Time</strong></td><td>暖身 10 min + 主訓練 20-30 min（漸進至 40-60 min）+ cool-down 10 min</td></tr>
+<tr><td><strong>Type</strong></td><td>有氧（cycle、走路、treadmill）+ 阻力（彈力帶、啞鈴）+ 柔軟度</td></tr>
+<tr><td><strong>Volume</strong></td><td>目標 150 min/週中強度 + 阻力 2 次/週</td></tr>
+<tr><td><strong>Progression</strong></td><td>每 4 週 reassess；3-6 個月後重做 CPET 調整</td></tr>
+</table>
+
+<h4>強度設定多重指標</h4>
+<table>
+<tr><th>方法</th><th>本病人計算</th></tr>
+<tr><td>VO₂R</td><td>(22 − 3.5) × 40-70% + 3.5 = 起始 ~11 mL/kg/min（接近 AT 13）</td></tr>
+<tr><td>HRR (Karvonen)</td><td>(145 − 75) × 50-70% + 75 = 110-124 bpm</td></tr>
+<tr><td>RPE</td><td>11-13（somewhat hard）</td></tr>
+<tr><td>AT-based</td><td>對應 AT 13 mL/kg/min 的 work rate</td></tr>
+<tr><td>Talk test</td><td>可說話但不能唱歌</td></tr>
+</table>
+
+<h4>監測重點</h4>
+<table>
+<tr><th>項目</th><th>頻率</th><th>異常標準</th></tr>
+<tr><td>EKG（連續監測）</td><td><strong>前 6-12 次 session</strong>，之後 intermittent</td><td>ST↓ &gt; 1 mm、新發 arrhythmia</td></tr>
+<tr><td>BP</td><td>暖身、巔峰、cool-down</td><td>SBP &lt; 90 / &gt; 200、DBP &gt; 110</td></tr>
+<tr><td>SpO₂</td><td>運動中</td><td>&lt; 90%</td></tr>
+<tr><td>RPE / Borg dyspnea</td><td>每 stage</td><td>&gt; 17</td></tr>
+<tr><td>症狀</td><td>每次運動</td><td>胸痛、頭暈、palpitation</td></tr>
+</table>
+
+<h4>停止運動指標</h4>
+<ul>
+<li>胸痛、嚴重 dyspnea、頭暈、palpitation</li>
+<li>ST↑ ≥ 1 mm（緊急停止）、ST↓ ≥ 2 mm horizontal/downsloping</li>
+<li>新發 sustained VT、新發 AF with rapid rate</li>
+<li>SBP 升 &gt; 250 / DBP &gt; 115、SBP 下降 &gt; 10 mmHg</li>
+<li>SpO₂ &lt; 88-90%</li>
+<li>RPE &gt; 17 無法繼續</li>
+</ul>
+
+<h4>進階方式</h4>
+<table>
+<tr><th>項目</th><th>具體</th></tr>
+<tr><td>持續時間優先</td><td>第 1-4 週：時間從 20 → 30 → 40 min</td></tr>
+<tr><td>頻率次之</td><td>3 次/週 → 5 次/週</td></tr>
+<tr><td>強度最後</td><td>RPE 11-13 → 13-14；VO₂R 50% → 70%</td></tr>
+<tr><td>類型多樣化</td><td>單一有氧 → 加 interval、加阻力、加柔軟度</td></tr>
+<tr><td>場域</td><td>監督式 → home-based hybrid</td></tr>
+</table>
+
+<h4>本病人預期改善</h4>
+<table>
+<tr><th>指標</th><th>baseline</th><th>3 個月後預期</th></tr>
+<tr><td>Peak VO₂</td><td>22</td><td>25-28（+ 15-25%）</td></tr>
+<tr><td>AT</td><td>13</td><td>15-16</td></tr>
+<tr><td>6MWT</td><td>未測</td><td>+ 50-70 m</td></tr>
+<tr><td>BP</td><td>未明</td><td>降 5-10 mmHg</td></tr>
+<tr><td>HbA1c</td><td>糖前期</td><td>避免進展為 DM</td></tr>
+<tr><td>BMI</td><td>未明</td><td>降 5-7%（若超重）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人核心策略</strong>：(1) Moderate risk → 監督式 12 次再 home-based (2) AT-based 處方避免過度負荷誘發 ischemia (3) 多重 risk factor 同時 attack：運動 + 藥物 + 飲食 + 心理 (4) 預期反應好（deconditioning 為主），<strong>每 1 MET 進步降低死亡率 12%</strong> (5) 長期 commitment 比短期強度更重要。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>FITT-VP 完整：F-I-T-T + Volume + Progression</li>
+<li>強度設定<strong>多重指標</strong>（VO₂R、HRR、RPE、AT、talk test）</li>
+<li>Moderate risk → 前 6-12 次 EKG 監測</li>
+<li>進階先增<strong>時間 → 頻率 → 強度</strong></li>
+<li>3-6 個月重做 CPET 客觀評估</li>
+<li>運動 + 藥物 + 飲食 + 心理 + 教育全方位</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
+
 
 
 
