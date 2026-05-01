@@ -59332,9 +59332,986 @@ ECG：Sinus tachycardia around 110+ bpm；BP 120-130/75-85。
       },
     ],
   },
+  {
+    id: 'pulmonary_008',
+    domain: 'pulmonary',
+    title: 'CABG 術後第一期到第三期心臟復健',
+    context: `65 歲男性，過去病史：
+- HTN、HLD、Type 2 DM（HbA1c 7.5%）
+- 30 PY 吸菸（術前 1 個月戒）
+
+3 個月前因典型 angina + EKG 變化收住院，coronary angiography 顯示 triple vessel disease：
+- LAD proximal 90%
+- LCx mid 80%
+- RCA mid 75%
+- LM 30%（borderline）
+
+心內醫師判斷不適合 PCI（complex multi-vessel + LM borderline + DM），建議 CABG。
+
+接受 CABG × 4：LIMA → LAD、SVG → OM1 / PDA / Diagonal。
+術後 LVEF 由 45% 改善至 50%。
+
+POD 5 由心臟外科出 ICU 至普通病房，會診復健科。
+
+考官：請依序回答下列問題。`,
+    questions: [
+      {
+        q: 'CABG 與 PCI 的適應症差異？本病人為何選 CABG？術後復健注意事項概覽？',
+        keywords: [
+          'CABG indications',
+          'Multi-vessel disease',
+          'Left main disease',
+          'Diabetes',
+          'SYNTAX score',
+          'LIMA to LAD survival benefit',
+          'SVG patency',
+          'Sternal precaution',
+          'Wound monitoring',
+          'Post-op arrhythmia',
+        ],
+        points: [
+          'CABG 適應：(1) Left main disease（特別 ostial / mid） (2) Triple vessel disease 含 proximal LAD (3) Multi-vessel + DM (4) PCI 不可行解剖 (5) 反復 in-stent restenosis (6) 合併瓣膜手術',
+          'PCI 適應：單支血管病灶、focal lesion、非 complex 解剖、急性 STEMI primary PCI、簡單 multi-vessel',
+          'SYNTAX score：預測 PCI complexity；&lt; 22 PCI；22-32 中間；&gt; 32 CABG',
+          '本病人選 CABG：triple vessel + LAD proximal + DM + LM borderline + complex anatomy',
+          'LIMA → LAD：10+ 年 patency &gt; 90%，survival benefit 確立',
+          'SVG（saphenous vein graft）：1 年 80% patent；10 年 50%（受 atherosclerosis 影響）',
+          'Radial artery graft 為第二選擇 arterial conduit',
+          '術後重點：(1) Sternal precaution 6-8 週 (2) 傷口監測 (3) Post-op AF 預防 (4) Phase I → II → III rehab (5) 二級預防 (6) 戒菸 (7) DM 控制',
+        ],
+        a: `<h4>CABG vs PCI 適應症</h4>
+<table>
+<tr><th>類型</th><th>適合 PCI</th><th>適合 CABG</th></tr>
+<tr><td>單一血管</td><td>✓</td><td>—</td></tr>
+<tr><td>Triple vessel disease</td><td>—</td><td><strong>✓</strong></td></tr>
+<tr><td>Left main</td><td>Selected</td><td><strong>✓</strong>（特別 ostial / shaft）</td></tr>
+<tr><td>Multi-vessel + DM</td><td>—</td><td><strong>✓</strong>（FREEDOM trial）</td></tr>
+<tr><td>Proximal LAD（含 multi-vessel）</td><td>—</td><td><strong>✓</strong></td></tr>
+<tr><td>Acute STEMI</td><td>✓ Primary PCI</td><td>—</td></tr>
+<tr><td>Failed PCI / 反復 restenosis</td><td>—</td><td>✓</td></tr>
+<tr><td>合併瓣膜手術</td><td>—</td><td>✓</td></tr>
+<tr><td>SYNTAX score</td><td>&lt; 22</td><td>&gt; 32</td></tr>
+<tr><td>嚴重 calcification / tortuous</td><td>—</td><td>✓</td></tr>
+</table>
+
+<h4>主要 Trials 支持 CABG</h4>
+<table>
+<tr><th>Trial</th><th>主要發現</th></tr>
+<tr><td>SYNTAX</td><td>3VD / LM disease：CABG 優於 PCI（特別 SYNTAX score 高者）</td></tr>
+<tr><td>FREEDOM</td><td>Multi-vessel + DM：CABG 顯著降低 mortality + MI</td></tr>
+<tr><td>EXCEL / NOBLE</td><td>Left main：低 SYNTAX score 兩者相當；高 SYNTAX → CABG 較好</td></tr>
+<tr><td>BARI 2D</td><td>DM + stable IHD：CABG 優於 PCI / OMT</td></tr>
+<tr><td>ISCHEMIA</td><td>Stable IHD：early invasive 與 OMT 在主要 endpoint 相當</td></tr>
+</table>
+
+<h4>本病人為何選 CABG</h4>
+<table>
+<tr><th>因素</th><th>本病人</th></tr>
+<tr><td>Triple vessel disease</td><td>✓（LAD + LCx + RCA）</td></tr>
+<tr><td>Proximal LAD 嚴重</td><td>✓（90%）</td></tr>
+<tr><td>DM</td><td>✓（HbA1c 7.5%）</td></tr>
+<tr><td>LM 30% borderline</td><td>影響選擇（CABG 一次處理）</td></tr>
+<tr><td>SYNTAX 估算</td><td>應屬中-高</td></tr>
+<tr><td>結論</td><td>CABG 是 evidence-based 選擇</td></tr>
+</table>
+
+<h4>CABG 常用 Conduit 比較</h4>
+<table>
+<tr><th>Conduit</th><th>10 年 patency</th><th>適用</th></tr>
+<tr><td><strong>LIMA</strong>（Left internal mammary artery）</td><td>&gt; 90%</td><td>首選對 LAD；survival benefit 確立</td></tr>
+<tr><td>RIMA（Right IMA）</td><td>~80%</td><td>Bilateral IMA 對年輕、非 DM 病人；增加 sternal infection 風險</td></tr>
+<tr><td>Radial artery</td><td>~80%</td><td>Second arterial conduit</td></tr>
+<tr><td>SVG（Saphenous vein）</td><td>~50%</td><td>常用於非 LAD target；受 atherosclerosis 影響</td></tr>
+<tr><td>Gastroepiploic</td><td>變異大</td><td>少用、特殊情境</td></tr>
+</table>
+
+<h4>本病人術後重點注意（概覽）</h4>
+<table>
+<tr><th>類別</th><th>內容</th></tr>
+<tr><td><strong>傷口</strong></td><td>Sternal incision 6-8 週癒合；leg incision（SVG harvest）；監測感染</td></tr>
+<tr><td><strong>Sternal precaution</strong></td><td>6-8 週嚴格遵守</td></tr>
+<tr><td><strong>Post-op AF</strong></td><td>20-40% 發生率，多在 POD 2-4；β-blocker、amiodarone 預防 / 治療</td></tr>
+<tr><td><strong>Pleural effusion</strong></td><td>常見，多自限</td></tr>
+<tr><td><strong>Atelectasis</strong></td><td>常見，IS + ACBT + early ambulation</td></tr>
+<tr><td><strong>Pump head</strong></td><td>Cognitive dysfunction 部分病人，多 6 個月內改善</td></tr>
+<tr><td><strong>Wound infection / dehiscence</strong></td><td>DM、obese 高風險；嚴密監測</td></tr>
+<tr><td><strong>復健分期</strong></td><td>Phase I（住院）→ Phase II（門診 1-3 個月）→ Phase III（長期居家）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人術後概況</strong>：(1) CABG × 4 with LIMA → LAD（最重要 graft） (2) LVEF 45% → 50% 改善 (3) DM → 傷口風險高 (4) 戒菸 1 個月（仍須維持） (5) 70 歲屬中等年齡 → 預後好。復健介入時機在 POD 5（普通病房），可立即啟動 phase I。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>CABG vs PCI：<strong>multi-vessel + DM、LM、triple vessel 含 proximal LAD</strong> 為 CABG 適應</li>
+<li>SYNTAX score 為主要決策依據</li>
+<li>LIMA → LAD 是 gold standard，survival benefit 確立</li>
+<li>SVG 10 年 patency 僅 50%</li>
+<li>術後三大關注：<strong>sternal precaution、post-op AF、傷口</strong></li>
+</ul>`,
+      },
+      {
+        q: '請說明 sternal precaution 的內容、時程與證據。Modern keep your move in the tube？',
+        keywords: [
+          'No lifting > 5-10 lb',
+          'No push / pull',
+          'No reach overhead',
+          'No driving 4-6 weeks',
+          'Log roll',
+          '6-8 weeks healing',
+          'Modern: keep move in tube',
+          'Avoid extreme ROM',
+          'Splinted cough',
+          'Bilateral upper extremity restriction',
+        ],
+        points: [
+          '傳統 sternal precaution（6-8 週）：(1) 提物 < 5-10 lb（約 2-4 kg） (2) 不可推 / 拉門、車門 (3) 雙手不可同時抬高過頭 (4) 不可手臂後伸或交叉前胸出力 (5) 由坐到站用 log roll (6) 不開車 4-6 週',
+          '預防 sternal dehiscence、wound complication',
+          'Sternum 完整癒合需 6-8 週',
+          'Modern 觀念「Keep your move in the tube」：把活動限制在身體前方一個假想 tube 內，可動但不過度伸展或負重 → 較不過度限制、改善 ADL 與心理',
+          'Move in the tube 仍避免：bilateral overhead lifting、heavy push/pull、extreme ROM',
+          '允許：日常單手 ADL、打字、輕度物品（< 2 kg）、有限肩 ROM',
+          'DM、obese、bilateral IMA、女性大 cup size → sternal complication 高風險，更嚴格',
+          'Splinted cough 必教（手或枕頭壓胸壁，減痛 + 保護傷口）',
+        ],
+        a: `<h4>傳統 Sternal Precaution（6-8 週）</h4>
+<table>
+<tr><th>項目</th><th>規則</th></tr>
+<tr><td>提物</td><td>≤ 5-10 lb（2-4 kg）</td></tr>
+<tr><td>推 / 拉</td><td>不可（重門、車門、輪椅、購物車）</td></tr>
+<tr><td>過頭</td><td>不可雙手同時舉重物過頭</td></tr>
+<tr><td>後伸</td><td>不可手臂後伸（如把袋子放後座、扣安全帶）</td></tr>
+<tr><td>胸前交叉出力</td><td>不可（如擰毛巾）</td></tr>
+<tr><td>由坐到站</td><td>Log roll（軀幹一致旋轉）</td></tr>
+<tr><td>開車</td><td>4-6 週後 + 醫師評估後（reaction time、緊急 maneuver）</td></tr>
+<tr><td>性行為</td><td>2-4 週後依耐受度</td></tr>
+<tr><td>抱嬰兒 / 寵物</td><td>避免（重量 + 突然動作）</td></tr>
+</table>
+
+<h4>Modern 觀念：「Keep Your Move in the Tube」</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>原理</td><td>想像身體前方有個 tube，活動 limit 在此 tube 內</td></tr>
+<tr><td>允許</td><td>日常單手 ADL、輕度活動、有限肩 ROM、洗澡、上廁所、打電腦</td></tr>
+<tr><td>仍限制</td><td>Bilateral overhead lifting、重物 push/pull、extreme ROM</td></tr>
+<tr><td>優點</td><td>減少過度限制 → 更早 ADL 獨立 → QoL 提升 + 心理 + frozen shoulder 預防</td></tr>
+<tr><td>Evidence</td><td>Cahalin 2011、Brocki 2010 顯示無明顯增加併發症</td></tr>
+<tr><td>注意</td><td>仍需<strong>個別化</strong>，高風險病人保守</td></tr>
+</table>
+
+<h4>Sternal Healing 時程</h4>
+<table>
+<tr><th>時程</th><th>狀態</th></tr>
+<tr><td>0-2 週</td><td>急性發炎、wire 固定為主、最易 dehiscence</td></tr>
+<tr><td>2-6 週</td><td>Bone callus 形成中</td></tr>
+<tr><td>6-8 週</td><td>多數 sternum 大部分癒合</td></tr>
+<tr><td>3 個月</td><td>完整癒合、wire 不再必要（多保留終身）</td></tr>
+<tr><td>6 個月</td><td>結構完全恢復</td></tr>
+</table>
+
+<h4>Sternal Complication 高風險群</h4>
+<table>
+<tr><th>因子</th><th>風險增加</th></tr>
+<tr><td>DM（特別 uncontrolled）</td><td>2-3 倍 wound infection、dehiscence</td></tr>
+<tr><td>Obesity（BMI &gt; 30）</td><td>增加</td></tr>
+<tr><td>Bilateral IMA harvest</td><td>降低 sternal blood supply</td></tr>
+<tr><td>女性大 cup size（&gt; D）</td><td>傷口張力大</td></tr>
+<tr><td>COPD（咳嗽應力）</td><td>增加</td></tr>
+<tr><td>Renal failure</td><td>healing 較差</td></tr>
+<tr><td>Steroid 使用</td><td>healing 差</td></tr>
+<tr><td>Re-do CABG</td><td>—</td></tr>
+</table>
+
+<h4>本病人風險評估</h4>
+<table>
+<tr><th>因子</th><th>本病人</th><th>判讀</th></tr>
+<tr><td>DM</td><td>HbA1c 7.5%</td><td>輕度高風險</td></tr>
+<tr><td>BMI</td><td>未明</td><td>需評估</td></tr>
+<tr><td>Bilateral IMA</td><td>用 LIMA only</td><td>無此風險</td></tr>
+<tr><td>COPD</td><td>30 PY 吸菸</td><td>可能有 COPD 成分</td></tr>
+<tr><td>結論</td><td>—</td><td>中等風險，標準 sternal precaution + 嚴密 wound 監測</td></tr>
+</table>
+
+<h4>Splinted Cough 教學</h4>
+<table>
+<tr><th>步驟</th><th>說明</th></tr>
+<tr><td>1. 手或枕頭支撐</td><td>雙手交叉胸前 / 抱枕貼胸壁</td></tr>
+<tr><td>2. 深吸氣</td><td>慢慢深吸</td></tr>
+<tr><td>3. 用力咳嗽 / huff</td><td>同時雙手 / 枕頭壓胸壁</td></tr>
+<tr><td>4. 重複</td><td>2-3 次清痰</td></tr>
+<tr><td>效果</td><td>減痛、保護傷口、有效排痰</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 sternal precaution 衛教重點</strong>：(1) 採 Move in the tube 原則 + 高風險（DM）保守 (2) Splinted cough 必教 (3) 6-8 週嚴格遵守，之後漸進放寬 (4) 家屬訓練：協助 ADL、緊急狀況辨識（傷口紅腫、流膿、發燒、sternal click）。
+</p>
+
+<h4>Sternal Wound Complication 警訊</h4>
+<table>
+<tr><th>症狀</th><th>意義</th></tr>
+<tr><td>傷口紅腫熱痛</td><td>感染早期</td></tr>
+<tr><td>流膿 / 化膿</td><td>確診感染</td></tr>
+<tr><td>傷口裂開</td><td>Dehiscence</td></tr>
+<tr><td>Sternal click（咳嗽 / 動時）</td><td>Bone instability</td></tr>
+<tr><td>發燒</td><td>感染</td></tr>
+<tr><td>劇烈胸痛 + 觸壓痛</td><td>感染或 dehiscence</td></tr>
+<tr><td>Mediastinitis 徵兆</td><td>發燒 + leukocytosis + sepsis → 立即 ICU</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>傳統 sternal precaution 6-8 週：<strong>限重 5-10 lb、不推拉、不過頭、不後伸</strong></li>
+<li>Modern「Keep your move in the tube」較人性化</li>
+<li>DM、obese、bilateral IMA 為高風險</li>
+<li>Splinted cough 必教</li>
+<li>家屬訓練識別 wound complication 警訊</li>
+</ul>`,
+      },
+      {
+        q: '請安排本病人 phase I 住院期心臟復健（POD 5 至出院）。每天活動進度？監測？衛教？',
+        keywords: [
+          'In-hospital phase I',
+          'Progressive ambulation',
+          'METs progression',
+          'Stair climbing test',
+          'Discharge criteria',
+          'IS hourly',
+          'ROM bilateral',
+          'Education package',
+          'Walking 50-100 m',
+          'Symptom monitoring',
+        ],
+        points: [
+          'Phase I 目標：safe ambulation、self-care、衛教、防 deconditioning、preparation for discharge',
+          'POD 5 起始：床邊 ROM、坐床邊、站立、走 5-10 m',
+          'POD 6-7：走廊 25-50 m × 2-3 次/天、上廁所、IS',
+          'POD 8-10：走廊 100-200 m、上下 1 樓、自理 ADL',
+          '出院前：Stair climbing test（爬 1 樓無症狀 ≈ 4-5 MET）、6MWT 評估、衛教完整',
+          '監測每次活動：HR（&lt; RHR + 30）、BP、SpO₂、symptoms（胸痛、dyspnea、頭暈）、RPE 11-13',
+          '衛教：sternal precaution、splinted cough、IS、藥物 adherence、二級預防、AECOPD-like 警訊（gradual SOB、wound issue、AF symptoms）、緊急聯繫',
+          'IS 每小時 10 次（醒著時）',
+          '雙側肩 ROM 早期介入防 frozen shoulder',
+        ],
+        a: `<h4>Phase I 住院期復健（POD 5-10）</h4>
+<table>
+<tr><th>POD</th><th>活動目標</th><th>MET</th></tr>
+<tr><td>POD 5（轉普通病房）</td><td>床邊 ROM、坐床邊 5-10 min、站立、走 5-10 m</td><td>1.5-2</td></tr>
+<tr><td>POD 6</td><td>走廊 25-50 m × 2-3 次/天</td><td>2-2.5</td></tr>
+<tr><td>POD 7</td><td>走廊 50-100 m、坐椅子吃飯</td><td>2.5-3</td></tr>
+<tr><td>POD 8</td><td>走廊 100-200 m、上下半樓</td><td>3-3.5</td></tr>
+<tr><td>POD 9-10</td><td>走廊 200-300 m、上下 1-2 樓、ADL 獨立</td><td>3.5-4</td></tr>
+<tr><td>出院前</td><td>Stair test、6MWT 基準值</td><td>4-5</td></tr>
+</table>
+
+<h4>每次活動監測（高風險病人）</h4>
+<table>
+<tr><th>項目</th><th>標準</th><th>停止標準</th></tr>
+<tr><td>HR</td><td>不超過 RHR + 30 bpm（一般處方）</td><td>&gt; RHR + 30 / &gt; 130</td></tr>
+<tr><td>BP</td><td>SBP 升 &lt; 30 mmHg、DBP 升 &lt; 10</td><td>SBP 升 &gt; 30 / 下降 &gt; 10、DBP &gt; 110</td></tr>
+<tr><td>SpO₂</td><td>&gt; 92%</td><td>&lt; 88%</td></tr>
+<tr><td>RPE</td><td>11-13</td><td>&gt; 13</td></tr>
+<tr><td>症狀</td><td>無胸痛 / 嚴重 dyspnea / 頭暈</td><td>任何新症狀</td></tr>
+<tr><td>EKG（必要）</td><td>—</td><td>新發 ST↓、arrhythmia</td></tr>
+</table>
+
+<h4>每日 Phase I 內容</h4>
+<table>
+<tr><th>類別</th><th>處方</th></tr>
+<tr><td>有氧</td><td>漸進步行（如上表）；2-3 次/day</td></tr>
+<tr><td>呼吸</td><td>IS 每小時 10 次（醒著時）；ACBT 3-4 次/day；splinted cough</td></tr>
+<tr><td>肩 / 胸壁 ROM</td><td>雙側肩 active assisted ROM；防 frozen shoulder；ROM in tube</td></tr>
+<tr><td>下肢 ROM / 阻力</td><td>足踝 pump、膝 ROM、小腿 stretch；下肢肌力訓練</td></tr>
+<tr><td>軀幹 stretch</td><td>溫和、避免 extreme</td></tr>
+<tr><td>姿勢矯正</td><td>胸部 protective posture（肩高、軀幹彎）需主動矯正</td></tr>
+<tr><td>ADL 訓練</td><td>用 sternal precaution 完成洗澡、穿衣、如廁</td></tr>
+</table>
+
+<h4>出院前評估</h4>
+<table>
+<tr><th>項目</th><th>標準</th></tr>
+<tr><td>Stair climbing test</td><td>能爬 1 樓無症狀 ≈ 達 4-5 MET、適合居家</td></tr>
+<tr><td>6MWT baseline</td><td>—</td></tr>
+<tr><td>ADL 獨立</td><td>洗澡、穿衣、如廁、進食</td></tr>
+<tr><td>衛教 mastery</td><td>家屬 + 病人能正確操作 IS、splinted cough、辨識警訊</td></tr>
+<tr><td>傷口</td><td>無感染徵兆、乾燥</td></tr>
+<tr><td>藥物 review</td><td>正確時間、劑量、副作用辨識</td></tr>
+<tr><td>follow-up 安排</td><td>心臟外科 1-2 週、心臟內科 4 週、phase II rehab 2-4 週</td></tr>
+</table>
+
+<h4>Phase I 衛教 Package</h4>
+<table>
+<tr><th>類別</th><th>內容</th></tr>
+<tr><td>Sternal precaution</td><td>6-8 週、Move in tube、splinted cough</td></tr>
+<tr><td>傷口照護</td><td>每日清潔、保持乾燥、不泡澡 / 游泳 4 週、警訊辨識</td></tr>
+<tr><td>藥物</td><td>Aspirin、clopidogrel（若有）、statin、β-blocker、ACEi/ARB、DM 藥</td></tr>
+<tr><td>飲食</td><td>低鈉、低油、地中海 / DASH、限酒</td></tr>
+<tr><td>運動</td><td>每天走路漸進；居家計畫；4 週後 phase II</td></tr>
+<tr><td>戒菸維持</td><td>已戒 1 個月，強化動機、避免二手菸</td></tr>
+<tr><td>DM 控制</td><td>HbA1c &lt; 7%；血糖監測；藥物 adherence</td></tr>
+<tr><td>性行為</td><td>2-4 週後依耐受度；通常爬 2 樓無症狀即 OK</td></tr>
+<tr><td>開車</td><td>4-6 週後 + 醫師評估</td></tr>
+<tr><td>工作</td><td>視工作性質 6-12 週返回</td></tr>
+<tr><td>緊急</td><td>胸痛、嚴重 SOB、傷口問題、syncope → 立即就醫</td></tr>
+</table>
+
+<h4>常見 Post-CABG 問題與處置</h4>
+<table>
+<tr><th>問題</th><th>處置</th></tr>
+<tr><td>Post-op AF（20-40%）</td><td>β-blocker、amiodarone；多為自限</td></tr>
+<tr><td>Pleural effusion（左側多）</td><td>多自限；嚴重需 thoracentesis</td></tr>
+<tr><td>Atelectasis</td><td>IS、ACBT、early ambulation</td></tr>
+<tr><td>失眠 / 焦慮 / depression</td><td>篩檢、心理支持、必要時藥物</td></tr>
+<tr><td>Post-pericardiotomy syndrome</td><td>NSAIDs / colchicine</td></tr>
+<tr><td>Pump head（cognitive）</td><td>大多 6 個月內改善；避免單獨開車</td></tr>
+<tr><td>Constipation（術後 + 鴉片）</td><td>Stool softener、laxative</td></tr>
+<tr><td>Sternal click</td><td>立即評估</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 Phase I 計畫</strong>：(1) POD 5-7 漸進活動（走廊 50-100 m） (2) POD 8-10 上下樓梯練習 (3) 出院前 stair test + 6MWT (4) 衛教 package 完整 (5) Post-op AF 監測（β-blocker 已用，預防有效） (6) DM + 戒菸 maintenance (7) 安排 phase II 1-2 週後啟動。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Phase I 是<strong>safe ambulation + 衛教 + discharge prep</strong></li>
+<li>Stair climbing test 是出院前重要評估</li>
+<li>每次活動監測：HR、BP、SpO₂、症狀、RPE</li>
+<li>HR 規則：不超過 RHR + 30</li>
+<li>衛教 package 涵蓋 8-10 大主題</li>
+<li>Post-op AF 是常見併發症（20-40%）</li>
+</ul>`,
+      },
+      {
+        q: '出院後 4 週門診 CPET：RER 1.12、Peak VO₂ 18 mL/kg/min（65% predicted）、AT 11、Peak HR 130、Chronotropic Index 0.75、HRR 12、VE/VCO₂ 28、無 ST 變化。如何判讀？AACVPR 風險分級？',
+        keywords: [
+          'Maximal effort achieved',
+          'Peak MET 5.1',
+          'AACVPR moderate risk',
+          'No stress ischemia',
+          'Borderline CI (β-blocker)',
+          'Normal HRR',
+          'Normal VE/VCO₂',
+          'AT-based prescription',
+          'Phase II eligible',
+          'Good prognosis',
+        ],
+        points: [
+          'RER 1.12 ≥ 1.10 → maximal effort',
+          'Peak VO₂ 18（5.1 MET、65% predicted）→ moderate reduction',
+          'AT 11（61% Peak VO₂）正常比例',
+          'Peak HR 130，CI 0.75 → 邊界（β-blocker 影響）；HRR 12 正常',
+          'VE/VCO₂ 28 < 30 → 正常 ventilation efficiency',
+          '無 ST 變化 → 無誘發 ischemia（CABG revascularization 成功）',
+          'AACVPR：5.1 MET 在 5-7 範圍、LVEF 50%、無 ischemia、無 arrhythmia → Moderate risk（非 high）',
+          '預後好：成功 revasc + 無 ischemia + 正常 VE/VCO₂',
+          '可進入 phase II 監督式心臟復健',
+        ],
+        a: `<h4>本病人 CPET 解讀</h4>
+<table>
+<tr><th>指標</th><th>數值</th><th>判讀</th></tr>
+<tr><td>RER</td><td>1.12</td><td>✓ Max effort</td></tr>
+<tr><td>Peak VO₂</td><td>18（5.1 MET、65% predicted）</td><td>Moderate reduction（術後 4 週尚未完全恢復）</td></tr>
+<tr><td>AT</td><td>11（61% Peak）</td><td>正常比例</td></tr>
+<tr><td>Peak HR</td><td>130</td><td>受 β-blocker 影響、相對偏低</td></tr>
+<tr><td>Chronotropic Index</td><td>0.75</td><td>Borderline（β-blocker、CABG 後恢復中）</td></tr>
+<tr><td>HRR 1 min</td><td>12</td><td>✓ 正常下限</td></tr>
+<tr><td>VE/VCO₂ slope</td><td>28</td><td>✓ 正常（&lt; 30）</td></tr>
+<tr><td>ST 變化</td><td>無</td><td>✓ 無 stress-induced ischemia → revascularization 成功</td></tr>
+<tr><td>整體</td><td colspan="2"><strong>術後 4 週 reasonable functional capacity，預後好</strong></td></tr>
+</table>
+
+<h4>本病人 AACVPR 風險分級</h4>
+<table>
+<tr><th>項目</th><th>本病人</th><th>分類</th></tr>
+<tr><td>運動能力</td><td>5.1 MET</td><td>5-7 → Moderate</td></tr>
+<tr><td>LVEF</td><td>50%</td><td>&gt; 50% → Low</td></tr>
+<tr><td>運動症狀</td><td>無</td><td>Low</td></tr>
+<tr><td>Ischemia</td><td>無</td><td>Low</td></tr>
+<tr><td>心律不整</td><td>無</td><td>Low</td></tr>
+<tr><td>事件</td><td>Uncomplicated CABG</td><td>Low</td></tr>
+<tr><td>Depression</td><td>需 screen（PHQ-9）</td><td>—</td></tr>
+<tr><td><strong>整體</strong></td><td colspan="2"><strong>Moderate risk</strong>（因 MET 5.1 在 5-7 範圍）</td></tr>
+</table>
+
+<h4>對比術前（推估）</h4>
+<table>
+<tr><th>狀態</th><th>術前</th><th>術後 4 週</th></tr>
+<tr><td>胸痛 / angina</td><td>有（typical angina）</td><td>無</td></tr>
+<tr><td>EKG ischemia</td><td>有 ST 變化</td><td>無</td></tr>
+<tr><td>Functional class</td><td>NYHA II-III</td><td>NYHA I-II</td></tr>
+<tr><td>LVEF</td><td>45%</td><td>50%</td></tr>
+<tr><td>Peak VO₂</td><td>低（推估）</td><td>18（improving）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>CPET 結果意涵</strong>：(1) <strong>Revascularization 成功</strong>（無 ST 變化、無誘發 ischemia） (2) Peak VO₂ 65% predicted 為術後 4 週合理表現（多數 CABG 病人 6-12 個月可達 80-90%） (3) Phase II 後預期可達 Peak VO₂ ≥ 22（&gt; 6 MET → AACVPR Low） (4) 預後好。
+</p>
+
+<h4>處方依據</h4>
+<table>
+<tr><th>方法</th><th>計算 / 應用</th></tr>
+<tr><td>VO₂R</td><td>(18 − 3.5) × 50-70% + 3.5 = 起始 ~10.5（接近 AT 11）</td></tr>
+<tr><td>HR-based</td><td>β-blocker 用 → 不可靠；可用 RPE</td></tr>
+<tr><td>RPE</td><td>11-13（首選）</td></tr>
+<tr><td>AT-based</td><td>對應 AT 11 mL/kg/min 的 work rate</td></tr>
+<tr><td>Talk test</td><td>可說話但不能唱歌</td></tr>
+</table>
+
+<h4>進入 Phase II 的時機與條件</h4>
+<table>
+<tr><th>項目</th><th>本病人狀態</th></tr>
+<tr><td>Time post-op</td><td>4 週（standard 為 2-4 週）</td></tr>
+<tr><td>Wound healing</td><td>需確認</td></tr>
+<tr><td>Sternal stability</td><td>仍在 6-8 週 precaution 期</td></tr>
+<tr><td>Hemodynamics 穩定</td><td>確認</td></tr>
+<tr><td>無 active ischemia</td><td>✓</td></tr>
+<tr><td>Functional capacity</td><td>5.1 MET 足以 phase II</td></tr>
+<tr><td>結論</td><td><strong>適合進入 phase II</strong></td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>術後 CPET 在 4 週可進行（CABG 推薦 4-6 週）</li>
+<li>Maximal effort RER ≥ 1.10</li>
+<li>VE/VCO₂ &lt; 30 = 正常 ventilation efficiency</li>
+<li>無 ST 變化 = revascularization 成功</li>
+<li>5.1 MET 屬 AACVPR Moderate</li>
+<li>β-blocker 病人用 RPE / VO₂R 不用 HR</li>
+</ul>`,
+      },
+      {
+        q: '請開立完整 phase II 監督式心臟復健處方（FITT-VP）。如何漸進？阻力訓練何時加入？',
+        keywords: [
+          '36 sessions Phase II',
+          'AT-based intensity',
+          'RPE 11-13',
+          '50-70% VO₂R',
+          'EKG monitoring early',
+          'Resistance after 6 weeks',
+          'Lower body resistance first',
+          'Avoid Valsalva',
+          'Progressive overload',
+          'Re-CPET 3 months',
+        ],
+        points: [
+          'Frequency 監督式 3 次/週 × 12 週（健保 36 次）',
+          'Intensity 起始 50% VO₂R（≈ AT 11 mL/kg/min）；漸進至 70-80% VO₂R；RPE 11-13 → 13-14',
+          'Time 暖身 10 min + 主訓練 20-30 min（漸進至 40-60 min）+ cool-down 10 min',
+          'Type 有氧 + 阻力 + 柔軟度 + 平衡（下肢為主，上肢延遲）',
+          '阻力時程：下肢 (POD 14+)、軀幹 stretch (POD 7+)、上肢 (POD 14-28，避胸肌出力)、胸肌 (6-8 週後 sternum 穩定)',
+          'Volume 目標 150 min/週',
+          '監測 EKG 連續前 6-12 次（moderate risk）；BP 暖身/巔峰/cool-down；SpO₂、RPE、症狀',
+          '進階：先 time → 頻率 → 強度；3 個月後重做 CPET 客觀評估',
+          '心理 + 戒菸 maintenance + DM 控制同步',
+        ],
+        a: `<h4>Phase II 完整處方（FITT-VP）</h4>
+<table>
+<tr><th>FITT-VP</th><th>處方</th></tr>
+<tr><td><strong>Frequency</strong></td><td>監督式 3 次/週 × 12 週（健保 phase II 心臟復健 36 次）</td></tr>
+<tr><td><strong>Intensity</strong></td><td>有氧：起始 50% VO₂R（對應 AT 11 mL/kg/min）；漸進 60-70% VO₂R；RPE 11-13 → 13-14<br>阻力：50-60% 1RM 起、漸進至 70%；8-12 reps、2-3 set</td></tr>
+<tr><td><strong>Time</strong></td><td>暖身 10 min（低強度 + ROM）<br>主訓練 20-30 min（漸進至 40-60）<br>Cool-down 10 min</td></tr>
+<tr><td><strong>Type</strong></td><td>有氧（cycle、treadmill、走路）+ 阻力（漸進）+ 柔軟度（每日）+ 平衡（老人）</td></tr>
+<tr><td><strong>Volume</strong></td><td>目標 150 min/週中強度</td></tr>
+<tr><td><strong>Progression</strong></td><td>先 time → 頻率 → 強度；每 2-4 週 reassess；3 個月 re-CPET</td></tr>
+</table>
+
+<h4>強度設定（多重指標）</h4>
+<table>
+<tr><th>方法</th><th>本病人計算</th></tr>
+<tr><td>VO₂R</td><td>(18 − 3.5) × 50-70% + 3.5 = 起始 10.7（≈ AT 11）；漸進 13.7</td></tr>
+<tr><td>HR-based</td><td>β-blocker → 僅作參考</td></tr>
+<tr><td><strong>RPE（首選）</strong></td><td>11-13 起、漸進 13-14</td></tr>
+<tr><td>Talk test</td><td>可說話但不能唱歌</td></tr>
+<tr><td>AT-based work rate</td><td>對應 AT 11 mL/kg/min 的 Watt</td></tr>
+</table>
+
+<h4>阻力訓練漸進時程（CABG 術後）</h4>
+<table>
+<tr><th>類型</th><th>時程</th><th>強度</th></tr>
+<tr><td>下肢 ROM / 等長</td><td>POD 1-14</td><td>輕</td></tr>
+<tr><td>軀幹 stretch</td><td>POD 7+</td><td>溫和</td></tr>
+<tr><td>上肢 dynamic（避胸肌）</td><td>POD 14-28</td><td>低 weight、多 reps、彈力帶</td></tr>
+<tr><td>下肢阻力</td><td>POD 14-28 起</td><td>50% 1RM、漸進</td></tr>
+<tr><td>軀幹核心（避 Valsalva）</td><td>POD 21+</td><td>輕中</td></tr>
+<tr><td>胸肌訓練</td><td><strong>6-8 週後</strong></td><td>逐步</td></tr>
+<tr><td>大重量 / 1RM 測試</td><td>3 個月後</td><td>—</td></tr>
+</table>
+
+<h4>監測（Moderate risk）</h4>
+<table>
+<tr><th>項目</th><th>頻率</th><th>標準</th></tr>
+<tr><td>EKG</td><td>連續監測前 6-12 次</td><td>ST↓ &gt; 1 mm 警示、&gt; 2 mm 停</td></tr>
+<tr><td>BP</td><td>暖身 / 巔峰 / cool-down</td><td>SBP &lt; 90 / &gt; 200、SBP 下降 &gt; 10</td></tr>
+<tr><td>HR</td><td>連續</td><td>—</td></tr>
+<tr><td>SpO₂</td><td>運動中（特別 COPD 成分病人）</td><td>&lt; 90%</td></tr>
+<tr><td>RPE / Borg</td><td>每 stage</td><td>&gt; 17</td></tr>
+<tr><td>症狀</td><td>每次運動</td><td>胸痛、頭暈、palpitation</td></tr>
+<tr><td>傷口（早期）</td><td>每次 visit</td><td>感染徵候</td></tr>
+<tr><td>體重 / BP</td><td>每次</td><td>—</td></tr>
+</table>
+
+<h4>進階策略</h4>
+<table>
+<tr><th>順序</th><th>內容</th></tr>
+<tr><td>1. 先增 Time</td><td>Week 1-4：20 min → 30 min → 40 min → 50 min</td></tr>
+<tr><td>2. 增頻率</td><td>3 次/週 → 5 次/週（含居家）</td></tr>
+<tr><td>3. 增強度</td><td>RPE 11-13 → 13-14；VO₂R 50% → 70%</td></tr>
+<tr><td>4. 多樣化</td><td>單一有氧 → 加 interval、阻力、平衡</td></tr>
+<tr><td>5. 場域擴展</td><td>監督 → 居家 hybrid</td></tr>
+</table>
+
+<h4>停止運動指標</h4>
+<ul>
+<li>胸痛、嚴重 dyspnea、頭暈、palpitation</li>
+<li>新發 ST 變化（ST↓ &gt; 2 mm）</li>
+<li>新發 sustained arrhythmia</li>
+<li>SBP 升 &gt; 250、下降 &gt; 10 mmHg</li>
+<li>SpO₂ &lt; 88-90%</li>
+<li>RPE &gt; 17、無法繼續</li>
+<li>傷口問題（紅腫、流膿、痛、sternal click）</li>
+</ul>
+
+<h4>本病人預期改善（3 個月後）</h4>
+<table>
+<tr><th>指標</th><th>4 週</th><th>3 個月預期</th></tr>
+<tr><td>Peak VO₂</td><td>18（5.1 MET）</td><td>22-25（&gt; 6 MET，AACVPR Low）</td></tr>
+<tr><td>AT</td><td>11</td><td>14-16</td></tr>
+<tr><td>6MWT</td><td>—</td><td>+ 50-100 m</td></tr>
+<tr><td>QoL（HRQoL）</td><td>—</td><td>顯著改善</td></tr>
+<tr><td>BP</td><td>—</td><td>降 5-10 mmHg</td></tr>
+<tr><td>HbA1c</td><td>7.5%</td><td>&lt; 7%</td></tr>
+<tr><td>體重</td><td>—</td><td>降 3-5%（若超重）</td></tr>
+<tr><td>Sternum</td><td>仍 precaution</td><td>完全癒合，可全活動</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人 phase II 核心策略</strong>：(1) AT-based + RPE 為強度依據（β-blocker） (2) 漸進阻力訓練：下肢早、上肢中、胸肌晚 (3) EKG 連續前 6-12 次 (4) 整合二級預防（aspirin、statin、ACEi、β-blocker、DM 藥） (5) 戒菸 maintenance (6) 心理 screening（CABG 後 depression 30%）。
+</p>
+
+<h4>口試重點</h4>
+<ul>
+<li>Phase II 36 次（健保）</li>
+<li>強度起始 50% VO₂R / AT-based / RPE 11-13</li>
+<li>阻力時程：下肢早、上肢中、胸肌晚（6-8 週後）</li>
+<li>EKG 連續前 6-12 次（moderate risk）</li>
+<li>進階：時間 → 頻率 → 強度</li>
+<li>3 個月 re-CPET 預期 Peak VO₂ 改善 20-30%</li>
+</ul>`,
+      },
+      {
+        q: 'Phase II 第 5 次 session，運動中發現新發 AF，HR 130，無症狀。如何處置？日後處方調整？',
+        keywords: [
+          'Post-op AF in CABG',
+          'Stop exercise',
+          'Cardiology consult',
+          'Rate control β-blocker',
+          'Anticoagulation CHA2DS2-VASc',
+          'New onset post-op (transient)',
+          'Risk stratification',
+          'EKG monitoring',
+          'Cardioversion',
+          'Long-term recurrence',
+        ],
+        points: [
+          '立即處置：(1) 停止運動 (2) 量 BP / 評估症狀 (3) Cool-down 至基線 (4) 12-lead EKG 確認 (5) 通知心臟科',
+          'Post-op AF：CABG 後 20-40% 發生，多在 POD 2-5；本病人 POD ~30 仍出現需評估是否新發或復發',
+          '處置：(1) 若 hemodynamics 穩定 → 觀察、考慮 cardioversion 或 rate control (2) 若不穩 → 急性 cardioversion',
+          'Rate control：β-blocker（已用，可加量）、CCB（diltiazem）、digoxin',
+          'Rhythm control：amiodarone、cardioversion',
+          '抗凝評估：CHA2DS2-VASc 計算、HAS-BLED',
+          '本病人 CHA2DS2-VASc：HTN(1) + DM(1) + 65 歲(1) + Vascular disease(1) = 4 → 需 anticoagulation',
+          '日後處方：暫停 phase II 至 rhythm 穩定；恢復後 EKG 連續監測延長至 12-24 次；強度更保守；運動中若 AF 復發又無症狀 → 個案化判斷',
+        ],
+        a: `<h4>運動中新發 AF 即時處置</h4>
+<table>
+<tr><th>步驟</th><th>內容</th></tr>
+<tr><td>1. 立即停止運動</td><td>RPE 11-13 → 9-11 → 休息</td></tr>
+<tr><td>2. Cool-down</td><td>緩慢降強度避免 venous return 突降</td></tr>
+<tr><td>3. 評估</td><td>BP（記錄前後）、症狀（胸痛、頭暈、palpitation）、HR rate</td></tr>
+<tr><td>4. 12-lead EKG</td><td>確認 rhythm、rate、其他變化</td></tr>
+<tr><td>5. 心臟科 consult</td><td>立即通報</td></tr>
+<tr><td>6. 觀察</td><td>監測 HR / BP 至穩定 / 自動 conversion</td></tr>
+</table>
+
+<h4>判斷 hemodynamic stable vs unstable</h4>
+<table>
+<tr><th>Stable</th><th>Unstable</th></tr>
+<tr><td>SBP &gt; 90</td><td>SBP &lt; 90 / 下降顯著</td></tr>
+<tr><td>無症狀 / mild palpitation</td><td>胸痛、嚴重 dyspnea、頭暈、syncope</td></tr>
+<tr><td>HR &lt; 130 stable</td><td>HR &gt; 150、無法 control</td></tr>
+<tr><td>本病人</td><td>—</td></tr>
+</table>
+
+<h4>Post-op AF 流行病學</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>盛行率</td><td>CABG 後 20-40%、Valve surgery 後 40-50%</td></tr>
+<tr><td>時機</td><td>POD 2-5（peak day 3）；可至 POD 30+</td></tr>
+<tr><td>機轉</td><td>Inflammation、pericardial effusion、autonomic imbalance、electrolyte 失衡</td></tr>
+<tr><td>本病人 POD ~30</td><td>較典型 post-op AF 晚，但仍可能 stress-induced（運動）或<strong>新發 AF</strong></td></tr>
+<tr><td>後果</td><td>Stroke 風險、prolonged hospitalization、增加 mortality</td></tr>
+</table>
+
+<h4>處置選項</h4>
+<table>
+<tr><th>策略</th><th>內容</th><th>適合</th></tr>
+<tr><td>Rate control</td><td>β-blocker（首選）、CCB（diltiazem）、digoxin</td><td>無症狀、stable、長期 strategy</td></tr>
+<tr><td>Rhythm control</td><td>Amiodarone、ibutilide、cardioversion（electrical / pharmacological）</td><td>症狀性、想恢復 sinus、新發短期</td></tr>
+<tr><td>Acute cardioversion</td><td>Electrical 100-200 J</td><td>Hemodynamically unstable</td></tr>
+<tr><td>觀察</td><td>多數 post-op AF 自限</td><td>無症狀、stable、預期短期</td></tr>
+</table>
+
+<h4>抗凝評估</h4>
+<table>
+<tr><th>CHA₂DS₂-VASc score</th><th>本病人</th></tr>
+<tr><td>C: CHF（LVEF ≤ 40%）</td><td>0（LVEF 50%）</td></tr>
+<tr><td>H: HTN</td><td>1</td></tr>
+<tr><td>A₂: Age ≥ 75</td><td>0（65）</td></tr>
+<tr><td>D: DM</td><td>1</td></tr>
+<tr><td>S₂: Prior stroke / TIA</td><td>0</td></tr>
+<tr><td>V: Vascular disease（CAD / PAD）</td><td>1</td></tr>
+<tr><td>A: Age 65-74</td><td>1</td></tr>
+<tr><td>Sc: Sex 女</td><td>0（男）</td></tr>
+<tr><td><strong>總分</strong></td><td><strong>4 → 高風險，需 anticoagulation</strong></td></tr>
+</table>
+
+<h4>HAS-BLED 出血風險評估</h4>
+<table>
+<tr><th>項目</th><th>本病人</th></tr>
+<tr><td>HTN（uncontrolled）</td><td>需確認</td></tr>
+<tr><td>Renal / Liver dysfunction</td><td>?</td></tr>
+<tr><td>Stroke 史</td><td>0</td></tr>
+<tr><td>Bleeding 史</td><td>?</td></tr>
+<tr><td>Labile INR（warfarin）</td><td>—</td></tr>
+<tr><td>Elderly（&gt; 65）</td><td>1</td></tr>
+<tr><td>Drugs（NSAIDs、aspirin）/ alcohol</td><td>已 aspirin DAPT</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>抗凝決策複雜性</strong>：本病人已 DAPT（aspirin + clopidogrel post-CABG）。新發 AF + CHA₂DS₂-VASc 4 需加 anticoagulation → 三合一抗血小板 + 抗凝治療出血風險高。需與心臟科討論：(1) 縮短 DAPT 期 (2) 改 SAPT + DOAC (3) 三合一短期方案。
+</p>
+
+<h4>恢復運動的條件</h4>
+<table>
+<tr><th>項目</th><th>標準</th></tr>
+<tr><td>Rhythm 評估</td><td>Sinus 或 controlled AF（HR 60-110）</td></tr>
+<tr><td>抗凝啟動</td><td>需先穩定 anticoagulation 1-2 週</td></tr>
+<tr><td>症狀</td><td>無</td></tr>
+<tr><td>Echo</td><td>無新發 LV dysfunction</td></tr>
+<tr><td>心臟科 clearance</td><td>必要</td></tr>
+</table>
+
+<h4>恢復後處方調整</h4>
+<table>
+<tr><th>項目</th><th>調整</th></tr>
+<tr><td>強度</td><td>降回 RPE 11-12 起、漸進更慢</td></tr>
+<tr><td>EKG 監測</td><td>連續監測延長至 12-24 次</td></tr>
+<tr><td>HR target</td><td>不依賴 HR-based（AF 加 β-blocker 不可靠）</td></tr>
+<tr><td>RPE</td><td>主要依據</td></tr>
+<tr><td>監測重點</td><td>HR rate（AF 是否惡化）、BP、症狀</td></tr>
+<tr><td>停止標準</td><td>AF with rapid response（HR &gt; 130）、不適</td></tr>
+<tr><td>運動類型</td><td>Continuous &gt; interval（避免 sympathetic surge 誘發 AF）</td></tr>
+</table>
+
+<h4>長期 AF 管理</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>Rate control 目標</td><td>Resting HR &lt; 110（lenient）/ &lt; 80（strict）</td></tr>
+<tr><td>Rhythm control 評估</td><td>新發、症狀性、年輕 → cardioversion / ablation</td></tr>
+<tr><td>抗凝</td><td>長期（依 CHA₂DS₂-VASc）</td></tr>
+<tr><td>復發風險</td><td>Post-op AF 後 5 年 AF 復發率 ~25%</td></tr>
+<tr><td>運動</td><td>仍鼓勵；可改善 AF burden</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>運動中新發 AF：<strong>停止 + EKG + cardiology consult</strong></li>
+<li>Post-op AF 20-40%、多 POD 2-5</li>
+<li>Hemodynamic stable → rate control / 觀察；unstable → cardioversion</li>
+<li>CHA₂DS₂-VASc + HAS-BLED 評估抗凝</li>
+<li>恢復運動：先 rhythm 穩定、抗凝 starts、心臟科 clearance</li>
+<li>處方調整：降強度、延長 EKG 監測、用 RPE 不用 HR</li>
+</ul>`,
+      },
+      {
+        q: 'Phase II 完成後請安排 phase III 居家長期維持。如何防止 dropout？追蹤頻率？re-event 預防？',
+        keywords: [
+          'Phase III home-based',
+          'Lifelong commitment',
+          'Adherence strategies',
+          'Self-monitoring',
+          'Wearable / app',
+          'Group exercise',
+          'Re-CPET annually',
+          'Secondary prevention ABCDEF',
+          'Recurrent event prevention',
+          'Telephone / tele-rehab follow-up',
+        ],
+        points: [
+          'Phase III 目標：lifelong maintenance、防 dropout、防 re-event、QoL',
+          '結構：完整 phase II 後轉居家為主 + 定期回診 + 群體 / 同儕支持',
+          '頻率：3-5 次/週中強度 150 min + 阻力 2 次/週',
+          '追蹤：1-3-6-12 個月回診，之後每年；隨時 emergency',
+          'Adherence 策略：(1) 設定具體目標 (2) 每天追蹤 (wearable / app) (3) 群體運動 (4) 家屬參與 (5) 定期 reassess + 進步回饋 (6) 心理支持',
+          'Re-event 預防：二級預防 ABCDEF maintenance、藥物 adherence、戒菸維持、DM/HTN 控制',
+          '每年 reassess：6MWT、血壓、體重、HbA1c、lipid、藥物 adherence、CPET（必要時）',
+          '心理：CR 後 depression 30%、long-term 焦慮 → CBT、藥物、群體',
+          '本病人 + DM → DM education program 整合',
+        ],
+        a: `<h4>Phase III 居家長期維持</h4>
+<table>
+<tr><th>FITT-VP</th><th>處方</th></tr>
+<tr><td>Frequency</td><td>3-5 次/週</td></tr>
+<tr><td>Intensity</td><td>RPE 12-14；50-70% VO₂R；中強度</td></tr>
+<tr><td>Time</td><td>30-60 min/session（暖身 + cool-down 含）</td></tr>
+<tr><td>Type</td><td>有氧（多樣化：走、跑、游、騎）+ 阻力 2 次/週 + 柔軟度 + 平衡</td></tr>
+<tr><td>Volume</td><td>150 min/週中強度 或 75 min/週高強度 + 阻力 2 次</td></tr>
+<tr><td>Setting</td><td>居家 + 健身房 + 戶外 + 群體；可加 hybrid tele-rehab</td></tr>
+</table>
+
+<h4>Adherence 策略</h4>
+<table>
+<tr><th>策略</th><th>內容</th></tr>
+<tr><td>具體目標</td><td>SMART goal：「每週走 3 次、每次 30 分」</td></tr>
+<tr><td>自我追蹤</td><td>運動日誌、wearable（HR、step、SpO₂）、app（Strava、心率錶）</td></tr>
+<tr><td>進度回饋</td><td>每次回診比較、給予正向 reinforcement</td></tr>
+<tr><td>群體運動</td><td>Group class、同病友支持</td></tr>
+<tr><td>家屬參與</td><td>一同運動、提醒、營養配合</td></tr>
+<tr><td>環境設計</td><td>家中固定運動角落、運動服 ready、行事曆規劃</td></tr>
+<tr><td>克服 barrier</td><td>天氣（室內 plan）、時間（短時段亦可）、動機（連結價值觀）</td></tr>
+<tr><td>心理</td><td>篩 depression / anxiety、必要時 treat</td></tr>
+<tr><td>Tele-rehab</td><td>遠端監督、wearable 整合、video session</td></tr>
+</table>
+
+<h4>追蹤頻率</h4>
+<table>
+<tr><th>時程</th><th>內容</th></tr>
+<tr><td>Phase II 結束</td><td>6MWT、CPET、QoL、藥物 review</td></tr>
+<tr><td>1 個月後</td><td>Adherence 確認、症狀、藥物</td></tr>
+<tr><td>3 個月</td><td>同上 + lab（lipid、HbA1c、Cr）</td></tr>
+<tr><td>6 個月</td><td>同上 + 6MWT 或 CPET（依需求）</td></tr>
+<tr><td>12 個月</td><td>完整 reassess：CPET、echo（依需求）</td></tr>
+<tr><td>每年</td><td>持續 follow + 二級預防 review</td></tr>
+<tr><td>急診 / 緊急</td><td>新症狀、re-event 立即就醫</td></tr>
+</table>
+
+<h4>二級預防 ABCDEF Maintenance</h4>
+<table>
+<tr><th>字母</th><th>內容</th><th>本病人目標</th></tr>
+<tr><td><strong>A</strong></td><td>Antiplatelet + ACEi/ARB</td><td>Aspirin 81 lifelong；DAPT 12 個月後 SAPT；Ramipril maintenance</td></tr>
+<tr><td><strong>B</strong></td><td>β-blocker + BP</td><td>Bisoprolol（β-blocker）；BP &lt; 130/80</td></tr>
+<tr><td><strong>C</strong></td><td>Cholesterol + Cigarette</td><td>High-intensity statin、LDL &lt; 70；戒菸 maintenance</td></tr>
+<tr><td><strong>D</strong></td><td>Diet + DM</td><td>地中海/DASH、HbA1c &lt; 7%</td></tr>
+<tr><td><strong>E</strong></td><td>Exercise + Education</td><td>150 min/週、阻力 2 次；長期教育</td></tr>
+<tr><td><strong>F</strong></td><td>Flu vaccine + Family</td><td>每年流感、肺鏈、COVID；家屬篩 CV risk</td></tr>
+</table>
+
+<h4>Re-event 預防</h4>
+<table>
+<tr><th>事件</th><th>預防</th></tr>
+<tr><td>SVG occlusion</td><td>Aspirin、statin（高強度）；運動降低</td></tr>
+<tr><td>Native disease progression</td><td>OMT 完整、運動、戒菸</td></tr>
+<tr><td>Stroke / TIA</td><td>BP 控制、AF 抗凝、statin、戒菸</td></tr>
+<tr><td>HF 失代償</td><td>體重監測、限鈉、藥物 adherence</td></tr>
+<tr><td>DM 併發症</td><td>HbA1c 控制、ACEi/ARB（renal protection）、retinal/foot 篩檢</td></tr>
+<tr><td>新 AF 復發</td><td>EKG follow、抗凝</td></tr>
+<tr><td>Sternal late issue</td><td>新發胸痛、bone click 立即評估</td></tr>
+</table>
+
+<h4>本病人個別化長期計畫</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>運動</td><td>每天 30-45 min 走路 + 阻力 2 次/週 + 平衡 1 次（老人）</td></tr>
+<tr><td>飲食</td><td>低鈉、糖尿病飲食、地中海</td></tr>
+<tr><td>體重</td><td>BMI &lt; 25</td></tr>
+<tr><td>BP</td><td>每天家中量（&lt; 130/80）</td></tr>
+<tr><td>血糖</td><td>HbA1c 每 3 個月、家中血糖監測</td></tr>
+<tr><td>戒菸</td><td>持續</td></tr>
+<tr><td>心理</td><td>篩 depression（PHQ-9）每 6 個月</td></tr>
+<tr><td>疫苗</td><td>每年流感、補齊肺鏈、COVID</td></tr>
+<tr><td>家屬訓練</td><td>CPR、AED 操作、緊急聯繫</td></tr>
+<tr><td>群體支持</td><td>心臟病友會、社區運動</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Phase III 核心理念</strong>：心臟復健<strong>不是 36 次的事</strong>，而是<strong>終身的生活方式</strong>。Phase II 結束才是真正開始 — 需要 lifelong commitment + 多重支持系統 + 規律追蹤 + 隨時調整。最有效的介入是<strong>持續性</strong>而非短期強度。
+</p>
+
+<h4>整體治療效益（CABG + 心臟復健）</h4>
+<table>
+<tr><th>5 年 outcome</th><th>單純 OMT</th><th>CABG + 心臟復健</th></tr>
+<tr><td>Cardiovascular mortality</td><td>—</td><td>降 25-30%</td></tr>
+<tr><td>Re-MI</td><td>—</td><td>降 20%</td></tr>
+<tr><td>Re-hospitalization</td><td>—</td><td>降 18%</td></tr>
+<tr><td>QoL</td><td>—</td><td>顯著改善</td></tr>
+<tr><td>Functional capacity</td><td>—</td><td>+ 15-25%</td></tr>
+<tr><td>Cost</td><td>—</td><td>節省 healthcare cost</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>Phase III 是<strong>終身維持</strong>，不是固定次數</li>
+<li>Adherence 是核心挑戰：<strong>具體目標、自我追蹤、群體、家屬</strong></li>
+<li>追蹤：<strong>1-3-6-12 個月，之後每年</strong></li>
+<li>二級預防 ABCDEF 持續 maintenance</li>
+<li>Re-event 預防多面向：藥物、lifestyle、合併症</li>
+<li>Tele-rehab + wearable 是未來趨勢</li>
+</ul>`,
+      },
+      {
+        q: '老人心臟術後復健有何特殊考量？Frailty 評估？多重共病整合？返職返社會考量？',
+        keywords: [
+          'Geriatric assessment',
+          'Frailty (Fried criteria)',
+          'Sarcopenia',
+          'Cognitive screening',
+          'Polypharmacy',
+          'Fall risk',
+          'Multidisciplinary geriatric',
+          'Return to work',
+          'Driving evaluation',
+          'Sexual function',
+        ],
+        points: [
+          '老人 (≥ 65) 心臟術後特殊考量：(1) Frailty 評估 (2) Sarcopenia (3) 認知 (4) 多重用藥 (5) 跌倒風險 (6) 多重共病整合 (7) 心理（depression、焦慮）(8) 社會支持',
+          'Frailty（Fried criteria）：5 項中 3+ 為 frail：(1) 體重下降 (2) 疲憊 (3) 握力下降 (4) 走速慢 (5) 活動量低',
+          'Sarcopenia：肌少症，影響 functional outcome；蛋白 1.2-1.5 g/kg、阻力訓練',
+          '認知篩檢：MMSE、MoCA；CABG 後 cognitive dysfunction（pump head）20-30%，多 6 個月內改善',
+          'Polypharmacy review：drug-drug interaction、跌倒風險（β-blocker、α-blocker、利尿劑）',
+          'Fall prevention：平衡訓練、Tai Chi、家中環境',
+          '返職：依工作性質 6-12 週',
+          '開車：4-6 週後 + reaction time 評估',
+          '性行為：可恢復（多 2-4 週後）；爬 2 樓無症狀即可',
+          'Multidisciplinary：geriatric、cardiac、復健、營養、藥師、社工',
+        ],
+        a: `<h4>老人心臟術後特殊考量</h4>
+<table>
+<tr><th>類別</th><th>評估 + 介入</th></tr>
+<tr><td><strong>Frailty</strong></td><td>Fried 5 項；frail = 3+</td></tr>
+<tr><td><strong>Sarcopenia</strong></td><td>SARC-F 量表、握力（男 &lt; 27 kg、女 &lt; 16 kg）；阻力訓練 + 蛋白</td></tr>
+<tr><td><strong>認知</strong></td><td>MMSE / MoCA；新發 cognitive decline → 評估 pump head、delirium、dementia</td></tr>
+<tr><td><strong>Polypharmacy</strong></td><td>每次 visit review；STOPP/START criteria；藥師參與</td></tr>
+<tr><td><strong>Fall risk</strong></td><td>TUG（&gt; 13.5 sec 高風險）、Berg Balance、家中評估</td></tr>
+<tr><td><strong>Vision / Hearing</strong></td><td>篩檢；運動安全</td></tr>
+<tr><td><strong>Continence</strong></td><td>尿失禁影響運動意願</td></tr>
+<tr><td><strong>Depression</strong></td><td>PHQ-9、Geriatric Depression Scale；CR 後 30%</td></tr>
+<tr><td><strong>社會</strong></td><td>獨居、家屬支持、財務、保險</td></tr>
+</table>
+
+<h4>Fried Frailty Criteria（5 項，3+ = frail）</h4>
+<table>
+<tr><th>項目</th><th>標準</th></tr>
+<tr><td>1. Unintentional weight loss</td><td>過去一年 ≥ 4.5 kg 或 &gt; 5%</td></tr>
+<tr><td>2. Self-reported exhaustion</td><td>CES-D depression scale &gt; 2</td></tr>
+<tr><td>3. Weakness</td><td>握力下降（依性別 + BMI）</td></tr>
+<tr><td>4. Slowness</td><td>15 ft walking 時間長（依性別 + 身高）</td></tr>
+<tr><td>5. Low physical activity</td><td>每週能量消耗低（依性別）</td></tr>
+</table>
+
+<h4>Frailty 對處方的影響</h4>
+<table>
+<tr><th>等級</th><th>處方</th></tr>
+<tr><td>Robust</td><td>標準處方</td></tr>
+<tr><td>Pre-frail</td><td>多加阻力 + 蛋白</td></tr>
+<tr><td>Frail</td><td>強度更保守、interval、加平衡訓練、阻力為核心；防跌</td></tr>
+<tr><td>Severely frail</td><td>個別化、可能 home-based、目標調整</td></tr>
+</table>
+
+<h4>多重共病整合</h4>
+<table>
+<tr><th>本病人共病</th><th>處方影響</th></tr>
+<tr><td>HTN</td><td>BP 監測；β-blocker 已用</td></tr>
+<tr><td>DM</td><td>血糖監測；運動前後；HbA1c &lt; 7%</td></tr>
+<tr><td>HLD</td><td>Statin（高強度）</td></tr>
+<tr><td>新發 AF</td><td>抗凝、rate control、運動類型調整</td></tr>
+<tr><td>Sarcopenia / frailty（若有）</td><td>阻力 + 蛋白為核心</td></tr>
+<tr><td>OSA（若篩到）</td><td>PAP；無 PAP 影響運動容忍</td></tr>
+<tr><td>Anxiety / depression</td><td>篩 + 介入</td></tr>
+</table>
+
+<h4>返職、開車、性行為</h4>
+<table>
+<tr><th>項目</th><th>時程</th><th>條件</th></tr>
+<tr><td>返職（坐式 / 輕度）</td><td>6 週後</td><td>無症狀、Phase II 進度 OK</td></tr>
+<tr><td>返職（中度體力）</td><td>8-12 週後</td><td>能達 5 MET 無症狀</td></tr>
+<tr><td>返職（重度體力）</td><td>3-6 個月</td><td>CPET 評估、達 7 MET</td></tr>
+<tr><td>開車</td><td>4-6 週後</td><td>Sternal precaution 結束、reaction time、無 pump head</td></tr>
+<tr><td>性行為</td><td>2-4 週後</td><td>能爬 2 樓無症狀（≈ 5 MET）</td></tr>
+<tr><td>飛行</td><td>2 週後</td><td>無 pneumothorax、無 effusion、能 5 MET</td></tr>
+</table>
+
+<h4>性功能評估（特殊但重要）</h4>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>盛行率</td><td>CABG 後 ED 50-75%（多 pre-existing）</td></tr>
+<tr><td>原因</td><td>Vascular disease、DM、藥物（β-blocker）、心理（焦慮、害怕）</td></tr>
+<tr><td>評估</td><td>主動詢問（病人 / 家屬羞於開口）</td></tr>
+<tr><td>處置</td><td>Counsel、PDE5i（若無 nitrate）、心理</td></tr>
+<tr><td>運動建議</td><td>能 5-6 MET 無症狀即可（爬 2 樓 / 走 5 分鐘無症狀）</td></tr>
+<tr><td>注意</td><td>PDE5i + nitrate 為絕對禁忌</td></tr>
+</table>
+
+<h4>Polypharmacy Review</h4>
+<table>
+<tr><th>本病人藥物</th><th>注意</th></tr>
+<tr><td>Aspirin + Clopidogrel</td><td>DAPT 12 個月後 SAPT</td></tr>
+<tr><td>Statin（atorvastatin）</td><td>檢查 LDL、ALT、肌肉症狀</td></tr>
+<tr><td>β-blocker（bisoprolol）</td><td>低血壓、bradycardia</td></tr>
+<tr><td>ACEi/ARB</td><td>Cr、K+、咳嗽</td></tr>
+<tr><td>DM 藥</td><td>血糖、避免 hypoglycemia 影響運動</td></tr>
+<tr><td>新發 AF：anticoagulation</td><td>Bleeding risk vs DAPT 衝突</td></tr>
+<tr><td>STOPP/START 標準</td><td>檢查不適合的老人藥物</td></tr>
+</table>
+
+<h4>多重學科團隊（Multidisciplinary）</h4>
+<table>
+<tr><th>科別</th><th>角色</th></tr>
+<tr><td>復健科</td><td>處方、監督、衛教</td></tr>
+<tr><td>心臟內 / 外科</td><td>OMT、再 evaluation</td></tr>
+<tr><td>老年醫學</td><td>Frailty、polypharmacy、認知</td></tr>
+<tr><td>內分泌</td><td>DM 控制</td></tr>
+<tr><td>營養師</td><td>飲食、蛋白</td></tr>
+<tr><td>藥師</td><td>藥物 review</td></tr>
+<tr><td>心理 / 精神</td><td>Depression、焦慮、戒菸 maintenance</td></tr>
+<tr><td>社工</td><td>家屬支持、財務、保險</td></tr>
+<tr><td>居家服務 / 護理</td><td>必要時</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>老人心臟復健核心理念</strong>：(1) <strong>個別化</strong>遠重要於標準處方 (2) Frailty + 多重共病需<strong>多重學科</strong>整合 (3) 目標是<strong>functional capacity 與 QoL</strong>，不是追求數字 (4) 心理 + 社會 + 家屬同樣重要 (5) <strong>長期 commitment</strong> 比短期強度更重要 (6) <strong>返社會、返家庭、返自我尊嚴</strong>是真正成功指標。
+</p>
+
+<h4>本病人完整長期計畫</h4>
+<table>
+<tr><th>面向</th><th>計畫</th></tr>
+<tr><td>運動</td><td>Phase I → II（36 次）→ III（lifelong）</td></tr>
+<tr><td>飲食</td><td>糖尿病 + 地中海、低鈉</td></tr>
+<tr><td>藥物</td><td>OMT 完整 + 新發 AF 抗凝</td></tr>
+<tr><td>戒菸</td><td>Maintenance（已戒 1 個月 + 術後）</td></tr>
+<tr><td>合併症</td><td>DM HbA1c &lt; 7、BP &lt; 130/80、LDL &lt; 70</td></tr>
+<tr><td>心理</td><td>篩 + 治療</td></tr>
+<tr><td>社會</td><td>返職、社區、家屬</td></tr>
+<tr><td>追蹤</td><td>1-3-6-12 個月，之後每年</td></tr>
+</table>
+
+<h4>口試重點</h4>
+<ul>
+<li>老人心臟復健<strong>個別化遠重要</strong>於標準處方</li>
+<li>Frailty 評估 = Fried 5 criteria</li>
+<li>Sarcopenia 評估 = 握力、SARC-F、SPPB</li>
+<li>多重共病需<strong>多重學科團隊</strong></li>
+<li>返職、開車、性行為都有具體 MET 標準</li>
+<li>長期目標：<strong>functional capacity + QoL + 社會角色</strong></li>
+<li>復健哲學：<strong>Care &gt; Cure</strong>，<strong>持續性 &gt; 強度</strong></li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
+
 
 
 
