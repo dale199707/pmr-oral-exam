@@ -60398,7 +60398,7 @@ Motor：APB MMT 4/5、其他 intrinsic muscles 5/5
 </ul>`,
       },
       {
-        q: 'Median motor 與 sensory 的 NCS 怎麼貼？怎麼電？參數設定？（考官提醒：median sensory G1 應貼在手指側邊才是神經位置）',
+        q: 'Median motor 與 sensory 的 NCS 怎麼貼？怎麼電？參數設定？',
         keywords: [
           'belly-tendon montage',
           'APB G1 motor point',
@@ -60938,6 +60938,742 @@ Motor：APB MMT 4/5、其他 intrinsic muscles 5/5
 <li>CTS severity grading：本 case 屬 Severe（thenar atrophy + CMAP affected）</li>
 <li>處置：手術 indication（thenar atrophy + active denervation 不能再保守）</li>
 <li>預後：感覺術後可恢復、運動功能恢復有限（已 axonal loss）</li>
+</ul>`,
+      },
+    ],
+  },
+  {
+    id: 'electro_002',
+    domain: 'electro',
+    title: 'Common Peroneal Neuropathy at Fibular Neck（術後垂足）',
+    context: `56 歲男性，CABG 術後麻醉清醒後出現右下肢垂足，3 週後仍未改善而轉介復健科。病人體型高瘦（BMI 19），術前無下肢無力或肌肉萎縮，左下肢正常。
+
+主訴：右足背針刺感（pins-and-needles over dorsum of foot）、無法抬腳尖（foot drop）
+
+理學檢查：
+Mental state and cranial nerve：normal
+Motor（right）：ankle dorsiflexion 1/5、toe dorsiflexion 1/5、ankle eversion 2/5
+Ankle/toe plantar flexion、knee flexion、hip movements：5/5
+Sensory：dorsum of foot 與 lateral calf 的 pinprick 與溫度覺減弱
+DTR：對稱、含雙側 ankle reflexes 完整
+無腰背痛、無下背 trauma 史
+
+考官：請依序回答下列問題。`,
+    questions: [
+      {
+        q: '此病人臨床懷疑術後 foot drop。請問你會排哪些 NCS 檢查？鑑別診斷有哪些？要怎麼定位病灶？',
+        keywords: [
+          'Peroneal motor (EDB)',
+          'Peroneal motor (TA)',
+          'Above knee / below knee',
+          'Superficial peroneal sensory',
+          'Sural sensory',
+          'Tibial motor',
+          'H reflex',
+          'Sciatic neuropathy',
+          'L5 radiculopathy',
+          'Lumbosacral plexopathy',
+        ],
+        points: [
+          '<strong>鑑別診斷階層</strong>：foot drop 可能病灶層次（從遠到近）：① <strong>Common peroneal at fibular neck</strong>（最常見、本病人最可能）② <strong>Sciatic neuropathy</strong>（peroneal division 較易受傷）③ <strong>Lumbosacral plexopathy</strong>（lumbosacral trunk）④ <strong>L5 radiculopathy</strong> ⑤ <strong>Anterior horn cell disease</strong>（如 ALS）',
+          '<strong>Routine NCS 必排</strong>：① Peroneal motor at EDB（記錄 EDB，刺激 ankle / below knee / above knee）② Peroneal motor at TA（記錄 tibialis anterior，刺激 below knee / above knee）③ Superficial peroneal sensory ④ Tibial motor at AH（abductor hallucis）⑤ Sural sensory ⑥ Tibial H reflex',
+          '<strong>對側比較必做</strong>：Peroneal motor 與 superficial peroneal sensory 對側肢體 internal control（特別是 amplitude 比較）',
+          '<strong>定位策略 — 用 NCS 縮小病灶</strong>：① 若 below-knee 與 above-knee CMAP 差距 &gt; 20% → <strong>conduction block at fibular neck</strong>（典型 fibular neck 壓迫）② 若 superficial peroneal SNAP 異常 → 病灶在 DRG 之後（排除 L5 radiculopathy）③ 若 sural SNAP 也異常 → 想 sciatic neuropathy 或 polyneuropathy ④ Tibial motor 正常 → 排除 sciatic（因為 tibial 也是 sciatic 分支）',
+          '<strong>Sensory 鑑別關鍵</strong>：<strong>Superficial peroneal SNAP 是 distinguish radiculopathy vs peripheral neuropathy 的 key</strong>。L5 radiculopathy 病灶在 DRG 之前 → SNAP 正常；fibular neck 病灶在 DRG 之後 → SNAP 異常',
+          '<strong>EMG 補強</strong>：① 扎 short head of biceps femoris（唯一 sciatic peroneal division 在大腿支配的肌肉）→ 鑑別 fibular neck vs sciatic neuropathy ② 扎 lumbar paraspinal → 排除 radiculopathy（root level 異常 = paraspinal 異常）',
+          '<strong>本病人臨床線索支持 fibular neck</strong>：① 高瘦體型（BMI 19）→ 易壓迫 ② CABG 術後（手術台側躺、長時間壓迫）③ 純 peroneal distribution（無 plantar flexion 受影響）④ 無腰背痛',
+          '<strong>H reflex 角色</strong>：H reflex 反映 S1 root → 若 fibular neck lesion，H reflex 正常；若 sciatic 或 S1 radiculopathy，H reflex 可能異常',
+        ],
+        a: `<h4>Foot drop 鑑別診斷階層</h4>
+
+<table>
+<tr><th>病灶位置</th><th>Foot drop</th><th>Sensory loss</th><th>Plantar flex</th><th>Inversion</th><th>SLR</th></tr>
+<tr><td><strong>Fibular neck（peroneal）</strong></td><td>+</td><td>Dorsum of foot + lateral calf</td><td>正常</td><td>正常</td><td>(-)</td></tr>
+<tr><td>Sciatic neuropathy</td><td>+</td><td>Dorsum + sole（部分）</td><td>弱</td><td>弱</td><td>可能 (+)</td></tr>
+<tr><td>L5 radiculopathy</td><td>+</td><td>L5 dermatome（含 inner foot）</td><td>正常</td><td>弱（tibialis posterior）</td><td>(+)</td></tr>
+<tr><td>Lumbosacral plexopathy</td><td>+</td><td>較廣泛</td><td>可能弱</td><td>可能弱</td><td>變異</td></tr>
+</table>
+
+<h4>NCS 排檢計畫</h4>
+
+<table>
+<tr><th>類別</th><th>檢查項目</th><th>記錄</th><th>意義</th></tr>
+<tr><td rowspan="3"><strong>Peroneal motor</strong></td><td>EDB</td><td>EDB 肌腹</td><td>三段刺激（ankle / below knee / above knee）找 conduction block</td></tr>
+<tr><td>TA</td><td>tibialis anterior</td><td>EDB 萎縮時的 alternative；上下兩段比較</td></tr>
+<tr><td>對側 EDB</td><td>對側</td><td>internal control</td></tr>
+<tr><td><strong>Sensory</strong></td><td>Superficial peroneal SNAP</td><td>lateral malleolus</td><td>區分 radiculopathy（正常）vs fibular neck（異常）</td></tr>
+<tr><td><strong>Sensory</strong></td><td>Sural SNAP</td><td>lateral malleolus</td><td>排除 sciatic / polyneuropathy</td></tr>
+<tr><td><strong>Tibial motor</strong></td><td>AH</td><td>abductor hallucis</td><td>排除 sciatic（tibial 也是 sciatic 分支）</td></tr>
+<tr><td><strong>H reflex</strong></td><td>soleus</td><td>S1 root status</td></tr>
+<tr><td><strong>F wave</strong></td><td>peroneal / tibial</td><td>整段 nerve 完整性</td></tr>
+</table>
+
+<h4>定位流程圖</h4>
+
+<table>
+<tr><th>NCS findings</th><th>診斷</th></tr>
+<tr><td>Peroneal CMAP at TA：above-knee &lt; below-knee 顯著（&gt; 20%）<br>Superficial peroneal SNAP：異常<br>Sural / tibial：正常</td><td><strong>Common peroneal at fibular neck</strong>（conduction block）</td></tr>
+<tr><td>Peroneal motor 異常 + Tibial motor 異常 + Sural 異常</td><td>Sciatic neuropathy</td></tr>
+<tr><td>Peroneal motor 異常 + Superficial peroneal SNAP <strong>正常</strong></td><td>L5 radiculopathy（DRG 之前 lesion）</td></tr>
+<tr><td>所有上述都異常 + H reflex 異常</td><td>Lumbosacral plexopathy</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>口試金句</strong>：foot drop NCS 的核心是「<strong>用 superficial peroneal SNAP 區分 radiculopathy vs peripheral lesion</strong>」+「<strong>用 above/below knee 比較找 conduction block</strong>」+「<strong>用 short head of biceps femoris EMG 區分 fibular neck vs sciatic</strong>」。
+</p>
+
+<h4>本病人臨床支持 fibular neck</h4>
+
+<ul>
+<li>高瘦體型（BMI 19）→ fibular head 缺乏脂肪墊保護</li>
+<li>CABG 術後（手術側躺長時間 → 外側壓迫 fibular neck）</li>
+<li>純 peroneal distribution（plantar flexion、knee flexion 正常）</li>
+<li>無腰背痛、無 trauma</li>
+<li>SLR 應為負（非 radiculopathy）</li>
+</ul>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>foot drop 鑑別四階層：fibular neck → sciatic → plexus → L5 root</li>
+<li>NCS 必排：peroneal motor（兩段 + EDB & TA）+ superficial peroneal sensory + sural + tibial motor + H reflex</li>
+<li>對側比較不可省</li>
+<li><strong>Superficial peroneal SNAP</strong> 是區分 radiculopathy 的 key</li>
+<li>EMG 扎 <strong>short head of biceps femoris</strong> 區分 fibular neck vs sciatic</li>
+<li>本 case 體型 + 手術姿勢支持 fibular neck</li>
+</ul>`,
+      },
+      {
+        q: 'Peroneal motor at EDB 怎麼貼？怎麼電？參數設定？Above knee 要電哪裡？有 surface anatomy landmark 嗎？',
+        keywords: [
+          'EDB 4th-5th toe extensor',
+          'lateral foot dorsum',
+          'ankle behind lateral malleolus',
+          'fibular head below knee',
+          '10-12 cm above popliteal fossa',
+          'biceps femoris tendon',
+          'sweep 2 ms/div',
+          'gain 2-5 mV',
+          'low filter 2 Hz',
+          'high filter 10 KHz',
+          'supramaximal',
+        ],
+        points: [
+          '<strong>EDB 定位</strong>：足背外側、第 4-5 toe 對應的 metatarsal base 處可摸到肌腹（請病人 dorsiflex 4-5 toe 時可見肌腹隆起）。G1 貼肌腹中央、G2 貼第 5 toe distal phalanx tendon',
+          '<strong>Ankle 刺激位置</strong>：lateral malleolus 上方、anterior 約 8-10 cm（peroneal nerve 在此分為 deep & superficial branches 之前）',
+          '<strong>Below knee 刺激位置</strong>：<strong>Fibular head 後方下方 2-3 cm</strong>（peroneal nerve 繞 fibular neck 處），cathode 朝 distal',
+          '<strong>Above knee 刺激位置</strong>：popliteal fossa 外側，<strong>biceps femoris tendon 內側</strong>，距 below-knee 刺激點往近端 10-12 cm。Surface anatomy landmark = popliteal crease 上方 5 cm + biceps femoris tendon 內側',
+          '<strong>Surface anatomy landmark for above knee（108 真題）</strong>：① 屈膝 90° 觸診 popliteal fossa ② 找 biceps femoris tendon（外側肌腱）③ 在 tendon 內側、popliteal crease 上方 5-10 cm 為 sciatic nerve（peroneal division）位置 ④ 刺激此點即 above-knee CMAP',
+          '<strong>距離測量</strong>：軟尺沿 nerve 路徑（不是直線距離），below-knee 到 above-knee 標準距離 10-12 cm',
+          '<strong>參數設定</strong>：Low filter 2 Hz、High filter 10 KHz、Sweep 2-5 ms/div、Gain 2-5 mV、Duration 0.05-0.1 ms、Frequency 1 Hz、Stimulation Supra-Max',
+          '<strong>正常 amplitude</strong>：Peroneal CMAP at EDB 通常 ≥ 2 mV（少數正常人較小、需與對側比較）；CMAP at TA 較大、≥ 4-5 mV',
+        ],
+        a: `<h4>Peroneal Motor 完整貼法與電法</h4>
+
+<table>
+<tr><th>項目</th><th>位置</th><th>說明</th></tr>
+<tr><td>G1（active）</td><td>EDB 肌腹中央</td><td>足背外側、4-5 toe metatarsal base</td></tr>
+<tr><td>G2（reference）</td><td>第 5 toe MTP joint / distal</td><td>tendon 處</td></tr>
+<tr><td>Ground</td><td>足踝或小腿</td><td>記錄與刺激之間</td></tr>
+<tr><td>刺激點 1（ankle）</td><td>lateral malleolus 前上 8-10 cm</td><td>EDB 之前 peroneal main trunk</td></tr>
+<tr><td>刺激點 2（below knee）</td><td>fibular head 後下 2-3 cm</td><td>fibular neck 處</td></tr>
+<tr><td>刺激點 3（above knee）</td><td>popliteal fossa 外側、biceps femoris tendon 內側、popliteal crease 上方 5-10 cm</td><td>sciatic nerve peroneal division</td></tr>
+</table>
+
+<h4>Surface Anatomy 三段刺激（108 真題）</h4>
+
+<table>
+<tr><th>段落</th><th>Landmark</th><th>定位方法</th></tr>
+<tr><td>Ankle</td><td>Anterior tibial nerve at ankle</td><td>Lateral malleolus 前 8 cm，TA tendon 與 EHL tendon 之間</td></tr>
+<tr><td>Below knee</td><td>Fibular neck</td><td>Fibular head（膝外側突起）後下 2-3 cm</td></tr>
+<tr><td>Above knee</td><td>Sciatic peroneal division</td><td>屈膝、找 popliteal fossa；biceps femoris tendon 內側、popliteal crease 上 5-10 cm</td></tr>
+</table>
+
+<h4>NCS 參數設定</h4>
+
+<table>
+<tr><th>參數</th><th>設定</th></tr>
+<tr><td>Low filter</td><td>2 Hz</td></tr>
+<tr><td>High filter</td><td>10 KHz</td></tr>
+<tr><td>Sweep speed</td><td>2-5 ms/div（peroneal motor 因 latency 較長，可用 5 ms/div）</td></tr>
+<tr><td>Gain</td><td>2-5 mV/div</td></tr>
+<tr><td>Duration</td><td>0.05-0.1 ms</td></tr>
+<tr><td>Frequency</td><td>1 Hz</td></tr>
+<tr><td>Stimulation mode</td><td>Supra-Max</td></tr>
+<tr><td>Distance（ankle to below knee）</td><td>~30-35 cm</td></tr>
+<tr><td>Distance（below to above knee）</td><td>10-12 cm</td></tr>
+</table>
+
+<h4>三段刺激看什麼？</h4>
+
+<ul>
+<li><strong>Distal latency（ankle stim）</strong>：peroneal nerve 從 ankle 到 EDB 的時間，&gt; 6.5 ms 為延長</li>
+<li><strong>Conduction velocity（ankle → below knee）</strong>：正常 &gt; 41-42 m/s</li>
+<li><strong>Conduction velocity（below knee → above knee）</strong>：跨 fibular neck 段，正常與下段相當；若顯著下降 &gt; 10 m/s → focal slowing at fibular neck</li>
+<li><strong>Amplitude 比較</strong>：above-knee vs below-knee 應 &lt; 20% 衰減；&gt; 20-50% 為 conduction block</li>
+</ul>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>關鍵概念</strong>：fibular neck 段是 peroneal nerve 最易受傷處，因為神經繞過 fibular neck 表淺、缺乏軟組織保護。NCS 三段刺激的目的就是要找出 fibular neck 段的 <strong>focal conduction block 或 focal slowing</strong>，這是 fibular neck neuropathy 的電學 hallmark。
+</p>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>EDB 定位：足背外側、第 4-5 toe metatarsal base 對應位置</li>
+<li>三段刺激：ankle / below knee（fibular neck）/ above knee（popliteal fossa）</li>
+<li>Above knee surface landmark：biceps femoris tendon 內側、popliteal crease 上 5-10 cm</li>
+<li>下肢 sweep speed 可用 5 ms/div（latency 較長）</li>
+<li>三段刺激的目的：找 conduction block at fibular neck</li>
+<li>Amp 衰減 &gt; 20% above-knee vs below-knee = conduction block</li>
+</ul>`,
+      },
+      {
+        q: 'EDB 已 atrophy 取不到 CMAP 時要怎麼辦？改記錄哪個肌肉？電出來 distal CMAP amplitude 比 proximal 還小，可能的原因有哪些？什麼是 anodal block？怎麼避免？',
+        keywords: [
+          'tibialis anterior alternative',
+          'TA recording site',
+          'distal < proximal abnormal',
+          'pseudo-conduction block',
+          'temporal dispersion',
+          'distal nerve injury',
+          'anodal block',
+          'cathode distal',
+          'co-stimulation',
+        ],
+        points: [
+          '<strong>EDB atrophy 處理（112 真題）</strong>：若 EDB 完全 atrophy 或 amp 極小（&lt; 0.5 mV），改記錄 <strong>Tibialis Anterior（TA）</strong>。Peroneal motor at TA 仍能評估 above/below knee conduction',
+          '<strong>TA 貼法</strong>：G1 貼 TA 肌腹（脛骨外側、上 1/3 處、距 tibial tuberosity 4-5 cm 外側）；G2 貼 ankle 處 TA tendon 或 lateral malleolus。刺激位置：below knee（fibular neck）+ above knee。<strong>Ankle 不需刺激</strong>（因為 ankle 段已在 TA 之後）',
+          '<strong>TA 正常值</strong>：CMAP amp ≥ 4-5 mV（比 EDB 大）',
+          '<strong>Distal CMAP amplitude &lt; Proximal 的鑑別</strong>（106 真題）：① <strong>正常變異</strong>（少數人 distal 較小）② <strong>Anomalous innervation</strong>（accessory peroneal nerve 從 ankle 加入支配 EDB，刺激 ankle 時少了這部分）③ <strong>Anodal block</strong> at proximal stim（人為錯誤）④ <strong>Distal nerve injury</strong>（罕見、需臨床配合）⑤ <strong>Co-stimulation of adjacent nerve</strong> at proximal site',
+          '<strong>Accessory peroneal nerve（最常見原因）</strong>：~20% 人具備。Sural nerve 分支經 lateral malleolus 後方至足背、共同支配 EDB。Ankle 刺激時只激發 deep peroneal、above ankle 刺激時加上 accessory peroneal → proximal amp &gt; distal',
+          '<strong>確認 accessory peroneal 方法</strong>：在 lateral malleolus 後方額外加刺激（accessory peroneal route），若有 CMAP 出現 → 確認此 anomaly',
+          '<strong>Anodal block 定義</strong>：刺激電極（cathode + anode）擺反或太近，cathode 應朝記錄電極（distal），anode 朝 proximal。若 anode 朝 distal，<strong>anode 下方產生 hyperpolarization 阻擋神經傳導</strong> → 部分 nerve fiber action potential 被擋住、CMAP amp 下降',
+          '<strong>避免 anodal block</strong>：① <strong>Cathode 永遠朝 distal（朝記錄電極）</strong>② Cathode 與 anode 距離至少 2-3 cm ③ 刺激時注意電極極性標記（多數機器 cathode 為黑色或標 −）',
+        ],
+        a: `<h4>EDB Atrophy 替代方案</h4>
+
+<table>
+<tr><th>狀況</th><th>處理</th></tr>
+<tr><td>EDB 部分萎縮、amp 極小</td><td>提高 gain、average、嘗試各種記錄位置</td></tr>
+<tr><td>EDB 完全 atrophy</td><td><strong>改記錄 Tibialis Anterior</strong></td></tr>
+<tr><td>Severe peroneal lesion</td><td>記錄 TA + EMG 扎針</td></tr>
+</table>
+
+<h4>Peroneal Motor at TA 設定</h4>
+
+<table>
+<tr><th>項目</th><th>位置</th></tr>
+<tr><td>G1</td><td>TA 肌腹（脛骨外側、上 1/3 處）</td></tr>
+<tr><td>G2</td><td>Ankle 處 TA tendon</td></tr>
+<tr><td>刺激</td><td>Below knee（fibular neck）+ Above knee</td></tr>
+<tr><td>不需 ankle 刺激</td><td>因為 ankle 段已 distal to TA</td></tr>
+<tr><td>正常 amp</td><td>≥ 4-5 mV</td></tr>
+</table>
+
+<h4>Distal &lt; Proximal CMAP amp 的鑑別診斷</h4>
+
+<table>
+<tr><th>原因</th><th>機制</th><th>鑑別方法</th></tr>
+<tr><td><strong>Accessory peroneal nerve</strong></td><td>Anomalous nerve 從 lateral malleolus 後方加入支配 EDB（~20% 人有）</td><td>在 lateral malleolus 後方刺激，若有 CMAP → 確認</td></tr>
+<tr><td>Anodal block</td><td>刺激電極極性錯誤，anode 朝 distal、阻擋 conduction</td><td>檢查電極方向、cathode 應朝 distal</td></tr>
+<tr><td>Co-stimulation</td><td>Proximal 刺激位置太強或位置錯誤，激發鄰近神經</td><td>降低刺激強度、確認位置</td></tr>
+<tr><td>Distal nerve injury</td><td>真實 distal lesion（罕見）</td><td>EMG 配合、臨床表現</td></tr>
+<tr><td>Pseudo-conduction block (反向)</td><td>Distal lesion + temporal dispersion</td><td>看波形分散程度</td></tr>
+</table>
+
+<h4>Anodal Block 詳解</h4>
+
+<ul>
+<li><strong>原理</strong>：刺激電極由 cathode（−）與 anode（+）組成。Cathode 下方 depolarize（產生 action potential）、anode 下方 <strong>hyperpolarize</strong></li>
+<li><strong>正確擺法</strong>：Cathode 朝 distal（朝記錄電極方向）、anode 朝 proximal</li>
+<li><strong>Anodal block</strong>：若 anode 朝 distal，神經 action potential 從 cathode 朝 distal 傳導時被 anode 下方的 hyperpolarization 擋住</li>
+<li><strong>結果</strong>：部分 fiber 被擋 → 記錄到的 CMAP amp 下降，但實際神經完整</li>
+<li><strong>避免方法</strong>：刺激前確認電極方向，cathode（黑色 / 標 −）永遠朝 distal</li>
+</ul>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>口訣</strong>：「<strong>看到 distal &lt; proximal 不要直接判讀，先想三件事</strong>」：① accessory peroneal nerve（最常見）② anodal block（電極反了）③ co-stimulation（刺激太強）。確認都不是後再想真實 distal lesion。
+</p>
+
+<h4>Anomalous Innervation 補充：Accessory Peroneal Nerve</h4>
+
+<ul>
+<li>Prevalence：18-22% 人具備</li>
+<li>解剖：Superficial peroneal 的 accessory branch 從 fibular head 經 lateral calf 至 lateral malleolus 後方，繞過 ankle 後支配 EDB</li>
+<li>NCS 表現：① ankle stim 只激發 deep peroneal → CMAP 較小 ② below knee stim 激發 deep + accessory peroneal → CMAP 較大 ③ 刺激 lateral malleolus posterior → 可單獨記錄到 accessory peroneal CMAP</li>
+<li>不是病理、是正常變異 → 報告中需註明</li>
+</ul>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>EDB atrophy → 改記錄 TA（112 真題標準答案）</li>
+<li>TA 貼法：脛骨外側上 1/3、刺激 below knee + above knee</li>
+<li>Distal &lt; Proximal CMAP 三大原因：accessory peroneal、anodal block、co-stimulation</li>
+<li>Anodal block：cathode 必須朝 distal（朝記錄電極）</li>
+<li>Accessory peroneal nerve 是正常變異、~20% 人有</li>
+<li>確認 accessory peroneal：lateral malleolus 後方刺激</li>
+</ul>`,
+      },
+      {
+        q: 'Superficial peroneal sensory 怎麼貼？怎麼電？參數設定？最大分支位置在哪？Sural sensory 在此 case 的角色？',
+        keywords: [
+          'lateral malleolus G1',
+          '14 cm proximal stim',
+          'medial dorsal cutaneous',
+          'intermediate dorsal cutaneous',
+          'medial branch toward great toe',
+          'sural sensory rule out',
+          'sciatic neuropathy',
+          'antidromic',
+          'low filter 20 Hz',
+        ],
+        points: [
+          '<strong>Superficial peroneal sensory 解剖</strong>：peroneal main trunk 在 fibular neck 處分為 deep（motor）+ superficial（mainly sensory）。Superficial peroneal 在 lower leg 外側下行，在 lateral malleolus 上方分為 <strong>medial dorsal cutaneous nerve（MDCN）</strong>與 <strong>intermediate dorsal cutaneous nerve（IDCN）</strong>，支配足背感覺',
+          '<strong>記錄電極（G1）</strong>：lateral malleolus 上方、anterior compartment 與 lateral compartment 之間。具體位置為 lateral malleolus 上 8-10 cm 處的足背中點偏外',
+          '<strong>刺激位置</strong>：fibular head 與 lateral malleolus 連線中點，距 G1 <strong>14 cm</strong> proximal',
+          '<strong>最大分支位置（112 真題）</strong>：<strong>Medial branch（MDCN）較粗</strong>、走向第 1 toe（大拇趾），G1 應稍偏內側、朝大拇趾方向貼。Intermediate branch 較細、走向第 3-4 toe',
+          '<strong>方向</strong>：Antidromic（刺激 proximal、記錄 distal）',
+          '<strong>參數</strong>：Low filter <strong>20 Hz</strong>、High filter <strong>2 KHz</strong>、Sweep 2 ms/div、Gain <strong>20 μV</strong>、Duration 0.1 ms、Frequency 1 Hz、Stim Supra-Max（足以即可）、Average 10-20 次',
+          '<strong>正常值</strong>：peak latency 3.5-4.0 ms、SNAP amp ≥ 6 μV',
+          '<strong>Sural sensory 角色</strong>：① <strong>Sural = tibial branch</strong>（並非 peroneal），<strong>sural 異常 → 想 sciatic neuropathy 或 polyneuropathy（不是純 fibular neck）</strong>② 本病人 sural 應正常 ③ Sural 是區分 fibular neck（pure peroneal）vs sciatic neuropathy（multi-nerve）的 key',
+          '<strong>Sural 貼法</strong>：G1 lateral malleolus 後方、G2 sural distribution distal；刺激 calf 中段、距 G1 14 cm proximal',
+        ],
+        a: `<h4>Superficial Peroneal Sensory 完整貼法</h4>
+
+<table>
+<tr><th>項目</th><th>位置</th></tr>
+<tr><td>G1（active）</td><td>Lateral malleolus 上 8-10 cm，足背中點偏外側（朝向 medial branch 方向）</td></tr>
+<tr><td>G2（reference）</td><td>距 G1 distal 3-4 cm</td></tr>
+<tr><td>Ground</td><td>記錄與刺激之間</td></tr>
+<tr><td>刺激位置</td><td>Fibular head 與 lateral malleolus 連線中點，距 G1 <strong>14 cm proximal</strong></td></tr>
+<tr><td>方向</td><td>Antidromic</td></tr>
+</table>
+
+<h4>Superficial Peroneal 兩條分支</h4>
+
+<table>
+<tr><th>分支</th><th>路徑</th><th>支配範圍</th><th>大小</th></tr>
+<tr><td><strong>Medial Dorsal Cutaneous（MDCN）</strong></td><td>朝向第 1-2 toe</td><td>足背 medial 部分含大拇趾</td><td><strong>較粗</strong>（112 真題重點）</td></tr>
+<tr><td>Intermediate Dorsal Cutaneous（IDCN）</td><td>朝向第 3-4 toe</td><td>足背中段</td><td>較細</td></tr>
+<tr><td>Sural（不屬 peroneal）</td><td>外側</td><td>足背外側 + 第 5 toe</td><td>—</td></tr>
+</table>
+
+<h4>NCS 參數設定</h4>
+
+<table>
+<tr><th>參數</th><th>Superficial Peroneal Sensory</th><th>Sural Sensory</th></tr>
+<tr><td>Low filter</td><td>20 Hz</td><td>20 Hz</td></tr>
+<tr><td>High filter</td><td>2 KHz</td><td>2 KHz</td></tr>
+<tr><td>Sweep</td><td>2 ms/div</td><td>2 ms/div</td></tr>
+<tr><td>Gain</td><td>20 μV</td><td>20 μV</td></tr>
+<tr><td>Duration</td><td>0.1 ms</td><td>0.1 ms</td></tr>
+<tr><td>Frequency</td><td>1 Hz</td><td>1 Hz</td></tr>
+<tr><td>距離</td><td>14 cm（fibular head/lateral mall midpoint → G1）</td><td>14 cm（calf → lateral mall）</td></tr>
+<tr><td>正常 amp</td><td>≥ 6 μV</td><td>≥ 6 μV</td></tr>
+</table>
+
+<h4>本 case 兩條 sensory 的鑑別意義</h4>
+
+<table>
+<tr><th>Findings</th><th>診斷意義</th></tr>
+<tr><td>Superficial peroneal SNAP <strong>異常</strong> + Sural <strong>正常</strong></td><td>支持 <strong>fibular neck peroneal neuropathy</strong>（純 peroneal lesion）</td></tr>
+<tr><td>Superficial peroneal SNAP 異常 + Sural <strong>異常</strong></td><td>想 <strong>sciatic neuropathy</strong>（影響 tibial 與 peroneal divisions）或 polyneuropathy</td></tr>
+<tr><td>Superficial peroneal SNAP <strong>正常</strong> + 臨床 foot drop</td><td>想 <strong>L5 radiculopathy</strong>（DRG 之前 lesion）</td></tr>
+<tr><td>所有 SNAP 都異常</td><td>Polyneuropathy 或 plexopathy</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>112 真題重點</strong>：考官追問 superficial peroneal nerve 分支最大條在哪？答案：<strong>medial branch（MDCN）較粗、朝向大拇趾</strong>。所以 G1 應該稍微往大拇趾方向貼，比較容易抓到訊號。
+</p>
+
+<h4>對側比較</h4>
+
+<ul>
+<li>Superficial peroneal SNAP 變異性大，對側比較是最可靠的診斷標準</li>
+<li>同側 / 對側 amp 比 &lt; 50% → 顯著異常</li>
+<li>peak latency 對側差距 &gt; 0.4 ms → 顯著延長</li>
+</ul>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>Superficial peroneal G1：lateral malleolus 上方、足背中點偏外側</li>
+<li>Medial branch（MDCN）較粗、朝向大拇趾 → G1 偏 medial（112 真題）</li>
+<li>刺激距離 14 cm</li>
+<li>Sural 不是 peroneal 而是 tibial 分支</li>
+<li>Sural 異常 → 想 sciatic（不是 fibular neck）</li>
+<li>Filter sensory 都用 20 Hz / 2 KHz、gain 20 μV</li>
+<li>對側比較重要（superficial peroneal 變異性大）</li>
+</ul>`,
+      },
+      {
+        q: 'Axonal injury 後，CMAP 與 SNAP amplitude 哪一個較早下降？Axonal loss 後，CMAP、MUAP recruitment、Spontaneous activity、MUAP morphology 異常出現的順序為何？',
+        keywords: [
+          'SNAP earlier decrease',
+          'sensory more sensitive',
+          'Wallerian degeneration',
+          '7 days SNAP drop',
+          '3-5 days CMAP drop',
+          'recruitment immediate',
+          'spontaneous activity 2-3 weeks',
+          'morphology 3-6 months',
+          'collateral sprouting',
+        ],
+        points: [
+          '<strong>SNAP vs CMAP 何者先下降（2026 練習題重點）</strong>：<strong>SNAP 較早下降</strong>。原因：① SNAP 反映 sensory axon 數量更直接（無 NMJ 中間放大）② Sensory fibers 對 axonal damage 較 sensitive ③ Distal sensory nerve 在 Wallerian degeneration 中較早 fail',
+          '<strong>Wallerian degeneration 時序</strong>：① <strong>SNAP</strong>：受傷後 6-9 天 amp 開始下降，10-11 天降至最低 ② <strong>CMAP</strong>：受傷後 3-5 天 amp 開始下降，7 天降至最低（CMAP 因 NMJ 仍有少量 ACh 釋放，下降較 SNAP 慢開始但完成較早）',
+          '<strong>注意：受傷「立即」期</strong>（24-72 小時內），CMAP 與 SNAP 在 distal stim 時可能仍正常（distal nerve 段尚未 degenerate），這稱為 <strong>diagnostic window</strong>。所以急性 axonal lesion 太早做 NCS 可能會 false negative',
+          '<strong>Axonal loss 後 EMG 異常出現順序（2026 練習題重點）</strong>：<strong>① MUAP recruitment 減少（即刻 / 受傷當下）→ ② CMAP amp 下降（3-7 天）→ ③ Spontaneous activity 出現（2-3 週）→ ④ MUAP morphology 改變（3-6 個月）</strong>',
+          '<strong>1. Recruitment 減少（即刻）</strong>：axonal loss 當下 motor unit 數即減少，請病人收縮時看到 reduced recruitment 是<strong>立即</strong>表現',
+          '<strong>2. CMAP amp 下降（3-7 天）</strong>：Wallerian degeneration 完成後，distal nerve 已無法傳導 → CMAP amp 下降',
+          '<strong>3. Spontaneous activity（2-3 週）</strong>：denervated muscle fiber 開始 spontaneous discharge → fib + PSW（PSW 約 2 週、fib 約 3 週）',
+          '<strong>4. MUAP morphology 改變（3-6 個月）</strong>：collateral sprouting reinnervation 發生 → 出現 large polyphasic、long duration、high amp MUAP',
+        ],
+        a: `<h4>SNAP vs CMAP 受傷後時間表</h4>
+
+<table>
+<tr><th>時間</th><th>SNAP</th><th>CMAP</th><th>EMG</th></tr>
+<tr><td>0-3 天</td><td>正常（diagnostic window）</td><td>正常</td><td>Recruitment 減少（即刻）</td></tr>
+<tr><td>3-5 天</td><td>正常</td><td>開始下降</td><td>—</td></tr>
+<tr><td>6-9 天</td><td><strong>開始下降</strong></td><td>明顯下降</td><td>—</td></tr>
+<tr><td>10-11 天</td><td>最低點</td><td>最低點</td><td>PSW 即將出現</td></tr>
+<tr><td>2 週</td><td>Stable low</td><td>Stable low</td><td><strong>PSW 出現</strong></td></tr>
+<tr><td>3 週</td><td>Stable low</td><td>Stable low</td><td><strong>Fibrillation 出現</strong></td></tr>
+<tr><td>3-6 個月</td><td>可能部分恢復</td><td>可能部分恢復</td><td><strong>Polyphasic MUAP（reinnervation）</strong></td></tr>
+</table>
+
+<h4>Axonal Loss 後 EMG 異常出現順序</h4>
+
+<table>
+<tr><th>順序</th><th>表現</th><th>時間</th><th>機制</th></tr>
+<tr><td><strong>1（最早）</strong></td><td>MUAP recruitment 減少</td><td>受傷當下立即</td><td>Motor unit 數量即刻減少</td></tr>
+<tr><td>2</td><td>CMAP amplitude 下降</td><td>3-7 天</td><td>Wallerian degeneration 完成</td></tr>
+<tr><td>3</td><td>Spontaneous activity（fib + PSW）</td><td>2-3 週</td><td>Denervated fiber 自發放電</td></tr>
+<tr><td><strong>4（最晚）</strong></td><td>MUAP morphology 改變</td><td>3-6 個月</td><td>Collateral sprouting reinnervation</td></tr>
+</table>
+
+<h4>為何 SNAP 比 CMAP 較早下降？</h4>
+
+<ul>
+<li><strong>SNAP 直接反映 axon</strong>：sensory nerve 沒有 NMJ buffer、SNAP 等於 sensory axon population 的 sum</li>
+<li><strong>CMAP 有 NMJ 放大</strong>：每條 motor axon 透過 NMJ 控制數百條 muscle fiber，少量 axon 仍能產生可觀的 CMAP</li>
+<li><strong>Sensory fiber 較 vulnerable</strong>：Sensory fiber（特別是大徑 myelinated）對 metabolic insult 較敏感</li>
+<li><strong>Diagnostic implication</strong>：早期 axonal lesion 時，SNAP 異常先出現、是 sensitive marker</li>
+</ul>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>口訣 — Axonal lesion 後時序</strong>：「<strong>R-C-S-M</strong>」<br>
+① <strong>R</strong>ecruitment（即刻）<br>
+② <strong>C</strong>MAP（3-7 天）<br>
+③ <strong>S</strong>pontaneous activity（2-3 週）<br>
+④ <strong>M</strong>orphology（3-6 個月）
+</p>
+
+<h4>本病人臨床對照（受傷 3 週）</h4>
+
+<table>
+<tr><th>檢查</th><th>受傷 3 週時的預期</th></tr>
+<tr><td>Peroneal CMAP at EDB</td><td>顯著下降（已過 7 天 plateau）</td></tr>
+<tr><td>Superficial peroneal SNAP</td><td>顯著下降或 unobtainable</td></tr>
+<tr><td>EMG TA / EDB</td><td>Fib + PSW 已出現（過 2-3 週）；MUAP morphology 通常仍未改變</td></tr>
+<tr><td>EMG recruitment</td><td>顯著 reduced</td></tr>
+<tr><td>是否做 NCS 為時尚早？</td><td>否，3 週是良好的時機點</td></tr>
+</table>
+
+<h4>急性 vs 慢性的 EMG 鑑別</h4>
+
+<ul>
+<li><strong>Acute（&lt; 3 週）</strong>：Fib/PSW + 正常 MUAP morphology + reduced recruitment</li>
+<li><strong>Subacute（3 週 - 3 個月）</strong>：Fib/PSW + 早期 polyphasic MUAP（small, short, polyphasic「nascent units」）</li>
+<li><strong>Chronic（&gt; 3 個月）</strong>：Fib/PSW（仍進行中）+ Large polyphasic、long duration、high amp MUAP</li>
+<li><strong>Old / completely reinnervated</strong>：Fib/PSW 消失 + Large polyphasic 持續存在</li>
+</ul>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>SNAP 比 CMAP 較早下降（敏感性高）</li>
+<li>Wallerian degeneration：CMAP 3-5 天開始、SNAP 6-9 天開始</li>
+<li>Axonal loss 後 EMG 順序：<strong>Recruitment → CMAP → Spontaneous → Morphology</strong></li>
+<li>立即（24-72h）的 diagnostic window：NCS 可能 false negative</li>
+<li>本 case 受傷 3 週是好時機（fib/PSW 已出、recruitment 減少明顯）</li>
+<li>Nascent units = 早期 reinnervation（small short polyphasic）</li>
+</ul>`,
+      },
+      {
+        q: 'EMG 你會扎哪些肌肉？為什麼？要怎麼鑑別 fibular neck peroneal neuropathy、sciatic neuropathy、L5 radiculopathy？膝上是電在 long head BF 還是 short head BF 旁？',
+        keywords: [
+          'TA tibialis anterior',
+          'peroneus longus',
+          'EDB',
+          'short head biceps femoris',
+          'sciatic peroneal division',
+          'long head BF tibial',
+          'tibialis posterior L5',
+          'gluteus medius',
+          'lumbar paraspinal',
+          'multifidus',
+        ],
+        points: [
+          '<strong>核心鑑別策略</strong>：藉由扎不同階層的肌肉（peroneal-supplied → sciatic-supplied → L5 root level）逐層鑑別病灶位置',
+          '<strong>必扎 peroneal-supplied 肌肉（確認 peroneal lesion）</strong>：① <strong>Tibialis anterior（TA）</strong>：deep peroneal、L4-L5、最重要 ② <strong>Peroneus longus</strong>：superficial peroneal、L5-S1 ③ <strong>Extensor digitorum longus（EDL）</strong>：deep peroneal、L5 ④ <strong>EDB</strong>：deep peroneal、最 distal',
+          '<strong>關鍵鑑別肌肉（區分 fibular neck vs sciatic）</strong>：<strong>Short head of biceps femoris</strong>。原因：① 此肌肉是 sciatic nerve 的 peroneal division 在<strong>大腿</strong>段唯一支配的肌肉 ② 若 short head BF <strong>異常</strong> → 病灶在 fibular neck 之上（即 sciatic level）③ 若 short head BF <strong>正常</strong> → 病灶限於 fibular neck 以下（純 fibular neck neuropathy）',
+          '<strong>Long head BF vs Short head BF（112 真題重點）</strong>：① <strong>Long head BF</strong>：sciatic nerve 的 <strong>tibial division</strong> 支配 ② <strong>Short head BF</strong>：sciatic nerve 的 <strong>peroneal division</strong> 支配 ③ <strong>膝上電 short head BF 旁</strong>（在 biceps femoris 外側、遠端）',
+          '<strong>排除 L5 radiculopathy</strong>：扎 ① <strong>Tibialis posterior</strong>（L5 tibial）：純 L5 但非 peroneal，異常 → L5 radiculopathy（不是 fibular neck）② <strong>Gluteus medius</strong>（L5 superior gluteal）：proximal L5 muscle ③ <strong>Lumbar paraspinal（L4-L5）</strong>：root level、若異常 → 確診 radiculopathy',
+          '<strong>扎肌肉策略階層（從遠到近）</strong>：① TA、peroneus longus、EDB（peroneal）② Short head BF（sciatic peroneal division）③ Tibialis posterior（L5 non-peroneal）④ Gluteus medius（L5 proximal）⑤ Lumbar paraspinal（root）',
+          '<strong>判讀流程</strong>：① TA / peroneus longus / EDB 異常 + Short head BF 正常 + Tibialis posterior 正常 + paraspinal 正常 → <strong>Common peroneal at fibular neck</strong> ② Short head BF 異常 + Tibialis posterior 正常 → <strong>Sciatic neuropathy</strong>（peroneal division）③ Tibialis posterior 異常 + paraspinal 異常 → <strong>L5 radiculopathy</strong>',
+          '<strong>Paraspinal 扎針技巧（112 真題：怎麼確認扎到 erector vs multifidus）</strong>：① 扎 lateral 較淺 → erector spinae（multisegmental innervation） ② 扎 medial 較深、貼近 spinous process → multifidus（單一 segment innervation）③ Multifidus 異常更具 segmental specificity',
+        ],
+        a: `<h4>EMG 扎針肌肉策略表</h4>
+
+<table>
+<tr><th>類別</th><th>肌肉</th><th>支配</th><th>本 case 預期</th><th>用途</th></tr>
+<tr><td rowspan="4"><strong>Peroneal-supplied</strong></td><td>Tibialis anterior</td><td>Deep peroneal, L4-L5</td><td>異常</td><td>Foot drop 主要肌肉</td></tr>
+<tr><td>EDL</td><td>Deep peroneal, L5</td><td>異常</td><td>Toe extension</td></tr>
+<tr><td>Peroneus longus</td><td>Superficial peroneal, L5-S1</td><td>異常</td><td>Eversion</td></tr>
+<tr><td>EDB</td><td>Deep peroneal, S1</td><td>異常</td><td>Distal-most</td></tr>
+<tr><td><strong>Sciatic 鑑別</strong></td><td><strong>Short head of biceps femoris</strong></td><td>Sciatic <strong>peroneal division</strong></td><td><strong>正常</strong>（fibular neck lesion）</td><td>區分 fibular neck vs sciatic</td></tr>
+<tr><td><strong>Sciatic tibial 對照</strong></td><td>Long head of biceps femoris</td><td>Sciatic <strong>tibial division</strong></td><td>正常</td><td>對照</td></tr>
+<tr><td rowspan="3"><strong>L5 root 鑑別</strong></td><td>Tibialis posterior</td><td>Tibial, <strong>L5</strong></td><td>正常</td><td>L5 但非 peroneal</td></tr>
+<tr><td>Gluteus medius</td><td>Superior gluteal, L5</td><td>正常</td><td>Proximal L5</td></tr>
+<tr><td>Lumbar paraspinal (L5)</td><td>Posterior primary ramus</td><td>正常</td><td>Root level marker</td></tr>
+</table>
+
+<h4>Long head vs Short head Biceps Femoris（112 真題）</h4>
+
+<table>
+<tr><th>項目</th><th>Long head BF</th><th>Short head BF</th></tr>
+<tr><td>起點</td><td>Ischial tuberosity</td><td>Linea aspera of femur</td></tr>
+<tr><td>位置</td><td>大腿後側、淺層內側</td><td>大腿後側、深層外側</td></tr>
+<tr><td><strong>支配 nerve</strong></td><td>Sciatic <strong>tibial division</strong></td><td>Sciatic <strong>peroneal division</strong></td></tr>
+<tr><td>EMG 扎針位置</td><td>Biceps femoris 外側肌腹中段</td><td><strong>Biceps femoris 外側遠端</strong>（膝上 5-10 cm）</td></tr>
+<tr><td>本 case 預期</td><td>正常</td><td>正常（fibular neck lesion 限於膝下）</td></tr>
+</table>
+
+<h4>診斷流程圖（EMG findings → 診斷）</h4>
+
+<table>
+<tr><th>EMG findings</th><th>診斷</th></tr>
+<tr><td>TA、EDL、peroneus longus 異常 + <strong>Short head BF 正常</strong> + Tibialis posterior 正常 + paraspinal 正常</td><td><strong>Common peroneal neuropathy at fibular neck</strong></td></tr>
+<tr><td>同上 + <strong>Short head BF 異常</strong> + Tibialis posterior 正常</td><td><strong>Sciatic neuropathy</strong>（peroneal division 較重）</td></tr>
+<tr><td>同上 + <strong>Tibialis posterior 異常</strong> + <strong>Paraspinal 異常</strong></td><td><strong>L5 radiculopathy</strong></td></tr>
+<tr><td>多個 nerve 多個 root 都異常</td><td>Lumbosacral plexopathy 或 polyneuropathy</td></tr>
+</table>
+
+<h4>Paraspinal 扎針技巧（112 真題）</h4>
+
+<ul>
+<li><strong>Erector spinae</strong>：較表淺、外側（離 spinous process 較遠）。Multisegmental innervation（一條神經支配多節）</li>
+<li><strong>Multifidus</strong>：較深、靠 spinous process 內側、針向 lamina 方向。Single-segment innervation（更具 segmental specificity）</li>
+<li><strong>定位 L5 paraspinal</strong>：iliac crest 連線 ≈ L4-L5 椎間，向上一節為 L4 spinous process、向下為 L5</li>
+<li><strong>L5 paraspinal 扎針點</strong>：L5 spinous process 旁開 1-2 cm、針向 lamina 方向、深 1.5-2 cm</li>
+<li><strong>Multifidus 異常</strong>：對 root level lesion 更 specific，但 paraspinal 異常 sensitivity 較低（約 50-70%）</li>
+</ul>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>口試金句</strong>：「foot drop EMG 的關鍵是 <strong>short head of biceps femoris</strong> — 這條肌肉是 sciatic peroneal division 在大腿段唯一支配的，如果它正常 → 病灶在 fibular neck 以下；如果它異常 → 病灶在 sciatic 以上。配合 tibialis posterior（L5 但非 peroneal）區分 L5 radiculopathy。」
+</p>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>EMG 扎針三層次：peroneal → sciatic（short head BF）→ L5（tibialis posterior + paraspinal）</li>
+<li><strong>Short head of biceps femoris</strong> 是區分 fibular neck vs sciatic 的關鍵</li>
+<li>Long head BF = tibial、Short head BF = peroneal（112 真題）</li>
+<li>Tibialis posterior 正常排除 L5 radiculopathy</li>
+<li>Paraspinal 異常 = root level（multifidus 比 erector spinae specific）</li>
+<li>Paraspinal 扎針：L5 spinous process 旁開 1-2 cm、深 1.5-2 cm 針向 lamina</li>
+</ul>`,
+      },
+      {
+        q: '扎 TA 後請病人不用力，分別出現以下三種波形（沒有影片，請依文字描述判斷）。請說明各代表的意義與相關疾病。【波形 A】50 μV/10 ms：高頻、規則 firing 約 7-15 Hz、波形像「marching soldiers」連續成串、突然開始與結束。【波形 B】500 μV/10 ms：高 amplitude、波形複雜（polyphasic）、firing pattern 規則但忽快忽慢（waxing & waning）、頻率 5-100 Hz。【波形 C】50 μV/10 ms：低中等 amplitude、firing 規則、像 motor unit 但不受意識控制、頻率 1-50 Hz。',
+        keywords: [
+          'A myokymia',
+          'march of soldiers',
+          'B complex repetitive discharge',
+          'CRD',
+          'C fasciculation',
+          'giant wave',
+          'demyelination',
+          'chronic neurogenic',
+          'BAR ALS',
+        ],
+        points: [
+          '<strong>波形 A：Myokymia</strong>。特徵：grouped discharges（一組 2-10 個 spikes 連發）、組間 silent period、組內 firing 5-60 Hz、組間 firing 0.1-10 Hz，整體看起來像「<strong>marching soldiers</strong>」連續行進。臨床意義：<strong>demyelination</strong> 的代表性 marker',
+          '<strong>Myokymia 相關疾病</strong>：① <strong>Radiation-induced plexopathy</strong>（typical pathognomonic finding） ② <strong>Multiple sclerosis（facial myokymia）</strong>③ <strong>Chronic radiculopathy</strong>④ <strong>Guillain-Barré syndrome</strong>⑤ <strong>Hereditary neuropathy</strong>⑥ Brainstem lesion',
+          '<strong>波形 B：Complex Repetitive Discharge（CRD）</strong>。特徵：① 多相、複雜的 polyphasic 波形 ② Amplitude 50 μV - 1 mV ③ Firing rate 5-100 Hz ④ <strong>突然開始、突然結束</strong>（像時鐘按下開關）⑤ Firing pattern 在持續期間 stable、不會 wax & wane（與 myotonia 區別）',
+          '<strong>CRD 相關疾病</strong>：① 任何 <strong>chronic neurogenic disorder</strong>（chronic radiculopathy、ALS、SMA、polio）② <strong>Chronic myopathy</strong>（muscular dystrophy、polymyositis 慢性期）③ <strong>Stiff person syndrome</strong> ④ 共同特點：<strong>慢性</strong>denervation/muscle damage 使 muscle fibers 變成 ephaptic transmission（fiber 對 fiber 直接傳導）',
+          '<strong>波形 C：Fasciculation</strong>。特徵：① 形狀像 motor unit potential（MUAP）② Amplitude 與 duration 與 MUAP 類似 ③ <strong>Spontaneous</strong>（病人放鬆時出現）④ Firing 不規則（每次間隔 0.5-50 秒不等）⑤ 病人可能感覺到肌肉跳動',
+          '<strong>Fasciculation 相關疾病（113 真題）</strong>：① <strong>正常人也會有</strong>（benign fasciculation syndrome、緊張、咖啡因）② <strong>各種 neuropathy</strong>（CIDP、GBS、radiculopathy）③ <strong>Motor neuron disease（ALS）</strong>—— 最重要 ④ <strong>Hyperthyroidism</strong>⑤ <strong>Drug-induced</strong>（cholinergic）',
+          '<strong>Benign vs malignant fasciculation 鑑別</strong>：① Benign：通常單一 motor unit、firing 規則、無 atrophy、無 weakness、無 spontaneous activity ② <strong>ALS-related</strong>：常合併 fib + PSW + 大型 polyphasic MUAP + atrophy + weakness',
+          '<strong>本病人 TA 出現何種波形最可能？</strong>：① 受傷 3 週可能看到 <strong>fib + PSW</strong>（active denervation） ② 慢性後可能出現 <strong>CRD</strong> 或 <strong>fasciculation</strong> ③ 若出現 <strong>myokymia</strong> → 想 chronic compression / 放射損傷 ④ 一般 fibular neck neuropathy 較不會出現 myokymia',
+        ],
+        a: `<h4>三種自發電位完整比較</h4>
+
+<table>
+<tr><th>特徵</th><th>Myokymia</th><th>CRD</th><th>Fasciculation</th></tr>
+<tr><td>波形</td><td>Grouped spikes</td><td>Complex polyphasic</td><td>MUAP-like</td></tr>
+<tr><td>Amplitude</td><td>低-中（&lt; 200 μV）</td><td>50 μV - 1 mV</td><td>同 MUAP</td></tr>
+<tr><td>Firing pattern</td><td>Grouped、組內快、組間慢</td><td>Continuous、規則</td><td>Irregular、間隔長</td></tr>
+<tr><td>Firing rate</td><td>組內 5-60 Hz</td><td>5-100 Hz</td><td>0.1-10 Hz</td></tr>
+<tr><td>起始</td><td>—</td><td><strong>突然開始、突然結束</strong></td><td>突然 single discharge</td></tr>
+<tr><td>影像比喻</td><td>Marching soldiers</td><td>機關槍</td><td>單發</td></tr>
+<tr><td>Clinical correlate</td><td>肉眼可見蠕動 (worm-like)</td><td>無明顯肉眼變化</td><td>肉眼可見肌肉抽動</td></tr>
+</table>
+
+<h4>各波形的臨床意義與相關疾病</h4>
+
+<table>
+<tr><th>波形</th><th>核心意義</th><th>主要疾病</th></tr>
+<tr><td><strong>Myokymia</strong></td><td>Demyelination + ectopic generator</td><td>Radiation plexopathy（最典型）、MS、chronic radiculopathy、GBS、hereditary neuropathy</td></tr>
+<tr><td><strong>CRD</strong></td><td>Chronic muscle fiber damage（ephaptic transmission）</td><td>Chronic neurogenic（chronic radiculopathy、ALS、SMA、polio）、chronic myopathy（dystrophy、polymyositis）</td></tr>
+<tr><td><strong>Fasciculation</strong></td><td>Spontaneous motor unit discharge</td><td>Benign（正常）、ALS（最重要）、各種 neuropathy、hyperthyroidism、drug</td></tr>
+</table>
+
+<h4>CRD vs Myotonia 鑑別（重要！）</h4>
+
+<table>
+<tr><th>特徵</th><th>CRD</th><th>Myotonia</th></tr>
+<tr><td>Amplitude trend</td><td><strong>Stable</strong>（不變）</td><td><strong>Wax & wane</strong>（漸強漸弱）</td></tr>
+<tr><td>Frequency trend</td><td><strong>Stable</strong></td><td><strong>Wax & wane</strong></td></tr>
+<tr><td>聲音（喇叭）</td><td>機關槍（rattle）</td><td><strong>俯衝轟炸機</strong>（dive bomber）</td></tr>
+<tr><td>起止</td><td>突然開始、突然結束</td><td>漸進開始、漸進結束</td></tr>
+<tr><td>誘發</td><td>針刺、肌肉收縮</td><td>針刺後或主動收縮後</td></tr>
+<tr><td>主要疾病</td><td>Chronic neurogenic / myopathy</td><td>Myotonic dystrophy、myotonia congenita</td></tr>
+</table>
+
+<h4>Fasciculation 的臨床鑑別（113 真題）</h4>
+
+<table>
+<tr><th>狀況</th><th>合併現象</th><th>臨床意義</th></tr>
+<tr><td>Benign fasciculation syndrome</td><td>無 fib/PSW、無 weakness、無 atrophy</td><td>無病理意義</td></tr>
+<tr><td>Chronic neuropathy / radiculopathy</td><td>+ chronic neurogenic MUAP</td><td>慢性 denervation</td></tr>
+<tr><td><strong>ALS</strong></td><td>+ fib/PSW + large polyphasic MUAP + atrophy + weakness + UMN signs</td><td>Motor neuron disease</td></tr>
+<tr><td>Hyperthyroidism</td><td>+ tremor + 高血壓 + heat intolerance</td><td>Endocrine cause</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>口訣 — 三大慢性自發電位記憶</strong>：<br>
+<strong>Myokymia</strong>：「行進的士兵」(grouped, marching) → demyelination<br>
+<strong>CRD</strong>：「機關槍」(continuous, abrupt start/stop, stable amp) → chronic neurogenic / myopathy<br>
+<strong>Myotonia</strong>：「俯衝轟炸機」(wax & wane) → channelopathy / myotonic dystrophy
+</p>
+
+<h4>本病人 TA 預期 EMG findings</h4>
+
+<table>
+<tr><th>時期</th><th>預期 spontaneous activity</th></tr>
+<tr><td>3 週（本病人）</td><td>Fib + PSW（active denervation）；可能仍無 CRD（CRD 是慢性現象）</td></tr>
+<tr><td>3 個月後</td><td>持續 fib/PSW + 出現 nascent units（small polyphasic）</td></tr>
+<tr><td>6 個月以上</td><td>Fib/PSW 仍可在 + 出現 large polyphasic MUAP（chronic reinnervation）+ 可能 CRD</td></tr>
+<tr><td>若出現 myokymia</td><td>不典型，要重新考慮：radiation history?  chronic compression?  其他病因?</td></tr>
+</table>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>Myokymia = 「marching soldiers」、grouped discharge → demyelination（radiation plexopathy 最典型）</li>
+<li>CRD = 突然開始突然結束、stable amp → chronic neurogenic / chronic myopathy</li>
+<li>Fasciculation = MUAP-like、irregular → ALS 最重要（鑑別 benign vs malignant 看是否合併 fib + atrophy + weakness）</li>
+<li>CRD vs Myotonia 鑑別：CRD stable、myotonia wax & wane（dive bomber）</li>
+<li>本 case 3 週主要看 fib/PSW（active denervation）</li>
+<li>Myokymia 在 simple fibular neck neuropathy 不典型</li>
+</ul>`,
+      },
+      {
+        q: 'Peroneal neuropathy at fibular neck 一般 deep & superficial 都受影響。請問哪一個 division 影響更大？為什麼？此病人最終診斷與電學嚴重度判讀？預後與處置建議？',
+        keywords: [
+          'deep peroneal more affected',
+          'common peroneal compression',
+          'topographic anatomy',
+          'deep more medial vulnerable',
+          'demyelinating predominant',
+          'conduction block prognosis',
+          'axonal loss prognosis',
+          'AFO',
+          'positioning prevention',
+          'recovery 3-6 months',
+        ],
+        points: [
+          '<strong>Deep vs Superficial peroneal 哪個影響大？</strong>：<strong>Deep peroneal 受影響更大</strong>（即 dorsiflexion 比 eversion 弱更明顯）。原因：① 解剖上 deep peroneal fibers 在 common peroneal trunk 中位於<strong>較內側、較表淺</strong>位置，更易被壓迫 ② Deep peroneal 支配的 TA、EHL、EDL 是抗 gravity 主要肌肉、weakness 較明顯 ③ Superficial peroneal 支配的 peroneus longus/brevis 即使部分受影響，臨床上 eversion 仍能保留',
+          '<strong>本病人臨床表現支持此原則</strong>：① Ankle dorsiflexion 1/5（deep peroneal-supplied，最弱）② Ankle eversion 2/5（superficial peroneal、稍好）→ 符合 deep predominant pattern',
+          '<strong>最終診斷</strong>：<strong>Right Common Peroneal Neuropathy at Fibular Neck（postoperative compression）with predominantly axonal loss and conduction block</strong>',
+          '<strong>嚴重度判讀依據</strong>：① CMAP at TA above-knee &lt; below-knee（conduction block at fibular neck）② Superficial peroneal SNAP 異常 → 排除 L5 radiculopathy ③ Sural / tibial 正常 → 排除 sciatic ④ EMG TA、EDL fib + PSW + reduced recruitment（active denervation）⑤ Short head BF 正常 → 確認 lesion at fibular neck（不是 sciatic）',
+          '<strong>Conduction block vs Axonal loss 預後差別</strong>：① <strong>Pure conduction block</strong>（demyelinating，無 axonal loss）：預後最佳，數週至 3 個月恢復 ② <strong>Mixed</strong>（本病人）：3-6 個月恢復、可能不完全 ③ <strong>Pure axonal loss</strong>：預後最差、reinnervation 慢（每月 1 mm）、可能不完全恢復',
+          '<strong>Predictors of good prognosis</strong>：① Conduction block predominant（demyelinating） ② Sural & tibial normal（pure peroneal） ③ EMG 仍有 voluntary MUAP（部分 fiber 仍有功能） ④ 受傷後早期就診（數週內）',
+          '<strong>處置建議</strong>：① <strong>Removal of compression</strong>（避免長時間側躺、cross legs、tight boots）② <strong>AFO（ankle-foot orthosis）</strong>：safety + functional ambulation ③ <strong>Range of motion exercise</strong>：避免 ankle plantar-flexion contracture ④ <strong>Strengthening</strong>：dorsiflexors 強化 ⑤ <strong>Functional electrical stimulation（FES）</strong>：可選 ⑥ 追蹤 NCS 3-6 個月評估恢復 ⑦ 若 6-12 個月未恢復且仍有 conduction block → 考慮手術 decompression',
+          '<strong>術中預防策略</strong>（給手術科建議）：① 病人 padding 時注意 fibular head 處（特別是 lateral decubitus）② 手術台側躺 &gt; 2 hr 應有定時檢查 ③ 高瘦病人是高危族群 ④ 麻醉時禁忌 cross legs',
+        ],
+        a: `<h4>Deep vs Superficial Peroneal 受影響程度</h4>
+
+<table>
+<tr><th>項目</th><th>Deep Peroneal</th><th>Superficial Peroneal</th></tr>
+<tr><td>支配肌肉</td><td>TA、EHL、EDL、EDB</td><td>Peroneus longus、Peroneus brevis</td></tr>
+<tr><td>主要動作</td><td>Dorsiflexion、Toe extension</td><td>Eversion</td></tr>
+<tr><td>感覺分布</td><td>第 1-2 toe webspace</td><td>足背大部分</td></tr>
+<tr><td>解剖位置</td><td>Common peroneal trunk 內側、較表淺</td><td>Common peroneal trunk 外側、較深</td></tr>
+<tr><td>Fibular neck 壓迫時</td><td><strong>受影響較大</strong></td><td>受影響較輕</td></tr>
+<tr><td>本 case 表現</td><td>Dorsiflexion 1/5（顯著）</td><td>Eversion 2/5（較輕）</td></tr>
+</table>
+
+<h4>本病人完整電學診斷</h4>
+
+<table>
+<tr><th>檢查</th><th>預期 findings</th><th>意義</th></tr>
+<tr><td>Peroneal CMAP at TA</td><td>Above-knee amp 顯著 &lt; below-knee（&gt; 50%）</td><td>Conduction block at fibular neck</td></tr>
+<tr><td>Peroneal CMAP at EDB</td><td>可能 unobtainable（severe）</td><td>Distal-most denervation</td></tr>
+<tr><td>Superficial peroneal SNAP</td><td>異常或 unobtainable</td><td>排除 L5 radiculopathy</td></tr>
+<tr><td>Sural SNAP</td><td>正常</td><td>排除 sciatic / polyneuropathy</td></tr>
+<tr><td>Tibial CMAP at AH</td><td>正常</td><td>排除 sciatic（tibial division 完整）</td></tr>
+<tr><td>H reflex</td><td>正常</td><td>排除 S1 lesion</td></tr>
+<tr><td>EMG TA、EDL、peroneus longus</td><td>Fib + PSW + reduced recruitment</td><td>Active denervation</td></tr>
+<tr><td>EMG <strong>Short head BF</strong></td><td>正常</td><td>確認 lesion at fibular neck</td></tr>
+<tr><td>EMG Tibialis posterior</td><td>正常</td><td>排除 L5 radiculopathy</td></tr>
+<tr><td>EMG Lumbar paraspinal</td><td>正常</td><td>排除 root level</td></tr>
+</table>
+
+<h4>診斷</h4>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>Right Common Peroneal Neuropathy at Fibular Neck</strong>（CABG 術後 compression injury，predominantly axonal loss with partial conduction block，deep peroneal division more affected than superficial）
+</p>
+
+<h4>預後評估</h4>
+
+<table>
+<tr><th>類別</th><th>預期恢復時間</th><th>預後</th></tr>
+<tr><td>Pure conduction block (demyelinating)</td><td>數週至 3 個月</td><td>完全恢復</td></tr>
+<tr><td><strong>Mixed（本 case）</strong></td><td>3-6 個月</td><td>大部分恢復、可能殘留輕微</td></tr>
+<tr><td>Pure severe axonal loss</td><td>6-12 個月以上</td><td>不完全恢復、需 AFO</td></tr>
+<tr><td>Complete denervation 過久（&gt; 18 個月）</td><td>可能不可逆</td><td>需手術或永久 AFO</td></tr>
+</table>
+
+<h4>復健處置計畫</h4>
+
+<table>
+<tr><th>類別</th><th>處置</th></tr>
+<tr><td><strong>移除壓迫</strong></td><td>避免長時間 cross legs、避免外側壓迫 fibular head、選擇舒適 boots</td></tr>
+<tr><td><strong>輔具</strong></td><td>AFO（ankle-foot orthosis）固定 ankle 於 neutral 或輕微 dorsiflexion，避免 plantar-flexion contracture、提供 swing phase clearance</td></tr>
+<tr><td><strong>ROM</strong></td><td>每日 passive ankle dorsiflexion ROM、防 contracture</td></tr>
+<tr><td><strong>Strengthening</strong></td><td>dorsiflexor 主動收縮（即使 1/5 也鼓勵 attempt）；當力量恢復進入 graded resistance</td></tr>
+<tr><td><strong>FES</strong></td><td>可選，刺激 peroneal nerve 引發 dorsiflexion，輔助行走</td></tr>
+<tr><td><strong>步態訓練</strong></td><td>佩戴 AFO 後練習 normal gait pattern</td></tr>
+<tr><td><strong>追蹤</strong></td><td>NCS at 3 個月、6 個月評估恢復</td></tr>
+<tr><td><strong>手術</strong></td><td>若 6-12 個月仍 conduction block 未恢復且確診 fibular neck 持續壓迫 → peroneal nerve decompression</td></tr>
+</table>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>Deep peroneal 比 superficial 更易受影響（解剖位置 + 抗重力肌肉）</li>
+<li>本 case dorsiflexion 1/5 vs eversion 2/5 符合此模式</li>
+<li>診斷：Common peroneal at fibular neck、mixed conduction block + axonal loss</li>
+<li>EMG 確認三件事：① peroneal denervation ② short head BF 正常（非 sciatic）③ paraspinal & tibialis posterior 正常（非 L5）</li>
+<li>預後依 conduction block / axonal loss 比例：3-6 個月恢復可能大部分</li>
+<li>處置：移除壓迫 + AFO + ROM + strengthening + 追蹤 NCS</li>
+<li>術中預防：高瘦病人 padding 注意 fibular head、避免 cross legs</li>
 </ul>`,
       },
     ],
