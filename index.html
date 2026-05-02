@@ -60308,6 +60308,640 @@ POD 5 由心臟外科出 ICU 至普通病房，會診復健科。
       },
     ],
   },
+  {
+    id: 'electro_001',
+    domain: 'electro',
+    title: 'Carpal Tunnel Syndrome（媒正中神經電學檢查）',
+    context: `48 歲女性，文書工作者，主訴右手大拇指、食指、中指與無名指橈側麻木刺痛 6 個月。夜間症狀加重會痛醒，需甩手才能緩解。近 1 個月感覺右手抓握力下降，扣鈕扣困難。
+
+理學檢查：
+右手 thenar eminence 輕度 atrophy（APB 較對側明顯萎縮）
+Tinel sign at wrist：positive
+Phalen test：positive at 30 秒
+Sensory：median nerve distribution（D1-D3 + D4 橈半側）pin prick 減弱
+Motor：APB MMT 4/5、其他 intrinsic muscles 5/5
+無頸部疼痛、無上肢近端無力
+
+過去病史：糖尿病 5 年（HbA1c 7.2%）、無外傷史
+病人為右手慣用手
+
+考官：請依序回答下列問題。`,
+    questions: [
+      {
+        q: '此病人臨床懷疑 right CTS。請問 NCS 你會排哪些神經檢查？為什麼需要做 comparison study？最少要做幾項？',
+        keywords: [
+          'Median motor (APB)',
+          'Median sensory (D2 or D3)',
+          'Ulnar motor (ADM)',
+          'Ulnar sensory (D5)',
+          'Median-ulnar comparison',
+          'Lumbrical-Interossei (2L-INT)',
+          'Palmar mixed (Palm-Wrist)',
+          'Ring finger comparison',
+          'AAEM/AANEM guideline',
+          'sensitivity 提升',
+        ],
+        points: [
+          '<strong>Routine NCS（必做）</strong>：① Median motor（記錄 APB）② Median sensory（記錄 D2 or D3，刺激 wrist 14cm）③ Ulnar motor（記錄 ADM）④ Ulnar sensory（記錄 D5）',
+          '<strong>對側肢體比較</strong>：Median motor & sensory at left side，作為 internal control（特別是 unilateral case）',
+          '<strong>Comparison study（CTS 高度懷疑但 routine 正常時必做）</strong>：sensitivity 比 routine 高 20-30%。常用三種：①<strong> Ring finger comparison</strong>（D4 median vs ulnar，差距 ≥ 0.4 ms 為異常）② <strong>Palm-Wrist mixed</strong>（median palmar mixed vs ulnar palmar mixed，差距 ≥ 0.3 ms）③ <strong>2L-INT</strong>（lumbrical median vs interossei ulnar，差距 ≥ 0.5 ms）',
+          '<strong>為何需要 comparison</strong>：早期 CTS 只影響 median 在 carpal tunnel 處的小段 demyelination，routine distal latency 可能仍在正常範圍。Comparison study 透過<strong>同肢同距離</strong>消除溫度、年齡、身高等變數，提升敏感度',
+          '<strong>AANEM 建議</strong>：至少做 1 項 comparison study；若 routine 正常但臨床高度懷疑，需做 2 項以上才能 rule out',
+          '<strong>Why also test ulnar</strong>：① 鑑別 ulnar neuropathy at elbow（CTS 病人常合併 cubital tunnel）② 排除 polyneuropathy（DM 病人特別重要）③ 作為 comparison 的 reference',
+          '<strong>本病人</strong>：糖尿病 5 年要警覺<strong>diabetic polyneuropathy</strong> 重疊，建議加做<strong>下肢 NCS（peroneal motor + sural sensory）</strong>排除合併 polyneuropathy',
+        ],
+        a: `<h4>CTS 完整 NCS 排檢計畫</h4>
+
+<table>
+<tr><th>類別</th><th>檢查項目</th><th>記錄電極</th><th>意義</th></tr>
+<tr><td rowspan="4"><strong>Routine</strong></td><td>Median motor</td><td>APB</td><td>distal latency, CMAP amp</td></tr>
+<tr><td>Median sensory</td><td>D2 or D3</td><td>peak latency, SNAP amp</td></tr>
+<tr><td>Ulnar motor</td><td>ADM</td><td>排除 ulnar neuropathy</td></tr>
+<tr><td>Ulnar sensory</td><td>D5</td><td>排除 polyneuropathy</td></tr>
+<tr><td rowspan="3"><strong>Comparison</strong></td><td>Ring finger（D4）</td><td>D4</td><td>median vs ulnar diff ≥ 0.4 ms = abnl</td></tr>
+<tr><td>Palmar mixed</td><td>palm</td><td>diff ≥ 0.3 ms = abnl</td></tr>
+<tr><td>2L-INT</td><td>2nd lumbrical / 1st interossei</td><td>diff ≥ 0.5 ms = abnl</td></tr>
+<tr><td><strong>對側</strong></td><td>Left median motor & sensory</td><td>同對應肌肉/手指</td><td>internal control</td></tr>
+<tr><td><strong>下肢</strong></td><td>Peroneal motor + Sural sensory</td><td>EDB / lateral malleolus</td><td>排除 DM polyneuropathy</td></tr>
+</table>
+
+<h4>三大 Comparison Study 比較</h4>
+
+<table>
+<tr><th>項目</th><th>記錄</th><th>刺激</th><th>距離</th><th>異常標準</th><th>Sensitivity</th></tr>
+<tr><td>Ring finger</td><td>D4</td><td>wrist median / ulnar</td><td>14 cm</td><td>median - ulnar ≥ 0.4 ms</td><td>~80%</td></tr>
+<tr><td>Palm-Wrist</td><td>wrist</td><td>palm median / ulnar</td><td>8 cm</td><td>diff ≥ 0.3 ms</td><td>~75%</td></tr>
+<tr><td>2L-INT</td><td>2L (median) / INT (ulnar)</td><td>wrist</td><td>同距離</td><td>diff ≥ 0.5 ms</td><td>~85%（thenar atrophy 時最佳）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>本病人關鍵</strong>：APB atrophy 已存在 → motor 已受損（severe CTS）。但 thenar atrophy 時 median CMAP at APB 可能極小或無，此時 <strong>2L-INT comparison</strong> 是最有用的，因為 lumbrical 仍受 median 支配且通常較晚受影響，可在 APB CMAP 消失時仍取得波形。
+</p>
+
+<h4>糖尿病合併考量</h4>
+
+<ul>
+<li>DM polyneuropathy 與 CTS 可重疊（double crush）</li>
+<li>下肢 NCS（peroneal motor + sural sensory）若異常 → 支持 polyneuropathy diagnosis</li>
+<li>DM 病人 distal latency 整體可能延長 → comparison study 比絕對值更可靠</li>
+</ul>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>Routine 4 條：median motor / sensory + ulnar motor / sensory（一定要說出 ulnar 也要做）</li>
+<li>Comparison study 要能講出至少 1 種，最佳是 ring finger comparison</li>
+<li>thenar atrophy 時要想到 2L-INT 仍可用</li>
+<li>對側肢體一定要做 internal control</li>
+<li>DM 病人要加做下肢 NCS</li>
+<li>AANEM guideline：CTS 診斷需至少一項 NCS 異常</li>
+</ul>`,
+      },
+      {
+        q: 'Median motor 與 sensory 的 NCS 怎麼貼？怎麼電？參數設定？（考官提醒：median sensory G1 應貼在手指側邊才是神經位置）',
+        keywords: [
+          'belly-tendon montage',
+          'APB G1 motor point',
+          'D2 or D3 ring electrode',
+          'antidromic',
+          'wrist 8cm motor',
+          'wrist 14cm sensory',
+          'low filter 2Hz / 20Hz',
+          'high filter 10K / 2K',
+          'sweep 2 ms/div',
+          'gain 2-5mV / 20uV',
+          'duration 0.1 ms',
+          'supramaximal',
+        ],
+        points: [
+          '<strong>Median motor 貼法</strong>：G1 貼 APB（thumb metacarpal-phalangeal joint 與 thumb base 中點，肌腹）；G2 貼 thumb IP joint 或 distal phalanx（tendon）→ <strong>belly-tendon montage</strong>',
+          '<strong>Median motor 電法</strong>：刺激 wrist 距 G1 <strong>8 cm</strong>（median nerve 在 palmaris longus 與 flexor carpi radialis 之間），cathode 朝 distal',
+          '<strong>Median sensory 貼法</strong>：G1 環狀電極套在 D2 或 D3 <strong>近側指節（PIP 處）側邊</strong>（神經沿手指側邊走，貼正中會偏離）；G2 套在同手指 distal phalanx，距 G1 約 3-4 cm',
+          '<strong>Median sensory 電法</strong>：antidromic（刺激 wrist median nerve），距離 <strong>14 cm</strong>，cathode 朝 distal（即朝 G1）',
+          '<strong>Motor 參數</strong>：Low filter 2 Hz、High filter 10 KHz、Sweep 2 ms/div、Gain 2-5 mV、Duration 0.05-0.1 ms、Frequency 1 Hz、Stimulation mode <strong>Supra-maximal</strong>',
+          '<strong>Sensory 參數</strong>：Low filter <strong>20 Hz</strong>、High filter <strong>2 KHz</strong>、Sweep 2 ms/div、Gain <strong>20 μV</strong>、Duration 0.1 ms、Frequency 1 Hz、Stim mode supra-maximal（張 P 提醒：sensory 不需到 supra-max，看到 amp 不再增加即可）',
+          '<strong>Average</strong>：Sensory amp 小，建議做 averaging（10-20 次）以提升 signal-to-noise ratio；motor 通常單次即可',
+        ],
+        a: `<h4>Median Motor & Sensory 完整參數</h4>
+
+<table>
+<tr><th>參數</th><th>Median Motor</th><th>Median Sensory</th><th>備註</th></tr>
+<tr><td>記錄電極 G1</td><td>APB 肌腹</td><td>D2 / D3 PIP 側邊</td><td>sensory G1 不貼正中</td></tr>
+<tr><td>記錄電極 G2</td><td>thumb IP / distal</td><td>D2 / D3 distal phalanx</td><td>距 G1 約 3-4 cm</td></tr>
+<tr><td>Ground</td><td>palm 或 wrist</td><td>palm</td><td>記錄與刺激之間</td></tr>
+<tr><td>刺激位置</td><td>wrist 8 cm</td><td>wrist 14 cm</td><td>cathode 朝 distal</td></tr>
+<tr><td>方向</td><td>—</td><td>antidromic</td><td>orthodromic 較少用</td></tr>
+<tr><td>Low filter</td><td>2 Hz</td><td><strong>20 Hz</strong></td><td>sensory 高 LF 去除低頻雜訊</td></tr>
+<tr><td>High filter</td><td>10 KHz</td><td><strong>2 KHz</strong></td><td>sensory 低 HF 去除高頻雜訊</td></tr>
+<tr><td>Sweep speed</td><td>2 ms/div</td><td>2 ms/div</td><td></td></tr>
+<tr><td>Gain</td><td>2-5 mV</td><td>20 μV</td><td>sensory 訊號小</td></tr>
+<tr><td>Duration</td><td>0.05-0.1 ms</td><td>0.1 ms</td><td></td></tr>
+<tr><td>Frequency</td><td>1 Hz</td><td>1 Hz</td><td></td></tr>
+<tr><td>Stim mode</td><td>Supra-Max</td><td>Supra-Max（夠大即可）</td><td></td></tr>
+<tr><td>Average</td><td>無需</td><td>10-20 次</td><td>提升 S/N</td></tr>
+</table>
+
+<h4>Median nerve 解剖貼法重點</h4>
+
+<ul>
+<li><strong>APB motor point</strong>：thumb 第一掌骨中點外側（thenar eminence 中央偏 thumb 側）</li>
+<li><strong>Wrist 刺激點</strong>：palmaris longus tendon 與 flexor carpi radialis tendon 之間（手腕內側橫紋上方）</li>
+<li><strong>Sensory G1 側邊</strong>：手指雙側各有一條 digital nerve，正中是肌腱、不是神經 → 貼側邊才是神經主幹位置</li>
+<li><strong>距離測量</strong>：用軟尺沿 nerve 走向（不是直線距離）</li>
+</ul>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>口訣</strong>：Motor 看 distal latency 與 amp、Sensory 看 peak latency。Sensory 因 SNAP 訊號小（μV 級），filter 設定特別重要：LF 高（20 Hz）擋 baseline drift、HF 低（2 KHz）擋 muscle artifact。
+</p>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>Belly-tendon montage 是 motor 的標準，G1 一定要在 motor point</li>
+<li>Sensory 電極要環繞手指、G1 在 PIP 側邊（不是正中）</li>
+<li>Motor & sensory 距離不同：8 cm vs 14 cm</li>
+<li>Filter 差異：sensory LF 20Hz、HF 2KHz；motor LF 2Hz、HF 10KHz</li>
+<li>Gain：motor 2-5 mV，sensory 20 μV（差 100 倍）</li>
+<li>Sensory 一定要 average 才能去 noise</li>
+</ul>`,
+    },
+      {
+        q: '本病人 APB 已 atrophy。Median motor 在 APB 取不到波形或波形極小時，要怎麼定位？此時最有用的 comparison study 是哪一個？怎麼電？',
+        keywords: [
+          '仍貼 atrophy 的 APB',
+          '2L-INT comparison',
+          'median lumbrical 2',
+          'ulnar interossei 1',
+          '同距離 wrist 8-10cm',
+          'Lat diff ≥ 0.5 ms',
+          'volume conduction 注意',
+          'thenar atrophy alternative',
+        ],
+        points: [
+          '<strong>定位原則（張 P 答案）</strong>：APB atrophy 時<strong>仍貼在 atrophy 的 APB 上</strong>，因為神經支配不變、motor point 解剖位置不變。雖然 amp 會極小，但 distal latency 仍可參考',
+          '<strong>困難情境</strong>：① 完全找不到 APB（atrophy 嚴重）→ 觸診 thenar eminence 找最厚的點 ② amp 太小（< 0.5 mV）→ 加大 gain（變 0.5-1 mV/div）、增加 average 次數',
+          '<strong>2L-INT comparison（thenar atrophy 時最有用）</strong>：lumbrical 由 median 支配、interossei 由 ulnar 支配，且 lumbrical 在 CTS 中通常較晚受影響',
+          '<strong>2L-INT 貼法</strong>：G1 貼在第二指的 metacarpal head 與 wrist crease 連線中點（2nd lumbrical 位置），G2 貼遠端肌腱',
+          '<strong>2L-INT 電法</strong>：① 先電 wrist median（同 routine），記錄 latency A ② G1 不動，刺激同距離 wrist ulnar，記錄 latency B（此時 1st DI 收縮）→ 比較 A vs B',
+          '<strong>Volume conduction 注意</strong>：electrode 位置太近時，刺激 ulnar 會 record 到 1st dorsal interossei 的 volume conduction（不是 2nd lumbrical）→ 這正是 comparison 的設計，刺激相同 wrist 距離下比較兩條神經到同記錄點的 latency',
+          '<strong>異常標準</strong>：median lumbrical latency - ulnar interossei latency ≥ <strong>0.5 ms</strong> 為異常',
+          '<strong>Why 2L-INT > ring finger comparison in thenar atrophy</strong>：ring finger comparison 看的是 sensory，但 motor 受損嚴重的病人通常 sensory 也已嚴重受損（ring finger SNAP 可能 unobtainable），此時 2L-INT 仍可取得 motor response',
+        ],
+        a: `<h4>APB atrophy 處理流程</h4>
+
+<table>
+<tr><th>狀況</th><th>處理</th></tr>
+<tr><td>APB 可摸到但很薄</td><td>仍貼 atrophy 的 APB（張 P 答案）；觸診找最厚點</td></tr>
+<tr><td>APB 完全 atrophy</td><td>貼解剖位置（thumb metacarpal 中段外側），加大 gain</td></tr>
+<tr><td>Amp 仍 &lt; 0.5 mV</td><td>Gain 0.5 mV/div、average 5-10 次、避免 stim artifact</td></tr>
+<tr><td>仍取不到 CMAP</td><td>改做 2L-INT comparison（記錄 lumbrical 仍可有 response）</td></tr>
+</table>
+
+<h4>2L-INT Comparison Study 詳細操作</h4>
+
+<table>
+<tr><th>步驟</th><th>操作</th><th>記錄</th></tr>
+<tr><td>1</td><td>G1 貼 2nd lumbrical（第 2 metacarpal 與 wrist 連線中點，palm 中央偏橈側）</td><td></td></tr>
+<tr><td>2</td><td>G2 貼第 2 finger MCP / proximal phalanx</td><td></td></tr>
+<tr><td>3</td><td>刺激 wrist median（標準位置）</td><td>記錄 onset latency A（median to lumbrical）</td></tr>
+<tr><td>4</td><td>G1 G2 不動，刺激 wrist ulnar（同距離）</td><td>記錄 onset latency B（ulnar to interossei via volume conduction）</td></tr>
+<tr><td>5</td><td>計算 latency difference = A − B</td><td>≥ 0.5 ms 為異常</td></tr>
+</table>
+
+<h4>各 Comparison Study 在 thenar atrophy 時的可用性</h4>
+
+<table>
+<tr><th>Comparison</th><th>記錄</th><th>thenar atrophy 時可用？</th><th>原因</th></tr>
+<tr><td>Ring finger</td><td>D4 sensory</td><td>不一定</td><td>嚴重 CTS 時 D4 SNAP 也可能 unobtainable</td></tr>
+<tr><td>Palm-Wrist mixed</td><td>palm mixed</td><td>不一定</td><td>同上，mixed nerve 訊號小</td></tr>
+<tr><td><strong>2L-INT</strong></td><td>lumbrical motor</td><td><strong>可</strong></td><td>lumbrical 較晚受影響，CMAP 通常仍存在</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>關鍵概念</strong>：CTS 是 focal demyelination at carpal tunnel，不同 median 支配的肌肉受影響程度不同。APB（thenar）通常先受影響、lumbrical 較晚。所以即使 thenar atrophy，2L-INT 仍可作為 sensitive marker。
+</p>
+
+<h4>Severe CTS 的補充檢查</h4>
+
+<ul>
+<li>Median F-wave 延長或 unobtainable</li>
+<li>Inching study（每 1 cm 刺激）找 focal demyelination 位置</li>
+<li>Across-wrist conduction velocity（palm-wrist motor CV）下降 &lt; 49 m/s</li>
+<li>EMG 扎 APB 看 active denervation（fib/PSW）</li>
+</ul>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>APB atrophy 時：仍貼在 APB 上（張 P 強調的標準答案）</li>
+<li>Thenar atrophy 時最有用的 comparison：<strong>2L-INT</strong></li>
+<li>2L-INT 異常標準：median - ulnar latency diff ≥ 0.5 ms</li>
+<li>記得增加 gain 與 average 次數</li>
+<li>嚴重 CTS 要做 EMG 扎 APB 看是否 active denervation</li>
+</ul>`,
+      },
+      {
+        q: 'Antidromic 與 Orthodromic sensory study 差異？各自優缺點？為什麼 CTS 一定要電 motor CMAP（看什麼參數）？',
+        keywords: [
+          'antidromic 朝末梢',
+          'orthodromic 朝近端',
+          'amp 大 vs 小',
+          'motor artifact',
+          'volume conduction',
+          'CMAP distal latency',
+          'CMAP amplitude',
+          'axonal vs demyelinating',
+        ],
+        points: [
+          '<strong>Antidromic</strong>：刺激 nerve 近端、記錄遠端（電流方向與生理傳導方向<strong>相反</strong>）。例：median sensory 刺激 wrist、記錄 D2',
+          '<strong>Orthodromic</strong>：刺激 nerve 遠端、記錄近端（電流方向與生理傳導方向<strong>相同</strong>）。例：median sensory 刺激 D2、記錄 wrist',
+          '<strong>Antidromic 優點</strong>：① SNAP amplitude 較大（記錄電極更接近 nerve 表淺處）② 操作較容易、波形清晰 ③ 臨床多採用',
+          '<strong>Antidromic 缺點</strong>：① 記錄到 motor artifact（同條 nerve 的 motor fiber 也被刺激，CMAP 與 SNAP 重疊）② 在 wrist 過度刺激時 SNAP 波形被 CMAP 掩蓋',
+          '<strong>Orthodromic 優點</strong>：① 不受 motor artifact 干擾 ② mixed nerve study 更純粹的 sensory',
+          '<strong>Orthodromic 缺點</strong>：① SNAP amp 較小（深部 nerve 距記錄電極較遠）② 訊號品質差、需更多 average ③ 病人較不舒適（需在手指刺激）',
+          '<strong>CTS 為何電 motor CMAP</strong>：① <strong>distal latency 延長</strong>（&gt; 4.4 ms）→ demyelination at carpal tunnel ② <strong>CMAP amplitude 下降</strong> → axonal loss、severity grading',
+          '<strong>CMAP 提供的訊息</strong>：① CTS severity grading（mild / moderate / severe / extremely severe）② 預後評估（amp 越低、預後越差）③ 鑑別 axonal 與 demyelinating',
+        ],
+        a: `<h4>Antidromic vs Orthodromic 比較</h4>
+
+<table>
+<tr><th>項目</th><th>Antidromic</th><th>Orthodromic</th></tr>
+<tr><td>刺激位置</td><td>近端（wrist）</td><td>遠端（D2）</td></tr>
+<tr><td>記錄位置</td><td>遠端（D2）</td><td>近端（wrist）</td></tr>
+<tr><td>電流方向</td><td>與生理傳導<strong>相反</strong></td><td>與生理傳導<strong>相同</strong></td></tr>
+<tr><td>SNAP amplitude</td><td>大（10-50 μV）</td><td>小（5-20 μV）</td></tr>
+<tr><td>Motor artifact</td><td>有（CMAP 干擾）</td><td>無</td></tr>
+<tr><td>操作難度</td><td>簡單</td><td>較難</td></tr>
+<tr><td>病人舒適度</td><td>較好</td><td>較差（指端刺激痛）</td></tr>
+<tr><td>臨床使用</td><td><strong>主流</strong></td><td>少用、特殊狀況</td></tr>
+</table>
+
+<h4>Why amplitude 不同？</h4>
+
+<ul>
+<li><strong>Antidromic</strong>：在指端記錄，nerve 較表淺、靠近電極 → amp 大</li>
+<li><strong>Orthodromic</strong>：在 wrist 記錄，nerve 在皮下較深、被組織衰減 → amp 小</li>
+<li>距離一樣（14 cm），但 volume conductor 衰減程度不同</li>
+</ul>
+
+<h4>CTS 看 CMAP 的關鍵參數</h4>
+
+<table>
+<tr><th>參數</th><th>意義</th><th>CTS 變化</th></tr>
+<tr><td><strong>Distal latency</strong></td><td>median nerve 經 carpal tunnel 至 APB 的時間</td><td>延長（&gt; 4.4 ms 為異常）→ <strong>demyelination</strong></td></tr>
+<tr><td><strong>CMAP amplitude</strong></td><td>反映存活的 motor axon 數</td><td>下降（&lt; 4 mV 為異常）→ <strong>axonal loss</strong></td></tr>
+<tr><td>Conduction velocity</td><td>forearm 段</td><td>通常正常（病灶在 carpal tunnel）</td></tr>
+<tr><td>F-wave latency</td><td>反映整段 median 傳導</td><td>嚴重時延長</td></tr>
+</table>
+
+<h4>CTS Severity Grading（AANEM）</h4>
+
+<table>
+<tr><th>Grade</th><th>Sensory</th><th>Motor</th></tr>
+<tr><td>Mild</td><td>SNAP latency 延長 / amp 下降</td><td>正常</td></tr>
+<tr><td>Moderate</td><td>SNAP 異常</td><td>distal latency 延長</td></tr>
+<tr><td>Severe</td><td>SNAP unobtainable</td><td>distal latency 延長 + CMAP amp 下降</td></tr>
+<tr><td>Extremely severe</td><td>SNAP unobtainable</td><td>CMAP unobtainable</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>口試金句</strong>：CTS 是 focal demyelination 為主、severe 後合併 axonal loss。Distal latency 看 demyelination、CMAP amp 看 axonal loss、SNAP 是 most sensitive marker（最早異常）。本病人 thenar atrophy → severe grade，CMAP 已 affected。
+</p>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>Antidromic / Orthodromic 差別：刺激與記錄位置互換</li>
+<li>Antidromic amp 較大、有 motor artifact；Orthodromic amp 小、較純粹</li>
+<li>臨床主用 antidromic，因為操作簡單、訊號好</li>
+<li>CMAP 看 distal latency（demyelination）+ amplitude（axonal loss）</li>
+<li>CTS severity grading 要會背：mild → moderate → severe → extremely severe</li>
+<li>SNAP 是 most sensitive、APB CMAP 是 severity 指標</li>
+</ul>`,
+      },
+      {
+        q: '電 median CMAP 時，螢幕上出現 6 種不同波形（沒有影片，請依文字描述判斷）。請說明各代表的意義與臨床處置。A：正常 biphasic，先 negative 後 positive，無 initial positive deflection。B：波形最前端有小的 initial positive deflection，主峰仍 negative。C：波形開頭有大的 initial positive deflection，緊接著大的 negative 峰（像反相）。D：有 initial positive deflection 且 amplitude 比預期小。E：有 initial positive deflection 但 amplitude 比預期大。F：波形呈現 bifid（雙峰）型態，兩個 negative peaks 接近。',
+        keywords: [
+          'A normal biphasic',
+          'B G1 not on motor point',
+          'C G1 G2 reversed',
+          'D wrong nerve stimulated',
+          'E Martin-Gruber anastomosis',
+          'F G1 between two muscles',
+          'initial positive deflection',
+          'electrode reposition',
+        ],
+        points: [
+          '<strong>A：正常 CMAP</strong>。Biphasic、initial negative deflection（朝上）、無 initial positive deflection。表示 G1 正確貼在 motor point 上、刺激對的 nerve、無 anomalous innervation',
+          '<strong>B：G1 沒貼到 motor point 且靠近其他肌肉</strong>。出現小的 initial positive deflection。處置：<strong>重新定位 G1 至 motor point</strong>（觸診肌腹最厚處或請病人收縮肌肉確認）',
+          '<strong>C：G1 與 G2 貼反</strong>（極性反轉）。整個波形上下顛倒、有大的 initial positive deflection。處置：<strong>對調 G1 與 G2</strong> 即可恢復正常',
+          '<strong>D：刺激到別條神經</strong>（如電 median 卻刺激到 ulnar）。Initial positive deflection + amp 偏小。處置：<strong>重新定位刺激電極</strong>，找正確 nerve 位置（median 在 palmaris longus 與 FCR 之間，ulnar 在 FCU 內側）',
+          '<strong>E：Anomalous innervation（如 Martin-Gruber Anastomosis）</strong>。Initial positive deflection + amp <strong>偏大</strong>。MGA 是 median 在 forearm 分支至 ulnar，刺激 wrist median 時會 record 到 ulnar 支配的 hypothenar contribution',
+          '<strong>F：G1 貼在同神經支配的兩個肌肉之間</strong>（如 thenar 與 lumbrical 之間），出現 bifid 雙峰。處置：<strong>重新定位 G1 至單一肌肉的 motor point</strong>',
+          '<strong>核心原則</strong>：正常 CMAP 一定要從 baseline 直接 negative deflection（initial negative）。任何 initial positive deflection 都代表記錄電極位置或刺激位置有問題（除了 anomalous innervation）',
+          '<strong>判讀步驟</strong>：① 看 initial deflection 方向 ② 比對 amp 與正常值 ③ 若異常先重新貼電極 ④ 仍異常考慮解剖變異',
+        ],
+        a: `<h4>CMAP 6 種波形完整解析</h4>
+
+<table>
+<tr><th>波形</th><th>特徵</th><th>原因</th><th>處置</th></tr>
+<tr><td>A</td><td>正常 biphasic、initial negative</td><td>正常</td><td>無需調整</td></tr>
+<tr><td>B</td><td>小 initial positive deflection</td><td>G1 不在 motor point、靠近其他肌肉</td><td>重新定位 G1（觸診 / 主動收縮確認）</td></tr>
+<tr><td>C</td><td>大 initial positive、整體反轉</td><td>G1 與 G2 貼反</td><td>對調 G1 與 G2</td></tr>
+<tr><td>D</td><td>initial positive + <strong>amp 小</strong></td><td>刺激到別條 nerve</td><td>重新定位刺激電極</td></tr>
+<tr><td>E</td><td>initial positive + <strong>amp 大</strong></td><td><strong>Anomalous innervation</strong>（MGA）</td><td>確認解剖變異、做對側比較</td></tr>
+<tr><td>F</td><td>Bifid 雙峰</td><td>G1 在兩肌肉之間</td><td>重新定位 G1 至單一肌肉</td></tr>
+</table>
+
+<h4>正常 CMAP 三大要件</h4>
+
+<ul>
+<li>Initial deflection 朝<strong>上</strong>（negative，因 convention 是 negative up）</li>
+<li>Biphasic 或 triphasic 平滑波形</li>
+<li>無 initial positive deflection（即無從 baseline 先朝下的小波）</li>
+</ul>
+
+<h4>Initial positive deflection 的意義</h4>
+
+<table>
+<tr><th>狀況</th><th>解釋</th></tr>
+<tr><td>G1 不在 motor point</td><td>action potential 從別處傳來、先 depolarize G2 → G1 看到 positive</td></tr>
+<tr><td>G1/G2 反貼</td><td>極性反轉</td></tr>
+<tr><td>刺激錯誤 nerve</td><td>volume conduction 從別條 nerve 支配的肌肉傳來</td></tr>
+<tr><td>Anomalous innervation</td><td>nerve 在 forearm 跨界（MGA: median → ulnar）</td></tr>
+<tr><td>G1 在兩肌肉之間</td><td>兩個 motor point 同時被 detect</td></tr>
+</table>
+
+<h4>Martin-Gruber Anastomosis (MGA) 詳解</h4>
+
+<ul>
+<li>Prevalence：15-30%（normal variant）</li>
+<li>Median nerve 在 forearm 分支跨入 ulnar nerve，支配部分 hypothenar / interossei muscles</li>
+<li>刺激 wrist median 時 → median 主幹 + 跨界纖維 → 同時 activate ulnar 支配的肌肉</li>
+<li>表現：① CMAP at APB 出現 initial positive deflection（從 hypothenar volume conduction 過來）② 刺激 elbow median 時 amp 比 wrist 還大（多了 MGA 纖維貢獻）③ 在 CTS 病人會「掩蓋」 distal latency 延長的程度</li>
+<li><strong>Reverse MGA（Marinacci anastomosis）</strong>：ulnar → median 跨界，較少見</li>
+</ul>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>口試金句</strong>：「看到 initial positive deflection 不要直接判讀，先檢查電極位置」。順序是：① G1 motor point ✓ ② G1/G2 極性 ✓ ③ 刺激位置 ✓ ④ 仍異常 → 考慮 anomalous innervation。
+</p>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>A 正常、B-F 都異常，要會背 6 種對應的 picture-cause-fix</li>
+<li>Initial positive deflection 是核心判讀關鍵</li>
+<li>D 與 E 的差別在 amp（D 小、E 大）</li>
+<li>E (MGA) 是 anomalous innervation 的代表，要知道機制</li>
+<li>所有電極問題都先「重新貼」，不是調 filter</li>
+<li>正常 CMAP 一定 initial negative（朝上）</li>
+</ul>`,
+      },
+      {
+        q: 'CTS 不會 routine 做 EMG。請問此病人需要做 EMG 的適應症？要扎哪些肌肉？為什麼？',
+        keywords: [
+          'thenar atrophy 適應症',
+          'NCV 正常但臨床極像',
+          '嚴重肌肉萎縮',
+          'Trauma',
+          'APB',
+          'FPL',
+          'Pronator teres',
+          'cervical paraspinal',
+          'rule out C6/C7 radiculopathy',
+        ],
+        points: [
+          '<strong>EMG 適應症（張權維答案：3 個就滿分）</strong>：① <strong>NCV 正常但臨床極像</strong>（如 routine 與 comparison 都正常但症狀典型）② <strong>嚴重外傷（Trauma）</strong>導致急性 nerve injury，需評估 axonal damage 與預後 ③ <strong>顯著肌肉無力萎縮</strong>（要看 active denervation、估計 reinnervation 程度）',
+          '<strong>本病人為何需做 EMG</strong>：thenar atrophy 已存在 → 屬於「顯著肌肉無力萎縮」適應症。需評估 ① active denervation 程度（是否仍進行中）② chronic reinnervation 程度（預後判斷）③ 鑑別 cervical radiculopathy / proximal median nerve lesion',
+          '<strong>必扎肌肉（CTS 確認 + 鑑別）</strong>：① <strong>APB（abductor pollicis brevis）</strong>：median nerve distal to carpal tunnel，最重要 ② <strong>FPL（flexor pollicis longus）</strong>：median nerve at forearm（anterior interosseous branch），CTS 不應異常 ③ <strong>Pronator teres</strong>：median proximal to carpal tunnel，CTS 應正常',
+          '<strong>鑑別診斷扎針（rule out C6/C7 radiculopathy）</strong>：① <strong>FCR（flexor carpi radialis）</strong>：C6/C7 + median ② <strong>Triceps</strong>：C6/C7 但非 median ③ <strong>Cervical paraspinal（low cervical）</strong>：root level',
+          '<strong>對照肌肉（rule out polyneuropathy）</strong>：① <strong>FDI（first dorsal interosseous）</strong>：ulnar，若異常 → polyneuropathy 而非 CTS ② <strong>Tibialis anterior</strong>：下肢，若異常 → polyneuropathy',
+          '<strong>EMG 預期結果（CTS）</strong>：APB 可能有 fib/PSW（active denervation）+ large polyphasic MUAP（chronic reinnervation）+ reduced recruitment；FPL、pronator teres 應正常；paraspinal 應正常',
+          '<strong>嚴重程度判讀</strong>：① Acute denervation only → 急性、新近發作 ② Chronic reinnervation only → 慢性穩定 ③ 兩者並存 → 慢性合併進行中（本病人最可能）',
+          '<strong>為何 CTS 不 routine 做 EMG</strong>：① NCS sensitivity 已足 ② EMG 為侵入性（病人不適）③ 多數 mild-moderate CTS 不需 EMG。但 thenar atrophy 病人的 severity grading 與預後評估需要 EMG',
+        ],
+        a: `<h4>EMG 在 CTS 的三大適應症（114 真題答案）</h4>
+
+<table>
+<tr><th>#</th><th>適應症</th><th>說明</th></tr>
+<tr><td>1</td><td><strong>NCV 正常但臨床極像</strong></td><td>routine + comparison 都正常但症狀典型，需 EMG 看 APB denervation</td></tr>
+<tr><td>2</td><td><strong>嚴重外傷（Trauma）</strong></td><td>急性 nerve injury，評估 axonal damage 預後</td></tr>
+<tr><td>3</td><td><strong>顯著肌肉無力萎縮</strong></td><td>severity grading、預後評估、鑑別其他病因</td></tr>
+</table>
+
+<h4>EMG 扎針肌肉策略（從遠到近）</h4>
+
+<table>
+<tr><th>類別</th><th>肌肉</th><th>支配</th><th>CTS 預期</th><th>用途</th></tr>
+<tr><td rowspan="3"><strong>確認 CTS</strong></td><td>APB</td><td>median (distal)</td><td>異常</td><td>確認 distal median lesion</td></tr>
+<tr><td>FPL</td><td>median (AIN, forearm)</td><td>正常</td><td>排除 proximal median lesion</td></tr>
+<tr><td>Pronator teres</td><td>median (proximal)</td><td>正常</td><td>排除 pronator syndrome</td></tr>
+<tr><td rowspan="3"><strong>排除 radiculopathy</strong></td><td>FCR</td><td>C6/C7 median</td><td>正常</td><td>C7 root 是否受累</td></tr>
+<tr><td>Triceps</td><td>C7 radial</td><td>正常</td><td>同 myotome 不同 nerve</td></tr>
+<tr><td>Cervical paraspinal</td><td>root level</td><td>正常</td><td>root lesion 標誌</td></tr>
+<tr><td rowspan="2"><strong>排除 polyneuropathy</strong></td><td>FDI</td><td>ulnar</td><td>正常</td><td>同手 ulnar 是否受累</td></tr>
+<tr><td>Tibialis anterior</td><td>L5 peroneal</td><td>正常</td><td>下肢是否受累</td></tr>
+</table>
+
+<h4>EMG findings 在 CTS 的時序</h4>
+
+<table>
+<tr><th>時間</th><th>EMG 表現</th><th>意義</th></tr>
+<tr><td>2 週</td><td>PSW 出現</td><td>early denervation</td></tr>
+<tr><td>3 週</td><td>Fibrillation 出現</td><td>active denervation 完整</td></tr>
+<tr><td>3-6 個月</td><td>Polyphasic MUAP 出現</td><td>collateral sprouting reinnervation</td></tr>
+<tr><td>慢性穩定期</td><td>Large polyphasic + reduced recruitment</td><td>chronic reinnervation</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>為何強調 FPL 與 pronator teres 要正常？</strong> CTS 病灶在 carpal tunnel（distal to AIN takeoff），AIN 支配的 FPL 必正常、forearm 段支配的 pronator teres 必正常。若異常 → 想 proximal median neuropathy（如 pronator syndrome、AIN syndrome）。
+</p>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>EMG 適應症（張 P 答案）：NCV 正常但臨床極像、Trauma、顯著肌肉萎縮（背 3 個）</li>
+<li>必扎肌肉：APB（distal）+ FPL（AIN）+ pronator teres（proximal median）</li>
+<li>鑑別 radiculopathy：FCR、triceps、cervical paraspinal</li>
+<li>排除 polyneuropathy：FDI、TA</li>
+<li>FPL 與 pronator teres 在 CTS 必正常，異常 → 想 proximal lesion</li>
+<li>CTS 不 routine 做 EMG，但 thenar atrophy 一定要做</li>
+</ul>`,
+      },
+      {
+        q: '扎 APB 後請病人放鬆，螢幕出現 fibrillation 與 positive sharp wave（沒有影片，請依文字描述判斷）。Fib 與 PSW 的特徵差異？臨床意義？哪一個會先出現？什麼 myopathy 會有？Fib 與 endplate spike 怎麼鑑別？',
+        keywords: [
+          'fib biphasic short',
+          'PSW initial positive',
+          'PSW 2 weeks first',
+          'Fib 3 weeks',
+          'denervation marker',
+          'inflammatory myopathy',
+          'myositis',
+          'muscle necrosis',
+          'endplate spike normal',
+          'endplate noise',
+        ],
+        points: [
+          '<strong>Fibrillation 特徵</strong>：① <strong>biphasic 或 triphasic</strong> short spike ② amplitude 20-300 μV ③ duration 1-5 ms ④ regular firing 0.5-15 Hz ⑤ <strong>initial positive deflection</strong>（朝下）',
+          '<strong>Positive sharp wave (PSW) 特徵</strong>：① <strong>biphasic</strong>，初始大的 positive deflection、後接緩慢的 negative phase ② amplitude 50-2000 μV ③ duration 10-100 ms（比 fib 長）④ regular firing ⑤ 像「V 字」倒著看',
+          '<strong>出現順序（114 真題重點）</strong>：<strong>PSW 先出現（約 2 週）</strong>、Fib 後出現（約 3 週）。原因：PSW 是 muscle fiber 受傷後的 unstable membrane potential、Fib 是真正 denervated muscle fiber 的 spontaneous discharge',
+          '<strong>臨床意義</strong>：Fib + PSW = <strong>active denervation</strong>（神經損傷或肌肉膜不穩）。常見原因：① peripheral neuropathy（如 CTS、radiculopathy）② <strong>Inflammatory myopathy（polymyositis、dermatomyositis）</strong>③ <strong>Muscle necrosis</strong>（rhabdomyolysis、severe trauma）',
+          '<strong>Myopathy 會有 Fib/PSW 嗎？</strong>會。但只有特定 myopathy：<strong>inflammatory myopathy（polymyositis、dermatomyositis、IBM）</strong>、<strong>muscle necrosis</strong>、<strong>severe muscular dystrophy</strong>（如 Duchenne）。一般 myopathy（如 mitochondrial、metabolic）通常無 fib/PSW',
+          '<strong>Fib vs Endplate spike 鑑別</strong>：① Endplate spike 是<strong>正常</strong>的 motor endplate spontaneous activity（針扎到 endplate zone）② Endplate spike 通常<strong>biphasic、initial negative</strong>（不像 fib 的 initial positive）③ Endplate spike firing 不規則（irregular）、fib 規則（regular）④ Endplate spike 常合併 endplate noise（連續 background hiss）⑤ 移動針離開 endplate → endplate spike 消失，fib 仍存在',
+          '<strong>Endplate noise</strong>：低 amplitude（10-40 μV）、連續、像海浪聲 background。是 miniature endplate potentials（MEPPs），表示針靠近 endplate zone 應移開',
+          '<strong>本病人 APB 出現 fib + PSW</strong>：confirms active denervation in median-supplied muscle → 支持 severe CTS 診斷。配合 chronic reinnervation MUAP 表示<strong>慢性合併進行中</strong>的 nerve injury',
+        ],
+        a: `<h4>Fib vs PSW 詳細比較</h4>
+
+<table>
+<tr><th>特徵</th><th>Fibrillation</th><th>Positive Sharp Wave</th></tr>
+<tr><td>波形</td><td>Bi/triphasic short spike</td><td>Initial positive 大波 + slow neg phase</td></tr>
+<tr><td>Initial deflection</td><td>Positive（朝下）</td><td>Positive（朝下，更大）</td></tr>
+<tr><td>Amplitude</td><td>20-300 μV</td><td>50-2000 μV</td></tr>
+<tr><td>Duration</td><td>1-5 ms（短）</td><td>10-100 ms（長）</td></tr>
+<tr><td>Firing pattern</td><td>Regular</td><td>Regular</td></tr>
+<tr><td>出現時間</td><td>受傷後 <strong>3 週</strong></td><td>受傷後 <strong>2 週</strong></td></tr>
+<tr><td>產生機制</td><td>Denervated muscle fiber spontaneous discharge</td><td>Damaged muscle fiber unstable membrane</td></tr>
+</table>
+
+<h4>Fib + PSW 的臨床意義</h4>
+
+<table>
+<tr><th>類別</th><th>具體疾病</th><th>機制</th></tr>
+<tr><td rowspan="3"><strong>神經病變</strong></td><td>Peripheral neuropathy（CTS）</td><td>Axonal loss → denervated fibers</td></tr>
+<tr><td>Radiculopathy</td><td>Anterior horn cell / root injury</td><td></td></tr>
+<tr><td>Motor neuron disease（ALS）</td><td>Lower motor neuron loss</td><td></td></tr>
+<tr><td rowspan="3"><strong>肌肉病變</strong></td><td><strong>Inflammatory myopathy</strong>（PM、DM、IBM）</td><td>Muscle fiber 發炎破壞 → membrane instability</td></tr>
+<tr><td>Muscle necrosis</td><td>Rhabdomyolysis、severe trauma</td><td>Fiber 死亡</td></tr>
+<tr><td>Severe muscular dystrophy</td><td>Duchenne、Becker</td><td>Membrane defect</td></tr>
+<tr><td><strong>NMJ</strong></td><td>Botulism（severe）</td><td>Functional denervation</td></tr>
+</table>
+
+<h4>Fib vs Endplate Spike 鑑別</h4>
+
+<table>
+<tr><th>特徵</th><th>Fibrillation</th><th>Endplate Spike</th></tr>
+<tr><td>Initial deflection</td><td><strong>Positive</strong>（朝下）</td><td><strong>Negative</strong>（朝上）</td></tr>
+<tr><td>Firing</td><td>Regular</td><td>Irregular</td></tr>
+<tr><td>位置</td><td>整條肌肉</td><td>僅 endplate zone</td></tr>
+<tr><td>合併現象</td><td>無</td><td>常合併 endplate noise（hiss）</td></tr>
+<tr><td>移動針後</td><td>仍存在</td><td>消失</td></tr>
+<tr><td>意義</td><td>異常（denervation）</td><td>正常變異</td></tr>
+<tr><td>處置</td><td>記錄</td><td>移開 endplate zone（向遠處移 1-2 mm）</td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>口訣</strong>：Fib「正下短」（initial positive、朝下、duration 短），Endplate spike「負上不規則」（initial negative、朝上、firing irregular，合併 endplate noise）。<strong>移開針</strong>是最簡單的鑑別方法 — 真 fib 不會消失。
+</p>
+
+<h4>Active vs Chronic Denervation 標誌</h4>
+
+<table>
+<tr><th>類別</th><th>EMG 表現</th></tr>
+<tr><td><strong>Active denervation</strong></td><td>Fib + PSW（spontaneous activity）</td></tr>
+<tr><td><strong>Chronic reinnervation</strong></td><td>Long-duration、high-amplitude、polyphasic MUAPs + reduced recruitment</td></tr>
+<tr><td>Acute on chronic</td><td>兩者並存（最常見的慢性進行中神經病變）</td></tr>
+</table>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>Fib 與 PSW 都是 spontaneous activity、active denervation 標誌</li>
+<li>出現順序：<strong>PSW 先（2 週）→ Fib 後（3 週）</strong></li>
+<li>Myopathy 會有：<strong>inflammatory、muscle necrosis、severe dystrophy</strong></li>
+<li>Endplate spike 鑑別：initial negative、irregular、合併 endplate noise、移針即消失</li>
+<li>本 case 出現 fib/PSW 在 APB → confirms active denervation in CTS</li>
+<li>Active + chronic 並存 = 進行中的慢性 neuropathy</li>
+</ul>`,
+      },
+      {
+        q: '請病人輕度收縮 APB，出現 polyphasic MUAP（沒有影片，請依文字描述判斷）：duration 變長、amplitude 變大、phases 超過 4 個。此波形代表的意義？Myopathy 的 polyphasic MUAP 與此 case 有何不同？Recruitment pattern 怎麼看？此病人最終診斷與電學嚴重度判讀？',
+        keywords: [
+          'large polyphasic chronic reinnervation',
+          'long duration high amplitude',
+          'collateral sprouting',
+          'reduced recruitment neurogenic',
+          'short small polyphasic myopathy',
+          'early recruitment myopathy',
+          'severe CTS grading',
+          'extremely severe',
+        ],
+        points: [
+          '<strong>Polyphasic MUAP 定義</strong>：phases 超過 4 個（一個 MUAP 跨越 baseline 的次數 + 1）。Phase = baseline 兩側的波折段',
+          '<strong>本病人的 Polyphasic（chronic neurogenic 型）</strong>：① <strong>Long duration</strong>（&gt; 15 ms）② <strong>High amplitude</strong>（&gt; 2-5 mV）③ Polyphasic（phases &gt; 4）④ 機制：neurogenic <strong>collateral sprouting reinnervation</strong>，存活的 axon 長出側枝、支配更多 muscle fiber → motor unit 變大',
+          '<strong>Myopathy 的 Polyphasic（不同型）</strong>：① <strong>Short duration</strong>（&lt; 5 ms）② <strong>Small amplitude</strong>（&lt; 0.5 mV）③ Polyphasic ④ 機制：muscle fiber 受損後 motor unit 內的 fiber 數減少、同步性下降 → 短小多相波',
+          '<strong>Recruitment pattern 判讀</strong>：① <strong>Neurogenic（reduced/decreased recruitment）</strong>：motor unit 數變少，剩餘 unit 必須用更高頻率 firing 才能產生力量 → 看起來「少數幾條 unit 火力全開」② <strong>Myogenic（early/early full recruitment）</strong>：每條 unit 力量變小，必須早期就 recruit 大量 unit 才能產生小力量 → 看起來「輕收縮就滿屏 MUAP」',
+          '<strong>Myopathy 三大特徵：SASD + early recruitment</strong>（張 P 標準答案）：<strong>S</strong>hort duration、<strong>A</strong>mplitude small、<strong>S</strong>mall、<strong>D</strong>uration short、<strong>polyphasic</strong> + early recruitment',
+          '<strong>本病人最終診斷</strong>：<strong>Severe right Carpal Tunnel Syndrome with active and chronic axonal loss</strong>。電學證據：① median sensory unobtainable / severely reduced ② median CMAP at APB amp reduced + distal latency 顯著延長 ③ APB EMG：fib + PSW（active denervation）+ large polyphasic MUAP（chronic reinnervation）+ reduced recruitment',
+          '<strong>AANEM CTS Severity Grading（本 case）</strong>：屬於 <strong>Severe</strong>（thenar atrophy、CMAP affected、sensory loss）。Extremely severe 是 CMAP unobtainable',
+          '<strong>處置建議</strong>：① 立即轉介手部外科評估 carpal tunnel release（thenar atrophy + active denervation 是手術 indication）② 術後 NCS 追蹤 6-12 個月評估 reinnervation ③ 預後：thenar atrophy 病人術後感覺常恢復、運動功能恢復有限（已有 axonal loss）',
+        ],
+        a: `<h4>Neurogenic vs Myogenic Polyphasic MUAP</h4>
+
+<table>
+<tr><th>特徵</th><th>Neurogenic（chronic reinnervation）</th><th>Myogenic（myopathy）</th></tr>
+<tr><td>Duration</td><td><strong>Long</strong> (&gt; 15 ms)</td><td><strong>Short</strong> (&lt; 5 ms)</td></tr>
+<tr><td>Amplitude</td><td><strong>High</strong> (&gt; 2-5 mV)</td><td><strong>Small</strong> (&lt; 0.5 mV)</td></tr>
+<tr><td>Phases</td><td>&gt; 4 (polyphasic)</td><td>&gt; 4 (polyphasic)</td></tr>
+<tr><td>Recruitment</td><td><strong>Reduced</strong>（少數 unit 高頻）</td><td><strong>Early</strong>（輕收縮即滿屏）</td></tr>
+<tr><td>Firing rate</td><td>高（30-50 Hz）</td><td>低（每條 unit firing 慢）</td></tr>
+<tr><td>機制</td><td>Collateral sprouting</td><td>Fiber loss / dysfunction</td></tr>
+<tr><td>記憶口訣</td><td><strong>LL P</strong>oly + <strong>R</strong>educed</td><td><strong>SS</strong> Poly + <strong>E</strong>arly（SASD + early）</td></tr>
+</table>
+
+<h4>Recruitment 判讀技巧</h4>
+
+<table>
+<tr><th>狀況</th><th>表現</th><th>意義</th></tr>
+<tr><td>Normal</td><td>輕收縮 1-2 unit、漸進招募至 full interference pattern</td><td>正常</td></tr>
+<tr><td><strong>Reduced（neurogenic）</strong></td><td>只看到 1-2 條 unit 火力全開（30-50 Hz）、無法達到 full interference</td><td>Motor unit 減少（神經病變）</td></tr>
+<tr><td><strong>Early（myogenic）</strong></td><td>輕收縮即滿屏多 unit、每條 unit firing 慢</td><td>每條 unit 力量小，需早期招募大量</td></tr>
+<tr><td>Discrete</td><td>單一 unit、firing 50+ Hz</td><td>嚴重 motor unit loss</td></tr>
+</table>
+
+<h4>本病人 EMG 完整 findings 與整合</h4>
+
+<table>
+<tr><th>檢查項目</th><th>Findings</th><th>意義</th></tr>
+<tr><td>APB resting</td><td>Fib + PSW</td><td>Active denervation</td></tr>
+<tr><td>APB activation</td><td>Large polyphasic, long duration, high amp</td><td>Chronic reinnervation</td></tr>
+<tr><td>APB recruitment</td><td>Reduced（少 unit、高頻）</td><td>Motor axon loss</td></tr>
+<tr><td>FPL</td><td>Normal</td><td>排除 AIN syndrome</td></tr>
+<tr><td>Pronator teres</td><td>Normal</td><td>排除 pronator syndrome</td></tr>
+<tr><td>FCR / triceps</td><td>Normal</td><td>排除 C6/C7 radiculopathy</td></tr>
+<tr><td>Cervical paraspinal</td><td>Normal</td><td>排除 root level</td></tr>
+<tr><td>FDI（ulnar）</td><td>Normal</td><td>排除 polyneuropathy</td></tr>
+</table>
+
+<h4>AANEM CTS Severity Grading</h4>
+
+<table>
+<tr><th>Grade</th><th>NCS</th><th>EMG</th><th>本病人</th></tr>
+<tr><td>Mild</td><td>SNAP latency 延長</td><td>正常</td><td></td></tr>
+<tr><td>Moderate</td><td>SNAP 異常 + distal latency 延長</td><td>正常</td><td></td></tr>
+<tr><td><strong>Severe</strong></td><td>SNAP unobtainable, CMAP amp 下降</td><td>Active + chronic denervation</td><td>✓</td></tr>
+<tr><td>Extremely severe</td><td>SNAP + CMAP 都 unobtainable</td><td>嚴重 denervation</td><td></td></tr>
+</table>
+
+<p style="background:var(--bg);padding:14px;border-left:2px solid var(--accent);margin:8px 0;">
+<strong>最終診斷</strong>：Severe right Carpal Tunnel Syndrome with active denervation and chronic reinnervation in median-supplied muscles distal to wrist。<strong>處置</strong>：thenar atrophy + active denervation 是手術 absolute indication，立即轉介手外科。Conservative therapy（夜間 splint、NSAIDs、steroid injection）僅適用於 mild-moderate CTS，本病人已超過保守治療階段。
+</p>
+
+<h4>口試重點</h4>
+
+<ul>
+<li>Polyphasic MUAP 看 duration + amp 區分 neurogenic / myogenic</li>
+<li>Neurogenic：Long duration + High amp + Reduced recruitment</li>
+<li>Myogenic：Short duration + Small amp + Early recruitment（SASD + early）</li>
+<li>本 case neurogenic chronic reinnervation pattern</li>
+<li>CTS severity grading：本 case 屬 Severe（thenar atrophy + CMAP affected）</li>
+<li>處置：手術 indication（thenar atrophy + active denervation 不能再保守）</li>
+<li>預後：感覺術後可恢復、運動功能恢復有限（已 axonal loss）</li>
+</ul>`,
+      },
+    ],
+  },
 ];
 
 const SECONDS_PER_CASE = 540;
